@@ -1,0 +1,22 @@
+uuid: 32037206-7fe9-4586-8591-d9f3024c7309
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oshwiki_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: oshwiki_theme_content
+theme: oshwiki_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

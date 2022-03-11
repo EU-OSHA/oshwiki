@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Bootstrap Barrio Subtheme.
+
+oshwiki_theme.settings:
+  type: oshwiki_theme.settings
+  label: 'oshwiki_theme settings'
