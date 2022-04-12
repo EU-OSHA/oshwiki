@@ -1,0 +1,134 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Ponastavi
+      fields:
+        title:
+          label: Naslov
+        item_count:
+          label: Notice
+  assigned:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Naslov
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  closed:
+    display_title: Zaprto
+    display_options:
+      menu:
+        title: Zaprto
+      fields:
+        status:
+          label: Stanje
+        created:
+          label: Ustvarjeno
+        title:
+          label: Naslov
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  completed:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        created:
+          label: Ustvarjeno
+        title:
+          label: Naslov
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  pending:
+    display_title: Čaka
+    display_options:
+      menu:
+        title: Čaka
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Naslov
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        created:
+          label: Ustvarjeno
+        title:
+          label: Naslov
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Naslov
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije

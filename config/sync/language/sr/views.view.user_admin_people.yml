@@ -1,0 +1,34 @@
+display:
+  default:
+    display_title: Подразумевано
+    display_options:
+      fields:
+        name:
+          label: 'Корисничко име'
+        status:
+          label: Статус
+        roles_target_id:
+          label: Улоге
+        created:
+          label: 'Члан сте'
+        operations:
+          label: Операције
+      exposed_form:
+        options:
+          submit_button: Филтрирај
+          exposed_sorts_label: 'Сортирај по'
+      filters:
+        combine:
+          expose:
+            label: 'Име или E-пошта садрже'
+        status:
+          group_info:
+            label: Статус
+        roles_target_id:
+          expose:
+            label: Улога
+      use_more_text: још
+  page_1:
+    display_options:
+      menu:
+        title: Листа

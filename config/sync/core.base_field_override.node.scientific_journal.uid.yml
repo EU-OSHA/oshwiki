@@ -1,0 +1,20 @@
+uuid: 037f2f34-30c3-4988-991f-d195ad2c69e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scientific_journal
+id: node.scientific_journal.uid
+field_name: uid
+entity_type: node
+bundle: scientific_journal
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

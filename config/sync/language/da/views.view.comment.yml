@@ -1,0 +1,105 @@
+label: Kommentarer
+description: 'Find og administrér kommentarer.'
+display:
+  default:
+    display_title: Standard
+    display_options:
+      title: Kommentarer
+      fields:
+        comment_bulk_form:
+          action_title: Handling
+        subject:
+          label: Emne
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Forfatter
+          separator: ', '
+        entity_id:
+          label: 'Indsendt til'
+          separator: ', '
+        changed:
+          label: Opdateret
+          separator: ', '
+        operations:
+          label: Handlinger
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'næste ›'
+            previous: '‹ forrige'
+            first: '« første'
+            last: 'sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      empty:
+        area_text_custom:
+          content: 'Der er ingen kommentarer at vise.'
+      filters:
+        subject:
+          expose:
+            label: Emne
+        combine:
+          expose:
+            label: Forfatternavn
+        langcode:
+          expose:
+            label: Sprog
+      use_more_text: mere
+  page_published:
+    display_title: 'Udgivne kommentarer'
+    display_options:
+      display_description: 'Liste over godkendte kommentarer.'
+      menu:
+        title: Kommentarer
+        description: 'Publicerede kommentarer'
+  page_unapproved:
+    display_title: 'Ikke-godkendte kommentarer'
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Handling
+        subject:
+          label: Emne
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Forfatter
+          separator: ', '
+        entity_id:
+          label: 'Indsendt til'
+          separator: ', '
+        changed:
+          label: Opdateret
+          separator: ', '
+        operations:
+          label: Handlinger
+        name_1:
+          separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Emne
+        combine:
+          expose:
+            label: Forfatternavn
+        langcode:
+          expose:
+            label: Sprog
+      display_description: 'Listen af ikke-godkendte kommentarer.'
+      menu:
+        title: 'Ikke-godkendte kommentarer'
+        description: 'Ikke-godkendte kommentarer'

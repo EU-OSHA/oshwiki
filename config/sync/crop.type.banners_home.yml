@@ -1,0 +1,12 @@
+uuid: fcf71c29-6c2d-43fb-a95a-20d58bd314ca
+langcode: en
+status: true
+dependencies: {  }
+label: 'Banners Home'
+id: banners_home
+description: 'Crop for the banners in the Home page.'
+aspect_ratio: '1:1'
+soft_limit_width: 374
+soft_limit_height: 245
+hard_limit_width: 374
+hard_limit_height: 245

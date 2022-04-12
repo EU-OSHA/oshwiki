@@ -1,0 +1,29 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        label:
+          label: Žymė
+        item_type:
+          label: Tipas
+        operations:
+          label: Veiksmai
+      arguments:
+        tltid:
+          exception:
+            title: Visi
+  block_1:
+    display_title: Blokas

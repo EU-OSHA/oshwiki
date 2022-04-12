@@ -1,0 +1,18 @@
+uuid: 1d099acc-54b3-4e08-ba1b-98912d95f099
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oshwiki_articles
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.oshwiki_articles
+target_entity_type_id: node
+target_bundle: oshwiki_articles
+default_langcode: en
+language_alterable: true

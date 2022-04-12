@@ -1,0 +1,14 @@
+label: 'Novi uporabniki'
+display:
+  default:
+    display_title: Privzeto
+    display_options:
+      title: 'Novi uporabniki'
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+  block_1:
+    display_title: 'Novi uporabniki'
+    display_options:
+      block_description: 'Novi uporabniki'
+      block_category: Uporabnik

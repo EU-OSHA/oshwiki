@@ -1,0 +1,20 @@
+uuid: 4d49b47d-f70b-4dac-9e55-7aebb2352fa2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_volume_science
+field_name: field_volume_science
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

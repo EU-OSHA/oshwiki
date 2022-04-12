@@ -5,12 +5,12 @@ dependencies:
   config:
     - field.field.node.translatable_node.body
     - node.type.translatable_node
-  enforced:
-    module:
-      - tmgmt_demo
   module:
     - text
     - user
+  enforced:
+    module:
+      - tmgmt_demo
 _core:
   default_config_hash: ITZshuuuGlLhdjq7vk-oYbcZPWIUgGQ3OaayY6XXP4A
 id: node.translatable_node.default
@@ -19,11 +19,11 @@ bundle: translatable_node
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   links:
     weight: 100

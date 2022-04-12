@@ -1,0 +1,20 @@
+uuid: 681b9b81-14ff-49fa-8471-dc8b8cb6ece9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nace
+  module:
+    - path
+id: taxonomy_term.nace.path
+field_name: path
+entity_type: taxonomy_term
+bundle: nace
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

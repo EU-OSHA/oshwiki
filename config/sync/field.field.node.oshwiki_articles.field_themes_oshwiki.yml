@@ -1,0 +1,34 @@
+uuid: 765fb17f-8419-4a75-895b-1e13392e94cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_themes_oshwiki
+    - node.type.oshwiki_articles
+    - taxonomy.vocabulary.themes
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.oshwiki_articles.field_themes_oshwiki
+field_name: field_themes_oshwiki
+entity_type: node
+bundle: oshwiki_articles
+label: themes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      themes: themes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

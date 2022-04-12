@@ -1,0 +1,28 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+          tags:
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laaste »'
+      fields:
+        source_language_1:
+          label: Van
+        target_language:
+          label: Aan
+        tags_count:
+          label: Etikette
+        operations:
+          label: Aksies
+  page_1:
+    display_title: Bladsy

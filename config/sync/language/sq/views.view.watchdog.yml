@@ -1,0 +1,35 @@
+label: Watchdog
+display:
+  default:
+    display_title: 'E Paracaktuar'
+    display_options:
+      fields:
+        severity:
+          label: Rendësia
+        type:
+          label: Lloji
+        timestamp:
+          label: Data
+        message:
+          label: Mesazhi
+        name:
+          label: Përdoruesi
+        link:
+          label: Operacionet
+      exposed_form:
+        options:
+          submit_button: Filtri
+          reset_button_label: Rifillo
+      empty:
+        area:
+          admin_label: 'Asnjë log mesazhesh në dispozicion.'
+          content: 'Asnjë log mesazhesh në dispozicion.'
+      filters:
+        type:
+          expose:
+            label: Lloji
+        severity:
+          expose:
+            label: Rendësia
+  page:
+    display_title: Faqe

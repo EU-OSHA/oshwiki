@@ -1,0 +1,10 @@
+label: Vertimas
+tips:
+  locale-overview:
+    label: 'Vartotojo sąsajos vertimas'
+  locale-language:
+    label: 'Verčiama kalba'
+  locale-search:
+    label: Paieška
+  locale-translate:
+    label: Versti

@@ -1,0 +1,34 @@
+uuid: f2d1ffea-7fe7-46ec-ba09-b91a8037408d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nace_oshwiki
+    - node.type.oshwiki_articles
+    - taxonomy.vocabulary.nace
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.oshwiki_articles.field_nace_oshwiki
+field_name: field_nace_oshwiki
+entity_type: node
+bundle: oshwiki_articles
+label: Nace
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nace: nace
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      fields:
+        name:
+          label: 'Ainm úsáideora'
+        created:
+          label: 'Ball ar feadh'
+      use_more_text: Tuilleadh

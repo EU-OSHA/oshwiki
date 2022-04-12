@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      pager:
+        options:
+          tags:
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
+      fields:
+        label:
+          label: Oznaka
+        type:
+          label: Tip
+        tags_count:
+          label: Oznake
+        operations:
+          label: Operacije
+      arguments:
+        tjid:
+          exception:
+            title: Vsi
+  checkout:
+    display_options:
+      fields:
+        label:
+          label: Oznaka
+        type:
+          label: Tip

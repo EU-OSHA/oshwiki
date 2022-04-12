@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        status:
+          label: Statuss
+        label:
+          label: Etiķete
+        item_type:
+          label: Veids
+        operations:
+          label: Darbības
+      arguments:
+        tltid:
+          exception:
+            title: Visi
+  block_1:
+    display_title: Bloks

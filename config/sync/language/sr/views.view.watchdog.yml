@@ -1,0 +1,29 @@
+display:
+  default:
+    display_title: Подразумевано
+    display_options:
+      fields:
+        type:
+          label: Tип
+        timestamp:
+          label: Датум
+        message:
+          label: Порука
+          alter:
+            alt: '{{ message }}'
+        name:
+          label: Корисник
+        link:
+          label: Операције
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+      exposed_form:
+        options:
+          submit_button: Филтрирај
+          exposed_sorts_label: 'Сортирај по'
+      filters:
+        type:
+          expose:
+            label: Tип

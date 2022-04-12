@@ -1,0 +1,44 @@
+display:
+  default:
+    display_title: Główny
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+          tags:
+            previous: '‹ Poprzednia'
+            next: 'Następna ›'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+      fields:
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQDQGNvdW50
+        progress:
+          label: Postęp
+        label:
+          label: Etykieta
+        item_type:
+          label: Typ
+          separator: ', '
+        word_count:
+          label: Słowa
+          separator: ', '
+        operations:
+          label: Operacje
+      arguments:
+        tltid:
+          exception:
+            title: Wszystko
+  block_1:
+    display_title: Blok

@@ -1,0 +1,19 @@
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      fields:
+        title:
+          label: Заглавие
+        name:
+          label: Автор
+        changed:
+          label: 'Последна промяна'
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+  attachment_1:
+    display_title: 'Прикачен файл'
+  page_1:
+    display_title: Страница

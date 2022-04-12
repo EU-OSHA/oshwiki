@@ -1,0 +1,11 @@
+description: 'Скорашњи садржај'
+display:
+  default:
+    display_title: Подразумевано
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Сортирај по'
+      use_more_text: Више
+  block_1:
+    display_title: Блок

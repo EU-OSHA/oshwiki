@@ -1,0 +1,37 @@
+uuid: 56554187-20e5-4a52-952e-a1a039b7ca50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.authors_content.field_organization_authors
+    - field.field.node.authors_content.field_position_authors
+    - node.type.authors_content
+  module:
+    - text
+    - user
+id: node.authors_content.default
+targetEntityType: node
+bundle: authors_content
+mode: default
+content:
+  field_organization_authors:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_position_authors:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

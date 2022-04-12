@@ -1,0 +1,12 @@
+uuid: 9de1aa7c-1679-403f-9528-e57db710c1fb
+langcode: en
+status: true
+dependencies: {  }
+label: 'OSH Mail'
+id: osh_mail
+description: '300 x 200 px'
+aspect_ratio: '3:2'
+soft_limit_width: 300
+soft_limit_height: 200
+hard_limit_width: 300
+hard_limit_height: 200

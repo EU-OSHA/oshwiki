@@ -1,0 +1,71 @@
+description: 'Biedt een massaverwerkingsoverzicht van vertaalopdrachten in het systeem.'
+display:
+  default:
+    display_title: Hoofd
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+          tags:
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laatste »'
+      fields:
+        state:
+          label: Status
+          separator: ', '
+        label:
+          label: Label
+        source_language_1:
+          label: Van
+          separator: ', '
+        target_language:
+          label: Naar
+          separator: ', '
+        translator:
+          label: Provider
+        progress:
+          label: Voortgang
+        word_count:
+          label: Woorden
+        tags_count:
+          label: Labels
+        changed:
+          label: Gewijzigd
+        operations:
+          label: Bewerkingen
+      filters:
+        state:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: Brontaal
+        target_language:
+          expose:
+            label: Doeltaal
+        translator:
+          expose:
+            label: Provider
+      empty:
+        area_text_custom:
+          content: 'Geen opdrachten beschikbaar.'
+  page_1:
+    display_title: Pagina
+    display_options:
+      menu:
+        title: Opdrachten
+        description: 'Beheer en controleer bestaande vertaalopdrachten.'
+      tab_options:
+        title: Opdrachten

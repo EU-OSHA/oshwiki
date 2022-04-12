@@ -1,0 +1,20 @@
+label: Redakcyjny
+type_settings:
+  states:
+    archived:
+      label: Zarchiwizowane
+    draft:
+      label: 'Wersja robocza'
+    published:
+      label: Opublikowane
+  transitions:
+    archive:
+      label: Zarchiwizuj
+    archived_draft:
+      label: 'Przywróć wersję roboczą'
+    archived_published:
+      label: Przywróć
+    create_new_draft:
+      label: 'Stwórz nową wersję roboczą'
+    publish:
+      label: Opublikuj

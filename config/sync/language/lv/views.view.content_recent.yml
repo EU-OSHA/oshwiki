@@ -1,0 +1,18 @@
+label: 'Jaunākais saturs'
+display:
+  default:
+    display_title: 'Noklusētā vērtība'
+    display_options:
+      title: 'Jaunākais saturs'
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      empty:
+        area_text_custom:
+          content: 'Nav pieejams nekāds saturs.'
+      use_more_text: Vairāk
+  block_1:
+    display_title: Bloks

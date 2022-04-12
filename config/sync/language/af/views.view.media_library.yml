@@ -1,0 +1,70 @@
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Aksie
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      exposed_form:
+        options:
+          reset_button_label: Herstel
+      filters:
+        status:
+          group_info:
+            label: Gepubliseerd
+            group_items:
+              1:
+                title: Gepubliseerd
+              2:
+                title: Ongepubliseerd
+        name:
+          expose:
+            label: Naam
+        langcode:
+          expose:
+            label: Taal
+  page:
+    display_title: Bladsy
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Aksie
+        edit_media:
+          text: Wysig
+        delete_media:
+          text: 'Vee uit'
+  widget:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Alle
+      filters:
+        name:
+          expose:
+            label: Naam
+      header:
+        display_link_table:
+          label: Tabel
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Naam
+        uid:
+          label: Outeur
+      arguments:
+        bundle:
+          exception:
+            title: Alle
+      filters:
+        name:
+          expose:
+            label: Naam
+      header:
+        display_link_table:
+          label: Tabel

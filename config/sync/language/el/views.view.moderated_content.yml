@@ -1,0 +1,47 @@
+display:
+  default:
+    display_title: Προεπιλεγμένο
+    display_options:
+      fields:
+        title:
+          label: Τίτλος
+          separator: ', '
+        type:
+          label: 'Τύπος περιεχομένου'
+          separator: ', '
+        name:
+          label: Συντάκτης
+          separator: ', '
+        moderation_state:
+          separator: ', '
+        changed:
+          label: Ενημερώθηκε
+          separator: ', '
+        operations:
+          label: Λειτουργίες
+      pager:
+        options:
+          tags:
+            next: 'Επόμενο ›'
+            previous: '‹ Προηγούμενο'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      exposed_form:
+        options:
+          submit_button: Φίλτρο
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      filters:
+        title:
+          expose:
+            label: Τίτλος
+        type:
+          expose:
+            label: 'Τύπος περιεχομένου'
+        langcode:
+          expose:
+            label: Γλώσσα

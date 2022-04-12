@@ -1,0 +1,97 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      fields:
+        title:
+          label: Naslov
+  assigned:
+    display_title: Dodjeljeno
+    display_options:
+      menu:
+        title: Dodjeljeno
+      fields:
+        status:
+          label: Status
+        title:
+          label: Naslov
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  closed:
+    display_title: Zatvoreno
+    display_options:
+      menu:
+        title: Zatvoreno
+      fields:
+        status:
+          label: Status
+        created:
+          label: Kreiran
+        title:
+          label: Naslov
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  completed:
+    display_options:
+      fields:
+        status:
+          label: Status
+        created:
+          label: Kreiran
+        title:
+          label: Naslov
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  pending:
+    display_options:
+      fields:
+        status:
+          label: Status
+        title:
+          label: Naslov
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Status
+        created:
+          label: Kreiran
+        title:
+          label: Naslov
+        operations:
+          label: Operacije
+      filters:
+        title:
+          expose:
+            label: Naslov
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Status
+        title:
+          label: Naslov
+        operations:
+          label: Operacije

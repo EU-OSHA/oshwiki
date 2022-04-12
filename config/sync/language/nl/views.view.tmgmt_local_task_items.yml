@@ -1,0 +1,44 @@
+display:
+  default:
+    display_title: Hoofd
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+          tags:
+            previous: '‹ Vorige'
+            next: 'Volgende ›'
+            first: '« Eerste'
+            last: 'Laatste »'
+      fields:
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Voortgang
+        label:
+          label: Label
+        item_type:
+          label: Type
+          separator: ', '
+        word_count:
+          label: Woorden
+          separator: ', '
+        operations:
+          label: Bewerkingen
+      arguments:
+        tltid:
+          exception:
+            title: Alle
+  block_1:
+    display_title: Blok

@@ -1,0 +1,23 @@
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      fields:
+        title:
+          label: Titel
+        name:
+          label: Outeur
+        changed:
+          label: 'Laste opdatering'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+  attachment_1:
+    display_title: Aanhangsel
+  page_1:
+    display_title: Bladsy

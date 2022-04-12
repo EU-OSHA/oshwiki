@@ -1,0 +1,33 @@
+label: 'Strona główna'
+description: 'Wszystkie treści promowane na stronie głównej.'
+display:
+  default:
+    display_title: Domyślny
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'Następna ›'
+            previous: '‹ Poprzednia'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      empty:
+        area_text_custom:
+          content: 'Nie utworzono jeszcze zawartości strony głównej. <br />Postępuj zgodnie z <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Podręcznikiem Użytkownika</a> aby rozpocząć budowę swojej witryny.'
+        title:
+          title: 'Witaj na [site:name]'
+  feed_1:
+    display_title: Zasób
+  page_1:
+    display_title: Strona

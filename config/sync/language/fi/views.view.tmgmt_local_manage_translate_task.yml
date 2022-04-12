@@ -1,0 +1,253 @@
+display:
+  default:
+    display_title: Isäntä
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Suodatus
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Edellinen'
+            next: 'Seuraava ›'
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massapäivitys
+          action_title: Valinnalla
+        title:
+          label: Otsikko
+          separator: ', '
+        item_count:
+          label: Aiheet
+  assigned:
+    display_title: Vastuuhenkilö
+    display_options:
+      menu:
+        title: Vastuuhenkilö
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massapäivitys
+          action_title: Valinnalla
+        status:
+          label: Tila
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Otsikko
+          separator: ', '
+        source_language:
+          label: Lähettäjä
+          separator: ', '
+        target_language:
+          label: Osoitteeseen
+          separator: ', '
+        item_count:
+          label: Aiheet
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimenpiteet
+      filters:
+        source_language:
+          expose:
+            label: Lähdekieli
+        uid:
+          expose:
+            label: Sisältölähde
+        title:
+          expose:
+            label: Otsikko
+  closed:
+    display_title: Suljettu
+    display_options:
+      menu:
+        title: Suljettu
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massapäivitys
+          action_title: Valinnalla
+        status:
+          label: Tila
+          separator: ', '
+        created:
+          label: Luotu
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Otsikko
+          separator: ', '
+        source_language:
+          label: Lähettäjä
+          separator: ', '
+        target_language:
+          label: Osoitteeseen
+          separator: ', '
+        item_count:
+          label: Aiheet
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimenpiteet
+      filters:
+        source_language:
+          expose:
+            label: Lähdekieli
+        uid:
+          expose:
+            label: Sisältölähde
+        title:
+          expose:
+            label: Otsikko
+  completed:
+    display_title: Valmis
+    display_options:
+      menu:
+        title: Valmis
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massapäivitys
+          action_title: Valinnalla
+        status:
+          label: Tila
+          separator: ', '
+        created:
+          label: Luotu
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Otsikko
+          separator: ', '
+        source_language:
+          label: Lähettäjä
+          separator: ', '
+        target_language:
+          label: Osoitteeseen
+          separator: ', '
+        item_count:
+          label: Aiheet
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimenpiteet
+      filters:
+        source_language:
+          expose:
+            label: Lähdekieli
+        uid:
+          expose:
+            label: Sisältölähde
+        title:
+          expose:
+            label: Otsikko
+  pending:
+    display_title: Odottaa
+    display_options:
+      menu:
+        title: Odottaa
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massapäivitys
+          action_title: Valinnalla
+        status:
+          label: Tila
+        tuid:
+          separator: ', '
+        title:
+          label: Otsikko
+          separator: ', '
+        source_language:
+          label: Lähettäjä
+          separator: ', '
+        target_language:
+          label: Osoitteeseen
+          separator: ', '
+        item_count:
+          label: Aiheet
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimenpiteet
+      filters:
+        source_language:
+          expose:
+            label: Lähdekieli
+        uid:
+          expose:
+            label: Sisältölähde
+        title:
+          expose:
+            label: Otsikko
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massapäivitys
+          action_title: Valinnalla
+        status:
+          label: Tila
+        created:
+          label: Luotu
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Otsikko
+          separator: ', '
+        source_language:
+          label: Lähettäjä
+          separator: ', '
+        target_language:
+          label: Osoitteeseen
+          separator: ', '
+        item_count:
+          label: Aiheet
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimenpiteet
+      filters:
+        source_language:
+          expose:
+            label: Lähdekieli
+        uid:
+          expose:
+            label: Sisältölähde
+        title:
+          expose:
+            label: Otsikko
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massapäivitys
+          action_title: Valinnalla
+        status:
+          label: Tila
+        title:
+          label: Otsikko
+          separator: ', '
+        source_language:
+          label: Lähettäjä
+          separator: ', '
+        target_language:
+          label: Osoitteeseen
+          separator: ', '
+        item_count:
+          label: Aiheet
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimenpiteet

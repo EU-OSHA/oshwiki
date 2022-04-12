@@ -1,0 +1,10 @@
+uuid: 2915ec92-b475-4297-bdef-582367f637a9
+langcode: en
+status: true
+dependencies: {  }
+id: authors_paragraph
+label: 'Authors paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

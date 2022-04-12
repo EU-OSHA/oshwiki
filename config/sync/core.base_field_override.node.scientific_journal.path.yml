@@ -1,0 +1,20 @@
+uuid: a3058cc5-57b1-4ff0-a99d-85ab1f22d8ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scientific_journal
+  module:
+    - path
+id: node.scientific_journal.path
+field_name: path
+entity_type: node
+bundle: scientific_journal
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

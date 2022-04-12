@@ -1,0 +1,25 @@
+uuid: 0ecb8f6e-3e7c-4da5-9630-5d107933a528
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introduction_science
+    - node.type.scientific_journal
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.scientific_journal.field_introduction_science
+field_name: field_introduction_science
+entity_type: node
+bundle: scientific_journal
+label: introduction
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

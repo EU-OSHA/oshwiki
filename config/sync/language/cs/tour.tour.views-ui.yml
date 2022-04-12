@@ -1,0 +1,15 @@
+tips:
+  views-ui-format:
+    label: 'Výstupní formát'
+  views-ui-fields:
+    label: Pole
+  views-ui-filter-operations:
+    label: 'Filtrovat akce'
+    body: 'Přidat, uspořádat nebo odstranit filtry.'
+  views-ui-sorts:
+    label: 'Kritéria řazení'
+  views-ui-sorts-operations:
+    label: 'Seřadit akce'
+    body: 'Přidat, uspořádat nebo odstranit pravidla řazení.'
+  views-ui-preview:
+    label: Náhled

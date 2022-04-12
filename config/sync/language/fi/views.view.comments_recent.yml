@@ -1,0 +1,18 @@
+label: 'Uusimmat kommentit'
+display:
+  default:
+    display_title: Oletus
+    display_options:
+      title: 'Uusimmat kommentit'
+      fields:
+        changed:
+          settings:
+            past_format: '@interval sitten'
+      empty:
+        area_text_custom:
+          content: 'Kommentteja ei ole saatavilla.'
+  block_1:
+    display_title: Lohko
+    display_options:
+      block_description: 'Uusimmat kommentit'
+      block_category: 'Listaukset (Views)'

@@ -1,0 +1,57 @@
+display:
+  default:
+    display_title: Isäntä
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Käytä
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+          tags:
+            previous: '‹ edellinen'
+            next: 'seuraava ›'
+            first: '« ensimmäinen'
+            last: 'viimeinen »'
+      fields:
+        state:
+          label: Tila
+        label:
+          label: Tunnus
+        type:
+          label: Tyyppi
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Tagit
+          separator: ', '
+        changed:
+          label: Muuttunut
+        operations:
+          label: Toimenpiteet
+      arguments:
+        tjid:
+          exception:
+            title: Kaikki
+  checkout:
+    display_title: Kassalle
+    display_options:
+      fields:
+        label:
+          label: Tunnus
+        type:
+          label: Tyyppi
+        word_count:
+          separator: ', '
+        changed:
+          label: Muuttunut
+          separator: ', '
+  submitted:
+    display_title: Lisätty

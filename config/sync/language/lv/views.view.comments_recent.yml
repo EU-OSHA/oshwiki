@@ -1,0 +1,13 @@
+label: 'Jaunākie komentāri'
+display:
+  default:
+    display_title: 'Noklusētā vērtība'
+    display_options:
+      title: 'Jaunākie komentāri'
+      empty:
+        area_text_custom:
+          content: 'Nav pieejami komentāri.'
+  block_1:
+    display_title: Bloks
+    display_options:
+      block_description: 'Jaunākie komentāri'

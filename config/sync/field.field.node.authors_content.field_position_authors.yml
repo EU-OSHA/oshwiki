@@ -1,0 +1,25 @@
+uuid: 7ec4ac8c-c36c-4191-a803-acf8a89c7927
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_authors
+    - node.type.authors_content
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.authors_content.field_position_authors
+field_name: field_position_authors
+entity_type: node
+bundle: authors_content
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

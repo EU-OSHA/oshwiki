@@ -1,0 +1,100 @@
+label: Commenti
+display:
+  default:
+    display_title: Predefinito
+    display_options:
+      title: Commenti
+      fields:
+        comment_bulk_form:
+          action_title: Azione
+        subject:
+          label: Oggetto
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Autore
+          separator: ', '
+        entity_id:
+          label: 'Inserito in'
+          separator: ', '
+        changed:
+          label: Aggiornato
+          separator: ', '
+        operations:
+          label: Operazioni
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'seguente ›'
+            previous: '‹ precedente'
+            first: '« prima'
+            last: 'ultima »'
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
+          sort_desc_label: Disc
+      empty:
+        area_text_custom:
+          content: 'Nessun commento disponibile.'
+      filters:
+        subject:
+          expose:
+            label: Oggetto
+        combine:
+          expose:
+            label: 'Nome dell''autore'
+        langcode:
+          expose:
+            label: Lingua
+      use_more_text: altro
+  page_published:
+    display_title: 'Commenti pubblicati'
+    display_options:
+      menu:
+        title: Commenti
+  page_unapproved:
+    display_title: 'Commenti non approvati'
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Azione
+        subject:
+          label: Oggetto
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Autore
+          separator: ', '
+        entity_id:
+          label: 'Inserito in'
+          separator: ', '
+        changed:
+          label: Aggiornato
+          separator: ', '
+        operations:
+          label: Operazioni
+        name_1:
+          separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Oggetto
+        combine:
+          expose:
+            label: 'Nome dell''autore'
+        langcode:
+          expose:
+            label: Lingua
+      menu:
+        title: 'Commenti non approvati'

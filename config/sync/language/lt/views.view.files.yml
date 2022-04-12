@@ -1,0 +1,70 @@
+label: Failai
+display:
+  default:
+    display_title: Numatytasis
+    display_options:
+      title: Failai
+      fields:
+        filename:
+          label: Pavadinimas
+        filemime:
+          label: 'MIME tipas'
+        filesize:
+          label: Dydis
+        status:
+          label: Būsena
+          settings:
+            format_custom_false: Laikina
+            format_custom_true: Nuolatinė
+        created:
+          label: 'Įkėlimo data'
+        changed:
+          label: 'Keitimo data'
+        count:
+          label: Naudojama
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          submit_button: Filtruoti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      empty:
+        area_text_custom:
+          content: 'Failų nėra.'
+      filters:
+        filename:
+          expose:
+            label: 'Failo pavadinimas'
+        filemime:
+          expose:
+            label: 'MIME tipas'
+        status:
+          expose:
+            label: Būsena
+  page_1:
+    display_options:
+      menu:
+        title: Failai
+  page_2:
+    display_options:
+      fields:
+        type:
+          label: 'Entity tipas'
+        module:
+          label: 'Registruojantis modulis'
+        count:
+          label: 'Naudojimų kiekis'
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      arguments:
+        fid:
+          exception:
+            title: Visi

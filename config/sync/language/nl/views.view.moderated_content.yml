@@ -1,0 +1,61 @@
+label: 'Gemodereerde inhoud'
+description: 'Inhoud zoeken en modereren.'
+display:
+  default:
+    display_title: Standaard
+    display_options:
+      title: 'Gemodereerde inhoud'
+      fields:
+        title:
+          label: Titel
+          separator: ', '
+        type:
+          label: Inhoudstype
+          separator: ', '
+        name:
+          label: Auteur
+          separator: ', '
+        moderation_state:
+          label: Moderatiestatus
+          separator: ', '
+        changed:
+          label: Bijgewerkt
+          separator: ', '
+        operations:
+          label: Bewerkingen
+      pager:
+        options:
+          tags:
+            next: 'Volgende ›'
+            previous: '‹ Vorige'
+            first: '« Eerste'
+            last: 'Laatste »'
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      empty:
+        area_text_custom:
+          content: 'Geen inhoud beschikbaar voor moderatie. Alleen inhoud die op moderatie wacht, zoals concepten, wordt hier getoond.'
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Inhoudstype
+        moderation_state:
+          expose:
+            label: Moderatiestatus
+        langcode:
+          expose:
+            label: Taal
+  moderated_content:
+    display_title: 'Gemodereerde inhoud'

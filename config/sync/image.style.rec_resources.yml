@@ -1,0 +1,7 @@
+uuid: fde1b84f-4575-49c7-8665-175c8cbc3e88
+langcode: en
+status: true
+dependencies: {  }
+name: rec_resources
+label: rec_resources
+effects: {  }

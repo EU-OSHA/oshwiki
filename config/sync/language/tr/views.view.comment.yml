@@ -1,0 +1,105 @@
+label: Yorumlar
+description: 'Yorumları bulun ve yönetin.'
+display:
+  default:
+    display_title: Varsayılan
+    display_options:
+      title: Yorumlar
+      fields:
+        comment_bulk_form:
+          action_title: Eylem
+        subject:
+          label: Konu
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Yazar
+          separator: ', '
+        entity_id:
+          label: 'İlgili konu'
+          separator: ', '
+        changed:
+          label: Güncellendi
+          separator: ', '
+        operations:
+          label: İşlemler
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'sonraki ›'
+            previous: '‹ önceki'
+            first: '« ilk'
+            last: 'son »'
+          expose:
+            items_per_page_label: 'Sayfa başına öğe sayısı'
+            items_per_page_options_all_label: '- Tümü -'
+            offset_label: 'Başlangıç değeri'
+      exposed_form:
+        options:
+          submit_button: Süzgeç
+          reset_button_label: Sıfırla
+          exposed_sorts_label: 'Sıralama anahtarı'
+          sort_asc_label: Artan
+          sort_desc_label: Azalan
+      empty:
+        area_text_custom:
+          content: 'Yorum mevcut değil.'
+      filters:
+        subject:
+          expose:
+            label: Konu
+        combine:
+          expose:
+            label: 'Yazar adı'
+        langcode:
+          expose:
+            label: Dil
+      use_more_text: 'daha fazla'
+  page_published:
+    display_title: 'Yayınlanmış yorumlar'
+    display_options:
+      display_description: 'Onaylanmış yorumlar listesi.'
+      menu:
+        title: Yorumlar
+        description: 'Yayımlanan yorumlar'
+  page_unapproved:
+    display_title: 'Onaylanmamış yorumlar'
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Eylem
+        subject:
+          label: Konu
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Yazar
+          separator: ', '
+        entity_id:
+          label: 'İlgili konu'
+          separator: ', '
+        changed:
+          label: Güncellendi
+          separator: ', '
+        operations:
+          label: İşlemler
+        name_1:
+          separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Konu
+        combine:
+          expose:
+            label: 'Yazar Adı'
+        langcode:
+          expose:
+            label: Dil
+      display_description: 'Onaylanmamış yorumlar listesi.'
+      menu:
+        title: 'Onaylanmamış yorumlar'
+        description: 'Onaylanmamış yorumlar'

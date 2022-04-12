@@ -1,0 +1,10 @@
+uuid: da537406-43ee-4be2-b247-0e688a0887f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - tmgmt
+id: tmgmt_job.token
+label: Token
+targetEntityType: tmgmt_job
+cache: true

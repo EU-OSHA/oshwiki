@@ -1,0 +1,43 @@
+uuid: 4e3ee2ee-51d0-4ee8-a85d-13366de39bee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.scientific_journal.field_article_science
+    - field.field.node.scientific_journal.field_authors_other_sources
+    - field.field.node.scientific_journal.field_authors_science
+    - field.field.node.scientific_journal.field_image_science
+    - field.field.node.scientific_journal.field_introduction_science
+    - field.field.node.scientific_journal.field_issue_science
+    - field.field.node.scientific_journal.field_pdf_science
+    - field.field.node.scientific_journal.field_published_date_science
+    - field.field.node.scientific_journal.field_themes_science
+    - field.field.node.scientific_journal.field_volume_science
+    - field.field.node.scientific_journal.field_year_science
+    - node.type.scientific_journal
+  module:
+    - user
+id: node.scientific_journal.teaser
+targetEntityType: node
+bundle: scientific_journal
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_article_science: true
+  field_authors_other_sources: true
+  field_authors_science: true
+  field_image_science: true
+  field_introduction_science: true
+  field_issue_science: true
+  field_pdf_science: true
+  field_published_date_science: true
+  field_themes_science: true
+  field_volume_science: true
+  field_year_science: true
+  langcode: true

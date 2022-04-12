@@ -1,0 +1,8 @@
+uuid: 71ef1d24-47a9-4e29-b857-4bb99966493b
+langcode: en
+status: true
+dependencies: {  }
+name: 'OSH Categories'
+vid: osh_categories
+description: ''
+weight: 0

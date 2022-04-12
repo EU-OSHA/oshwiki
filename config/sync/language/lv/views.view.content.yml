@@ -1,0 +1,53 @@
+label: Saturs
+description: 'Meklēt un pārvaldīt saturu.'
+display:
+  default:
+    display_title: 'Noklusētā vērtība'
+    display_options:
+      title: Saturs
+      fields:
+        title:
+          label: Virsraksts
+        type:
+          label: 'Satura veids'
+        name:
+          label: Autors
+        status:
+          label: Statuss
+          settings:
+            format_custom_true: Publicēts
+        operations:
+          label: Darbības
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      empty:
+        area_text_custom:
+          content: 'Nav pieejams nekāds saturs.'
+      filters:
+        title:
+          expose:
+            label: Virsraksts
+        type:
+          expose:
+            label: 'Satura veids'
+        status:
+          expose:
+            label: Statuss
+          group_info:
+            group_items:
+              1:
+                title: Publicēts
+        langcode:
+          expose:
+            label: Valoda
+  page_1:
+    display_title: Lapa
+    display_options:
+      menu:
+        title: Saturs
+      tab_options:
+        title: Saturs

@@ -2,24 +2,6 @@ display:
   default:
     display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Zurücksetzen
-          exposed_sorts_label: 'Sortieren nach'
-          sort_asc_label: Aufsteigend
-          sort_desc_label: Absteigend
-      pager:
-        options:
-          tags:
-            previous: '‹ Vorherige Seite'
-            next: 'Nächste Seite ›'
-            first: '« Anfang'
-            last: 'Ende »'
-          expose:
-            items_per_page_label: 'Elemente pro Seite'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Versatz
       fields:
         user_bulk_form:
           label: Massenaktualisierung
@@ -27,10 +9,30 @@ display:
           label: Status
           settings:
             format_custom_true: Aktiv
+        roles_target_id:
+          label: Rollen
         operations:
           label: Aktionen
         mail:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Nächste Seite ›'
+            previous: '‹ Vorherige Seite'
+            first: '« Anfang'
+            last: 'Ende »'
+          expose:
+            items_per_page_label: 'Elemente pro Seite'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Versatz
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sortieren nach'
+          sort_asc_label: Aufsteigend
+          sort_desc_label: Absteigend
       filters:
         status:
           group_info:

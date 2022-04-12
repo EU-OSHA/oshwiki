@@ -1,0 +1,268 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Seguinte ›'
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Com a seleção'
+        title:
+          label: Título
+          separator: ', '
+        item_count:
+          label: Itens
+        progress:
+          label: Progresso
+  assigned:
+    display_title: Atribuído
+    display_options:
+      menu:
+        title: Atribuído
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Com a seleção'
+        status:
+          label: Estado
+          separator: ', '
+        progress:
+          label: Progresso
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma fonte'
+        uid:
+          expose:
+            label: Fornecedor
+        title:
+          expose:
+            label: Título
+  closed:
+    display_title: Encerrada
+    display_options:
+      menu:
+        title: Encerrada
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Com a seleção'
+        status:
+          label: Estado
+          separator: ', '
+        progress:
+          label: Progresso
+        created:
+          label: Criado
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma fonte'
+        uid:
+          expose:
+            label: Fornecedor
+        title:
+          expose:
+            label: Título
+  completed:
+    display_title: Concluída
+    display_options:
+      menu:
+        title: Concluída
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Com a seleção'
+        status:
+          label: Estado
+          separator: ', '
+        progress:
+          label: Progresso
+        created:
+          label: Criado
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma fonte'
+        uid:
+          expose:
+            label: Fornecedor
+        title:
+          expose:
+            label: Título
+  pending:
+    display_title: Pendente
+    display_options:
+      menu:
+        title: Pendente
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Com a seleção'
+        status:
+          label: Estado
+          format_plural_string: !!binary MQNAY291bnQ=
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        progress:
+          label: Progresso
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma fonte'
+        uid:
+          expose:
+            label: Fornecedor
+        title:
+          expose:
+            label: Título
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Com a seleção'
+        status:
+          label: Estado
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Progresso
+        created:
+          label: Criado
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma fonte'
+        uid:
+          expose:
+            label: Fornecedor
+        title:
+          expose:
+            label: Título
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Com a seleção'
+        status:
+          label: Estado
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações

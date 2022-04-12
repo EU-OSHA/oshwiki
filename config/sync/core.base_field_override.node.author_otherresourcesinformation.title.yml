@@ -1,0 +1,18 @@
+uuid: 75c4ca95-22cf-4cdb-a37f-8bfb67309fc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.author_otherresourcesinformation
+id: node.author_otherresourcesinformation.title
+field_name: title
+entity_type: node
+bundle: author_otherresourcesinformation
+label: 'Name and surname'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

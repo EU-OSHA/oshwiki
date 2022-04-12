@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      fields:
+        state:
+          label: Статус
+        label:
+          label: Заглавие
+        type:
+          label: Тип
+        source_language:
+          label: От
+        target_language:
+          label: До
+        tags_count:
+          label: Таг
+        operations:
+          label: Действия
+      filters:
+        state:
+          group_info:
+            label: Статус
+  page_1:
+    display_title: Страница

@@ -1,0 +1,15 @@
+uuid: 7d8029e7-a3ec-45fb-b73e-e9151304f53a
+langcode: en
+status: true
+dependencies: {  }
+name: resource
+label: resource
+effects:
+  3ccefcf3-2c92-4069-95b8-5bcad553fa45:
+    uuid: 3ccefcf3-2c92-4069-95b8-5bcad553fa45
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 66
+      height: 66
+      anchor: center-center

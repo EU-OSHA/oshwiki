@@ -1,0 +1,19 @@
+label: 'Ostatnie komentarze'
+description: 'Ostatnie komentarze.'
+display:
+  default:
+    display_title: Domyślny
+    display_options:
+      title: 'Ostatnie komentarze'
+      fields:
+        changed:
+          settings:
+            past_format: '@interval temu'
+      empty:
+        area_text_custom:
+          content: 'Brak dostępnych komentarzy.'
+  block_1:
+    display_title: Blok
+    display_options:
+      block_description: 'Ostatnie komentarze'
+      block_category: 'Listy (Widoki)'

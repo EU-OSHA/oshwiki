@@ -1,0 +1,257 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Φίλτρο
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+          tags:
+            previous: '‹ Προηγούμενο'
+            next: 'Επόμενο ›'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        title:
+          label: Ετικέτα
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+      filters:
+        status:
+          expose:
+            label: Κατάσταση
+  closed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Ετικέτα
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        operations:
+          label: Λειτουργίες
+      filters:
+        status:
+          expose:
+            label: Κατάσταση
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        title:
+          expose:
+            label: Ετικέτα
+      menu:
+        title: 'Έχει κλείσει'
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Ετικέτα
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        operations:
+          label: Λειτουργίες
+      filters:
+        status:
+          expose:
+            label: Κατάσταση
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        title:
+          expose:
+            label: Ετικέτα
+      menu:
+        title: Ολοκληρώθηκε
+  eligible:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Ετικέτα
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        operations:
+          label: Λειτουργίες
+      filters:
+        status:
+          expose:
+            label: Κατάσταση
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        title:
+          expose:
+            label: Ετικέτα
+  my_tasks:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+        title:
+          label: Ετικέτα
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        operations:
+          label: Λειτουργίες
+      filters:
+        status:
+          expose:
+            label: Κατάσταση
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        title:
+          expose:
+            label: Ετικέτα
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          separator: ', '
+        title:
+          label: Ετικέτα
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        operations:
+          label: Λειτουργίες
+      filters:
+        status:
+          expose:
+            label: Κατάσταση
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        title:
+          expose:
+            label: Ετικέτα
+      menu:
+        title: Εκκρεμεί
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Ετικέτα
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        operations:
+          label: Λειτουργίες
+      filters:
+        status:
+          expose:
+            label: Κατάσταση
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        title:
+          expose:
+            label: Ετικέτα
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Ετικέτα
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        operations:
+          label: Λειτουργίες
+      filters:
+        status:
+          expose:
+            label: Κατάσταση
+      tab_options:
+        title: Μετάφραση

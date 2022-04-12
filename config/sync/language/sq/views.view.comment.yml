@@ -1,0 +1,64 @@
+label: Komente
+display:
+  default:
+    display_title: 'E Paracaktuar'
+    display_options:
+      title: Komente
+      fields:
+        comment_bulk_form:
+          action_title: Veprimi
+        subject:
+          label: Subjekti
+        name:
+          label: Autori
+        entity_id:
+          label: 'Dërguar në'
+        operations:
+          label: Operacionet
+      pager:
+        options:
+          tags:
+            next: 'në vazhdim ›'
+            previous: '‹ paraardhëse'
+            first: '« e para'
+            last: 'e fundit »'
+      exposed_form:
+        options:
+          submit_button: Filtri
+          reset_button_label: Rifillo
+      empty:
+        area_text_custom:
+          content: 'Asnjë koment në dispozicion.'
+      filters:
+        subject:
+          expose:
+            label: Subjekti
+        langcode:
+          expose:
+            label: Gjuha
+      use_more_text: tjetër
+  page_published:
+    display_title: 'Komentet e publikuar'
+    display_options:
+      menu:
+        title: Komente
+  page_unapproved:
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Veprimi
+        subject:
+          label: Subjekti
+        name:
+          label: Autori
+        entity_id:
+          label: 'Dërguar në'
+        operations:
+          label: Operacionet
+      filters:
+        subject:
+          expose:
+            label: Subjekti
+        langcode:
+          expose:
+            label: Gjuha

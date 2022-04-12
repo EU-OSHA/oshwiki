@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+          tags:
+            previous: '< Fyrri'
+      fields:
+        status:
+          label: Staða
+        label:
+          label: Merking
+        item_type:
+          label: Gerð
+          separator: ', '
+        word_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      arguments:
+        tltid:
+          exception:
+            title: Allt
+  block_1:
+    display_title: Blokk

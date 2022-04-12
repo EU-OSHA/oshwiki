@@ -1,0 +1,12 @@
+uuid: e7bf6e9c-9af2-45d9-9bac-21912ea1c402
+langcode: en
+status: true
+dependencies: {  }
+label: Highlights
+id: custom_crop_
+description: 'Custom crop (minimum crop dimensions 220x220 and maintain proportions)'
+aspect_ratio: '1:1'
+soft_limit_width: 220
+soft_limit_height: 220
+hard_limit_width: 220
+hard_limit_height: 220

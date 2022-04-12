@@ -1,0 +1,37 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      pager:
+        options:
+          tags:
+            previous: '‹ предишна'
+            next: 'следваща ›'
+            first: '« първа'
+            last: 'последна »'
+      fields:
+        state:
+          label: Статус
+        label:
+          label: Заглавие
+        type:
+          label: Тип
+        tags_count:
+          label: Таг
+        operations:
+          label: Действия
+      arguments:
+        tjid:
+          exception:
+            title: Всички
+  checkout:
+    display_title: Поръчване
+    display_options:
+      fields:
+        label:
+          label: Заглавие
+        type:
+          label: Тип

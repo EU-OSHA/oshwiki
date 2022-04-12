@@ -1,0 +1,24 @@
+uuid: 77c33520-c860-4408-a9b6-bc8ddce0b911
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_e_mail
+    - paragraphs.paragraphs_type.authors_paragraph
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.authors_paragraph.field_e_mail
+field_name: field_e_mail
+entity_type: paragraph
+bundle: authors_paragraph
+label: E-mail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

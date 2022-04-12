@@ -1,0 +1,12 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Сите -'
+  widget_table:
+    display_options:
+      fields:
+        uid:
+          label: Автор

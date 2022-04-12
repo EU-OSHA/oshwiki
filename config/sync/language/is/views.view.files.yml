@@ -1,0 +1,55 @@
+label: Skrár
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      title: Skrár
+      fields:
+        filename:
+          label: Nafn
+          separator: ', '
+        filesize:
+          label: Stærð
+        status:
+          label: Staða
+          settings:
+            format_custom_false: Tímabundið
+      pager:
+        options:
+          tags:
+            previous: '< Fyrri'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      filters:
+        filename:
+          expose:
+            label: Skráarnafn
+        status:
+          expose:
+            label: Staða
+  page_1:
+    display_options:
+      menu:
+        title: Skrár
+  page_2:
+    display_options:
+      fields:
+        count:
+          label: Notkun
+      pager:
+        options:
+          tags:
+            previous: '< Fyrri'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      arguments:
+        fid:
+          exception:
+            title: Allt

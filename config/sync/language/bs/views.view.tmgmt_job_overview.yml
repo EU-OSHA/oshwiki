@@ -1,0 +1,24 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      pager:
+        options:
+          tags:
+            previous: '‹ prethodna'
+            next: 'iduća ›'
+            first: '« prva'
+            last: 'zadnja »'
+      fields:
+        label:
+          label: Oznaka
+        tags_count:
+          label: Tagovi
+        operations:
+          label: Operacije
+  page_1:
+    display_title: Strana

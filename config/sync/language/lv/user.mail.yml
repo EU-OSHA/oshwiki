@@ -1,0 +1,8 @@
+password_reset:
+  subject: 'Lietotāja [user:display-name] pieejas datu maiņa vietnē [site:name]'
+  body: "[user:display-name],\r\n\r\nVietnē [site:name] tika veikts Jūsu konta paroles attiestatīšanas pieprasījums.\r\n\r\nJūs varat pieslēgties klikšķinot uz šīs saites vai iekopējot to savā pārlūkprogrammā:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠo saiti var izmantot tikai vienu reizi un tā Jūs novirzīs uz lapu, kur varēsiet uzstādīt savu paroli. Saite ir derīga vienu dienu, nekas netiks mainīts, ja to neizmantosiet.\r\n\r\n--  [site:name] komanda"
+register_admin_created:
+  subject: 'Administrators ir izveidojis Jums kontu vietnē [site:name]'
+  body: "[user:display-name],\r\n\r\nVietnes [site:name] administrators ir izveidojis Jums kontu. Jūs varat pieslēgties, klikšķinot uz šīs saites vai iekopējot to savā pārlūkprogrammā:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠo saiti var izmantot tikai vienu reizi un tā Jūs novirzīs uz lapu, kurā varēsiet uzstādīt savu paroli.\r\n\r\nPēc paroles uzstādīšanas Jūs varēsiet pieslēgties vietnei [site:login-url], izmantojot šādus pieejas datus:\r\n\r\nlietotāja vārds: [user:name]\r\nparole: Jūsu parole\r\n\r\n--  [site:name] komanda"
+register_no_approval_required:
+  body: "[user:display-name],\r\n\r\nPaldies, ka reģistrējāties [site:name]. Jūs varat pieslēgties, klikšķinot uz šīs saites vai iekopējot to savā pārlūkprogrammā:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠo saiti var izmantot tikai vienu reizi un tā Jūs novirzīs uz lapu, kurā varēsiet uzstādīt savu paroli.\r\n\r\nPēc paroles uzstādīšanas Jūs varēsiet pieslēgties vietnei [site:login-url], izmantojot šādus pieejas datus:\r\n\r\nlietotāja vārds: [user:name]\r\nparole: Jūsu parole\r\n\r\n--  [site:name] komanda"

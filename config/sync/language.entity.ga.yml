@@ -1,0 +1,9 @@
+uuid: 8e81ba42-ae01-4187-ab9b-b7e2940c4d9a
+langcode: en
+status: true
+dependencies: {  }
+id: ga
+label: Irish
+direction: ltr
+weight: 31
+locked: false

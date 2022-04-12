@@ -1,0 +1,20 @@
+label: Szerkesztői
+type_settings:
+  states:
+    archived:
+      label: Archivált
+    draft:
+      label: Vázlat
+    published:
+      label: Közzétéve
+  transitions:
+    archive:
+      label: Archiválás
+    archived_draft:
+      label: 'Visszaállítás vázlatként'
+    archived_published:
+      label: Visszaállítás
+    create_new_draft:
+      label: 'Új vázlat létrehozása'
+    publish:
+      label: Közzététel

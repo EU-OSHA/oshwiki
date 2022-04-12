@@ -1,0 +1,181 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        title:
+          label: Etiķete
+        item_count:
+          label: Vienumi
+      filters:
+        status:
+          expose:
+            label: Statuss
+  closed:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Etiķete
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Etiķete
+      menu:
+        title: Slēgts
+  completed:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Etiķete
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Etiķete
+      menu:
+        title: Pabeigts
+  eligible:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Etiķete
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Etiķete
+  my_tasks:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Etiķete
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Etiķete
+  pending:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Etiķete
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Etiķete
+      menu:
+        title: Gaida
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Etiķete
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+        title:
+          expose:
+            label: Etiķete
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Etiķete
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        status:
+          expose:
+            label: Statuss
+      tab_options:
+        title: Tulkot

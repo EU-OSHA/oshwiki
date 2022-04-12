@@ -1,0 +1,58 @@
+label: Notendur
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      title: Notendur
+      fields:
+        name:
+          label: Notendanafn
+        status:
+          label: Staða
+          settings:
+            format_custom_false: Óvirkur
+            format_custom_true: Virkt
+        roles_target_id:
+          label: Hlutverk
+        created:
+          label: 'Meðlimur í'
+        operations:
+          label: Aðgerðir
+        mail:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            previous: '< Fyrri'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      filters:
+        status:
+          group_info:
+            label: Staða
+            group_items:
+              1:
+                title: Virkt
+              2:
+                title: Óvirkur
+        roles_target_id:
+          expose:
+            label: Hlutverk
+        permission:
+          expose:
+            label: Réttindi
+      use_more_text: meira
+  page_1:
+    display_title: Síða
+    display_options:
+      menu:
+        title: Listi
+      tab_options:
+        title: Notendur
+        description: 'Sjá um notendaaðgang, rullur og réttindi.'

@@ -1,0 +1,44 @@
+uuid: e86395bf-e800-4c92-8cfd-1a3be0011e6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_further_reading_oshwiki
+    - node.type.oshwiki_articles
+    - paragraphs.paragraphs_type.further_reading_paragraph
+  module:
+    - entity_reference_revisions
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.oshwiki_articles.field_further_reading_oshwiki
+field_name: field_further_reading_oshwiki
+entity_type: node
+bundle: oshwiki_articles
+label: 'Further reading'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      further_reading_paragraph: further_reading_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      authors_paragraph:
+        weight: 5
+        enabled: false
+      further_reading_paragraph:
+        weight: 6
+        enabled: true
+      references_paragraph:
+        weight: 7
+        enabled: false
+      sections_paragraph:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

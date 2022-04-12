@@ -1,0 +1,25 @@
+uuid: d47a8a7b-0189-47bb-b7ea-67265c8c7b6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_and_sur_contributors
+    - node.type.contributors_content
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.contributors_content.field_name_and_sur_contributors
+field_name: field_name_and_sur_contributors
+entity_type: node
+bundle: contributors_content
+label: 'Name and surname'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

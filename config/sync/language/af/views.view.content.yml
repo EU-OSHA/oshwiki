@@ -1,0 +1,45 @@
+label: Inhoud
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      title: Inhoud
+      fields:
+        title:
+          label: Titel
+        name:
+          label: Outeur
+        status:
+          label: Status
+          settings:
+            format_custom_false: Ongepubliseerd
+            format_custom_true: Gepubliseerd
+        operations:
+          label: Aksies
+      exposed_form:
+        options:
+          submit_button: Filtreer
+          reset_button_label: Herstel
+      filters:
+        title:
+          expose:
+            label: Titel
+        status:
+          expose:
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: Gepubliseerd
+              2:
+                title: Ongepubliseerd
+        langcode:
+          expose:
+            label: Taal
+  page_1:
+    display_title: Bladsy
+    display_options:
+      menu:
+        title: Inhoud
+      tab_options:
+        title: Inhoud

@@ -2,6 +2,9 @@ display:
   default:
     display_title: 'Par défaut'
     display_options:
+      fields:
+        changed:
+          separator: ', '
       exposed_form:
         options:
           submit_button: Appliquer
@@ -9,8 +12,5 @@ display:
           exposed_sorts_label: 'Trier par'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      fields:
-        changed:
-          separator: ', '
   block_1:
     display_title: Bloc

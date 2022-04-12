@@ -1,0 +1,50 @@
+label: Потребители
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      title: Потребители
+      fields:
+        name:
+          label: 'Потребителско име'
+        status:
+          label: Статус
+          settings:
+            format_custom_false: Блокиран
+            format_custom_true: Активен
+        roles_target_id:
+          label: Роли
+        created:
+          label: 'Член от'
+        access:
+          label: 'Последен достъп'
+        operations:
+          label: Действия
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Рестартирай
+      filters:
+        status:
+          group_info:
+            label: Статус
+            group_items:
+              1:
+                title: Активен
+              2:
+                title: Блокиран
+        roles_target_id:
+          expose:
+            label: Роля
+        permission:
+          expose:
+            label: Разрешение
+      use_more_text: още
+  page_1:
+    display_title: Страница
+    display_options:
+      menu:
+        title: Списък
+      tab_options:
+        title: Потребители
+        description: 'Управление на потребителските акаунти, роли и права'

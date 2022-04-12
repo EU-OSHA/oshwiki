@@ -1,0 +1,7 @@
+tips:
+  views-ui-format:
+    label: 'Izlazni format'
+  views-ui-fields:
+    label: Polja
+  views-ui-preview:
+    label: Pregled

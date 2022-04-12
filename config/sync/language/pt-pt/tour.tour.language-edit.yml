@@ -1,0 +1,12 @@
+label: 'A editar os idiomas'
+tips:
+  language-edit-overview:
+    label: 'A editar os idiomas'
+  language-edit-langcode:
+    label: 'Código de idioma'
+  language-edit-label:
+    label: 'Nome do idioma'
+  language-edit-direction:
+    label: 'Direção do idioma'
+  language-edit-continue:
+    label: 'Continuando em'

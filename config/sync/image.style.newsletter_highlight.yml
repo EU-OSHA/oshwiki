@@ -1,0 +1,15 @@
+uuid: 7153e1de-850a-4bf8-9133-7aa5aeafe558
+langcode: en
+status: true
+dependencies: {  }
+name: newsletter_highlight
+label: 'Newsletter highlight (reuse crop highlight)'
+effects:
+  d930d393-d12d-4223-8649-18a9b16af7da:
+    uuid: d930d393-d12d-4223-8649-18a9b16af7da
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center
