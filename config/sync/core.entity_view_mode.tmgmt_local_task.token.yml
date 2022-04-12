@@ -1,0 +1,10 @@
+uuid: 8afb1344-42dd-4fa4-86d3-1ffa3ae00f0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - tmgmt_local
+id: tmgmt_local_task.token
+label: Token
+targetEntityType: tmgmt_local_task
+cache: true

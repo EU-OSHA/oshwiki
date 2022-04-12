@@ -1,0 +1,17 @@
+label: 'Nedávne komentáre'
+display:
+  default:
+    display_title: Predvolené
+    display_options:
+      title: 'Nedávne komentáre'
+      fields:
+        changed:
+          settings:
+            past_format: 'pred @interval'
+      empty:
+        area_text_custom:
+          content: 'Žiadne komentáre nie sú dostupné.'
+  block_1:
+    display_title: Blok
+    display_options:
+      block_description: 'Nedávne komentáre'

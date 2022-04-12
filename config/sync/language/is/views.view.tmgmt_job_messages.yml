@@ -1,0 +1,30 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          tags:
+            previous: '‹ fyrri'
+            next: 'næsta ›'
+            first: '« fremsta'
+            last: 'aftasta »'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      fields:
+        created:
+          label: Stofnað
+        label:
+          label: Hlutur
+        name:
+          label: Nafn
+          separator: ', '
+      arguments:
+        tjid:
+          exception:
+            title: Allt

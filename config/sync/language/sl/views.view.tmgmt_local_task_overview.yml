@@ -1,0 +1,173 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Ponastavi
+      fields:
+        title:
+          label: Oznaka
+        item_count:
+          label: Notice
+      filters:
+        status:
+          expose:
+            label: Stanje
+  closed:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Oznaka
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        status:
+          expose:
+            label: Stanje
+        title:
+          expose:
+            label: Oznaka
+      menu:
+        title: Zaprto
+  completed:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Oznaka
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        status:
+          expose:
+            label: Stanje
+        title:
+          expose:
+            label: Oznaka
+  eligible:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Oznaka
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        status:
+          expose:
+            label: Stanje
+        title:
+          expose:
+            label: Oznaka
+  my_tasks:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Oznaka
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        status:
+          expose:
+            label: Stanje
+        title:
+          expose:
+            label: Oznaka
+  pending:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Oznaka
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        status:
+          expose:
+            label: Stanje
+        title:
+          expose:
+            label: Oznaka
+      menu:
+        title: Čaka
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Oznaka
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        status:
+          expose:
+            label: Stanje
+        title:
+          expose:
+            label: Oznaka
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Stanje
+        title:
+          label: Oznaka
+        source_language:
+          label: Od
+        target_language:
+          label: Za
+        item_count:
+          label: Notice
+        operations:
+          label: Operacije
+      filters:
+        status:
+          expose:
+            label: Stanje
+      tab_options:
+        title: Prevodi

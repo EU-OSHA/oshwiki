@@ -1,0 +1,27 @@
+uuid: 5ab1111f-ccc0-4e0e-8358-65ab9a4d8c09
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contributors_content.field_name_and_sur_contributors
+    - field.field.node.contributors_content.field_organization_contributors
+    - field.field.node.contributors_content.field_position_contributors
+    - node.type.contributors_content
+  module:
+    - user
+id: node.contributors_content.teaser
+targetEntityType: node
+bundle: contributors_content
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_name_and_sur_contributors: true
+  field_organization_contributors: true
+  field_position_contributors: true
+  langcode: true

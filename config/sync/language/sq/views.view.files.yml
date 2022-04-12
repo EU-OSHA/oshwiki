@@ -1,0 +1,25 @@
+display:
+  default:
+    display_title: 'E Paracaktuar'
+    display_options:
+      fields:
+        filename:
+          label: Emri
+        filesize:
+          label: Madhësia
+        status:
+          label: Gjendja
+      exposed_form:
+        options:
+          submit_button: Filtri
+          reset_button_label: Rifillo
+      filters:
+        status:
+          expose:
+            label: Gjendja
+  page_2:
+    display_options:
+      arguments:
+        fid:
+          exception:
+            title: 'Të gjitha'

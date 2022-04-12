@@ -1,0 +1,59 @@
+display:
+  default:
+    display_title: Principale
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applica
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
+          sort_desc_label: Disc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
+          tags:
+            previous: '‹ precedente'
+            next: 'seguente ›'
+            first: '« prima'
+            last: 'ultima »'
+      fields:
+        state:
+          label: Stato
+        label:
+          label: Etichetta
+        type:
+          label: Tipo
+        word_count:
+          label: Parole
+          separator: ', '
+        tags_count:
+          label: Etichette
+          separator: ', '
+        changed:
+          label: Modificato
+        operations:
+          label: Operazioni
+      arguments:
+        tjid:
+          exception:
+            title: Tutti
+  checkout:
+    display_title: 'Vai alla cassa'
+    display_options:
+      fields:
+        label:
+          label: Etichetta
+        type:
+          label: Tipo
+        word_count:
+          label: Parole
+          separator: ', '
+        changed:
+          label: Modificato
+          separator: ', '
+  submitted:
+    display_title: Inserito

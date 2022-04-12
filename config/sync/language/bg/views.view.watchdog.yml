@@ -1,0 +1,37 @@
+label: Цербер
+description: 'Последни лог записи'
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      title: 'Последни лог записи'
+      fields:
+        severity:
+          label: Строгост
+        type:
+          label: Тип
+        timestamp:
+          label: Дата
+        message:
+          label: Съобщение
+        name:
+          label: Потребител
+        link:
+          label: Действия
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Рестартирай
+      empty:
+        area:
+          admin_label: 'Няма лог. съобщения'
+          content: 'Няма лог. съобщения'
+      filters:
+        type:
+          expose:
+            label: Тип
+        severity:
+          expose:
+            label: Строгост
+  page:
+    display_title: Страница

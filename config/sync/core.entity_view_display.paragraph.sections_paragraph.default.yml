@@ -1,0 +1,40 @@
+uuid: 251a0f0d-637f-4e10-b849-0ad2f9eb8240
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sections_paragraph.field_description_sections
+    - field.field.paragraph.sections_paragraph.field_media
+    - field.field.paragraph.sections_paragraph.field_title_sections
+    - paragraphs.paragraphs_type.sections_paragraph
+  module:
+    - text
+id: paragraph.sections_paragraph.default
+targetEntityType: paragraph
+bundle: sections_paragraph
+mode: default
+content:
+  field_description_sections:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_sections:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

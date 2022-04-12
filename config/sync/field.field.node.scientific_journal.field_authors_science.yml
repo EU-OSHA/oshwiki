@@ -1,0 +1,44 @@
+uuid: c2d194d4-44ef-48fe-a0dc-8bf1b463d681
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authors_science
+    - node.type.scientific_journal
+    - paragraphs.paragraphs_type.authors_paragraph
+  module:
+    - entity_reference_revisions
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.scientific_journal.field_authors_science
+field_name: field_authors_science
+entity_type: node
+bundle: scientific_journal
+label: authors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      authors_paragraph: authors_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      authors_paragraph:
+        weight: 5
+        enabled: true
+      further_reading_paragraph:
+        weight: 6
+        enabled: false
+      references_paragraph:
+        weight: 7
+        enabled: false
+      sections_paragraph:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

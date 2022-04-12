@@ -1,0 +1,61 @@
+label: 'Modereeritud sisu'
+description: 'Otsi ja modereeri sisu.'
+display:
+  default:
+    display_title: Vaikimisi
+    display_options:
+      title: 'Modereeritud sisu'
+      fields:
+        title:
+          label: Pealkiri
+          separator: ', '
+        type:
+          label: 'Sisu tüüp'
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        moderation_state:
+          label: 'Modereerimise olek'
+          separator: ', '
+        changed:
+          label: Uuendatud
+          separator: ', '
+        operations:
+          label: Toimingud
+      pager:
+        options:
+          tags:
+            next: 'Järgmine ›'
+            previous: '‹ Eelmine'
+            first: '« Esimene'
+            last: 'Viimane »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      exposed_form:
+        options:
+          submit_button: Filtreeri
+          reset_button_label: Tühista
+          exposed_sorts_label: 'Sorteerimise alus'
+          sort_asc_label: Kasvav
+          sort_desc_label: Kahanev
+      empty:
+        area_text_custom:
+          content: 'Modereeritavat sisu pole saadaval. Siin kuvatakse ainult ootel olevaid versioone sisust, nagu mustandid.'
+      filters:
+        title:
+          expose:
+            label: Pealkiri
+        type:
+          expose:
+            label: 'Sisu tüüp'
+        moderation_state:
+          expose:
+            label: 'Modereerimise olek'
+        langcode:
+          expose:
+            label: Keel
+  moderated_content:
+    display_title: 'Modereeritud sisu'

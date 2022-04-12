@@ -1,0 +1,46 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        name:
+          label: 'Korisničko ime'
+        status:
+          label: Status
+          settings:
+            format_custom_false: Blokiran
+            format_custom_true: Aktivan
+        roles_target_id:
+          label: Uloge
+        created:
+          label: 'Član od'
+        access:
+          label: 'Zadnji pristup'
+        operations:
+          label: Operacije
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      filters:
+        status:
+          group_info:
+            label: Status
+            group_items:
+              1:
+                title: Aktivan
+              2:
+                title: Blokiran
+        roles_target_id:
+          expose:
+            label: Uloga
+        permission:
+          expose:
+            label: Dozvole
+      use_more_text: još
+  page_1:
+    display_title: Strana
+    display_options:
+      menu:
+        title: Izlistaj

@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      filters:
+        langcode:
+          expose:
+            label: Teanga
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: 'Cuir in eagar'
+        delete_media:
+          text: Scrios

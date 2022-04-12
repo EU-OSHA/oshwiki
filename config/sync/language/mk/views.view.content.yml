@@ -1,0 +1,20 @@
+label: Содржина
+display:
+  default:
+    display_options:
+      title: Содржина
+      fields:
+        title:
+          label: Наслов
+        name:
+          label: Автор
+      filters:
+        title:
+          expose:
+            label: Наслов
+  page_1:
+    display_options:
+      menu:
+        title: Содржина
+      tab_options:
+        title: Содржина

@@ -1,0 +1,69 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      filters:
+        status:
+          group_info:
+            label: Objavljeno
+            group_items:
+              1:
+                title: Objavljeno
+        name:
+          expose:
+            label: Ime
+        langcode:
+          expose:
+            label: Jezik
+  page:
+    display_title: Strana
+    display_options:
+      fields:
+        edit_media:
+          text: Izmjeni
+        delete_media:
+          text: Briši
+  widget:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Sve
+      filters:
+        name:
+          expose:
+            label: Ime
+      header:
+        display_link_grid:
+          label: Grid
+        display_link_table:
+          label: Tabela
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Ime
+        uid:
+          label: Autor
+      arguments:
+        bundle:
+          exception:
+            title: Sve
+      filters:
+        name:
+          expose:
+            label: Ime
+      header:
+        display_link_grid:
+          label: Grid
+        display_link_table:
+          label: Tabela

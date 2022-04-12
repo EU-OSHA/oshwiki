@@ -1,0 +1,8 @@
+label: Jazyk
+tips:
+  language-overview:
+    label: Jazyky
+  language-default:
+    label: 'Nastavit jazyk jako výchozí'
+  language-continue:
+    label: 'Pokračování na'

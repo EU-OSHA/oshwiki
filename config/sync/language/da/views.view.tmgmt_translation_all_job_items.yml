@@ -1,0 +1,63 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+          tags:
+            previous: '‹ Forrige'
+            next: 'Næste ›'
+            first: '« Første'
+            last: 'Sidste »'
+      fields:
+        state:
+          label: Status
+        label:
+          label: Etiket
+        type:
+          label: Type
+        source_language:
+          label: Fra
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        progress:
+          label: Fremdrift
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Tags
+          separator: ', '
+        changed:
+          label: Ændret
+          separator: ', '
+        operations:
+          label: Handlinger
+      filters:
+        state:
+          expose:
+            label: Tilstande
+          group_info:
+            label: Status
+        source_language:
+          expose:
+            label: Kildesprog
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normal
+  page_1:
+    display_title: Side

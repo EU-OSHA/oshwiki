@@ -1,0 +1,16 @@
+label: Nýskráðir
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      title: Nýskráðir
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+  block_1:
+    display_title: Nýskráðir
+    display_options:
+      block_description: Nýskráðir
+      block_category: Notandi

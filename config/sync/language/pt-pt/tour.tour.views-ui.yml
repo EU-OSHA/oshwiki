@@ -1,0 +1,27 @@
+label: 'Ver página de edição'
+tips:
+  views-main:
+    label: 'Gerir definições de visualização'
+    body: 'Ver ou editar a configuração.'
+  views-ui-displays:
+    label: 'Exibições nesta visualização'
+  views-ui-view-admin:
+    label: 'Ver administração'
+  views-ui-format:
+    label: 'Formato de saída'
+  views-ui-fields:
+    label: Campos
+    body: 'Se esta visualização utiliza campos, eles são listados aqui. Pode clicar num campo para o configurar.'
+  views-ui-filter:
+    label: 'Filtre a sua visualização'
+  views-ui-filter-operations:
+    label: 'Filtrar ações'
+    body: 'Adicionar, reordenar ou remover filtros.'
+  views-ui-sorts:
+    label: 'Critérios de Ordenação'
+  views-ui-sorts-operations:
+    label: 'Ordenar ações'
+    body: 'Adicionar, reordenar ou remover regras de ordenação.'
+  views-ui-preview:
+    label: Pré-visualizar
+    body: 'Mostrar uma pré-visualização da visualização do output.'

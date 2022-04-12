@@ -1,0 +1,16 @@
+label: Toimetuslik
+type_settings:
+  states:
+    archived:
+      label: Arhiveeritud
+    draft:
+      label: Mustand
+    published:
+      label: Avalikustatud
+  transitions:
+    archive:
+      label: Arhiveeri
+    create_new_draft:
+      label: 'Loo uus mustand'
+    publish:
+      label: Avalikustamine

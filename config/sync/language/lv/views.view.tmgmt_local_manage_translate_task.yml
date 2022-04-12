@@ -1,0 +1,161 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        title:
+          label: Virsraksts
+        item_count:
+          label: Vienumi
+  assigned:
+    display_title: Piešķirtie
+    display_options:
+      menu:
+        title: Piešķirtie
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Virsraksts
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        uid:
+          expose:
+            label: 'Pakalpojumu sniedzējs'
+        title:
+          expose:
+            label: Virsraksts
+  closed:
+    display_title: Slēgts
+    display_options:
+      menu:
+        title: Slēgts
+      fields:
+        status:
+          label: Statuss
+        created:
+          label: Izveidots
+        title:
+          label: Virsraksts
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        uid:
+          expose:
+            label: 'Pakalpojumu sniedzējs'
+        title:
+          expose:
+            label: Virsraksts
+  completed:
+    display_title: Pabeigts
+    display_options:
+      menu:
+        title: Pabeigts
+      fields:
+        status:
+          label: Statuss
+        created:
+          label: Izveidots
+        title:
+          label: Virsraksts
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        uid:
+          expose:
+            label: 'Pakalpojumu sniedzējs'
+        title:
+          expose:
+            label: Virsraksts
+  pending:
+    display_title: Gaida
+    display_options:
+      menu:
+        title: Gaida
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Virsraksts
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        uid:
+          expose:
+            label: 'Pakalpojumu sniedzējs'
+        title:
+          expose:
+            label: Virsraksts
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        created:
+          label: Izveidots
+        title:
+          label: Virsraksts
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības
+      filters:
+        uid:
+          expose:
+            label: 'Pakalpojumu sniedzējs'
+        title:
+          expose:
+            label: Virsraksts
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Statuss
+        title:
+          label: Virsraksts
+        source_language:
+          label: 'No'
+        target_language:
+          label: Kam
+        item_count:
+          label: Vienumi
+        operations:
+          label: Darbības

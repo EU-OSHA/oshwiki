@@ -1,0 +1,25 @@
+uuid: 75ef6e37-827d-42aa-82a9-6b0787c8697d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position_authors
+    - paragraphs.paragraphs_type.authors_paragraph
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.authors_paragraph.field_position_authors
+field_name: field_position_authors
+entity_type: paragraph
+bundle: authors_paragraph
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

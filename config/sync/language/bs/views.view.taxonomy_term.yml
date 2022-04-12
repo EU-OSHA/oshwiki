@@ -1,0 +1,23 @@
+label: 'Taksonomijski term'
+display:
+  default:
+    display_title: Default
+    display_options:
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      arguments:
+        tid:
+          exception:
+            title: Sve
+  feed_1:
+    display_title: Feed
+  page_1:
+    display_title: Strana

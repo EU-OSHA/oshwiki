@@ -1,0 +1,61 @@
+display:
+  default:
+    display_title: Isäntä
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Käytä
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+          tags:
+            previous: '‹ Edellinen'
+            next: 'Seuraava ›'
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
+      fields:
+        state:
+          label: Tila
+        label:
+          label: Tunnus
+        type:
+          label: Tyyppi
+        source_language:
+          label: Lähettäjä
+          separator: ', '
+        target_language:
+          label: Osoitteeseen
+          separator: ', '
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Tagit
+          separator: ', '
+        changed:
+          label: Muuttunut
+          separator: ', '
+        operations:
+          label: Toimenpiteet
+      filters:
+        state:
+          expose:
+            label: Tilat
+          group_info:
+            label: Tila
+        source_language:
+          expose:
+            label: Lähdekieli
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normaali
+  page_1:
+    display_title: Sivu

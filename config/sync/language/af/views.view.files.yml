@@ -1,0 +1,33 @@
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      fields:
+        filename:
+          label: Naam
+        filesize:
+          label: Grootte
+        status:
+          label: Status
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      exposed_form:
+        options:
+          submit_button: Filtreer
+          reset_button_label: Herstel
+      filters:
+        status:
+          expose:
+            label: Status
+  page_2:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      arguments:
+        fid:
+          exception:
+            title: Alle

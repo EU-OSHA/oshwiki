@@ -1,0 +1,57 @@
+label: Sadržaj
+description: 'Pretraga i upravljanje sadržajem'
+display:
+  default:
+    display_title: Zadano
+    display_options:
+      title: Sadržaj
+      fields:
+        title:
+          label: Naziv
+        type:
+          label: 'Vrsta sadržaja'
+          separator: ', '
+        name:
+          label: Autor
+        status:
+          label: Status
+          settings:
+            format_custom_true: Objavljeno
+        changed:
+          label: Osvježeno
+        operations:
+          label: Operacije
+      exposed_form:
+        options:
+          submit_button: Pročisti
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      empty:
+        area_text_custom:
+          content: 'Nema sadržaja.'
+      filters:
+        title:
+          expose:
+            label: Naziv
+        type:
+          expose:
+            label: 'Vrsta sadržaja'
+        status:
+          expose:
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: Objavljeno
+        langcode:
+          expose:
+            label: Jezik
+  page_1:
+    display_title: Stranica
+    display_options:
+      menu:
+        title: Sadržaj
+      tab_options:
+        title: Sadržaj

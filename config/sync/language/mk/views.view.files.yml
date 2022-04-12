@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Сите -'
+  page_2:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Сите -'

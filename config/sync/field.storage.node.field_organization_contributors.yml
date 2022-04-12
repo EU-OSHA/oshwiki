@@ -1,0 +1,20 @@
+uuid: 787e7423-6b00-4eb7-bc1a-82fb67ed06f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_organization_contributors
+field_name: field_organization_contributors
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

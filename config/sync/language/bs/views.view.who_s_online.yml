@@ -1,0 +1,18 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Ko je online'
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      filters:
+        access:
+          expose:
+            label: 'Zadnji pristup'
+  who_s_online_block:
+    display_title: 'Ko je online'
+    display_options:
+      block_description: 'Ko je online'

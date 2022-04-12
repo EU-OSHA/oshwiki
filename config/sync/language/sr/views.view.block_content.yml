@@ -1,0 +1,16 @@
+display:
+  default:
+    display_title: Подразумевано
+    display_options:
+      fields:
+        info:
+          label: 'Опис блока'
+        operations:
+          label: Операције
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Сортирај по'
+      filters:
+        info:
+          expose:
+            label: 'Опис блока'

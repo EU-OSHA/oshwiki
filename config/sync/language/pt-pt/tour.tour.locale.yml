@@ -1,0 +1,20 @@
+label: Tradução
+tips:
+  locale-overview:
+    label: 'Tradução da interface de utilizador'
+  locale-language:
+    label: 'Idioma de tradução'
+    body: 'Escolha o idioma que deseja traduzir.'
+  locale-search:
+    label: Pesquisar
+  locale-filter:
+    label: 'Filtrar a pesquisa'
+  locale-submit:
+    label: 'Aplicar o seu critério de pesquisa'
+    body: 'Para aplicar o seu critério de pesquisa, clique no botão <em>Filtrar</em>.'
+  locale-translate:
+    label: Traduzir
+  locale-validate:
+    label: 'Validar a tradução'
+  locale-continue:
+    label: 'Continuando em'

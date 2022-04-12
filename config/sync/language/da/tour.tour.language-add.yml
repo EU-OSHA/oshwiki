@@ -1,0 +1,11 @@
+label: 'Tilføjelse af sprog'
+tips:
+  language-add-overview:
+    label: 'Tilføjelse af sprog'
+    body: '<p>På denne side kan du tilføje de fleste almindelige sprog til dit site.</p><p>Hvis det ønskede sprog ikke er tilgængeligt, kan du tilføje et brugerdefineret sprog.</p>'
+  language-add-choose:
+    label: 'Vælg sprog'
+    body: '<p>Vælg et sprog på listen, eller vælg "Brugerdefineret sprog..." i slutningen af listen.</p><p>Klik på knappen "Tilføj sprog", når du har valgt et sprog.</p><p>Hvis du tilføjer et brugerdefineret sprog, får du en ekstra form, hvor du kan angive navn, kode og retning af sproget.</p>'
+  language-add-continue:
+    label: 'Fortsætter på'
+    body: '<p>Nu hvor du har overblik over funktionen "Tilføj sprog", kan du fortsætte ved at:<ul><li>Tilføje et sprog</li><li>Tilføjelse af en brugerdefineret sprog</li><li><a href="[site:url]admin/config/regional/language">Vis et konfigureret sprog</a></li></ul></p>'

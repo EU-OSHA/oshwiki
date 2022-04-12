@@ -1,0 +1,282 @@
+display:
+  default:
+    display_title: Główny
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtr
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+          tags:
+            previous: '‹ Poprzednia'
+            next: 'Następna ›'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Aktualizacja masowa'
+        title:
+          label: Etykieta
+          separator: ', '
+        word_count:
+          label: Słowa
+        item_count:
+          label: Elementy
+        progress:
+          label: Postęp
+      filters:
+        status:
+          expose:
+            label: Status
+  closed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Aktualizacja masowa'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQDQGNvdW50
+        progress:
+          label: Postęp
+        title:
+          label: Etykieta
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Do
+          separator: ', '
+        word_count:
+          label: Słowa
+        item_count:
+          label: Elementy
+        operations:
+          label: Operacje
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: 'Język źródłowy'
+        title:
+          expose:
+            label: Etykieta
+      menu:
+        title: Zamknięte
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Aktualizacja masowa'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQDQGNvdW50
+        progress:
+          label: Postęp
+        title:
+          label: Etykieta
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Do
+          separator: ', '
+        word_count:
+          label: Słowa
+        item_count:
+          label: Elementy
+        operations:
+          label: Operacje
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: 'Język źródłowy'
+        title:
+          expose:
+            label: Etykieta
+      menu:
+        title: Zakończone
+  eligible:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Aktualizacja masowa'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQDQGNvdW50
+        title:
+          label: Etykieta
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Do
+          separator: ', '
+        word_count:
+          label: Słowa
+        item_count:
+          label: Elementy
+        operations:
+          label: Operacje
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: 'Język źródłowy'
+        title:
+          expose:
+            label: Etykieta
+  my_tasks:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Aktualizacja masowa'
+        status:
+          label: Status
+        progress:
+          label: Postęp
+        title:
+          label: Etykieta
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Do
+          separator: ', '
+        word_count:
+          label: Słowa
+        item_count:
+          label: Elementy
+        operations:
+          label: Operacje
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: 'Język źródłowy'
+        title:
+          expose:
+            label: Etykieta
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Aktualizacja masowa'
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Postęp
+        title:
+          label: Etykieta
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Do
+          separator: ', '
+        word_count:
+          label: Słowa
+        item_count:
+          label: Elementy
+        operations:
+          label: Operacje
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: 'Język źródłowy'
+        title:
+          expose:
+            label: Etykieta
+      menu:
+        title: Oczekujące
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Aktualizacja masowa'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQDQGNvdW50
+        progress:
+          label: Postęp
+        title:
+          label: Etykieta
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Do
+          separator: ', '
+        word_count:
+          label: Słowa
+        item_count:
+          label: Elementy
+        operations:
+          label: Operacje
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: 'Język źródłowy'
+        title:
+          expose:
+            label: Etykieta
+      menu:
+        title: Odrzucone
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Aktualizacja masowa'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQDQGNvdW50
+        title:
+          label: Etykieta
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Do
+          separator: ', '
+        word_count:
+          label: Słowa
+        item_count:
+          label: Elementy
+        operations:
+          label: Operacje
+      filters:
+        status:
+          expose:
+            label: Status
+      tab_options:
+        title: Tłumaczenia

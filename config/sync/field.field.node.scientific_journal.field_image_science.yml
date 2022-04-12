@@ -1,0 +1,42 @@
+uuid: d0fd29b5-903c-4d1f-a640-31d3fdb1510e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_science
+    - node.type.scientific_journal
+  module:
+    - image
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.scientific_journal.field_image_science
+field_name: field_image_science
+entity_type: node
+bundle: scientific_journal
+label: image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

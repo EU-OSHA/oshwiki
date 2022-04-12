@@ -1,0 +1,29 @@
+display:
+  default:
+    display_title: Privzeto
+    display_options:
+      fields:
+        title:
+          label: Naslov
+        type:
+          label: 'Tip vsebine'
+        name:
+          label: Avtor
+        changed:
+          label: Posodobljeno
+        operations:
+          label: Operacije
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Ponastavi
+      filters:
+        title:
+          expose:
+            label: Naslov
+        type:
+          expose:
+            label: 'Tip vsebine'
+        langcode:
+          expose:
+            label: Jezik

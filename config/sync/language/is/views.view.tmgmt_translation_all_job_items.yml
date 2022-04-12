@@ -1,0 +1,45 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+          tags:
+            previous: '< Fyrri'
+      fields:
+        state:
+          label: Fylki
+        label:
+          label: Merking
+        type:
+          label: Gerð
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Efnisorð
+          separator: ', '
+        changed:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        state:
+          expose:
+            label: Stöður
+          group_info:
+            label: Fylki
+  page_1:
+    display_title: Síða

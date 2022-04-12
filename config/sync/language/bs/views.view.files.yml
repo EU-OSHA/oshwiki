@@ -1,0 +1,28 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        filename:
+          label: Ime
+        filesize:
+          label: Veličina
+        status:
+          label: Status
+        count:
+          label: 'Koristi se u'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      filters:
+        status:
+          expose:
+            label: Status
+  page_2:
+    display_options:
+      arguments:
+        fid:
+          exception:
+            title: Sve

@@ -1,0 +1,272 @@
+display:
+  default:
+    display_title: Huvud
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrera
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
+          tags:
+            previous: '‹ Föregående'
+            next: 'Nästa ›'
+            first: '« Första'
+            last: 'Sista »'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuppdatera
+          action_title: 'Med urval'
+        title:
+          label: Etikett
+          separator: ', '
+        item_count:
+          label: Poster
+        progress:
+          label: Framsteg
+      filters:
+        status:
+          expose:
+            label: Status
+  closed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuppdatera
+          action_title: 'Med urval'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Framsteg
+        title:
+          label: Etikett
+          separator: ', '
+        source_language:
+          label: Från
+          separator: ', '
+        target_language:
+          label: Till
+          separator: ', '
+        item_count:
+          label: Poster
+        operations:
+          label: Funktioner
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: Källspråk
+        title:
+          expose:
+            label: Etikett
+      menu:
+        title: Stängd
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuppdatera
+          action_title: 'Med urval'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Framsteg
+        title:
+          label: Etikett
+          separator: ', '
+        source_language:
+          label: Från
+          separator: ', '
+        target_language:
+          label: Till
+          separator: ', '
+        item_count:
+          label: Poster
+        operations:
+          label: Funktioner
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: Källspråk
+        title:
+          expose:
+            label: Etikett
+      menu:
+        title: Slutförd
+  eligible:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuppdatera
+          action_title: 'Med urval'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Etikett
+          separator: ', '
+        source_language:
+          label: Från
+          separator: ', '
+        target_language:
+          label: Till
+          separator: ', '
+        item_count:
+          label: Poster
+        operations:
+          label: Funktioner
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: Källspråk
+        title:
+          expose:
+            label: Etikett
+  my_tasks:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuppdatera
+          action_title: 'Med urval'
+        status:
+          label: Status
+        progress:
+          label: Framsteg
+        title:
+          label: Etikett
+          separator: ', '
+        source_language:
+          label: Från
+          separator: ', '
+        target_language:
+          label: Till
+          separator: ', '
+        item_count:
+          label: Poster
+        operations:
+          label: Funktioner
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: Källspråk
+        title:
+          expose:
+            label: Etikett
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuppdatera
+          action_title: 'Med urval'
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Framsteg
+        title:
+          label: Etikett
+          separator: ', '
+        source_language:
+          label: Från
+          separator: ', '
+        target_language:
+          label: Till
+          separator: ', '
+        item_count:
+          label: Poster
+        operations:
+          label: Funktioner
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: Källspråk
+        title:
+          expose:
+            label: Etikett
+      menu:
+        title: 'Väntar på'
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuppdatera
+          action_title: 'Med urval'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Framsteg
+        title:
+          label: Etikett
+          separator: ', '
+        source_language:
+          label: Från
+          separator: ', '
+        target_language:
+          label: Till
+          separator: ', '
+        item_count:
+          label: Poster
+        operations:
+          label: Funktioner
+      filters:
+        status:
+          expose:
+            label: Status
+        source_language:
+          expose:
+            label: Källspråk
+        title:
+          expose:
+            label: Etikett
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuppdatera
+          action_title: 'Med urval'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Etikett
+          separator: ', '
+        source_language:
+          label: Från
+          separator: ', '
+        target_language:
+          label: Till
+          separator: ', '
+        item_count:
+          label: Poster
+        operations:
+          label: Funktioner
+      filters:
+        status:
+          expose:
+            label: Status
+      tab_options:
+        title: Översätt

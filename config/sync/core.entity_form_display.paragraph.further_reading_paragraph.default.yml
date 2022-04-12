@@ -1,0 +1,34 @@
+uuid: 547eaf99-9ad1-404a-ba1a-879d6ed33a37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.further_reading_paragraph.field_desc_further_reading
+    - field.field.paragraph.further_reading_paragraph.field_title_further_reading
+    - paragraphs.paragraphs_type.further_reading_paragraph
+  module:
+    - text
+id: paragraph.further_reading_paragraph.default
+targetEntityType: paragraph
+bundle: further_reading_paragraph
+mode: default
+content:
+  field_desc_further_reading:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_further_reading:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

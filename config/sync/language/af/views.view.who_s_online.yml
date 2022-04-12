@@ -1,0 +1,18 @@
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      title: 'Wie is aanlyn'
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      filters:
+        access:
+          expose:
+            label: 'Laaste toegang'
+            description: 'Die gebruiker word beskou as aanlyn vir so lank nadat hulle ''n bladsy beskou het.'
+  who_s_online_block:
+    display_title: 'Wie is aanlyn'
+    display_options:
+      block_description: 'Wie is aanlyn'

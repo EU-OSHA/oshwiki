@@ -1,0 +1,37 @@
+display:
+  default:
+    display_title: Główny
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      pager:
+        options:
+          tags:
+            previous: '‹ poprzednia'
+            next: 'następna ›'
+            first: '« pierwsza'
+            last: 'ostatnia »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      fields:
+        created:
+          label: Utworzono
+        label:
+          label: Element
+        name:
+          label: Nazwa
+          separator: ', '
+      title: Wiadomości
+      arguments:
+        tjid:
+          exception:
+            title: Wszystko
+  embed:
+    display_title: Osadzony

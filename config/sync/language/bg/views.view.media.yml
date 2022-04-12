@@ -1,0 +1,44 @@
+label: Медия
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      title: Медия
+      fields:
+        media_bulk_form:
+          action_title: Действие
+        thumbnail__target_id:
+          label: Умалена
+        bundle:
+          label: Тип
+        uid:
+          label: Автор
+        status:
+          label: Статус
+          settings:
+            format_custom_true: Публикувано
+        changed:
+          label: Обновено
+        operations:
+          label: Действия
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Рестартирай
+      filters:
+        bundle:
+          expose:
+            label: Тип
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Публикувано
+        langcode:
+          expose:
+            label: Език
+  media_page_list:
+    display_title: Медия
+    display_options:
+      menu:
+        title: Медия

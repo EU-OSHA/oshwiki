@@ -1,0 +1,144 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtreer
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        item_count:
+          label: Items
+      filters:
+        status:
+          expose:
+            label: Status
+  closed:
+    display_options:
+      fields:
+        status:
+          label: Status
+        source_language:
+          label: Van
+        target_language:
+          label: Aan
+        item_count:
+          label: Items
+        operations:
+          label: Aksies
+      filters:
+        status:
+          expose:
+            label: Status
+      menu:
+        title: Gesluit
+  completed:
+    display_options:
+      fields:
+        status:
+          label: Status
+        source_language:
+          label: Van
+        target_language:
+          label: Aan
+        item_count:
+          label: Items
+        operations:
+          label: Aksies
+      filters:
+        status:
+          expose:
+            label: Status
+  eligible:
+    display_options:
+      fields:
+        status:
+          label: Status
+        source_language:
+          label: Van
+        target_language:
+          label: Aan
+        item_count:
+          label: Items
+        operations:
+          label: Aksies
+      filters:
+        status:
+          expose:
+            label: Status
+  my_tasks:
+    display_options:
+      fields:
+        status:
+          label: Status
+        source_language:
+          label: Van
+        target_language:
+          label: Aan
+        item_count:
+          label: Items
+        operations:
+          label: Aksies
+      filters:
+        status:
+          expose:
+            label: Status
+  pending:
+    display_options:
+      fields:
+        status:
+          label: Status
+        source_language:
+          label: Van
+        target_language:
+          label: Aan
+        item_count:
+          label: Items
+        operations:
+          label: Aksies
+      filters:
+        status:
+          expose:
+            label: Status
+      menu:
+        title: Hangende
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Status
+        source_language:
+          label: Van
+        target_language:
+          label: Aan
+        item_count:
+          label: Items
+        operations:
+          label: Aksies
+      filters:
+        status:
+          expose:
+            label: Status
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Status
+        source_language:
+          label: Van
+        target_language:
+          label: Aan
+        item_count:
+          label: Items
+        operations:
+          label: Aksies
+      filters:
+        status:
+          expose:
+            label: Status
+      tab_options:
+        title: Vertaal

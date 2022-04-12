@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_user_real_name
     - field.field.user.user.tmgmt_translation_skills
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -23,6 +25,22 @@ content:
   contact:
     weight: 5
     region: content
+  field_organization:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_user_real_name:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   language:
     weight: 0
     region: content
@@ -32,16 +50,16 @@ content:
   tmgmt_translation_skills:
     type: tmgmt_language_combination_default
     weight: 7
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-    region: content
 hidden:
   langcode: true

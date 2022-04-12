@@ -1,0 +1,12 @@
+uuid: 5ee357c9-3f0a-4009-9983-004f04395583
+langcode: en
+status: true
+dependencies: {  }
+label: News
+id: news
+description: ''
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

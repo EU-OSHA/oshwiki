@@ -1,0 +1,23 @@
+cancel_confirm:
+  subject: 'Paskyros panaikinimas [user:display-name] - [site:name]'
+password_reset:
+  subject: 'Prisijungimo informacijos keitimas [user:display-name] - [site:name]'
+  body: "[user:display-name],\r\n\r\nJūsų paskyros slaptažodžio atkūrimo prašymas gautas iš [site:name].\r\n\r\nGalite prisijungti paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠi nuoroda gali būti panaudota tik vieną kartą, ji jus nukreips į puslapį kur galėsite nustatyti savo slaptažodį. Ji galios vieną dieną ir jei nebus panaudota nieko neatsitiks.\r\n\r\n--  [site:name] komanda"
+register_admin_created:
+  subject: '[site:name] administratorius jums sukūrė paskyrą'
+  body: "[user:display-name],\r\n\r\nSvetainės [site:name] administratorius sukūrė jums paskyrą. Jūs galite prisijungti paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠi nuoroda gali būti panaudota tik vieną kartą, ji Jus nukreips į puslapį kur galėsite nustatyti savo slaptažodį.\r\n\r\nPo to kai nustatysite slaptažodį prie svetainės galėsite prisijungti [site:login-url] naudodami:\r\n\r\nprisijungimo vardas: [user:name]\r\nslaptažodis: Jūsų slaptažodis\r\n\r\n--  [site:name] komanda"
+register_no_approval_required:
+  subject: 'Paskyros informacija [user:display-name] - [site:name]'
+  body: "[user:display-name],\r\n\r\nDėkojame, kad užsiregistravote [site:name]. Jūs galite prisijungti paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠi nuoroda gali būti panaudota tik vieną kartą, ji Jus nukreips į puslapį kur galėsite nustatyti savo slaptažodį.\r\n\r\nPo to kai nustatysite slaptažodį prie svetainės galėsite prisijungti [site:login-url] naudodami:\r\n\r\nprisijungimo vardas: [user:name]\r\nslaptažodis: Jūsų slaptažodis\r\n\r\n--  [site:name] komanda"
+register_pending_approval:
+  subject: 'Paskyros informacija [user:display-name] - [site:name] (laukiama administratoriaus patvirtinimo)'
+register_pending_approval_admin:
+  subject: 'Paskyros informacija [user:display-name] - [site:name] (laukiama administratoriaus patvirtinimo)'
+status_activated:
+  subject: 'Paskyros informacija [user:display-name] - [site:name] (patvirtinta)'
+  body: "[user:display-name],\r\n\r\nJūsų paskyra svetainėje [site:name] buvo aktyvuota. \r\n\r\nJūs galite prisijungti paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠi nuoroda gali būti panaudota tik vieną kartą, ji Jus nukreips į puslapį kur galėsite nustatyti savo slaptažodį.\r\n\r\nPo to kai nustatysite slaptažodį prie svetainės galėsite prisijungti [site:login-url] naudodami:\r\n\r\nprisijungimo vardas: [user:account-name]\r\nslaptažodis: Jūsų slaptažodis\r\n\r\n--  [site:name] komanda"
+status_blocked:
+  subject: 'Paskyros informacija [user:display-name] - [site:name] (užblokuota)'
+status_canceled:
+  subject: 'Paskyros informacija [user:display-name] - [site:name] (panaikinta)'
+  body: "[user:display-name],\r\n\r\nJūsų paskyra - [site:name] buvo panaikinta.\r\n\r\n--  [site:name] komanda"

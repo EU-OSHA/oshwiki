@@ -1,0 +1,17 @@
+label: 'Pagina blokindeling'
+tips:
+  block-layout:
+    label: Blokindeling
+    body: 'Blokken zijn stukken inhoud die weergegeven worden in een regio of gebied van de pagina (zoals de footer of zijbalk).'
+  place-block:
+    label: 'Blokken plaatsen'
+    body: 'Elk aangepast of bijgedragen blok kan in een regio geplaatst worden door op de knop <em>Blok plaatsen</em> te klikken. Met dezelfde knop kan ook een nieuw blok gemaakt worden.'
+  block-region:
+    label: Blok-regio
+    body: 'Klik hier om de regio van een blok toe te wijzen of te wijzigen. Er verschijnt een lijst met alle regio''s. Eén blok kan in meerdere regio''s geplaatst worden.'
+  configure-block:
+    label: 'Blok configureren'
+    body: 'Klik op ''Instellen'' om de inhoud van een blok te bewerken, de zichtbaarheid in te stellen of de plaatsing in het thema te wijzigen.'
+  custom-block-library:
+    label: 'Aangepaste blokken-bibliotheek'
+    body: 'Het scherm blokindeling heeft ook een tab bovenaan om aangepaste blokken toe te voegen genaamd ''Aangepaste blokken-bibliotheek''. Deze tab is een link om aangepaste blokken toe te voegen.'

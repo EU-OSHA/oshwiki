@@ -1,0 +1,16 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Cuir i bhfeidhm'
+      pager:
+        options:
+          tags:
+            previous: '‹ siar'
+            next: 'ar aghaidh ›'
+            first: '« céad lch.'
+            last: 'lch. deir »'
+      fields:
+        created:
+          label: Cruthaithe

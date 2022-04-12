@@ -1,0 +1,20 @@
+uuid: eaea7da3-bee7-4c09-a5e9-d079b2439ce0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_position_authors
+field_name: field_position_authors
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      fields:
+        info:
+          label: 'Описание на блока'
+        changed:
+          label: Обновено
+        operations:
+          label: Действия
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      filters:
+        info:
+          expose:
+            label: 'Описание на блока'
+  page_1:
+    display_title: Страница

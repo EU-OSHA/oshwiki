@@ -1,0 +1,39 @@
+label: Waghond
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      fields:
+        severity:
+          label: Strengheid
+        type:
+          label: Tipe
+        timestamp:
+          label: Datum
+        message:
+          label: Boodskap
+        name:
+          label: Gebruiker
+        link:
+          label: Aksies
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      exposed_form:
+        options:
+          submit_button: Filtreer
+          reset_button_label: Herstel
+      empty:
+        area:
+          admin_label: 'Geen logboodskappe beskikbaar.'
+          content: 'Geen logboodskappe beskikbaar.'
+      filters:
+        type:
+          expose:
+            label: Tipe
+        severity:
+          expose:
+            label: Strengheid
+  page:
+    display_title: Bladsy

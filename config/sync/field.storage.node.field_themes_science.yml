@@ -1,0 +1,20 @@
+uuid: 3dd79637-e7ee-4ed0-86b8-e344dce8fcc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_themes_science
+field_name: field_themes_science
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

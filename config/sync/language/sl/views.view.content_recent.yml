@@ -1,0 +1,13 @@
+display:
+  default:
+    display_title: Privzeto
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      empty:
+        area_text_custom:
+          content: 'Na voljo ni nobene vsebine.'
+      use_more_text: Več
+  block_1:
+    display_title: Blok

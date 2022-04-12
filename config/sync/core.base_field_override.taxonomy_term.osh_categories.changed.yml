@@ -1,0 +1,18 @@
+uuid: 3ffc6ea1-9351-4c5a-9da6-d0d739ee1a7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.osh_categories
+id: taxonomy_term.osh_categories.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: osh_categories
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

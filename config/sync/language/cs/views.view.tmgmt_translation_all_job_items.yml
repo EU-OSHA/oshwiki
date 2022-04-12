@@ -1,0 +1,61 @@
+display:
+  default:
+    display_title: Nadřízené
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použít
+          reset_button_label: Reset
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+          tags:
+            previous: '‹ Předchozí'
+            next: 'Následující ›'
+            first: '« První'
+            last: 'Poslední »'
+      fields:
+        state:
+          label: Stav
+        label:
+          label: Popisek
+        type:
+          label: Typ
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Komu
+          separator: ', '
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Štítky
+          separator: ', '
+        changed:
+          label: Změněno
+          separator: ', '
+        operations:
+          label: Operace
+      filters:
+        state:
+          expose:
+            label: Stavy
+          group_info:
+            label: Stav
+        source_language:
+          expose:
+            label: 'Zdrojový jazyk'
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normální
+  page_1:
+    display_title: Stránka

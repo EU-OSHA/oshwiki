@@ -1,0 +1,34 @@
+uuid: d45a9202-8dbf-4277-ac00-2952dbcaf9d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_themes_science
+    - node.type.scientific_journal
+    - taxonomy.vocabulary.themes
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.scientific_journal.field_themes_science
+field_name: field_themes_science
+entity_type: node
+bundle: scientific_journal
+label: themes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      themes: themes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

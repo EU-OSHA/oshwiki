@@ -1,0 +1,25 @@
+uuid: 0b90e234-509a-45c1-9e8d-ad9a1a86a167
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.banners_home
+  module:
+    - crop
+name: home_intro
+label: home_intro
+effects:
+  33fb3f47-9e66-4936-ab2e-350cf399f524:
+    uuid: 33fb3f47-9e66-4936-ab2e-350cf399f524
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 374
+      height: 245
+      anchor: center-center
+  bf8c47af-2649-4774-a82e-0b446b08746e:
+    uuid: bf8c47af-2649-4774-a82e-0b446b08746e
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: banners_home

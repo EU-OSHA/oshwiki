@@ -1,0 +1,48 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      pager:
+        options:
+          tags:
+            previous: '‹ prethodna'
+            next: 'sljedeća ›'
+            first: '« prva'
+            last: 'posljednja »'
+      fields:
+        state:
+          label: Država
+        label:
+          label: Oznaka
+        type:
+          label: Vrsta
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Oznake
+          separator: ', '
+        operations:
+          label: Operacije
+      arguments:
+        tjid:
+          exception:
+            title: Svi
+  checkout:
+    display_title: Narudžba
+    display_options:
+      fields:
+        label:
+          label: Oznaka
+        type:
+          label: Vrsta
+        word_count:
+          separator: ', '
+        changed:
+          separator: ', '

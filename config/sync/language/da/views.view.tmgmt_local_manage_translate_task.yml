@@ -1,0 +1,268 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Næste ›'
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Masseopdatering
+          action_title: Handling
+        title:
+          label: Titel
+          separator: ', '
+        item_count:
+          label: Overskrifter
+        progress:
+          label: Fremdrift
+  assigned:
+    display_title: Tildelt
+    display_options:
+      menu:
+        title: Tildelt
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Masseopdatering
+          action_title: Handling
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Fremdrift
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Fra
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Overskrifter
+        loop_count:
+          separator: ', '
+        operations:
+          label: Handlinger
+      filters:
+        source_language:
+          expose:
+            label: Kildesprog
+        uid:
+          expose:
+            label: Udbyder
+        title:
+          expose:
+            label: Titel
+  closed:
+    display_title: Lukket
+    display_options:
+      menu:
+        title: Lukket
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Masseopdatering
+          action_title: Handling
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Fremdrift
+        created:
+          label: Oprettet
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Fra
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Overskrifter
+        loop_count:
+          separator: ', '
+        operations:
+          label: Handlinger
+      filters:
+        source_language:
+          expose:
+            label: Kildesprog
+        uid:
+          expose:
+            label: Udbyder
+        title:
+          expose:
+            label: Titel
+  completed:
+    display_title: Gennemført
+    display_options:
+      menu:
+        title: Gennemført
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Masseopdatering
+          action_title: Handling
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Fremdrift
+        created:
+          label: Oprettet
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Fra
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Overskrifter
+        loop_count:
+          separator: ', '
+        operations:
+          label: Handlinger
+      filters:
+        source_language:
+          expose:
+            label: Kildesprog
+        uid:
+          expose:
+            label: Udbyder
+        title:
+          expose:
+            label: Titel
+  pending:
+    display_title: Afventer
+    display_options:
+      menu:
+        title: Afventer
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Masseopdatering
+          action_title: Handling
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        progress:
+          label: Fremdrift
+        source_language:
+          label: Fra
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Overskrifter
+        loop_count:
+          separator: ', '
+        operations:
+          label: Handlinger
+      filters:
+        source_language:
+          expose:
+            label: Kildesprog
+        uid:
+          expose:
+            label: Udbyder
+        title:
+          expose:
+            label: Titel
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Masseopdatering
+          action_title: Handling
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Fremdrift
+        created:
+          label: Oprettet
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Fra
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Overskrifter
+        loop_count:
+          separator: ', '
+        operations:
+          label: Handlinger
+      filters:
+        source_language:
+          expose:
+            label: Kildesprog
+        uid:
+          expose:
+            label: Udbyder
+        title:
+          expose:
+            label: Titel
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Masseopdatering
+          action_title: Handling
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Fra
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Overskrifter
+        loop_count:
+          separator: ', '
+        operations:
+          label: Handlinger

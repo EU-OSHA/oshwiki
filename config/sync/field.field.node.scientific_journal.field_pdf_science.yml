@@ -1,0 +1,31 @@
+uuid: 0202e212-e185-4c96-9987-a1ad49191553
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf_science
+    - node.type.scientific_journal
+  module:
+    - file
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.scientific_journal.field_pdf_science
+field_name: field_pdf_science
+entity_type: node
+bundle: scientific_journal
+label: pdf
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

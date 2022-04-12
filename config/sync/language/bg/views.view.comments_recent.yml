@@ -1,0 +1,13 @@
+label: 'Последни коментари'
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      title: 'Последни коментари'
+      empty:
+        area_text_custom:
+          content: 'Няма достъпни коментари.'
+  block_1:
+    display_title: Блокирай
+    display_options:
+      block_description: 'Последни коментари'

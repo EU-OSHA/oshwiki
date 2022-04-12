@@ -1,0 +1,11 @@
+label: 'Página de disposição de bloco'
+tips:
+  place-block:
+    label: 'Colocar Blocos'
+  block-region:
+    label: 'Região do Bloco'
+    body: 'Atribua ou altere a região de um bloco clicando aqui. Uma lista suspensa com todas as regiões aparecerá. Pode colocar um bloco em várias regiões.'
+  configure-block:
+    label: 'Configurar Bloco'
+  custom-block-library:
+    label: 'Biblioteca de Blocos Personalizados'

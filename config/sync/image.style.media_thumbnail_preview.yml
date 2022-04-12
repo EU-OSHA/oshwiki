@@ -1,0 +1,15 @@
+uuid: ed192225-dae4-4e3b-9304-e0a08e9479e8
+langcode: en
+status: true
+dependencies: {  }
+name: media_thumbnail_preview
+label: 'Media thumbnail preview'
+effects:
+  6add0dae-cce7-4cbb-9dc6-a5bb669504f2:
+    uuid: 6add0dae-cce7-4cbb-9dc6-a5bb669504f2
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: false

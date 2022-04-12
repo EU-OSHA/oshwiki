@@ -1,0 +1,137 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtri
+          reset_button_label: Rifillo
+      fields:
+        item_count:
+          label: Elementët
+      filters:
+        status:
+          expose:
+            label: Gjendja
+  closed:
+    display_options:
+      fields:
+        status:
+          label: Gjendja
+        source_language:
+          label: Nga
+        target_language:
+          label: Për
+        item_count:
+          label: Elementët
+        operations:
+          label: Operacionet
+      filters:
+        status:
+          expose:
+            label: Gjendja
+      menu:
+        title: 'I mbyllur'
+  completed:
+    display_options:
+      fields:
+        status:
+          label: Gjendja
+        source_language:
+          label: Nga
+        target_language:
+          label: Për
+        item_count:
+          label: Elementët
+        operations:
+          label: Operacionet
+      filters:
+        status:
+          expose:
+            label: Gjendja
+  eligible:
+    display_options:
+      fields:
+        status:
+          label: Gjendja
+        source_language:
+          label: Nga
+        target_language:
+          label: Për
+        item_count:
+          label: Elementët
+        operations:
+          label: Operacionet
+      filters:
+        status:
+          expose:
+            label: Gjendja
+  my_tasks:
+    display_options:
+      fields:
+        status:
+          label: Gjendja
+        source_language:
+          label: Nga
+        target_language:
+          label: Për
+        item_count:
+          label: Elementët
+        operations:
+          label: Operacionet
+      filters:
+        status:
+          expose:
+            label: Gjendja
+  pending:
+    display_options:
+      fields:
+        status:
+          label: Gjendja
+        source_language:
+          label: Nga
+        target_language:
+          label: Për
+        item_count:
+          label: Elementët
+        operations:
+          label: Operacionet
+      filters:
+        status:
+          expose:
+            label: Gjendja
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Gjendja
+        source_language:
+          label: Nga
+        target_language:
+          label: Për
+        item_count:
+          label: Elementët
+        operations:
+          label: Operacionet
+      filters:
+        status:
+          expose:
+            label: Gjendja
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Gjendja
+        source_language:
+          label: Nga
+        target_language:
+          label: Për
+        item_count:
+          label: Elementët
+        operations:
+          label: Operacionet
+      filters:
+        status:
+          expose:
+            label: Gjendja
+      tab_options:
+        title: Përkthe

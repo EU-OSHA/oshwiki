@@ -1,0 +1,25 @@
+uuid: 8e62392d-b5ec-4b4a-9ee8-7635a1f7ad76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organization_contributors
+    - node.type.contributors_content
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.contributors_content.field_organization_contributors
+field_name: field_organization_contributors
+entity_type: node
+bundle: contributors_content
+label: Organization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,12 @@
+label: 'Strona układu bloków'
+tips:
+  block-layout:
+    label: 'Układ bloków'
+  place-block:
+    label: 'Rozmieszczanie Bloków (Place Blocks)'
+  block-region:
+    label: 'Region bloku'
+  configure-block:
+    label: 'Konfiguruj Blok'
+  custom-block-library:
+    label: 'Biblioteka własnych bloków'

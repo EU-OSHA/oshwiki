@@ -1,0 +1,34 @@
+uuid: bba2cc4b-1e2e-44c9-9c8b-343bde6d6f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_references
+    - paragraphs.paragraphs_type.references_paragraph
+    - taxonomy.vocabulary.reference
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.references_paragraph.field_reference_references
+field_name: field_reference_references
+entity_type: paragraph
+bundle: references_paragraph
+label: reference
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      reference: reference
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

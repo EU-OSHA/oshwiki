@@ -1,0 +1,20 @@
+uuid: 9b471300-d5f2-400a-a80d-0f2ffe2b23a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_themes_oshwiki
+field_name: field_themes_oshwiki
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

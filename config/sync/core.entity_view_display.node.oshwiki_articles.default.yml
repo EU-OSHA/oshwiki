@@ -1,0 +1,125 @@
+uuid: e685d2bf-9b63-4418-8cc9-6eb48d192a24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oshwiki_articles.field_authors_oshwiki
+    - field.field.node.oshwiki_articles.field_authorstxt_oshwiki
+    - field.field.node.oshwiki_articles.field_contributors_oshwiki
+    - field.field.node.oshwiki_articles.field_further_reading_oshwiki
+    - field.field.node.oshwiki_articles.field_image_oshwiki
+    - field.field.node.oshwiki_articles.field_nace_oshwiki
+    - field.field.node.oshwiki_articles.field_osh_categories_oshwiki
+    - field.field.node.oshwiki_articles.field_oshwiki_link
+    - field.field.node.oshwiki_articles.field_references_oshwiki
+    - field.field.node.oshwiki_articles.field_sections_oshwiki
+    - field.field.node.oshwiki_articles.field_themes_oshwiki
+    - node.type.oshwiki_articles
+  module:
+    - entity_reference_revisions
+    - image
+    - user
+id: node.oshwiki_articles.default
+targetEntityType: node
+bundle: oshwiki_articles
+mode: default
+content:
+  field_authors_oshwiki:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_authorstxt_oshwiki:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_contributors_oshwiki:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_further_reading_oshwiki:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_image_oshwiki:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_nace_oshwiki:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_osh_categories_oshwiki:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_oshwiki_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_references_oshwiki:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_sections_oshwiki:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_themes_oshwiki:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

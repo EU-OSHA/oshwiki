@@ -1,0 +1,18 @@
+uuid: ef614a1d-56d0-4cd5-a530-fd795ce3b34b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scientific_journal
+id: node.scientific_journal.title
+field_name: title
+entity_type: node
+bundle: scientific_journal
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

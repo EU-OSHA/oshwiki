@@ -1,0 +1,25 @@
+uuid: dc0d50a0-934f-40e4-a32a-89da2b4c1869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_contributors
+    - node.type.contributors_content
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.contributors_content.field_position_contributors
+field_name: field_position_contributors
+entity_type: node
+bundle: contributors_content
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

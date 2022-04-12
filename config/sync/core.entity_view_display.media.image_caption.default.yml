@@ -1,0 +1,47 @@
+uuid: 10f726ff-0d34-4613-8446-f37ba8abe234
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image_caption.field_caption_copyrigth_
+    - field.field.media.image_caption.field_description
+    - field.field.media.image_caption.field_media_image
+    - image.style.home_news
+    - media.type.image_caption
+  module:
+    - image
+    - text
+id: media.image_caption.default
+targetEntityType: media
+bundle: image_caption
+mode: default
+content:
+  field_caption_copyrigth_:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: home_news
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

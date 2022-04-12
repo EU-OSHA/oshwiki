@@ -1,0 +1,11 @@
+label: 'Talen toevoegen'
+tips:
+  language-add-overview:
+    label: 'Talen toevoegen'
+    body: '<p>Deze pagina biedt de mogelijkheid om algemene talen toe te voegen aan de site.</p><p>Als de gewenste taal niet beschikbaar is kunt u een aangepaste taal toevoegen.</p>'
+  language-add-choose:
+    label: 'Taal selecteren'
+    body: '<p>Kies een taal uit de lijst, of kies ''Aangepaste taal...'' aan het eind van de lijst.</p><p>Klik op de knop ''Taal toevoegen'' als u een taal hebt gekozen.</p><p>Als u een aangepaste taal toevoegd, krijg u een extra formulier waar de naam, taalcode en leesinrichting van de taal kunt invullen.</p>'
+  language-add-continue:
+    label: 'Wordt vervolgd op'
+    body: '<p>Na het overzicht van de ''Talen toevoegen''-feature, kunt u verder gaan met:<ul><li>Een taal toevoegen</li><li>Een aangepaste taal toevoegen</li><li><a href="[site:url]admin/config/regional/language">Ingestelde talen bekijken</a></li></ul></p>'

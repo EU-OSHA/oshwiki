@@ -1,0 +1,47 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+          tags:
+            previous: '‹ iepriekšējā'
+            next: 'nākamā ›'
+            first: '« pirmā'
+            last: 'pēdējā »'
+      fields:
+        state:
+          label: Stāvoklis
+        label:
+          label: Etiķete
+        type:
+          label: Veids
+        tags_count:
+          label: Iezīmes
+        changed:
+          label: Labots
+        operations:
+          label: Darbības
+      arguments:
+        tjid:
+          exception:
+            title: Visi
+  checkout:
+    display_title: Pirkt
+    display_options:
+      fields:
+        label:
+          label: Etiķete
+        type:
+          label: Veids
+        changed:
+          label: Labots
+  submitted:
+    display_title: Nosūtīts

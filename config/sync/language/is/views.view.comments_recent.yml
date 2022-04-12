@@ -1,0 +1,13 @@
+label: 'Nýleg ummæli'
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      title: 'Nýleg ummæli'
+      empty:
+        area_text_custom:
+          content: 'Engin ummæli tiltæk.'
+  block_1:
+    display_title: Blokk
+    display_options:
+      block_description: 'Nýleg ummæli'

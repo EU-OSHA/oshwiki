@@ -1,0 +1,48 @@
+label: Sargsuns
+description: 'Jaunākās žurnāla ziņas'
+display:
+  default:
+    display_title: 'Noklusētā vērtība'
+    display_options:
+      title: 'Jaunākās žurnāla ziņas'
+      fields:
+        nothing:
+          admin_label: Ikona
+        severity:
+          label: Smagums
+        type:
+          label: Veids
+        timestamp:
+          label: Datums
+        message:
+          label: Ziņojums
+        name:
+          label: Lietotājs
+        link:
+          label: Darbības
+      pager:
+        options:
+          tags:
+            next: '"'
+            previous: '"'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      empty:
+        area:
+          admin_label: 'Žurnālā nav ziņojumu.'
+          content: 'Žurnālā nav ziņojumu.'
+      filters:
+        type:
+          expose:
+            label: Veids
+        severity:
+          expose:
+            label: Smagums
+  page:
+    display_title: Lapa

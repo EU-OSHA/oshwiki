@@ -1,0 +1,17 @@
+display:
+  default:
+    display_title: 'E Paracaktuar'
+    display_options:
+      title: 'Kush është në linjë'
+      exposed_form:
+        options:
+          reset_button_label: Rifillo
+      filters:
+        access:
+          expose:
+            label: 'Hyrja e fundit'
+            description: 'Një përdorues konsiderohet në linjë për këtë kohë mbasi të ketë vizituar një faqe.'
+  who_s_online_block:
+    display_title: 'Kush është në linjë'
+    display_options:
+      block_description: 'Kush është në linjë'

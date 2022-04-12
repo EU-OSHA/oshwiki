@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.node.body
     - node.type.translatable_node
+  module:
+    - text
   enforced:
     module:
       - tmgmt_demo
-  module:
-    - text
 _core:
   default_config_hash: FPoR7gxV4oYZ4VLkNytudoYCCeFenuF0EP3rCEegjEE
 id: node.translatable_node.body

@@ -1,0 +1,28 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      pager:
+        options:
+          tags:
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laaste »'
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        created:
+          label: Geskep
+        label:
+          label: Item
+        name:
+          label: Naam
+      arguments:
+        tjid:
+          exception:
+            title: Alle

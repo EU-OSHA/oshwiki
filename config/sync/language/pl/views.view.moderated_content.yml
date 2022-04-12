@@ -1,0 +1,61 @@
+label: 'Treść moderowana'
+description: 'Znajdź i moderuj zawartość.'
+display:
+  default:
+    display_title: Domyślny
+    display_options:
+      title: 'Treść moderowana'
+      fields:
+        title:
+          label: Tytuł
+          separator: ', '
+        type:
+          label: 'Rodzaj zawartości'
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        moderation_state:
+          label: 'Stan moderacji'
+          separator: ', '
+        changed:
+          label: Uaktualniono
+          separator: ', '
+        operations:
+          label: Operacje
+      pager:
+        options:
+          tags:
+            next: 'Następna ›'
+            previous: '‹ Poprzednia'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      exposed_form:
+        options:
+          submit_button: Filtr
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      empty:
+        area_text_custom:
+          content: 'Brak moderowanej zawartości. Wymieniono tutaj oczekujące wersje zawartości, takie jak szkice.'
+      filters:
+        title:
+          expose:
+            label: Tytuł
+        type:
+          expose:
+            label: 'Rodzaj zawartości'
+        moderation_state:
+          expose:
+            label: 'Stan moderacji'
+        langcode:
+          expose:
+            label: Język
+  moderated_content:
+    display_title: 'Treść moderowana'

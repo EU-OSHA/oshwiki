@@ -1,0 +1,17 @@
+label: 'Naujausias turinys'
+display:
+  default:
+    display_title: Numatytasis
+    display_options:
+      title: 'Naujausias turinys'
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      empty:
+        area_text_custom:
+          content: 'Turinio nėra.'
+      use_more_text: Daugiau
+  block_1:
+    display_title: Blokas

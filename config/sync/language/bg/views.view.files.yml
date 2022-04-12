@@ -1,0 +1,30 @@
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      fields:
+        filename:
+          label: Име
+        filesize:
+          label: Размер
+        status:
+          label: Статус
+        changed:
+          label: 'Дата на промяна'
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Рестартирай
+      filters:
+        filename:
+          expose:
+            label: 'Име на файла'
+        status:
+          expose:
+            label: Статус
+  page_2:
+    display_options:
+      arguments:
+        fid:
+          exception:
+            title: Всички

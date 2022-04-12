@@ -2,6 +2,12 @@ display:
   default:
     display_title: 'Par défaut'
     display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tout -'
+            offset_label: Décalage
       exposed_form:
         options:
           submit_button: Appliquer
@@ -9,12 +15,6 @@ display:
           exposed_sorts_label: 'Trier par'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Éléments par page'
-            items_per_page_options_all_label: '- Tout -'
-            offset_label: Décalage
       arguments:
         tid:
           exception:

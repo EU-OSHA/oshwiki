@@ -1,0 +1,15 @@
+uuid: 9c99a03c-659a-43c8-b50d-9d07abeeac74
+langcode: en
+status: true
+dependencies: {  }
+name: publication_youtube
+label: publication_youtube
+effects:
+  cc6c5840-cee5-40dc-b4b2-e8c3a9998b22:
+    uuid: cc6c5840-cee5-40dc-b4b2-e8c3a9998b22
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 377
+      height: 214
+      anchor: center-center

@@ -1,0 +1,250 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Φίλτρο
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      pager:
+        options:
+          tags:
+            previous: '‹ Προηγούμενο'
+            next: 'Επόμενο ›'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        title:
+          label: Τίτλος
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+  assigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Τίτλος
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        loop_count:
+          separator: ', '
+        operations:
+          label: Λειτουργίες
+      filters:
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        uid:
+          expose:
+            label: Πάροχος
+        title:
+          expose:
+            label: Τίτλος
+  closed:
+    display_title: 'Έχει κλείσει'
+    display_options:
+      menu:
+        title: 'Έχει κλείσει'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          separator: ', '
+        created:
+          label: Δημιουργήθηκε
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Τίτλος
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        loop_count:
+          separator: ', '
+        operations:
+          label: Λειτουργίες
+      filters:
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        uid:
+          expose:
+            label: Πάροχος
+        title:
+          expose:
+            label: Τίτλος
+  completed:
+    display_title: Ολοκληρώθηκε
+    display_options:
+      menu:
+        title: Ολοκληρώθηκε
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          separator: ', '
+        created:
+          label: Δημιουργήθηκε
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Τίτλος
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        loop_count:
+          separator: ', '
+        operations:
+          label: Λειτουργίες
+      filters:
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        uid:
+          expose:
+            label: Πάροχος
+        title:
+          expose:
+            label: Τίτλος
+  pending:
+    display_title: Εκκρεμεί
+    display_options:
+      menu:
+        title: Εκκρεμεί
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          format_plural_string: !!binary MQNAY291bnQ=
+        tuid:
+          separator: ', '
+        title:
+          label: Τίτλος
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        loop_count:
+          separator: ', '
+        operations:
+          label: Λειτουργίες
+      filters:
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        uid:
+          expose:
+            label: Πάροχος
+        title:
+          expose:
+            label: Τίτλος
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          format_plural_string: !!binary MQNAY291bnQ=
+        created:
+          label: Δημιουργήθηκε
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Τίτλος
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        loop_count:
+          separator: ', '
+        operations:
+          label: Λειτουργίες
+      filters:
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        uid:
+          expose:
+            label: Πάροχος
+        title:
+          expose:
+            label: Τίτλος
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Μαζική ενημέρωση'
+          action_title: 'Επιλογές ενημέρωσης'
+        status:
+          label: Κατάσταση
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Τίτλος
+          separator: ', '
+        source_language:
+          label: Από
+          separator: ', '
+        target_language:
+          label: Προς
+          separator: ', '
+        item_count:
+          label: Αντικείμενα
+        loop_count:
+          separator: ', '
+        operations:
+          label: Λειτουργίες

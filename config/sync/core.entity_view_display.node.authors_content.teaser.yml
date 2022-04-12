@@ -1,0 +1,25 @@
+uuid: 057bca68-ef50-4353-9ced-da3cdf0645f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.authors_content.field_organization_authors
+    - field.field.node.authors_content.field_position_authors
+    - node.type.authors_content
+  module:
+    - user
+id: node.authors_content.teaser
+targetEntityType: node
+bundle: authors_content
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_organization_authors: true
+  field_position_authors: true
+  langcode: true

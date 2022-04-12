@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      fields:
+        type:
+          label: Тип
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Сите -'
+      filters:
+        type:
+          expose:
+            label: Тип

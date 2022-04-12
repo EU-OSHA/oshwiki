@@ -1,6 +1,8 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -12,27 +14,43 @@ module:
   config: 0
   config_translation: 0
   contact: 0
+  content_moderation: 0
   contextual: 0
+  crop: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   dropdown_language: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
+  file_mdm: 0
   filter: 0
   help: 0
   history: 0
   image: 0
+  image_field_caption: 0
+  image_widget_crop: 0
+  imagemagick: 0
+  jquery_ui: 0
   lang_dropdown: 0
   language: 0
   language_neutral_aliases: 0
   languagefield: 0
   link: 0
   locale: 0
+  media: 0
+  media_library: 0
+  media_pdf_thumbnail: 0
   menu_link_content: 0
   menu_ui: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
   node: 0
   options: 0
   page_cache: 0
@@ -40,10 +58,13 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  responsive_image: 0
   search: 0
   shortcut: 0
+  sophron: 0
   system: 0
   taxonomy: 0
+  taxonomy_manager: 0
   text: 0
   tmgmt: 0
   tmgmt_content: 0
@@ -52,12 +73,17 @@ module:
   tmgmt_language_combination: 0
   tmgmt_local: 0
   tmgmt_locale: 0
+  token: 0
   toolbar: 0
   tour: 0
+  ultimate_cron: 0
   user: 0
   views_ui: 0
+  workflows: 0
+  pathauto: 1
   content_translation: 10
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   seven: 0

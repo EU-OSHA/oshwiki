@@ -1,0 +1,20 @@
+label: Redaktionel
+type_settings:
+  states:
+    archived:
+      label: Arkiveret
+    draft:
+      label: Kladde
+    published:
+      label: Udgivet
+  transitions:
+    archive:
+      label: Arkivér
+    archived_draft:
+      label: 'Gendan som kladde'
+    archived_published:
+      label: Gendan
+    create_new_draft:
+      label: 'Opret ny kladde'
+    publish:
+      label: Udgiv

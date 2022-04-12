@@ -1,0 +1,11 @@
+label: 'Насловна страна'
+display:
+  default:
+    display_title: Подразумевано
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Сортирај по'
+      empty:
+        title:
+          title: 'Добро дошли на [site:name]'

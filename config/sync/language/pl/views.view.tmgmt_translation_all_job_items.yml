@@ -1,0 +1,65 @@
+display:
+  default:
+    display_title: Główny
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+          tags:
+            previous: '‹ Poprzednia'
+            next: 'Następna ›'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+      fields:
+        state:
+          label: Stan
+        label:
+          label: Etykieta
+        type:
+          label: Typ
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Do
+          separator: ', '
+        progress:
+          label: Postęp
+        word_count:
+          label: Słowo
+          separator: ', '
+        tags_count:
+          label: Tagi
+          separator: ', '
+        changed:
+          label: Zmieniono
+          separator: ', '
+        operations:
+          label: Operacje
+      filters:
+        state:
+          expose:
+            label: Statusy
+          group_info:
+            label: Stan
+        source_language:
+          expose:
+            label: 'Język źródłowy'
+        job_type:
+          group_info:
+            label: 'Typ pracy'
+            group_items:
+              1:
+                title: Zwykły
+  page_1:
+    display_title: Strona

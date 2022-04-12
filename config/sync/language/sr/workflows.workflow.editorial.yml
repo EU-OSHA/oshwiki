@@ -1,0 +1,9 @@
+type_settings:
+  states:
+    draft:
+      label: Предлог
+  transitions:
+    archived_draft:
+      label: 'Поврати у Предлог'
+    create_new_draft:
+      label: 'Направи нови Предлог'

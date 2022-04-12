@@ -1,0 +1,32 @@
+label: 'De bewerkpagina bekijken'
+tips:
+  views-main:
+    label: 'Overzichtinstellingen beheren'
+    body: 'De configuratie bekijken of bewerken.'
+  views-ui-displays:
+    label: 'Wordt in dit overzicht weergegeven'
+    body: 'Een weergave is een manier om de resultaten te tonen bijvoorbeeld als een pagina of een blok. Een overzicht kan meerdere weergaven bevatten die hier worden getoond. De actieve weergave is gemarkeerd.'
+  views-ui-view-admin:
+    label: Overzichtbeheer
+    body: 'Voer beheertaken uit, inclusief het toevoegen van een beschrijving en het aanmaken van een duplicaat. Klik op de keuzelijst om de beschikbare opties te zien.'
+  views-ui-format:
+    label: Weergaveformaat
+    body: 'Kies hoe resultaten uitgevoerd worden. Kies bijvoorbeeld <em>Inhoud</em> om elk item volledig uit te voeren volgens de daarvoor ingestelde weergave. Of kies <em>Velden</em>, om specifieke velden voor elk resultaat weer te geven. Aanvullende formaten kunnen toegevoegd worden door modules te installeren die de basisfunctionaliteit van Drupal <em>uitbreiden</em>.'
+  views-ui-fields:
+    label: Velden
+    body: 'Als dit overzicht velden gebruikt, worden ze hier weergegeven. U kunt op een veld klikken om het te configureren.'
+  views-ui-filter:
+    label: 'Filter het overzicht'
+    body: 'Voeg filters toe om het aantal getoonde resultaten te beperken. Bijvoorbeeld een filter voor <em>Gepubliceerd</em> en selecteer vervolgens <em>Ja</em> om alleen <em>gepubliceerde</em> content te tonen.'
+  views-ui-filter-operations:
+    label: Filteracties
+    body: 'Filters toevoegen, herschikken of verwijderen.'
+  views-ui-sorts:
+    label: Sorteercriteria
+    body: 'Beheer de volgorde waarop de resultaten getoond moeten worden. Klik op een actieve sorteer-regel om deze in te stellen.'
+  views-ui-sorts-operations:
+    label: 'Acties sorteren'
+    body: 'Sorteerregels toevoegen, herschikken of verwijderen.'
+  views-ui-preview:
+    label: Voorbeeldweergave
+    body: 'Een voorbeeld van de overzichts-output weergeven.'

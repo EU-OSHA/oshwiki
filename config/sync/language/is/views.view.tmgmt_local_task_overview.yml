@@ -1,0 +1,206 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+          tags:
+            previous: '< Fyrri'
+      fields:
+        title:
+          label: Merking
+          separator: ', '
+        item_count:
+          label: Hlutir
+      filters:
+        status:
+          expose:
+            label: Staða
+  closed:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        title:
+          label: Merking
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        operations:
+          label: Aðgerðir
+      filters:
+        status:
+          expose:
+            label: Staða
+        title:
+          expose:
+            label: Merking
+      menu:
+        title: Lokuð
+  completed:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        title:
+          label: Merking
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        operations:
+          label: Aðgerðir
+      filters:
+        status:
+          expose:
+            label: Staða
+        title:
+          expose:
+            label: Merking
+      menu:
+        title: Lokið
+  eligible:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        title:
+          label: Merking
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        operations:
+          label: Aðgerðir
+      filters:
+        status:
+          expose:
+            label: Staða
+        title:
+          expose:
+            label: Merking
+  my_tasks:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        title:
+          label: Merking
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        operations:
+          label: Aðgerðir
+      filters:
+        status:
+          expose:
+            label: Staða
+        title:
+          expose:
+            label: Merking
+  pending:
+    display_options:
+      fields:
+        status:
+          label: Staða
+          separator: ', '
+        title:
+          label: Merking
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        operations:
+          label: Aðgerðir
+      filters:
+        status:
+          expose:
+            label: Staða
+        title:
+          expose:
+            label: Merking
+      menu:
+        title: 'Í biðstöðu'
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        title:
+          label: Merking
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        operations:
+          label: Aðgerðir
+      filters:
+        status:
+          expose:
+            label: Staða
+        title:
+          expose:
+            label: Merking
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        title:
+          label: Merking
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        operations:
+          label: Aðgerðir
+      filters:
+        status:
+          expose:
+            label: Staða
+      tab_options:
+        title: Þýða

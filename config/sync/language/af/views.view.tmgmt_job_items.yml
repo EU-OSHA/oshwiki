@@ -1,0 +1,34 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+          tags:
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laaste »'
+      fields:
+        type:
+          label: Tipe
+        tags_count:
+          label: Etikette
+        operations:
+          label: Aksies
+      arguments:
+        tjid:
+          exception:
+            title: Alle
+  checkout:
+    display_title: 'Betaal punt'
+    display_options:
+      fields:
+        type:
+          label: Tipe

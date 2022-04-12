@@ -1,0 +1,34 @@
+uuid: 53bea4da-d2a5-48f9-94c4-022e1ae8c883
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.image_caption
+    - paragraphs.paragraphs_type.sections_paragraph
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.sections_paragraph.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: sections_paragraph
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image_caption: image_caption
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference
