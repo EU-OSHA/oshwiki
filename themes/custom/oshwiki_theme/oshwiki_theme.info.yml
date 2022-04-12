@@ -1,6 +1,6 @@
-name: oshwiki23-25 Subtheme
+name: OSHWiki Subtheme
 type: theme
-description: 'oshwiki23-25 SubTheme.'
+description: 'OSHWiki SubTheme.'
 core: 8.x
 core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
