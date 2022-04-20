@@ -13,7 +13,7 @@ _core:
 id: oshwiki_theme_footer
 theme: oshwiki_theme
 region: footer
-weight: -6
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
@@ -23,5 +23,5 @@ settings:
   provider: system
   level: 1
   depth: 0
-  expand_all_items: false
+  expand_all_items: true
 visibility: {  }
