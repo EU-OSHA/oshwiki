@@ -1,4 +1,4 @@
-uuid: fc920116-e258-48f5-b00a-29bb9c1b4a3d
+uuid: 5ddd029b-6750-48b9-b9c6-7374f0e5cda0
 langcode: en
 status: true
 dependencies:
@@ -8,17 +8,15 @@ dependencies:
     - system
   theme:
     - oshwiki_theme
-_core:
-  default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
-id: oshwiki_theme_footer
+id: footer
 theme: oshwiki_theme
 region: footer
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  label: Footer
   label_display: '0'
   provider: system
   level: 1

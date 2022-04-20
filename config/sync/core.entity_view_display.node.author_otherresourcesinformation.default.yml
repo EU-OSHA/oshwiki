@@ -8,40 +8,22 @@ dependencies:
     - field.field.node.author_otherresourcesinformation.field_position
     - node.type.author_otherresourcesinformation
   module:
-    - text
     - user
 id: node.author_otherresourcesinformation.default
 targetEntityType: node
 bundle: author_otherresourcesinformation
 mode: default
 content:
-  field_more_information:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 104
-    region: content
   field_organisation:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
-    region: content
-  field_position:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  field_more_information: true
+  field_position: true
   langcode: true
+  links: true
