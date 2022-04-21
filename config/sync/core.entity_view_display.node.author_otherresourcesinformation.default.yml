@@ -8,7 +8,35 @@ dependencies:
     - field.field.node.author_otherresourcesinformation.field_position
     - node.type.author_otherresourcesinformation
   module:
+    - ds
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - node_title
+        - field_organisation
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
 id: node.author_otherresourcesinformation.default
 targetEntityType: node
 bundle: author_otherresourcesinformation
@@ -20,8 +48,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
-    region: content
+    weight: 1
+    region: ds_content
 hidden:
   field_more_information: true
   field_position: true
