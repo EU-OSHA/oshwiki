@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: oshwiki_theme_footer
 theme: oshwiki_theme
-region: top_header
-weight: 0
+region: footer
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
@@ -23,5 +23,5 @@ settings:
   provider: system
   level: 1
   depth: 0
-  expand_all_items: false
+  expand_all_items: true
 visibility: {  }
