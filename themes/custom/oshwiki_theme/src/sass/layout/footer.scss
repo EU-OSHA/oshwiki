@@ -1,0 +1,41 @@
+.site-footer{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  background-color: $bg-light-dark-grey;
+  gap: 10px;
+  .copyright-footer{
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+    }
+    display: flex;
+    align-items: center;
+    @include textFormat(1.2rem, 700, $text-dark-dark-grey);
+  }
+  .row{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  section{
+    nav{
+      padding: 0px;
+    }
+    .navbar-nav{
+      column-gap: 1rem;
+      display: flex;
+      flex-direction: row;
+      a{
+        @include textFormat(1.2rem, null, $text-white);
+        text-decoration: none;
+      }
+    }
+  }
+  .block{
+    border: none;
+    padding: 0rem;
+  }
+}
+
+

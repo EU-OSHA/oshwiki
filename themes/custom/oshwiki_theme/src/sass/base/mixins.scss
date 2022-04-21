@@ -1,9 +1,10 @@
+/*Format the text the text. It receives the font-size, weight and colour as parameters.*/
 @mixin textFormat($size, $weight, $color){
   font-size:  $size;
   font-weight:  $weight;
   color: $color;
 }
-
+/*Set height and width*/
 @mixin dimensions($height, $width){
   height: $height;
   width: $width;
