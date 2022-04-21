@@ -11,7 +11,7 @@ dependencies:
 id: logooshwikiosha
 theme: oshwiki_theme
 region: top_header_logos
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:af9750c7-13d5-4fa4-a00b-ff5202366dcb'
 settings:
