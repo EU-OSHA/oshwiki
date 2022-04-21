@@ -1,0 +1,55 @@
+display:
+  default:
+    display_title: Προεπιλεγμένο
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Εφαρμογή
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      pager:
+        options:
+          tags:
+            previous: '‹ Προηγούμενο'
+            next: 'Επόμενο ›'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      fields:
+        id:
+          label: ID
+          separator: ', '
+        referenced_entity_type:
+          separator: ', '
+        referenced_entity_bundle:
+          separator: ', '
+        referenced_entity_id:
+          separator: ', '
+        referenced_entity_revision_id:
+          separator: ', '
+        referenced_entity_lang:
+          separator: ', '
+        referenced_entity_field:
+          separator: ', '
+        pdf_file_id:
+          separator: ', '
+        pdf_file_uri:
+          separator: ', '
+        pdf_file_page:
+          separator: ', '
+        image_file_id:
+          separator: ', '
+        image_file_uri:
+          separator: ', '
+        changed:
+          label: Τροποποιημένο
+          separator: ', '
+      filters:
+        changed_2:
+          expose:
+            label: Τροποποιημένο
+  list:
+    display_title: Σελίδα

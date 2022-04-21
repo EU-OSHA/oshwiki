@@ -1,0 +1,17 @@
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        id:
+          label: ID
+  list:
+    display_title: Bladsy
