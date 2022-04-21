@@ -4,8 +4,8 @@
   font-family: "Noto Sans", sans-serif;
 }
 /* Font colours */
-/* background colours */
-/* END - D9 - Variables NCW */
+/* Background colours */
+/* END */
 * {
   margin: 0px;
   padding: 0px;
@@ -61,6 +61,90 @@ ul {
   padding-right: 0;
 }
 
+.warning-message {
+  padding: 2rem 2rem 1rem 2rem;
+  background: #FEF6E5;
+  border-radius: 15px;
+  border: none;
+}
+.warning-message .warning-message-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.warning-message .warning-message-container img {
+  height: 3rem;
+  width: 3rem;
+}
+.warning-message .warning-message-container p {
+  font-size: 1rem;
+  color: #58585A;
+}
+.warning-message .read-more {
+  display: flex;
+  justify-content: flex-end;
+}
+.warning-message .read-more p a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #212121;
+}
+
+.scientific_year {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.scientific_introduction .field__label {
+  background: yellow;
+  /*@include textFormat(2rem, 500, $text-color-dark-grey);*/
+}
+.scientific_introduction .field__item p {
+  color: #212121;
+  font-size: 1.4rem;
+}
+
+.scientific_author {
+  padding: 2rem;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  width: 90%;
+  margin: 2rem auto;
+}
+.scientific_author .field--name-field-authors-other-sources .field__label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj {
+  justify-content: center;
+}
+.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj .field--name-node-title {
+  font-weight: 700;
+  color: #58585A;
+}
+.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj .field--name-field-organisation {
+  color: #58585A;
+}
+
+.select-theme-article {
+  border-radius: 15px 15px 15px 15px;
+  background-color: #D5E6E6;
+  padding: 0rem 0rem 1rem 0rem;
+  margin-top: 1rem;
+}
+.select-theme-article .select-theme-article-title-box {
+  padding: 1rem 0rem 0.5rem 2rem;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #449FA2;
+}
+.select-theme-article .select-theme-article-title-box p {
+  font-size: 2rem;
+  color: #FFFFFF;
+  border-radius: 15px 15px 0px 0px;
+}
 /* Home page */
 
 /*# sourceMappingURL=oshwiki-global.css.map */

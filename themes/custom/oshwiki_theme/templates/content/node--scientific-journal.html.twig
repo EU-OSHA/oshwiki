@@ -73,13 +73,17 @@
   ]
 %}
 <div class="row wrapper-content">
-  <div class="col-md-12 col-12">
-    <div class="alert alert-warning" role="alert">
-      <p>
-        <strong>{{ 'This article is not reviewed or updated by OSHA, as it is an article written is a national version by a contributor.' | trans }}</strong>
-        {{ 'Please note that the information in this article may have varied from the time it was written.' | trans }}
-      </p>
-      <a href="#">{{ 'Read more' | trans }}</a>
+  <div class="col-12">
+    <div class="warning-message" role="alert">
+      <div class="warning-message-container">
+        <p>
+          <strong>{{ 'This article is not reviewed or updated by OSHA, as it is an article written is a national version by a contributor.' | trans }}</strong>
+          {{ 'Please note that the information in this article may have varied from the time it was written.' | trans }}
+        </p>
+      </div>
+      <div class="read-more">
+        <a href="#">{{ 'Read more' | trans }}</a>
+      </div>
     </div>
   </div>
   <div class="col-md-9 col-12">
@@ -102,7 +106,7 @@
       </div>
 
       <div class="scientific_author">
-        {{ content.field_authors_other_sources }}
+            {{ content.field_authors_other_sources }}
       </div>
 
       <div class="scientific_year">
@@ -110,7 +114,11 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3 col-12">
-    <h2>Themes</h2>
+  <div class="select-theme-article col-md-3 col-12">
+    <div class="select-theme-article-title-box">
+      <p>Select theme</p>
+    </div>
+    <div class="select-theme-article-content-box">
+    </div>
   </div>
 </div>
