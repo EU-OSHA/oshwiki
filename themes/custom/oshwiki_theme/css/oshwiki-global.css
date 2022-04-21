@@ -6,6 +6,8 @@
 /* Font colours */
 /* Background colours */
 /* END */
+/*Format the text the text. It receives the font-size, weight and colour as parameters.*/
+/*Set height and width*/
 * {
   margin: 0px;
   padding: 0px;
@@ -61,6 +63,10 @@ ul {
   padding-right: 0;
 }
 
+.push-right {
+  margin-left: auto;
+}
+
 .warning-message {
   padding: 2rem 2rem 1rem 2rem;
   background: #FEF6E5;
@@ -97,9 +103,11 @@ ul {
   gap: 0.5rem;
 }
 
-.scientific_introduction .field__label {
-  background: yellow;
-  /*@include textFormat(2rem, 500, $text-color-dark-grey);*/
+.scientific_introduction .field--name-field-introduction-science .field__label {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #212121;
 }
 .scientific_introduction .field__item p {
   color: #212121;
@@ -121,11 +129,13 @@ ul {
 .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj {
   justify-content: center;
 }
-.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj .field--name-node-title {
+.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj h2 {
+  font-size: 1.3rem;
   font-weight: 700;
   color: #58585A;
 }
 .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj .field--name-field-organisation {
+  font-size: 1.3rem;
   color: #58585A;
 }
 
@@ -145,6 +155,49 @@ ul {
   color: #FFFFFF;
   border-radius: 15px 15px 0px 0px;
 }
+.site-footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  background-color: #B0B2B3;
+  gap: 10px;
+}
+.site-footer .copyright-footer {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #58585A;
+}
+@media only screen and (max-width: 992px) {
+  .site-footer .copyright-footer {
+    width: 100%;
+  }
+}
+.site-footer .row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.site-footer section nav {
+  padding: 0px;
+}
+.site-footer section .navbar-nav {
+  column-gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.site-footer section .navbar-nav a {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.site-footer .block {
+  border: none;
+  padding: 0rem;
+}
+
 /* Home page */
 
 /*# sourceMappingURL=oshwiki-global.css.map */

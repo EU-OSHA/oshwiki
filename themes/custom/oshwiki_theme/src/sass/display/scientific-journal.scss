@@ -33,9 +33,11 @@
 }
 
 .scientific_introduction{
-  .field__label{
-    background: yellow;
-    /*@include textFormat(2rem, 500, $text-color-dark-grey);*/
+  .field--name-field-introduction-science{
+    .field__label{
+      text-transform: uppercase;
+      @include textFormat(1.5rem, 700, $text-black);
+    }
   }
   .field__item{
     p{
@@ -57,11 +59,11 @@
     }
     .wrapper-author-sj{
       justify-content: center;
-      .field--name-node-title{
-        @include textFormat(null, 700, $text-dark-dark-grey);
+      h2{
+        @include textFormat(1.3rem, 700, $text-dark-dark-grey);
       }
       .field--name-field-organisation{
-        @include textFormat(null, null, $text-dark-dark-grey);
+        @include textFormat(1.3rem, null, $text-dark-dark-grey);
       }
     }
   }
