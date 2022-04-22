@@ -125,6 +125,7 @@ ul {
   font-size: 1.5rem;
   font-weight: 700;
   color: #58585A;
+  margin-bottom: 1rem;
 }
 .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj {
   justify-content: center;
@@ -155,12 +156,134 @@ ul {
   color: #FFFFFF;
   border-radius: 15px 15px 0px 0px;
 }
+.top-header-container section .logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top-header-container section .logo-wrapper > div {
+  padding: 0rem 1rem;
+}
+.top-header-container section .logo-wrapper div:first-child img, .top-header-container section .logo-wrapper div:nth-child(2) img {
+  height: 4rem;
+}
+.top-header-container section .logo-wrapper .logo-oshwiki {
+  border-right: 4px solid #B0B2B3;
+}
+
+.navbar-expand-lg {
+  border-color: #E0E0E0;
+  border-style: solid;
+  border-width: 1px 0px;
+  padding-bottom: 0rem;
+}
+.navbar-expand-lg #block-oshwiki-theme-main-menu {
+  width: 100%;
+}
+.navbar-expand-lg ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.navbar-expand-lg ul li {
+  font-weight: 500;
+  padding: 1rem 3rem;
+}
+.navbar-expand-lg ul li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #58585A;
+}
+.navbar-expand-lg ul .active {
+  position: relative;
+}
+.navbar-expand-lg ul .active a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.navbar-expand-lg ul .active:after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 0rem;
+  left: 0%;
+  right: 0%;
+  height: 0.3rem;
+  background: #F6A400;
+}
+
+.bg-image-banner {
+  height: max-content;
+  width: 100%;
+  background-color: #70809040;
+  background-image: url("../images/background-green.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 1rem 0rem;
+}
+.bg-image-banner .block-system-breadcrumb-block ol {
+  background: transparent;
+}
+.bg-image-banner .block-system-breadcrumb-block ol .active a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.bg-image-banner .block-system-breadcrumb-block ol .breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  content: ">";
+}
+.bg-image-banner .block-system-breadcrumb-block ol .breadcrumb-item a {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+}
+.bg-image-banner .block-page-title-block h1 {
+  font-size: 3.5rem;
+  color: #FFFFFF;
+}
+
+/*Different banner image for the scientific-journal*/
+.node--type-scientific-journal .bg-image-banner {
+  background-image: url("../images/background-orange.png");
+}
+
+@media only screen and (max-width: 576px) {
+  .bg-image-banner .block-page-title-block h1 {
+    font-size: 2rem;
+    color: #FFFFFF;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .bg-image-banner .block-page-title-block h1 {
+    font-size: 2.8rem;
+    color: #FFFFFF;
+  }
+}
+footer {
+  margin-top: 1rem;
+}
+
 .site-footer {
   display: flex;
   justify-content: flex-start;
   flex-flow: wrap;
+  column-gap: 2rem;
   background-color: #B0B2B3;
-  gap: 10px;
+  padding: 0rem;
+}
+.site-footer .container {
+  padding-top: 0.5rem;
 }
 .site-footer .copyright-footer {
   display: flex;
@@ -168,11 +291,6 @@ ul {
   font-size: 1.2rem;
   font-weight: 700;
   color: #58585A;
-}
-@media only screen and (max-width: 992px) {
-  .site-footer .copyright-footer {
-    width: 100%;
-  }
 }
 .site-footer .row {
   display: flex;
@@ -184,20 +302,45 @@ ul {
   padding: 0px;
 }
 .site-footer section .navbar-nav {
-  column-gap: 1rem;
   display: flex;
   flex-direction: row;
+}
+.site-footer section .navbar-nav .nav-link {
+  padding: 0rem 0.8rem;
+  border-right: 1px solid #FFFFFF;
+}
+.site-footer section .navbar-nav .nav-link--contact {
+  padding-left: 0px;
 }
 .site-footer section .navbar-nav a {
   font-size: 1.2rem;
   color: #FFFFFF;
   text-decoration: none;
 }
+.site-footer section .navbar-nav li:last-of-type a {
+  border-right: none;
+}
 .site-footer .block {
   border: none;
   padding: 0rem;
 }
 
+@media only screen and (max-width: 992px) {
+  .site-footer {
+    height: auto;
+    padding-top: 0.8rem;
+  }
+  .site-footer .copyright-footer {
+    width: 100%;
+  }
+}
 /* Home page */
+.icon-bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #449FA2;
+  margin-bottom: 0.5rem;
+}
 
 /*# sourceMappingURL=oshwiki-global.css.map */
