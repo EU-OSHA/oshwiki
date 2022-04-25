@@ -1,19 +1,20 @@
-uuid: e755a36c-ad5d-41df-9371-d173df24affe
+uuid: 5331443d-bfab-4dbf-b6ac-55355b3fba93
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.paragraph_search_result
     - field.field.paragraph.references_paragraph.field_number_references
     - field.field.paragraph.references_paragraph.field_reference_references
     - paragraphs.paragraphs_type.references_paragraph
-id: paragraph.references_paragraph.default
+id: paragraph.references_paragraph.paragraph_search_result
 targetEntityType: paragraph
 bundle: references_paragraph
-mode: default
+mode: paragraph_search_result
 content:
   field_number_references:
     type: number_decimal
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -24,7 +25,7 @@ content:
     region: content
   field_reference_references:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }

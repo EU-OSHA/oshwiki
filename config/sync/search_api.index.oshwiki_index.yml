@@ -1,0 +1,227 @@
+uuid: c0417c7d-e975-4ff3-abfa-56800c92af7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_date_science
+    - field.storage.node.field_sections_oshwiki
+    - field.storage.paragraph.field_description_sections
+    - field.storage.paragraph.field_title_sections
+    - field.storage.node.field_theme_representative
+    - field.storage.node.field_themes_oshwiki
+    - search_api.server.solr
+  module:
+    - search_api_solr
+    - node
+    - paragraphs
+    - search_api
+    - taxonomy
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+id: oshwiki_index
+name: 'Oshwiki Index'
+description: ''
+read_only: false
+field_settings:
+  changed:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_description_sections:
+    label: 'sections description'
+    datasource_id: 'entity:node'
+    property_path: 'field_sections_oshwiki:entity:field_description_sections'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_sections_oshwiki
+        - field.storage.paragraph.field_description_sections
+      module:
+        - paragraphs
+  field_published_date_science:
+    label: 'published date'
+    datasource_id: 'entity:node'
+    property_path: field_published_date_science
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_published_date_science
+  field_sections_oshwiki:
+    label: sections
+    datasource_id: 'entity:node'
+    property_path: field_sections_oshwiki
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_sections_oshwiki
+  field_theme_representative:
+    label: 'Theme Representative Article'
+    datasource_id: 'entity:node'
+    property_path: field_theme_representative
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_theme_representative
+  field_themes_oshwiki:
+    label: themes
+    datasource_id: 'entity:node'
+    property_path: field_themes_oshwiki
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_themes_oshwiki
+  field_title_sections:
+    label: 'sections title'
+    datasource_id: 'entity:node'
+    property_path: 'field_sections_oshwiki:entity:field_title_sections'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_sections_oshwiki
+        - field.storage.paragraph.field_title_sections
+      module:
+        - paragraphs
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 3
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: true
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - author_otherresourcesinformation
+        - authors_content
+        - contributors_content
+        - oshwiki_articles
+        - scientific_journal
+    languages:
+      default: true
+      selected: {  }
+  'entity:paragraph':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:taxonomy_term':
+    bundles:
+      default: false
+      selected:
+        - nace
+        - osh_categories
+        - reference
+        - themes
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  hierarchy:
+    weights:
+      preprocess_index: -45
+    fields:
+      field_themes_oshwiki: taxonomy_term-parent
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: false
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: false
+server: solr

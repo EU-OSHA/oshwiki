@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.oshwiki_articles.field_further_reading_oshwiki
     - field.field.node.oshwiki_articles.field_image_oshwiki
     - field.field.node.oshwiki_articles.field_nace_oshwiki
+    - field.field.node.oshwiki_articles.field_one_language_available
     - field.field.node.oshwiki_articles.field_osh_categories_oshwiki
     - field.field.node.oshwiki_articles.field_oshwiki_link
     - field.field.node.oshwiki_articles.field_references_oshwiki
     - field.field.node.oshwiki_articles.field_sections_oshwiki
+    - field.field.node.oshwiki_articles.field_theme_representative
     - field.field.node.oshwiki_articles.field_themes_oshwiki
     - node.type.oshwiki_articles
   module:
@@ -35,9 +37,12 @@ hidden:
   field_further_reading_oshwiki: true
   field_image_oshwiki: true
   field_nace_oshwiki: true
+  field_one_language_available: true
   field_osh_categories_oshwiki: true
   field_oshwiki_link: true
   field_references_oshwiki: true
   field_sections_oshwiki: true
+  field_theme_representative: true
   field_themes_oshwiki: true
   langcode: true
+  search_api_excerpt: true
