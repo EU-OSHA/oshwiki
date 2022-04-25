@@ -14,7 +14,7 @@ footer{
   .copyright-footer{
     display: flex;
     align-items: center;
-    @include textFormat(1.2rem, 700, $text-dark-dark-grey);
+    @include textFormat(1rem, 700, $text-dark-dark-grey);
   }
   .row{
     display: flex;
@@ -37,8 +37,11 @@ footer{
         padding-left: 0px;
       }
       a{
-        @include textFormat(1.2rem, null, $text-white);
+        @include textFormat(1rem, null, $text-white);
         text-decoration: none;
+      }
+      li:hover{
+        font-weight: bold;
       }
       li:last-of-type a{
         border-right: none;
@@ -51,12 +54,23 @@ footer{
   }
 }
 
+/*Make footer design responsive*/
 @media only screen and (max-width: 992px) {
   .site-footer{
     height: auto;
     padding-top: 0.8rem;
     .copyright-footer{
       width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .site-footer {
+    .navbar-nav {
+      li:last-of-type a {
+        padding-left: 0rem;
+      }
     }
   }
 }
