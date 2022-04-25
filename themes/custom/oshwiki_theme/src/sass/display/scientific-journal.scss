@@ -33,35 +33,41 @@
 }
 
 .scientific_introduction{
-  .field__label{
-    background: yellow;
-    /*@include textFormat(2rem, 500, $text-color-dark-grey);*/
+  .field--name-field-introduction-science{
+    .field__label{
+      margin: 1rem 0rem;
+      text-transform: uppercase;
+      @include textFormat(1.2rem, 700, $text-black);
+    }
   }
   .field__item{
     p{
       color: $text-black;
-      font-size: 1.4rem;
+      font-size: 1rem;
+      letter-spacing: 0.2px;
+      line-height: 27px;
     }
   }
 }
 
 .scientific_author{
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-bottom: 2px solid #ccc;
   border-top: 2px solid #ccc;
   width: 90%;
   margin: 2rem auto;
   .field--name-field-authors-other-sources{
     .field__label{
-      @include textFormat(1.5rem, 700, $text-dark-dark-grey);
+      @include textFormat(1.2rem, 700, $text-dark-dark-grey);
     }
     .wrapper-author-sj{
       justify-content: center;
-      .field--name-node-title{
-        @include textFormat(null, 700, $text-dark-dark-grey);
+      h2{
+        margin: 1rem 0rem 0rem 0rem;
+        @include textFormat(1rem, 700, $text-dark-dark-grey);
       }
       .field--name-field-organisation{
-        @include textFormat(null, null, $text-dark-dark-grey);
+        @include textFormat(0.9rem, 700, $text-dark-dark-grey);
       }
     }
   }
@@ -71,14 +77,15 @@
   border-radius: 15px 15px 15px 15px;
   background-color: #D5E6E6;
   padding: 0rem 0rem 1rem 0rem;
-  margin-top: 1rem;
+  margin: 1rem 0rem;
   .select-theme-article-title-box{
-    padding: 1rem 0rem 0.5rem 2rem;
+    padding: 0.5rem 0rem 0.5rem 1.5rem;
     border-radius: 15px 15px 0px 0px;
     background-color: $bg-dark-green;
     p{
-      @include textFormat(2rem, null, $text-white);
+      @include textFormat(1.5rem, null, $text-white);
       border-radius: 15px 15px 0px 0px;
+      margin:0rem;
     }
   }
   .select-theme-article-content-box{
