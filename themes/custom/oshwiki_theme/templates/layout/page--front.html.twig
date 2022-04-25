@@ -1,0 +1,78 @@
+{% extends "@bootstrap_barrio/layout/page.html.twig" %}
+{% block head %}
+<div id="navbar" role="banner" class="{{ navbar_classes }}">
+  <div class="top-header-container container">
+    <div class="top-header-content row">
+      <div class="header-logo">
+        {{ page.top_header_logos }}
+      </div>
+      <div class="push-right">
+        <div class="wrapper-two-columns-header">
+          <div class="content-first-row">
+            <div class="font-size-print">
+              <span id="_smallify" class="a_small"><a title="{{ 'Smaller text' | trans }}">a</a></span>
+              <span id="_reset" class="a_medium"><a title="{{ 'Optimised defaults' | trans }}">a</a></span>
+              <span id="_biggify" class="a_big"><a title="{{ 'Bigger text' | trans }}">a</a></span>
+              <a href="#" onclick="if(window.print)window.print();" class="print-friendly" title="{{ 'Print page' | trans }}"></a>
+            </div>
+          </div>
+          <div class="header-language-search">
+            {{ page.top_header_form }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav{{ navbar_attributes }}>
+    {% if page.primary_menu %}
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse container" id="CollapsingNavbar">
+          {{ page.primary_menu }}
+      </div>
+    {% endif %}
+    {% if sidebar_collapse %}
+      <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+    {% endif %}
+  </nav>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div id="main">
+    <div class="container-fluid">
+      <section class="section section_banner">
+        <div class="container">
+          <h1>{{ 'Welcome to OSHWiki' | trans }}</h1>
+          <p>the Occupational Safety and Health free encyclopedia</p>
+          <p>TODO Create search</p>
+        </div>
+      </section>
+    </div>
+    <!--FEATURED ARTICLES -->
+    <div class="container-fluid">
+      <section class="section section_featured_articles">
+        <div class="container">
+          <h2>{{ 'Featured articles' | trans }}</h2>
+          <p>TODO Featured articles view</p>
+        </div>
+      </section>
+    </div>
+    <!--END FEATURED ARTICLES -->
+  </div>
+{% endblock %}
+
+{% block footer %}
+  <div class="{{ container }}" >
+    {% if page.footer %}
+      <div class="site-footer">
+        <div class="copyright-footer">© 2022 OSHWIKI | {{ 'an agency of the European Union' | trans }}</div>
+        {{ page.footer }}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

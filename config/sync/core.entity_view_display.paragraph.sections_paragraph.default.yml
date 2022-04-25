@@ -16,7 +16,7 @@ mode: default
 content:
   field_description_sections:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
@@ -32,7 +32,7 @@ content:
     region: content
   field_title_sections:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
