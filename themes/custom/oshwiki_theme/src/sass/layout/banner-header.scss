@@ -10,7 +10,9 @@
       }
       div:first-child, div:nth-child(2){
         img{
-          height: 4rem;
+          width:inherit;
+          height:5rem;
+          object-fit: contain;
         }
       }
       .logo-oshwiki{
@@ -57,14 +59,15 @@
         background: $bg-dark-orange;
       }
   }
-
+  }
+  .navbar-toggler{
+    padding: 0rem;
   }
 }
 
 .bg-image-banner{
   @include dimensions(max-content, 100%);
   background: {
-    color: #70809040;
     image: url('../images/background-green.png');
     position: center;
     size: cover;
@@ -95,7 +98,7 @@
   }
   .block-page-title-block{
     h1{
-      @include textFormat(3.5rem, null, $text-white);
+      @include textFormat(2.8rem, null, $text-white);
     }
   }
 }
@@ -121,7 +124,7 @@
   .bg-image-banner{
     .block-page-title-block{
       h1{
-        @include textFormat(2.8rem, null, $text-white);
+        @include textFormat(2.3rem, null, $text-white);
       }
     }
   }

@@ -104,39 +104,43 @@ ul {
 }
 
 .scientific_introduction .field--name-field-introduction-science .field__label {
+  margin: 1rem 0rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #212121;
 }
 .scientific_introduction .field__item p {
   color: #212121;
-  font-size: 1.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  line-height: 27px;
 }
 
 .scientific_author {
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-bottom: 2px solid #ccc;
   border-top: 2px solid #ccc;
   width: 90%;
   margin: 2rem auto;
 }
 .scientific_author .field--name-field-authors-other-sources .field__label {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #58585A;
-  margin-bottom: 1rem;
 }
 .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj {
   justify-content: center;
 }
 .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj h2 {
-  font-size: 1.3rem;
+  margin: 1rem 0rem 0rem 0rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #58585A;
 }
 .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj .field--name-field-organisation {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: #58585A;
 }
 
@@ -144,17 +148,18 @@ ul {
   border-radius: 15px 15px 15px 15px;
   background-color: #D5E6E6;
   padding: 0rem 0rem 1rem 0rem;
-  margin-top: 1rem;
+  margin: 1rem 0rem;
 }
 .select-theme-article .select-theme-article-title-box {
-  padding: 1rem 0rem 0.5rem 2rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
   border-radius: 15px 15px 0px 0px;
   background-color: #449FA2;
 }
 .select-theme-article .select-theme-article-title-box p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #FFFFFF;
   border-radius: 15px 15px 0px 0px;
+  margin: 0rem;
 }
 .top-header-container section .logo-wrapper {
   display: flex;
@@ -166,7 +171,9 @@ ul {
   padding: 0rem 1rem;
 }
 .top-header-container section .logo-wrapper div:first-child img, .top-header-container section .logo-wrapper div:nth-child(2) img {
-  height: 4rem;
+  width: inherit;
+  height: 5rem;
+  object-fit: contain;
 }
 .top-header-container section .logo-wrapper .logo-oshwiki {
   border-right: 4px solid #B0B2B3;
@@ -216,11 +223,13 @@ ul {
   height: 0.3rem;
   background: #F6A400;
 }
+.navbar-expand-lg .navbar-toggler {
+  padding: 0rem;
+}
 
 .bg-image-banner {
   height: max-content;
   width: 100%;
-  background-color: #70809040;
   background-image: url("../images/background-green.png");
   background-position: center;
   background-size: cover;
@@ -249,7 +258,7 @@ ul {
   color: #FFFFFF;
 }
 .bg-image-banner .block-page-title-block h1 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   color: #FFFFFF;
 }
 
@@ -266,7 +275,7 @@ ul {
 }
 @media only screen and (min-width: 576px) and (max-width: 992px) {
   .bg-image-banner .block-page-title-block h1 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     color: #FFFFFF;
   }
 }
@@ -288,7 +297,7 @@ footer {
 .site-footer .copyright-footer {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #58585A;
 }
@@ -313,9 +322,12 @@ footer {
   padding-left: 0px;
 }
 .site-footer section .navbar-nav a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #FFFFFF;
   text-decoration: none;
+}
+.site-footer section .navbar-nav li:hover {
+  font-weight: bold;
 }
 .site-footer section .navbar-nav li:last-of-type a {
   border-right: none;
@@ -325,6 +337,7 @@ footer {
   padding: 0rem;
 }
 
+/*Make footer design responsive*/
 @media only screen and (max-width: 992px) {
   .site-footer {
     height: auto;
@@ -334,13 +347,18 @@ footer {
     width: 100%;
   }
 }
+@media only screen and (max-width: 426px) {
+  .site-footer .navbar-nav li:last-of-type a {
+    padding-left: 0rem;
+  }
+}
 /* Home page */
 .icon-bar {
   display: block;
-  width: 20px;
-  height: 3px;
+  width: 30px;
+  height: 5px;
   background-color: #449FA2;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 /*# sourceMappingURL=oshwiki-global.css.map */
