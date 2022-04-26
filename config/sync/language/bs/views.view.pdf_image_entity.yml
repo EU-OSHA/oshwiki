@@ -1,0 +1,14 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      fields:
+        id:
+          label: ID
+  list:
+    display_title: Strana
