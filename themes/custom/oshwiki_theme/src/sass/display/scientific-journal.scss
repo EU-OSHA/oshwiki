@@ -1,0 +1,99 @@
+.warning-message{
+  padding: 2rem 2rem 1rem 2rem;
+  background: $bg-light-orange;
+  border-radius: 15px;
+  border: none;
+  .warning-message-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    img{
+      @include dimensions(3rem,3rem);
+    }
+    p{
+      @include textFormat(1rem, null, $text-dark-dark-grey);
+    }
+  }
+  .read-more{
+    display: flex;
+    justify-content: flex-end;
+    p{
+      a{
+        text-decoration: none;
+        @include textFormat(1.2rem, 700, $text-black);
+      }
+    }
+  }
+}
+
+.scientific_year{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.scientific_introduction{
+  .field--name-field-introduction-science{
+    .field__label{
+      margin: 1rem 0rem;
+      text-transform: uppercase;
+      @include textFormat(1.2rem, 700, $text-black);
+    }
+  }
+  .field__item{
+    p{
+      color: $text-black;
+      font-size: 1rem;
+      letter-spacing: 0.2px;
+      line-height: 27px;
+    }
+  }
+}
+
+.scientific_author{
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  width: 90%;
+  margin: 2rem auto;
+  .field--name-field-authors-other-sources{
+    .field__label{
+      @include textFormat(1.2rem, 700, $text-dark-dark-grey);
+    }
+    .wrapper-author-sj{
+      justify-content: center;
+      h2{
+        margin: 1rem 0rem 0rem 0rem;
+        @include textFormat(1rem, 700, $text-dark-dark-grey);
+      }
+      .field--name-field-organisation{
+        @include textFormat(0.9rem, 700, $text-dark-dark-grey);
+      }
+    }
+  }
+}
+
+.select-theme-article{
+  border-radius: 15px 15px 15px 15px;
+  background-color: #D5E6E6;
+  padding: 0rem 0rem 1rem 0rem;
+  margin: 1rem 0rem;
+  .select-theme-article-title-box{
+    padding: 0.5rem 0rem 0.5rem 1.5rem;
+    border-radius: 15px 15px 0px 0px;
+    background-color: $bg-dark-green;
+    p{
+      @include textFormat(1.5rem, null, $text-white);
+      border-radius: 15px 15px 0px 0px;
+      margin:0rem;
+    }
+  }
+  .select-theme-article-content-box{
+
+  }
+
+}
+
+
+
+

@@ -1,0 +1,131 @@
+.top-header-container{
+  section{
+    .logo-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      &>div{
+        padding: 0rem 1rem;
+      }
+      div:first-child, div:nth-child(2){
+        img{
+          width:inherit;
+          height:5rem;
+          object-fit: contain;
+        }
+      }
+      .logo-oshwiki{
+        border-right: 4px solid $bg-light-dark-grey;
+      }
+    }
+  }
+}
+.navbar-expand-lg{
+  border-color: $bg-very-light-grey;
+  border-style: solid;
+  border-width: 1px 0px;
+  padding-bottom: 0rem;
+  #block-oshwiki-theme-main-menu{
+    width: 100%
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    li{
+      font-weight: 500;
+      padding: 1rem 3rem;
+      a{
+        @include textFormat(1.1rem, 600, $text-dark-dark-grey);
+      }
+    }
+    .active{
+      position: relative;
+      a{
+        @include textFormat(1.1rem, 700, $text-dark-green);
+      }
+      &:after{
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: 0rem;
+        left: 0%;
+        right: 0%;
+        height: 0.3rem;
+        background: $bg-dark-orange;
+      }
+  }
+  }
+  .navbar-toggler{
+    padding: 0rem;
+  }
+}
+
+.bg-image-banner{
+  @include dimensions(max-content, 100%);
+  background: {
+    image: url('../images/background-green.png');
+    position: center;
+    size: cover;
+  }
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 1rem 0rem;
+
+  .block-system-breadcrumb-block{
+    ol{
+      background: transparent;
+      .active{
+        a{
+          @include textFormat(1.3rem, 700, $text-white);
+          text-decoration: underline;
+        }
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        @include textFormat(1.3rem, null, $text-white);
+        content: ">";
+      }
+      .breadcrumb-item a{
+        @include textFormat(1.3rem, null, $text-white);
+      }
+    }
+  }
+  .block-page-title-block{
+    h1{
+      @include textFormat(2.8rem, null, $text-white);
+    }
+  }
+}
+
+/*Different banner image for the scientific-journal*/
+.node--type-scientific-journal{
+  .bg-image-banner{
+    background-image: url('../images/background-orange.png');
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .bg-image-banner{
+    .block-page-title-block{
+      h1{
+        @include textFormat(2rem, null, $text-white);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and  (max-width: 992px) {
+  .bg-image-banner{
+    .block-page-title-block{
+      h1{
+        @include textFormat(2.3rem, null, $text-white);
+      }
+    }
+  }
+}
