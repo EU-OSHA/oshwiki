@@ -1,0 +1,76 @@
+footer{
+  margin-top: 1rem;
+}
+.site-footer{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  column-gap: 2rem;
+  background-color: $bg-light-dark-grey;
+  padding: 0rem;
+  .container{
+    padding-top: 0.5rem;
+  }
+  .copyright-footer{
+    display: flex;
+    align-items: center;
+    @include textFormat(1rem, 700, $text-dark-dark-grey);
+  }
+  .row{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  section{
+    nav{
+      padding: 0px;
+    }
+    .navbar-nav{
+      display: flex;
+      flex-direction: row;
+      .nav-link{
+        padding: 0rem 0.8rem;
+        border-right: 1px solid $bg-white;
+      }
+      .nav-link--contact{
+        padding-left: 0px;
+      }
+      a{
+        @include textFormat(1rem, null, $text-white);
+        text-decoration: none;
+      }
+      li:hover{
+        text-decoration: underline;
+      }
+      li:last-of-type a{
+        border-right: none;
+      }
+    }
+  }
+  .block{
+    border: none;
+    padding: 0rem;
+  }
+}
+
+/*Make footer design responsive*/
+@media only screen and (max-width: 992px) {
+  .site-footer{
+    height: auto;
+    padding-top: 0.8rem;
+    .copyright-footer{
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  .site-footer {
+    .navbar-nav {
+      li:last-of-type a {
+        padding-left: 0rem;
+      }
+    }
+  }
+}

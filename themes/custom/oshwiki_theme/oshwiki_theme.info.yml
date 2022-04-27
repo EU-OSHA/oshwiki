@@ -16,7 +16,7 @@ regions:
   secondary_menu: 'Secondary menu'
   page_top: 'Page top'
   highlighted: 'Highlighted'
-  breadcrumb: 'Breadcrumb'
+  banner_oshwiki: 'Banners OSHWiki'
   front_content: 'Front page content'
   content: 'Content'
   footer: 'Footer'
