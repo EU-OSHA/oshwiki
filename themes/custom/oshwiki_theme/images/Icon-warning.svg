@@ -4,6 +4,6 @@
       <circle cx="24" cy="24" r="24" stroke="none"/>
       <circle cx="24" cy="24" r="22.5" fill="none"/>
     </g>
-    <text id="_" data-name="!" transform="translate(189 764)" fill="#f6a400" font-size="40" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">!</tspan></text>
+    <text id="_" data-name="!" transform="translate(189 764)" fill="#f6a400" font-size="40" font-family="SegoeUI, Segoe UI"><tspan x="-2" y="0">!</tspan></text>
   </g>
 </svg>

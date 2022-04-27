@@ -11,17 +11,44 @@
       div:first-child, div:nth-child(2){
         img{
           width:inherit;
-          height:5rem;
           object-fit: contain;
         }
       }
       .logo-oshwiki{
-        border-right: 4px solid $bg-light-dark-grey;
+        border-right: 2px solid $bg-light-dark-grey;
+      }
+    }
+  }
+  .top-header-content{
+    padding: 1rem;
+    .push-right{
+      .content-first-row{
+        .font-size-print{
+          display: flex;
+          align-items: baseline;
+          column-gap: 0.2rem;
+          span:first-of-type{
+            @include textFormat(1rem, 700, $text-dark-green);
+          }
+          span:nth-of-type(2){
+            @include textFormat(1.5rem, 700, $text-dark-green);
+          }
+          span:last-of-type{
+            @include textFormat(2rem, 700, $text-dark-green);
+          }
+          .print-friendly{
+            margin-left: 0.4rem;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/Icon-awesome-print.svg");
+          }
+        }
       }
     }
   }
 }
-.navbar-expand-lg{
+.content-main-menu{
   border-color: $bg-very-light-grey;
   border-style: solid;
   border-width: 1px 0px;
@@ -97,6 +124,7 @@
     }
   }
   .block-page-title-block{
+    width: 100%;
     h1{
       @include textFormat(2.8rem, null, $text-white);
     }
@@ -121,6 +149,21 @@
 }
 
 @media only screen and (min-width: 576px) and  (max-width: 992px) {
+  .top-header-container{
+    section{
+      .logo-wrapper{
+        &>div{
+          padding: 0rem 0.7rem;
+        }
+        div:first-child, div:nth-child(2){
+          img{
+            height:2.5rem;
+          }
+        }
+      }
+    }
+  }
+
   .bg-image-banner{
     .block-page-title-block{
       h1{

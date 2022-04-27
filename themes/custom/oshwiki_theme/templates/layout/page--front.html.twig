@@ -44,15 +44,17 @@
 
 {% block content %}
   <div id="main">
+    <!-- BANNER -->
     <div class="container-fluid">
       <section class="section section_banner">
         <div class="container">
           <h1>{{ 'Welcome to OSHWiki' | trans }}</h1>
-          <p>the Occupational Safety and Health free encyclopedia</p>
+          <p>{{ 'the Occupational Safety and Health free encyclopedia' | trans }}</p>
           <p>TODO Create search</p>
         </div>
       </section>
     </div>
+    <!-- END BANNER -->
     <!--FEATURED ARTICLES -->
     <div class="container-fluid">
       <section class="section section_featured_articles">
@@ -63,10 +65,40 @@
       </section>
     </div>
     <!--END FEATURED ARTICLES -->
+    <!--MOST POPULAR -->
+    <div class="container-fluid">
+      <section class="section section_most_popular">
+        <div class="container">
+          <h2>{{ 'Most popular' | trans }}</h2>
+          <p>TODO Most popular view</p>
+        </div>
+      </section>
+    </div>
+    <!--END MOST POPULAR -->
+    <!--MOST RECENT -->
+    <div class="container-fluid">
+      <section class="section section_most_recent">
+        <div class="container">
+          <h2>{{ 'Most recent' | trans }}</h2>
+          <p>TODO Most recent view</p>
+        </div>
+      </section>
+    </div>
+    <!--END MOST RECENT -->
+    <!--OTHER SOURCES OF INFORMATION -->
+    <div class="container-fluid">
+      <section class="section section_other_sources">
+        <div class="container">
+          <h2>{{ 'Other sources of information' | trans }}</h2>
+          <p>TODO Other sources of information view</p>
+        </div>
+      </section>
+    </div>
+    <!--END OTHER SOURCES OF INFORMATION -->
   </div>
 {% endblock %}
-
 {% block footer %}
+  <!-- FOOTER -->
   <div class="{{ container }}" >
     {% if page.footer %}
       <div class="site-footer">
@@ -75,4 +107,5 @@
       </div>
     {% endif %}
   </div>
+  <!-- END FOOTER -->
 {% endblock %}
