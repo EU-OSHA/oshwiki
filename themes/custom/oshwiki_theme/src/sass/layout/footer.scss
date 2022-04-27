@@ -41,7 +41,7 @@ footer{
         text-decoration: none;
       }
       li:hover{
-        font-weight: bold;
+        text-decoration: underline;
       }
       li:last-of-type a{
         border-right: none;
@@ -65,7 +65,7 @@ footer{
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 419px) {
   .site-footer {
     .navbar-nav {
       li:last-of-type a {
