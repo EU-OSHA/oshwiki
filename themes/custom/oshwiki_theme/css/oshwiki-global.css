@@ -67,6 +67,116 @@ ul {
   margin-left: auto;
 }
 
+.node--type-oshwiki-articles .wrapper-content .col-12:nth-of-type(1) {
+  margin: 0.5rem 0rem;
+  font-size: 1rem;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .dates_and_social_media {
+  display: grid;
+  grid-template-areas: "date" "share";
+  font-size: 0.9rem;
+  color: #616161;
+}
+.node--type-oshwiki-articles .dates_and_social_media .article_dates {
+  grid-area: date;
+}
+.node--type-oshwiki-articles .dates_and_social_media .social-media {
+  grid-area: share;
+}
+.node--type-oshwiki-articles .article_sections .field__item {
+  margin-bottom: 1em;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-title-sections {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #58585A;
+  margin-bottom: 1em;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-description-sections {
+  font-size: 1rem;
+  color: #58585A;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+}
+
+@media only screen and (min-width: 576px) {
+  .node--type-oshwiki-articles .dates_and_social_media {
+    grid-template-areas: "date share";
+  }
+}
+.section_banner {
+  background-image: url("../images/Home-header.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 50% 5%;
+}
+.section_banner div {
+  padding-top: 95%;
+  padding-bottom: 20%;
+}
+.section_banner div h1 {
+  font-size: 1.8rem;
+  color: #58585A;
+}
+.section_banner div p {
+  max-width: 18rem;
+  font-size: 1rem;
+  color: #58585A;
+}
+
+.page-view-frontpage #main-wrapper .container-fluid {
+  padding: 0.5rem 0rem;
+}
+.page-view-frontpage #main-wrapper .container-fluid p {
+  margin-bottom: 0;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) {
+  background-image: url("../images/grey-diagonal-line-home.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(2),
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(3),
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(4) {
+  background-color: #F8F8F8;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(2) h2,
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(3) h2,
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(4) h2 {
+  font-size: 1.3rem;
+  color: #449FA2;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) {
+  background-color: #FEF6E5;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) h2 {
+  font-size: 1.3rem;
+  color: #58585A;
+}
+
+/*Welcome to Oshwiki section responsive*/
+@media only screen and (min-width: 576px) {
+  .section_banner {
+    background-size: 40%;
+    background-position: 85% 50%;
+  }
+  .section_banner div {
+    padding: 10% 0rem 20%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section_banner {
+    background-position: 75% 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section_banner {
+    background-size: 35%;
+  }
+}
+/*End comment*/
 .warning-message {
   padding: 1rem;
   margin: 1.5rem 0rem;
