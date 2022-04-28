@@ -53,8 +53,8 @@ field_type:
           words: stopwords_da.txt
         -
           class: solr.SnowballPorterFilterFactory
-          language: Danish
           protected: protwords_da.txt
+          language: Danish
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
     -
@@ -80,17 +80,17 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_da.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
           words: stopwords_da.txt
         -
           class: solr.SnowballPorterFilterFactory
-          language: Danish
           protected: protwords_da.txt
+          language: Danish
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 unstemmed_field_type:
@@ -159,9 +159,9 @@ unstemmed_field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_da.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -309,10 +309,6 @@ text_files:
     under
     ved
     vi
-  synonyms: |
-    drupal, durpal
-  nouns: |
-
   protwords: |
 
   accents: |
@@ -480,3 +476,7 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
+  synonyms: |
+    drupal, durpal
+  nouns: |
+

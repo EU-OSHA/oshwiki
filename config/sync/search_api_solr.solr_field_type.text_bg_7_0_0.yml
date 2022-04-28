@@ -63,9 +63,9 @@ field_type:
           words: stopwords_bg.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_bg.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.BulgarianStemFilterFactory
         -
@@ -121,9 +121,9 @@ unstemmed_field_type:
           words: stopwords_bg.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_bg.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 spellcheck_field_type: null
@@ -401,10 +401,10 @@ text_files:
     ще
     щом
     я
+  protwords: |
+
+  accents: ''
   synonyms: |
     drupal, durpal
   nouns: |
 
-  protwords: |
-
-  accents: ''

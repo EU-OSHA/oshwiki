@@ -42,8 +42,8 @@ field_type:
           words: stopwords_ro.txt
         -
           class: solr.SnowballPorterFilterFactory
-          language: Romanian
           protected: protwords_ro.txt
+          language: Romanian
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
     -
@@ -69,17 +69,17 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_ro.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
           words: stopwords_ro.txt
         -
           class: solr.SnowballPorterFilterFactory
-          language: Romanian
           protected: protwords_ro.txt
+          language: Romanian
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 unstemmed_field_type:
@@ -137,9 +137,9 @@ unstemmed_field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_ro.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -461,10 +461,6 @@ text_files:
     vouă
     vreo
     vreun
-  synonyms: |
-    drupal, durpal
-  nouns: |
-
   protwords: |
 
   accents: |
@@ -632,3 +628,7 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
+  synonyms: |
+    drupal, durpal
+  nouns: |
+

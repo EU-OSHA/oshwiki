@@ -71,9 +71,9 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_sk.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -141,9 +141,9 @@ unstemmed_field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_sk.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -408,8 +408,6 @@ text_files:
     za
     zo
     že
-  synonyms: |
-    drupal, durpal
   protwords: |
 
   accents: |
@@ -591,3 +589,5 @@ text_files:
     "\u0165" => "t"
     # ď => d
     "\u010F" => "d"
+  synonyms: |
+    drupal, durpal
