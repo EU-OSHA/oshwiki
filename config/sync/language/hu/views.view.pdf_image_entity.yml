@@ -1,0 +1,59 @@
+display:
+  default:
+    display_title: Alapértelmezés
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növ
+          sort_desc_label: Csökk
+      pager:
+        options:
+          tags:
+            previous: '‹ Előző'
+            next: 'Következő ›'
+            first: '« Első'
+            last: 'Utolsó »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      fields:
+        id:
+          label: Azonosító
+          separator: ', '
+        referenced_entity_type:
+          separator: ', '
+        referenced_entity_bundle:
+          separator: ', '
+        referenced_entity_id:
+          separator: ', '
+        referenced_entity_revision_id:
+          separator: ', '
+        referenced_entity_lang:
+          separator: ', '
+        referenced_entity_field:
+          separator: ', '
+        pdf_file_id:
+          separator: ', '
+        pdf_file_uri:
+          separator: ', '
+        pdf_file_page:
+          separator: ', '
+        image_file_id:
+          separator: ', '
+        image_file_uri:
+          separator: ', '
+        changed:
+          label: Módosítva
+          separator: ', '
+        operations_1:
+          label: 'Műveletek hivatkozásai'
+      filters:
+        changed_2:
+          expose:
+            label: Módosítva
+  list:
+    display_title: Oldal

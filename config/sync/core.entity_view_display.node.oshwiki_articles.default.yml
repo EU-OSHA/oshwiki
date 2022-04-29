@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.oshwiki_articles.field_further_reading_oshwiki
     - field.field.node.oshwiki_articles.field_image_oshwiki
     - field.field.node.oshwiki_articles.field_nace_oshwiki
+    - field.field.node.oshwiki_articles.field_one_language_available
     - field.field.node.oshwiki_articles.field_osh_categories_oshwiki
     - field.field.node.oshwiki_articles.field_oshwiki_link
     - field.field.node.oshwiki_articles.field_references_oshwiki
     - field.field.node.oshwiki_articles.field_sections_oshwiki
+    - field.field.node.oshwiki_articles.field_theme_representative
     - field.field.node.oshwiki_articles.field_themes_oshwiki
     - node.type.oshwiki_articles
   module:
@@ -74,6 +76,16 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
+  field_one_language_available:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 115
+    region: content
   field_osh_categories_oshwiki:
     type: entity_reference_label
     label: above
@@ -108,6 +120,16 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
+  field_theme_representative:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 114
+    region: content
   field_themes_oshwiki:
     type: entity_reference_label
     label: above
@@ -123,3 +145,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true
