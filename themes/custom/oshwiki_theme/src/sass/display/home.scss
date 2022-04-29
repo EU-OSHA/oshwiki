@@ -10,6 +10,9 @@
     padding-bottom: 20%;
     h1{
       @include textFormat(1.8rem, null, $text-dark-dark-grey);
+      span{
+        color: $text-blue;
+      }
     }
     p{
       max-width: 18rem;
@@ -48,6 +51,10 @@
         @include textFormat(1.3rem, null, $text-dark-dark-grey);
       }
     }
+  }
+  /*Remove footer margin-top for Home page*/
+  footer{
+    margin-top: 0rem;
   }
 }
 

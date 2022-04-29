@@ -33,6 +33,32 @@
       }
     }
   }
+  .article_authors, .article_contributors{
+    padding: 1.5rem 0.5rem;
+    border-bottom: 1px solid $bg-dark-dark-grey;
+    .field__label{
+      @include textFormat(1.2rem, 700, $text-dark-dark-grey);
+    }
+    .field__items{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      flex-wrap: wrap;
+      .field__item{
+        width: 100%;
+        margin-top: 0.5rem;
+        h2{
+          @include textFormat(1rem, 700, $text-dark-green);
+        }
+        .field--name-field-organization-authors{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
+        }
+      }
+    }
+  }
+  .article_authors{
+    border-top: 1px solid $bg-dark-dark-grey;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -40,6 +66,25 @@
     .dates_and_social_media{
       grid-template-areas:
         "date share";
+    }
+    .article_authors, .article_contributors{
+      .field__items{
+        .field__item{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .node--type-oshwiki-articles{
+    .article_authors, .article_contributors{
+      .field__items{
+        .field__item{
+          width: 25%;
+        }
+      }
     }
   }
 }
