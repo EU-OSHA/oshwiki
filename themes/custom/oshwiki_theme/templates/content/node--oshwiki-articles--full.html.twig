@@ -74,16 +74,15 @@
 %}
 <div class="row wrapper-content">
   <!-- LEFT COLUMN -->
-  <div class="col-md-3 col-12">
+  <div class="col-lg-3 col-12 order-2">
     <p>
       <strong>{{ 'This item is available in other national versions' | trans }}</strong>
     </p>
   </div>
   <!-- END LEFT COLUMN -->
   <!-- CENTER COLUMN -->
-  <div class="col-md-6 col-12">
+  <div class="col-lg-6 col-12 order-3">
     <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-      {{ drupal_dump(node) }}
       <!-- DATES AND SOCIAL MEDIA -->
       <div class="dates_and_social_media">
         <div class="article_dates">
@@ -130,7 +129,7 @@
   </div>
   <!-- END CENTER COLUMN -->
   <!-- THEME COLUMN -->
-  <div class="select-theme-article col-md-3 col-12">
+  <div class="select-theme-article col-lg-3 col-12 order-lg-last">
     <div class="select-theme-article-title-box">
       <p>Select theme</p>
     </div>
@@ -138,6 +137,8 @@
     </div>
   </div>
   <!-- END THEME COLUMN -->
+</div>
+<div class="row wrapper-content">
   <div class="col-12">
     <!-- AUTHORS -->
     <div class="article_authors">
@@ -150,6 +151,8 @@
     </div>
     <!-- END CONTRIBUTORS -->
   </div>
+</div>
+<div class="row wrapper-content">
   <!-- RELATED ARTICLES -->
   <div class="container-fluid related-articles">
     <div class="container">
