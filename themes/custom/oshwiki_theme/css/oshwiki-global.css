@@ -116,51 +116,10 @@ a:hover {
   letter-spacing: 0.2px;
   line-height: 27px;
 }
-.node--type-oshwiki-articles .article_authors, .node--type-oshwiki-articles .article_contributors {
-  padding: 1.5rem 0.5rem;
-  border-bottom: 1px solid #58585A;
-}
-.node--type-oshwiki-articles .article_authors .field__label, .node--type-oshwiki-articles .article_contributors .field__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #58585A;
-}
-.node--type-oshwiki-articles .article_authors .field__items, .node--type-oshwiki-articles .article_contributors .field__items {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  flex-wrap: wrap;
-}
-.node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
-  width: 100%;
-  margin-top: 0.5rem;
-}
-.node--type-oshwiki-articles .article_authors .field__items .field__item h2, .node--type-oshwiki-articles .article_contributors .field__items .field__item h2 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #449FA2;
-}
-.node--type-oshwiki-articles .article_authors .field__items .field__item .field--name-field-organization-authors, .node--type-oshwiki-articles .article_contributors .field__items .field__item .field--name-field-organization-authors {
-  font-size: 1rem;
-  color: #58585A;
-}
 .node--type-oshwiki-articles .article_authors {
   border-top: 1px solid #58585A;
 }
 
-@media only screen and (min-width: 576px) {
-  .node--type-oshwiki-articles .dates_and_social_media {
-    grid-template-areas: "date share";
-  }
-  .node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
-    width: 25%;
-  }
-}
 .section_banner {
   background-image: url("../images/Home-header.png");
   background-size: 95%;
@@ -175,18 +134,12 @@ a:hover {
   font-size: 1.8rem;
   color: #58585A;
 }
-.section_banner div h1 span {
-  color: #003399;
-}
 .section_banner div p {
   max-width: 18rem;
   font-size: 1rem;
   color: #58585A;
 }
 
-.page-view-frontpage {
-  /*Remove footer margin-top for Home page*/
-}
 .page-view-frontpage #main-wrapper .container-fluid {
   padding: 0.5rem 0rem;
 }
@@ -216,9 +169,6 @@ a:hover {
 .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) h2 {
   font-size: 1.3rem;
   color: #58585A;
-}
-.page-view-frontpage footer {
-  margin-top: 0rem;
 }
 
 /*Welcome to Oshwiki section responsive*/
