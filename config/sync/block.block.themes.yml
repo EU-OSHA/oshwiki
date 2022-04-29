@@ -1,0 +1,29 @@
+uuid: 1392c655-4d1b-47ea-9eb5-bd6484fa1fd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.themes
+  module:
+    - facets
+    - system
+  theme:
+    - oshwiki_theme
+id: themes
+theme: oshwiki_theme
+region: content
+weight: -2
+provider: null
+plugin: 'facet_block:themes'
+settings:
+  id: 'facet_block:themes'
+  label: Themes
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: themes
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /oshwiki-article-search

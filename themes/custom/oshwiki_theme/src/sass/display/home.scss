@@ -1,0 +1,79 @@
+.section_banner{
+  background: {
+    image: url('../images/Home-header.png');
+    size: 95%;
+    repeat: no-repeat;
+    position: 50% 5%;
+  }
+  div{
+    padding-top: 95%;
+    padding-bottom: 20%;
+    h1{
+      @include textFormat(1.8rem, null, $text-dark-dark-grey);
+    }
+    p{
+      max-width: 18rem;
+      @include textFormat(1rem, null, $text-dark-dark-grey);
+    }
+  }
+}
+
+.page-view-frontpage{
+  #main-wrapper{
+    .container-fluid{
+      padding: 0.5rem 0rem;
+      p{
+        margin-bottom: 0;
+      }
+    }
+    .container-fluid:nth-of-type(1){
+      background: {
+        image: url('../images/grey-diagonal-line-home.svg');
+        size: 100%;
+        repeat: no-repeat;
+        position: bottom;
+      }
+    }
+    .container-fluid:nth-of-type(2),
+    .container-fluid:nth-of-type(3),
+    .container-fluid:nth-of-type(4){
+      background-color: $bg-light-light-grey;
+      h2{
+        @include textFormat(1.3rem, null, $text-dark-green);
+      }
+    }
+    .container-fluid:nth-of-type(5){
+      background-color: $bg-light-orange;
+      h2{
+        @include textFormat(1.3rem, null, $text-dark-dark-grey);
+      }
+    }
+  }
+}
+
+
+/*Welcome to Oshwiki section responsive*/
+@media only screen and (min-width: 576px) {
+  .section_banner{
+    background: {
+      size: 40%;
+      position: 85% 50%;
+    }
+    div{
+      padding: 10% 0rem 20%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section_banner{
+    background-position: 75% 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .section_banner{
+    background-size: 35%;
+  }
+}
+/*End comment*/

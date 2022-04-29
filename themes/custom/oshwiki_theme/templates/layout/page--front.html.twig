@@ -23,22 +23,26 @@
       </div>
     </div>
   </div>
-  <nav{{ navbar_attributes }}>
-    {% if page.primary_menu %}
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="collapse navbar-collapse container" id="CollapsingNavbar">
-          {{ page.primary_menu }}
-      </div>
-    {% endif %}
-    {% if sidebar_collapse %}
-      <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-    {% endif %}
-  </nav>
+  <div class="container-fluid content-main-menu">
+    <div class="container">
+      <nav{{ navbar_attributes }}>
+        {% if page.primary_menu %}
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="CollapsingNavbar">
+            {{ page.primary_menu }}
+          </div>
+        {% endif %}
+        {% if sidebar_collapse %}
+          <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+        {% endif %}
+      </nav>
+    </div>
+  </div>
 </div>
 {% endblock %}
 

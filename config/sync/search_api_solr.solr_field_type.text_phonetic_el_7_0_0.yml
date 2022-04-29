@@ -1,0 +1,80 @@
+uuid: 40ef9577-77df-4ab1-9d96-133d462d6dbe
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: W9DhFI4zUz1Zmn1aeLgeuMLW0MPDQJx2gSIZlgj5VP8
+id: text_phonetic_el_7_0_0
+label: 'Fulltext Phonetic Greek'
+minimum_solr_version: 7.0.0
+custom_code: phonetic
+field_type_language_code: el
+domains: {  }
+field_type:
+  name: text_phonetic_el
+  class: solr.TextField
+  positionIncrementGap: 100
+  analyzers:
+    -
+      type: index
+      tokenizer:
+        class: solr.WhitespaceTokenizerFactory
+      filters:
+        -
+          class: solr.WordDelimiterGraphFilterFactory
+          catenateNumbers: 1
+          generateNumberParts: 1
+          protected: protwords_el.txt
+          splitOnCaseChange: 1
+          generateWordParts: 1
+          preserveOriginal: 1
+          catenateAll: 0
+          catenateWords: 1
+        -
+          class: solr.GreekLowerCaseFilterFactory
+        -
+          class: solr.StopFilterFactory
+          ignoreCase: true
+          words: stopwords_el.txt
+        -
+          class: solr.BeiderMorseFilterFactory
+          languageSet: greek
+          nameType: GENERIC
+          ruleType: APPROX
+          concat: true
+        -
+          class: solr.RemoveDuplicatesTokenFilterFactory
+    -
+      type: query
+      tokenizer:
+        class: solr.WhitespaceTokenizerFactory
+      filters:
+        -
+          class: solr.WordDelimiterGraphFilterFactory
+          catenateNumbers: 0
+          generateNumberParts: 0
+          protected: protwords_el.txt
+          splitOnCaseChange: 1
+          generateWordParts: 1
+          preserveOriginal: 1
+          catenateAll: 0
+          catenateWords: 0
+        -
+          class: solr.GreekLowerCaseFilterFactory
+        -
+          class: solr.StopFilterFactory
+          ignoreCase: true
+          words: stopwords_el.txt
+        -
+          class: solr.BeiderMorseFilterFactory
+          languageSet: greek
+          nameType: GENERIC
+          ruleType: APPROX
+          concat: true
+        -
+          class: solr.RemoveDuplicatesTokenFilterFactory
+unstemmed_field_type: null
+spellcheck_field_type: null
+collated_field_type: null
+solr_configs: {  }
+text_files: {  }

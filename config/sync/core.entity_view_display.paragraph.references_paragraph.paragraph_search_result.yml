@@ -1,0 +1,35 @@
+uuid: 5331443d-bfab-4dbf-b6ac-55355b3fba93
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraph_search_result
+    - field.field.paragraph.references_paragraph.field_number_references
+    - field.field.paragraph.references_paragraph.field_reference_references
+    - paragraphs.paragraphs_type.references_paragraph
+id: paragraph.references_paragraph.paragraph_search_result
+targetEntityType: paragraph
+bundle: references_paragraph
+mode: paragraph_search_result
+content:
+  field_number_references:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_reference_references:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

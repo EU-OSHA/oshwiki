@@ -1,0 +1,45 @@
+.node--type-oshwiki-articles{
+  .wrapper-content{
+    .col-12:nth-of-type(1){
+      margin: 0.5rem 0rem;
+      @include textFormat(1rem, null, $text-dark-dark-grey);
+
+    }
+  }
+  .dates_and_social_media{
+    display: grid;
+    grid-template-areas:
+        "date"
+        "share";
+    @include textFormat(0.9rem, null, $text-dark-medium-grey);
+    .article_dates{
+      grid-area: date;
+    }
+    .social-media{
+      grid-area: share;
+    }
+  }
+  .article_sections{
+    .field__item{
+      margin-bottom: 1em;
+      .field--name-field-title-sections{
+        @include textFormat(1.3rem, 500, $text-dark-dark-grey);
+        margin-bottom: 1em;
+      }
+      .field--name-field-description-sections{
+        @include textFormat(1rem, null, $text-dark-dark-grey);
+        letter-spacing: 0.2px;
+        line-height: 27px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .node--type-oshwiki-articles{
+    .dates_and_social_media{
+      grid-template-areas:
+        "date share";
+    }
+  }
+}

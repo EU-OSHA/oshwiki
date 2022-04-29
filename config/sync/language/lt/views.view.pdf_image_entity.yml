@@ -1,0 +1,25 @@
+display:
+  default:
+    display_title: Numatytasis
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        id:
+          label: ID
+        changed:
+          label: Pakeista
+      filters:
+        changed_2:
+          expose:
+            label: Pakeista
+  list:
+    display_title: Puslapis
