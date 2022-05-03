@@ -10,6 +10,9 @@
     padding-bottom: 20%;
     h1{
       @include textFormat(1.8rem, null, $text-dark-dark-grey);
+      span{
+        color: $text-blue;
+      }
     }
     p{
       max-width: 18rem;
@@ -49,6 +52,10 @@
       }
     }
   }
+  /*Remove footer margin-top for Home page*/
+  footer{
+    margin-top: 0rem;
+  }
 }
 
 
@@ -73,7 +80,10 @@
 
 @media only screen and (min-width: 992px) {
   .section_banner{
-    background-size: 35%;
+    background-size: 25%;
+    div{
+      padding: 7% 0rem 15%;
+    }
   }
 }
 /*End comment*/
