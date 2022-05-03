@@ -4,8 +4,10 @@
   font-family: "Noto Sans", sans-serif;
 }
 /* Font colours */
-/* background colours */
-/* END - D9 - Variables NCW */
+/* Background colours */
+/* END */
+/*Format the text the text. It receives the font-size, weight and colour as parameters.*/
+/*Set height and width*/
 * {
   margin: 0px;
   padding: 0px;
@@ -61,6 +63,626 @@ ul {
   padding-right: 0;
 }
 
+.push-right {
+  margin-left: auto;
+}
+
+.btn-primary {
+  background-color: #449FA2;
+  border-color: #449FA2;
+}
+
+label {
+  color: #58585A;
+}
+
+a {
+  color: #449FA2;
+}
+a:hover {
+  color: #449FA2;
+  text-decoration: underline;
+}
+
+.node--type-oshwiki-articles .wrapper-content .col-12:nth-of-type(1) {
+  margin: 0.5rem 0rem;
+  font-size: 1rem;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .dates_and_social_media {
+  display: grid;
+  grid-template-areas: "date" "share";
+}
+.node--type-oshwiki-articles .dates_and_social_media p {
+  font-size: 0.9rem;
+  color: #616161;
+}
+.node--type-oshwiki-articles .dates_and_social_media .article_dates {
+  grid-area: date;
+  padding: 0.3rem 0rem;
+}
+.node--type-oshwiki-articles .dates_and_social_media .social-media {
+  grid-area: share;
+  padding: 0.3rem 0rem;
+}
+.node--type-oshwiki-articles .article_sections .field__item {
+  /*Style the cards with the images of the paragraph*/
+  /*End comment*/
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-title-sections, .node--type-oshwiki-articles .article_sections .field__item h3, .node--type-oshwiki-articles .article_sections .field__item .field--name-field-description-sections {
+  letter-spacing: 0.3px;
+  line-height: 29px;
+}
+.node--type-oshwiki-articles .article_sections .field__item h4, .node--type-oshwiki-articles .article_sections .field__item h3, .node--type-oshwiki-articles .article_sections .field__item .field--name-field-title-sections {
+  padding: 1.4rem 0rem 0.9rem;
+  margin: 0rem;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-title-sections {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-title-sections p {
+  margin-bottom: 0rem;
+}
+.node--type-oshwiki-articles .article_sections .field__item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.node--type-oshwiki-articles .article_sections .field__item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-description-sections {
+  font-size: 1rem;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-media {
+  display: flex;
+  flex-direction: column;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item {
+  margin: 0.5rem 0rem;
+  justify-content: center;
+  background-color: #D5E6E6;
+  border-radius: 20px;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item img {
+  margin: 0rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-caption-copyrigth- {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-caption-copyrigth- p {
+  margin-bottom: 0rem;
+}
+.node--type-oshwiki-articles .article_further_reading .field--name-field-further-reading-oshwiki > .field__label {
+  padding: 1.4rem 0rem 0.9rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .article_further_reading .field--name-field-desc-further-reading .field__item {
+  font-size: 1rem;
+  color: #58585A;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+}
+.node--type-oshwiki-articles .article_authors, .node--type-oshwiki-articles .article_contributors {
+  padding: 1.5rem 0.5rem;
+  border-bottom: 1px solid #58585A;
+}
+.node--type-oshwiki-articles .article_authors .field__label, .node--type-oshwiki-articles .article_contributors .field__label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .article_authors .field__items, .node--type-oshwiki-articles .article_contributors .field__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.node--type-oshwiki-articles .article_authors .field__items .field__item .field--name-node-title, .node--type-oshwiki-articles .article_authors .field__items .field__item .field--name-field-organization-authors, .node--type-oshwiki-articles .article_contributors .field__items .field__item .field--name-node-title, .node--type-oshwiki-articles .article_contributors .field__items .field__item .field--name-field-organization-authors {
+  width: 100%;
+}
+.node--type-oshwiki-articles .article_authors .field__items .field__item h2, .node--type-oshwiki-articles .article_contributors .field__items .field__item h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.node--type-oshwiki-articles .article_authors .field__items .field__item .field--name-field-organization-authors, .node--type-oshwiki-articles .article_contributors .field__items .field__item .field--name-field-organization-authors {
+  font-size: 0.9rem;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .article_authors {
+  border-top: 1px solid #58585A;
+}
+.node--type-oshwiki-articles .related-articles {
+  margin-top: 1.5rem;
+  background-color: #D5E6E6;
+}
+.node--type-oshwiki-articles .related-articles h2 {
+  font-size: 1.3rem;
+  color: #449FA2;
+}
+.node--type-oshwiki-articles .select-theme-article {
+  height: fit-content;
+}
+.node--type-oshwiki-articles .select-theme-article .select-theme-article-title-box p {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 576px) {
+  .node--type-oshwiki-articles .dates_and_social_media {
+    grid-template-areas: "date share";
+  }
+  .node--type-oshwiki-articles .dates_and_social_media > div {
+    padding: 0.3rem 0rem;
+  }
+  .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item {
+    width: 70%;
+    place-self: center;
+  }
+  .node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media .field__item {
+    width: 100%;
+  }
+  .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media .field__item img {
+    max-height: 15rem;
+  }
+  .node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
+    width: 25%;
+  }
+}
+.section_banner {
+  background-image: url("../images/Home-header.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 50% 5%;
+}
+.section_banner div {
+  padding-top: 95%;
+  padding-bottom: 20%;
+}
+.section_banner div h1 {
+  font-size: 1.8rem;
+  color: #58585A;
+}
+.section_banner div h1 span {
+  color: #003399;
+}
+.section_banner div p {
+  max-width: 18rem;
+  font-size: 1rem;
+  color: #58585A;
+}
+
+.page-view-frontpage {
+  /*Remove footer margin-top for Home page*/
+}
+.page-view-frontpage #main-wrapper .container-fluid {
+  padding: 0.5rem 0rem;
+}
+.page-view-frontpage #main-wrapper .container-fluid p {
+  margin-bottom: 0;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) {
+  background-image: url("../images/grey-diagonal-line-home.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(2),
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(3),
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(4) {
+  background-color: #F8F8F8;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(2) h2,
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(3) h2,
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(4) h2 {
+  font-size: 1.3rem;
+  color: #449FA2;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) {
+  background-color: #FEF6E5;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) h2 {
+  font-size: 1.3rem;
+  color: #58585A;
+}
+.page-view-frontpage footer {
+  margin-top: 0rem;
+}
+
+/*Welcome to Oshwiki section responsive*/
+@media only screen and (min-width: 576px) {
+  .section_banner {
+    background-size: 40%;
+    background-position: 85% 50%;
+  }
+  .section_banner div {
+    padding: 10% 0rem 20%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section_banner {
+    background-position: 75% 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section_banner {
+    background-size: 25%;
+  }
+  .section_banner div {
+    padding: 7% 0rem 15%;
+  }
+}
+/*End comment*/
+.warning-message {
+  padding: 1rem;
+  margin: 1.5rem 0rem;
+  background: #FEF6E5;
+  border-radius: 15px;
+  border: none;
+}
+.warning-message .warning-message-container {
+  background-image: url("../images/Icon-warning.svg");
+  background-repeat: no-repeat;
+  background-position-y: -4px;
+  padding-left: 4rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.warning-message .warning-message-container img {
+  height: 3rem;
+  width: 3rem;
+}
+.warning-message .warning-message-container p {
+  font-size: 1rem;
+  color: #58585A;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+}
+.warning-message .read-more {
+  display: flex;
+  justify-content: flex-end;
+}
+.warning-message .read-more a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #212121;
+}
+
+.scientific_year {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.scientific_year:first-of-type {
+  margin: 1rem 0rem;
+}
+
+.scientific_introduction .field--name-field-introduction-science .field__label {
+  margin: 1rem 0rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #212121;
+}
+.scientific_introduction .field__item p {
+  color: #212121;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+}
+
+.scientific_author {
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  width: 90%;
+  margin: 2rem auto;
+}
+.scientific_author .field--name-field-authors-other-sources .field__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj {
+  justify-content: flex-start;
+}
+.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj h2 {
+  margin: 1rem 0rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj .field--name-field-organisation {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
+}
+
+.select-theme-article {
+  border-radius: 15px 15px 15px 15px;
+  background-color: #D5E6E6;
+  padding: 0rem 0rem 1rem 0rem;
+  margin: 1rem 0rem;
+}
+.select-theme-article .select-theme-article-title-box {
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #449FA2;
+}
+.select-theme-article .select-theme-article-title-box p {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  border-radius: 15px 15px 0px 0px;
+  margin: 0rem;
+}
+@media only screen and (max-width: 992px) {
+  .scientific_year:first-of-type {
+    margin: 0rem 0rem;
+  }
+}
+.top-header-container section .logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top-header-container section .logo-wrapper > div {
+  padding: 0rem 1rem;
+}
+.top-header-container section .logo-wrapper div:first-child img, .top-header-container section .logo-wrapper div:nth-child(2) img {
+  width: inherit;
+  object-fit: contain;
+}
+.top-header-container section .logo-wrapper .logo-oshwiki {
+  border-right: 2px solid #B0B2B3;
+}
+.top-header-container .top-header-content {
+  padding: 1rem;
+}
+.top-header-container .top-header-content .push-right .content-first-row .font-size-print {
+  display: flex;
+  align-items: baseline;
+  column-gap: 0.2rem;
+}
+.top-header-container .top-header-content .push-right .content-first-row .font-size-print span:first-of-type {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.top-header-container .top-header-content .push-right .content-first-row .font-size-print span:nth-of-type(2) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.top-header-container .top-header-content .push-right .content-first-row .font-size-print span:last-of-type {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.top-header-container .top-header-content .push-right .content-first-row .font-size-print .print-friendly {
+  margin-left: 0.4rem;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/Icon-awesome-print.svg");
+}
+
+.content-main-menu {
+  border-color: #E0E0E0;
+  border-style: solid;
+  border-width: 1px 0px;
+  padding-bottom: 0rem;
+}
+.content-main-menu #block-oshwiki-theme-main-menu {
+  width: 100%;
+}
+.content-main-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.content-main-menu ul li {
+  font-weight: 500;
+  padding: 1rem 3rem;
+}
+.content-main-menu ul li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #58585A;
+}
+.content-main-menu ul .active {
+  position: relative;
+}
+.content-main-menu ul .active a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.content-main-menu ul .active:after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 0rem;
+  left: 0%;
+  right: 0%;
+  height: 0.3rem;
+  background: #F6A400;
+}
+.content-main-menu .navbar-toggler {
+  padding: 0rem;
+}
+
+.bg-image-banner {
+  height: max-content;
+  width: 100%;
+  background-image: url("../images/background-green.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 1rem 0rem;
+}
+.bg-image-banner .block-system-breadcrumb-block ol {
+  background: transparent;
+}
+.bg-image-banner .block-system-breadcrumb-block ol .active a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.bg-image-banner .block-system-breadcrumb-block ol .breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  content: ">";
+}
+.bg-image-banner .block-system-breadcrumb-block ol .breadcrumb-item a {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+}
+.bg-image-banner .block-page-title-block {
+  width: 100%;
+}
+.bg-image-banner .block-page-title-block h1 {
+  font-size: 2.8rem;
+  color: #FFFFFF;
+}
+
+/*Different banner image for the scientific-journal*/
+.node--type-scientific-journal .bg-image-banner {
+  background-image: url("../images/background-orange.png");
+}
+
+@media only screen and (max-width: 576px) {
+  .bg-image-banner .block-page-title-block h1 {
+    font-size: 2rem;
+    color: #FFFFFF;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .top-header-container section .logo-wrapper > div {
+    padding: 0rem 0.7rem;
+  }
+  .top-header-container section .logo-wrapper div:first-child img, .top-header-container section .logo-wrapper div:nth-child(2) img {
+    height: 2.5rem;
+  }
+
+  .bg-image-banner .block-page-title-block h1 {
+    font-size: 2.3rem;
+    color: #FFFFFF;
+  }
+}
+footer {
+  margin-top: 1rem;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  column-gap: 2rem;
+  background-color: #B0B2B3;
+  padding: 0rem;
+}
+.site-footer .container {
+  padding-top: 0.5rem;
+}
+.site-footer .copyright-footer {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.site-footer .row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.site-footer section nav {
+  padding: 0px;
+}
+.site-footer section .navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+.site-footer section .navbar-nav .nav-link {
+  padding: 0rem 0.8rem;
+  border-right: 1px solid #FFFFFF;
+}
+.site-footer section .navbar-nav .nav-link--contact {
+  padding-left: 0px;
+}
+.site-footer section .navbar-nav a {
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.site-footer section .navbar-nav li:hover {
+  text-decoration: underline;
+}
+.site-footer section .navbar-nav li:last-of-type a {
+  border-right: none;
+}
+.site-footer .block {
+  border: none;
+  padding: 0rem;
+}
+
+/*Make footer design responsive*/
+@media only screen and (max-width: 992px) {
+  .site-footer {
+    height: auto;
+    padding-top: 0.8rem;
+  }
+  .site-footer .copyright-footer {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 419px) {
+  .site-footer .navbar-nav li:last-of-type a {
+    padding-left: 0rem;
+  }
+}
 /* Home page */
+.icon-bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #449FA2;
+  margin-bottom: 0.4rem;
+}
 
 /*# sourceMappingURL=oshwiki-global.css.map */

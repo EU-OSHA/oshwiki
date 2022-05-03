@@ -63,9 +63,9 @@ field_type:
           words: stopwords_lv.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_lv.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.WordDelimiterGraphFilterFactory
           catenateNumbers: 0
@@ -137,9 +137,9 @@ unstemmed_field_type:
           words: stopwords_lv.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_lv.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.WordDelimiterGraphFilterFactory
           catenateNumbers: 0
@@ -408,8 +408,6 @@ text_files:
     varat
     varēja
     varēs
-  synonyms: |
-    drupal, durpal
   protwords: |
 
   accents: |
@@ -577,3 +575,5 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
+  synonyms: |
+    drupal, durpal

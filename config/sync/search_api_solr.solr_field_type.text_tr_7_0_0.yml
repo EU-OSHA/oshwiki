@@ -76,9 +76,9 @@ field_type:
           words: stopwords_tr.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_tr.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.SnowballPorterFilterFactory
           language: Turkish
@@ -147,9 +147,9 @@ unstemmed_field_type:
           words: stopwords_tr.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_tr.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 spellcheck_field_type:
@@ -354,10 +354,6 @@ text_files:
     itibariyle
     kadar
     karşın
-  synonyms: |
-    drupal, durpal
-  nouns: |
-
   protwords: |
 
   accents: |
@@ -525,3 +521,7 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
+  synonyms: |
+    drupal, durpal
+  nouns: |
+

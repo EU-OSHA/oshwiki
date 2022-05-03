@@ -87,3 +87,4 @@ hidden:
   field_published_date_science: true
   field_volume_science: true
   langcode: true
+  search_api_excerpt: true

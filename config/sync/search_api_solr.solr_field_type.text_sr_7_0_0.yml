@@ -78,9 +78,9 @@ field_type:
           words: stopwords_sr.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_sr.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.SnowballPorterFilterFactory
         -
@@ -154,9 +154,9 @@ unstemmed_field_type:
           words: stopwords_sr.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_sr.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.SerbianNormalizationFilterFactory
           haircut: bald
@@ -372,8 +372,6 @@ text_files:
     želeo
     želi
     znati
-  synonyms: |
-    drupal, durpal
   protwords: |
 
   accents: |
@@ -555,3 +553,5 @@ text_files:
     "\u0165" => "t"
     # ď => d
     "\u010F" => "d"
+  synonyms: |
+    drupal, durpal

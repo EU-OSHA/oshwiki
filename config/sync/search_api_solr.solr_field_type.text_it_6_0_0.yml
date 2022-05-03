@@ -42,8 +42,8 @@ field_type:
           words: stopwords_it.txt
         -
           class: solr.SnowballPorterFilterFactory
-          language: Italian
           protected: protwords_it.txt
+          language: Italian
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
     -
@@ -69,17 +69,17 @@ field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymFilterFactory
+          ignoreCase: true
           synonyms: synonyms_it.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
           words: stopwords_it.txt
         -
           class: solr.SnowballPorterFilterFactory
-          language: Italian
           protected: protwords_it.txt
+          language: Italian
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 unstemmed_field_type:
@@ -137,9 +137,9 @@ unstemmed_field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.SynonymFilterFactory
+          ignoreCase: true
           synonyms: synonyms_it.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -510,10 +510,6 @@ text_files:
     stessimo
     stessero
     stando
-  synonyms: |
-    drupal, durpal
-  nouns: |
-
   protwords: |
 
   accents: |
@@ -681,3 +677,7 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
+  synonyms: |
+    drupal, durpal
+  nouns: |
+
