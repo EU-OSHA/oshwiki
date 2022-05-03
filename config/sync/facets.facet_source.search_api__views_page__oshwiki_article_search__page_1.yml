@@ -1,0 +1,9 @@
+uuid: ec3f827f-2db4-47a0-bbe5-fdcd78bff052
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__oshwiki_article_search__page_1
+name: 'search_api:views_page__oshwiki_article_search__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

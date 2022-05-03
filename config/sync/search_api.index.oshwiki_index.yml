@@ -14,8 +14,9 @@ dependencies:
     - search_api_solr
     - node
     - paragraphs
-    - search_api
     - taxonomy
+    - search_api
+    - search_api_glossary
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -133,11 +134,36 @@ field_settings:
         - field.storage.paragraph.field_title_sections
       module:
         - paragraphs
+  glossaryaz_name:
+    label: 'Glossary AZ - Content » themes » Taxonomy term » Name'
+    property_path: glossaryaz_name
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  name:
+    label: 'themes » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_themes_oshwiki:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_themes_oshwiki
+      module:
+        - taxonomy
   nid:
     label: ID
     datasource_id: 'entity:node'
     property_path: nid
     type: integer
+    dependencies:
+      module:
+        - node
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
     dependencies:
       module:
         - node
@@ -198,6 +224,15 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  glossary:
+    weights:
+      preprocess_index: -20
+    glossarytable: 'a:1:{s:13:"glossarytable";a:9:{s:26:"field_description_sections";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:22:"field_sections_oshwiki";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:20:"field_themes_oshwiki";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:20:"field_title_sections";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:4:"name";a:2:{s:8:"glossary";s:1:"1";s:8:"grouping";a:3:{s:11:"grouping_09";s:11:"grouping_09";s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;}}s:3:"nid";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:5:"title";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:4:"type";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:3:"url";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}}}'
+    field_enabled: 0
+    grouping_defaults:
+      grouping_other: grouping_other
+      grouping_az: 0
+      grouping_09: 0
   hierarchy:
     weights:
       preprocess_index: -45
