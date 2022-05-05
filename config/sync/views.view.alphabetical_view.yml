@@ -414,19 +414,16 @@ display:
       use_ajax: true
       header: {  }
       footer:
-        area:
-          id: area
+        result:
+          id: result
           table: views
-          field: area
+          field: result
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: text
+          plugin_id: result
           empty: false
-          content:
-            value: "<span id=\"as-pager-from\"></span> - <span id=\"as-pager-to\"></span> / [view:total-rows]\r\n<script>\r\n  document.getElementById(\"as-pager-from\").innerHTML = (([view:current-page]-1) * [view:items-per-page]) + 1;\r\n  document.getElementById(\"as-pager-to\").innerHTML = (([view:current-page] * [view:items-per-page]) > [view:total-rows]) ? [view:total-rows] :  [view:current-page] * [view:items-per-page];\r\n</script>"
-            format: full_html
-          tokenize: false
+          content: '@start - @end / @total'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
