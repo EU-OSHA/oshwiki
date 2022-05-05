@@ -278,8 +278,8 @@ display:
           order: DESC
           expose:
             label: Relevance
-            field_identifier: relevance
-          exposed: false
+            field_identifier: search_api_relevance
+          exposed: true
         changed:
           id: changed
           table: search_api_index_oshwiki_index
@@ -937,6 +937,59 @@ display:
     display_options:
       cache:
         type: none
+      sorts:
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_oshwiki_index
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: Relevance
+            field_identifier: relevance
+          exposed: true
+        changed:
+          id: changed
+          table: search_api_index_oshwiki_index
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: 'Last update'
+            field_identifier: updated
+          exposed: true
+        created:
+          id: created
+          table: search_api_index_oshwiki_index
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: 'Publication date'
+            field_identifier: pubdate
+          exposed: true
+        title:
+          id: title
+          table: search_api_index_oshwiki_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: Alphabetical
+            field_identifier: title
+          exposed: true
       arguments: {  }
       filters:
         type:
@@ -1062,8 +1115,16 @@ display:
         operator: AND
         groups:
           1: AND
+      query:
+        type: views_query
+        options:
+          skip_access: 0
+          bypass_access: 0
+          preserve_facet_query_args: 1
       defaults:
         cache: false
+        query: false
+        sorts: false
         arguments: false
         filters: false
         filter_groups: false

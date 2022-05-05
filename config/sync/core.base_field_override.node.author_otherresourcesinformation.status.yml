@@ -1,0 +1,22 @@
+uuid: 2125d599-7945-44bd-afb3-f9a8749441d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.author_otherresourcesinformation
+id: node.author_otherresourcesinformation.status
+field_name: status
+entity_type: node
+bundle: author_otherresourcesinformation
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

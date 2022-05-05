@@ -11,7 +11,7 @@ bundle: author_otherresourcesinformation
 label: 'Name and surname'
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

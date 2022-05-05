@@ -1,0 +1,20 @@
+uuid: 4e5b6fd6-133d-4ea0-a02a-58948122f18d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contributors_content
+  module:
+    - path
+id: node.contributors_content.path
+field_name: path
+entity_type: node
+bundle: contributors_content
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

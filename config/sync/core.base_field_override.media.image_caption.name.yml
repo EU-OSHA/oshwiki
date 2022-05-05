@@ -1,0 +1,20 @@
+uuid: 50c05a0e-f831-476f-8077-433618a04675
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image_caption
+id: media.image_caption.name
+field_name: name
+entity_type: media
+bundle: image_caption
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string
