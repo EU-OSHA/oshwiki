@@ -9,8 +9,8 @@ dependencies:
     - search_api
 id: themes_normal_search_themes
 name: 'Themes Normal Search: Themes'
-weight: -1
-min_count: 1
+weight: 0
+min_count: 0
 url_alias: themes_normal_search_themes
 facet_source_id: 'search_api:views_page__themes__page_1'
 field_identifier: field_themes_oshwiki
