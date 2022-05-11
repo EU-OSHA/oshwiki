@@ -1,0 +1,11 @@
+uuid: 02160184-6faa-4c10-9fbd-c0497cfc98fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.infhograpic
+id: crop.infhograpic
+target_entity_type_id: crop
+target_bundle: infhograpic
+default_langcode: site_default
+language_alterable: false
