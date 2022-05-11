@@ -21,6 +21,7 @@ dependencies:
     - paragraphs
     - taxonomy
     - search_api
+    - oshwiki_search
     - search_api_glossary
 third_party_settings:
   search_api_solr:
@@ -225,6 +226,10 @@ field_settings:
     dependencies:
       module:
         - node
+  publication_date:
+    label: 'Publication Date'
+    property_path: search_api_publication_date
+    type: date
   status:
     label: Published
     datasource_id: 'entity:node'
@@ -315,6 +320,7 @@ processor_settings:
     highlight: always
     highlight_partial: false
   language_with_fallback: {  }
+  publication_date: {  }
   rendered_item: {  }
   solr_date_range:
     weights:
