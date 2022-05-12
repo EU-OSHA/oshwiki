@@ -1,0 +1,26 @@
+uuid: 4b065933-41f7-4941-af26-6101f6d1b69e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: most_popular_articles
+label: 'Most popular articles'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oshwiki_articles: oshwiki_articles
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

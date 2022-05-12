@@ -1,19 +1,17 @@
-uuid: 5753ec9a-ea46-418e-b2e3-e14c6440edf8
+uuid: 5a31b363-4201-48da-aac1-b9543c9c9978
 langcode: en
 status: true
 dependencies:
   config:
-    - entityqueue.entity_queue.featured_articles
-    - field.storage.node.field_image_oshwiki
+    - entityqueue.entity_queue.most_popular_articles
     - node.type.oshwiki_articles
   module:
     - entityqueue
-    - image
     - node
     - taxonomy
     - user
-id: featured_articles
-label: 'Featured Articles'
+id: most_popular_articles
+label: 'Most popular articles'
 module: views
 description: ''
 tag: ''
@@ -26,72 +24,8 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Featured Articles'
+      title: 'Most popular articles'
       fields:
-        field_image_oshwiki:
-          id: field_image_oshwiki
-          table: node__field_image_oshwiki
-          field: field_image_oshwiki
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_link: ''
-            image_style: ''
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         title:
           id: title
           table: node_field_data
@@ -155,59 +89,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        view_node:
-          id: view_node
-          table: node
-          field: view_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          plugin_id: entity_link
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: 'Read the article'
-          output_url_as_text: true
-          absolute: false
         parent_target_id:
           id: parent_target_id
           table: taxonomy_term__parent
@@ -273,6 +154,59 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: view
+          output_url_as_text: true
+          absolute: false
       pager:
         type: some
         options:
@@ -313,19 +247,6 @@ display:
           exposed: false
       arguments: {  }
       filters:
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            oshwiki_articles: oshwiki_articles
-          group: 1
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
         status:
           id: status
           table: node_field_data
@@ -337,6 +258,18 @@ display:
           group: 1
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            oshwiki_articles: oshwiki_articles
+          expose:
             operator_limit_selection: false
             operator_list: {  }
         entityqueue_relationship:
@@ -394,37 +327,30 @@ display:
           exposed: false
           expose:
             operator_id: ''
-            label: 'Default translation'
-            description: null
+            label: ''
+            description: ''
             use_operator: false
-            operator: default_langcode_op
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: default_langcode
-            required: true
+            identifier: ''
+            required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
           is_grouped: false
           group_info:
-            label: 'Default translation'
-            description: null
-            identifier: default_langcode
+            label: ''
+            description: ''
+            identifier: ''
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
+            group_items: {  }
       style:
         type: default
       row:
@@ -449,7 +375,7 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: false
-          limit_queue: featured_articles
+          limit_queue: most_popular_articles
         field_themes_oshwiki:
           id: field_themes_oshwiki
           table: node__field_themes_oshwiki
@@ -458,7 +384,7 @@ display:
           group_type: group
           admin_label: 'field_themes_oshwiki: Taxonomy term'
           plugin_id: standard
-          required: true
+          required: false
       group_by: true
       header: {  }
       footer: {  }
@@ -471,8 +397,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:entityqueue.entity_queue.featured_articles'
-        - 'config:field.storage.node.field_image_oshwiki'
+        - 'config:entityqueue.entity_queue.most_popular_articles'
         - entity_field_info
         - views_data
   block_1:
@@ -491,7 +416,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:entityqueue.entity_queue.featured_articles'
-        - 'config:field.storage.node.field_image_oshwiki'
+        - 'config:entityqueue.entity_queue.most_popular_articles'
         - entity_field_info
         - views_data
