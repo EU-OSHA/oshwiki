@@ -9,3 +9,66 @@
   height: $height;
   width: $width;
 }
+
+/*Code for the extra content (most popular, related articles...)
+It has 3 parameters: 1. The main light color (for the background)
+2: the main dark color (for the tags and border-left)
+3: The color of the title*/
+@mixin otherArticles($mainLightColor, $mainDarkColor, $titleColor){
+  margin-top: 1.5rem;
+  background-color: $mainLightColor;
+  & > .container{
+    h2{
+      @include textFormat(1.3rem, null, $titleColor);
+    }
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      .views-row{
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        background: $bg-white;
+        border-radius: 15px;
+        border-left: 15px solid $mainDarkColor;
+        height: inherit;
+        width: 100%;
+        & > div{
+          padding-left: 1rem;
+          padding-right: 0.3rem;
+        }
+        .views-field-title{
+          @include textFormat(1.05rem, null, $text-dark-dark-grey);
+        }
+        .views-field-view-node{
+          @include textFormat(0.9rem, 700, $text-dark-green);
+        }
+      }
+    }
+    .row{
+      margin: 0rem;
+      padding: 0rem;
+    }
+    padding-bottom: 1rem;
+
+    /*Make the card distribution responsive*/
+    @media only screen and (min-width: 768px) {
+      .view-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        .views-row{
+          width: 50%;
+        }
+      }
+    }
+    @media only screen and (min-width: 992px){
+      .view-content{
+        justify-content: space-between;
+        .views-row{
+          width: 33.33333333%;
+        }
+      }
+    }
+    /*End comment*/
+  }
+}

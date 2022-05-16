@@ -1,0 +1,22 @@
+.js-pager__items{
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  .page-item{
+    .page-link, .pager__item--next{
+      border: 1px solid $text-light-medium-grey;
+      color: $text-dark-green;
+      &:hover{
+        color: $text-dark-green;
+        text-decoration: underline;
+      }
+    }
+  }
+  .active{
+    .page-link{
+      background-color: $text-dark-green;
+      color: $text-white;
+    }
+  }
+}

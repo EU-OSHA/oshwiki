@@ -13,12 +13,15 @@
 @import 'components/helper';
 @import 'components/links';
 @import 'components/modal';
+@import 'components/pager';
 @import 'components/table';
 
+@import 'display/alphabetical-view';
 @import 'display/oshwiki-article';
 @import 'display/home';
 @import 'display/scientific-journal';
 @import 'display/search-results';
+@import 'display/themes';
 
 @import 'layout/banner-header';
 @import 'layout/body';

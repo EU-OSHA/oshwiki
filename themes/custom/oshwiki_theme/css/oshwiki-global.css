@@ -8,6 +8,10 @@
 /* END */
 /*Format the text the text. It receives the font-size, weight and colour as parameters.*/
 /*Set height and width*/
+/*Code for the extra content (most popular, related articles...)
+It has 3 parameters: 1. The main light color (for the background)
+2: the main dark color (for the tags and border-left)
+3: The color of the title*/
 * {
   margin: 0px;
   padding: 0px;
@@ -71,9 +75,25 @@ ul {
   background-color: #449FA2;
   border-color: #449FA2;
 }
+.btn-primary:hover {
+  background-color: #FFFFFF;
+  border-color: #449FA2;
+  color: #449FA2;
+  text-decoration: underline;
+}
 
 label {
   color: #58585A;
+}
+
+select {
+  color: #449FA2;
+  border: 1px solid #449FA2;
+  background: #FFFFFF;
+}
+select option:hover {
+  color: #FFFFFF;
+  background: #F6A400;
 }
 
 a {
@@ -84,6 +104,89 @@ a:hover {
   text-decoration: underline;
 }
 
+.js-pager__items {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.js-pager__items .page-item .page-link, .js-pager__items .page-item .pager__item--next {
+  border: 1px solid #A2ACB4;
+  color: #449FA2;
+}
+.js-pager__items .page-item .page-link:hover, .js-pager__items .page-item .pager__item--next:hover {
+  color: #449FA2;
+  text-decoration: underline;
+}
+.js-pager__items .active .page-link {
+  background-color: #449FA2;
+  color: #FFFFFF;
+}
+
+.page-view-alphabetical-view .container #main {
+  /*Main layout with grid-area*/
+  /*End comment*/
+}
+.page-view-alphabetical-view .container #main .section {
+  display: grid;
+  grid-template-areas: "alphabet" "select-theme" "alphabetical-content";
+}
+.page-view-alphabetical-view .container #main .section #block-glossarythemes {
+  grid-area: alphabet;
+}
+.page-view-alphabetical-view .container #main .section #block-themes-names {
+  grid-area: select-theme;
+}
+.page-view-alphabetical-view .container #main .section #block-oshwiki-theme-content {
+  grid-area: alphabetical-content;
+}
+.page-view-alphabetical-view #block-glossarythemes {
+  margin-left: 1rem;
+}
+.page-view-alphabetical-view #block-glossarythemes .list-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid #616161;
+  border-bottom: 1px solid #616161;
+}
+.page-view-alphabetical-view #block-glossarythemes .list-group li {
+  border: none;
+  font-size: 1.2rem;
+  color: #B0B2B3;
+}
+.page-view-alphabetical-view #block-glossarythemes .list-group li a {
+  font-weight: bold;
+}
+.page-view-alphabetical-view #block-oshwiki-theme-content .view-content {
+  display: flex;
+  flex-direction: column;
+}
+.page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row {
+  padding: 1rem 0rem;
+  border-bottom: 1px dotted #616161;
+}
+.page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.page-view-alphabetical-view #block-oshwiki-theme-content .row {
+  margin: 0rem;
+}
+.page-view-alphabetical-view #block-oshwiki-theme-content nav {
+  padding: 1rem 0rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-alphabetical-view .container #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .page-view-alphabetical-view .container #main .section {
+    grid-template-areas: "alphabet alphabet alphabet alphabet" "select-theme alphabetical-content alphabetical-content alphabetical-content";
+  }
+}
 .node--type-oshwiki-articles .wrapper-content .col-12:nth-of-type(1) {
   margin: 0.5rem 0rem;
   font-size: 1rem;
@@ -164,6 +267,24 @@ a:hover {
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-caption-copyrigth- p {
   margin-bottom: 0rem;
 }
+.node--type-oshwiki-articles .article_references .field--name-field-references-oshwiki > .field__label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .article_references .paragraph--type--references-paragraph {
+  display: flex;
+  flex-direction: row;
+}
+.node--type-oshwiki-articles .article_references .paragraph--type--references-paragraph .field--name-field-number-references .field__item {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.node--type-oshwiki-articles .article_references .paragraph--type--references-paragraph .field--type-entity-reference .field__item a {
+  font-size: 0.9rem;
+  color: #58585A;
+}
 .node--type-oshwiki-articles .article_further_reading .field--name-field-further-reading-oshwiki > .field__label {
   padding: 1.4rem 0rem 0.9rem;
   font-size: 1.4rem;
@@ -178,7 +299,6 @@ a:hover {
 }
 .node--type-oshwiki-articles .article_authors, .node--type-oshwiki-articles .article_contributors {
   padding: 1.5rem 0.5rem;
-  border-bottom: 1px solid #58585A;
 }
 .node--type-oshwiki-articles .article_authors .field__label, .node--type-oshwiki-articles .article_contributors .field__label {
   font-size: 1.05rem;
@@ -207,16 +327,75 @@ a:hover {
   font-size: 0.9rem;
   color: #58585A;
 }
+.node--type-oshwiki-articles .article_authors, .node--type-oshwiki-articles .contributors-border-b, .node--type-oshwiki-articles .contributors-border-t-b {
+  border-bottom: 1px solid #58585A;
+}
 .node--type-oshwiki-articles .article_authors {
+  border-top: 1px solid #58585A;
+}
+.node--type-oshwiki-articles .contributors-border-t-b {
   border-top: 1px solid #58585A;
 }
 .node--type-oshwiki-articles .related-articles {
   margin-top: 1.5rem;
   background-color: #D5E6E6;
 }
-.node--type-oshwiki-articles .related-articles h2 {
+.node--type-oshwiki-articles .related-articles > .container {
+  padding-bottom: 1rem;
+  /*Make the card distribution responsive*/
+  /*End comment*/
+}
+.node--type-oshwiki-articles .related-articles > .container h2 {
   font-size: 1.3rem;
   color: #449FA2;
+}
+.node--type-oshwiki-articles .related-articles > .container .view-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.node--type-oshwiki-articles .related-articles > .container .view-content .views-row {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  background: #FFFFFF;
+  border-radius: 15px;
+  border-left: 15px solid #449FA2;
+  height: inherit;
+  width: 100%;
+}
+.node--type-oshwiki-articles .related-articles > .container .view-content .views-row > div {
+  padding-left: 1rem;
+  padding-right: 0.3rem;
+}
+.node--type-oshwiki-articles .related-articles > .container .view-content .views-row .views-field-title {
+  font-size: 1.05rem;
+  color: #58585A;
+}
+.node--type-oshwiki-articles .related-articles > .container .view-content .views-row .views-field-view-node {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.node--type-oshwiki-articles .related-articles > .container .row {
+  margin: 0rem;
+  padding: 0rem;
+}
+@media only screen and (min-width: 768px) {
+  .node--type-oshwiki-articles .related-articles > .container .view-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .node--type-oshwiki-articles .related-articles > .container .view-content .views-row {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .node--type-oshwiki-articles .related-articles > .container .view-content {
+    justify-content: space-between;
+  }
+  .node--type-oshwiki-articles .related-articles > .container .view-content .views-row {
+    width: 33.33333333%;
+  }
 }
 .node--type-oshwiki-articles .select-theme-article {
   height: fit-content;
@@ -385,7 +564,6 @@ a:hover {
 
 .scientific_introduction .field--name-field-introduction-science .field__label {
   margin: 1rem 0rem;
-  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 700;
   color: #212121;
@@ -441,9 +619,117 @@ a:hover {
   border-radius: 15px 15px 0px 0px;
   margin: 0rem;
 }
+.select-theme-article .select-theme-article-content-box {
+  padding: 1rem 1.5rem;
+}
+.select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links {
+  margin: 0;
+  padding: 0rem 0rem 0rem 0rem;
+  /*Theme before it has een selected: with green icon*/
+  /*Show subthemes with green arrow icon*/
+  /*Selected theme in bold and with orange icon*/
+}
+.select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links li > .showSubthemes {
+  cursor: pointer;
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  margin-left: 0.3rem;
+  background: url("../images/green_plus_icon_sm.png") no-repeat;
+}
+.select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value::before {
+  display: inline-block;
+  content: " ";
+  width: 18px;
+  height: 9px;
+  margin-right: 0.5rem;
+  background: url("../images/icon-green-arrow-dropdown.svg") no-repeat;
+  transform: rotate(270deg);
+}
+.select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links .facet-item--expanded, .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links .facet-item {
+  list-style: none;
+}
+.select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links > .active > a > .facet-item__value {
+  font-weight: bold;
+}
+.select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links > .active .showSubthemes {
+  background: url("../images/orange_minus_icon_sm.png");
+}
+.select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links li {
+  margin: 1rem 0rem;
+}
+
 @media only screen and (max-width: 992px) {
   .scientific_year:first-of-type {
     margin: 0rem 0rem;
+  }
+}
+.page-view-themes .container #main {
+  /*Main layout with grid-area*/
+  /*End comment*/
+}
+.page-view-themes .container #main .section {
+  display: grid;
+  grid-template-areas: "select-theme" "theme-content";
+}
+.page-view-themes .container #main .section #block-themesnormalsearchthemes {
+  grid-area: select-theme;
+}
+.page-view-themes .container #main .section #block-oshwiki-theme-content {
+  grid-area: theme-content;
+}
+.page-view-themes #block-oshwiki-theme-content {
+  margin-left: 1rem;
+}
+.page-view-themes #block-oshwiki-theme-content .views-exposed-form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.page-view-themes #block-oshwiki-theme-content .views-exposed-form button {
+  padding: 0rem 0.5rem;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
+  /*Show first result bigger*/
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row {
+  padding: 1rem 0rem;
+  border-bottom: 1px dotted #616161;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-title a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url {
+  font-size: 1rem;
+  color: #58585A;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-title a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-url {
+  font-size: 1.2rem;
+  color: #58585A;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-themes .container #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .page-view-themes .container #main .section {
+    grid-template-areas: "select-theme theme-content theme-content theme-content";
   }
 }
 .top-header-container section .logo-wrapper {
@@ -512,7 +798,6 @@ a:hover {
 }
 .content-main-menu ul li {
   font-weight: 500;
-  padding: 1rem 3rem;
 }
 .content-main-menu ul li a {
   font-size: 1.1rem;
@@ -584,6 +869,42 @@ a:hover {
   background-image: url("../images/background-orange.png");
 }
 
+/*Style alphabetical view and themes view tabs*/
+.page-view-alphabetical-view .nav-tabs, .page-view-themes .nav-tabs {
+  border-top: 1px solid #A2ACB4;
+  border-bottom: 1px solid #A2ACB4;
+  column-gap: 1rem;
+  margin: 1rem 0rem 1.5rem;
+}
+.page-view-alphabetical-view .nav-tabs .nav-link, .page-view-themes .nav-tabs .nav-link {
+  border: none;
+  opacity: 60%;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #58585A;
+}
+.page-view-alphabetical-view .nav-tabs .nav-link:hover, .page-view-themes .nav-tabs .nav-link:hover {
+  text-decoration: underline;
+}
+.page-view-alphabetical-view .nav-tabs .nav-link.active, .page-view-themes .nav-tabs .nav-link.active {
+  opacity: 100%;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.page-view-alphabetical-view .nav-tabs .nav-link.active:after, .page-view-themes .nav-tabs .nav-link.active:after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 0rem;
+  left: 0%;
+  right: 0%;
+  height: 0.3rem;
+  background: #F6A400;
+}
+
+/*End comment*/
 @media only screen and (max-width: 576px) {
   .bg-image-banner .block-page-title-block h1 {
     font-size: 2rem;
@@ -603,10 +924,6 @@ a:hover {
     color: #FFFFFF;
   }
 }
-footer {
-  margin-top: 1rem;
-}
-
 .site-footer {
   display: flex;
   justify-content: flex-start;
@@ -659,6 +976,14 @@ footer {
 .site-footer .block {
   border: none;
   padding: 0rem;
+}
+
+.removeMarginTop {
+  margin-top: 0rem;
+}
+
+.addMarginTop {
+  margin-top: 1rem;
 }
 
 /*Make footer design responsive*/
