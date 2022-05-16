@@ -1,0 +1,23 @@
+uuid: bd31d351-72f8-4f7f-970b-99bb86401ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.nace
+  module:
+    - feeds
+id: taxonomy_term.nace.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: nace
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item
