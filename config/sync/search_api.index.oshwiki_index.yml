@@ -3,12 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_published_date_science
+    - field.storage.node.field_article_science
+    - field.storage.node.field_introduction_science
+    - field.storage.node.field_issue_science
     - field.storage.node.field_sections_oshwiki
     - field.storage.paragraph.field_description_sections
     - field.storage.paragraph.field_title_sections
     - field.storage.node.field_theme_representative
     - field.storage.node.field_themes_oshwiki
+    - field.storage.node.field_themes_science
+    - field.storage.node.field_volume_science
+    - field.storage.node.field_year_science
     - search_api.server.solr
   module:
     - search_api_solr
@@ -63,6 +68,16 @@ name: 'Oshwiki Index'
 description: ''
 read_only: false
 field_settings:
+  aggregated_field:
+    label: 'Scientific journal search text'
+    property_path: aggregated_field
+    type: text
+    boost: !!float 3
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/field_introduction_science'
+        - 'entity:node/title'
   changed:
     label: Changed
     datasource_id: 'entity:node'
@@ -79,6 +94,14 @@ field_settings:
     dependencies:
       module:
         - node
+  field_article_science:
+    label: Article
+    datasource_id: 'entity:node'
+    property_path: field_article_science
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_article_science
   field_description_sections:
     label: 'sections description'
     datasource_id: 'entity:node'
@@ -91,14 +114,23 @@ field_settings:
         - field.storage.paragraph.field_description_sections
       module:
         - paragraphs
-  field_published_date_science:
-    label: 'published date'
+  field_introduction_science:
+    label: introduction
     datasource_id: 'entity:node'
-    property_path: field_published_date_science
-    type: date
+    property_path: field_introduction_science
+    type: text
+    boost: !!float 2
     dependencies:
       config:
-        - field.storage.node.field_published_date_science
+        - field.storage.node.field_introduction_science
+  field_issue_science:
+    label: issue
+    datasource_id: 'entity:node'
+    property_path: field_issue_science
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_issue_science
   field_sections_oshwiki:
     label: sections
     datasource_id: 'entity:node'
@@ -123,6 +155,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_themes_oshwiki
+  field_themes_science:
+    label: 'themes science'
+    datasource_id: 'entity:node'
+    property_path: field_themes_science
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_themes_science
   field_title_sections:
     label: 'sections title'
     datasource_id: 'entity:node'
@@ -134,6 +174,22 @@ field_settings:
         - field.storage.paragraph.field_title_sections
       module:
         - paragraphs
+  field_volume_science:
+    label: volume
+    datasource_id: 'entity:node'
+    property_path: field_volume_science
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_volume_science
+  field_year_science:
+    label: year
+    datasource_id: 'entity:node'
+    property_path: field_year_science
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_year_science
   glossaryaz_name:
     label: 'Glossary AZ - Content » themes » Taxonomy term » Name'
     property_path: glossaryaz_name
@@ -149,6 +205,16 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_themes_oshwiki
+      module:
+        - taxonomy
+  name_science:
+    label: 'themes science » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_themes_science:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_themes_science
       module:
         - taxonomy
   nid:

@@ -18,7 +18,7 @@ plugin: 'facet_block:themes_normal_search_themes'
 settings:
   id: 'facet_block:themes_normal_search_themes'
   label: 'Themes Normal Search: Themes'
-  label_display: visible
+  label_display: '0'
   provider: facets
   context_mapping: {  }
   block_id: themesnormalsearchthemes

@@ -1,3 +1,13 @@
 label{
   color: $text-dark-dark-grey;
 }
+
+select{
+  color: $text-dark-green;
+  border: 1px solid $bg-dark-green;
+  background: $bg-white;
+  option:hover{
+    color: $text-white;
+    background: $bg-dark-orange;
+  }
+}

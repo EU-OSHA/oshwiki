@@ -1,6 +1,3 @@
-footer{
-  margin-top: 1rem;
-}
 .site-footer{
   display: flex;
   justify-content: flex-start;
@@ -52,6 +49,13 @@ footer{
     border: none;
     padding: 0rem;
   }
+}
+
+.removeMarginTop{
+  margin-top: 0rem;
+}
+.addMarginTop{
+  margin-top: 1rem;
 }
 
 /*Make footer design responsive*/

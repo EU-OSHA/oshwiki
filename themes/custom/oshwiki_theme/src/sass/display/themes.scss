@@ -1,0 +1,80 @@
+.page-view-themes{
+  .container{
+    #main{
+      /*Main layout with grid-area*/
+      .section{
+        display: grid;
+        grid-template-areas:
+          "select-theme"
+          "theme-content";
+        #block-themesnormalsearchthemes{
+          grid-area: select-theme;
+        }
+        #block-oshwiki-theme-content{
+          grid-area: theme-content;
+        }
+      }
+      /*End comment*/
+    }
+  }
+  #block-oshwiki-theme-content{
+    margin-left: 1rem;
+    .views-exposed-form{
+      fieldset{
+        display: flex;
+        flex-direction: column;
+      }
+      button{
+        padding: 0rem 0.5rem;
+      }
+    }
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+      .views-row{
+        padding: 1rem 0rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .views-field-title{
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-url{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
+          letter-spacing: 0.3px;
+          line-height: 29px;
+        }
+      }
+      /*Show first result bigger*/
+      .views-row:first-of-type{
+        .views-field-title{
+          a{
+            @include textFormat(1.3rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-url{
+          @include textFormat(1.2rem, null, $text-dark-dark-grey);
+          letter-spacing: 0.3px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-themes{
+    .container{
+      #main{
+        /*Responsive layout with grid-area*/
+        .section{
+          grid-template-areas:
+          "select-theme theme-content theme-content theme-content";
+        }
+        /*End comment*/
+      }
+    }
+  }
+}

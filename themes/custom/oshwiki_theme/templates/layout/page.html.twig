@@ -52,16 +52,20 @@
       {{ page.banner_oshwiki }}
     </div>
   </div>
-<div class="container">
-  <div class="row">
-      <div id="main" class="col-12 col-md-12 one-column">
-        <section class="section">
-          <a id="main-content" tabindex="-1"></a>
-          {{ page.content }}
-        </section>
-      </div>
+  {% if node.bundle == 'oshwiki_articles' %}
+    <div class="container-fluid oshwiki-articles">
+  {% else %}
+      <div class="container">
+  {% endif %}
+      <div class="row">
+          <div id="main" class="col-12 col-md-12 one-column">
+            <section class="section">
+              <a id="main-content" tabindex="-1"></a>
+              {{ page.content }}
+            </section>
+          </div>
+        </div>
     </div>
-</div>
 {% endblock %}
 
 {% block footer %}
