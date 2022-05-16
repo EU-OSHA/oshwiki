@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Other sources of information'
+      title: ''
       fields:
         title:
           id: title

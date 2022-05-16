@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Most popular articles'
+      title: ''
       fields:
         field_themes_oshwiki:
           id: field_themes_oshwiki
