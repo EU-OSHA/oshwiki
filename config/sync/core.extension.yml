@@ -78,6 +78,7 @@ module:
   sophron: 0
   system: 0
   taxonomy: 0
+  taxonomy_level: 0
   taxonomy_manager: 0
   text: 0
   tmgmt: 0
