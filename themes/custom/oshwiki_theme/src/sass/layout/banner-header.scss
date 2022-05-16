@@ -65,7 +65,6 @@
     padding: 0;
     li{
       font-weight: 500;
-      padding: 1rem 3rem;
       a{
         @include textFormat(1.1rem, 600, $text-dark-dark-grey);
       }
@@ -137,6 +136,41 @@
     background-image: url('../images/background-orange.png');
   }
 }
+
+/*Style alphabetical view and themes view tabs*/
+.page-view-alphabetical-view,.page-view-themes{
+  .nav-tabs{
+    border-top: 1px solid $text-light-medium-grey;
+    border-bottom: 1px solid $text-light-medium-grey;
+    column-gap: 1rem;
+    margin: 1rem 0rem 1.5rem;
+    .nav-link{
+      border: none;
+      opacity: 60%;
+      background-color: transparent;
+      @include textFormat(1rem, null, $text-dark-dark-grey);
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .nav-link.active{
+      opacity: 100%;
+      position: relative;
+      @include textFormat(1rem, 700, $text-dark-green);
+      &:after{
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: 0rem;
+        left: 0%;
+        right: 0%;
+        height: 0.3rem;
+        background: $bg-dark-orange;
+      }
+    }
+  }
+}
+/*End comment*/
 
 @media only screen and (max-width: 576px) {
   .bg-image-banner{

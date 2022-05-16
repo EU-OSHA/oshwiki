@@ -79,6 +79,28 @@
     }
   }
 
+  .article_references{
+    .field--name-field-references-oshwiki{
+      & > .field__label{
+        @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+      }
+    }
+    .paragraph--type--references-paragraph{
+      display: flex;
+      flex-direction: row;
+      .field--name-field-number-references{
+        .field__item{
+          @include textFormat(1rem, 700, $text-dark-green);
+        }
+      }
+      .field--type-entity-reference{
+        .field__item a{
+          @include textFormat(0.9rem, null, $text-dark-dark-grey);
+        }
+      }
+    }
+  }
+
   .article_further_reading{
     .field--name-field-further-reading-oshwiki{
       & > .field__label{
@@ -97,7 +119,6 @@
 
   .article_authors, .article_contributors{
     padding: 1.5rem 0.5rem;
-    border-bottom: 1px solid $bg-dark-dark-grey;
     .field__label{
       @include textFormat(1.05rem, 700, $text-dark-dark-grey);
     }
@@ -121,17 +142,20 @@
       }
     }
   }
+  .article_authors, .contributors-border-b, .contributors-border-t-b{
+    border-bottom: 1px solid $bg-dark-dark-grey;
+  }
   .article_authors{
+    border-top: 1px solid $bg-dark-dark-grey;
+  }
+  .contributors-border-t-b{
     border-top: 1px solid $bg-dark-dark-grey;
   }
 
   .related-articles{
-    margin-top: 1.5rem;
-    background-color: $text-light-green;
-    h2{
-      @include textFormat(1.3rem, null, $text-dark-green);
-    }
+    @include otherArticles($bg-light-green, $bg-dark-green, $text-dark-green);
   }
+
   .select-theme-article{
     height: fit-content;
     .select-theme-article-title-box{

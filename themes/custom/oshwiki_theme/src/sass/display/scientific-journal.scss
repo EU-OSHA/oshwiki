@@ -47,7 +47,6 @@
   .field--name-field-introduction-science{
     .field__label{
       margin: 1rem 0rem;
-      text-transform: uppercase;
       @include textFormat(1.2rem, 700, $text-black);
     }
   }
@@ -100,7 +99,48 @@
     }
   }
   .select-theme-article-content-box{
-
+    padding: 1rem 1.5rem;
+    .facets-widget-links{
+      .item-list__links{
+        margin: 0;
+        padding: 0rem 0rem 0rem 0rem;
+        /*Theme before it has een selected: with green icon*/
+        li > .showSubthemes{
+          cursor: pointer;
+          display: inline-block;
+          content: " ";
+          width: 10px;
+          height: 10px;
+          margin-left: 0.3rem;
+          background: url('../images/green_plus_icon_sm.png') no-repeat;
+        }
+        /*Show subthemes with green arrow icon*/
+        .facets-widget- ul li a .facet-item__value::before {
+          display: inline-block;
+          content: " ";
+          width: 18px;
+          height: 9px;
+          margin-right: 0.5rem;
+          background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+          transform: rotate(270deg);
+        }
+        .facet-item--expanded, .facet-item{
+          list-style: none;
+        }
+        /*Selected theme in bold and with orange icon*/
+        & > .active{
+          & > a > .facet-item__value{
+            font-weight: bold;
+          }
+          .showSubthemes{
+            background: url('../images/orange_minus_icon_sm.png');
+          }
+        }
+        li{
+          margin: 1rem 0rem;
+        }
+      }
+    }
   }
 }
 
@@ -109,3 +149,5 @@
     margin: 0rem 0rem;
   }
 }
+
+

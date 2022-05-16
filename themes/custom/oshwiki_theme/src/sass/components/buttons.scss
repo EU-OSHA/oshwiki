@@ -1,4 +1,11 @@
 .btn-primary{
   background-color: $bg-dark-green;
   border-color: $bg-dark-green;
+  &:hover{
+    background-color: $bg-white;
+    border-color: $bg-dark-green;
+    color: $text-dark-green;
+    text-decoration: underline;
+  }
 }
+
