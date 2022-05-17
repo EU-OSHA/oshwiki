@@ -11,7 +11,8 @@
 /*Code for the extra content (most popular, related articles...)
 It has 3 parameters: 1. The main light color (for the background)
 2: the main dark color (for the tags and border-left)
-3: The color of the title*/
+3: The color of the title
+4: Grid template rows*/
 * {
   margin: 0px;
   padding: 0px;
@@ -140,6 +141,30 @@ a:hover {
 .page-view-alphabetical-view .container #main .section #block-oshwiki-theme-content {
   grid-area: alphabetical-content;
 }
+.page-view-alphabetical-view #block-themes-names .facets-widget-links .item-list__links {
+  margin: 0rem;
+  padding: 0rem;
+  /*Show subthemes with green arrow icon*/
+}
+.page-view-alphabetical-view #block-themes-names .facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value::before {
+  display: inline-block;
+  content: " ";
+  width: 18px;
+  height: 9px;
+  margin-right: 0.5rem;
+  background: url("../images/icon-green-arrow-dropdown.svg") no-repeat;
+  transform: rotate(270deg);
+}
+.page-view-alphabetical-view #block-themes-names .facets-widget-links .item-list__links .facet-item--expanded, .page-view-alphabetical-view #block-themes-names .facets-widget-links .item-list__links .facet-item {
+  list-style: none;
+}
+.page-view-alphabetical-view #block-themes-names .facets-widget-links .active > a > span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.page-view-alphabetical-view #block-themes-names .facets-widget-links li {
+  margin: 1rem 0rem;
+}
 .page-view-alphabetical-view #block-glossarythemes {
   margin-left: 1rem;
 }
@@ -147,6 +172,8 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0px;
   border-top: 1px solid #616161;
   border-bottom: 1px solid #616161;
 }
@@ -163,13 +190,36 @@ a:hover {
   flex-direction: column;
 }
 .page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row {
+  display: flex;
+  flex-direction: column;
   padding: 1rem 0rem;
   border-bottom: 1px dotted #616161;
 }
-.page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row a {
+.page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row .views-field-title a {
   font-size: 1.1rem;
   font-weight: 700;
   color: #449FA2;
+}
+.page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row .views-field-url {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 0.5rem;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+}
+.page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row .views-field-url span > a {
+  font-size: 0.9rem;
+  color: #449FA2;
+  text-decoration: underline;
+}
+.page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row .views-field-url span::after {
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  margin-left: 0.3rem;
+  background: url("../images/green-arrow.png") no-repeat;
+  background-size: 90%;
 }
 .page-view-alphabetical-view #block-oshwiki-theme-content .row {
   margin: 0rem;
@@ -187,7 +237,7 @@ a:hover {
     grid-template-areas: "alphabet alphabet alphabet alphabet" "select-theme alphabetical-content alphabetical-content alphabetical-content";
   }
 }
-.node--type-oshwiki-articles .wrapper-content .col-12:nth-of-type(1) {
+.node--type-oshwiki-articles .wrapper-content .order-2 {
   margin: 0.5rem 0rem;
   font-size: 1rem;
   color: #58585A;
@@ -248,21 +298,25 @@ a:hover {
 }
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item {
   margin: 0.5rem 0rem;
-  justify-content: center;
-  background-color: #D5E6E6;
+  align-self: center;
   border-radius: 20px;
+  width: fit-content;
 }
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item img {
-  margin: 0rem;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  margin: 0rem;
 }
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-caption-copyrigth- {
-  padding: 0.5rem;
+  padding: 1rem;
+  background-color: #D5E6E6;
   font-size: 0.9rem;
   color: #58585A;
+  border-radius: 0px 0px 20px 20px;
+  /*padding: 0.5rem;
+  @include textFormat(0.9rem, null, $text-dark-dark-grey);
+  p{
+    margin-bottom: 0rem;
+  }*/
 }
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-caption-copyrigth- p {
   margin-bottom: 0rem;
@@ -339,63 +393,51 @@ a:hover {
 .node--type-oshwiki-articles .related-articles {
   margin-top: 1.5rem;
   background-color: #D5E6E6;
-}
-.node--type-oshwiki-articles .related-articles > .container {
   padding-bottom: 1rem;
-  /*Make the card distribution responsive*/
-  /*End comment*/
 }
 .node--type-oshwiki-articles .related-articles > .container h2 {
   font-size: 1.3rem;
   color: #449FA2;
+  margin-bottom: 1.5rem;
 }
-.node--type-oshwiki-articles .related-articles > .container .view-content {
-  display: flex;
-  flex-direction: column;
+.node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row {
   row-gap: 1rem;
 }
-.node--type-oshwiki-articles .related-articles > .container .view-content .views-row {
+.node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row .card-content-wrapper {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1fr;
+  padding: 0.5rem 0.5rem 0rem 0rem;
   background: #FFFFFF;
   border-radius: 15px;
   border-left: 15px solid #449FA2;
-  height: inherit;
-  width: 100%;
+  height: 100%;
 }
-.node--type-oshwiki-articles .related-articles > .container .view-content .views-row > div {
+.node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row .card-content-wrapper > div, .node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a {
   padding-left: 1rem;
   padding-right: 0.3rem;
 }
-.node--type-oshwiki-articles .related-articles > .container .view-content .views-row .views-field-title {
-  font-size: 1.05rem;
-  color: #58585A;
-}
-.node--type-oshwiki-articles .related-articles > .container .view-content .views-row .views-field-view-node {
+.node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .taxonomy-level-item {
+  align-self: start;
+  padding: 0.3rem 0.7rem;
+  margin-top: 0.7rem;
+  width: fit-content;
+  background-color: #449FA2;
+  border-radius: 15px;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(1) {
+  align-self: start;
+  font-size: 1.05rem;
+  color: #212121;
+}
+.node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
+  align-self: center;
+  margin: 0.7rem 0rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: #449FA2;
-}
-.node--type-oshwiki-articles .related-articles > .container .row {
-  margin: 0rem;
-  padding: 0rem;
-}
-@media only screen and (min-width: 768px) {
-  .node--type-oshwiki-articles .related-articles > .container .view-content {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .node--type-oshwiki-articles .related-articles > .container .view-content .views-row {
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .node--type-oshwiki-articles .related-articles > .container .view-content {
-    justify-content: space-between;
-  }
-  .node--type-oshwiki-articles .related-articles > .container .view-content .views-row {
-    width: 33.33333333%;
-  }
 }
 .node--type-oshwiki-articles .select-theme-article {
   height: fit-content;
@@ -412,20 +454,37 @@ a:hover {
   .node--type-oshwiki-articles .dates_and_social_media > div {
     padding: 0.3rem 0rem;
   }
-  .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item {
-    width: 70%;
-    place-self: center;
-  }
-  .node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media .field__item {
-    width: 100%;
-  }
-  .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media .field__item img {
-    max-height: 15rem;
+  .node--type-oshwiki-articles .article_sections .field__item {
+    /*.field--name-field-media{
+              & > .field__item{
+                width: 70%;
+                place-self: center;
+              }
+            }/*
+          }
+        }
+        .article_authors, .article_contributors{
+          .field__items{
+            .field__item{
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .node--type-oshwiki-articles{
+        .article_sections{
+          .field__item{
+            /*.field--name-field-media{
+              .field__item{
+                width: 100%;
+                img{
+                  max-height: 15rem;
+                }
+              }
+            }*/
   }
   .node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
     width: 25%;
@@ -479,6 +538,7 @@ a:hover {
 .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(4) h2 {
   font-size: 1.3rem;
   color: #449FA2;
+  margin-bottom: 1.5rem;
 }
 .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) {
   background-color: #FEF6E5;
@@ -486,6 +546,175 @@ a:hover {
 .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) h2 {
   font-size: 1.3rem;
   color: #58585A;
+}
+.page-view-frontpage .section_featured_articles {
+  margin-top: 1.5rem;
+}
+.page-view-frontpage .section_featured_articles > .container h2 {
+  font-size: 1.3rem;
+  color: #449FA2;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row {
+  row-gap: 1rem;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper {
+  display: grid;
+  grid-template-rows: 0.5fr 0.2fr auto 0.2fr;
+  background: #FFFFFF;
+  border-radius: 15px;
+  height: 100%;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper > div, .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a {
+  padding-left: 1rem;
+  padding-right: 0.3rem;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .views-field-field-image-oshwiki, .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .views-field-field-themes-oshwiki,
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .views-field-title, .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .views-field-view-node {
+  display: grid;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(1) {
+  order: 1;
+  padding: 0rem;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(1) img {
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 180px;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .taxonomy-level-wrapper {
+  order: 2;
+  margin-top: 0.7rem;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .taxonomy-level-wrapper .taxonomy-level-item {
+  align-self: start;
+  padding: 0.3rem 0.7rem;
+  width: fit-content;
+  background-color: #449FA2;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
+  order: 3;
+  font-size: 1.05rem;
+  color: #212121;
+  align-self: start;
+}
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(3) {
+  order: 4;
+  margin: 0.7rem 0rem;
+  align-self: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #449FA2;
+}
+.page-view-frontpage .section_most_popular, .page-view-frontpage .section_most_recent {
+  margin-top: 1.5rem;
+}
+.page-view-frontpage .section_most_popular > .container h2, .page-view-frontpage .section_most_recent > .container h2 {
+  font-size: 1.3rem;
+  color: #449FA2;
+  margin-bottom: 1.5rem;
+}
+.page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row, .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row {
+  row-gap: 1rem;
+}
+.page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row .card-content-wrapper, .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row .card-content-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr 0.8fr;
+  padding: 0.5rem 0.5rem 0rem 0rem;
+  background: #FFFFFF;
+  border-radius: 15px;
+  border-left: 15px solid #449FA2;
+  height: 100%;
+}
+.page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row .card-content-wrapper > div, .page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row .card-content-wrapper a, .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row .card-content-wrapper > div, .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row .card-content-wrapper a {
+  padding-left: 1rem;
+  padding-right: 0.3rem;
+}
+.page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row .card-content-wrapper .taxonomy-level-item, .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row .card-content-wrapper .taxonomy-level-item {
+  align-self: start;
+  padding: 0.3rem 0.7rem;
+  margin-top: 0.7rem;
+  width: fit-content;
+  background-color: #449FA2;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(1), .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(1) {
+  align-self: start;
+  font-size: 1.05rem;
+  color: #212121;
+}
+.page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2), .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
+  align-self: center;
+  margin: 0.7rem 0rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #449FA2;
+}
+.page-view-frontpage .section_most_popular .more-link, .page-view-frontpage .section_most_recent .more-link {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1rem 0rem;
+}
+.page-view-frontpage .section_most_popular .more-link a, .page-view-frontpage .section_most_recent .more-link a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.page-view-frontpage .section_other_sources {
+  margin-top: 1.5rem;
+  background-color: #FEF6E5;
+  margin: 1.5rem 0rem;
+}
+.page-view-frontpage .section_other_sources > .container h2 {
+  font-size: 1.3rem;
+  color: #58585A;
+  margin-bottom: 1.5rem;
+}
+.page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row {
+  row-gap: 1rem;
+}
+.page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row .card-content-wrapper {
+  display: grid;
+  grid-template-rows: 1.5fr 1.5fr;
+  padding: 0.5rem 0.5rem 0rem 0rem;
+  background: #FFFFFF;
+  border-radius: 15px;
+  border-left: 15px solid #F6A400;
+  height: 100%;
+}
+.page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row .card-content-wrapper > div, .page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row .card-content-wrapper a {
+  padding-left: 1rem;
+  padding-right: 0.3rem;
+}
+.page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row .card-content-wrapper .taxonomy-level-item {
+  align-self: start;
+  padding: 0.3rem 0.7rem;
+  margin-top: 0.7rem;
+  width: fit-content;
+  background-color: #F6A400;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(1) {
+  align-self: start;
+  font-size: 1.05rem;
+  color: #212121;
+}
+.page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
+  align-self: center;
+  margin: 0.7rem 0rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #F6A400;
 }
 .page-view-frontpage footer {
   margin-top: 0rem;
@@ -665,6 +894,10 @@ a:hover {
     margin: 0rem 0rem;
   }
 }
+.page-view-themes {
+  /*Block select theme*/
+  /*End comment*/
+}
 .page-view-themes .container #main {
   /*Main layout with grid-area*/
   /*End comment*/
@@ -706,21 +939,85 @@ a:hover {
   color: #449FA2;
 }
 .page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url {
-  font-size: 1rem;
-  color: #58585A;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 0.5rem;
   letter-spacing: 0.3px;
   line-height: 29px;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url span > a {
+  font-size: 0.9rem;
+  color: #449FA2;
+  text-decoration: underline;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url span::after {
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  margin-left: 0.3rem;
+  background: url("../images/green-arrow.png") no-repeat;
+  background-size: 90%;
 }
 .page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-title a {
   font-size: 1.3rem;
   font-weight: 700;
   color: #449FA2;
 }
-.page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-url {
-  font-size: 1.2rem;
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-field-sections-oshwiki {
+  font-size: 1rem;
   color: #58585A;
   letter-spacing: 0.3px;
   line-height: 29px;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-url {
+  letter-spacing: 0.3px;
+  line-height: 29px;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links {
+  /*Selected theme in bold and with orange icon*/
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links {
+  margin: 0rem;
+  padding: 0rem;
+  /*Theme before it has een selected: with green icon*/
+  /*Show subthemes with green arrow icon*/
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links li > .showSubthemes {
+  cursor: pointer;
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  margin-left: 0.3rem;
+  background: url("../images/green_plus_icon_sm.png") no-repeat;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value::before {
+  display: inline-block;
+  content: " ";
+  width: 18px;
+  height: 9px;
+  margin-right: 0.5rem;
+  background: url("../images/icon-green-arrow-dropdown.svg") no-repeat;
+  transform: rotate(270deg);
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .facet-item--expanded, .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .facet-item {
+  list-style: none;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .active > a > .facet-item__value {
+  font-weight: bold;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .active .showSubthemes {
+  background: url("../images/orange_minus_icon_sm.png");
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links li {
+  margin: 1rem 0rem;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .is-active {
+  font-weight: 700;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .is-active span:first-of-type {
+  display: none;
 }
 
 @media only screen and (min-width: 992px) {

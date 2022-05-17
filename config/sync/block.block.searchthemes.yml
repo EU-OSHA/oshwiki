@@ -1,0 +1,29 @@
+uuid: 64e48f74-a2ac-48c0-9613-af1c9af8b133
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.main_search_themes
+  module:
+    - facets
+    - system
+  theme:
+    - oshwiki_theme
+id: searchthemes
+theme: oshwiki_theme
+region: content
+weight: -1
+provider: null
+plugin: 'facet_block:main_search_themes'
+settings:
+  id: 'facet_block:main_search_themes'
+  label: 'Search: Themes'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: searchthemes
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search

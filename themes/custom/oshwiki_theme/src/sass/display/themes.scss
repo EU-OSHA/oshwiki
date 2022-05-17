@@ -42,9 +42,24 @@
           }
         }
         .views-field-url{
-          @include textFormat(1rem, null, $text-dark-dark-grey);
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 0.5rem;
           letter-spacing: 0.3px;
           line-height: 29px;
+          span > a {
+            @include textFormat(0.9rem, null, $text-dark-green);
+            text-decoration: underline;
+          }
+          span::after{
+            display: inline-block;
+            content: " ";
+            width: 10px;
+            height: 10px;
+            margin-left: 0.3rem;
+            background: url('../images/green-arrow.png') no-repeat;
+            background-size: 90%;
+          }
         }
       }
       /*Show first result bigger*/
@@ -54,14 +69,70 @@
             @include textFormat(1.3rem, 700, $text-dark-green);
           }
         }
+        .views-field-field-sections-oshwiki{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
+          letter-spacing: 0.3px;
+          line-height: 29px;
+        }
         .views-field-url{
-          @include textFormat(1.2rem, null, $text-dark-dark-grey);
           letter-spacing: 0.3px;
           line-height: 29px;
         }
       }
     }
   }
+  /*Block select theme*/
+  .block-facet-blockthemes-normal-search-themes{
+    .facets-widget-links{
+      .item-list__links{
+        margin: 0rem;
+        padding: 0rem;
+        /*Theme before it has een selected: with green icon*/
+        li > .showSubthemes{
+          cursor: pointer;
+          display: inline-block;
+          content: " ";
+          width: 10px;
+          height: 10px;
+          margin-left: 0.3rem;
+          background: url('../images/green_plus_icon_sm.png') no-repeat;
+        }
+        /*Show subthemes with green arrow icon*/
+        .facets-widget- ul li a .facet-item__value::before {
+          display: inline-block;
+          content: " ";
+          width: 18px;
+          height: 9px;
+          margin-right: 0.5rem;
+          background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+          transform: rotate(270deg);
+        }
+        .facet-item--expanded, .facet-item{
+           list-style: none;
+        }
+      }
+
+      /*Selected theme in bold and with orange icon*/
+      .item-list__links .active{
+        & > a > .facet-item__value{
+          font-weight: bold;
+        }
+        .showSubthemes{
+          background: url('../images/orange_minus_icon_sm.png');
+        }
+      }
+      li{
+        margin: 1rem 0rem;
+      }
+    }
+    .is-active{
+      font-weight: 700;
+      span:first-of-type{
+        display: none;
+      }
+    }
+  }
+  /*End comment*/
 }
 
 @media only screen and (min-width: 992px) {

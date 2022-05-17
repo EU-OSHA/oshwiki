@@ -1,0 +1,35 @@
+uuid: dacd9cec-1209-4fd1-acc2-2d5154085521
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.video
+  module:
+    - image
+id: media.video.thumbnail
+field_name: thumbnail
+entity_type: media
+bundle: video
+label: Thumbnail
+description: 'The thumbnail of the media item.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    caption: ''
+  caption_field: false
+  caption_field_required: false
+field_type: image

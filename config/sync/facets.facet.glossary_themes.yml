@@ -27,7 +27,7 @@ enable_parent_when_child_gets_disabled: true
 widget:
   type: glossaryaz
   config:
-    show_count: 1
+    show_count: 0
     enable_default_theme: 0
 empty_behavior:
   behavior: none
@@ -35,11 +35,6 @@ only_visible_when_facet_source_is_visible: false
 show_only_one_result: true
 show_title: false
 processor_configs:
-  glossaryaz_all_items_processor:
-    processor_id: glossaryaz_all_items_processor
-    weights:
-      build: -5
-    settings: {  }
   glossaryaz_pad_items_processor:
     processor_id: glossaryaz_pad_items_processor
     weights:

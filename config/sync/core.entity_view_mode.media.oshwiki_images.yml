@@ -1,0 +1,10 @@
+uuid: 8eafa368-14dd-4e3d-9bc7-4e19e4415b48
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.oshwiki_images
+label: oshwiki-images
+targetEntityType: media
+cache: true

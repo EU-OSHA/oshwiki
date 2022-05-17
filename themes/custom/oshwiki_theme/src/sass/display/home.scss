@@ -43,6 +43,7 @@
       background-color: $bg-light-light-grey;
       h2{
         @include textFormat(1.3rem, null, $text-dark-green);
+        margin-bottom: 1.5rem;
       }
     }
     .container-fluid:nth-of-type(5){
@@ -52,6 +53,82 @@
       }
     }
   }
+  .section_featured_articles{
+    margin-top: 1.5rem;
+    & > .container{
+      h2{
+        @include textFormat(1.3rem, null, $bg-dark-green);
+      }
+      .view-content > .views-view-grid > .row{
+        row-gap: 1rem;
+        .card-content-wrapper{
+          display: grid;
+          grid-template-rows: 0.5fr 0.2fr auto 0.2fr;
+          background: $bg-white;
+          border-radius: 15px;
+          height: 100%;
+          & > div, a{
+            padding-left: 1rem;
+            padding-right: 0.3rem;
+          }
+          .views-field-field-image-oshwiki, .views-field-field-themes-oshwiki,
+          .views-field-title, .views-field-view-node{
+            display: grid;
+          }
+          a:nth-of-type(1){
+            order: 1;
+            padding: 0rem;
+            img{
+              object-fit: cover;
+              border-radius: 15px 15px 0px 0px;
+              width: 100%;
+              height: 180px;
+            }
+          }
+          .taxonomy-level-wrapper{
+            order: 2;
+            margin-top: 0.7rem;
+            .taxonomy-level-item{
+              align-self: start;
+              padding: 0.3rem 0.7rem;
+              width: fit-content;
+              background-color: $bg-dark-green;
+              border-radius: 15px;
+              @include textFormat(0.9rem, 600, $text-white);
+            }
+          }
+          a:nth-of-type(2){
+            order: 3;
+            @include textFormat(1.05rem, null, $text-black);
+            align-self: start;
+          }
+          a:nth-of-type(3){
+            order: 4;
+            margin: 0.7rem 0rem;
+            align-self: center;
+            @include textFormat(0.9rem, 600, $text-dark-green);
+          }
+        }
+      }
+    }
+  }
+
+  .section_most_popular, .section_most_recent{
+    @include otherArticles(null, $bg-dark-green, $text-dark-green, 1fr 1.5fr 0.8fr);
+    .more-link{
+      display: flex;
+      flex-direction: row-reverse;
+      margin: 1rem 0rem;
+      a{
+        @include textFormat(0.9rem, 700, $bg-dark-dark-grey);
+      }
+    }
+  }
+  .section_other_sources{
+    @include otherArticles($bg-light-orange, $bg-dark-orange, $bg-dark-dark-grey, 1.5fr 1.5fr);
+    margin: 1.5rem 0rem;
+  }
+
   /*Remove footer margin-top for Home page*/
   footer{
     margin-top: 0rem;

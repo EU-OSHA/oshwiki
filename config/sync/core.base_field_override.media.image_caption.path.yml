@@ -1,0 +1,20 @@
+uuid: 868d353a-28ed-4aec-bc5e-9992355fe7f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image_caption
+  module:
+    - path
+id: media.image_caption.path
+field_name: path
+entity_type: media
+bundle: image_caption
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
