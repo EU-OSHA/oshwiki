@@ -17,7 +17,6 @@
 
 jQuery(document).ready(function($) {
   /*REMOVE*/
-  $(".facet-item__count").hide();
   $(".view-footer").hide();
   /*REMOVE*/
   let theURL=$(location).attr("href");
@@ -25,17 +24,25 @@ jQuery(document).ready(function($) {
   createNewSpanForThemeIcon();
   checkFooterMargin();
   themeAlfabethicalViewTabs(theURL);
+  checkIfParagraphImgHasText();
 
-  if($("body").hasClass("node--type-oshwiki-articles")){
-
+  /*If the paragraph has images and the images have no text, add border radius*/
+  function checkIfParagraphImgHasText(){
+    if($("body").hasClass("node--type-oshwiki-articles")){
+      $('.field--name-field-media > .field__item > .contextual-region').each(function(index, value){
+        if($(this).find('.field--name-field-caption-copyrigth-').length==0){
+          $(this).find('.field--name-field-media-image > .field__item > img').css("border-radius", "20px");
+        }
+      });
+    }
   }
 
   /*Is we are at the theme or alphabetical views, mark the correct tab as active*/
   function themeAlfabethicalViewTabs(theURL){
-    if(theURL.includes("theme")){
-      $("#nav-themes-tab").addClass("active");
-    } else if(theURL.includes("alphabetical-view")){
+    if(theURL.includes("alphabetical-view")){
       $("#nav-alphabetical-view-tab").addClass("active");
+    } else if(theURL.includes("theme")){
+      $("#nav-themes-tab").addClass("active");
     }
   }
 
