@@ -64,7 +64,7 @@
       <section class="section section_featured_articles">
         <div class="container">
           <h2>{{ 'Featured articles' | trans }}</h2>
-          <p>TODO Featured articles view</p>
+          {{  drupal_view ('featured_articles', 'block_1')}}
         </div>
       </section>
     </div>
@@ -74,7 +74,7 @@
       <section class="section section_most_popular">
         <div class="container">
           <h2>{{ 'Most popular' | trans }}</h2>
-          <p>TODO Most popular view</p>
+          {{ drupal_block('views_block:most_popular_articles-block_1') }}
         </div>
       </section>
     </div>
@@ -84,7 +84,7 @@
       <section class="section section_most_recent">
         <div class="container">
           <h2>{{ 'Most recent' | trans }}</h2>
-          <p>TODO Most recent view</p>
+          {{ drupal_block('views_block:recent_articles-block_1') }}
         </div>
       </section>
     </div>
@@ -94,7 +94,7 @@
       <section class="section section_other_sources">
         <div class="container">
           <h2>{{ 'Other sources of information' | trans }}</h2>
-          <p>TODO Other sources of information view</p>
+          {{ drupal_block('views_block:other_sources_of_information_home_-block_1') }}
         </div>
       </section>
     </div>

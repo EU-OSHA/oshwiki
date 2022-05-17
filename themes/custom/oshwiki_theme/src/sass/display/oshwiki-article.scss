@@ -1,6 +1,6 @@
 .node--type-oshwiki-articles{
   .wrapper-content{
-    .col-12:nth-of-type(1){
+    .order-2{
       margin: 0.5rem 0rem;
       @include textFormat(1rem, null, $text-dark-dark-grey);
     }
@@ -56,22 +56,26 @@
         flex-direction: column;
         & > .field__item{
           margin: 0.5rem 0rem;
-          justify-content: center;
-          background-color: $bg-light-green;
+          align-self: center;
           border-radius: 20px;
+          width: fit-content;
           img{
-            margin: 0rem;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
             border-radius: 20px 20px 0px 0px;
+            margin: 0rem;
           }
           .field--name-field-caption-copyrigth-{
-            padding: 0.5rem;
+            padding: 1rem;
+            background-color: $bg-light-green;
             @include textFormat(0.9rem, null, $text-dark-dark-grey);
+            border-radius: 0px 0px 20px 20px;
             p{
               margin-bottom: 0rem;
             }
+            /*padding: 0.5rem;
+            @include textFormat(0.9rem, null, $text-dark-dark-grey);
+            p{
+              margin-bottom: 0rem;
+            }*/
           }
         }
       }
@@ -153,7 +157,8 @@
   }
 
   .related-articles{
-    @include otherArticles($bg-light-green, $bg-dark-green, $text-dark-green);
+    @include otherArticles($bg-light-green, $bg-dark-green, $text-dark-green, 1fr 1.5fr 1fr);
+    padding-bottom: 1rem;
   }
 
   .select-theme-article{
@@ -177,12 +182,12 @@
     }
     .article_sections{
       .field__item{
-        .field--name-field-media{
+        /*.field--name-field-media{
           & > .field__item{
             width: 70%;
             place-self: center;
           }
-        }
+        }/*
       }
     }
     .article_authors, .article_contributors{
@@ -199,14 +204,14 @@
   .node--type-oshwiki-articles{
     .article_sections{
       .field__item{
-        .field--name-field-media{
+        /*.field--name-field-media{
           .field__item{
             width: 100%;
             img{
               max-height: 15rem;
             }
           }
-        }
+        }*/
       }
     }
     .article_authors, .article_contributors{
