@@ -65,6 +65,8 @@ display:
           label: Name
         uid:
           label: Autor
+        changed:
+          label: Updated
       arguments:
         bundle:
           exception:
