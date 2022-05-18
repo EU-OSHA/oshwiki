@@ -41,32 +41,28 @@
     .container-fluid:nth-of-type(3),
     .container-fluid:nth-of-type(4){
       background-color: $bg-light-light-grey;
-      h2{
-        @include textFormat(1.3rem, null, $text-dark-green);
-        margin-bottom: 1.5rem;
-      }
     }
     .container-fluid:nth-of-type(5){
       background-color: $bg-light-orange;
-      h2{
-        @include textFormat(1.3rem, null, $text-dark-dark-grey);
-      }
     }
   }
   .section_featured_articles{
     margin-top: 1.5rem;
     & > .container{
       h2{
-        @include textFormat(1.3rem, null, $bg-dark-green);
+        @include textFormat(1.45rem, null, $bg-dark-green);
+        margin-bottom: 1rem;
       }
       .view-content > .views-view-grid > .row{
         row-gap: 1rem;
         .card-content-wrapper{
           display: grid;
           grid-template-rows: 0.5fr 0.2fr auto 0.2fr;
+          gap: 0.5rem;
           background: $bg-white;
           border-radius: 15px;
           height: 100%;
+          box-shadow: 2px 8px 14px -12px $bg-dark-dark-grey;
           & > div, a{
             padding-left: 1rem;
             padding-right: 0.3rem;
@@ -90,23 +86,23 @@
             margin-top: 0.7rem;
             .taxonomy-level-item{
               align-self: start;
-              padding: 0.3rem 0.7rem;
+              padding: 0.5rem 0.7rem;
               width: fit-content;
               background-color: $bg-dark-green;
-              border-radius: 15px;
+              border-radius: 20px;
               @include textFormat(0.9rem, 600, $text-white);
             }
           }
           a:nth-of-type(2){
             order: 3;
-            @include textFormat(1.05rem, null, $text-black);
+            @include textFormat(1.2rem, null, $text-black);
             align-self: start;
           }
           a:nth-of-type(3){
             order: 4;
             margin: 0.7rem 0rem;
             align-self: center;
-            @include textFormat(0.9rem, 600, $text-dark-green);
+            @include textFormat(0.95rem, 600, $text-dark-green);
           }
         }
       }
@@ -118,14 +114,14 @@
     .more-link{
       display: flex;
       flex-direction: row-reverse;
-      margin: 1rem 0rem;
+      margin: 1.5rem 0rem;
       a{
         @include textFormat(0.9rem, 700, $bg-dark-dark-grey);
       }
     }
   }
   .section_other_sources{
-    @include otherArticles($bg-light-orange, $bg-dark-orange, $bg-dark-dark-grey, 1.5fr 1.5fr);
+    @include otherArticles($bg-light-orange, $bg-dark-orange, $bg-dark-dark-grey, 1.5fr 0.8fr);
     margin: 1.5rem 0rem;
   }
 
