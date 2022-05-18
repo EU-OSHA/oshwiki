@@ -15,13 +15,18 @@
 
 })(jQuery, Drupal);
 
-jQuery(document).ready(function($) {
+
+
+jQuery(window).on("load",function(){
+  hideEverySubthemeCat();
+  createNewSpanForThemeIcon();
   /*REMOVE*/
   $(".view-footer").hide();
   /*REMOVE*/
+});
+
+jQuery(document).ready(function($) {
   let theURL=$(location).attr("href");
-  hideEverySubthemeCat();
-  createNewSpanForThemeIcon();
   checkFooterMargin();
   themeAlfabethicalViewTabs(theURL);
   checkIfParagraphImgHasText();
@@ -55,21 +60,24 @@ jQuery(document).ready(function($) {
     }
   }
 
-  /*Add span tags inside the list elements*/
-  function createNewSpanForThemeIcon(){
-    $(".facets-widget-links > ul > .facet-item--expanded > a").after("<span class='showSubthemes'></span>");
 
-    /*When the theme is clicked, toggle subthemes*/
-    $(".showSubthemes").click(function(){
-      $(this).parent().toggleClass("active");
-      $(this).parent().find(".facets-widget-").toggle(300);
-    });
-  }
 
-  /*Hide all the subthemes when document ready*/
-  function hideEverySubthemeCat(){
-    $(".facets-widget-links > ul > .facet-item--expanded").find(".facets-widget-").hide();
-  }
+
 });
 
+/*Hide all the subthemes when document ready*/
+function hideEverySubthemeCat(){
+  jQuery(".facets-widget-links > ul > .facet-item--expanded").find(".facets-widget-").hide();
+}
+
+/*Add span tags inside the list elements*/
+function createNewSpanForThemeIcon(){
+  jQuery(".facets-widget-links > ul > .facet-item--expanded > a").after("<span class='showSubthemes'></span>");
+
+  /*When the theme is clicked, toggle subthemes*/
+  jQuery(".showSubthemes").click(function(){
+    jQuery(this).parent().toggleClass("active");
+    jQuery(this).parent().find(".facets-widget-").toggle(300);
+  });
+}
 

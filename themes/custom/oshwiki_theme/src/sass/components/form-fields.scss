@@ -6,7 +6,9 @@ select{
   color: $text-dark-green;
   border: 1px solid $bg-dark-green;
   background: $bg-white;
-  option:hover{
+  option:hover,
+  option:active,
+  option:focus{
     color: $text-white;
     background: $bg-dark-orange;
   }

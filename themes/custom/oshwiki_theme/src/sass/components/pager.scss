@@ -4,7 +4,17 @@
   justify-content: center;
   gap: 1rem;
   .page-item{
-    .page-link, .pager__item--next{
+    .page-link{
+      border: 1px solid $text-light-medium-grey;
+      color: $text-dark-green;
+      &:hover{
+        color: $text-dark-green;
+        text-decoration: underline;
+      }
+    }
+  }
+  .pager__item--next{
+    & > a{
       border: 1px solid $text-light-medium-grey;
       color: $text-dark-green;
       &:hover{
