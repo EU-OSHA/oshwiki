@@ -1,0 +1,25 @@
+uuid: 06c1fa24-5200-4b5e-ad83-f8f9168e914a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_copyrigth
+    - media.type.image_caption
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: media.image_caption.field_copyrigth
+field_name: field_copyrigth
+entity_type: media
+bundle: image_caption
+label: Copyrigth
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

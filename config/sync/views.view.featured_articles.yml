@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Featured Articles'
+      title: ''
       fields:
         field_themes_oshwiki:
           id: field_themes_oshwiki
