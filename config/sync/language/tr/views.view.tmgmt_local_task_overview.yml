@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Tümü -'
             offset_label: 'Başlangıç değeri'
           tags:
-            previous: '‹ Önceki'
-            next: 'Sonraki ›'
-            first: '« İlk'
-            last: 'Son »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Toplu güncelleme'

@@ -37,9 +37,6 @@ display:
             group_items:
               1:
                 title: Публикувано
-        langcode:
-          expose:
-            label: Език
   page_1:
     display_title: Страница
     display_options:

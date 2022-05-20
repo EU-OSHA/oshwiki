@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Tout -'
             offset_label: Décalage
           tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         state:
           label: État

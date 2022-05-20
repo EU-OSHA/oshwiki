@@ -80,11 +80,37 @@ ul {
   background-color: #FFFFFF;
   border-color: #449FA2;
   color: #449FA2;
-  text-decoration: underline;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #FFFFFF;
+  border-color: #449FA2;
+  color: #449FA2;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  background-color: #FFFFFF;
+  border-color: #449FA2;
+  color: #449FA2;
+  box-shadow: 0 0 0 0.2rem #D5E6E6;
+  text-decoration: none;
 }
 
 label {
   color: #58585A;
+}
+
+.form-control:focus {
+  border-color: #D5E6E6;
+  box-shadow: 0 0 0 0.2rem #D5E6E6;
 }
 
 select {
@@ -99,6 +125,27 @@ select option:focus {
   background: #F6A400;
 }
 
+/*Log in form*/
+.page-user-login #block-oshwiki-theme-content > div {
+  display: flex;
+  justify-content: start;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-user-login #block-oshwiki-theme-content > div {
+    display: flex;
+    justify-content: start;
+  }
+  .page-user-login #block-oshwiki-theme-content > div form {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page-user-login #block-oshwiki-theme-content > div form {
+    width: 40%;
+  }
+}
+/*End log in form*/
 a {
   color: #449FA2;
 }
@@ -114,24 +161,48 @@ a:hover {
   gap: 1rem;
 }
 .js-pager__items .page-item .page-link {
-  border: 1px solid #A2ACB4;
+  border: none;
+  border-radius: 40px;
+  min-width: 35px;
+  min-height: 35px;
+  font-weight: bold;
   color: #449FA2;
+  text-align: center;
 }
 .js-pager__items .page-item .page-link:hover {
   color: #449FA2;
+  background: transparent;
   text-decoration: underline;
 }
+.js-pager__items .page-item .page-link:focus {
+  box-shadow: none;
+}
 .js-pager__items .pager__item--next > a {
-  border: 1px solid #A2ACB4;
+  border: none;
+  border-radius: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  font-weight: bold;
   color: #449FA2;
 }
 .js-pager__items .pager__item--next > a:hover {
   color: #449FA2;
+  background: transparent;
   text-decoration: underline;
+}
+.js-pager__items .pager__item--next > a:focus {
+  box-shadow: 0 0 0 0.2rem #D5E6E6;
 }
 .js-pager__items .active .page-link {
   background-color: #449FA2;
+  font-weight: bold;
   color: #FFFFFF;
+  text-align: center;
+}
+.js-pager__items .active .page-link:hover {
+  color: #FFFFFF;
+  background-color: #449FA2;
+  text-decoration: underline;
 }
 
 .page-view-alphabetical-view .container #main {
@@ -317,43 +388,56 @@ a:hover {
   align-self: center;
   border-radius: 20px;
   width: fit-content;
+  background-color: #D5E6E6;
+  border-radius: 20px;
 }
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item img {
   border-radius: 20px 20px 0px 0px;
   margin: 0rem;
 }
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-copyrigth {
+  padding: 0.2rem;
+  font-size: 0.6rem;
+  color: #212121;
+}
+.node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-copyrigth p {
+  margin-bottom: 0rem;
+}
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-caption-copyrigth- {
-  padding: 1rem;
-  background-color: #D5E6E6;
+  padding: 0.5rem 1rem 1rem;
   font-size: 0.9rem;
   color: #58585A;
-  border-radius: 0px 0px 20px 20px;
-  /*padding: 0.5rem;
-  @include textFormat(0.9rem, null, $text-dark-dark-grey);
-  p{
-    margin-bottom: 0rem;
-  }*/
 }
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-media > .field__item .field--name-field-caption-copyrigth- p {
   margin-bottom: 0rem;
 }
-.node--type-oshwiki-articles .article_references .field--name-field-references-oshwiki > .field__label {
+.node--type-oshwiki-articles .article_references {
+  margin-top: 1.4rem;
+}
+.node--type-oshwiki-articles .article_references .reference-title {
   font-size: 1.4rem;
   font-weight: 500;
   color: #58585A;
 }
-.node--type-oshwiki-articles .article_references .paragraph--type--references-paragraph {
-  display: flex;
-  flex-direction: row;
+.node--type-oshwiki-articles .article_references .references-div {
+  display: grid;
+  grid-template-columns: 30px auto;
+  column-gap: 2rem;
+  margin: 1rem 0rem;
 }
-.node--type-oshwiki-articles .article_references .paragraph--type--references-paragraph .field--name-field-number-references .field__item {
-  font-size: 1rem;
+.node--type-oshwiki-articles .article_references .references-div .reference-number {
+  justify-self: end;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #449FA2;
 }
-.node--type-oshwiki-articles .article_references .paragraph--type--references-paragraph .field--type-entity-reference .field__item a {
+.node--type-oshwiki-articles .article_references .references-div .reference-content {
+  justify-self: start;
   font-size: 0.9rem;
   color: #58585A;
+}
+.node--type-oshwiki-articles .article_further_reading {
+  padding-bottom: 1.4rem;
 }
 .node--type-oshwiki-articles .article_further_reading .field--name-field-further-reading-oshwiki > .field__label {
   padding: 1.4rem 0rem 0.9rem;
@@ -361,7 +445,7 @@ a:hover {
   font-weight: 500;
   color: #58585A;
 }
-.node--type-oshwiki-articles .article_further_reading .field--name-field-desc-further-reading .field__item {
+.node--type-oshwiki-articles .article_further_reading .field--name-field-desc-further-reading {
   font-size: 1rem;
   color: #58585A;
   letter-spacing: 0.2px;
@@ -412,7 +496,7 @@ a:hover {
   padding-bottom: 1rem;
 }
 .node--type-oshwiki-articles .related-articles > .container h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -451,7 +535,7 @@ a:hover {
   color: #212121;
 }
 .node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
-  align-self: center;
+  align-self: end;
   margin: 0.7rem 0rem;
   font-size: 0.95rem;
   font-weight: 600;
@@ -472,67 +556,21 @@ a:hover {
   .node--type-oshwiki-articles .dates_and_social_media > div {
     padding: 0.3rem 0rem;
   }
-  .node--type-oshwiki-articles .article_sections .field__item {
-    /*.field--name-field-media{
-              & > .field__item{
-                width: 70%;
-                place-self: center;
-              }
-            }/*
-          }
-        }
-        .article_authors, .article_contributors{
-          .field__items{
-            .field__item{
-              width: 50%;
-            }
-          }
-        }
-      }
-    }
-
-    @media only screen and (min-width: 992px) {
-      .node--type-oshwiki-articles{
-        .article_sections{
-          .field__item{
-            /*.field--name-field-media{
-              .field__item{
-                width: 100%;
-                img{
-                  max-height: 15rem;
-                }
-              }
-            }*/
+  .node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
+    width: 50%;
   }
+}
+@media only screen and (min-width: 992px) {
   .node--type-oshwiki-articles .article_authors .field__items .field__item, .node--type-oshwiki-articles .article_contributors .field__items .field__item {
     width: 25%;
   }
 }
-.section_banner {
-  background-image: url("../images/Home-header.png");
-  background-size: 95%;
-  background-repeat: no-repeat;
-  background-position: 50% 5%;
-}
-.section_banner div {
-  padding-top: 95%;
-  padding-bottom: 20%;
-}
-.section_banner div h1 {
-  font-size: 1.8rem;
-  color: #58585A;
-}
-.section_banner div h1 span {
-  color: #003399;
-}
-.section_banner div p {
-  max-width: 18rem;
-  font-size: 1rem;
-  color: #58585A;
-}
-
 .page-view-frontpage {
+  /*The text above the "select-theme"*/
   /*Remove footer margin-top for Home page*/
+}
+.page-view-frontpage #main-wrapper {
+  /*The container with the banner*/
 }
 .page-view-frontpage #main-wrapper .container-fluid {
   padding: 0.5rem 0rem;
@@ -546,19 +584,133 @@ a:hover {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner {
+  background-image: url("../images/Home-header.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 50% 5%;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner > div {
+  padding-top: 90%;
+  padding-bottom: 10%;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner > div h1 {
+  font-size: 1.8rem;
+  color: #58585A;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner > div h1 span {
+  color: #003399;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner > div p {
+  max-width: 18rem;
+  font-size: 1.2rem;
+  color: #58585A;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 1.5rem 0rem;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search .search-block-form {
+  padding: 0;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search .search-block-form .form-row > fieldset, .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search .search-block-form .form-row > div {
+  padding: 0rem;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search .search-block-form input, .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search .search-block-form button {
+  height: 1.5rem;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search .search-block-form input {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #9E9E9E;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search .search-block-form button {
+  position: absolute;
+  top: 5px;
+  right: -1rem;
+  width: 25px;
+  margin: 0rem 0.5rem;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  background-image: url("../images/icon-search-light.svg");
+  background-repeat: no-repeat;
+  background-size: 0.8rem;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search #search-block-form {
+  padding: 0px 5px;
+}
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-banner-search .home-advanced-search {
+  place-self: flex-end;
+  font-size: 0.9rem;
+  color: #9E9E9E;
+  text-decoration: underline;
+}
 .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(2),
 .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(3),
-.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(4) {
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(4),
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) {
   background-color: #F8F8F8;
 }
-.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(5) {
+.page-view-frontpage #main-wrapper .container-fluid:nth-of-type(6) {
   background-color: #FEF6E5;
+}
+.page-view-frontpage .home-text {
+  font-size: 1.1rem;
+  color: #58585A;
+}
+.page-view-frontpage .select-theme {
+  padding: 0rem 0rem 1rem 0rem;
+  margin: 1rem 0rem;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #D5E6E6;
+  box-shadow: 0px 1px 14px -5px #58585A;
+}
+.page-view-frontpage .select-theme .select-theme-article-home-title-box {
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #449FA2;
+}
+.page-view-frontpage .select-theme .select-theme-article-home-title-box p {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  border-radius: 15px 15px 0px 0px;
+  margin: 0rem;
+}
+.page-view-frontpage .select-theme .select-theme-article-home-content-box {
+  padding: 1rem 1.5rem 0rem;
+}
+.page-view-frontpage .select-theme .select-theme-article-home-content-box .facets-widget-links .item-list__links {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0rem 0rem 0rem 0rem;
+}
+.page-view-frontpage .select-theme .select-theme-article-home-content-box .facets-widget-links .item-list__links > li {
+  margin: 0.5rem 0rem;
+}
+.page-view-frontpage .select-theme .select-theme-article-home-content-box .facets-widget-links .item-list__links > li > a::after {
+  display: inline-block;
+  content: " ";
+  width: 18px;
+  height: 9px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.1rem;
+  background: url("../images/icon-green-arrow-dropdown.svg") no-repeat;
+  transform: rotate(270deg);
+}
+.page-view-frontpage .select-theme .select-theme-article-home-content-box .facets-widget-links .item-list__links .facet-item--expanded, .page-view-frontpage .select-theme .select-theme-article-home-content-box .facets-widget-links .item-list__links .facet-item {
+  list-style: none;
 }
 .page-view-frontpage .section_featured_articles {
   margin-top: 1.5rem;
 }
 .page-view-frontpage .section_featured_articles > .container h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -567,7 +719,7 @@ a:hover {
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper {
   display: grid;
-  grid-template-rows: 0.5fr 0.2fr auto 0.2fr;
+  grid-template-rows: 180px 0.2fr auto 0.2fr;
   gap: 0.5rem;
   background: #FFFFFF;
   border-radius: 15px;
@@ -583,7 +735,6 @@ a:hover {
   display: grid;
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(1) {
-  order: 1;
   padding: 0rem;
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(1) img {
@@ -593,7 +744,6 @@ a:hover {
   height: 180px;
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .taxonomy-level-wrapper {
-  order: 2;
   margin-top: 0.7rem;
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .taxonomy-level-wrapper .taxonomy-level-item {
@@ -607,15 +757,13 @@ a:hover {
   color: #FFFFFF;
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
-  order: 3;
   font-size: 1.2rem;
   color: #212121;
   align-self: start;
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(3) {
-  order: 4;
   margin: 0.7rem 0rem;
-  align-self: center;
+  align-self: end;
   font-size: 0.95rem;
   font-weight: 600;
   color: #449FA2;
@@ -624,7 +772,7 @@ a:hover {
   margin-top: 1.5rem;
 }
 .page-view-frontpage .section_most_popular > .container h2, .page-view-frontpage .section_most_recent > .container h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -633,7 +781,7 @@ a:hover {
 }
 .page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row .card-content-wrapper, .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row .card-content-wrapper {
   display: grid;
-  grid-template-rows: 1fr 1.5fr 0.8fr;
+  grid-template-rows: 0.5fr 1fr auto;
   gap: 0.5rem;
   padding: 0.5rem 0.5rem 0rem 0rem;
   background: #FFFFFF;
@@ -663,7 +811,7 @@ a:hover {
   color: #212121;
 }
 .page-view-frontpage .section_most_popular > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2), .page-view-frontpage .section_most_recent > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
-  align-self: center;
+  align-self: end;
   margin: 0.7rem 0rem;
   font-size: 0.95rem;
   font-weight: 600;
@@ -685,7 +833,7 @@ a:hover {
   margin: 1.5rem 0rem;
 }
 .page-view-frontpage .section_other_sources > .container h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #58585A;
   margin-bottom: 1rem;
 }
@@ -724,7 +872,7 @@ a:hover {
   color: #212121;
 }
 .page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
-  align-self: center;
+  align-self: end;
   margin: 0.7rem 0rem;
   font-size: 0.95rem;
   font-weight: 600;
@@ -734,30 +882,83 @@ a:hover {
   margin-top: 0rem;
 }
 
-/*Welcome to Oshwiki section responsive*/
 @media only screen and (min-width: 576px) {
   .section_banner {
     background-size: 40%;
     background-position: 85% 50%;
   }
-  .section_banner div {
-    padding: 10% 0rem 20%;
-  }
 }
 @media only screen and (min-width: 768px) {
-  .section_banner {
+  .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner {
     background-position: 75% 50%;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner > div {
+    padding-top: 5%;
+    padding-bottom: 15%;
+  }
+  .page-view-frontpage .select-theme .select-theme-article-home-content-box .facets-widget-links .item-list__links {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 992px) {
-  .section_banner {
+  .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner {
     background-size: 25%;
   }
-  .section_banner div {
-    padding: 7% 0rem 15%;
+  .page-view-frontpage .select-theme .select-theme-article-home-content-box .facets-widget-links .item-list__links {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
-/*End comment*/
+.page-view-other-sources-of-information #block-oshwiki-theme-content {
+  margin-left: 1rem;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .views-exposed-form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .views-exposed-form button {
+  padding: 0rem 0.5rem;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row {
+  padding: 1rem 0rem;
+  border-bottom: 1px dotted #616161;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .views-field-title a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .views-field-url {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 0.5rem;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .views-field-url span {
+  display: flex;
+  align-items: center;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .views-field-url span a {
+  font-size: 0.9rem;
+  color: #449FA2;
+  text-decoration: underline;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .views-field-url span::after {
+  display: inline-block;
+  content: " ";
+  width: 14px;
+  height: 14px;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  background: url("../images/green-arrow_see_more.png") no-repeat;
+}
+
 .warning-message {
   padding: 1rem;
   margin: 1.5rem 0rem;
@@ -834,7 +1035,7 @@ a:hover {
   justify-content: flex-start;
 }
 .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj h2 {
-  margin: 1rem 0rem 0rem 0rem;
+  margin: 0.5rem 0rem 0rem 0rem;
   font-size: 1rem;
   font-weight: 700;
   color: #58585A;
@@ -857,18 +1058,18 @@ a:hover {
   background-color: #449FA2;
 }
 .select-theme-article .select-theme-article-title-box p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #FFFFFF;
   border-radius: 15px 15px 0px 0px;
   margin: 0rem;
 }
 .select-theme-article .select-theme-article-content-box {
-  padding: 1rem 1.5rem;
+  padding: 0rem 1.5rem;
 }
 .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links {
   margin: 0;
-  padding: 0rem 0rem 0rem 0rem;
-  /*Theme before it has een selected: with green icon*/
+  padding: 0rem;
+  /*Theme before it has been selected: with green icon*/
   /*Show subthemes with green arrow icon*/
   /*Selected theme in bold and with orange icon*/
 }
@@ -876,10 +1077,10 @@ a:hover {
   cursor: pointer;
   display: inline-block;
   content: " ";
-  width: 10px;
-  height: 10px;
-  margin-left: 0.3rem;
-  background: url("../images/green_plus_icon_sm.png") no-repeat;
+  width: 13px;
+  height: 13px;
+  margin-left: 1rem;
+  background: url("../images/green_plus_select_theme.png") no-repeat;
 }
 .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value::before {
   display: inline-block;
@@ -897,7 +1098,9 @@ a:hover {
   font-weight: bold;
 }
 .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links > .active .showSubthemes {
-  background: url("../images/orange_minus_icon_sm.png");
+  margin: 0.3rem 0rem 0.3rem 1rem;
+  height: 3px;
+  background: url("../images/orange_minus_select_theme.png");
 }
 .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links li {
   margin: 1rem 0rem;
@@ -918,7 +1121,7 @@ a:hover {
 }
 .page-view-themes .container #main .section {
   display: grid;
-  grid-template-areas: "select-theme" "theme-content";
+  grid-template-areas: "select-theme" "theme-content" "other-articles-in-English";
 }
 .page-view-themes .container #main .section #block-themesnormalsearchthemes {
   grid-area: select-theme;
@@ -926,52 +1129,71 @@ a:hover {
 .page-view-themes .container #main .section #block-oshwiki-theme-content {
   grid-area: theme-content;
 }
-.page-view-themes #block-oshwiki-theme-content {
+.page-view-themes .container #main .section #block-views-block-themes-block-1 {
+  grid-area: other-articles-in-English;
+}
+.page-view-themes #block-oshwiki-theme-content, .page-view-themes #block-views-block-themes-block-1 {
   margin-left: 1rem;
 }
-.page-view-themes #block-oshwiki-theme-content .views-exposed-form fieldset {
+.page-view-themes #block-oshwiki-theme-content h2, .page-view-themes #block-views-block-themes-block-1 h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #58585A;
+}
+.page-view-themes #block-oshwiki-theme-content .views-exposed-form fieldset, .page-view-themes #block-views-block-themes-block-1 .views-exposed-form fieldset {
   display: flex;
   flex-direction: column;
 }
-.page-view-themes #block-oshwiki-theme-content .views-exposed-form button {
+.page-view-themes #block-oshwiki-theme-content .views-exposed-form button, .page-view-themes #block-views-block-themes-block-1 .views-exposed-form button {
   padding: 0rem 0.5rem;
 }
-.page-view-themes #block-oshwiki-theme-content .view-content {
+.page-view-themes #block-oshwiki-theme-content .view-content, .page-view-themes #block-views-block-themes-block-1 .view-content {
   display: flex;
   flex-direction: column;
   margin-left: 0px;
   margin-right: 0px;
-  /*Show first result bigger*/
 }
-.page-view-themes #block-oshwiki-theme-content .view-content .views-row {
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row, .page-view-themes #block-views-block-themes-block-1 .view-content .views-row {
   padding: 1rem 0rem;
   border-bottom: 1px dotted #616161;
 }
-.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-title a {
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-title a, .page-view-themes #block-views-block-themes-block-1 .view-content .views-row .views-field-title a {
   font-size: 1.1rem;
   font-weight: 700;
   color: #449FA2;
 }
-.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url {
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url, .page-view-themes #block-views-block-themes-block-1 .view-content .views-row .views-field-url {
   display: flex;
   flex-direction: row-reverse;
   padding-top: 0.5rem;
   letter-spacing: 0.3px;
   line-height: 29px;
 }
-.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url span > a {
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url span, .page-view-themes #block-views-block-themes-block-1 .view-content .views-row .views-field-url span {
+  display: flex;
+  align-items: center;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url span a, .page-view-themes #block-views-block-themes-block-1 .view-content .views-row .views-field-url span a {
   font-size: 0.9rem;
   color: #449FA2;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url span a:hover, .page-view-themes #block-views-block-themes-block-1 .view-content .views-row .views-field-url span a:hover {
   text-decoration: underline;
 }
-.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url span::after {
+.page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url span::after, .page-view-themes #block-views-block-themes-block-1 .view-content .views-row .views-field-url span::after {
   display: inline-block;
   content: " ";
-  width: 10px;
-  height: 10px;
-  margin-left: 0.3rem;
-  background: url("../images/green-arrow.png") no-repeat;
-  background-size: 90%;
+  width: 14px;
+  height: 14px;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  background: url("../images/green-arrow_see_more.png") no-repeat;
+}
+.page-view-themes #block-oshwiki-theme-content .js-pager__items, .page-view-themes #block-views-block-themes-block-1 .js-pager__items {
+  margin: 1.5rem 0rem;
+}
+.page-view-themes #block-oshwiki-theme-content .view-content {
+  /*Show first result bigger*/
 }
 .page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-title a {
   font-size: 1.3rem;
@@ -988,23 +1210,52 @@ a:hover {
   letter-spacing: 0.3px;
   line-height: 29px;
 }
+.page-view-themes #block-views-block-themes-block-1 {
+  padding: 1rem 0rem;
+}
+.page-view-themes #block-views-block-themes-block-1 h2 {
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes {
+  margin: 1rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes h2 {
+  margin: 0rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #449FA2;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+}
 .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links {
+  padding: 1rem 1.5rem;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #D5E6E6;
+  height: fit-content;
   /*Selected theme in bold and with orange icon*/
 }
 .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links {
   margin: 0rem;
   padding: 0rem;
-  /*Theme before it has een selected: with green icon*/
+  /*Theme before it has been selected: with green icon*/
   /*Show subthemes with green arrow icon*/
 }
 .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links li > .showSubthemes {
   cursor: pointer;
   display: inline-block;
   content: " ";
-  width: 10px;
-  height: 10px;
-  margin-left: 0.3rem;
-  background: url("../images/green_plus_icon_sm.png") no-repeat;
+  width: 13px;
+  height: 13px;
+  margin-left: 1rem;
+  background: url("../images/green_plus_select_theme.png") no-repeat;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .facets-widget- ul li:first-of-type {
+  margin-top: 1rem;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .facets-widget- ul li:last-of-type {
+  margin-bottom: 1rem;
 }
 .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value::before {
   display: inline-block;
@@ -1022,10 +1273,18 @@ a:hover {
   font-weight: bold;
 }
 .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .active .showSubthemes {
-  background: url("../images/orange_minus_icon_sm.png");
+  margin: 0.3rem 0rem 0.3rem 1rem;
+  height: 3px;
+  background: url("../images/orange_minus_select_theme.png");
 }
 .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links li {
   margin: 1rem 0rem;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links li:first-of-type {
+  margin-top: 0rem;
+}
+.page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links li:last-of-type {
+  margin-bottom: 0rem;
 }
 .page-view-themes .block-facet-blockthemes-normal-search-themes .is-active {
   font-weight: 700;
@@ -1040,27 +1299,97 @@ a:hover {
     /*End comment*/
   }
   .page-view-themes .container #main .section {
-    grid-template-areas: "select-theme theme-content theme-content theme-content";
+    grid-template-columns: 1.25fr 1fr 1fr 1fr;
+    grid-template-areas: "select-theme theme-content theme-content theme-content" "select-theme other-articles-in-English other-articles-in-English other-articles-in-English";
   }
 }
-.top-header-container section .logo-wrapper {
+.top-header-container.container {
+  max-width: 100%;
+}
+
+.top-header-container .header-logo {
+  display: flex;
+  align-items: center;
+}
+.top-header-container .header-logo section .logo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-.top-header-container section .logo-wrapper > div {
+.top-header-container .header-logo section .logo-wrapper > div {
   padding: 0rem 1rem;
 }
-.top-header-container section .logo-wrapper div:first-child img, .top-header-container section .logo-wrapper div:nth-child(2) img {
+.top-header-container .header-logo section .logo-wrapper div:first-child img, .top-header-container .header-logo section .logo-wrapper div:nth-child(2) img {
   width: inherit;
   object-fit: contain;
 }
-.top-header-container section .logo-wrapper .logo-oshwiki {
+.top-header-container .header-logo section .logo-wrapper .logo-oshwiki {
   border-right: 2px solid #B0B2B3;
 }
 .top-header-container .top-header-content {
-  padding: 1rem;
+  padding: 1rem 3rem;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section {
+  display: flex;
+  flex-direction: column;
+  /*Search box*/
+  /*Dropdown*/
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section .search-block-form {
+  padding: 0;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section .search-block-form .form-row > fieldset, .top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section .search-block-form .form-row > div {
+  padding: 0rem;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section .search-block-form input, .top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section .search-block-form button {
+  height: 1.5rem;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section .search-block-form input {
+  width: 10rem;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section .search-block-form button {
+  width: 25px;
+  margin: 0rem 0.5rem;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  background-image: url("../images/icon-search.png");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section #search-block-form {
+  padding: 0px 5px;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section form#lang_dropdown_form_lang-dropdown-form {
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section form#lang_dropdown_form_lang-dropdown-form select#edit-lang-dropdown-select {
+  width: 10rem;
+  background: #449FA2;
+  border: #D5E6E6;
+  color: #FFFFFF;
+}
+.top-header-container .top-header-content .push-right .wrapper-two-columns-header .header-language-search > section form#lang_dropdown_form_lang-dropdown-form::after {
+  display: inline-block;
+  content: " ";
+  width: 25px;
+  height: 25px;
+  margin: 0rem 0.5rem;
+  background-image: url("../images/icon-globe.png");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+.top-header-container .top-header-content .push-right .content-first-row {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .top-header-container .top-header-content .push-right .content-first-row .font-size-print {
   display: flex;
@@ -1151,7 +1480,7 @@ a:hover {
   background: transparent;
 }
 .bg-image-banner .block-system-breadcrumb-block ol .active a {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #FFFFFF;
   text-decoration: underline;
@@ -1159,12 +1488,12 @@ a:hover {
 .bg-image-banner .block-system-breadcrumb-block ol .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   color: #FFFFFF;
   content: ">";
 }
 .bg-image-banner .block-system-breadcrumb-block ol .breadcrumb-item a {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   color: #FFFFFF;
 }
 .bg-image-banner .block-page-title-block {

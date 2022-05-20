@@ -33,9 +33,6 @@ display:
                 title: Gepubliseerd
               2:
                 title: Ongepubliseerd
-        langcode:
-          expose:
-            label: Taal
   page_1:
     display_title: Bladsy
     display_options:

@@ -30,9 +30,6 @@ display:
             group_items:
               2:
                 title: Необјабљено
-        langcode:
-          expose:
-            label: Језик
   page_1:
     display_options:
       menu:
