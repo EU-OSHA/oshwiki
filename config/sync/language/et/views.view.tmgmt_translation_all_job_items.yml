@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
           tags:
-            previous: '‹ Eelmine'
-            next: 'Järgmine ›'
-            first: '« Esimene'
-            last: 'Viimane »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         state:
           label: Olek

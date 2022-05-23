@@ -13,20 +13,21 @@ mode: default
 content:
   field_number_references:
     type: number_decimal
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+      scale: 0
+      prefix_suffix: false
     third_party_settings: {  }
     weight: 0
     region: content
   field_reference_references:
-    type: entity_reference_label
-    label: above
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      link: true
+      view_mode: oshwiki_article_references
+      link: false
     third_party_settings: {  }
     weight: 1
     region: content

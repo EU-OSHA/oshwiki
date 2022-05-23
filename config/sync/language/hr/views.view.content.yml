@@ -45,9 +45,6 @@ display:
             group_items:
               1:
                 title: Objavljeno
-        langcode:
-          expose:
-            label: Jezik
   page_1:
     display_title: Stranica
     display_options:

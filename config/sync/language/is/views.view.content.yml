@@ -21,10 +21,6 @@ display:
           label: Uppfært
         operations:
           label: Aðgerðir
-      pager:
-        options:
-          tags:
-            previous: '< Fyrri'
       exposed_form:
         options:
           submit_button: Sía
@@ -46,9 +42,6 @@ display:
                 title: Birt
               2:
                 title: 'Ekki birt'
-        langcode:
-          expose:
-            label: Tungumál
   page_1:
     display_title: Síða
     display_options:

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.image_caption.field_caption_copyrigth_
+    - field.field.media.image_caption.field_copyrigth
     - field.field.media.image_caption.field_description
     - field.field.media.image_caption.field_media_image
     - image.style.original_image
@@ -19,6 +20,14 @@ content:
   field_caption_copyrigth_:
     type: text_textarea
     weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_copyrigth:
+    type: text_textarea
+    weight: 3
     region: content
     settings:
       rows: 5

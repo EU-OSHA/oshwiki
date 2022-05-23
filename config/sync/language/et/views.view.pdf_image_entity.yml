@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Eelmine'
-            next: 'Järgmine ›'
-            first: '« Esimene'
-            last: 'Viimane »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Kirjeid lehel'
             items_per_page_options_all_label: '- Kõik -'

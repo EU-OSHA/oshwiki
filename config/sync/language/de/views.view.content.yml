@@ -18,13 +18,6 @@ display:
             format_custom_true: Veröffentlicht
         operations:
           label: Aktionen
-      pager:
-        options:
-          tags:
-            next: 'Nächste Seite ›'
-            previous: '‹ Vorherige Seite'
-            first: '« Anfang'
-            last: 'Ende »'
       exposed_form:
         options:
           submit_button: Filter
@@ -46,9 +39,6 @@ display:
             group_items:
               1:
                 title: Veröffentlicht
-        langcode:
-          expose:
-            label: Sprache
   page_1:
     display_title: Seite
     display_options:

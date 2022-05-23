@@ -20,7 +20,7 @@ It has 3 parameters: 1. The main light color (for the background)
   background-color: $mainLightColor;
   & > .container{
     h2{
-      @include textFormat(1.45rem, null, $titleColor);
+      @include textFormat(1.3rem, null, $titleColor);
       margin-bottom: 1rem;
     }
     .view-content > .views-view-grid > .row{
@@ -53,7 +53,7 @@ It has 3 parameters: 1. The main light color (for the background)
           @include textFormat(1.2rem, null, $text-black);
         }
         a:nth-of-type(2){
-          align-self: center;
+          align-self: end;
           margin: 0.7rem 0rem;
           @include textFormat(0.95rem, 600, $mainDarkColor);
         }

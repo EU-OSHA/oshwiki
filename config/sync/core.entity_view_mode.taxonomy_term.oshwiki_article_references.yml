@@ -1,0 +1,10 @@
+uuid: 7dc9e9ba-e2fc-4e29-a90d-1eaee69c6a4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.oshwiki_article_references
+label: oshwiki-article-references
+targetEntityType: taxonomy_term
+cache: true

@@ -22,13 +22,6 @@ display:
           label: Bijgewerkt
         operations:
           label: Bewerkingen
-      pager:
-        options:
-          tags:
-            next: 'Volgende ›'
-            previous: '‹ Vorige'
-            first: '« Eerste'
-            last: 'Laatste »'
       exposed_form:
         options:
           submit_button: Filter
@@ -56,9 +49,6 @@ display:
                 title: Gepubliceerd
               2:
                 title: 'Niet gepubliceerd'
-        langcode:
-          expose:
-            label: Taal
   page_1:
     display_title: Pagina
     display_options:

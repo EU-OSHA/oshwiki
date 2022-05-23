@@ -1,28 +1,98 @@
+.top-header-container.container{
+  max-width: 100%;
+}
 .top-header-container{
-  section{
-    .logo-wrapper{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      &>div{
-        padding: 0rem 1rem;
-      }
-      div:first-child, div:nth-child(2){
-        img{
-          width:inherit;
-          object-fit: contain;
+  .header-logo{
+    display: flex;
+    align-items: center;
+    section{
+      .logo-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        &>div{
+          padding: 0rem 1rem;
         }
-      }
-      .logo-oshwiki{
-        border-right: 2px solid $bg-light-dark-grey;
+        div:first-child, div:nth-child(2){
+          img{
+            width:inherit;
+            object-fit: contain;
+          }
+        }
+        .logo-oshwiki{
+          border-right: 2px solid $bg-light-dark-grey;
+        }
       }
     }
   }
   .top-header-content{
-    padding: 1rem;
+    padding: 1rem 3rem;
     .push-right{
+      .wrapper-two-columns-header{
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        .header-language-search > section{
+          display: flex;
+          flex-direction: column;
+          /*Search box*/
+          .search-block-form{
+            padding: 0;
+            .form-row>fieldset, .form-row>div{
+              padding: 0rem;
+            }
+            input, button{
+              height: 1.5rem;
+            }
+            input{
+              width: 10rem;
+            }
+            button{
+              width: 25px;
+              margin: 0rem 0.5rem;
+              border: none;
+              color: transparent;
+              background: {
+                color: transparent;
+                image: url('../images/icon-search.png');
+                repeat: no-repeat;
+                size: 1.5rem;
+              }
+            }
+          }
+          #search-block-form{
+            padding: 0px 5px;
+          }
+          /*Dropdown*/
+          form#lang_dropdown_form_lang-dropdown-form{
+            display: flex;
+            text-align: end;
+            justify-content: flex-end;
+            select#edit-lang-dropdown-select{
+              width: 10rem;
+              background: $bg-dark-green;
+              border: $bg-light-green;
+              color: $text-white;
+            }
+            &::after{
+              display: inline-block;
+              content: " ";
+              width: 25px;
+              height: 25px;
+              margin: 0rem 0.5rem;
+              background: {
+                image: url('../images/icon-globe.png');
+                repeat: no-repeat;
+                size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
       .content-first-row{
+        display: flex;
+        flex-direction: column-reverse;
         .font-size-print{
           display: flex;
           align-items: baseline;
@@ -107,18 +177,18 @@
       background: transparent;
       .active{
         a{
-          @include textFormat(1.3rem, 700, $text-white);
+          @include textFormat(0.9rem, 700, $text-white);
           text-decoration: underline;
         }
       }
       .breadcrumb-item + .breadcrumb-item::before {
         display: inline-block;
         padding-right: 0.5rem;
-        @include textFormat(1.3rem, null, $text-white);
+        @include textFormat(0.9rem, null, $text-white);
         content: ">";
       }
       .breadcrumb-item a{
-        @include textFormat(1.3rem, null, $text-white);
+        @include textFormat(0.9rem, null, $text-white);
       }
     }
   }
