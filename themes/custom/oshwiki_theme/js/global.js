@@ -76,14 +76,6 @@ jQuery(document).ready(function($) {
       }
     }
   }
-
-
-
-
-
-
-
-
 });
 
 /*Hide all the subthemes when document ready*/
