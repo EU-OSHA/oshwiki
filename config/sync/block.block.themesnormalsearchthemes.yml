@@ -12,7 +12,7 @@ dependencies:
 id: themesnormalsearchthemes
 theme: oshwiki_theme
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'facet_block:themes_normal_search_themes'
 settings:
