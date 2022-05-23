@@ -18,13 +18,6 @@ display:
             format_custom_true: Publié
         operations:
           label: Actions
-      pager:
-        options:
-          tags:
-            next: 'Suivant ›'
-            previous: '‹ Précédent'
-            first: '« Premier'
-            last: 'Dernier »'
       exposed_form:
         options:
           submit_button: Filtrer
@@ -46,9 +39,6 @@ display:
             group_items:
               1:
                 title: Publié
-        langcode:
-          expose:
-            label: Langue
   page_1:
     display_title: Page
     display_options:

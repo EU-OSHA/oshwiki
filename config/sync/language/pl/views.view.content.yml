@@ -22,13 +22,6 @@ display:
           label: Uaktualniono
         operations:
           label: Operacje
-      pager:
-        options:
-          tags:
-            next: 'Następna ›'
-            previous: '‹ Poprzednia'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
       exposed_form:
         options:
           submit_button: Filtr
@@ -56,9 +49,6 @@ display:
                 title: Opublikowane
               2:
                 title: Nieopublikowany
-        langcode:
-          expose:
-            label: Język
   page_1:
     display_title: Strona
     display_options:

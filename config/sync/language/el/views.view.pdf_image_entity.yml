@@ -12,8 +12,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Προηγούμενο'
-            next: 'Επόμενο ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'

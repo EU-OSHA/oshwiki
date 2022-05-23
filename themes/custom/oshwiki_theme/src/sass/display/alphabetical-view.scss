@@ -2,16 +2,16 @@
   .container{
     #main{
       /*Main layout with grid-area*/
-      .section{
+      & > .section{
         display: grid;
         grid-template-areas:
           "alphabet"
           "select-theme"
           "alphabetical-content";
-        #block-glossarythemes{
+        .js-facet-block-id-glossarythemes{
           grid-area: alphabet;
         }
-        #block-themes-names{
+        .js-facet-block-id-themes_names {
           grid-area: select-theme;
         }
         #block-oshwiki-theme-content{
@@ -22,7 +22,7 @@
     }
   }
 
-  #block-themes-names{
+  .js-facet-block-id-themes_names {
     .facets-widget-links{
       .item-list__links{
         margin: 0rem;
@@ -51,9 +51,15 @@
         margin: 1rem 0rem;
       }
     }
+    .is-active{
+      font-weight: 700;
+      span:first-of-type{
+        display: none;
+      }
+    }
   }
 
-  #block-glossarythemes{
+  .js-facet-block-id-glossarythemes{
     margin-left: 1rem;
     .list-group{
       display: flex;

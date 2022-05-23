@@ -93,7 +93,7 @@
             <p>{{ 'Latest update:' | trans }} {{ node.changed.value|date('d F Y-h:m') }}</p>
           </div>
           <div class="social_media">
-            <p>{{ 'Share this on:' | trans }} </p>
+            {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
           </div>
         </div>
         <!-- END DATES AND SOCIAL MEDIA -->
@@ -109,7 +109,15 @@
         <!-- END IMAGES -->
         <!-- REFERENCES -->
         <div class="article_references">
-          {{ content.field_references_oshwiki }}
+          <h2 class="reference-title">{{ 'References' | trans }}</h2>
+          {% for key,value in content.field_references_oshwiki %}
+            {% if( node.field_references_oshwiki[key].entity.field_number_references.value) %}
+              <div class="references-div">
+                <div class="reference-number"> {{ node.field_references_oshwiki[key].entity.field_number_references.value|number_format }}</div>
+                <div class="reference-content"> {{ node.field_references_oshwiki[key].entity.field_reference_references.entity.description.value }}</div>
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
         <!-- END REFERENCES -->
         <!-- FURTHER READING -->
@@ -124,7 +132,7 @@
             <p>{{ 'Latest update:' | trans }} {{ node.changed.value|date('d F Y-h:m') }}</p>
           </div>
           <div class="social_media">
-            <p>{{ 'Share this on:' | trans }} </p>
+            {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
           </div>
         </div>
         <!-- END DATES AND SOCIAL MEDIA -->

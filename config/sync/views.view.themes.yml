@@ -1405,6 +1405,7 @@ display:
       display_description: ''
       exposed_block: true
       display_extenders: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

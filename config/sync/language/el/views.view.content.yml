@@ -22,11 +22,6 @@ display:
           label: Ενημερώθηκε
         operations:
           label: Λειτουργίες
-      pager:
-        options:
-          tags:
-            next: 'Επόμενο ›'
-            previous: '‹ Προηγούμενο'
       exposed_form:
         options:
           submit_button: Φίλτρο
@@ -54,9 +49,6 @@ display:
                 title: Δημοσιευμένο
               2:
                 title: 'Μη δημοσιευμένο'
-        langcode:
-          expose:
-            label: Γλώσσα
   page_1:
     display_title: Σελίδα
     display_options:

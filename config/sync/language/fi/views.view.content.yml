@@ -22,13 +22,6 @@ display:
           label: Päivitetty
         operations:
           label: Toimenpiteet
-      pager:
-        options:
-          tags:
-            next: 'Seuraava ›'
-            previous: '‹ Edellinen'
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
       exposed_form:
         options:
           submit_button: Suodatus
@@ -56,9 +49,6 @@ display:
                 title: Julkaistu
               2:
                 title: Julkaisematon
-        langcode:
-          expose:
-            label: Kieli
   page_1:
     display_title: Sivu
     display_options:

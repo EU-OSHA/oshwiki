@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
           tags:
-            previous: '‹ Előző'
-            next: 'Következő ›'
-            first: '« Első'
-            last: 'Utolsó »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Tömeges frissítés'

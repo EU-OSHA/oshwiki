@@ -46,9 +46,6 @@ display:
                 title: Paskelbtas
               2:
                 title: Nepaskelbtas
-        langcode:
-          expose:
-            label: Kalba
   page_1:
     display_title: Puslapis
     display_options:

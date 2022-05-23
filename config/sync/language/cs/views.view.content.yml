@@ -22,13 +22,6 @@ display:
           label: Aktualizováno
         operations:
           label: Operace
-      pager:
-        options:
-          tags:
-            next: 'Následující ›'
-            previous: '‹ Předchozí'
-            first: '« První'
-            last: 'Poslední »'
       exposed_form:
         options:
           submit_button: Filtr
@@ -56,9 +49,6 @@ display:
                 title: Zveřejněno
               2:
                 title: Skryto
-        langcode:
-          expose:
-            label: Jazyk
   page_1:
     display_title: Stránka
     display_options:

@@ -41,9 +41,6 @@ display:
             group_items:
               1:
                 title: Publicēts
-        langcode:
-          expose:
-            label: Valoda
   page_1:
     display_title: Lapa
     display_options:

@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Todos -'
             offset_label: Deslocamento
           tags:
-            previous: '‹ Anterior'
-            next: 'Seguinte ›'
-            first: '« Primeira'
-            last: 'Última »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         state:
           label: Estado

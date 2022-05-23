@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Önceki'
-            next: 'Sonraki ›'
-            first: '« İlk'
-            last: 'Son »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Sayfa başına öğe sayısı'
             items_per_page_options_all_label: '- Tümü -'
