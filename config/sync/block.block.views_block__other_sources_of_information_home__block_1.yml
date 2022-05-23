@@ -1,0 +1,24 @@
+uuid: fe60775c-53f2-46ce-ad59-227cb4b3d475
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.other_sources_of_information_home_
+  module:
+    - views
+  theme:
+    - oshwiki_theme
+id: views_block__other_sources_of_information_home__block_1
+theme: oshwiki_theme
+region: front_content
+weight: 0
+provider: null
+plugin: 'views_block:other_sources_of_information_home_-block_1'
+settings:
+  id: 'views_block:other_sources_of_information_home_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

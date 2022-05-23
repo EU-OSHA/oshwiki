@@ -33,9 +33,6 @@ display:
             group_items:
               1:
                 title: Publikuar
-        langcode:
-          expose:
-            label: Gjuha
   page_1:
     display_title: Faqe
     display_options:

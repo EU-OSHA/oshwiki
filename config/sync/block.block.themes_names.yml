@@ -12,7 +12,7 @@ dependencies:
 id: themes_names
 theme: oshwiki_theme
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'facet_block:theme_names'
 settings:

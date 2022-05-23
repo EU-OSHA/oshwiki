@@ -12,12 +12,12 @@ dependencies:
 id: themesnormalsearchthemes
 theme: oshwiki_theme
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: 'facet_block:themes_normal_search_themes'
 settings:
   id: 'facet_block:themes_normal_search_themes'
-  label: 'Themes Normal Search: Themes'
+  label: 'Select themes'
   label_display: visible
   provider: facets
   context_mapping: {  }
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /theme
+    pages: /themes

@@ -22,13 +22,6 @@ display:
           label: Uppdaterad
         operations:
           label: Funktioner
-      pager:
-        options:
-          tags:
-            next: 'Nästa ›'
-            previous: '‹ Föregående'
-            first: '« Första'
-            last: 'Sista »'
       exposed_form:
         options:
           submit_button: Filtrera
@@ -56,9 +49,6 @@ display:
                 title: Publicerad
               2:
                 title: 'Ej publicerad'
-        langcode:
-          expose:
-            label: Språk
   page_1:
     display_title: Sida
     display_options:

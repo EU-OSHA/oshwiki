@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Předchozí'
-            next: 'Následující ›'
-            first: '« První'
-            last: 'Poslední »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'

@@ -70,6 +70,8 @@ display:
           label: Nosaukums
         uid:
           label: Autors
+        changed:
+          label: Updated
       arguments:
         bundle:
           exception:

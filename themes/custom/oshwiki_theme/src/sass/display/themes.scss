@@ -1,0 +1,213 @@
+.page-view-themes{
+  .container{
+    #main{
+      /*Main layout with grid-area*/
+      .section{
+        display: grid;
+        grid-template-areas:
+          "select-theme"
+          "theme-content"
+          "other-articles-in-English";
+        #block-themesnormalsearchthemes{
+          grid-area: select-theme;
+        }
+        #block-oshwiki-theme-content{
+          grid-area: theme-content;
+        }
+        #block-views-block-themes-block-1{
+          grid-area: other-articles-in-English;
+        }
+      }
+      /*End comment*/
+    }
+  }
+  #block-oshwiki-theme-content, #block-views-block-themes-block-1{
+    margin-left: 1rem;
+    h2{
+      @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+    }
+    .views-exposed-form{
+      fieldset{
+        display: flex;
+        flex-direction: column;
+      }
+      button{
+        padding: 0rem 0.5rem;
+      }
+    }
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+      .views-row{
+        padding: 1rem 0rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .views-field-title{
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-url{
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 0.5rem;
+          letter-spacing: 0.3px;
+          line-height: 29px;
+          span{
+            display: flex;
+            align-items: center;
+            a {
+              @include textFormat(0.9rem, null, $text-dark-green);
+              &:hover{
+               text-decoration: underline;
+              }
+            }
+          }
+          span::after{
+            display: inline-block;
+            content: " ";
+            width: 14px;
+            height: 14px;
+            margin-left: 0.5rem;
+            margin-top: 0.2rem;
+            background: url('../images/green-arrow_see_more.png') no-repeat;
+          }
+        }
+      }
+    }
+    .js-pager__items{
+      margin: 1.5rem 0rem;
+    }
+  }
+
+  #block-oshwiki-theme-content{
+    .view-content{
+      /*Show first result bigger*/
+      .views-row:first-of-type{
+        .views-field-title{
+          a{
+            @include textFormat(1.3rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-field-sections-oshwiki{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
+          letter-spacing: 0.3px;
+          line-height: 29px;
+        }
+        .views-field-url{
+          letter-spacing: 0.3px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+
+  #block-views-block-themes-block-1{
+    padding: 1rem 0rem;
+    h2{
+      font-weight: bold;
+      margin-top: 1.5rem;
+    }
+  }
+
+
+  /*Block select theme*/
+  .block-facet-blockthemes-normal-search-themes{
+    margin: 1rem 0rem;
+    padding: 0rem 0rem 1rem 0rem;
+    h2{
+      margin:0rem;
+      padding: 0.5rem 0rem 0.5rem 1.5rem;
+      border-radius: 15px 15px 0px 0px;
+      background-color: $bg-dark-green;
+      @include textFormat(1.3rem, null, $text-white);
+    }
+    .facets-widget-links{
+      padding: 1rem 1.5rem;
+      border-radius: 0px 0px 15px 15px;
+      background-color: $bg-light-green;
+      height: fit-content;
+      .item-list__links{
+        margin: 0rem;
+        padding: 0rem;
+        /*Theme before it has been selected: with green icon*/
+        li > .showSubthemes{
+          cursor: pointer;
+          display: inline-block;
+          content: " ";
+          width: 13px;
+          height: 13px;
+          margin-left: 1rem;
+          background: url('../images/green_plus_select_theme.png') no-repeat;
+        }
+        /*Show subthemes with green arrow icon*/
+        .facets-widget- ul li{
+          &:first-of-type{
+            margin-top: 1rem;
+          }
+          &:last-of-type{
+            margin-bottom: 1rem;
+          }
+          a .facet-item__value::before {
+            display: inline-block;
+            content: " ";
+            width: 18px;
+            height: 9px;
+            margin-right: 0.5rem;
+            background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+            transform: rotate(270deg);
+          }
+        }
+        .facet-item--expanded, .facet-item{
+           list-style: none;
+        }
+      }
+
+      /*Selected theme in bold and with orange icon*/
+      .item-list__links .active{
+        & > a > .facet-item__value{
+          font-weight: bold;
+        }
+        .showSubthemes{
+          margin: 0.3rem 0rem 0.3rem 1rem;
+          height: 3px;
+          background: url('../images/orange_minus_select_theme.png');
+        }
+      }
+      li{
+        margin: 1rem 0rem;
+        &:first-of-type{
+          margin-top: 0rem;
+        }
+        &:last-of-type{
+          margin-bottom: 0rem;
+        }
+      }
+    }
+    .is-active{
+      font-weight: 700;
+      span:first-of-type{
+        display: none;
+      }
+    }
+  }
+  /*End comment*/
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-themes{
+    .container{
+      #main{
+        /*Responsive layout with grid-area*/
+        .section{
+          grid-template-columns: 1.25fr 1fr 1fr 1fr;
+          grid-template-areas:
+          "select-theme theme-content theme-content theme-content"
+          "select-theme other-articles-in-English other-articles-in-English other-articles-in-English";
+        }
+        /*End comment*/
+      }
+    }
+  }
+}

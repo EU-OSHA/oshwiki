@@ -1,6 +1,7 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   automated_cron: 0
@@ -26,6 +27,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   facets: 0
   field: 0
   field_ui: 0
@@ -48,6 +50,7 @@ module:
   languagefield: 0
   layout_discovery: 0
   link: 0
+  linkit: 0
   locale: 0
   media: 0
   media_library: 0
@@ -77,6 +80,7 @@ module:
   sophron: 0
   system: 0
   taxonomy: 0
+  taxonomy_level: 0
   taxonomy_manager: 0
   text: 0
   tmgmt: 0

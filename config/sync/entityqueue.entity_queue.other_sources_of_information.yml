@@ -1,0 +1,26 @@
+uuid: 4d078dd6-374f-45e5-a822-c3a5c4fbda4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: other_sources_of_information
+label: 'Other sources of information'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      scientific_journal: scientific_journal
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

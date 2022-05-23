@@ -1,0 +1,144 @@
+.page-view-alphabetical-view{
+  .container{
+    #main{
+      /*Main layout with grid-area*/
+      & > .section{
+        display: grid;
+        grid-template-areas:
+          "alphabet"
+          "select-theme"
+          "alphabetical-content";
+        .js-facet-block-id-glossarythemes{
+          grid-area: alphabet;
+        }
+        .js-facet-block-id-themes_names {
+          grid-area: select-theme;
+        }
+        #block-oshwiki-theme-content{
+          grid-area: alphabetical-content;
+        }
+      }
+      /*End comment*/
+    }
+  }
+
+  .js-facet-block-id-themes_names {
+    .facets-widget-links{
+      .item-list__links{
+        margin: 0rem;
+        padding: 0rem;
+        /*Show subthemes with green arrow icon*/
+        .facets-widget- ul li a .facet-item__value::before {
+          display: inline-block;
+          content: " ";
+          width: 18px;
+          height: 9px;
+          margin-right: 0.5rem;
+          background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+          transform: rotate(270deg);
+        }
+        .facet-item--expanded, .facet-item{
+          list-style: none;
+        }
+      }
+      .active{
+        & > a > span{
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+      li{
+        margin: 1rem 0rem;
+      }
+    }
+    .is-active{
+      font-weight: 700;
+      span:first-of-type{
+        display: none;
+      }
+    }
+  }
+
+  .js-facet-block-id-glossarythemes{
+    margin-left: 1rem;
+    .list-group{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      border : {
+        radius: 0px;
+        top: 1px solid $bg-dark-medium-grey;
+        bottom: 1px solid $bg-dark-medium-grey;
+      }
+      li{
+        border: none;
+        font-size: 1.2rem;
+        color: $text-light-dark-grey;
+        a{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  #block-oshwiki-theme-content{
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      .views-row{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .views-field-title{
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-url{
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 0.5rem;
+          letter-spacing: 0.3px;
+          line-height: 29px;
+          span > a {
+            @include textFormat(0.9rem, null, $text-dark-green);
+            text-decoration: underline;
+          }
+          span::after{
+            display: inline-block;
+            content: " ";
+            width: 10px;
+            height: 10px;
+            margin-left: 0.3rem;
+            background: url('../images/green-arrow.png') no-repeat;
+            background-size: 90%;
+          }
+        }
+
+      }
+    }
+    .row{
+      margin: 0rem;
+    }
+    nav{
+      padding: 1rem 0rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-alphabetical-view{
+    .container{
+      #main{
+        /*Responsive layout with grid-area*/
+        .section{
+          grid-template-areas:
+          "alphabet alphabet alphabet alphabet"
+          "select-theme alphabetical-content alphabetical-content alphabetical-content";
+        }
+        /*End comment*/
+      }
+    }
+  }
+}

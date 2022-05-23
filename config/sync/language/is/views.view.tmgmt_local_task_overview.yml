@@ -12,7 +12,7 @@ display:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
           tags:
-            previous: '< Fyrri'
+            previous: '‹ Previous'
       fields:
         title:
           label: Merking

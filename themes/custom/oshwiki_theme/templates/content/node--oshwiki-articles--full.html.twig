@@ -72,95 +72,123 @@
     'clearfix',
   ]
 %}
-<div class="row wrapper-content">
-  <!-- LEFT COLUMN -->
-  <div class="col-lg-3 col-12 order-2">
-    <p>
-      <strong>{{ 'This item is available in other national versions' | trans }}</strong>
-    </p>
-  </div>
-  <!-- END LEFT COLUMN -->
-  <!-- CENTER COLUMN -->
-  <div class="col-lg-6 col-12 order-3">
 
-    <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-      <!-- DATES AND SOCIAL MEDIA -->
-      <div class="dates_and_social_media">
-        <div class="article_dates">
-          <p>{{ 'Created on:' | trans }} {{ node.created.value|date('d F Y-h:m') }}</p>
-          <p>{{ 'Latest update:' | trans }} {{ node.changed.value|date('d F Y-h:m') }}</p>
+<div class="container">
+  <div class="row wrapper-content oshwiki-content">
+    <!-- LEFT COLUMN -->
+    <div class="col-lg-3 col-12 order-2">
+      <p>
+        <strong>{{ 'This item is available in other national versions' | trans }}</strong>
+      </p>
+    </div>
+    <!-- END LEFT COLUMN -->
+    <!-- CENTER COLUMN -->
+    <div class="col-lg-6 col-12 order-3">
+
+      <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+        <!-- DATES AND SOCIAL MEDIA -->
+        <div class="dates_and_social_media">
+          <div class="article_dates">
+            <p>{{ 'Created on:' | trans }} {{ node.created.value|date('d F Y-h:m') }}</p>
+            <p>{{ 'Latest update:' | trans }} {{ node.changed.value|date('d F Y-h:m') }}</p>
+          </div>
+          <div class="social_media">
+            {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
+          </div>
         </div>
-        <div class="social_media">
-          <p>{{ 'Share this on:' | trans }} </p>
+        <!-- END DATES AND SOCIAL MEDIA -->
+        <!-- SECTIONS -->
+        <div class="article_sections">
+          {{ content.field_sections_oshwiki|render  }}
         </div>
-      </div>
-      <!-- END DATES AND SOCIAL MEDIA -->
-      <!-- SECTIONS -->
-      <div class="article_sections">
-        {{ content.field_sections_oshwiki|render  }}
-      </div>
-      <!-- END SECTIONS -->
-      <!-- IMAGES -->
-      <div class="article_images">
-        {{ content.field_image_oshwiki }}
-      </div>
-      <!-- END IMAGES -->
-      <!-- REFERENCES -->
-      <div class="article_references">
-        {{ content.field_references_oshwiki }}
-      </div>
-      <!-- END REFERENCES -->
-      <!-- FURTHER READING -->
-      <div class="article_further_reading">
-        {{ content.field_further_reading_oshwiki }}
-      </div>
-      <!-- END FURTHER READING -->
-      <!-- DATES AND SOCIAL MEDIA -->
-      <div class="dates_and_social_media">
-        <div class="article_dates">
-          <p>{{ 'Created on:' | trans }} {{ node.created.value|date('d F Y-h:m') }}</p>
-          <p>{{ 'Latest update:' | trans }} {{ node.changed.value|date('d F Y-h:m') }}</p>
+        <!-- END SECTIONS -->
+        <!-- IMAGES -->
+        <div class="article_images">
+          {{ content.field_image_oshwiki }}
         </div>
-        <div class="social_media">
-          <p>{{ 'Share this on:' | trans }} </p>
+        <!-- END IMAGES -->
+        <!-- REFERENCES -->
+        <div class="article_references">
+          <h2 class="reference-title">{{ 'References' | trans }}</h2>
+          {% for key,value in content.field_references_oshwiki %}
+            {% if( node.field_references_oshwiki[key].entity.field_number_references.value) %}
+              <div class="references-div">
+                <div class="reference-number"> {{ node.field_references_oshwiki[key].entity.field_number_references.value|number_format }}</div>
+                <div class="reference-content"> {{ node.field_references_oshwiki[key].entity.field_reference_references.entity.description.value }}</div>
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
+        <!-- END REFERENCES -->
+        <!-- FURTHER READING -->
+        <div class="article_further_reading">
+          {{ content.field_further_reading_oshwiki }}
+        </div>
+        <!-- END FURTHER READING -->
+        <!-- DATES AND SOCIAL MEDIA -->
+        <div class="dates_and_social_media">
+          <div class="article_dates">
+            <p>{{ 'Created on:' | trans }} {{ node.created.value|date('d F Y-h:m') }}</p>
+            <p>{{ 'Latest update:' | trans }} {{ node.changed.value|date('d F Y-h:m') }}</p>
+          </div>
+          <div class="social_media">
+            {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
+          </div>
+        </div>
+        <!-- END DATES AND SOCIAL MEDIA -->
       </div>
-      <!-- END DATES AND SOCIAL MEDIA -->
+    </div>
+    <!-- END CENTER COLUMN -->
+    <!-- THEME COLUMN -->
+    <div class="select-theme-article col-lg-3 col-12 order-lg-last">
+      <div class="select-theme-article-title-box">
+        <p>Select theme</p>
+      </div>
+      <div class="select-theme-article-content-box">
+        {{ drupal_block('facet_block:themes_normal_search_themes') }}
+      </div>
+    </div>
+    <!-- END THEME COLUMN -->
+  </div>
+  <div class="row wrapper-content oshwiki-authors-contributors">
+    <div class="col-12">
+      <!-- AUTHORS -->
+        {%set authorExists = content.field_authors_oshwiki.0 %}
+        {% if authorExists %}
+          <div class="article_authors">
+            {{ content.field_authors_oshwiki }}
+          </div>
+        {% endif %}
+      <!-- END AUTHORS-->
+      <!-- CONTRIBUTORS -->
+        {%if content.field_contributors_oshwiki.0 %}
+          {% if authorExists %}
+            <div class=" article_contributors contributors-border-b">
+              {{ content.field_contributors_oshwiki }}
+            </div>
+          {% else %}
+            <div class=" article_contributors contributors-border-t-b">
+              {{ content.field_contributors_oshwiki }}
+            </div>
+          {% endif %}
+        {% endif %}
+      <!-- END CONTRIBUTORS -->
     </div>
   </div>
-  <!-- END CENTER COLUMN -->
-  <!-- THEME COLUMN -->
-  <div class="select-theme-article col-lg-3 col-12 order-lg-last">
-    <div class="select-theme-article-title-box">
-      <p>Select theme</p>
-    </div>
-    <div class="select-theme-article-content-box">
-    </div>
-  </div>
-  <!-- END THEME COLUMN -->
 </div>
-<div class="row wrapper-content">
-  <div class="col-12">
-    <!-- AUTHORS -->
-    <div class="article_authors">
-      {{ content.field_authors_oshwiki }}
-    </div>
-    <!-- END AUTHORS-->
-    <!-- CONTRIBUTORS -->
-    <div class="article_contributors">
-      {{ content.field_contributors_oshwiki }}
-    </div>
-    <!-- END CONTRIBUTORS -->
-  </div>
-</div>
-<div class="row wrapper-content">
+
+{% set viewRelatedArticles = drupal_view('related_articles_view', 'block_1')|render  %}
+  {%  if viewRelatedArticles|striptags|trim %}
+
+<div class="row wrapper-content related-articles">
   <!-- RELATED ARTICLES -->
   <div class="container-fluid related-articles">
     <div class="container">
       <h2>{{ 'Related Articles' | trans }}</h2>
-      <td>To be confirmed the name of the view</td>
-{#      {{  drupal_view ('nombre_view', 'display_del_view_name_machine')}}#}
-    </div
+      {{  drupal_view ('related_articles_view', 'block_1')}}
+    </div>
   </div>
   <!-- END RELATED ARTICLES -->
 </div>
+
+  {% endif %}

@@ -1,0 +1,20 @@
+uuid: 8317d9c7-4f2f-4d59-bdb4-549512ac6730
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.author_otherresourcesinformation
+  module:
+    - path
+id: node.author_otherresourcesinformation.path
+field_name: path
+entity_type: node
+bundle: author_otherresourcesinformation
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

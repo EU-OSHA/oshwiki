@@ -54,17 +54,38 @@
         <div class="container">
           <h1>{{ 'Welcome to ' | trans }} <span>{{ 'OSHWiki' | trans }}</span></h1>
           <p>{{ 'the Occupational Safety and Health free encyclopedia' | trans }}</p>
-          <p>TODO Create search</p>
+          <div class="home-banner-search">
+            {{ drupal_entity('block', 'oshwiki_theme_search', check_access=false) }}
+            <p class="home-advanced-search"> Advanced search</p>
+          </div>
         </div>
       </section>
     </div>
     <!-- END BANNER -->
+    <!-- SELECT THEME -->
+    <div class="container-fluid">
+      <section class="section">
+        <div class="container">
+          <p class="home-text">
+            {{ 'The contents of OSHwiki are organised in different categories and subcategories depending on their main topic.' | trans }}
+          </p>
+          <div class="select-theme">
+            <div class="select-theme-article-home-title-box">
+              <p>Select theme</p>
+            </div>
+            <div class="select-theme-article-home-content-box">
+              {{ drupal_block('facet_block:themes_normal_search_themes') }}
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--END SELECT THEME -->
     <!--FEATURED ARTICLES -->
     <div class="container-fluid">
       <section class="section section_featured_articles">
         <div class="container">
           <h2>{{ 'Featured articles' | trans }}</h2>
-          <p>TODO Featured articles view</p>
+          {{  drupal_view ('featured_articles', 'block_1')}}
         </div>
       </section>
     </div>
@@ -74,7 +95,7 @@
       <section class="section section_most_popular">
         <div class="container">
           <h2>{{ 'Most popular' | trans }}</h2>
-          <p>TODO Most popular view</p>
+          {{ drupal_block('views_block:most_popular_articles-block_1') }}
         </div>
       </section>
     </div>
@@ -84,7 +105,7 @@
       <section class="section section_most_recent">
         <div class="container">
           <h2>{{ 'Most recent' | trans }}</h2>
-          <p>TODO Most recent view</p>
+          {{ drupal_block('views_block:recent_articles-block_1') }}
         </div>
       </section>
     </div>
@@ -94,7 +115,7 @@
       <section class="section section_other_sources">
         <div class="container">
           <h2>{{ 'Other sources of information' | trans }}</h2>
-          <p>TODO Other sources of information view</p>
+          {{ drupal_block('views_block:other_sources_of_information_home_-block_1') }}
         </div>
       </section>
     </div>

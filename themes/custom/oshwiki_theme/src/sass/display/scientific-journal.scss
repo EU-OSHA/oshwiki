@@ -47,7 +47,6 @@
   .field--name-field-introduction-science{
     .field__label{
       margin: 1rem 0rem;
-      text-transform: uppercase;
       @include textFormat(1.2rem, 700, $text-black);
     }
   }
@@ -74,7 +73,7 @@
     .wrapper-author-sj{
       justify-content: flex-start;
       h2{
-        margin: 1rem 0rem 0rem 0rem;
+        margin: 0.5rem 0rem 0rem 0rem;
         @include textFormat(1rem, 700, $text-dark-dark-grey);
       }
       .field--name-field-organisation{
@@ -94,13 +93,56 @@
     border-radius: 15px 15px 0px 0px;
     background-color: $bg-dark-green;
     p{
-      @include textFormat(1.5rem, null, $text-white);
+      @include textFormat(1.3rem, null, $text-white);
       border-radius: 15px 15px 0px 0px;
       margin:0rem;
     }
   }
   .select-theme-article-content-box{
-
+    padding: 0rem 1.5rem;
+    .facets-widget-links{
+      .item-list__links{
+        margin: 0;
+        padding: 0rem;
+        /*Theme before it has been selected: with green icon*/
+        li > .showSubthemes{
+          cursor: pointer;
+          display: inline-block;
+          content: " ";
+          width: 13px;
+          height: 13px;
+          margin-left: 1rem;
+          background: url('../images/green_plus_select_theme.png') no-repeat;
+        }
+        /*Show subthemes with green arrow icon*/
+        .facets-widget- ul li a .facet-item__value::before {
+          display: inline-block;
+          content: " ";
+          width: 18px;
+          height: 9px;
+          margin-right: 0.5rem;
+          background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+          transform: rotate(270deg);
+        }
+        .facet-item--expanded, .facet-item{
+          list-style: none;
+        }
+        /*Selected theme in bold and with orange icon*/
+        & > .active{
+          & > a > .facet-item__value{
+            font-weight: bold;
+          }
+          .showSubthemes{
+            margin: 0.3rem 0rem 0.3rem 1rem;
+            height: 3px;
+            background: url('../images/orange_minus_select_theme.png');
+          }
+        }
+        li{
+          margin: 1rem 0rem;
+        }
+      }
+    }
   }
 }
 
@@ -109,3 +151,5 @@
     margin: 0rem 0rem;
   }
 }
+
+

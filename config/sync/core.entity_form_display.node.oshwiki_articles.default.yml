@@ -215,4 +215,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_nace_tax_old: true
+  field_osh_tax_old: true

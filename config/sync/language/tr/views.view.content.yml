@@ -21,13 +21,6 @@ display:
           label: Güncellendi
         operations:
           label: İşlemler
-      pager:
-        options:
-          tags:
-            next: 'Sonraki ›'
-            previous: '‹ Önceki'
-            first: '« İlk'
-            last: 'Son »'
       exposed_form:
         options:
           submit_button: Süzgeç
@@ -55,9 +48,6 @@ display:
                 title: Yayında
               2:
                 title: 'Yayında değil'
-        langcode:
-          expose:
-            label: Dil
   page_1:
     display_title: Sayfa
     display_options:

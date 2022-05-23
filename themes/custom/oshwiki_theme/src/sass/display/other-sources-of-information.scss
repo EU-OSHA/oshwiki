@@ -1,0 +1,53 @@
+.page-view-other-sources-of-information{
+  #block-oshwiki-theme-content{
+    margin-left: 1rem;
+    .views-exposed-form{
+      fieldset{
+        display: flex;
+        flex-direction: column;
+      }
+      button{
+        padding: 0rem 0.5rem;
+      }
+    }
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+      .views-row{
+        padding: 1rem 0rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .views-field-title{
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-url{
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 0.5rem;
+          letter-spacing: 0.3px;
+          line-height: 29px;
+          span{
+            display: flex;
+            align-items: center;
+            a {
+              @include textFormat(0.9rem, null, $text-dark-green);
+              text-decoration: underline;
+            }
+          }
+          span::after{
+            display: inline-block;
+            content: " ";
+            width: 14px;
+            height: 14px;
+            margin-left: 0.5rem;
+            margin-top: 0.2rem;
+            background: url('../images/green-arrow_see_more.png') no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
           tags:
-            previous: '‹ Poprzednia'
-            next: 'Następna ›'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         state:
           label: Stan
