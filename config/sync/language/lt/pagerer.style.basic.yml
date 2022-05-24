@@ -1,0 +1,9 @@
+default_config:
+  tags:
+    pages:
+      first_title: 'Eiti į pirmą puslapį'
+      previous_title: 'Atgal į buvusį puslapį'
+      next_title: 'Toliau į kitą puslapį'
+      last_title: 'Eiti į paskutinį puslapį'
+    items:
+      first_reader: 'Pirmas elementas'

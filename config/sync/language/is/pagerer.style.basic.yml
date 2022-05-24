@@ -1,0 +1,9 @@
+default_config:
+  tags:
+    pages:
+      first_title: 'Fara á fremstu síðu'
+      previous_title: 'Fara á fyrri síðu'
+      next_title: 'Fara á næstu síðu'
+      last_title: 'Fara á öftustu síðu'
+      next_reader: 'Næsta síða'
+      last_reader: 'Síðasta síða'

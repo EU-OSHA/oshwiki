@@ -1,0 +1,35 @@
+default_config:
+  tags:
+    page_breaker: …
+    pages:
+      prefix_label: Pagina
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
+      page_current_title: 'Pagina attuale'
+      first_title: 'Vai alla prima pagina'
+      previous_title: 'Vai alla pagina precedente'
+      next_title: 'Vai alla pagina successiva'
+      last_title: 'Vai all''ultima pagina'
+      page_current_reader: 'Pagina attuale'
+      page_reader: Pagina
+      first_reader: 'Prima pagina'
+      previous_reader: 'Pagina precedente'
+      next_reader: 'Pagina successiva'
+      last_reader: 'Ultima pagina'
+    items:
+      prefix_label: Elemento
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
+      page_reader: Elemento
+      first_reader: 'Prima voce'
+    item_ranges:
+      prefix_label: Elementi
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
+      page_reader: Elementi

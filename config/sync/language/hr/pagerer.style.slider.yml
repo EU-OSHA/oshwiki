@@ -1,0 +1,13 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Stranica
+      first_title: 'Idi na prvu stranicu'
+      previous_title: 'Idi na prethodnu stranicu'
+      next_title: 'Idi na sljedeću stranicu'
+      last_title: 'Idi na posljednju stranicu'
+    items:
+      prefix_label: stavka
+      first_reader: 'Prva stavka'
+    item_ranges:
+      prefix_label: Stavke

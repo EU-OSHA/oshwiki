@@ -48,6 +48,7 @@ content:
     weight: 0
     region: content
 hidden:
+  addtoany: true
   created: true
   langcode: true
   name: true

@@ -42,6 +42,9 @@ module:
   image_widget_crop: 0
   imagemagick: 0
   jquery_ui: 0
+  jquery_ui_button: 0
+  jquery_ui_checkboxradio: 0
+  jquery_ui_controlgroup: 0
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
@@ -67,6 +70,7 @@ module:
   oshwiki_backend: 0
   oshwiki_search: 0
   page_cache: 0
+  pagerer: 0
   path: 0
   path_alias: 0
   quickedit: 0

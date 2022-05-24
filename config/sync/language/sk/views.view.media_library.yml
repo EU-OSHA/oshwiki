@@ -36,9 +36,6 @@ display:
         name:
           expose:
             label: Názov
-        langcode:
-          expose:
-            label: Jazyk
   page:
     display_title: Stránka
     display_options:

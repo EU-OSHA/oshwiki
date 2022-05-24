@@ -27,9 +27,6 @@ display:
         name:
           expose:
             label: Naziv
-        langcode:
-          expose:
-            label: Jezik
   page:
     display_title: Stranica
     display_options:

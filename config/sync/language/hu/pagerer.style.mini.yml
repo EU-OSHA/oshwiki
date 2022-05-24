@@ -1,0 +1,21 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Oldal
+      previous: ‹
+      next: ›
+      page_current_title: 'Jelenlegi oldal'
+      first_title: 'Ugrás az első oldalra'
+      previous_title: 'Ugrás az előző oldalra'
+      next_title: 'Ugrás a következő oldalra'
+      last_title: 'Ugrás az utolsó oldalra'
+      page_current_reader: 'Jelenlegi oldal'
+      first_reader: 'Első oldal'
+      previous_reader: 'Előző oldal'
+      next_reader: 'Következő oldal'
+      last_reader: 'Utolsó oldal'
+    items:
+      prefix_label: Tétel
+      previous: ‹
+      next: ›
+      first_reader: 'Első listaelem'
