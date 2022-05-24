@@ -11,14 +11,14 @@
     grid-template-areas:
         "date"
         "share";
-    p{
+    p, span{
       @include textFormat(0.9rem, null, $text-dark-medium-grey);
     }
     .article_dates{
       grid-area: date;
       padding: 0.3rem 0rem;
     }
-    .social-media{
+    #share-this-on{
       grid-area: share;
       padding: 0.3rem 0rem;
     }
