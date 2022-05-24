@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: mOI48r0jAAs54q55bxRFCn8g6j-QsXsLFLheI6x7sSk
+core_override_preset: core
+url_querystring:
+  core_override: false
+  querystring_key: pg
+  index_base: 0
+  encode_method: none

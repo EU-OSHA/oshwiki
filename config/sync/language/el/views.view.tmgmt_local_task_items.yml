@@ -15,8 +15,8 @@ display:
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
           tags:
-            previous: '‹ Προηγούμενο'
-            next: 'Επόμενο ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
       fields:
         status:
           label: Κατάσταση

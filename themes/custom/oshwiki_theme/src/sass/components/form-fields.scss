@@ -2,12 +2,55 @@ label{
   color: $text-dark-dark-grey;
 }
 
+.form-control:focus{
+  border-color: $bg-light-green;
+  box-shadow: 0 0 0 0.2rem $bg-light-green;
+}
+
 select{
   color: $text-dark-green;
   border: 1px solid $bg-dark-green;
   background: $bg-white;
-  option:hover{
+  option:hover,
+  option:active,
+  option:focus{
     color: $text-white;
     background: $bg-dark-orange;
   }
 }
+
+/*Log in form*/
+.page-user-login{
+  #block-oshwiki-theme-content{
+    & > div{
+      display: flex;
+      justify-content: start;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-user-login{
+    #block-oshwiki-theme-content{
+      & > div{
+        display: flex;
+        justify-content: start;
+        form{
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page-user-login{
+    #block-oshwiki-theme-content{
+      & > div{
+        form{
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+/*End log in form*/

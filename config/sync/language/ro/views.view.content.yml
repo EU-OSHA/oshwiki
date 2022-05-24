@@ -22,13 +22,6 @@ display:
           label: Actualizat
         operations:
           label: Operaţii
-      pager:
-        options:
-          tags:
-            next: 'Următor ›'
-            previous: '‹ Anterior'
-            first: '« Primul'
-            last: 'Ultimul »'
       exposed_form:
         options:
           submit_button: Filtru
@@ -56,9 +49,6 @@ display:
                 title: Publicat
               2:
                 title: Nepublicat
-        langcode:
-          expose:
-            label: Limba
   page_1:
     display_title: Pagina
     display_options:

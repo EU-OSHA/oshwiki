@@ -1,0 +1,11 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Lapa
+      first_title: 'Doties uz pirmo lapu'
+      previous_title: 'Uz iepriekšējo lapu'
+      next_title: 'Uz nākamo lapu'
+      last_title: 'Doties uz pēdējo lapu'
+    items:
+      prefix_label: Ieraksts
+      first_reader: 'Pirmais elements'

@@ -1,0 +1,9 @@
+default_config:
+  tags:
+    pages:
+      first_title: 'Pojdi na začetno stran'
+      previous_title: 'Pojdi na prejšnjo stran'
+      next_title: 'Pojdi na naslednjo stran'
+      last_title: 'Pojdi na zadnjo stran'
+    items:
+      first_reader: 'Prvi element'

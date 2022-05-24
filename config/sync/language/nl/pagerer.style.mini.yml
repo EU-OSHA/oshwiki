@@ -1,0 +1,21 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Pagina
+      previous: ‹
+      next: ›
+      page_current_title: 'Huidige pagina'
+      first_title: 'Ga naar eerste pagina'
+      previous_title: 'Ga naar vorige pagina'
+      next_title: 'Ga naar volgende pagina'
+      last_title: 'Ga naar laatste pagina'
+      page_current_reader: 'Huidige pagina'
+      first_reader: 'Eerste pagina'
+      previous_reader: 'Vorige pagina'
+      next_reader: 'Volgende pagina'
+      last_reader: 'Laatste pagina'
+    items:
+      prefix_label: Item
+      previous: ‹
+      next: ›
+      first_reader: 'Eerste item'

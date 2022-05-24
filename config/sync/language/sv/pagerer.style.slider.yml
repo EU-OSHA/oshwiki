@@ -1,0 +1,24 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Sida
+      previous: ‹
+      next: ›
+      page_current_title: 'Nuvarande sida'
+      first_title: 'Gå till första sidan'
+      previous_title: 'Gå till föregående sida'
+      next_title: 'Gå till nästa sida'
+      last_title: 'Gå till sista sidan'
+      page_current_reader: 'Nuvarande sida'
+      previous_reader: 'Föregående sida'
+      next_reader: 'Nästa sida'
+      last_reader: 'Sista sidan'
+    items:
+      prefix_label: Artikel
+      previous: ‹
+      next: ›
+      first_reader: 'Första posten'
+    item_ranges:
+      prefix_label: Poster
+      previous: ‹
+      next: ›

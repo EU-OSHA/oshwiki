@@ -292,7 +292,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ field_themes_oshwiki }}\r\n{{ field_image_oshwiki }}\r\n{{ title }}\r\n{{ view_node }}"
+            text: "{{ field_image_oshwiki }}\r\n{{ field_themes_oshwiki }}\r\n{{ title }}\r\n{{ view_node }}"
             make_link: false
             path: ''
             absolute: false

@@ -15,25 +15,30 @@
 
 })(jQuery, Drupal);
 
-jQuery(document).ready(function($) {
-  /*REMOVE*/
-  $(".view-footer").hide();
-  /*REMOVE*/
-  let theURL=$(location).attr("href");
+
+
+jQuery(window).on("load",function(){
   hideEverySubthemeCat();
   createNewSpanForThemeIcon();
+  /*REMOVE*/
+  /*REMOVE*/
+});
+
+jQuery(document).ready(function($) {
+  let theURL=$(location).attr("href");
   checkFooterMargin();
   themeAlfabethicalViewTabs(theURL);
-  checkIfParagraphImgHasText();
+  checkIfParagraphImgHasText('.section_most_popular', '.section_most_recent');
+  createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent']);
+  createDivCards("node--type-oshwiki-articles",['.related-articles']);
 
-  /*If the paragraph has images and the images have no text, add border radius*/
-  function checkIfParagraphImgHasText(){
-    if($("body").hasClass("node--type-oshwiki-articles")){
-      $('.field--name-field-media > .field__item > .contextual-region').each(function(index, value){
-        if($(this).find('.field--name-field-caption-copyrigth-').length==0){
-          $(this).find('.field--name-field-media-image > .field__item > img').css("border-radius", "20px");
-        }
-      });
+
+  /*If there is a "related-article" div, remove the margin-top*/
+  function checkFooterMargin(){
+    if($("body").find(".section").find(".related-articles").length==0){
+      $("footer").addClass("addMarginTop");
+    }else{
+      $("footer").addClass("removeMarginTop");
     }
   }
 
@@ -46,30 +51,46 @@ jQuery(document).ready(function($) {
     }
   }
 
-  /*If there is a "related-article" div, remove the margin-top*/
-  function checkFooterMargin(){
-    if($("body").find(".section").find(".related-articles").length==0){
-      $("footer").addClass("addMarginTop");
-    }else{
-      $("footer").addClass("removeMarginTop");
+  /*If the paragraph has images and the images have no text, add border radius*/
+  function checkIfParagraphImgHasText(){
+    if($("body").hasClass("node--type-oshwiki-articles")){
+      $('.field--name-field-media > .field__item > .contextual-region').each(function(index, value){
+        if($(this).find('.field--name-field-caption-copyrigth-').length==0){
+          $(this).find('.field--name-field-media-image > .field__item > img').css("border-radius", "20px");
+        }
+      });
     }
   }
 
-  /*Add span tags inside the list elements*/
-  function createNewSpanForThemeIcon(){
-    $(".facets-widget-links > ul > .facet-item--expanded > a").after("<span class='showSubthemes'></span>");
-
-    /*When the theme is clicked, toggle subthemes*/
-    $(".showSubthemes").click(function(){
-      $(this).parent().toggleClass("active");
-      $(this).parent().find(".facets-widget-").toggle(300);
-    });
-  }
-
-  /*Hide all the subthemes when document ready*/
-  function hideEverySubthemeCat(){
-    $(".facets-widget-links > ul > .facet-item--expanded").find(".facets-widget-").hide();
+  /*If the content card does not have a tag,
+  create a div with the tag classes in order to mantain the layout*/
+  function createDivCards(bodyClass, cardWrapperNames){
+    if($("body").hasClass(bodyClass)){
+      let contentTypes = cardWrapperNames;
+      for(let i=0; i<contentTypes.length;i++){
+        $(contentTypes[i]+" .card-content-wrapper").each(function(index, value){
+          if($(this).find('.theme-badge').length==0){
+            $(this).prepend("<div class='taxonomy-level-wrapper'></div>");
+          }
+        });
+      }
+    }
   }
 });
 
+/*Hide all the subthemes when document ready*/
+function hideEverySubthemeCat(){
+  jQuery(".facets-widget-links > ul > .facet-item--expanded").find(".facets-widget-").hide();
+}
+
+/*Add span tags inside the list elements*/
+function createNewSpanForThemeIcon(){
+  jQuery(".facets-widget-links > ul > .facet-item--expanded > a").after("<span class='showSubthemes'></span>");
+
+  /*When the theme is clicked, toggle subthemes*/
+  jQuery(".showSubthemes").click(function(){
+    jQuery(this).parent().toggleClass("active");
+    jQuery(this).parent().find(".facets-widget-").toggle(300);
+  });
+}
 

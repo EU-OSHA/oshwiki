@@ -1,0 +1,5 @@
+default_config:
+  tags:
+    items:
+      prefix_label: Производ
+      page_reader: Производ

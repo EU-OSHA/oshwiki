@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Éléments par page'
             items_per_page_options_all_label: '- Tout -'

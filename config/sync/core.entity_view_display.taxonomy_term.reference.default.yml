@@ -1,0 +1,23 @@
+uuid: 072b3d0d-0d4f-4bf5-9bea-e98dd9beb375
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.reference
+  module:
+    - text
+id: taxonomy_term.reference.default
+targetEntityType: taxonomy_term
+bundle: reference
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

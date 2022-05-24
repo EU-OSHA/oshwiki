@@ -9,8 +9,10 @@ dependencies:
     - field.field.node.oshwiki_articles.field_further_reading_oshwiki
     - field.field.node.oshwiki_articles.field_image_oshwiki
     - field.field.node.oshwiki_articles.field_nace_oshwiki
+    - field.field.node.oshwiki_articles.field_nace_tax_old
     - field.field.node.oshwiki_articles.field_one_language_available
     - field.field.node.oshwiki_articles.field_osh_categories_oshwiki
+    - field.field.node.oshwiki_articles.field_osh_tax_old
     - field.field.node.oshwiki_articles.field_oshwiki_link
     - field.field.node.oshwiki_articles.field_references_oshwiki
     - field.field.node.oshwiki_articles.field_sections_oshwiki
@@ -19,7 +21,6 @@ dependencies:
     - node.type.oshwiki_articles
   module:
     - entity_reference_revisions
-    - image
     - user
 id: node.oshwiki_articles.default
 targetEntityType: node
@@ -33,14 +34,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 108
+    weight: 7
     region: content
   field_authorstxt_oshwiki:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 111
+    weight: 8
     region: content
   field_contributors_oshwiki:
     type: entity_reference_label
@@ -48,7 +49,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 112
+    weight: 9
     region: content
   field_further_reading_oshwiki:
     type: entity_reference_revisions_entity_view
@@ -57,16 +58,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 107
-    region: content
-  field_image_oshwiki:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-    third_party_settings: {  }
-    weight: 110
+    weight: 6
     region: content
   field_nace_oshwiki:
     type: entity_reference_label
@@ -74,7 +66,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_one_language_available:
     type: boolean
@@ -84,7 +76,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 115
+    weight: 12
     region: content
   field_osh_categories_oshwiki:
     type: entity_reference_label
@@ -92,7 +84,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   field_oshwiki_link:
     type: string
@@ -100,7 +92,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 113
+    weight: 10
     region: content
   field_references_oshwiki:
     type: entity_reference_revisions_entity_view
@@ -109,7 +101,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 106
+    weight: 5
     region: content
   field_sections_oshwiki:
     type: entity_reference_revisions_entity_view
@@ -118,7 +110,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 105
+    weight: 4
     region: content
   field_theme_representative:
     type: boolean
@@ -128,7 +120,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 114
+    weight: 11
     region: content
   field_themes_oshwiki:
     type: entity_reference_label
@@ -136,13 +128,17 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 104
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  addtoany: true
+  field_image_oshwiki: true
+  field_nace_tax_old: true
+  field_osh_tax_old: true
   langcode: true
   search_api_excerpt: true

@@ -22,13 +22,6 @@ display:
           label: Uuendatud
         operations:
           label: Toimingud
-      pager:
-        options:
-          tags:
-            next: 'Järgmine ›'
-            previous: '‹ Eelmine'
-            first: '« Esimene'
-            last: 'Viimane »'
       exposed_form:
         options:
           submit_button: Filtreeri
@@ -56,9 +49,6 @@ display:
                 title: Avaldatud
               2:
                 title: Avaldamata
-        langcode:
-          expose:
-            label: Keel
   page_1:
     display_title: Lehekülg
     display_options:
