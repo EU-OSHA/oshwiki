@@ -1,13 +1,40 @@
 .page-view-other-sources-of-information{
   #block-oshwiki-theme-content{
-    margin-left: 1rem;
-    .views-exposed-form{
-      fieldset{
+    .view-filters{
+      .form-row{
         display: flex;
-        flex-direction: column;
-      }
-      button{
-        padding: 0rem 0.5rem;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 0.7rem;
+        input{
+          width: 16rem;
+        }
+        select{
+          padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+          border-radius: 0.25rem;
+          height: 2.5rem;
+          width: 16rem;
+        }
+        button{
+          padding: 0.3rem 0.8rem;
+          height: 2.5rem;
+          width: 7.5rem;
+        }
+        label{
+          margin-bottom: 0rem;
+        }
+        .js-form-item-criteria, .js-form-item-sort-by, .js-form-item-sort-order{
+          display: flex;
+          flex-direction: column;
+        }
+        #edit-actions{
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        .form-actions{
+          align-self: center;
+        }
       }
     }
     .view-content{
@@ -45,6 +72,49 @@
             margin-left: 0.5rem;
             margin-top: 0.2rem;
             background: url('../images/green-arrow_see_more.png') no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Responsive design of the search and order box*/
+@media only screen and (min-width: 450px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          display: grid;
+          grid-template-areas:
+            "search-input search-input"
+            "sort-by order-by"
+            "search-button clear-button" ;
+          margin-top: 0.7rem;
+          input{
+            width: 16rem;
+            grid-area: search-input;
+          }
+          select{
+            width: 10rem;
+            &:first-of-type{
+              grid-area: sort-by;
+            }
+            &:nth-of-type(2){
+              grid-area: order-by;
+            }
+          }
+          button{
+            width: 4.5rem;
+            &:first-of-type{
+              grid-area: search-button;
+            }
+            &:nth-of-type(2){
+              grid-area: clear-button;
+            }
+          }
+          #edit-actions{
+            gap: 1rem;
           }
         }
       }
