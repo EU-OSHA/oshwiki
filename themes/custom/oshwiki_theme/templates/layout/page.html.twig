@@ -1,7 +1,7 @@
 {% extends "@bootstrap_barrio/layout/page.html.twig" %}
 {% block head %}
 <div id="navbar" role="banner" class="{{ navbar_classes }}">
-  <div class="top-header-container container">
+  <div class="top-header-container container container-custom-header">
     <div class="top-header-content row">
       <div class="header-logo">
         {{ page.top_header_logos }}
@@ -24,7 +24,7 @@
     </div>
   </div>
   <div class="container-fluid content-main-menu">
-    <div class="container">
+    <div class="container container-custom-menu">
       <nav{{ navbar_attributes }}>
         {% if page.primary_menu %}
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
 
 {% block content %}
   <div class="banner-fluid bg-image-banner">
-    <div class="container">
+    <div class="container container-custom-breadcrumbs">
       {{ page.banner_oshwiki }}
     </div>
   </div>
