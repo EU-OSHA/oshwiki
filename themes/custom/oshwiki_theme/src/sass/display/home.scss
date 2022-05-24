@@ -24,6 +24,9 @@
         & > div{
           padding-top: 90%;
           padding-bottom: 10%;
+          & > *{
+            max-width: 20rem;
+          }
           h1{
             @include textFormat(1.8rem, null, $text-dark-dark-grey);
             span{
@@ -31,7 +34,6 @@
             }
           }
           p{
-            max-width: 18rem;
             @include textFormat(1.2rem, null, $text-dark-dark-grey);
           }
         }
@@ -42,24 +44,32 @@
         width: fit-content;
         padding: 1.5rem 0rem;
         .search-block-form{
+          position: relative;
           padding: 0;
+          margin: 0rem;
           .form-row>fieldset, .form-row>div{
             padding: 0rem;
+            width: 20rem;
           }
           input, button{
             height: 1.5rem;
           }
           input{
             width: 100%;
-            position: relative;
             border: none;
             border-radius: 0px;
             border-bottom: 1px solid $bg-dark-lighter-grey;
+            &:focus{
+              box-shadow: none;
+            }
+            #search-clear{
+              display: none;
+            }
           }
-          button{
+          .js-form-submit{
             position: absolute;
             top: 5px;
-            right: -1rem;
+            right: 0rem;
             width: 25px;
             margin: 0rem 0.5rem;
             border: none;
@@ -223,11 +233,38 @@
   }
 }
 
+@media only screen and (min-width: 450px) {
+  .page-view-frontpage{
+    #main-wrapper{
+      .container-fluid:nth-of-type(1){
+        .section_banner {
+          background: {
+            size: 80%;
+          }
+          & > div{
+            padding-top: 80%;
+            padding-bottom: 12%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 576px) {
-  .section_banner{
-    background: {
-      size: 40%;
-      position: 85% 50%;
+  .page-view-frontpage{
+    #main-wrapper{
+      .container-fluid:nth-of-type(1){
+        .section_banner {
+          background: {
+            size: 65%;
+          }
+          & > div{
+            padding-top: 65%;
+            padding-buttom: 10%;
+          }
+        }
+      }
     }
   }
 }
@@ -238,10 +275,13 @@
     #main-wrapper{
       .container-fluid:nth-of-type(1){
         .section_banner {
-          background-position: 75% 50%;
+          background: {
+            position: 85% 50%;
+            size: 40%;
+          }
           & > div{
-            padding-top: 5%;
-            padding-bottom: 15%;
+            padding-top: 10%;
+            padding-bottom: 10%;
           }
         }
       }
@@ -262,7 +302,10 @@
   .page-view-frontpage{
     #main-wrapper{
       .container-fluid:nth-of-type(1) .section_banner{
-        background-size: 25%;
+        background: {
+          position: 75% 35%;
+          size: 35%;
+        }
       }
     }
 

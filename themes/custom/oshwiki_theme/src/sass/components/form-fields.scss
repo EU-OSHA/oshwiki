@@ -8,15 +8,26 @@ label{
 }
 
 select{
-  color: $text-dark-green;
-  border: 1px solid $bg-dark-green;
-  background: $bg-white;
-  option:hover,
-  option:active,
-  option:focus{
-    color: $text-white;
-    background: $bg-dark-orange;
+  color: $text-white;
+  border: $bg-light-green;
+  background: $bg-dark-green;
+  cursor: pointer;
+  option{
+    color: $text-dark-green;
+    background: $bg-white;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &:focus{
+      color: $text-dark-green;
+      background: $bg-white;
+    }
   }
+}
+
+/*Avoid the "x" in the search inputs*/
+input[type="search" i]:enabled:read-write:-webkit-any(:focus,:hover)::-webkit-search-cancel-button {
+  display: none;
 }
 
 /*Log in form*/

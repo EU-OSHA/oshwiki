@@ -57,6 +57,15 @@ It has 3 parameters: 1. The main light color (for the background)
           margin: 0.7rem 0rem;
           @include textFormat(0.95rem, 600, $mainDarkColor);
         }
+        /*Hide the content of the tag added with jQuery*/
+        .transparent-tag{
+          .taxonomy-level-item{
+            background-color: transparent;
+            span{
+              color: transparent;
+            }
+          }
+        }
       }
     }
 

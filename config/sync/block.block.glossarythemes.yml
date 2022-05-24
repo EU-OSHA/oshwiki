@@ -18,7 +18,7 @@ plugin: 'facet_block:glossary_themes'
 settings:
   id: 'facet_block:glossary_themes'
   label: 'Glossary - Themes'
-  label_display: visible
+  label_display: '0'
   provider: facets
   context_mapping: {  }
   block_id: glossarythemes

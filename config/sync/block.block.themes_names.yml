@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:theme_names'
 settings:
   id: 'facet_block:theme_names'
-  label: Themes
+  label: 'Select themes'
   label_display: visible
   provider: facets
   context_mapping: {  }
