@@ -1,0 +1,11 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Puslapis
+      first_title: 'Eiti į pirmą puslapį'
+      previous_title: 'Atgal į buvusį puslapį'
+      next_title: 'Toliau į kitą puslapį'
+      last_title: 'Eiti į paskutinį puslapį'
+    items:
+      prefix_label: Elementas
+      first_reader: 'Pirmas elementas'

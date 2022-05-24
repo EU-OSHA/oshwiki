@@ -1,0 +1,20 @@
+default_config:
+  tags:
+    pages:
+      previous: ‹
+      next: ›
+      first_title: 'Ga naar eerste pagina'
+      previous_title: 'Ga naar vorige pagina'
+      next_title: 'Ga naar volgende pagina'
+      last_title: 'Ga naar laatste pagina'
+      first_reader: 'Eerste pagina'
+      previous_reader: 'Vorige pagina'
+      next_reader: 'Volgende pagina'
+      last_reader: 'Laatste pagina'
+    items:
+      previous: ‹
+      next: ›
+      first_reader: 'Eerste item'
+    item_ranges:
+      previous: ‹
+      next: ›

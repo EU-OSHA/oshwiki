@@ -39,9 +39,6 @@ display:
         name:
           expose:
             label: Nume
-        langcode:
-          expose:
-            label: Limba
   page:
     display_title: Pagina
     display_options:

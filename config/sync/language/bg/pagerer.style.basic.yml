@@ -1,0 +1,9 @@
+default_config:
+  tags:
+    pages:
+      first_title: 'Към първата страница'
+      previous_title: 'Към предишната страница'
+      next_title: 'Към следващата страница'
+      last_title: 'Към последната страница'
+    items:
+      first_reader: 'Първи елемент'

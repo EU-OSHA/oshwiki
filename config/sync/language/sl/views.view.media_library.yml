@@ -18,9 +18,6 @@ display:
         name:
           expose:
             label: Ime
-        langcode:
-          expose:
-            label: Jezik
   page:
     display_title: Stran
     display_options:

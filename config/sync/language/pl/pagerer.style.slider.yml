@@ -1,0 +1,25 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Strona
+      previous: ‹
+      next: ›
+      page_current_title: 'Bieżąca strona'
+      first_title: 'Przejdź do pierwszej strony'
+      previous_title: 'Przejdź do poprzedniej strony'
+      next_title: 'Przejdź do następnej strony'
+      last_title: 'Przejdź do ostatniej strony'
+      page_current_reader: 'Bieżąca strona'
+      first_reader: 'Pierwsza strona'
+      previous_reader: 'Poprzednia strona'
+      next_reader: 'Następna strona'
+      last_reader: 'Ostatnia strona'
+    items:
+      prefix_label: Element
+      previous: ‹
+      next: ›
+      first_reader: 'Pierwszy element'
+    item_ranges:
+      prefix_label: Elementy
+      previous: ‹
+      next: ›

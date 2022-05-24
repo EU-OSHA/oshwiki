@@ -21,9 +21,6 @@ display:
         name:
           expose:
             label: Ime
-        langcode:
-          expose:
-            label: Jezik
   page:
     display_title: Strana
     display_options:

@@ -56,9 +56,6 @@ display:
             label: 'Tipos multimedia'
           group_info:
             label: 'Tipos multimedia'
-        langcode:
-          expose:
-            label: Idioma
   page:
     display_title: Página
     display_options:

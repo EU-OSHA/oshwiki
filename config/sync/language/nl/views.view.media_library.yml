@@ -56,9 +56,6 @@ display:
             label: Mediatype
           group_info:
             label: Mediatype
-        langcode:
-          expose:
-            label: Taal
   page:
     display_title: Pagina
     display_options:

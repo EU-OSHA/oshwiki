@@ -1,0 +1,12 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Faqe
+      first_title: 'Shko tek faqja e parë'
+      previous_title: 'Shko tek faqja paraardhëse'
+      next_title: 'Shko tek faqja në vazhdim'
+      last_title: 'Shko tek faqja e fundit'
+    items:
+      first_reader: 'Zëri i parë'
+    item_ranges:
+      prefix_label: Elementët

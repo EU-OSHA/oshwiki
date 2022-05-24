@@ -1,0 +1,25 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Sayfa
+      previous: ‹
+      next: ›
+      page_current_title: 'Şu an kullanılan sayfa'
+      first_title: 'İlk sayfaya git'
+      previous_title: 'Önceki sayfaya git'
+      next_title: 'Sonraki sayfaya git'
+      last_title: 'Son sayfaya git'
+      page_current_reader: 'Şu an kullanılan sayfa'
+      first_reader: 'İlk sayfa'
+      previous_reader: 'Önceki sayfa'
+      next_reader: 'Sonraki sayfa'
+      last_reader: 'Son sayfa'
+    items:
+      prefix_label: Öğe
+      previous: ‹
+      next: ›
+      first_reader: 'İlk madde'
+    item_ranges:
+      prefix_label: Öğeler
+      previous: ‹
+      next: ›

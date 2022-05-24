@@ -39,9 +39,6 @@ display:
         name:
           expose:
             label: Όνομα
-        langcode:
-          expose:
-            label: Γλώσσα
   page:
     display_title: Σελίδα
     display_options:

@@ -11,7 +11,7 @@ _core:
 id: oshwiki_theme_help
 theme: oshwiki_theme
 region: content
-weight: -6
+weight: -9
 provider: null
 plugin: help_block
 settings:

@@ -1,0 +1,40 @@
+uuid: 9aa17be5-cfd4-4f06-8964-dbfc4faab665
+langcode: en
+status: true
+dependencies:
+  module:
+    - glossary
+    - system
+  theme:
+    - oshwiki_theme
+id: glossaryblock
+theme: oshwiki_theme
+region: content
+weight: -8
+provider: null
+plugin: glossary_block
+settings:
+  id: glossary_block
+  label: 'Glossary Block'
+  label_display: '0'
+  provider: glossary
+  field_name: field_themes_oshwiki
+  custom_classes: ''
+  apply_default_styles: 0
+  bundles:
+    oshwiki_articles: oshwiki_articles
+    scientific_journal: scientific_journal
+    article: 0
+    author_otherresourcesinformation: 0
+    authors_content: 0
+    contributors_content: 0
+    page: 0
+    translatable_node: 0
+  link_url: '/alphabetical-view?f%5B0%5D=glossary_themes%3A'
+  show_count: 0
+  print_results: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /alphabetical-view

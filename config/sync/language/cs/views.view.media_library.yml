@@ -39,9 +39,6 @@ display:
         name:
           expose:
             label: Jméno
-        langcode:
-          expose:
-            label: Jazyk
   page:
     display_title: Stránka
     display_options:
