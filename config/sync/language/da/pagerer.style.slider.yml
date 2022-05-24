@@ -1,0 +1,25 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Side
+      previous: ‹
+      next: ›
+      page_current_title: 'Nuværende side'
+      first_title: 'Gå til første side'
+      previous_title: 'Gå til forrige side'
+      next_title: 'Gå til næste side'
+      last_title: 'Gå til sidste side'
+      page_current_reader: 'Nuværende side'
+      first_reader: 'Første side'
+      previous_reader: 'Forrige side'
+      next_reader: 'Næste side'
+      last_reader: 'Sidste side'
+    items:
+      prefix_label: Element
+      previous: ‹
+      next: ›
+      first_reader: 'Første punkt'
+    item_ranges:
+      prefix_label: Overskrifter
+      previous: ‹
+      next: ›

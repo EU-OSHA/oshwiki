@@ -43,9 +43,6 @@ display:
         name:
           expose:
             label: Nome
-        langcode:
-          expose:
-            label: Lingua
   page:
     display_title: Pagina
     display_options:

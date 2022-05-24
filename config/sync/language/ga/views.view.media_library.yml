@@ -1,10 +1,4 @@
 display:
-  default:
-    display_options:
-      filters:
-        langcode:
-          expose:
-            label: Teanga
   page:
     display_options:
       fields:

@@ -56,9 +56,6 @@ display:
             label: Médiatípus
           group_info:
             label: Médiatípus
-        langcode:
-          expose:
-            label: Nyelv
   page:
     display_title: Oldal
     display_options:

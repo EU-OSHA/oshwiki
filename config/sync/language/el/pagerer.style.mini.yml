@@ -1,0 +1,18 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Σελίδα
+      previous: '<'
+      next: '>'
+      page_current_title: 'Τρέχουσα σελίδα'
+      first_title: 'Πρώτη σελίδα'
+      previous_title: 'Προηγούμενη σελίδα'
+      next_title: 'Επόμενη σελίδα'
+      last_title: 'Τελευταία σελίδα'
+      page_current_reader: 'Τρέχουσα σελίδα'
+      previous_reader: 'Προηγούμενη σελίδα'
+    items:
+      prefix_label: Αντικείμενο
+      previous: '<'
+      next: '>'
+      first_reader: 'Πρώτο στοιχείο'

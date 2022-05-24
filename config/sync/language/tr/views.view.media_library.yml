@@ -44,9 +44,6 @@ display:
             label: 'Medya tipi'
           group_info:
             label: 'Medya tipi'
-        langcode:
-          expose:
-            label: Dil
   page:
     display_title: Sayfa
     display_options:

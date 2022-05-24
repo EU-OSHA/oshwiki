@@ -194,6 +194,7 @@ a:hover {
   font-weight: bold;
   color: #449FA2;
 }
+
 .js-pager__items .pager__item--next > a:hover {
   color: #449FA2;
   background: transparent;
@@ -577,7 +578,7 @@ a:hover {
   padding-bottom: 1rem;
 }
 .node--type-oshwiki-articles .related-articles > .container h2 {
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -808,7 +809,7 @@ a:hover {
   margin-top: 1.5rem;
 }
 .page-view-frontpage .section_featured_articles > .container h2 {
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -855,6 +856,7 @@ a:hover {
   color: #FFFFFF;
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
+  order: 3;
   font-size: 1.2rem;
   color: #212121;
   align-self: start;
@@ -870,7 +872,7 @@ a:hover {
   margin-top: 1.5rem;
 }
 .page-view-frontpage .section_most_popular > .container h2, .page-view-frontpage .section_most_recent > .container h2 {
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -938,7 +940,7 @@ a:hover {
   margin: 1.5rem 0rem;
 }
 .page-view-frontpage .section_other_sources > .container h2 {
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   color: #58585A;
   margin-bottom: 1rem;
 }

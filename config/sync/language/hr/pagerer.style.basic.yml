@@ -1,0 +1,9 @@
+default_config:
+  tags:
+    pages:
+      first_title: 'Idi na prvu stranicu'
+      previous_title: 'Idi na prethodnu stranicu'
+      next_title: 'Idi na sljedeću stranicu'
+      last_title: 'Idi na posljednju stranicu'
+    items:
+      first_reader: 'Prva stavka'

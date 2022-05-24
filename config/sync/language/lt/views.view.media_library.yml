@@ -34,9 +34,6 @@ display:
         name:
           expose:
             label: Pavadinimas
-        langcode:
-          expose:
-            label: Kalba
   page:
     display_title: Puslapis
     display_options:
