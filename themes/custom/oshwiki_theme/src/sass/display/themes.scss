@@ -9,7 +9,7 @@
           "theme-content"
           "other-articles-in-English";
         column-gap: 2rem;
-        #block-themesnormalsearchthemes{
+        .block-facet--links{
           grid-area: select-theme;
         }
         #block-oshwiki-theme-content{
@@ -90,7 +90,6 @@
           font-weight: bold;
         }
         .showSubthemes{
-          margin: 0.3rem 0rem 0rem 1rem;
           height: 13px;
           background: url('../images/orange_minus_select_theme.png');
         }
@@ -136,6 +135,7 @@
       flex-direction: column;
       margin-left: 0px;
       margin-right: 0px;
+      margin-top: 1rem;
       .views-row{
         padding: 1rem 0rem;
         border-bottom: 1px dotted $bg-dark-medium-grey;
@@ -154,6 +154,7 @@
             display: flex;
             align-items: center;
             a {
+              margin-top: 3px;
               @include textFormat(0.9rem, null, $text-dark-green);
               &:hover{
                text-decoration: underline;
@@ -234,19 +235,63 @@
     }
   }
 }
-@media only screen and (min-width: 650px) {
+
+@media only screen and (min-width: 550px) {
   .page-view-themes{
     .block-facet-blockthemes-normal-search-themes{
       .facets-widget-links{
         .item-list__links{
-          .span.facet-item__value{
-            max-width: 25rem;
+          span.facet-item__value{
+            max-width: 20rem;
           }
         }
       }
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 35rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 10rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 12rem;
+          }
+        }
+      }
+    }
+  }
+}
+/*End comment - adapt select-theme block in order to keep the "+" icon responsive*/
 
 @media only screen and (min-width: 992px) {
   .page-view-themes{

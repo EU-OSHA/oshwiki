@@ -165,15 +165,6 @@
     @include otherArticles($bg-light-green, $bg-dark-green, $text-dark-green, 1fr 1.5fr 1fr);
     padding-bottom: 1rem;
   }
-
-  .select-theme-article{
-    height: fit-content;
-    .select-theme-article-title-box{
-      p{
-        @include textFormat(1.3rem, null, $text-white);
-      }
-    }
-  }
 }
 
 @media only screen and (min-width: 576px) {
