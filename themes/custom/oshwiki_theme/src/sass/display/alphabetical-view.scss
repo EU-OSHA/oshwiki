@@ -115,6 +115,7 @@
             display: flex;
             align-items: center;
             a {
+              margin-top: 3px;
               @include textFormat(0.9rem, null, $text-dark-green);
               &:hover{
                 text-decoration: underline;
