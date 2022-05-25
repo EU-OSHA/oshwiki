@@ -19,8 +19,7 @@
 let menuSM = false;
 
 jQuery(window).on("load",function(){
-  hideEverySubthemeCatNotSelected();
-  createNewSpanForThemeIcon();
+  selectTheme();
   checkResponsiveMenu(jQuery(window).width(), menuSM);
 });
 
@@ -87,6 +86,12 @@ jQuery(document).ready(function($) {
 
 });
 
+/*Call both functions required for the select theme behaviour*/
+function selectTheme(){
+  hideEverySubthemeCatNotSelected();
+  createNewSpanForThemeIcon();
+}
+
 /*If there is no active category, collpase the theme. If there is, display the theme*/
 function hideEverySubthemeCatNotSelected(){
   jQuery(".facets-widget-links > ul > .facet-item--expanded").each(function(index, value){
@@ -97,7 +102,6 @@ function hideEverySubthemeCatNotSelected(){
     }
   });
 }
-
 
 /*Add span tags inside the list elements*/
 function createNewSpanForThemeIcon(){

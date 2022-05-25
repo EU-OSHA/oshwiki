@@ -1,0 +1,23 @@
+.page-view-search{
+  #main{
+    /*Main layout with grid-area*/
+    .section{
+      display: grid;
+      grid-template-areas:
+          "select-theme"
+          "theme-content"
+          "other-articles-in-English";
+      column-gap: 2rem;
+      .js-facet-block-id-contenttype{
+        grid-area: content-type;
+      }
+      #block-oshwiki-theme-content{
+        grid-area: theme-content;
+      }
+      #block-views-block-themes-block-1{
+        grid-area: other-articles-in-English;
+      }
+    }
+    /*End comment*/
+  }
+}

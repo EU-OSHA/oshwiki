@@ -114,8 +114,13 @@
             {{ content.field_authors_other_sources }}
       </div>
 
-      <div class="scientific_year">
-        {{ 'Year of the article:' | trans }} {{ content.field_year_science|raw }}
+      <div class="year_and_social_media">
+        <div class="scientific_year">
+          {{ 'Year of the article:' | trans }} {{ content.field_year_science|raw }}
+        </div>
+        <div class="social_media">
+          {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
+        </div>
       </div>
     </div>
   </div>

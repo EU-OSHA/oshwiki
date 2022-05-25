@@ -5,9 +5,9 @@
         display: grid;
         grid-template-areas:
             "search-input"
+            "search-buttons"
             "sort-by "
-            "order-by "
-            "search-buttons" ;
+            "order-by ";
         justify-content: center;
         margin-top: 0.7rem;
         border-bottom: 1px dotted $bg-dark-medium-grey;
@@ -17,6 +17,7 @@
         }
         .form-item-criteria{
           grid-area: search-input;
+          margin-bottom: 1.3rem !important;
           label{
             margin-bottom: 0rem;
           }
@@ -45,6 +46,7 @@
           display: flex;
           grid-area: search-buttons;
           gap: 1rem;
+          margin-bottom: 0.5rem !important;
           button{
             padding: 0.3rem 0.8rem;
             height: 2.5rem;
@@ -58,6 +60,7 @@
       flex-direction: column;
       margin-left: 0px;
       margin-right: 0px;
+      margin-top: 1rem;
       .views-row{
         padding: 1rem 0rem;
         border-bottom: 1px dotted $bg-dark-medium-grey;
@@ -65,6 +68,11 @@
           a{
             @include textFormat(1.1rem, 700, $text-dark-green);
           }
+        }
+        .views-field-field-introduction-science-1,
+        .views-field-field-year-science,
+        .views-field-changed{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
         }
         .views-field-url{
           display: flex;
@@ -76,8 +84,11 @@
             display: flex;
             align-items: center;
             a {
+              margin-top: 3px;
               @include textFormat(0.9rem, null, $text-dark-green);
-              text-decoration: underline;
+              &:hover{
+                text-decoration: underline;
+              }
             }
           }
           span::after{
@@ -96,17 +107,17 @@
 }
 
 /*Responsive design of the search and order box*/
-@media only screen and (min-width: 460px) {
+@media only screen and (min-width: 480px) {
   .page-view-other-sources-of-information{
     #block-oshwiki-theme-content{
       .view-filters{
         .form-row{
           grid-template-areas:
-            "search-input search-input"
-            "sort-by order-by"
-            "search-buttons search-buttons" ;
+            "search-input search-input search-buttons search-buttons"
+            "sort-by sort-by order-by order-by";
           justify-content: start;
           .form-item-criteria{
+            margin-bottom: 1rem !important;
             input{
               width: 12rem;
             }
@@ -117,9 +128,10 @@
             }
           }
           #edit-actions{
+            margin-bottom: 1rem !important;
             gap: 0.7rem;
             button{
-              width: 4.5rem;
+              height: 2.4rem;
             }
           }
         }
@@ -134,9 +146,24 @@
       .view-filters{
         .form-row{
           grid-template-areas:
-            "search-input search-input search-input search-input"
-            "sort-by order-by search-buttons search-buttons" ;
+            "search-input search-input search-buttons search-buttons"
+            "sort-by sort-by order-by order-by " ;
           justify-content: start;
+          .form-item-criteria{
+            input{
+              width: 15rem;
+            }
+          }
+          .form-item-sort-by, .form-item-sort-order{
+            select{
+              width: 15rem;
+            }
+          }
+          #edit-actions{
+            button{
+              width: 7.15rem;
+            }
+          }
         }
       }
     }
@@ -148,8 +175,26 @@
     #block-oshwiki-theme-content{
       .view-filters{
         .form-row{
-          display: flex;
-          justify-content: start;
+          grid-template-areas:
+            "search-input search-input search-buttons sort-by order-by" ;
+          .form-item-criteria{
+            input{
+              width: 10rem;
+            }
+          }
+          .form-item-sort-by, .form-item-sort-order{
+            select{
+              width: 10rem;
+              height: 2.4rem;
+            }
+          }
+          #edit-actions{
+            margin-bottom: 1rem !important;
+            button{
+              width: 6rem;
+              height: 2.4rem;
+            }
+          }
         }
       }
     }
