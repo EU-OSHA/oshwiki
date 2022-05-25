@@ -1,0 +1,18 @@
+uuid: 7477a701-d2f0-472b-9d7f-f2e3a2e1d4d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scientific_journal
+id: node.scientific_journal.created
+field_name: created
+entity_type: node
+bundle: scientific_journal
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,7 @@
+a{
+  color: $text-dark-green;
+  &:hover{
+    color: $text-dark-green;
+    text-decoration: underline;
+  }
+}

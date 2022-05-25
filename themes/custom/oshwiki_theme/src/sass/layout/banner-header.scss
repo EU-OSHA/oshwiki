@@ -1,0 +1,362 @@
+.top-header-container.container{
+  max-width: 100%;
+}
+.top-header-container{
+  .header-logo{
+    display: flex;
+    align-items: center;
+    section{
+      .logo-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        &>div{
+          padding: 0rem 1rem;
+        }
+        div:first-child, div:nth-child(2){
+          img{
+            width:inherit;
+            object-fit: contain;
+          }
+        }
+        .logo-oshwiki{
+          border-right: 2px solid $bg-light-dark-grey;
+        }
+      }
+    }
+  }
+  .top-header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 1rem 2rem 1rem 1rem;
+    .push-right{
+      .wrapper-two-columns-header{
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        .header-language-search > section{
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+          /*Search box*/
+          .search-block-form{
+            padding: 0;
+            .form-row>fieldset, .form-row>div{
+              padding: 0rem;
+              margin: 0rem !important;
+            }
+            input, button{
+              height: 1.5rem;
+              font-size: 0.9rem;
+            }
+            input{
+              width: 10rem;
+              background-color: $bg-light-medium-grey;
+              border-radius: 0px;
+              color: $text-white;
+              border: 1px solid $bg-light-medium-grey;
+              &:focus{
+                box-shadow: none;
+              }
+            }
+            .js-form-submit{
+              width: 25px;
+              margin: 0rem 0.5rem;
+              border: none;
+              color: transparent;
+              background: {
+                color: transparent;
+                image: url('../images/icon-search.png');
+                repeat: no-repeat;
+                size: 1.5rem;
+              }
+            }
+          }
+          #search-block-form{
+            padding: 0px 5px;
+          }
+          /*Dropdown*/
+          form#lang_dropdown_form_lang-dropdown-form{
+            display: flex;
+            text-align: end;
+            justify-content: flex-end;
+            fieldset{
+              margin-bottom: 0.75rem!important;
+              select#edit-lang-dropdown-select{
+                width: 10rem !important;
+              }
+            }
+              &::after{
+              display: inline-block;
+              content: " ";
+              width: 25px;
+              height: 25px;
+              margin: 0rem 0.5rem;
+              background: {
+                image: url('../images/icon-globe.png');
+                repeat: no-repeat;
+                size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+      .content-first-row{
+        display: flex;
+        flex-direction: column-reverse;
+        .font-size-print{
+          display: flex;
+          align-items: baseline;
+          column-gap: 0.2rem;
+          span:first-of-type{
+            @include textFormat(1rem, 700, $text-dark-green);
+          }
+          span:nth-of-type(2){
+            @include textFormat(1.5rem, 700, $text-dark-green);
+          }
+          span:last-of-type{
+            @include textFormat(2rem, 700, $text-dark-green);
+          }
+          .print-friendly{
+            margin-left: 0.4rem;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/Icon-awesome-print.svg");
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-main-menu{
+  border: {
+    color: $bg-very-light-grey;
+    style: solid;
+    width: 1px 0px;
+  }
+  padding-bottom: 0rem;
+  #block-oshwiki-theme-main-menu{
+    width: 100%
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      font-weight: 500;
+      a{
+        @include textFormat(1.1rem, 600, $text-dark-dark-grey);
+      }
+    }
+    .active{
+      position: relative;
+      a{
+        @include textFormat(1.1rem, 700, $text-dark-green);
+      }
+      &:after{
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: -14px;
+        left: 0%;
+        right: 0%;
+        height: 0.3rem;
+        background: $bg-dark-orange;
+      }
+    }
+  }
+  .navbar-toggler{
+    padding: 0rem;
+  }
+  /*Header elements inside menu when screen widht < 992*/
+  .responsive-menu-oshwiki{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    /*Search box*/
+    .search-block-form{
+      padding: 0;
+      .form-row>fieldset, .form-row>div{
+        padding: 0rem;
+        margin: 0rem !important;
+      }
+      input, button{
+        height: 1.5rem;
+        font-size: 0.9;
+      }
+      input{
+        width: 10rem;
+        background-color: $bg-light-medium-grey;
+        border-radius: 0px;
+        color: $text-white;
+        border: 1px solid $bg-light-medium-grey;
+        &:focus{
+          box-shadow: none;
+        }
+      }
+      .js-form-submit{
+        width: 25px;
+        margin: 0rem 0.5rem;
+        border: none;
+        color: transparent;
+        background: {
+          color: transparent;
+          image: url('../images/icon-search.png');
+          repeat: no-repeat;
+          size: 1.5rem;
+        }
+      }
+    }
+    #search-block-form{
+      padding: 0px 5px;
+    }
+    #search-icon-responsive{
+      display: inline-block;
+      content: " ";
+      width: 25px;
+      height: 25px;
+      margin: 0rem 0.5rem;
+      background: {
+        image: url('../images/icon-search-dark-green.png');
+        repeat: no-repeat;
+        size: 1.5rem;
+      }
+      cursor: pointer;
+    }
+    /*Dropdown*/
+    form#lang_dropdown_form_lang-dropdown-form{
+      display: flex;
+      text-align: end;
+      justify-content: flex-end;
+      fieldset{
+        margin: 0rem !important;
+        select#edit-lang-dropdown-select{
+          width: 10rem !important;
+          background: $bg-dark-green;
+          border: $bg-light-green;
+          color: $text-white;
+        }
+      }
+    }
+  }
+  /*Hide header elements inside menu comment*/
+}
+
+.bg-image-banner{
+  @include dimensions(max-content, 100%);
+  background: {
+    image: url('../images/background-green.png');
+    position: center;
+    size: cover;
+  }
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 1rem 0rem;
+
+  .block-system-breadcrumb-block{
+    ol{
+      background: transparent;
+      .active{
+        a{
+          @include textFormat(0.9rem, 700, $text-white);
+          text-decoration: underline;
+        }
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        @include textFormat(0.9rem, null, $text-white);
+        content: ">";
+      }
+      .breadcrumb-item a{
+        @include textFormat(0.9rem, null, $text-white);
+      }
+    }
+  }
+  .block-page-title-block{
+    width: 100%;
+    h1{
+      @include textFormat(2.8rem, null, $text-white);
+    }
+  }
+}
+
+/*Different banner image for the scientific-journal*/
+.node--type-scientific-journal, .page-view-other-sources-of-information{
+  .bg-image-banner{
+    background-image: url('../images/background-orange.png');
+  }
+}
+
+/*Edit the orange line under nav element of menu*/
+@media only screen and (max-width: 992px) {
+  .content-main-menu{
+    ul{
+      .active:after{
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .top-header-container{
+    .top-header-content{
+      padding: 0.5rem 0.5rem;
+    }
+  }
+  .content-main-menu{
+    .responsive-menu-oshwiki{
+      /*Search box*/
+      .search-block-form{
+        input{
+          width: 5rem;
+        }
+      }
+      /*Dropdown*/
+      form#lang_dropdown_form_lang-dropdown-form{
+        fieldset{
+          select#edit-lang-dropdown-select{
+            width: 5rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and  (max-width: 992px) {
+  .top-header-container{
+    section{
+      .logo-wrapper{
+        &>div{
+          padding: 0rem 0.7rem;
+        }
+      }
+    }
+  }
+
+  .bg-image-banner{
+    .block-page-title-block{
+      h1{
+        @include textFormat(2.3rem, null, $text-white);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .content-main-menu{
+    .responsive-menu-oshwiki{
+      #search-icon-responsive{
+        display: none;
+      }
+    }
+  }
+}

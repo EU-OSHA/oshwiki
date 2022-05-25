@@ -1,0 +1,25 @@
+uuid: 3429a7c5-87c3-4a2d-bd7c-6edb98dc7d4f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1d00cdfd-6a12-4bac-969b-c80c850dd800'
+  module:
+    - block_content
+  theme:
+    - oshwiki_theme
+id: logooshwikiosha
+theme: oshwiki_theme
+region: top_header_logos
+weight: 0
+provider: null
+plugin: 'block_content:1d00cdfd-6a12-4bac-969b-c80c850dd800'
+settings:
+  id: 'block_content:1d00cdfd-6a12-4bac-969b-c80c850dd800'
+  label: 'Logo OSHWiki - OSHA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

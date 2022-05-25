@@ -1,0 +1,12 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+  block_1:
+    display_options:
+      block_category: Korisnik

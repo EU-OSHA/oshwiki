@@ -1,0 +1,9 @@
+uuid: 762f1f15-05d4-49c4-ad4e-7efc480b481a
+langcode: en
+status: true
+dependencies: {  }
+id: pl
+label: Polish
+direction: ltr
+weight: 15
+locked: false

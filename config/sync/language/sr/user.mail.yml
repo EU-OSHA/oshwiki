@@ -1,0 +1,27 @@
+cancel_confirm:
+  subject: 'Поднет је захтев за гашење налога [user:display-name] на сајту [site:name]'
+  body: "[user:display-name]\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
+password_reset:
+  subject: 'Креирајте нове лозинке за налог [user:display-name] на сајту [site:name]'
+  body: "[user:display-name],\r\n\r\nПоднели сте захтев за промену лозинке на сајту: [site:name].\r\n\r\nМожете се пријавити кликом на линк испод или ако исти копирате у бровсер:\r\n\r\n[user:one-time-login-url]\r\n\r\nОвај линк се може искористити само једном. Он ће вас одвести на страницу где ћете моћи изменити лозинку. Он ће истећи за 1 дан и ништа се неће десити ако га не искористите\r\n\r\n--  [site:name] tim."
+register_admin_created:
+  subject: 'Администратор је креирао налог за Вас на [site:name]'
+  body: "[user:display-name],\r\n\r\nАдминистратор [site:name] је направио налог за вас. Сада се можете пријавити кликом на линк испод:\r\n\r\n[user:one-time-login-url]\r\n\r\nОвај линк се може искористити само једном. Он ће вас одвести до странице где ћете морати унети лозинку за овај сајт.\r\n\r\nКада подесите лозинку, бићете у могућности да се пријавите на сајту, корисећи исту.\r\n\r\nАдреса за пријавлјиванје: [site:login-url]\r\n\r\nкорисничко име: [user:name]\r\nлозинка: Лозинка коју сте унели на предходном линку\r\n\r\n--  [site:name] тим"
+register_no_approval_required:
+  subject: 'Детаљи налога [user:display-name] на [site:name]'
+  body: "[user:display-name],\r\n\r\nХвала што сте се регистровали на сајт [site:name]. Сада се можете пријавити кликом на линк испод.\r\n\r\n[user:one-time-login-url]\r\n\r\nОвај линк се може користити само једном и он ће вас одвести на страницу где ћете подесити своју лозинку за приступ овом сајту.\r\n\r\nНакон што подесите лозинку, можете се пријавити овде: [site:login-url] користећи следеће податке:\r\n\r\nкорисничко име: [user:name]\r\nлозинка: Лозинка коју сте поставили на горњем линку\r\n\r\n--  [site:name] тим."
+register_pending_approval:
+  subject: 'Налог за корисничко име [user:display-name] на [site:name] (чека на одобренје)'
+  body: "[user:display-name],\r\n\r\nThank you for registering at [site:name]. Your application for an account is currently pending approval. Once it has been approved, you will receive another email containing information about how to log in, set your password, and other details.\r\n\r\n--  [site:name] team"
+register_pending_approval_admin:
+  subject: 'Налог за корисничко име [user:display-name] на [site:name] (чека на одобренје)'
+  body: "[user:display-name] се пријавио за отваранје налога.\r\n\r\n[user:edit-url]"
+status_activated:
+  subject: 'Детаљи налога [user:display-name] на [site:name] (одобрен)'
+  body: "[user:display-name],\r\n\r\nВаш налог на сајту [site:name] је активан.\r\n\r\nСада се можете пријавити на кликом на линк испод:\r\n\r\n[user:one-time-login-url]\r\n\r\nОвај линк се може искористити само једном. Он ће вас одвести до странице где ћете морати унети лозинку за овај сајт.\r\n\r\nНакон што подесите лозинку, можете се пријавити овде: [site:login-url] користећи следеће податке:\r\n\r\nкорисничко име: [user:account-name]\r\nлозинка: Лозинка коју сте поставили на горњем линку\r\n\r\n--  [site:name] тим."
+status_blocked:
+  subject: 'Налог [user:display-name] на [site:name] (је блокиран)'
+  body: "[user:display-name],\r\n\r\nВаш налог на сајту [site:name] је блокиран.\r\n\r\n--  [site:name] тим"
+status_canceled:
+  subject: 'Налог за  [user:display-name] на [site:name] (је обрисан)'
+  body: "[user:display-name],\r\n\r\nVaš nalog na sajtu [site:name] je obrisan.\r\n\r\n--  [site:name] tim."

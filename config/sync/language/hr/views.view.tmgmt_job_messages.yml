@@ -1,0 +1,31 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      pager:
+        options:
+          tags:
+            previous: '‹ prethodna'
+            next: 'sljedeća ›'
+            first: '« prva'
+            last: 'posljednja »'
+      fields:
+        created:
+          label: Stvoreno
+        label:
+          label: stavka
+        name:
+          label: Naziv
+          separator: ', '
+      title: Poruke
+      arguments:
+        tjid:
+          exception:
+            title: Svi

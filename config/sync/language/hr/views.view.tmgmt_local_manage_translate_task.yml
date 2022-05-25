@@ -1,0 +1,211 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pročisti
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Skupno osvježenje'
+        title:
+          label: Naziv
+          separator: ', '
+        item_count:
+          label: Stavke
+  assigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Skupno osvježenje'
+        status:
+          label: Status
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Naziv
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Za
+          separator: ', '
+        item_count:
+          label: Stavke
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operacije
+      filters:
+        uid:
+          expose:
+            label: Pružatelj
+        title:
+          expose:
+            label: Naziv
+  closed:
+    display_title: Zatvoreno
+    display_options:
+      menu:
+        title: Zatvoreno
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Skupno osvježenje'
+        status:
+          label: Status
+          separator: ', '
+        created:
+          label: Stvoreno
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Naziv
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Za
+          separator: ', '
+        item_count:
+          label: Stavke
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operacije
+      filters:
+        uid:
+          expose:
+            label: Pružatelj
+        title:
+          expose:
+            label: Naziv
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Skupno osvježenje'
+        status:
+          label: Status
+          separator: ', '
+        created:
+          label: Stvoreno
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Naziv
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Za
+          separator: ', '
+        item_count:
+          label: Stavke
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operacije
+      filters:
+        uid:
+          expose:
+            label: Pružatelj
+        title:
+          expose:
+            label: Naziv
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Skupno osvježenje'
+        status:
+          label: Status
+        tuid:
+          separator: ', '
+        title:
+          label: Naziv
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Za
+          separator: ', '
+        item_count:
+          label: Stavke
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operacije
+      filters:
+        uid:
+          expose:
+            label: Pružatelj
+        title:
+          expose:
+            label: Naziv
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Skupno osvježenje'
+        status:
+          label: Status
+        created:
+          label: Stvoreno
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Naziv
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Za
+          separator: ', '
+        item_count:
+          label: Stavke
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operacije
+      filters:
+        uid:
+          expose:
+            label: Pružatelj
+        title:
+          expose:
+            label: Naziv
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Skupno osvježenje'
+        status:
+          label: Status
+        title:
+          label: Naziv
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Za
+          separator: ', '
+        item_count:
+          label: Stavke
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operacije

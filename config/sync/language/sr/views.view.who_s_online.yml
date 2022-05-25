@@ -1,0 +1,17 @@
+label: 'Блок "Ко је онлајн?"'
+display:
+  default:
+    display_title: Подразумевано
+    display_options:
+      title: 'Ко је онлине?'
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Сортирај по'
+      header:
+        result:
+          content: 'Тренутно је @total корисника онлине.'
+  who_s_online_block:
+    display_title: 'Ко је онлине?'
+    display_options:
+      display_description: 'Листа корисника који су тренутно улоговани.'
+      block_description: 'Ко је онлине?'

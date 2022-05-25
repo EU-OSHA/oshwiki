@@ -1,0 +1,20 @@
+default_config:
+  tags:
+    pages:
+      previous: ‹
+      next: ›
+      first_title: 'Siirry ensimmäiselle sivulle'
+      previous_title: 'Siirry edelliselle sivulle'
+      next_title: 'Siirry seuraavalle sivulle'
+      last_title: 'Siirry viimeiselle sivulle'
+      first_reader: 'Ensimmäinen sivu'
+      previous_reader: 'Edellinen sivu'
+      next_reader: 'Seuraava sivu'
+      last_reader: 'Viimeinen sivu'
+    items:
+      previous: ‹
+      next: ›
+      first_reader: 'Ensimmäinen kohta'
+    item_ranges:
+      previous: ‹
+      next: ›

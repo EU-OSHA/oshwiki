@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      fields:
+        status:
+          settings:
+            format_custom_true: Активно
+        roles_target_id:
+          label: Улоги
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Сите -'
+      filters:
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Активно
+  page_1:
+    display_options:
+      menu:
+        title: Листа

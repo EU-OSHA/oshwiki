@@ -1,0 +1,18 @@
+uuid: c22741a6-19e7-4d78-b336-2da289b41928
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.themes
+id: taxonomy_term.themes.name
+field_name: name
+entity_type: taxonomy_term
+bundle: themes
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

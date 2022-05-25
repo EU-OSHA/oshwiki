@@ -1,0 +1,20 @@
+uuid: b8d7055f-271f-4295-8e5a-7e9459a7625a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scientific_journal
+id: node.scientific_journal.menu_link
+field_name: menu_link
+entity_type: node
+bundle: scientific_journal
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

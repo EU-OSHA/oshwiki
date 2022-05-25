@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Сортирај по'
+      fields:
+        created:
+          label: Направљено
+        label:
+          label: Производ
+        name:
+          label: Име

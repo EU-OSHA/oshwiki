@@ -1,0 +1,18 @@
+uuid: b496245f-9ac2-4bac-8145-55f5ec83994a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.further_reading_paragraph
+id: paragraph.further_reading_paragraph.created
+field_name: created
+entity_type: paragraph
+bundle: further_reading_paragraph
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,49 @@
+label: 'Biblioteka własnych bloków'
+description: 'Znajdź i zarządzaj własnymi blokami.'
+display:
+  default:
+    display_title: Domyślny
+    display_options:
+      title: 'Biblioteka własnych bloków'
+      fields:
+        info:
+          label: 'Opis bloku'
+          separator: ', '
+        type:
+          label: 'Rodzaj bloku'
+          separator: ', '
+        changed:
+          label: Uaktualniono
+        operations:
+          label: Operacje
+      pager:
+        options:
+          tags:
+            next: 'Następna ›'
+            previous: '‹ Poprzednia'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      empty:
+        area_text_custom:
+          content: 'Brak dostępnych bloków własnych.'
+      filters:
+        info:
+          expose:
+            label: 'Opis bloku'
+        type:
+          expose:
+            label: 'Rodzaj bloku'
+  page_1:
+    display_title: Strona
+    display_options:
+      menu:
+        title: 'Biblioteka własnych bloków'

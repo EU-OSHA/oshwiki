@@ -1,0 +1,28 @@
+uuid: 7cb9709a-19ac-4584-990a-8ede8dee6eef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year_science
+    - node.type.scientific_journal
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.scientific_journal.field_year_science
+field_name: field_year_science
+entity_type: node
+bundle: scientific_journal
+label: year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,203 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtruoti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        title:
+          label: Žymė
+        item_count:
+          label: Elementai
+      filters:
+        status:
+          expose:
+            label: Būsena
+  closed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        title:
+          label: Žymė
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        status:
+          expose:
+            label: Būsena
+        title:
+          expose:
+            label: Žymė
+      menu:
+        title: Uždara
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        title:
+          label: Žymė
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        status:
+          expose:
+            label: Būsena
+        title:
+          expose:
+            label: Žymė
+      menu:
+        title: Pabaigtas
+  eligible:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        title:
+          label: Žymė
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        status:
+          expose:
+            label: Būsena
+        title:
+          expose:
+            label: Žymė
+  my_tasks:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+        title:
+          label: Žymė
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        status:
+          expose:
+            label: Būsena
+        title:
+          expose:
+            label: Žymė
+  pending:
+    display_title: 'Užduočių sąrašas'
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+        title:
+          label: Žymė
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        status:
+          expose:
+            label: Būsena
+        title:
+          expose:
+            label: Žymė
+      menu:
+        title: Laukiama
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        title:
+          label: Žymė
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        status:
+          expose:
+            label: Būsena
+        title:
+          expose:
+            label: Žymė
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        title:
+          label: Žymė
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        status:
+          expose:
+            label: Būsena
+      tab_options:
+        title: Versti

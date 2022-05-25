@@ -1,0 +1,199 @@
+.node--type-oshwiki-articles{
+  .wrapper-content{
+    .order-2{
+      margin: 0.5rem 0rem;
+      @include textFormat(1rem, null, $text-dark-dark-grey);
+    }
+  }
+
+  .dates_and_social_media{
+    display: grid;
+    grid-template-areas:
+        "date"
+        "share";
+    p, span{
+      @include textFormat(0.9rem, null, $text-dark-medium-grey);
+    }
+    .article_dates{
+      grid-area: date;
+      padding: 0.3rem 0rem;
+      /*Set at the same height has the "share this on" block*/
+      & > p:first-of-type{
+        margin-top: 9px;
+      }
+      /*End comment*/
+    }
+    #share-this-on{
+      grid-area: share;
+      padding: 0.3rem 0rem;
+    }
+  }
+
+  .article_sections{
+    .field__item{
+      .field--name-field-title-sections, h3, .field--name-field-description-sections{
+        letter-spacing: 0.3px;
+        line-height: 29px;
+      }
+      h4, h3, .field--name-field-title-sections{
+        padding: 1.4rem 0rem 0.9rem;
+        margin: 0rem;
+      }
+      .field--name-field-title-sections{
+        @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+        p{
+          margin-bottom: 0rem;
+        }
+      }
+      h3{
+        @include textFormat(1.1rem, 700, $text-dark-green);
+      }
+      h4{
+        @include textFormat(1rem, 700, $text-dark-green);
+      }
+      .field--name-field-description-sections{
+        @include textFormat(1rem, null, $text-dark-dark-grey);
+      }
+
+      /*Style the cards with the images of the paragraph*/
+      .field--name-field-media{
+        display: flex;
+        flex-direction: column;
+        & > .field__item{
+          margin: 0.5rem 0rem;
+          align-self: center;
+          border-radius: 20px;
+          width: fit-content;
+          background-color: $bg-light-green;
+          border-radius: 20px;
+          img{
+            border-radius: 20px 20px 0px 0px;
+            margin: 0rem;
+          }
+          .field--name-field-copyrigth{
+            padding: 0.2rem;
+            @include textFormat(0.6rem, null, $text-black);
+            p{
+              margin-bottom: 0rem;
+            }
+          }
+          .field--name-field-caption-copyrigth-{
+            padding: 0.5rem 1rem 1rem;
+            @include textFormat(0.9rem, null, $text-dark-dark-grey);
+            p{
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+      /*End comment*/
+    }
+  }
+
+  .article_references{
+    margin-top: 1.4rem;
+    .reference-title{
+      @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+    }
+    .references-div{
+      display: grid;
+      grid-template-columns: 30px auto;
+      column-gap: 2rem;
+      margin: 1rem 0rem;
+      .reference-number{
+        justify-self: end;
+        @include textFormat(1.1rem, 700, $text-dark-green);
+      }
+      .reference-content{
+        justify-self: start;
+        @include textFormat(0.9rem, null, $text-dark-dark-grey);
+      }
+    }
+  }
+
+  .article_further_reading{
+    padding-bottom: 1.4rem;
+    .field--name-field-further-reading-oshwiki{
+      & > .field__label{
+        padding: 1.4rem 0rem 0.9rem;
+        @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+      }
+    }
+    .field--name-field-desc-further-reading{
+      @include textFormat(1rem, null, $text-dark-dark-grey);
+      letter-spacing: 0.2px;
+      line-height: 27px;
+    }
+  }
+
+  .article_authors, .article_contributors{
+    padding: 1.5rem 0.5rem;
+    .field__label{
+      @include textFormat(1.05rem, 700, $text-dark-dark-grey);
+    }
+    .field__items{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      flex-wrap: wrap;
+      .field__item{
+        width: 100%;
+        margin-top: 0.5rem;
+        .field--name-node-title, .field--name-field-organization-authors{
+          width: 100%;
+        }
+        h2{
+          @include textFormat(1rem, 700, $text-dark-green);
+        }
+        .field--name-field-organization-authors{
+          @include textFormat(0.9rem, null, $text-dark-dark-grey);
+        }
+      }
+    }
+  }
+  .article_authors, .contributors-border-b, .contributors-border-t-b{
+    border-bottom: 1px solid $bg-dark-dark-grey;
+  }
+  .article_authors{
+    border-top: 1px solid $bg-dark-dark-grey;
+  }
+  .contributors-border-t-b{
+    border-top: 1px solid $bg-dark-dark-grey;
+  }
+
+  .related-articles{
+    @include otherArticles($bg-light-green, $bg-dark-green, $text-dark-green, 1fr 1.5fr 1fr);
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .node--type-oshwiki-articles{
+    .dates_and_social_media{
+      & > div{
+        padding: 0.3rem 0rem;
+      }
+      grid-template-areas:
+        "date share";
+    }
+    .article_authors, .article_contributors{
+      .field__items{
+        .field__item{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .node--type-oshwiki-articles{
+    .article_authors, .article_contributors{
+      .field__items{
+        .field__item{
+          width: 25%;
+        }
+      }
+    }
+  }
+}

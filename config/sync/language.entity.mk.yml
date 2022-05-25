@@ -1,0 +1,9 @@
+uuid: 0004ad2a-625a-4f5c-8f44-28e3e9179655
+langcode: en
+status: true
+dependencies: {  }
+id: mk
+label: Macedonian
+direction: ltr
+weight: 21
+locked: false

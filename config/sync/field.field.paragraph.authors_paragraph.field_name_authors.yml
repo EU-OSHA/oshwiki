@@ -1,0 +1,25 @@
+uuid: 54ffd87f-4e8a-4871-9378-eeae5b53120f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name_authors
+    - paragraphs.paragraphs_type.authors_paragraph
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.authors_paragraph.field_name_authors
+field_name: field_name_authors
+entity_type: paragraph
+bundle: authors_paragraph
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

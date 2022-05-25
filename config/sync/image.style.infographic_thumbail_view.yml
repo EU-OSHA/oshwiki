@@ -1,0 +1,15 @@
+uuid: fb30bb87-47a0-4f72-b0de-c28cc323e5c7
+langcode: en
+status: true
+dependencies: {  }
+name: infographic_thumbail_view
+label: 'Infographic thumbail view'
+effects:
+  c2b1288a-c917-45cb-b155-22abebc218a6:
+    uuid: c2b1288a-c917-45cb-b155-22abebc218a6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 245
+      height: 182
+      anchor: center-top

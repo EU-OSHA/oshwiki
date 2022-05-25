@@ -1,0 +1,13 @@
+label: 'onlangse kommentaar'
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      title: 'onlangse kommentaar'
+      empty:
+        area_text_custom:
+          content: 'Geen kommentaar beskikbaar.'
+  block_1:
+    display_title: Blok
+    display_options:
+      block_description: 'onlangse kommentaar'

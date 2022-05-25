@@ -1,0 +1,42 @@
+label: Përmbajtja
+display:
+  default:
+    display_title: 'E Paracaktuar'
+    display_options:
+      title: Përmbajtja
+      fields:
+        title:
+          label: Titulli
+        name:
+          label: Autori
+        status:
+          label: Gjendja
+          settings:
+            format_custom_true: Publikuar
+        operations:
+          label: Operacionet
+      exposed_form:
+        options:
+          submit_button: Filtri
+          reset_button_label: Rifillo
+      empty:
+        area_text_custom:
+          content: 'Asnjë përmbajtje në dispozicion.'
+      filters:
+        title:
+          expose:
+            label: Titulli
+        status:
+          expose:
+            label: Gjendja
+          group_info:
+            group_items:
+              1:
+                title: Publikuar
+  page_1:
+    display_title: Faqe
+    display_options:
+      menu:
+        title: Përmbajtja
+      tab_options:
+        title: Përmbajtja

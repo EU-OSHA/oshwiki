@@ -1,0 +1,17 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Stránka
+      page_current_title: 'Aktuálna stránka'
+      first_title: 'Prejsť na prvú stranu'
+      previous_title: 'Prejsť na predchádzajúcu stranu'
+      next_title: 'Prejsť na ďalšiu stranu'
+      last_title: 'Prejsť na poslednú stranu'
+      page_current_reader: 'Aktuálna stránka'
+      next_reader: 'Ďalšia strana'
+      last_reader: 'Posledná strana'
+    items:
+      prefix_label: Položka
+      first_reader: 'Prvá položka'
+    item_ranges:
+      prefix_label: Položky

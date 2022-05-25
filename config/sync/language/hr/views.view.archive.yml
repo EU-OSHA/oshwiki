@@ -1,0 +1,21 @@
+label: Arhiva
+display:
+  default:
+    display_title: Zadano
+    display_options:
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+  block_1:
+    display_title: Blok
+  page_1:
+    display_title: Stranica

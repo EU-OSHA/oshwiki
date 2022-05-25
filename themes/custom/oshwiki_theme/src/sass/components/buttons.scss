@@ -1,0 +1,35 @@
+.btn-primary{
+  background-color: $bg-dark-green;
+  border-color: $bg-dark-green;
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus
+  {
+    background-color: $bg-white;
+    border-color: $bg-dark-green;
+    color: $text-dark-green;
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle{
+  background-color: $bg-white;
+  border-color: $bg-dark-green;
+  color: $text-dark-green;
+  box-shadow: none;
+  text-decoration: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus{
+  background-color: $bg-white;
+  border-color: $bg-dark-green;
+  color: $text-dark-green;
+  box-shadow: 0 0 0 0.2rem $bg-light-green;
+  text-decoration: none;
+}

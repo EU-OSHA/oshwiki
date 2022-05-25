@@ -1,0 +1,16 @@
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+  block_1:
+    display_title: Blok
+  page_1:
+    display_title: Bladsy

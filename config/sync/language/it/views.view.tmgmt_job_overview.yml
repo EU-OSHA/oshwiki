@@ -1,0 +1,56 @@
+display:
+  default:
+    display_title: Principale
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applica
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
+          sort_desc_label: Disc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
+          tags:
+            previous: '‹ precedente'
+            next: 'seguente ›'
+            first: '« prima'
+            last: 'ultima »'
+      fields:
+        state:
+          label: Stato
+          separator: ', '
+        label:
+          label: Etichetta
+        source_language_1:
+          label: Da
+          separator: ', '
+        target_language:
+          label: A
+          separator: ', '
+        translator:
+          label: 'Fonte esterna'
+        word_count:
+          label: Parole
+        tags_count:
+          label: Etichette
+        changed:
+          label: Modificato
+        operations:
+          label: Operazioni
+      filters:
+        state:
+          expose:
+            label: Stato
+        source_language:
+          expose:
+            label: 'Lingua di origine'
+        translator:
+          expose:
+            label: 'Fonte esterna'
+  page_1:
+    display_title: Pagina

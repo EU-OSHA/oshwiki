@@ -1,0 +1,22 @@
+name: OSHWiki Subtheme
+type: theme
+description: 'OSHWiki SubTheme.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - oshwiki_theme/bootstrap_cdn
+  - oshwiki_theme/global-styling
+
+regions:
+  top_header_logos: 'Top header Logos'
+  top_header_form: 'Top header form'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  highlighted: 'Highlighted'
+  banner_oshwiki: 'Banners OSHWiki'
+  front_content: 'Front page content'
+  content: 'Content'
+  footer: 'Footer'

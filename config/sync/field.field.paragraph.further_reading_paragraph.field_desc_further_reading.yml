@@ -1,0 +1,25 @@
+uuid: 4feb697c-3dbf-4772-9722-dc8731473bf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_desc_further_reading
+    - paragraphs.paragraphs_type.further_reading_paragraph
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.further_reading_paragraph.field_desc_further_reading
+field_name: field_desc_further_reading
+entity_type: paragraph
+bundle: further_reading_paragraph
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

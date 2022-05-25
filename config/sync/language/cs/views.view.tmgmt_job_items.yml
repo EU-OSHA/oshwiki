@@ -1,0 +1,59 @@
+display:
+  default:
+    display_title: Nadřízené
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použít
+          reset_button_label: Reset
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+          tags:
+            previous: '‹ předchozí'
+            next: 'následující ›'
+            first: '« první'
+            last: 'poslední »'
+      fields:
+        state:
+          label: Stav
+        label:
+          label: Popisek
+        type:
+          label: Typ
+        word_count:
+          label: Slov
+          separator: ', '
+        tags_count:
+          label: Štítky
+          separator: ', '
+        changed:
+          label: Změněno
+        operations:
+          label: Operace
+      arguments:
+        tjid:
+          exception:
+            title: Vše
+  checkout:
+    display_title: Objednat
+    display_options:
+      fields:
+        label:
+          label: Popisek
+        type:
+          label: Typ
+        word_count:
+          label: Slov
+          separator: ', '
+        changed:
+          label: Změněno
+          separator: ', '
+  submitted:
+    display_title: Odesláno

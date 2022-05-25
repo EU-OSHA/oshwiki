@@ -1,0 +1,31 @@
+label: Redigeringsside
+tips:
+  views-main:
+    label: 'Håndtér indstillinger for views'
+    body: 'Vis eller redigér konfigurationen.'
+  views-ui-displays:
+    label: 'Vises i dette view'
+    body: 'Et display er en metode til at vise resultaterne, f.eks. som en side eller en blok. Et view kan indeholde flere displays, som vises her. Det aktive display er fremhævet.'
+  views-ui-view-admin:
+    label: 'Vis administration'
+    body: 'Udfør administrative opgaver, som f.eks. at tilføje en beskrivelse eller oprette en kopi. Klik på dropdown-menuen for at se de tilgængelige muligheder.'
+  views-ui-format:
+    label: Output-format
+    body: 'Vælg hvordan resultaterne skal vises. Vælg f.eks. <em>Indhold</em> for at vise en komplet version af hvert resultat baseret på dine præsentationsindstillinger. Eller vælg <em>Felter</em> som gør det muligt kun at vise specifikke felter for hvert resultat. Yderligere formater kan tilføjes ved installere moduler som <em>udvider</em> Drupals kernefunktionalitet.'
+  views-ui-fields:
+    label: Felter
+    body: 'Hvis denne visning bruger filtre er de opstillet her. Du kan klikke på et felt for at konfigurere det.'
+  views-ui-filter:
+    label: 'Filtrer din visning'
+  views-ui-filter-operations:
+    label: 'Filtrer handlinger'
+    body: 'Tilføj, omarranger eller fjern filtre.'
+  views-ui-sorts:
+    label: Kriterie
+    body: 'Tilpas rækkefølgen af resultaterne. Klik på den aktive sorteingsregel for at konfigurere den.'
+  views-ui-sorts-operations:
+    label: Sorteringshandlinger
+    body: 'Tilføj, omfordel eller fjern sorteringsregler.'
+  views-ui-preview:
+    label: Gennemse
+    body: 'Vis et preview.'

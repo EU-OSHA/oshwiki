@@ -1,0 +1,16 @@
+display:
+  default:
+    display_options:
+      fields:
+        bundle:
+          label: Тип
+        uid:
+          label: Автор
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Сите -'
+      filters:
+        bundle:
+          expose:
+            label: Тип

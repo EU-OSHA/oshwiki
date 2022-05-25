@@ -1,0 +1,18 @@
+uuid: a2ba9cc5-ff3b-4904-a506-b3050aef5f8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contributors_content
+id: node.contributors_content.created
+field_name: created
+entity_type: node
+bundle: contributors_content
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,178 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtruoti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        title:
+          label: Pavadinimas
+        item_count:
+          label: Elementai
+  assigned:
+    display_title: Priskirta
+    display_options:
+      menu:
+        title: Priskirta
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+        title:
+          label: Pavadinimas
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        uid:
+          expose:
+            label: Tiekėjas
+        title:
+          expose:
+            label: Pavadinimas
+  closed:
+    display_title: Uždara
+    display_options:
+      menu:
+        title: Uždara
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+        created:
+          label: Sukurta
+        title:
+          label: Pavadinimas
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        uid:
+          expose:
+            label: Tiekėjas
+        title:
+          expose:
+            label: Pavadinimas
+  completed:
+    display_title: Pabaigtas
+    display_options:
+      menu:
+        title: Pabaigtas
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+        created:
+          label: Sukurta
+        title:
+          label: Pavadinimas
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        uid:
+          expose:
+            label: Tiekėjas
+        title:
+          expose:
+            label: Pavadinimas
+  pending:
+    display_title: Laukiama
+    display_options:
+      menu:
+        title: Laukiama
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        title:
+          label: Pavadinimas
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        uid:
+          expose:
+            label: Tiekėjas
+        title:
+          expose:
+            label: Pavadinimas
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        created:
+          label: Sukurta
+        title:
+          label: Pavadinimas
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai
+      filters:
+        uid:
+          expose:
+            label: Tiekėjas
+        title:
+          expose:
+            label: Pavadinimas
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          action_title: 'Su pasirinktais'
+        status:
+          label: Būsena
+          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+        title:
+          label: Pavadinimas
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        item_count:
+          label: Elementai
+        operations:
+          label: Veiksmai

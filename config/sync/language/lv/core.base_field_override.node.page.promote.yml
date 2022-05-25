@@ -1,0 +1,4 @@
+label: 'Izvirzīts uz pirmo lapu'
+settings:
+  on_label: Aktīvs
+  off_label: Izslēgts

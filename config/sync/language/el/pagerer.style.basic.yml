@@ -1,0 +1,17 @@
+default_config:
+  tags:
+    pages:
+      previous: '<'
+      next: '>'
+      first_title: 'Πρώτη σελίδα'
+      previous_title: 'Προηγούμενη σελίδα'
+      next_title: 'Επόμενη σελίδα'
+      last_title: 'Τελευταία σελίδα'
+      previous_reader: 'Προηγούμενη σελίδα'
+    items:
+      previous: '<'
+      next: '>'
+      first_reader: 'Πρώτο στοιχείο'
+    item_ranges:
+      previous: '<'
+      next: '>'

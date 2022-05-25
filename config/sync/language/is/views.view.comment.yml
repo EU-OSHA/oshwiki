@@ -1,0 +1,86 @@
+label: Ummæli
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      title: Ummæli
+      fields:
+        comment_bulk_form:
+          action_title: Aðgerð
+        subject:
+          label: Viðfangsefni
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Höfundur
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          label: Uppfært
+          separator: ', '
+        operations:
+          label: Aðgerðir
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'næsta ›'
+            previous: '‹ fyrri'
+            first: '« fremsta'
+            last: 'aftasta »'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      empty:
+        area_text_custom:
+          content: 'Engin ummæli tiltæk.'
+      filters:
+        subject:
+          expose:
+            label: Viðfangsefni
+        langcode:
+          expose:
+            label: Tungumál
+      use_more_text: meira
+  page_published:
+    display_title: 'Birt ummæli'
+    display_options:
+      menu:
+        title: Ummæli
+  page_unapproved:
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Aðgerð
+        subject:
+          label: Viðfangsefni
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Höfundur
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          label: Uppfært
+          separator: ', '
+        operations:
+          label: Aðgerðir
+        name_1:
+          separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Viðfangsefni
+        langcode:
+          expose:
+            label: Tungumál

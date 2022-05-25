@@ -1,0 +1,25 @@
+uuid: 7c1841e4-eb17-47ca-84c3-128eb9a51dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.further_reading_paragraph.field_desc_further_reading
+    - field.field.paragraph.further_reading_paragraph.field_title_further_reading
+    - paragraphs.paragraphs_type.further_reading_paragraph
+  module:
+    - text
+id: paragraph.further_reading_paragraph.default
+targetEntityType: paragraph
+bundle: further_reading_paragraph
+mode: default
+content:
+  field_desc_further_reading:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_title_further_reading: true
+  search_api_excerpt: true

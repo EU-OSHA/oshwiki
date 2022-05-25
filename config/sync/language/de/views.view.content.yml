@@ -1,0 +1,48 @@
+label: Inhalt
+display:
+  default:
+    display_title: Standard
+    display_options:
+      title: Inhalt
+      fields:
+        title:
+          label: Titel
+        type:
+          label: Inhaltstyp
+          separator: ', '
+        name:
+          label: Autor
+        status:
+          label: Status
+          settings:
+            format_custom_true: Veröffentlicht
+        operations:
+          label: Aktionen
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sortieren nach'
+          sort_asc_label: Aufsteigend
+          sort_desc_label: Absteigend
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Inhaltstyp
+        status:
+          expose:
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: Veröffentlicht
+  page_1:
+    display_title: Seite
+    display_options:
+      menu:
+        title: Inhalt
+      tab_options:
+        title: Inhalt

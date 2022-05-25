@@ -1,0 +1,17 @@
+label: 'Redigering af sprog'
+tips:
+  language-edit-overview:
+    label: 'Redigering af sprog'
+    body: '<p>På denne side kan du redigere sitets sprog, inklusive brugerdefinerede sprog.</p>'
+  language-edit-langcode:
+    label: Sprogkode
+    body: '<p>Du kan ikke ændre en sprogkode på sitet. Det skyldes at systemet bruger koden til at holde styr på sproget.</p>'
+  language-edit-label:
+    label: Sprognavn
+    body: '<p>Sprognavnet bruges på hele webstedet for alle brugere og er skrevet på engelsk. Navnene på indbyggede sprog kan oversættes ved hjælp af oversættelse modulet, og navnene på både indbyggede og brugerdefinerede sprog kan oversættes ved hjælp af konfiguration oversættelse modulet.</p>'
+  language-edit-direction:
+    label: Sprogretning
+    body: '<p>Vælg om det er et  "venstre mod højre" eller "højre mod venstre" sprog.</p><p>Bemærk, at ikke alle temaer støtte "højre mod venstre" layout, så test dit tema, hvis du skal bruge dette.</p>'
+  language-edit-continue:
+    label: 'Fortsætter på'
+    body: '<p>Nu hvor du har overblik over funktionen "Rediger sprog", kan du fortsætte ved at:<ul><li>Redigering et sprog</li><li><a href="[site:url]admin/config/regional/language">Vis konfigureret sprog</a></li></ul></p>'

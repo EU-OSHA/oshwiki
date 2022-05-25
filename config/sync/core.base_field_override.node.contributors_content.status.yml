@@ -1,0 +1,22 @@
+uuid: 41edfb49-04fe-4b41-9248-b9a07687e0b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contributors_content
+id: node.contributors_content.status
+field_name: status
+entity_type: node
+bundle: contributors_content
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

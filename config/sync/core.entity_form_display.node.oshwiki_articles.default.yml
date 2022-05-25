@@ -1,0 +1,220 @@
+uuid: 221d1e8a-c095-4969-9cea-9114b46df66b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oshwiki_articles.field_authors_oshwiki
+    - field.field.node.oshwiki_articles.field_authorstxt_oshwiki
+    - field.field.node.oshwiki_articles.field_contributors_oshwiki
+    - field.field.node.oshwiki_articles.field_further_reading_oshwiki
+    - field.field.node.oshwiki_articles.field_image_oshwiki
+    - field.field.node.oshwiki_articles.field_nace_oshwiki
+    - field.field.node.oshwiki_articles.field_one_language_available
+    - field.field.node.oshwiki_articles.field_osh_categories_oshwiki
+    - field.field.node.oshwiki_articles.field_oshwiki_link
+    - field.field.node.oshwiki_articles.field_references_oshwiki
+    - field.field.node.oshwiki_articles.field_sections_oshwiki
+    - field.field.node.oshwiki_articles.field_theme_representative
+    - field.field.node.oshwiki_articles.field_themes_oshwiki
+    - image.style.thumbnail
+    - node.type.oshwiki_articles
+  module:
+    - entity_reference_revisions
+    - image
+    - paragraphs
+    - path
+id: node.oshwiki_articles.default
+targetEntityType: node
+bundle: oshwiki_articles
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_authors_oshwiki:
+    type: entity_reference_revisions_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_authorstxt_oshwiki:
+    type: string_textarea
+    weight: 16
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_contributors_oshwiki:
+    type: entity_reference_autocomplete
+    weight: 18
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_further_reading_oshwiki:
+    type: entity_reference_paragraphs
+    weight: 14
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_image_oshwiki:
+    type: image_image
+    weight: 15
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_nace_oshwiki:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_one_language_available:
+    type: boolean_checkbox
+    weight: 28
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_osh_categories_oshwiki:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_oshwiki_link:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_references_oshwiki:
+    type: entity_reference_paragraphs
+    weight: 13
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_sections_oshwiki:
+    type: entity_reference_paragraphs
+    weight: 12
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_theme_representative:
+    type: boolean_checkbox
+    weight: 27
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_themes_oshwiki:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_nace_tax_old: true
+  field_osh_tax_old: true

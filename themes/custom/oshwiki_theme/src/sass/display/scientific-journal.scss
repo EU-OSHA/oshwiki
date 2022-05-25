@@ -1,0 +1,99 @@
+.warning-message{
+  padding: 1rem;
+  margin: 1.5rem 0rem;
+  background: $bg-light-orange;
+  border-radius: 15px;
+  border: none;
+  .warning-message-container{
+    background: {
+      image: url('../images/Icon-warning.svg');
+      repeat: no-repeat;
+      position-y: -4px;
+    }
+    padding-left: 4rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    img{
+      @include dimensions(3rem,3rem);
+    }
+    p{
+      @include textFormat(1rem, null, $text-dark-dark-grey);
+      letter-spacing: 0.2px;
+      line-height: 27px;
+    }
+  }
+  .read-more{
+    display: flex;
+    justify-content: flex-end;
+    a{
+      text-decoration: none;
+      @include textFormat(1rem, 700, $text-black);
+    }
+  }
+}
+
+.year_and_social_media{
+  display: flex;
+  justify-content: space-between;
+  .scientific_year{
+    @include textFormat(1rem, null, $text-black);
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.scientific_year:first-of-type{
+  margin: 1rem 0rem;
+}
+
+.scientific_introduction{
+  .field--name-field-introduction-science{
+    .field__label{
+      margin: 1rem 0rem;
+      @include textFormat(1.2rem, 700, $text-black);
+    }
+  }
+  .field__item{
+    p{
+      color: $text-black;
+      font-size: 1rem;
+      letter-spacing: 0.2px;
+      line-height: 27px;
+    }
+  }
+}
+
+.scientific_author{
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  width: 90%;
+  margin: 2rem auto;
+  .field--name-field-authors-other-sources{
+    .field__label{
+      @include textFormat(1.2rem, 700, $text-dark-dark-grey);
+    }
+    .wrapper-author-sj{
+      justify-content: flex-start;
+      h2{
+        margin: 0.5rem 0rem 0rem 0rem;
+        @include textFormat(1rem, 700, $text-dark-dark-grey);
+      }
+      .field--name-field-organisation{
+        @include textFormat(0.9rem, 700, $text-dark-dark-grey);
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .scientific_year:first-of-type{
+    margin: 0rem 0rem;
+  }
+}
+
+

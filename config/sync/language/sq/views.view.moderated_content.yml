@@ -1,0 +1,22 @@
+display:
+  default:
+    display_title: 'E Paracaktuar'
+    display_options:
+      fields:
+        title:
+          label: Titulli
+        name:
+          label: Autori
+        operations:
+          label: Operacionet
+      exposed_form:
+        options:
+          submit_button: Filtri
+          reset_button_label: Rifillo
+      filters:
+        title:
+          expose:
+            label: Titulli
+        langcode:
+          expose:
+            label: Gjuha

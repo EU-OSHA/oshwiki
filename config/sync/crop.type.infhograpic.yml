@@ -1,0 +1,12 @@
+uuid: 3aa369d9-a69f-447e-80b4-a78f59a024c2
+langcode: en
+status: true
+dependencies: {  }
+label: Infographic
+id: infhograpic
+description: 'Infographic thmbnail crop'
+aspect_ratio: '1:1'
+soft_limit_width: 350
+soft_limit_height: 260
+hard_limit_width: 350
+hard_limit_height: 260

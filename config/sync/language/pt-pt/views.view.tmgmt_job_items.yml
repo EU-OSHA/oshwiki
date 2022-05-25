@@ -1,0 +1,59 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+          tags:
+            previous: '‹ anterior'
+            next: 'seguinte ›'
+            first: '« primeira'
+            last: 'última »'
+      fields:
+        state:
+          label: Estado
+        label:
+          label: Etiqueta
+        type:
+          label: Tipo
+        progress:
+          label: Progresso
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Etiquetas
+          separator: ', '
+        changed:
+          label: Alterado
+        operations:
+          label: Operações
+      arguments:
+        tjid:
+          exception:
+            title: Todos
+  checkout:
+    display_title: Confirmar
+    display_options:
+      fields:
+        label:
+          label: Etiqueta
+        type:
+          label: Tipo
+        word_count:
+          separator: ', '
+        changed:
+          label: Alterado
+          separator: ', '
+  submitted:
+    display_title: Submetido

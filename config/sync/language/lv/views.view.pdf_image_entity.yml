@@ -1,0 +1,25 @@
+display:
+  default:
+    display_title: 'Noklusētā vērtība'
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        id:
+          label: ID
+        changed:
+          label: Labots
+      filters:
+        changed_2:
+          expose:
+            label: Labots
+  list:
+    display_title: Lapa

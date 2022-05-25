@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Сите -'
+          tags:
+            previous: '‹ претходно'
+            first: '« прв'
+            last: 'последно »'
+      fields:
+        type:
+          label: Тип
+  checkout:
+    display_options:
+      fields:
+        type:
+          label: Тип

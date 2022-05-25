@@ -1,0 +1,44 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      fields:
+        state:
+          label: Država
+        label:
+          label: Oznaka
+        type:
+          label: Vrsta
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Za
+          separator: ', '
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Oznake
+          separator: ', '
+        changed:
+          separator: ', '
+        operations:
+          label: Operacije
+      filters:
+        state:
+          group_info:
+            label: Država
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normalno
+  page_1:
+    display_title: Stranica

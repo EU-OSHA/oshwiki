@@ -1,0 +1,158 @@
+.page-view-alphabetical-view{
+  .container{
+    #main{
+      /*Main layout with grid-area*/
+      & > .section{
+        display: grid;
+        grid-template-areas:
+          "alphabet"
+          "select-theme"
+          "alphabetical-content";
+        column-gap: 2rem;
+        #block-glossaryblock{
+          grid-area: alphabet;
+        }
+        .block-facet-blocktheme-names {
+          grid-area: select-theme;
+        }
+        #block-oshwiki-theme-content{
+          grid-area: alphabetical-content;
+        }
+      }
+      /*End comment*/
+    }
+  }
+
+  #block-glossaryblock{
+    .glossary-list{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 1rem;
+      padding: 0.32rem 0rem;
+      border : {
+        top: 1px solid $bg-light-medium-grey;
+        bottom: 1px solid $bg-light-medium-grey;
+      }
+      .glossary-item{
+        border: none;
+        font-size: 1.2rem;
+        color: $text-light-dark-grey;
+        a{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .block-facet-blocktheme-names {
+    margin: 1rem 0rem;
+    h2{
+      margin:0rem;
+      padding: 0.5rem 0rem 0.5rem 1.5rem;
+      border-radius: 15px 15px 0px 0px;
+      background-color: $bg-dark-green;
+      @include textFormat(1.3rem, null, $text-white);
+    }
+    .facets-widget-links{
+      padding: 1rem 1.5rem;
+      border-radius: 0px 0px 15px 15px;
+      background-color: $bg-light-green;
+      height: fit-content;
+      .item-list__links{
+        list-style: none;
+        padding: 0rem;
+        margin: 0rem;
+        .facet-item{
+          margin: 1rem 0rem;
+          list-style: none;
+          &:first-of-type{
+            margin-top: 0rem;
+          }
+          &:last-of-type{
+            margin-bottom: 0rem;
+          }
+          .is-active{
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .is-active{
+      font-weight: 700;
+      span:first-of-type{
+        display: none;
+      }
+    }
+  }
+
+  #block-oshwiki-theme-content{
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      .views-row{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        &:first-of-type{
+          padding: 0.8rem 0rem 1rem 0rem;
+        }
+        .views-field-title{
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-url{
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 0.5rem;
+          letter-spacing: 0.3px;
+          line-height: 29px;
+          span{
+            display: flex;
+            align-items: center;
+            a {
+              margin-top: 3px;
+              @include textFormat(0.9rem, null, $text-dark-green);
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+          span::after{
+            display: inline-block;
+            content: " ";
+            width: 14px;
+            height: 14px;
+            margin-left: 0.5rem;
+            margin-top: 0.2rem;
+            background: url('../images/green-arrow_see_more.png') no-repeat;
+          }
+        }
+      }
+    }
+    .row{
+      margin: 0rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-alphabetical-view{
+    .container{
+      #main{
+        /*Responsive layout with grid-area*/
+        .section{
+          grid-template-columns: 1.25fr 1fr 1fr 1fr;
+          grid-template-areas:
+          "alphabet alphabet alphabet alphabet"
+          "select-theme alphabetical-content alphabetical-content alphabetical-content";
+        }
+        /*End comment*/
+      }
+    }
+  }
+}

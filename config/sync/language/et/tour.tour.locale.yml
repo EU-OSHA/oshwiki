@@ -1,0 +1,25 @@
+label: Tõlge
+tips:
+  locale-overview:
+    label: 'Kasutajaliidese tõlge'
+  locale-language:
+    label: 'Tõlke keel'
+    body: 'Vali keel, mida soovid tõlkida.'
+  locale-search:
+    label: Otsing
+    body: 'Sisesta sõna või lause, mida soovid tõlkida. Lubatud on ka sõnaosa kasutamine.'
+  locale-filter:
+    label: 'Filtreeri otsingutulemusi'
+    body: 'Kui soovid tõlkida midagi, mis pole veel tõlgitud, siis saad otsida tõlkimata sõnesid. Kui soovid muuta juba olemasolevat tõlget, siis peaksid otsima ainult tõlgitud sõnesid.'
+  locale-submit:
+    label: 'Rakenda otsingutingimus'
+    body: 'Otsingukriteeriumi rakendamiseks kliki <em>Filtreeri</em> nupul.'
+  locale-translate:
+    label: Tõlge
+    body: 'Saad kirjutada oma isikliku tõlke paremas tulbas olevatele tekstiväljadele. Selleks, et teksti õigesti tõlkida ürita aru saada millises kontekstis seda kasutatakse.'
+  locale-validate:
+    label: 'Valideeri tõlge'
+    body: 'Kui oled tõlkimise lõpetanud, vajuta <em>Salvesta tõlked</em> nuppu. Tõlked tuleb salvestada iga kord enne leheküljelt navigeerimist või uue otsingu teostamist.'
+  locale-continue:
+    label: Jätkub
+    body: 'Antud tõlkeid kasutatakse saidi kasutajaliideses. Kui sa soovid neid kasutada mõnel teisel saidil või tõlkeprogrammis, saad need<a href="[site:url]admin/config/regional/translate/export">eksportida</a> .po failiks ja hiljem ka <a href="[site:url]admin/config/regional/translate/import">importida</a>.'

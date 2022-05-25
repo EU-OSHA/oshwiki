@@ -1,0 +1,24 @@
+uuid: 08e62237-c1f2-4ed5-b0a7-fae7322df52c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_full_url
+    - taxonomy.vocabulary.osh_categories
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: taxonomy_term.osh_categories.field_full_url
+field_name: field_full_url
+entity_type: taxonomy_term
+bundle: osh_categories
+label: 'Full URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

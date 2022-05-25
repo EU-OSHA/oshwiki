@@ -1,0 +1,20 @@
+uuid: 1d1c1663-eff2-493d-abcc-b7199a9c41d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.osh_categories
+  module:
+    - path
+id: taxonomy_term.osh_categories.path
+field_name: path
+entity_type: taxonomy_term
+bundle: osh_categories
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

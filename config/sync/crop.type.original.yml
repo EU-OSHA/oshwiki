@@ -1,0 +1,12 @@
+uuid: 7ba3ee0f-bf56-4bc1-9358-a7a1d49a8870
+langcode: en
+status: true
+dependencies: {  }
+label: Original
+id: original
+description: 'Original image. For example for infographics'
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

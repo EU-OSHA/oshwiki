@@ -1,0 +1,40 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+          tags:
+            previous: '‹ fyrri'
+            next: 'næsta ›'
+            first: '« fremsta'
+            last: 'aftasta »'
+      fields:
+        state:
+          label: Fylki
+          separator: ', '
+        label:
+          label: Merking
+        source_language_1:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        tags_count:
+          label: Efnisorð
+        operations:
+          label: Aðgerðir
+      filters:
+        state:
+          expose:
+            label: Fylki
+  page_1:
+    display_title: Síða

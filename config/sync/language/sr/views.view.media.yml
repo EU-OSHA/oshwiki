@@ -1,0 +1,35 @@
+display:
+  default:
+    display_title: Подразумевано
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Акција
+        thumbnail__target_id:
+          label: 'Умањени приказ'
+        bundle:
+          label: Tип
+        uid:
+          label: Аутор
+        status:
+          label: Статус
+          settings:
+            format_custom_false: Необјабљено
+        operations:
+          label: Операције
+      exposed_form:
+        options:
+          submit_button: Филтрирај
+          exposed_sorts_label: 'Сортирај по'
+      filters:
+        bundle:
+          expose:
+            label: Tип
+        status:
+          group_info:
+            group_items:
+              2:
+                title: Необјабљено
+        langcode:
+          expose:
+            label: Језик

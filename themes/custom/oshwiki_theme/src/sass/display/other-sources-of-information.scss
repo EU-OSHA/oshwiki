@@ -1,0 +1,203 @@
+.page-view-other-sources-of-information{
+  #block-oshwiki-theme-content{
+    .view-filters{
+      .form-row{
+        display: grid;
+        grid-template-areas:
+            "search-input"
+            "search-buttons"
+            "sort-by "
+            "order-by ";
+        justify-content: center;
+        margin-top: 0.7rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .js-form-item-criteria, .js-form-item-sort-by, .js-form-item-sort-order{
+          display: flex;
+          flex-direction: column;
+        }
+        .form-item-criteria{
+          grid-area: search-input;
+          margin-bottom: 1.3rem !important;
+          label{
+            margin-bottom: 0rem;
+          }
+          input{
+            width: 16rem;
+          }
+        }
+        #edit-sort-by{
+          grid-area: sort-by;
+        }
+        .form-item-sort-order{
+          grid-area: order-by;
+        }
+        .form-item-sort-by, .form-item-sort-order{
+          label{
+            margin-bottom: 0rem;
+          }
+          select{
+            padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+            border-radius: 0.25rem;
+            height: 2.5rem;
+            width: 16rem;
+          }
+        }
+        #edit-actions{
+          display: flex;
+          grid-area: search-buttons;
+          gap: 1rem;
+          margin-bottom: 0.5rem !important;
+          button{
+            padding: 0.3rem 0.8rem;
+            height: 2.5rem;
+            width: 7.5rem;
+          }
+        }
+      }
+    }
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 1rem;
+      .views-row{
+        padding: 1rem 0rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .views-field-title{
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-field-introduction-science-1,
+        .views-field-field-year-science,
+        .views-field-changed{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
+        }
+        .views-field-url{
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 0.5rem;
+          letter-spacing: 0.3px;
+          line-height: 29px;
+          span{
+            display: flex;
+            align-items: center;
+            a {
+              margin-top: 3px;
+              @include textFormat(0.9rem, null, $text-dark-green);
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+          span::after{
+            display: inline-block;
+            content: " ";
+            width: 14px;
+            height: 14px;
+            margin-left: 0.5rem;
+            margin-top: 0.2rem;
+            background: url('../images/green-arrow_see_more.png') no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Responsive design of the search and order box*/
+@media only screen and (min-width: 480px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          grid-template-areas:
+            "search-input search-input search-buttons search-buttons"
+            "sort-by sort-by order-by order-by";
+          justify-content: start;
+          .form-item-criteria{
+            margin-bottom: 1rem !important;
+            input{
+              width: 12rem;
+            }
+          }
+          .form-item-sort-by, .form-item-sort-order{
+            select{
+              width: 12rem;
+            }
+          }
+          #edit-actions{
+            margin-bottom: 1rem !important;
+            gap: 0.7rem;
+            button{
+              height: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          grid-template-areas:
+            "search-input search-input search-buttons search-buttons"
+            "sort-by sort-by order-by order-by " ;
+          justify-content: start;
+          .form-item-criteria{
+            input{
+              width: 15rem;
+            }
+          }
+          .form-item-sort-by, .form-item-sort-order{
+            select{
+              width: 15rem;
+            }
+          }
+          #edit-actions{
+            button{
+              width: 7.15rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          grid-template-areas:
+            "search-input search-input search-buttons sort-by order-by" ;
+          .form-item-criteria{
+            input{
+              width: 10rem;
+            }
+          }
+          .form-item-sort-by, .form-item-sort-order{
+            select{
+              width: 10rem;
+              height: 2.4rem;
+            }
+          }
+          #edit-actions{
+            margin-bottom: 1rem !important;
+            button{
+              width: 6rem;
+              height: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*End comment responsive design of the search and order box*/

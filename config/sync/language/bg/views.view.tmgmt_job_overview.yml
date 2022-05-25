@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      pager:
+        options:
+          tags:
+            previous: '‹ предишна'
+            next: 'следваща ›'
+            first: '« първа'
+            last: 'последна »'
+      fields:
+        state:
+          label: Статус
+        label:
+          label: Заглавие
+        source_language_1:
+          label: От
+        target_language:
+          label: До
+        tags_count:
+          label: Таг
+        operations:
+          label: Действия
+      filters:
+        state:
+          expose:
+            label: Статус
+  page_1:
+    display_title: Страница

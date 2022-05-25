@@ -1,0 +1,17 @@
+label: 'Naujausi komentarai'
+display:
+  default:
+    display_title: Numatytasis
+    display_options:
+      title: 'Naujausi komentarai'
+      fields:
+        changed:
+          settings:
+            past_format: 'prieš @interval'
+      empty:
+        area_text_custom:
+          content: 'Nėra komentarų.'
+  block_1:
+    display_title: Blokas
+    display_options:
+      block_description: 'Naujausi komentarai'

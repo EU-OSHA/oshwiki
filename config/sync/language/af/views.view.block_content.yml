@@ -1,0 +1,23 @@
+display:
+  default:
+    display_title: Verstek
+    display_options:
+      fields:
+        info:
+          label: Blokbeskrywing
+        operations:
+          label: Aksies
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      filters:
+        info:
+          expose:
+            label: Blokbeskrywing
+  page_1:
+    display_title: Bladsy

@@ -1,0 +1,33 @@
+button.navbar-toggler-right{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  .icon-bar{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: $bg-dark-green;
+  }
+}
+
+/*Update padding for responsive layout*/
+@media only screen and (max-width: 340px) {
+  .content-main-menu{
+    & > .container{
+      #navbar-main{
+        padding: 0.5rem 0rem;
+      }
+    }
+  }
+}
+/*Space between the last menu item and the language dropbox*/
+@media only screen and (max-width: 992px) {
+  .content-main-menu{
+    & > .container{
+      #navbar-main{
+        .nav-item:last-of-type{margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

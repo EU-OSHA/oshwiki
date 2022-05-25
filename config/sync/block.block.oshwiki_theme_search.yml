@@ -1,0 +1,23 @@
+uuid: d8055131-b958-413e-964a-1b477f8181e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - oshwiki_theme
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: oshwiki_theme_search
+theme: oshwiki_theme
+region: top_header_form
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

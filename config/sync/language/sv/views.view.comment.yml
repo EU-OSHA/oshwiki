@@ -1,0 +1,105 @@
+label: Kommentarer
+description: 'Hitta och hantera kommentarer.'
+display:
+  default:
+    display_title: Förvald
+    display_options:
+      title: Kommentarer
+      fields:
+        comment_bulk_form:
+          action_title: Åtgärd
+        subject:
+          label: Ämne
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Författare
+          separator: ', '
+        entity_id:
+          label: 'Inlagt i'
+          separator: ', '
+        changed:
+          label: Uppdaterad
+          separator: ', '
+        operations:
+          label: Funktioner
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'nästa ›'
+            previous: '‹ föregående'
+            first: '« första'
+            last: 'sista »'
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
+      exposed_form:
+        options:
+          submit_button: Filtrera
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      empty:
+        area_text_custom:
+          content: 'Inga kommentarer tillgängliga.'
+      filters:
+        subject:
+          expose:
+            label: Ämne
+        combine:
+          expose:
+            label: Författarnamn
+        langcode:
+          expose:
+            label: Språk
+      use_more_text: mer
+  page_published:
+    display_title: 'Publicerade kommentarer'
+    display_options:
+      display_description: 'Listan över godkända kommentarer.'
+      menu:
+        title: Kommentarer
+        description: 'Kommentarer publicerade'
+  page_unapproved:
+    display_title: 'Ej godkända kommentarer'
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Åtgärd
+        subject:
+          label: Ämne
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Författare
+          separator: ', '
+        entity_id:
+          label: 'Inlagt i'
+          separator: ', '
+        changed:
+          label: Uppdaterad
+          separator: ', '
+        operations:
+          label: Funktioner
+        name_1:
+          separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Ämne
+        combine:
+          expose:
+            label: Författarnamn
+        langcode:
+          expose:
+            label: Språk
+      display_description: 'Den ej godkända kommentarlistan.'
+      menu:
+        title: 'Ej godkända kommentarer'
+        description: 'Kommentarer ej godkända'

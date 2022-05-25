@@ -1,0 +1,61 @@
+display:
+  default:
+    display_title: Hoofd
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+          tags:
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laatste »'
+      fields:
+        state:
+          label: Status
+        label:
+          label: Label
+        type:
+          label: Type
+        progress:
+          label: Voortgang
+        word_count:
+          label: Woorden
+          separator: ', '
+        tags_count:
+          label: Labels
+          separator: ', '
+        changed:
+          label: Gewijzigd
+        operations:
+          label: Bewerkingen
+      arguments:
+        tjid:
+          exception:
+            title: Alle
+  checkout:
+    display_title: Afrekenen
+    display_options:
+      fields:
+        label:
+          label: Label
+        type:
+          label: Type
+        word_count:
+          label: Woorden
+          separator: ', '
+        changed:
+          label: Gewijzigd
+          separator: ', '
+  submitted:
+    display_title: Ingediend

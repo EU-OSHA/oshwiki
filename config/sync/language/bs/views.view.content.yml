@@ -1,0 +1,45 @@
+label: Sadržaj
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: Sadržaj
+      fields:
+        title:
+          label: Naslov
+        type:
+          label: 'Tip sadržaja'
+        name:
+          label: Autor
+        status:
+          label: Status
+          settings:
+            format_custom_true: Objavljeno
+        operations:
+          label: Operacije
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      filters:
+        title:
+          expose:
+            label: Naslov
+        type:
+          expose:
+            label: 'Tip sadržaja'
+        status:
+          expose:
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: Objavljeno
+  page_1:
+    display_title: Strana
+    display_options:
+      menu:
+        title: Sadržaj
+      tab_options:
+        title: Sadržaj

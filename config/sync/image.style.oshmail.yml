@@ -1,0 +1,25 @@
+uuid: 3b6cbbe2-e078-46cc-9aa1-69b363b79c56
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.osh_mail
+  module:
+    - crop
+name: oshmail
+label: OSHmail
+effects:
+  413dd156-555a-48e3-b923-fb439a7bcf39:
+    uuid: 413dd156-555a-48e3-b923-fb439a7bcf39
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: osh_mail
+  3d4b3774-cdfe-41b7-b10f-85ad275582ae:
+    uuid: 3d4b3774-cdfe-41b7-b10f-85ad275582ae
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

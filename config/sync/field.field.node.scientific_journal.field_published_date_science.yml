@@ -1,0 +1,25 @@
+uuid: 89d99460-b35e-4f8b-b024-7c35fafce780
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_date_science
+    - node.type.scientific_journal
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.scientific_journal.field_published_date_science
+field_name: field_published_date_science
+entity_type: node
+bundle: scientific_journal
+label: 'published date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,15 @@
+uuid: 7b64ec4d-db00-4b14-bd06-f28b142ce252
+langcode: en
+status: true
+dependencies: {  }
+name: 25th_anniversary
+label: '25th anniversary'
+effects:
+  8e88e847-c140-4e56-8c3c-d7e0776fac39:
+    uuid: 8e88e847-c140-4e56-8c3c-d7e0776fac39
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 545
+      height: 409
+      anchor: center-center

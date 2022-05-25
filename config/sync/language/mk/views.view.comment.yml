@@ -1,0 +1,26 @@
+label: Коментари
+display:
+  default:
+    display_options:
+      title: Коментари
+      fields:
+        name:
+          label: Автор
+      pager:
+        options:
+          tags:
+            previous: '‹ претходно'
+            first: '« прв'
+            last: 'последно »'
+          expose:
+            items_per_page_options_all_label: '- Сите -'
+  page_published:
+    display_title: 'Објавени коментари'
+    display_options:
+      menu:
+        title: Коментари
+  page_unapproved:
+    display_options:
+      fields:
+        name:
+          label: Автор

@@ -1,0 +1,7 @@
+default_config:
+  tags:
+    pages:
+      first_title: 'Téigh chuig an gcéad leathanach'
+      previous_title: 'Téigh chuig an leathanach roimhe'
+      next_title: 'Téigh chuig an gcéad leathanach eile'
+      last_title: 'Téigh chuig an leathanach deiridh'

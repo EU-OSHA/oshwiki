@@ -1,0 +1,35 @@
+uuid: e755a36c-ad5d-41df-9371-d173df24affe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.references_paragraph.field_number_references
+    - field.field.paragraph.references_paragraph.field_reference_references
+    - paragraphs.paragraphs_type.references_paragraph
+id: paragraph.references_paragraph.default
+targetEntityType: paragraph
+bundle: references_paragraph
+mode: default
+content:
+  field_number_references:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_reference_references:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: oshwiki_article_references
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

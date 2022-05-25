@@ -1,0 +1,18 @@
+uuid: aa0fea2a-ac13-4a9f-b0ea-84a861fbdccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.osh_categories
+id: taxonomy_term.osh_categories.name
+field_name: name
+entity_type: taxonomy_term
+bundle: osh_categories
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

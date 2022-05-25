@@ -1,0 +1,15 @@
+label: 'Son yorumlar'
+description: 'Son yorumlar.'
+display:
+  default:
+    display_title: Varsayılan
+    display_options:
+      title: 'Son yorumlar'
+      empty:
+        area_text_custom:
+          content: 'Yorum mevcut değil.'
+  block_1:
+    display_title: Blok
+    display_options:
+      block_description: 'Son yorumlar'
+      block_category: 'Listeler (Görünümler)'

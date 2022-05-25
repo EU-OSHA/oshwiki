@@ -1,0 +1,18 @@
+uuid: 9002a5f1-bf22-4d17-b831-a5acb694bc14
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.authors_content
+id: node.authors_content.title
+field_name: title
+entity_type: node
+bundle: authors_content
+label: 'Name and surname'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

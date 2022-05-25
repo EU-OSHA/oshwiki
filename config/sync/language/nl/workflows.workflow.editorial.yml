@@ -1,0 +1,20 @@
+label: Redactioneel
+type_settings:
+  states:
+    archived:
+      label: Gearchiveerd
+    draft:
+      label: Concept
+    published:
+      label: Gepubliceerd
+  transitions:
+    archive:
+      label: Archiveren
+    archived_draft:
+      label: 'Herstellen naar Concept'
+    archived_published:
+      label: Herstellen
+    create_new_draft:
+      label: 'Nieuw concept maken'
+    publish:
+      label: Publiceren

@@ -1,0 +1,25 @@
+uuid: 708d5d40-90ac-4e1c-a925-af0c5dbe820e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organization_authors
+    - node.type.authors_content
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.authors_content.field_organization_authors
+field_name: field_organization_authors
+entity_type: node
+bundle: authors_content
+label: Organization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

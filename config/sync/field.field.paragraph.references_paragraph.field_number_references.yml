@@ -1,0 +1,28 @@
+uuid: ec9c34cd-013e-4cac-a200-27cf4efb1755
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_number_references
+    - paragraphs.paragraphs_type.references_paragraph
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.references_paragraph.field_number_references
+field_name: field_number_references
+entity_type: paragraph
+bundle: references_paragraph
+label: number
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,15 @@
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      fields:
+        changed:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      use_more_text: Meira
+  block_1:
+    display_title: Blokk

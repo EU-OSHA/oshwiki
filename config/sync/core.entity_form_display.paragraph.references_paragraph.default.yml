@@ -1,0 +1,33 @@
+uuid: 8208c293-896d-4852-a127-43b520e90680
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.references_paragraph.field_number_references
+    - field.field.paragraph.references_paragraph.field_reference_references
+    - paragraphs.paragraphs_type.references_paragraph
+id: paragraph.references_paragraph.default
+targetEntityType: paragraph
+bundle: references_paragraph
+mode: default
+content:
+  field_number_references:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reference_references:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

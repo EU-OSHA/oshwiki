@@ -1,0 +1,72 @@
+label: Margmiðlunarefni
+description: 'Finna og stjórna margmiðlunarefni'
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      title: Margmiðlunarefni
+      fields:
+        media_bulk_form:
+          action_title: Aðgerð
+        thumbnail__target_id:
+          label: Smámynd
+          separator: ', '
+        name:
+          label: 'Nafn margmiðlunarefnis'
+          separator: ', '
+        bundle:
+          label: Gerð
+          separator: ', '
+        uid:
+          label: Höfundur
+          separator: ', '
+        status:
+          label: Staða
+          settings:
+            format_custom_false: 'Ekki birt'
+            format_custom_true: Birt
+          separator: ', '
+        changed:
+          label: Uppfært
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      pager:
+        options:
+          tags:
+            previous: '< Fyrri'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      empty:
+        area_text_custom:
+          content: 'Ekkert margmiðlunarefni aðgengilegt.'
+      filters:
+        name:
+          expose:
+            label: 'Nafn margmiðlunarefnis'
+        bundle:
+          expose:
+            label: Gerð
+        status:
+          expose:
+            label: Rétt
+          group_info:
+            group_items:
+              1:
+                title: Birt
+              2:
+                title: 'Ekki birt'
+        langcode:
+          expose:
+            label: Tungumál
+  media_page_list:
+    display_title: Margmiðlunarefni
+    display_options:
+      menu:
+        title: Margmiðlunarefni

@@ -1,0 +1,22 @@
+uuid: 9748b251-445c-4c02-8c5e-0ae02fa221f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scientific_journal
+id: node.scientific_journal.sticky
+field_name: sticky
+entity_type: node
+bundle: scientific_journal
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
