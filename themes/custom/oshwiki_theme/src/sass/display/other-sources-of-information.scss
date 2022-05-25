@@ -2,38 +2,54 @@
   #block-oshwiki-theme-content{
     .view-filters{
       .form-row{
-        display: flex;
+        display: grid;
+        grid-template-areas:
+            "search-input"
+            "sort-by "
+            "order-by "
+            "search-buttons" ;
         justify-content: center;
-        justify-items: center;
         margin-top: 0.7rem;
-        input{
-          width: 16rem;
-        }
-        select{
-          padding: 0.3rem 0.3rem 0.3rem 0.75rem;
-          border-radius: 0.25rem;
-          height: 2.5rem;
-          width: 16rem;
-        }
-        button{
-          padding: 0.3rem 0.8rem;
-          height: 2.5rem;
-          width: 7.5rem;
-        }
-        label{
-          margin-bottom: 0rem;
-        }
+        border-bottom: 1px dotted $bg-dark-medium-grey;
         .js-form-item-criteria, .js-form-item-sort-by, .js-form-item-sort-order{
           display: flex;
           flex-direction: column;
         }
+        .form-item-criteria{
+          grid-area: search-input;
+          label{
+            margin-bottom: 0rem;
+          }
+          input{
+            width: 16rem;
+          }
+        }
+        #edit-sort-by{
+          grid-area: sort-by;
+        }
+        .form-item-sort-order{
+          grid-area: order-by;
+        }
+        .form-item-sort-by, .form-item-sort-order{
+          label{
+            margin-bottom: 0rem;
+          }
+          select{
+            padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+            border-radius: 0.25rem;
+            height: 2.5rem;
+            width: 16rem;
+          }
+        }
         #edit-actions{
           display: flex;
-          flex-direction: row;
+          grid-area: search-buttons;
           gap: 1rem;
-        }
-        .form-actions{
-          align-self: center;
+          button{
+            padding: 0.3rem 0.8rem;
+            height: 2.5rem;
+            width: 7.5rem;
+          }
         }
       }
     }
@@ -80,44 +96,63 @@
 }
 
 /*Responsive design of the search and order box*/
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 460px) {
   .page-view-other-sources-of-information{
     #block-oshwiki-theme-content{
       .view-filters{
         .form-row{
-          display: grid;
           grid-template-areas:
             "search-input search-input"
             "sort-by order-by"
-            "search-button clear-button" ;
-          margin-top: 0.7rem;
-          input{
-            width: 16rem;
-            grid-area: search-input;
-          }
-          select{
-            width: 10rem;
-            &:first-of-type{
-              grid-area: sort-by;
-            }
-            &:nth-of-type(2){
-              grid-area: order-by;
+            "search-buttons search-buttons" ;
+          justify-content: start;
+          .form-item-criteria{
+            input{
+              width: 12rem;
             }
           }
-          button{
-            width: 4.5rem;
-            &:first-of-type{
-              grid-area: search-button;
-            }
-            &:nth-of-type(2){
-              grid-area: clear-button;
+          .form-item-sort-by, .form-item-sort-order{
+            select{
+              width: 12rem;
             }
           }
           #edit-actions{
-            gap: 1rem;
+            gap: 0.7rem;
+            button{
+              width: 4.5rem;
+            }
           }
         }
       }
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          grid-template-areas:
+            "search-input search-input search-input search-input"
+            "sort-by order-by search-buttons search-buttons" ;
+          justify-content: start;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          display: flex;
+          justify-content: start;
+        }
+      }
+    }
+  }
+}
+/*End comment responsive design of the search and order box*/

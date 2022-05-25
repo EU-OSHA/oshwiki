@@ -9,7 +9,7 @@
           "select-theme"
           "alphabetical-content";
         column-gap: 2rem;
-        .js-facet-block-id-glossarythemes{
+        #block-glossaryblock{
           grid-area: alphabet;
         }
         .block-facet-blocktheme-names {
@@ -21,9 +21,28 @@
       }
       /*End comment*/
     }
-    .view-footer{
-      @include textFormat(0.8rem, null, $bg-light-medium-grey);
-      text-align-last: center;
+  }
+
+  #block-glossaryblock{
+    .glossary-list{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 1rem;
+      padding: 0.32rem 0rem;
+      border : {
+        top: 1px solid $bg-light-medium-grey;
+        bottom: 1px solid $bg-light-medium-grey;
+      }
+      .glossary-item{
+        border: none;
+        font-size: 1.2rem;
+        color: $text-light-dark-grey;
+        a{
+          font-weight: bold;
+        }
+      }
     }
   }
 
@@ -69,28 +88,6 @@
     }
   }
 
-  .js-facet-block-id-glossarythemes{
-    margin-left: 1rem;
-    .list-group{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      border : {
-        radius: 0px;
-        top: 1px solid $bg-dark-medium-grey;
-        bottom: 1px solid $bg-dark-medium-grey;
-      }
-      li{
-        border: none;
-        font-size: 1.2rem;
-        color: $text-light-dark-grey;
-        a{
-          font-weight: bold;
-        }
-      }
-    }
-  }
   #block-oshwiki-theme-content{
     .view-content{
       display: flex;
@@ -138,9 +135,6 @@
     }
     .row{
       margin: 0rem;
-    }
-    nav{
-      padding: 1rem 0rem;
     }
   }
 }

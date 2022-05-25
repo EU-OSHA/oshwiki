@@ -72,6 +72,14 @@ ul {
   margin-left: auto;
 }
 
+.top-header-container.container.container-custom-header {
+  max-width: 1480px;
+}
+
+.container.container-custom-menu {
+  max-width: 1140px;
+}
+
 .btn-primary {
   background-color: #449FA2;
   border-color: #449FA2;
@@ -163,58 +171,76 @@ a:hover {
   text-decoration: underline;
 }
 
-.js-pager__items {
-  margin: 1rem;
+.pagerer-left-pane nav ul, .pagerer-right-pane nav ul {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.7rem;
+  padding-left: 0rem;
+  padding-top: 0.5rem;
+  margin-bottom: 0rem;
+  list-style: none;
 }
-.js-pager__items .page-item .page-link {
-  border: none;
-  border-radius: 40px;
+.pagerer-left-pane nav ul .pager__item, .pagerer-right-pane nav ul .pager__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 35px;
   min-height: 35px;
+  border-radius: 40px;
+}
+.pagerer-left-pane nav ul .pager__item a, .pagerer-right-pane nav ul .pager__item a {
   font-weight: bold;
   color: #449FA2;
-  text-align: center;
 }
-.js-pager__items .page-item .page-link:hover {
+.pagerer-left-pane nav ul .pager__item:hover a, .pagerer-right-pane nav ul .pager__item:hover a {
   color: #449FA2;
   background: transparent;
   text-decoration: underline;
 }
-.js-pager__items .page-item .page-link:focus {
+.pagerer-left-pane nav ul .pager__item:focus, .pagerer-right-pane nav ul .pager__item:focus {
   box-shadow: none;
 }
-.js-pager__items .pager__item--next > a {
-  border: none;
-  border-radius: 40px;
-  min-width: 40px;
-  min-height: 40px;
-  font-weight: bold;
-  color: #449FA2;
-}
-
-.js-pager__items .pager__item--next > a:hover {
-  color: #449FA2;
-  background: transparent;
-  text-decoration: underline;
-}
-.js-pager__items .pager__item--next > a:focus {
-  box-shadow: 0 0 0 0.2rem #D5E6E6;
-}
-.js-pager__items .active .page-link {
+.pagerer-left-pane nav ul .is-active, .pagerer-right-pane nav ul .is-active {
   background-color: #449FA2;
+}
+.pagerer-left-pane nav ul .is-active a, .pagerer-right-pane nav ul .is-active a {
   font-weight: bold;
   color: #FFFFFF;
-  text-align: center;
 }
-.js-pager__items .active .page-link:hover {
-  color: #FFFFFF;
+.pagerer-left-pane nav ul .is-active:hover, .pagerer-right-pane nav ul .is-active:hover {
   background-color: #449FA2;
+}
+.pagerer-left-pane nav ul .is-active:hover a, .pagerer-right-pane nav ul .is-active:hover a {
+  color: #FFFFFF;
   text-decoration: underline;
 }
+.pagerer-left-pane nav ul .pager__item--ellipsis, .pagerer-right-pane nav ul .pager__item--ellipsis {
+  display: none;
+}
 
+.view-footer {
+  font-size: 0.8rem;
+  color: #A2ACB4;
+  padding-top: 0.5rem;
+  text-align-last: end;
+}
+
+/*Hide the shortest pagination*/
+@media only screen and (max-width: 768px) {
+  div.pagerer-left-pane {
+    display: none;
+  }
+}
+/*Hide the longest pagination*/
+@media only screen and (min-width: 768px) {
+  div.pagerer-right-pane {
+    display: none;
+  }
+
+  div.pagerer-left-pane {
+    display: table-cell;
+  }
+}
 /*Style alphabetical view and themes view tabs*/
 .page-view-alphabetical-view .nav-tabs, .page-view-themes .nav-tabs {
   border-top: 1px solid #A2ACB4;
@@ -268,7 +294,7 @@ a:hover {
   grid-template-areas: "alphabet" "select-theme" "alphabetical-content";
   column-gap: 2rem;
 }
-.page-view-alphabetical-view .container #main > .section .js-facet-block-id-glossarythemes {
+.page-view-alphabetical-view .container #main > .section #block-glossaryblock {
   grid-area: alphabet;
 }
 .page-view-alphabetical-view .container #main > .section .block-facet-blocktheme-names {
@@ -277,10 +303,23 @@ a:hover {
 .page-view-alphabetical-view .container #main > .section #block-oshwiki-theme-content {
   grid-area: alphabetical-content;
 }
-.page-view-alphabetical-view .container .view-footer {
-  font-size: 0.8rem;
-  color: #A2ACB4;
-  text-align-last: center;
+.page-view-alphabetical-view #block-glossaryblock .glossary-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 0.32rem 0rem;
+  border-top: 1px solid #A2ACB4;
+  border-bottom: 1px solid #A2ACB4;
+}
+.page-view-alphabetical-view #block-glossaryblock .glossary-list .glossary-item {
+  border: none;
+  font-size: 1.2rem;
+  color: #B0B2B3;
+}
+.page-view-alphabetical-view #block-glossaryblock .glossary-list .glossary-item a {
+  font-weight: bold;
 }
 .page-view-alphabetical-view .block-facet-blocktheme-names {
   margin: 1rem 0rem;
@@ -323,26 +362,6 @@ a:hover {
 }
 .page-view-alphabetical-view .block-facet-blocktheme-names .is-active span:first-of-type {
   display: none;
-}
-.page-view-alphabetical-view .js-facet-block-id-glossarythemes {
-  margin-left: 1rem;
-}
-.page-view-alphabetical-view .js-facet-block-id-glossarythemes .list-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 0px;
-  border-top: 1px solid #616161;
-  border-bottom: 1px solid #616161;
-}
-.page-view-alphabetical-view .js-facet-block-id-glossarythemes .list-group li {
-  border: none;
-  font-size: 1.2rem;
-  color: #B0B2B3;
-}
-.page-view-alphabetical-view .js-facet-block-id-glossarythemes .list-group li a {
-  font-weight: bold;
 }
 .page-view-alphabetical-view #block-oshwiki-theme-content .view-content {
   display: flex;
@@ -392,9 +411,6 @@ a:hover {
 .page-view-alphabetical-view #block-oshwiki-theme-content .row {
   margin: 0rem;
 }
-.page-view-alphabetical-view #block-oshwiki-theme-content nav {
-  padding: 1rem 0rem;
-}
 
 @media only screen and (min-width: 992px) {
   .page-view-alphabetical-view .container #main {
@@ -422,6 +438,11 @@ a:hover {
 .node--type-oshwiki-articles .dates_and_social_media .article_dates {
   grid-area: date;
   padding: 0.3rem 0rem;
+  /*Set at the same height has the "share this on" block*/
+  /*End comment*/
+}
+.node--type-oshwiki-articles .dates_and_social_media .article_dates > p:first-of-type {
+  margin-top: 9px;
 }
 .node--type-oshwiki-articles .dates_and_social_media #share-this-on {
   grid-area: share;
@@ -578,7 +599,7 @@ a:hover {
   padding-bottom: 1rem;
 }
 .node--type-oshwiki-articles .related-articles > .container h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -809,7 +830,7 @@ a:hover {
   margin-top: 1.5rem;
 }
 .page-view-frontpage .section_featured_articles > .container h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -856,7 +877,6 @@ a:hover {
   color: #FFFFFF;
 }
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper a:nth-of-type(2) {
-  order: 3;
   font-size: 1.2rem;
   color: #212121;
   align-self: start;
@@ -872,7 +892,7 @@ a:hover {
   margin-top: 1.5rem;
 }
 .page-view-frontpage .section_most_popular > .container h2, .page-view-frontpage .section_most_recent > .container h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #449FA2;
   margin-bottom: 1rem;
 }
@@ -940,7 +960,7 @@ a:hover {
   margin: 1.5rem 0rem;
 }
 .page-view-frontpage .section_other_sources > .container h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #58585A;
   margin-bottom: 1rem;
 }
@@ -1037,39 +1057,49 @@ a:hover {
   }
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row {
-  display: flex;
+  display: grid;
+  grid-template-areas: "search-input" "sort-by " "order-by " "search-buttons";
   justify-content: center;
-  justify-items: center;
   margin-top: 0.7rem;
-}
-.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row input {
-  width: 16rem;
-}
-.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row select {
-  padding: 0.3rem 0.3rem 0.3rem 0.75rem;
-  border-radius: 0.25rem;
-  height: 2.5rem;
-  width: 16rem;
-}
-.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row button {
-  padding: 0.3rem 0.8rem;
-  height: 2.5rem;
-  width: 7.5rem;
-}
-.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row label {
-  margin-bottom: 0rem;
+  border-bottom: 1px dotted #616161;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .js-form-item-criteria, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .js-form-item-sort-by, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .js-form-item-sort-order {
   display: flex;
   flex-direction: column;
 }
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria {
+  grid-area: search-input;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria label {
+  margin-bottom: 0rem;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
+  width: 16rem;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-sort-by {
+  grid-area: sort-by;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order {
+  grid-area: order-by;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by label, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order label {
+  margin-bottom: 0rem;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
+  padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  width: 16rem;
+}
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions {
   display: flex;
-  flex-direction: row;
+  grid-area: search-buttons;
   gap: 1rem;
 }
-.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions {
-  align-self: center;
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions button {
+  padding: 0.3rem 0.8rem;
+  height: 2.5rem;
+  width: 7.5rem;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-content {
   display: flex;
@@ -1113,38 +1143,37 @@ a:hover {
 }
 
 /*Responsive design of the search and order box*/
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 460px) {
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row {
-    display: grid;
-    grid-template-areas: "search-input search-input" "sort-by order-by" "search-button clear-button";
-    margin-top: 0.7rem;
+    grid-template-areas: "search-input search-input" "sort-by order-by" "search-buttons search-buttons";
+    justify-content: start;
   }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row input {
-    width: 16rem;
-    grid-area: search-input;
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
+    width: 12rem;
   }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row select {
-    width: 10rem;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row select:first-of-type {
-    grid-area: sort-by;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row select:nth-of-type(2) {
-    grid-area: order-by;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row button {
-    width: 4.5rem;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row button:first-of-type {
-    grid-area: search-button;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row button:nth-of-type(2) {
-    grid-area: clear-button;
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
+    width: 12rem;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions {
-    gap: 1rem;
+    gap: 0.7rem;
+  }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions button {
+    width: 4.5rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row {
+    grid-template-areas: "search-input search-input search-input search-input" "sort-by order-by search-buttons search-buttons";
+    justify-content: start;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row {
+    display: flex;
+    justify-content: start;
+  }
+}
+/*End comment responsive design of the search and order box*/
 .warning-message {
   padding: 1rem;
   margin: 1.5rem 0rem;
@@ -1462,9 +1491,6 @@ a:hover {
   margin-top: 0.2rem;
   background: url("../images/green-arrow_see_more.png") no-repeat;
 }
-.page-view-themes #block-oshwiki-theme-content .js-pager__items, .page-view-themes #block-views-block-themes-block-1 .js-pager__items {
-  margin: 1.5rem 0rem;
-}
 .page-view-themes #block-oshwiki-theme-content .view-filters .form-row {
   margin-top: 0.7rem;
 }
@@ -1502,6 +1528,17 @@ a:hover {
   margin: 1.5rem 0rem;
 }
 
+/*Adapt select-theme block in order to keep the "+" icon responsive*/
+@media only screen and (min-width: 400px) {
+  .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links span.facet-item__value {
+    max-width: 15rem;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .page-view-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .span.facet-item__value {
+    max-width: 25rem;
+  }
+}
 @media only screen and (min-width: 992px) {
   .page-view-themes .container #main {
     /*Responsive layout with grid-area*/
@@ -1852,41 +1889,45 @@ a:hover {
 #share-this-on .a2a_s__default {
   background-color: transparent !important;
 }
-#share-this-on .a2a_button_facebook {
+#share-this-on .a2a_button_facebook, #share-this-on .a2a_button_twitter, #share-this-on .a2a_button_linkedin_share {
   float: left;
   display: block;
+  margin: 0rem 0.2rem;
   width: 20px;
   height: 20px;
-  margin-top: 4px;
-  margin-right: 10px;
-  background: url(../images/icon-facebook.svg) no-repeat;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#share-this-on .a2a_button_facebook > *, #share-this-on .a2a_button_twitter > *, #share-this-on .a2a_button_linkedin_share > * {
+  display: none;
+}
+#share-this-on .a2a_button_facebook {
+  margin-left: 0rem;
+  background-image: url(../images/icon-facebook.svg);
 }
 #share-this-on .a2a_button_twitter {
-  float: left;
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-top: 4px;
-  margin-right: 10px;
-  background: url(../images/icon-twitter.svg) no-repeat;
+  width: 22px;
+  background-size: 102%;
+  background-image: url(../images/icon-twitter.svg);
 }
 #share-this-on .a2a_button_linkedin_share {
-  float: left;
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-top: 4px;
-  margin-right: 10px;
-  background: url(../images/icon-linkedin.svg) no-repeat;
-}
-#share-this-on .a2a_button_linkedin_share span {
-  width: 20px;
+  background-image: url(../images/icon-linkedin.svg);
 }
 #share-this-on .a2a_button_linkedin_share button {
   visibility: hidden !important;
 }
 #share-this-on a:hover {
   opacity: 0.8;
+}
+
+body.node--type-scientific-journal #share-this-on .a2a_button_facebook {
+  background-image: url(../images/icon-facebook-orange.svg);
+}
+body.node--type-scientific-journal #share-this-on .a2a_button_twitter {
+  background-image: url(../images/icon-twitter-orange.svg);
+}
+body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
+  background-image: url(../images/icon-linkedin-orange.svg);
 }
 
 .site-footer {

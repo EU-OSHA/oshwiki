@@ -89,8 +89,13 @@
   <div class="col-lg-9 col-12 order-2">
     <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
 
-      <div class="scientific_year">
-        {{ 'Year of the article:' | trans }} {{ content.field_year_science|raw }}
+      <div class="year_and_social_media">
+        <div class="scientific_year">
+          {{ 'Year of the article:' | trans }} {{ content.field_year_science|raw }}
+        </div>
+        <div class="social_media">
+          {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
+        </div>
       </div>
 
       <div class="scientific_image">
