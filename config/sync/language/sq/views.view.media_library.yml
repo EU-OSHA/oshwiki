@@ -18,6 +18,9 @@ display:
         name:
           expose:
             label: Emri
+        langcode:
+          expose:
+            label: Language
   page:
     display_title: Faqe
     display_options:

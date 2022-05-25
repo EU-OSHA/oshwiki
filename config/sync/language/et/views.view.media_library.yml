@@ -55,6 +55,9 @@ display:
             label: 'Meedia tüüp'
           group_info:
             label: 'Meedia tüüp'
+        langcode:
+          expose:
+            label: Language
   page:
     display_title: Lehekülg
     display_options:

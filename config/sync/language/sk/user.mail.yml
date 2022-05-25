@@ -1,5 +1,6 @@
 cancel_confirm:
   subject: 'Žiadosť o zrušenie účtu pre [user:display-name] na [site:name]'
+  body: "[user:display-name]\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
 password_reset:
   subject: 'Zmena prihlasovacích údajov pre [user:display-name] na [site:name]'
   body: "[user:display-name],\r\n\r\nPožiadali ste o reset hesla pre váš účet na [site:name].\r\n\r\nTeraz sa môžete prihlásiť kliknutím na uvedený link alebo jeho skopírovaním a vložením do vášho prehliadača:\r\n\r\n[user:one-time-login-url]\r\n\r\nTento prihlasovací link môže byť použitý iba raz a zavedie vás na stránku, na ktorej si môžete nastaviť nové heslo. Platnosť linku vyprší za jeden deň a ak ho nevyužijete, vaše prihlasovacie údaje sa nezmenia.\r\n\r\n--  Tím [site:name]"

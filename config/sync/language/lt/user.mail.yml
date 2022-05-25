@@ -1,5 +1,6 @@
 cancel_confirm:
   subject: 'Paskyros panaikinimas [user:display-name] - [site:name]'
+  body: "[user:display-name]\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
 password_reset:
   subject: 'Prisijungimo informacijos keitimas [user:display-name] - [site:name]'
   body: "[user:display-name],\r\n\r\nJūsų paskyros slaptažodžio atkūrimo prašymas gautas iš [site:name].\r\n\r\nGalite prisijungti paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠi nuoroda gali būti panaudota tik vieną kartą, ji jus nukreips į puslapį kur galėsite nustatyti savo slaptažodį. Ji galios vieną dieną ir jei nebus panaudota nieko neatsitiks.\r\n\r\n--  [site:name] komanda"
@@ -11,13 +12,16 @@ register_no_approval_required:
   body: "[user:display-name],\r\n\r\nDėkojame, kad užsiregistravote [site:name]. Jūs galite prisijungti paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠi nuoroda gali būti panaudota tik vieną kartą, ji Jus nukreips į puslapį kur galėsite nustatyti savo slaptažodį.\r\n\r\nPo to kai nustatysite slaptažodį prie svetainės galėsite prisijungti [site:login-url] naudodami:\r\n\r\nprisijungimo vardas: [user:name]\r\nslaptažodis: Jūsų slaptažodis\r\n\r\n--  [site:name] komanda"
 register_pending_approval:
   subject: 'Paskyros informacija [user:display-name] - [site:name] (laukiama administratoriaus patvirtinimo)'
+  body: "[user:display-name],\r\n\r\nThank you for registering at [site:name]. Your application for an account is currently pending approval. Once it has been approved, you will receive another email containing information about how to log in, set your password, and other details.\r\n\r\n--  [site:name] team"
 register_pending_approval_admin:
   subject: 'Paskyros informacija [user:display-name] - [site:name] (laukiama administratoriaus patvirtinimo)'
+  body: "[user:display-name] has applied for an account.\r\n\r\n[user:edit-url]"
 status_activated:
   subject: 'Paskyros informacija [user:display-name] - [site:name] (patvirtinta)'
   body: "[user:display-name],\r\n\r\nJūsų paskyra svetainėje [site:name] buvo aktyvuota. \r\n\r\nJūs galite prisijungti paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠi nuoroda gali būti panaudota tik vieną kartą, ji Jus nukreips į puslapį kur galėsite nustatyti savo slaptažodį.\r\n\r\nPo to kai nustatysite slaptažodį prie svetainės galėsite prisijungti [site:login-url] naudodami:\r\n\r\nprisijungimo vardas: [user:account-name]\r\nslaptažodis: Jūsų slaptažodis\r\n\r\n--  [site:name] komanda"
 status_blocked:
   subject: 'Paskyros informacija [user:display-name] - [site:name] (užblokuota)'
+  body: "[user:display-name],\r\n\r\nYour account on [site:name] has been blocked.\r\n\r\n--  [site:name] team"
 status_canceled:
   subject: 'Paskyros informacija [user:display-name] - [site:name] (panaikinta)'
   body: "[user:display-name],\r\n\r\nJūsų paskyra - [site:name] buvo panaikinta.\r\n\r\n--  [site:name] komanda"
