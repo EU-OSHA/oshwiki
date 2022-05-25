@@ -172,9 +172,7 @@
         }
       }
     }
-    .js-pager__items{
-      margin: 1.5rem 0rem;
-    }
+
   }
 
   #block-oshwiki-theme-content{
@@ -220,6 +218,34 @@
   /*End comment*/
 
 
+}
+
+/*Adapt select-theme block in order to keep the "+" icon responsive*/
+@media only screen and (min-width: 400px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 15rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 650px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          .span.facet-item__value{
+            max-width: 25rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) {
