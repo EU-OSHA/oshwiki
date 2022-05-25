@@ -17,6 +17,11 @@
     .article_dates{
       grid-area: date;
       padding: 0.3rem 0rem;
+      /*Set at the same height has the "share this on" block*/
+      & > p:first-of-type{
+        margin-top: 9px;
+      }
+      /*End comment*/
     }
     #share-this-on{
       grid-area: share;

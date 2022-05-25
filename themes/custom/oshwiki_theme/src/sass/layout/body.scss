@@ -9,8 +9,8 @@
     font-size: 0.9rem;
     margin-top: -3px;
     padding-right: 10px;
-
   }
+
   .a2a_svg{
     svg {
       display: none;
@@ -19,35 +19,33 @@
   .a2a_s__default{
     background-color: transparent !important;
   }
-  .a2a_button_facebook{
+  .a2a_button_facebook, .a2a_button_twitter, .a2a_button_linkedin_share{
     float: left;
     display: block;
+    margin: 0rem 0.2rem;
     width: 20px;
     height: 20px;
-    margin-top: 4px;
-    margin-right: 10px;
-    background: url(../images/icon-facebook.svg) no-repeat;
+    background:{
+      position: 50% 50%;
+      repeat: no-repeat;
+    }
+    & > *{
+      display: none;
+    }
+  }
+  .a2a_button_facebook{
+    margin-left: 0rem;
+    background-image: url(../images/icon-facebook.svg);
   }
   .a2a_button_twitter{
-    float: left;
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-top: 4px;
-    margin-right: 10px;
-    background: url(../images/icon-twitter.svg) no-repeat;
+    width: 22px;
+    background:{
+      size: 102%;
+      image: url(../images/icon-twitter.svg);
+    }
   }
   .a2a_button_linkedin_share{
-    float: left;
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-top: 4px;
-    margin-right: 10px;
-    background: url(../images/icon-linkedin.svg) no-repeat;
-    span{
-      width: 20px;
-    }
+    background-image: url(../images/icon-linkedin.svg);
     button{
       visibility: hidden !important;
     }
@@ -55,5 +53,19 @@
 
   a:hover{
     opacity: 0.8;
+  }
+}
+
+body.node--type-scientific-journal{
+  #share-this-on{
+    .a2a_button_facebook{
+      background-image: url(../images/icon-facebook-orange.svg);
+    }
+    .a2a_button_twitter{
+      background-image: url(../images/icon-twitter-orange.svg);
+    }
+    .a2a_button_linkedin_share{
+      background-image: url(../images/icon-linkedin-orange.svg);
+    }
   }
 }
