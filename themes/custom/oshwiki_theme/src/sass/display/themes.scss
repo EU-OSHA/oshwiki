@@ -8,7 +8,8 @@
           "select-theme"
           "theme-content"
           "other-articles-in-English";
-        #block-themesnormalsearchthemes{
+        column-gap: 2rem;
+        .block-facet--links{
           grid-area: select-theme;
         }
         #block-oshwiki-theme-content{
@@ -21,96 +22,6 @@
       /*End comment*/
     }
   }
-  #block-oshwiki-theme-content, #block-views-block-themes-block-1{
-    margin-left: 1rem;
-    h2{
-      @include textFormat(1.4rem, 500, $text-dark-dark-grey);
-    }
-    .views-exposed-form{
-      fieldset{
-        display: flex;
-        flex-direction: column;
-      }
-      button{
-        padding: 0rem 0.5rem;
-      }
-    }
-    .view-content{
-      display: flex;
-      flex-direction: column;
-      margin-left: 0px;
-      margin-right: 0px;
-      .views-row{
-        padding: 1rem 0rem;
-        border-bottom: 1px dotted $bg-dark-medium-grey;
-        .views-field-title{
-          a{
-            @include textFormat(1.1rem, 700, $text-dark-green);
-          }
-        }
-        .views-field-url{
-          display: flex;
-          flex-direction: row-reverse;
-          padding-top: 0.5rem;
-          letter-spacing: 0.3px;
-          line-height: 29px;
-          span{
-            display: flex;
-            align-items: center;
-            a {
-              @include textFormat(0.9rem, null, $text-dark-green);
-              &:hover{
-               text-decoration: underline;
-              }
-            }
-          }
-          span::after{
-            display: inline-block;
-            content: " ";
-            width: 14px;
-            height: 14px;
-            margin-left: 0.5rem;
-            margin-top: 0.2rem;
-            background: url('../images/green-arrow_see_more.png') no-repeat;
-          }
-        }
-      }
-    }
-    .js-pager__items{
-      margin: 1.5rem 0rem;
-    }
-  }
-
-  #block-oshwiki-theme-content{
-    .view-content{
-      /*Show first result bigger*/
-      .views-row:first-of-type{
-        .views-field-title{
-          a{
-            @include textFormat(1.3rem, 700, $text-dark-green);
-          }
-        }
-        .views-field-field-sections-oshwiki{
-          @include textFormat(1rem, null, $text-dark-dark-grey);
-          letter-spacing: 0.3px;
-          line-height: 29px;
-        }
-        .views-field-url{
-          letter-spacing: 0.3px;
-          line-height: 29px;
-        }
-      }
-    }
-  }
-
-  #block-views-block-themes-block-1{
-    padding: 1rem 0rem;
-    h2{
-      font-weight: bold;
-      margin-top: 1.5rem;
-    }
-  }
-
 
   /*Block select theme*/
   .block-facet-blockthemes-normal-search-themes{
@@ -160,7 +71,16 @@
           }
         }
         .facet-item--expanded, .facet-item{
-           list-style: none;
+          list-style: none;
+          position: relative;
+        }
+        li > .showSubthemes{
+          position: absolute;
+          top: 6px;
+        }
+        span.facet-item__value {
+          max-width: 190px;
+          display: inline-block;
         }
       }
 
@@ -170,8 +90,7 @@
           font-weight: bold;
         }
         .showSubthemes{
-          margin: 0.3rem 0rem 0.3rem 1rem;
-          height: 3px;
+          height: 13px;
           background: url('../images/orange_minus_select_theme.png');
         }
       }
@@ -193,7 +112,190 @@
     }
   }
   /*End comment*/
+
+  /*Block main content*/
+  #block-oshwiki-theme-content, #block-views-block-themes-block-1{
+    h2{
+      @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+    }
+    .views-exposed-form{
+      fieldset{
+        display: flex;
+        flex-direction: column;
+      }
+      button{
+        padding: 0rem 0.5rem;
+      }
+      label{
+        margin-bottom: 0.2rem;
+        @include textFormat(0.9rem, 700, $text-dark-dark-grey);
+      }
+    }
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 1rem;
+      .views-row{
+        padding: 1rem 0rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .views-field-title{
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-url{
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 0.5rem;
+          letter-spacing: 0.3px;
+          line-height: 29px;
+          span{
+            display: flex;
+            align-items: center;
+            a {
+              margin-top: 3px;
+              @include textFormat(0.9rem, null, $text-dark-green);
+              &:hover{
+               text-decoration: underline;
+              }
+            }
+          }
+          span::after{
+            display: inline-block;
+            content: " ";
+            width: 14px;
+            height: 14px;
+            margin-left: 0.5rem;
+            margin-top: 0.2rem;
+            background: url('../images/green-arrow_see_more.png') no-repeat;
+          }
+        }
+      }
+    }
+
+  }
+
+  #block-oshwiki-theme-content{
+    .view-filters{
+      .form-row{
+        margin-top: 0.7rem;
+        select{
+          padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+          border-radius: 0.25rem;
+          height: 2.5rem;
+          color: $text-dark-green;
+          border: 1px solid $bg-dark-green;
+          background: $bg-white;
+        }
+        button{
+          padding: 0.3rem 0.8rem;
+          height: 2.5rem;
+        }
+      }
+    }
+    .view-content{
+      /*Show first result bigger*/
+      .views-row:first-of-type{
+        border-top: 1px dotted $bg-dark-medium-grey;
+        .views-field-title{
+          a{
+            @include textFormat(1.3rem, 700, $text-dark-green);
+          }
+        }
+        .views-field-field-sections-oshwiki{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
+          letter-spacing: 0.3px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+
+  #block-views-block-themes-block-1{
+    padding: 1rem 0rem;
+    h2{
+      font-weight: bold;
+      margin: 1.5rem 0rem;
+    }
+  }
+  /*End comment*/
+
+
 }
+
+/*Adapt select-theme block in order to keep the "+" icon responsive*/
+@media only screen and (min-width: 400px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 15rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 35rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 10rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .page-view-themes{
+    .block-facet-blockthemes-normal-search-themes{
+      .facets-widget-links{
+        .item-list__links{
+          span.facet-item__value{
+            max-width: 12rem;
+          }
+        }
+      }
+    }
+  }
+}
+/*End comment - adapt select-theme block in order to keep the "+" icon responsive*/
 
 @media only screen and (min-width: 992px) {
   .page-view-themes{

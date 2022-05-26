@@ -11,14 +11,19 @@
     grid-template-areas:
         "date"
         "share";
-    p{
+    p, span{
       @include textFormat(0.9rem, null, $text-dark-medium-grey);
     }
     .article_dates{
       grid-area: date;
       padding: 0.3rem 0rem;
+      /*Set at the same height has the "share this on" block*/
+      & > p:first-of-type{
+        margin-top: 9px;
+      }
+      /*End comment*/
     }
-    .social-media{
+    #share-this-on{
       grid-area: share;
       padding: 0.3rem 0rem;
     }
@@ -159,15 +164,6 @@
   .related-articles{
     @include otherArticles($bg-light-green, $bg-dark-green, $text-dark-green, 1fr 1.5fr 1fr);
     padding-bottom: 1rem;
-  }
-
-  .select-theme-article{
-    height: fit-content;
-    .select-theme-article-title-box{
-      p{
-        @include textFormat(1.3rem, null, $text-white);
-      }
-    }
   }
 }
 

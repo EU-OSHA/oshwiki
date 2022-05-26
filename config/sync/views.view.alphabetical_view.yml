@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_themes_oshwiki
     - search_api.index.oshwiki_index
   module:
+    - pagerer
     - search_api
 id: alphabetical_view
 label: 'Alphabetical View'
@@ -228,26 +229,21 @@ display:
               themes:
                 display_method: label
       pager:
-        type: full
+        type: pagerer
         options:
           offset: 0
           items_per_page: 10
-          total_pages: null
-          id: 0
-          tags:
-            next: ›
-            previous: ‹
-            first: «
-            last: »
+          preset: pagination
+          id: '0'
+          total_pages: ''
           expose:
-            items_per_page: false
+            items_per_page: 0
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
+            items_per_page_options_all: 0
             items_per_page_options_all_label: '- All -'
-            offset: false
+            offset: 0
             offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
