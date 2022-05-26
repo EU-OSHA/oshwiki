@@ -1813,7 +1813,6 @@ a:hover {
     max-width: 12rem;
   }
 }
-
 /*End comment - adapt select-theme block in order to keep the "+" icon responsive*/
 @media only screen and (min-width: 992px) {
   .page-view-themes .container #main {
@@ -1952,6 +1951,21 @@ a:hover {
   width: 20px;
   height: 20px;
   background-image: url("../images/Icon-awesome-print.svg");
+}
+
+/*Orange underline of "home" menu option*/
+.page-view-frontpage .content-main-menu ul li:nth-child(1) {
+  position: relative;
+}
+.page-view-frontpage .content-main-menu ul li:nth-child(1):after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: -14px;
+  left: 0%;
+  right: 0%;
+  height: 0.3rem;
+  background: #F6A400;
 }
 
 .content-main-menu {
