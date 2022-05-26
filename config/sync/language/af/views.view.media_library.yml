@@ -24,6 +24,9 @@ display:
         name:
           expose:
             label: Naam
+        langcode:
+          expose:
+            label: Language
   page:
     display_title: Bladsy
     display_options:

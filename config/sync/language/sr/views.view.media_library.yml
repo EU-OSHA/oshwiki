@@ -21,6 +21,9 @@ display:
         name:
           expose:
             label: Име
+        langcode:
+          expose:
+            label: Language
   page:
     display_options:
       fields:

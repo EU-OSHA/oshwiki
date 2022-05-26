@@ -35,6 +35,9 @@ display:
         name:
           expose:
             label: Nosaukums
+        langcode:
+          expose:
+            label: Language
   page:
     display_title: Lapa
     display_options:

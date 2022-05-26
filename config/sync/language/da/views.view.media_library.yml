@@ -56,6 +56,9 @@ display:
             label: 'Medie type'
           group_info:
             label: 'Medie type'
+        langcode:
+          expose:
+            label: Language
   page:
     display_title: Side
     display_options:

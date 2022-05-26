@@ -1,4 +1,10 @@
 display:
+  default:
+    display_options:
+      filters:
+        langcode:
+          expose:
+            label: Language
   page:
     display_options:
       fields:

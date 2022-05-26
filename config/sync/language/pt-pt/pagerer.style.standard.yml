@@ -3,10 +3,10 @@ default_config:
     page_breaker: …
     pages:
       prefix_label: Página
-      first: '« First'
-      previous: '‹ Previous'
-      next: 'Next ›'
-      last: 'Last »'
+      first: '« Primeira'
+      previous: '‹ Anterior'
+      next: 'Seguinte ›'
+      last: 'Última »'
       page_current_title: 'Página atual'
       first_title: 'Ir para a primeira página'
       previous_title: 'Regressar à página anterior.'
@@ -20,16 +20,16 @@ default_config:
       last_reader: 'Última página'
     items:
       prefix_label: Item
-      first: '« First'
-      previous: '‹ Previous'
-      next: 'Next ›'
-      last: 'Last »'
+      first: '« Primeira'
+      previous: '‹ Anterior'
+      next: 'Seguinte ›'
+      last: 'Última »'
       page_reader: Item
       first_reader: 'Primeiro item'
     item_ranges:
       prefix_label: Itens
-      first: '« First'
-      previous: '‹ Previous'
-      next: 'Next ›'
-      last: 'Last »'
+      first: '« Primeira'
+      previous: '‹ Anterior'
+      next: 'Seguinte ›'
+      last: 'Última »'
       page_reader: Itens

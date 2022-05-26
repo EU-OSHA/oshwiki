@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Startpunt
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Vorige'
+            next: 'Volgende ›'
+            first: '« Eerste'
+            last: 'Laatste »'
       fields:
         tmgmt_local_task_bulk_form:
           label: Bulk-update

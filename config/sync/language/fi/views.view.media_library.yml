@@ -47,6 +47,9 @@ display:
             label: 'Median tyyppi'
           group_info:
             label: 'Median tyyppi'
+        langcode:
+          expose:
+            label: Language
   page:
     display_title: Sivu
     display_options:

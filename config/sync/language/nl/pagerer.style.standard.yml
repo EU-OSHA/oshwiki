@@ -3,10 +3,10 @@ default_config:
     page_breaker: …
     pages:
       prefix_label: Pagina
-      first: '« First'
-      previous: '‹ Previous'
-      next: 'Next ›'
-      last: 'Last »'
+      first: '« Eerste'
+      previous: '‹ Vorige'
+      next: 'Volgende ›'
+      last: 'Laatste »'
       page_current_title: 'Huidige pagina'
       first_title: 'Ga naar eerste pagina'
       previous_title: 'Ga naar vorige pagina'
@@ -20,16 +20,16 @@ default_config:
       last_reader: 'Laatste pagina'
     items:
       prefix_label: Item
-      first: '« First'
-      previous: '‹ Previous'
-      next: 'Next ›'
-      last: 'Last »'
+      first: '« Eerste'
+      previous: '‹ Vorige'
+      next: 'Volgende ›'
+      last: 'Laatste »'
       page_reader: Item
       first_reader: 'Eerste item'
     item_ranges:
       prefix_label: Items
-      first: '« First'
-      previous: '‹ Previous'
-      next: 'Next ›'
-      last: 'Last »'
+      first: '« Eerste'
+      previous: '‹ Vorige'
+      next: 'Volgende ›'
+      last: 'Laatste »'
       page_reader: Items

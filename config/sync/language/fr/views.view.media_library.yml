@@ -29,6 +29,9 @@ display:
         name:
           expose:
             label: Nom
+        langcode:
+          expose:
+            label: Language
   page:
     display_title: Page
     display_options:
