@@ -1,9 +1,0 @@
-display:
-  completed:
-    display_options:
-      menu:
-        title: Déanta
-  pending:
-    display_options:
-      menu:
-        title: 'Ar feitheamh'
