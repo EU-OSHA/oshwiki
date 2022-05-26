@@ -131,7 +131,26 @@
     }
   }
 }
-
+/*Orange underline of "home" menu option*/
+.page-view-frontpage{
+  .content-main-menu{
+    ul{
+      li:nth-child(1){
+        position: relative;
+        &:after{
+          display: block;
+          position: absolute;
+          content: '';
+          bottom: -14px;
+          left: 0%;
+          right: 0%;
+          height: 0.3rem;
+          background: $bg-dark-orange;
+        }
+      }
+    }
+  }
+}
 .content-main-menu{
   border: {
     color: $bg-very-light-grey;
