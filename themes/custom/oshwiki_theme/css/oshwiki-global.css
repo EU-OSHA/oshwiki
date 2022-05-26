@@ -1813,6 +1813,7 @@ a:hover {
     max-width: 12rem;
   }
 }
+
 /*End comment - adapt select-theme block in order to keep the "+" icon responsive*/
 @media only screen and (min-width: 992px) {
   .page-view-themes .container #main {
