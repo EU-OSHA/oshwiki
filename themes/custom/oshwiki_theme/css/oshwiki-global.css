@@ -1066,7 +1066,10 @@ a:hover {
   margin-bottom: 1.3rem !important;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria label {
-  margin-bottom: 0rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
   width: 16rem;
@@ -1078,13 +1081,19 @@ a:hover {
   grid-area: order-by;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by label, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order label {
-  margin-bottom: 0rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
   padding: 0.3rem 0.3rem 0.3rem 0.75rem;
   border-radius: 0.25rem;
   height: 2.5rem;
   width: 16rem;
+  color: #449FA2;
+  border: 1px solid #449FA2;
+  background: #FFFFFF;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions {
   display: flex;
@@ -1118,6 +1127,8 @@ a:hover {
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .views-field-changed {
   font-size: 1rem;
   color: #58585A;
+  letter-spacing: 0.2px;
+  line-height: 27px;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .views-field-url {
   display: flex;
@@ -1179,8 +1190,11 @@ a:hover {
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
     width: 15rem;
   }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select {
     width: 15rem;
+  }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
+    width: 6rem;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions button {
     width: 7.15rem;
@@ -1189,20 +1203,24 @@ a:hover {
 @media only screen and (min-width: 992px) {
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row {
     grid-template-areas: "search-input search-input search-buttons sort-by order-by";
+    align-items: baseline;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
-    width: 10rem;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
-    width: 10rem;
-    height: 2.4rem;
+    width: 15rem;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions {
-    margin-bottom: 1rem !important;
+    margin-bottom: 1.1rem !important;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions button {
+    height: 2.42rem;
+    padding-left: 0rem;
+    margin-right: 0.5rem;
+  }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-sort-by {
+    width: 15rem;
+  }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order {
     width: 6rem;
-    height: 2.4rem;
   }
 }
 /*End comment responsive design of the search and order box*/
@@ -1310,19 +1328,256 @@ a:hover {
 }
 .page-view-search #main .section {
   display: grid;
-  grid-template-areas: "select-theme" "theme-content" "other-articles-in-English";
+  grid-template-areas: "content-type" "search-theme" "main-content";
   column-gap: 2rem;
 }
 .page-view-search #main .section .js-facet-block-id-contenttype {
   grid-area: content-type;
 }
-.page-view-search #main .section #block-oshwiki-theme-content {
-  grid-area: theme-content;
+.page-view-search #main .section .block-system-main-block {
+  grid-area: main-content;
 }
-.page-view-search #main .section #block-views-block-themes-block-1 {
-  grid-area: other-articles-in-English;
+.page-view-search #main .section .js-facet-block-id-searchthemes {
+  grid-area: search-theme;
+}
+.page-view-search #main .js-facet-block-id-contenttype {
+  width: fit-content;
+}
+.page-view-search #main .js-facet-block-id-contenttype h2 {
+  margin: 0rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #449FA2;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+}
+.page-view-search #main .js-facet-block-id-contenttype > .content {
+  padding: 1rem 1rem 0.2rem 1rem;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #D5E6E6;
+  height: fit-content;
+}
+.page-view-search #main .js-facet-block-id-contenttype > .content .facets-widget-checkbox {
+  list-style: none;
+}
+.page-view-search #main .js-facet-block-id-contenttype > .content .facets-widget-checkbox .facet-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  list-style: none;
+}
+.page-view-search #main .js-facet-block-id-searchthemes {
+  margin: 1rem 0rem;
+}
+.page-view-search #main .js-facet-block-id-searchthemes h2 {
+  margin: 0rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #449FA2;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+}
+.page-view-search #main .js-facet-block-id-searchthemes > .content {
+  padding: 1rem;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #D5E6E6;
+  height: fit-content;
+}
+.page-view-search #main .js-facet-block-id-searchthemes > .content .facets-widget-checkbox {
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem;
+}
+.page-view-search #main .js-facet-block-id-searchthemes > .content .facets-widget-checkbox .item-list__checkbox {
+  margin: 1rem 0rem;
+  list-style: none;
+}
+.page-view-search #main .js-facet-block-id-searchthemes > .content .facets-widget-checkbox .item-list__checkbox:first-of-type {
+  margin-top: 0rem;
+}
+.page-view-search #main .js-facet-block-id-searchthemes > .content .facets-widget-checkbox .item-list__checkbox:last-of-type {
+  margin-bottom: 0rem;
+}
+.page-view-search #main .js-facet-block-id-searchthemes > .content .facets-widget-checkbox .item-list__checkbox .facet-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.page-view-search #main .js-facet-block-id-searchthemes > .content .facets-widget-checkbox .item-list__checkbox .facet-item .facet-item__value {
+  font-size: 1rem;
+  color: #449FA2;
+}
+.page-view-search #main .js-facet-block-id-searchthemes > .content .facets-widget-checkbox .item-list__checkbox .facet-item .facet-item__value:hover {
+  text-decoration: underline;
+}
+.page-view-search #main .js-facet-block-id-searchthemes .is-active {
+  font-weight: 700;
+}
+.page-view-search #main .js-facet-block-id-searchthemes .is-active span:first-of-type {
+  display: none;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row {
+  display: grid;
+  grid-template-areas: "search-input" "search-buttons" "sort-by " "order-by ";
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 0.7rem;
+  border-bottom: 1px dotted #616161;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-criteria, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order {
+  display: flex;
+  flex-direction: column;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield {
+  grid-area: search-input;
+  margin-bottom: 1.3rem !important;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield label {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield input {
+  width: 16rem;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper {
+  display: flex;
+  grid-area: search-buttons;
+  gap: 1rem;
+  margin-bottom: 0.5rem !important;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper button {
+  padding: 0.3rem 0.8rem;
+  height: 2.5rem;
+  width: 7.5rem;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by label, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order label {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
+  padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  width: 16rem;
+  color: #449FA2;
+  border: 1px solid #449FA2;
+  background: #FFFFFF;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by {
+  grid-area: sort-by;
+}
+.page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order {
+  grid-area: order-by;
+}
+.page-view-search #main .block-system-main-block .view-content {
+  margin: 1rem 0rem 0rem 1rem;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row {
+  padding: 1rem 0rem;
+  width: 100%;
+  border-bottom: 1px dotted #616161;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-title-1 {
+  padding-bottom: 0.5rem;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-title-1 a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #449FA2;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-field-themes-oshwiki,
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-field-year-science,
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-created,
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-changed,
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-field-sections-oshwiki {
+  font-size: 1rem;
+  color: #58585A;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-url {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 0.5rem;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-url span {
+  display: flex;
+  align-items: center;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-url span a {
+  margin-top: 3px;
+  font-size: 0.9rem;
+  color: #449FA2;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-url span a:hover {
+  text-decoration: underline;
+}
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-url span::after {
+  display: inline-block;
+  content: " ";
+  width: 14px;
+  height: 14px;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  background: url("../images/green-arrow_see_more.png") no-repeat;
 }
 
+@media only screen and (min-width: 480px) {
+  .page-view-search #main .block-system-main-block .view-filters .form-row {
+    grid-template-areas: "search-input search-input search-buttons search-buttons" "sort-by sort-by order-by order-by";
+    justify-content: start;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield input {
+    width: 12rem;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper button {
+    width: 7.15rem;
+    height: 2.45rem;
+    margin-bottom: 0.75rem !important;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
+    width: 12rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page-view-search #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .page-view-search #main .section {
+    grid-template-areas: "content-type content-type content-type content-type" "search-theme main-content main-content main-content";
+    grid-template-columns: 1.25fr 1fr 1fr 1fr;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row {
+    grid-template-areas: "search-input search-buttons sort-by order-by";
+    grid-template-columns: auto auto auto auto;
+    justify-content: start;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield input {
+    width: 15rem;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper button {
+    width: 6rem;
+    height: 2.42rem;
+    padding-left: 0rem;
+    margin-right: 0.5rem;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
+    height: 2.42rem;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select {
+    width: 10rem;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
+    width: 6rem;
+  }
+}
 .page-view-themes {
   /*Block select theme*/
   /*End comment*/
@@ -1443,7 +1698,10 @@ a:hover {
   padding: 0rem 0.5rem;
 }
 .page-view-themes #block-oshwiki-theme-content .views-exposed-form label, .page-view-themes #block-views-block-themes-block-1 .views-exposed-form label {
-  margin-bottom: 0rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
 }
 .page-view-themes #block-oshwiki-theme-content .view-content, .page-view-themes #block-views-block-themes-block-1 .view-content {
   display: flex;
@@ -1496,6 +1754,9 @@ a:hover {
   padding: 0.3rem 0.3rem 0.3rem 0.75rem;
   border-radius: 0.25rem;
   height: 2.5rem;
+  color: #449FA2;
+  border: 1px solid #449FA2;
+  background: #FFFFFF;
 }
 .page-view-themes #block-oshwiki-theme-content .view-filters .form-row button {
   padding: 0.3rem 0.8rem;
@@ -1552,6 +1813,7 @@ a:hover {
     max-width: 12rem;
   }
 }
+
 /*End comment - adapt select-theme block in order to keep the "+" icon responsive*/
 @media only screen and (min-width: 992px) {
   .page-view-themes .container #main {
@@ -1938,6 +2200,11 @@ a:hover {
   opacity: 0.8;
 }
 
+/*Specific css properties for the share this on block of the scientific journals*/
+body.node--type-scientific-journal .year_and_social_media {
+  display: flex;
+  flex-direction: column;
+}
 body.node--type-scientific-journal #share-this-on .text-share {
   font-size: 0.9rem;
   color: #212121;
@@ -1952,6 +2219,13 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   background-image: url(../images/icon-linkedin-orange.svg);
 }
 
+@media only screen and (min-width: 576px) {
+  body.node--type-scientific-journal .year_and_social_media {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+/*End comment - specific css properties for the share this on block of the scientific journals*/
 /*End share this on comment*/
 /*Select theme - oshwiki article, scientific journal*/
 .node--type-oshwiki-articles .select-theme-article, .node--type-scientific-journal .select-theme-article {
