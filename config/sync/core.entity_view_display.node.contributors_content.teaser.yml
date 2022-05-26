@@ -21,7 +21,9 @@ content:
     weight: 100
     region: content
 hidden:
+  addtoany: true
   field_name_and_sur_contributors: true
   field_organization_contributors: true
   field_position_contributors: true
   langcode: true
+  search_api_excerpt: true
