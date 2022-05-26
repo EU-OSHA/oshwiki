@@ -127,7 +127,8 @@
         padding: 0rem 0.5rem;
       }
       label{
-        margin-bottom: 0rem;
+        margin-bottom: 0.2rem;
+        @include textFormat(0.9rem, 700, $text-dark-dark-grey);
       }
     }
     .view-content{
@@ -184,6 +185,9 @@
           padding: 0.3rem 0.3rem 0.3rem 0.75rem;
           border-radius: 0.25rem;
           height: 2.5rem;
+          color: $text-dark-green;
+          border: 1px solid $bg-dark-green;
+          background: $bg-white;
         }
         button{
           padding: 0.3rem 0.8rem;

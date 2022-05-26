@@ -57,10 +57,11 @@
     opacity: 0.8;
   }
 }
-
+/*Specific css properties for the share this on block of the scientific journals*/
 body.node--type-scientific-journal{
   .year_and_social_media{
-
+    display: flex;
+    flex-direction: column;
   }
   #share-this-on{
     .text-share{
@@ -77,6 +78,16 @@ body.node--type-scientific-journal{
     }
   }
 }
+
+@media only screen and (min-width: 576px){
+  body.node--type-scientific-journal{
+    .year_and_social_media{
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+/*End comment - specific css properties for the share this on block of the scientific journals*/
 /*End share this on comment*/
 
 /*Select theme - oshwiki article, scientific journal*/
@@ -153,6 +164,8 @@ body.node--type-scientific-journal{
     }
   }
 }
+
+
 /*Adapt select-theme block in order to keep the "+" icon responsive*/
 @media only screen and (min-width: 400px) {
   .node--type-oshwiki-articles, .node--type-scientific-journal {
