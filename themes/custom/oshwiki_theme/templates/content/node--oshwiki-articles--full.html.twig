@@ -80,11 +80,18 @@
       <p>
         <strong>{{ 'This item is available in other national versions' | trans }}</strong>
       </p>
+      <ul>
+        {% for key, items in content.field_sections_oshwiki['#items'] %}
+          {% set titleSection = items.entity.field_title_sections.0.value|raw %}
+          <li>
+            <a href="#{{ titleSection }}">{{ titleSection }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
     <!-- END LEFT COLUMN -->
     <!-- CENTER COLUMN -->
     <div class="col-lg-6 col-12 order-3">
-
       <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
         <!-- DATES AND SOCIAL MEDIA -->
         <div class="dates_and_social_media">
