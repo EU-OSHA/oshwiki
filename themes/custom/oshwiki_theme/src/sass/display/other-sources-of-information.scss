@@ -47,11 +47,11 @@
             background: $bg-white;
           }
         }
-        #edit-actions{
+        .form-actions{
           display: flex;
           grid-area: search-buttons;
           gap: 1rem;
-          margin-bottom: 0.5rem !important;
+
           button{
             padding: 0.3rem 0.8rem;
             height: 2.5rem;

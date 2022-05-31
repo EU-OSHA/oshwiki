@@ -60,14 +60,21 @@
           &:last-of-type{
             margin-bottom: 1rem;
           }
-          a .facet-item__value::before {
-            display: inline-block;
-            content: " ";
-            width: 18px;
-            height: 9px;
-            margin-right: 0.5rem;
-            background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
-            transform: rotate(270deg);
+          a:first-of-type{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+
+            /*Show subthemes with green arrow icon*/
+            .iconSubtheme {
+              display: inline-block;
+              content: " ";
+              min-width: 18px;
+              min-height: 11px;
+              margin-right: 0.5rem;
+              background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+              transform: rotate(270deg);
+            }
           }
         }
         .facet-item--expanded, .facet-item{

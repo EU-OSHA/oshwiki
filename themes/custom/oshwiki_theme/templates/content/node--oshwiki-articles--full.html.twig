@@ -76,15 +76,25 @@
 <div class="container">
   <div class="row wrapper-content oshwiki-content">
     <!-- LEFT COLUMN -->
-    <div class="col-lg-3 col-12 order-2">
+    <div class="col-lg-3 col-12 order-2 items-left">
       <p>
         <strong>{{ 'This item is available in other national versions' | trans }}</strong>
       </p>
+    <div class="anchor-item-list-container">
+      <ul class="anchor-items-list">
+        {% for key, items in content.field_sections_oshwiki['#items'] %}
+          {% set titleSection = items.entity.field_title_sections.0.value|raw %}
+          <li>
+            <div class="icon-before-anchor-item"></div>
+            <a href="#{{ titleSection }}">{{ titleSection }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
     </div>
     <!-- END LEFT COLUMN -->
     <!-- CENTER COLUMN -->
     <div class="col-lg-6 col-12 order-3">
-
       <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
         <!-- DATES AND SOCIAL MEDIA -->
         <div class="dates_and_social_media">
@@ -108,17 +118,19 @@
         </div>
         <!-- END IMAGES -->
         <!-- REFERENCES -->
-        <div class="article_references">
-          <h2 class="reference-title">{{ 'References' | trans }}</h2>
-          {% for key,value in content.field_references_oshwiki %}
-            {% if( node.field_references_oshwiki[key].entity.field_number_references.value) %}
-              <div class="references-div">
-                <div class="reference-number"> {{ node.field_references_oshwiki[key].entity.field_number_references.value|number_format }}</div>
-                <div class="reference-content"> {{ node.field_references_oshwiki[key].entity.field_reference_references.entity.description.value }}</div>
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
+        {% if (content.field_references_oshwiki.0) %}
+          <div class="article_references">
+            <h2 class="reference-title">{{ 'References' | trans }}</h2>
+            {% for key,value in content.field_references_oshwiki %}
+              {% if( node.field_references_oshwiki[key].entity.field_number_references.value) %}
+                <div class="references-div">
+                  <div class="reference-number"> {{ node.field_references_oshwiki[key].entity.field_number_references.value|number_format }}</div>
+                  <div class="reference-content"> {{ node.field_references_oshwiki[key].entity.field_reference_references.entity.description.value }}</div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
         <!-- END REFERENCES -->
         <!-- FURTHER READING -->
         <div class="article_further_reading">
@@ -164,11 +176,31 @@
         {%if content.field_contributors_oshwiki.0 %}
           {% if authorExists %}
             <div class=" article_contributors contributors-border-b">
-              {{ content.field_contributors_oshwiki }}
+              <div class="field__label">
+                {{ 'Contributors' | trans }}
+              </div>
+              <div class="field__items">
+                <div class="field__item">
+                  <h2>
+                    {{ node.field_contributors_oshwiki.entity.field_name_and_sur_contributors.0.value }}
+                  </h2>
+                  <div  class="field--email-contributors">{{ node.field_contributors_oshwiki.entity.title.0.value }}</div>
+                </div>
+              </div>
             </div>
           {% else %}
             <div class=" article_contributors contributors-border-t-b">
-              {{ content.field_contributors_oshwiki }}
+              <div class="field__label">
+                {{ 'Contributors' | trans }}
+              </div>
+              <div class="field__items">
+                <div class="field__item">
+                  <h2>
+                    {{ node.field_contributors_oshwiki.entity.field_name_and_sur_contributors.0.value }}
+                  </h2>
+                  <div class="field--email-contributors">{{ node.field_contributors_oshwiki.entity.title.0.value }}</div>
+                </div>
+              </div>
             </div>
           {% endif %}
         {% endif %}
