@@ -68,7 +68,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: localhost
+    host: Solr
     port: 8983
     path: /
     core: dev
