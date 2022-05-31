@@ -14,13 +14,12 @@
       .block-system-main-block{
         grid-area: main-content;
       }
-      .js-facet-block-id-searchthemes{
+      .block-facet-blockmain-search-themes{
         grid-area: search-theme;
       }
     }
     /*End comment*/
     .js-facet-block-id-contenttype{
-      width: fit-content;
       h2{
         margin:0rem;
         padding: 0.5rem 0rem 0.5rem 1.5rem;
@@ -40,6 +39,14 @@
             align-items: baseline;
             gap: 0.5rem;
             list-style: none;
+            .facet-item__value, .facet-item__count{
+              @include textFormat(1rem, null, $text-dark-green);
+            }
+            .facet-item__value{
+              &:hover{
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
@@ -75,14 +82,20 @@
               display: flex;
               align-items: baseline;
               gap: 0.5rem;
-              .facet-item__value{
+              .facet-item__value, .facet-item__count{
                 @include textFormat(1rem, null, $text-dark-green);
+              }
+              .facet-item__value{
                 &:hover{
                   text-decoration: underline;
                 }
               }
             }
 
+          }
+          .facets-soft-limit-link{
+            margin-left: 2.2rem;
+            @include textFormat(0.9rem, 700, null);
           }
         }
       }
@@ -104,7 +117,6 @@
             "order-by ";
           align-items: baseline;
           justify-content: center;
-          margin-top: 0.7rem;
           border-bottom: 1px dotted $bg-dark-medium-grey;
           .js-form-item-criteria, .js-form-item-sort-by, .js-form-item-sort-order{
             display: flex;
@@ -167,11 +179,38 @@
               @include textFormat(1.1rem, 700, $text-dark-green);
             }
           }
-          .views-field-field-themes-oshwiki,
+
+          .views-field-field-themes-oshwiki{
+            align-self: start;
+            padding: 0.4rem 0.7rem;
+            margin-bottom: 0.3rem;
+            width: fit-content;
+            background-color: #449FA2;
+            border-radius: 20px;
+            @include textFormat(0.9rem, 600, $text-white);
+          }
+
           .views-field-field-year-science,
           .views-field-created,
-          .views-field-changed,
-          .views-field-field-sections-oshwiki{
+          .views-field-changed{
+            @include textFormat(0.9rem, null, $text-dark-dark-grey);
+            letter-spacing: 0.1px;
+            line-height: 27px;
+          }
+
+          .created-authored{
+            display: flex;
+            flex-direction: row;
+            gap: 0.3rem;
+            .divide{
+              letter-spacing: 0.1px;
+              line-height: 27px;
+              @include textFormat(0.9rem, null, $text-dark-green);
+            }
+          }
+
+          .views-field-field-sections-oshwiki,
+          .views-field-search-api-excerpt{
             @include textFormat(1rem, null, $text-dark-dark-grey);
             letter-spacing: 0.2px;
             line-height: 27px;
@@ -251,9 +290,10 @@
       /*Responsive layout with grid-area*/
       .section{
         grid-template-areas:
-          "content-type content-type content-type content-type"
-          "search-theme main-content main-content main-content";
+      "content-type main-content main-content main-content"
+      "search-theme main-content main-content main-content";
         grid-template-columns: 1.25fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
       }
       /*End comment*/
       .block-system-main-block{

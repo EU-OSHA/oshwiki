@@ -1,4 +1,42 @@
 .node--type-oshwiki-articles{
+
+  .items-left{
+    .anchor-item-list-container{
+      display: flex;
+      flex-direction: column;
+      padding: 0.7rem 1.2rem;
+      border-radius: 20px;
+      box-shadow: 0px 3px 11px -5px $bg-dark-dark-grey;
+      .anchor-items-list{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+        margin: 0rem;
+        list-style: none;
+        li{
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          gap: 0.5rem;
+          margin: 0.5rem;
+          .icon-before-anchor-item{
+            display: inline-block;
+            min-width: 18px;
+            min-height: 15px;
+            margin-right: 0.5rem;
+            background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+            transform: rotate(270deg);
+          }
+          a{
+            letter-spacing: 0.1px;
+            line-height: 29px;
+            @include textFormat(1.1rem, null, $text-dark-dark-grey);
+          }
+        }
+      }
+    }
+  }
+
   .wrapper-content{
     .order-2{
       margin: 0.5rem 0rem;
@@ -11,17 +49,19 @@
     grid-template-areas:
         "date"
         "share";
+    margin-bottom: 1rem;
     p, span{
       @include textFormat(0.9rem, null, $text-dark-medium-grey);
     }
     .article_dates{
       grid-area: date;
       padding: 0.3rem 0rem;
-      /*Set at the same height has the "share this on" block*/
-      & > p:first-of-type{
-        margin-top: 9px;
+      p{
+        margin-bottom: 0.2rem;
+        &:first-of-type{
+          margin-top: 9px;
+        }
       }
-      /*End comment*/
     }
     #share-this-on{
       grid-area: share;
@@ -88,6 +128,15 @@
       }
       /*End comment*/
     }
+    /*Change the padding of the first paragraph title*/
+    .field--name-field-sections-oshwiki{
+      & > .field__item:first-of-type{
+        .field--name-field-title-sections{
+          padding: 0rem 0rem 0.9rem;
+        }
+      }
+    }
+    /*End comment - change the padding of the first paragraph title*/
   }
 
   .article_references{
@@ -126,31 +175,35 @@
     }
   }
 
-  .article_authors, .article_contributors{
-    padding: 1.5rem 0.5rem;
-    .field__label{
-      @include textFormat(1.05rem, 700, $text-dark-dark-grey);
-    }
-    .field__items{
-      display: flex;
-      flex-direction: row;
-      justify-content: start;
-      flex-wrap: wrap;
-      .field__item{
-        width: 100%;
-        margin-top: 0.5rem;
-        .field--name-node-title, .field--name-field-organization-authors{
+  .oshwiki-authors-contributors{
+    margin-bottom: 2.5rem;
+    .article_authors, .article_contributors{
+      padding: 1.5rem 0.5rem;
+      .field__label{
+        @include textFormat(1.05rem, 700, $text-dark-dark-grey);
+      }
+      .field__items{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: wrap;
+        .field__item{
           width: 100%;
-        }
-        h2{
-          @include textFormat(1rem, 700, $text-dark-green);
-        }
-        .field--name-field-organization-authors{
-          @include textFormat(0.9rem, null, $text-dark-dark-grey);
+          margin-top: 0.5rem;
+          .field--name-node-title, .field--name-field-organization-authors{
+            width: 100%;
+          }
+          h2{
+            @include textFormat(1rem, 700, $text-dark-green);
+          }
+          .field--name-field-organization-authors, .field--name-field-position-authors, .field--email-contributors{
+            @include textFormat(0.9rem, null, $text-dark-dark-grey);
+          }
         }
       }
     }
   }
+
   .article_authors, .contributors-border-b, .contributors-border-t-b{
     border-bottom: 1px solid $bg-dark-dark-grey;
   }
@@ -176,10 +229,12 @@
       grid-template-areas:
         "date share";
     }
-    .article_authors, .article_contributors{
-      .field__items{
-        .field__item{
-          width: 50%;
+    .oshwiki-authors-contributors, .oshwiki-authors-contributors{
+      .article_authors, .article_contributors{
+        .field__items{
+          .field__item{
+            width: 50%;
+          }
         }
       }
     }
@@ -188,10 +243,12 @@
 
 @media only screen and (min-width: 992px) {
   .node--type-oshwiki-articles{
-    .article_authors, .article_contributors{
-      .field__items{
-        .field__item{
-          width: 25%;
+    .oshwiki-authors-contributors, .oshwiki-authors-contributors{
+      .article_authors, .article_contributors{
+        .field__items{
+          .field__item{
+            width: 25%;
+          }
         }
       }
     }
