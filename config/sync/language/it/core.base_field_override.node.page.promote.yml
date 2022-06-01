@@ -1,4 +1,4 @@
-label: 'Promosso alla prima pagina'
+label: 'Promoted to front page'
 settings:
-  on_label: Acceso
-  off_label: Spento
+  on_label: 'On'
+  off_label: 'Off'

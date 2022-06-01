@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apstiprināt
+          submit_button: Apply
           reset_button_label: Attīrīt
           exposed_sorts_label: 'Kārtot pēc'
           sort_desc_label: Dilst.
@@ -13,16 +13,16 @@ display:
             items_per_page_options_all_label: '- Visi -'
       fields:
         status:
-          label: Statuss
+          label: Status
         label:
-          label: Etiķete
+          label: Label
         item_type:
-          label: Veids
+          label: Type
         operations:
-          label: Darbības
+          label: Operations
       arguments:
         tltid:
           exception:
             title: Visi
   block_1:
-    display_title: Bloks
+    display_title: Block

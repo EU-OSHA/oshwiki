@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Tümü -'
             offset_label: 'Başlangıç değeri'
           tags:
-            previous: '‹ önceki'
-            next: 'sonraki ›'
-            first: '« ilk'
-            last: 'son »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Eyalet
@@ -54,6 +54,6 @@ display:
     display_title: Sayfa
     display_options:
       menu:
-        title: İşler
+        title: Jobs
       tab_options:
-        title: İşler
+        title: Jobs

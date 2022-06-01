@@ -6,16 +6,16 @@ display:
           reset_button_label: Ponastavi
       fields:
         status:
-          label: Stanje
+          label: Status
         label:
-          label: Oznaka
+          label: Label
         item_type:
-          label: Tip
+          label: Type
         operations:
-          label: Operacije
+          label: Operations
       arguments:
         tltid:
           exception:
             title: Vsi
   block_1:
-    display_title: Blok
+    display_title: Block

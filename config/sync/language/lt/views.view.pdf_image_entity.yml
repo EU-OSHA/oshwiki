@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pritaikyti
+          submit_button: Apply
           reset_button_label: Išvalyti
           exposed_sorts_label: 'Rikiuoti pagal'
       pager:
@@ -16,10 +16,10 @@ display:
         id:
           label: ID
         changed:
-          label: Pakeista
+          label: Changed
       filters:
         changed_2:
           expose:
-            label: Pakeista
+            label: Changed
   list:
     display_title: Puslapis

@@ -8,7 +8,7 @@ display:
           exposed_sorts_label: 'Sortiraj prema'
       fields:
         title:
-          label: Oznaka
+          label: Label
       filters:
         status:
           expose:
@@ -19,110 +19,110 @@ display:
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
       menu:
-        title: Zatvoreno
+        title: Closed
   completed:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   eligible:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   my_tasks:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   pending:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   rejected:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   unassigned:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
       tab_options:
-        title: Prevedi
+        title: Translate

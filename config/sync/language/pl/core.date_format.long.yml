@@ -1,2 +1,2 @@
-label: 'Domyślna data długa'
+label: 'Default long date'
 pattern: 'l, F j, Y - H:i'

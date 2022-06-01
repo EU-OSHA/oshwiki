@@ -8,90 +8,90 @@ display:
           exposed_sorts_label: 'Sortiraj prema'
       fields:
         title:
-          label: Naslov
+          label: Title
   assigned:
-    display_title: Dodjeljeno
+    display_title: Assigned
     display_options:
       menu:
-        title: Dodjeljeno
+        title: Assigned
       fields:
         status:
           label: Status
         title:
-          label: Naslov
+          label: Title
         operations:
-          label: Operacije
+          label: Operations
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
   closed:
-    display_title: Zatvoreno
+    display_title: Closed
     display_options:
       menu:
-        title: Zatvoreno
+        title: Closed
       fields:
         status:
           label: Status
         created:
-          label: Kreiran
+          label: Created
         title:
-          label: Naslov
+          label: Title
         operations:
-          label: Operacije
+          label: Operations
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
   completed:
     display_options:
       fields:
         status:
           label: Status
         created:
-          label: Kreiran
+          label: Created
         title:
-          label: Naslov
+          label: Title
         operations:
-          label: Operacije
+          label: Operations
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
   pending:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Naslov
+          label: Title
         operations:
-          label: Operacije
+          label: Operations
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
   rejected:
     display_options:
       fields:
         status:
           label: Status
         created:
-          label: Kreiran
+          label: Created
         title:
-          label: Naslov
+          label: Title
         operations:
-          label: Operacije
+          label: Operations
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
   unassigned:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Naslov
+          label: Title
         operations:
-          label: Operacije
+          label: Operations

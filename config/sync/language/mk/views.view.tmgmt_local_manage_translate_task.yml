@@ -4,57 +4,57 @@ display:
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Сите -'
+            items_per_page_options_all_label: '- All -'
       fields:
         title:
-          label: Наслов
+          label: Title
   assigned:
     display_options:
       fields:
         title:
-          label: Наслов
+          label: Title
       filters:
         title:
           expose:
-            label: Наслов
+            label: Title
   closed:
     display_options:
       fields:
         title:
-          label: Наслов
+          label: Title
       filters:
         title:
           expose:
-            label: Наслов
+            label: Title
   completed:
     display_options:
       fields:
         title:
-          label: Наслов
+          label: Title
       filters:
         title:
           expose:
-            label: Наслов
+            label: Title
   pending:
     display_options:
       fields:
         title:
-          label: Наслов
+          label: Title
       filters:
         title:
           expose:
-            label: Наслов
+            label: Title
   rejected:
     display_options:
       fields:
         title:
-          label: Наслов
+          label: Title
       filters:
         title:
           expose:
-            label: Наслов
+            label: Title
   unassigned:
     display_options:
       fields:
         title:
-          label: Наслов
+          label: Title

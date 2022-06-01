@@ -1,10 +1,10 @@
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtreer
+          submit_button: Filter
           reset_button_label: Herstel
       pager:
         options:
@@ -23,32 +23,32 @@ display:
         status:
           label: Status
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         status:
           expose:
             label: Status
       menu:
-        title: Gesluit
+        title: Closed
   completed:
     display_options:
       fields:
         status:
           label: Status
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         status:
           expose:
@@ -59,13 +59,13 @@ display:
         status:
           label: Status
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         status:
           expose:
@@ -76,13 +76,13 @@ display:
         status:
           label: Status
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         status:
           expose:
@@ -93,32 +93,32 @@ display:
         status:
           label: Status
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         status:
           expose:
             label: Status
       menu:
-        title: Hangende
+        title: Pending
   rejected:
     display_options:
       fields:
         status:
           label: Status
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         status:
           expose:
@@ -129,16 +129,16 @@ display:
         status:
           label: Status
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         status:
           expose:
             label: Status
       tab_options:
-        title: Vertaal
+        title: Translate

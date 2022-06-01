@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Tutto -'
             offset_label: Scostamento
           tags:
-            previous: '‹ precedente'
-            next: 'seguente ›'
-            first: '« prima'
-            last: 'ultima »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Stato
@@ -42,7 +42,7 @@ display:
           exception:
             title: Tutti
   checkout:
-    display_title: 'Vai alla cassa'
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -56,4 +56,4 @@ display:
           label: Modificato
           separator: ', '
   submitted:
-    display_title: Inserito
+    display_title: Submitted

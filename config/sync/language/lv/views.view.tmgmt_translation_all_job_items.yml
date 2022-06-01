@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apstiprināt
+          submit_button: Apply
           reset_button_label: Attīrīt
           exposed_sorts_label: 'Kārtot pēc'
           sort_desc_label: Dilst.
@@ -13,29 +13,29 @@ display:
             items_per_page_options_all_label: '- Visi -'
       fields:
         state:
-          label: Stāvoklis
+          label: State
         label:
-          label: Etiķete
+          label: Label
         type:
-          label: Veids
+          label: Type
         source_language:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         tags_count:
-          label: Iezīmes
+          label: Tags
         changed:
-          label: Labots
+          label: Changed
         operations:
-          label: Darbības
+          label: Operations
       filters:
         state:
           group_info:
-            label: Stāvoklis
+            label: State
         job_type:
           group_info:
             group_items:
               1:
-                title: Normāls
+                title: Normal
   page_1:
     display_title: Lapa

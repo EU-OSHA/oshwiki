@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
           tags:
-            previous: '‹ poprzednia'
-            next: 'następna ›'
-            first: '« pierwsza'
-            last: 'ostatnia »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Stan
@@ -58,6 +58,6 @@ display:
     display_title: Strona
     display_options:
       menu:
-        title: Oferty
+        title: Jobs
       tab_options:
-        title: Oferty
+        title: Jobs

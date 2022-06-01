@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
           tags:
-            previous: '‹ eelmine'
-            next: 'järgmine ›'
-            first: '« esimene'
-            last: 'viimane »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Olek
@@ -54,6 +54,6 @@ display:
     display_title: Lehekülg
     display_options:
       menu:
-        title: Tööd
+        title: Jobs
       tab_options:
-        title: Tööd
+        title: Jobs

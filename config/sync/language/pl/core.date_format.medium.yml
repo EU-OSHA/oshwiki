@@ -1,2 +1,2 @@
-label: 'Domyślna data średnia'
+label: 'Default medium date'
 pattern: 'D, m/d/Y - H:i'

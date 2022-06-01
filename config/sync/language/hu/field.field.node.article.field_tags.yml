@@ -1,2 +1,2 @@
 label: Címkék
-description: 'Egy vesszővel elválasztott felsorolás, mint például Esztergom, Tapolca, "Székesfehérvár, Fejér megye".'
+description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'

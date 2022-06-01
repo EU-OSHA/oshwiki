@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Primjeni
+          submit_button: Apply
           reset_button_label: Poništi
           exposed_sorts_label: 'Rasporedi po'
           sort_asc_label: Uzlazno
@@ -12,36 +12,36 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ prethodna'
-            next: 'sljedeća ›'
-            first: '« prva'
-            last: 'posljednja »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
-          label: Država
+          label: State
         label:
-          label: Oznaka
+          label: Label
         type:
-          label: Vrsta
+          label: Type
         word_count:
           separator: ', '
         tags_count:
-          label: Oznake
+          label: Tags
           separator: ', '
         operations:
-          label: Operacije
+          label: Operations
       arguments:
         tjid:
           exception:
             title: Svi
   checkout:
-    display_title: Narudžba
+    display_title: Checkout
     display_options:
       fields:
         label:
-          label: Oznaka
+          label: Label
         type:
-          label: Vrsta
+          label: Type
         word_count:
           separator: ', '
         changed:

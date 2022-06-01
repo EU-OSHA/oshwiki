@@ -1,5 +1,7 @@
 /*Share this on*/
 #share-this-on{
+  display: flex;
+  align-items: center;
   float: left;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -23,8 +25,7 @@
   .a2a_button_facebook, .a2a_button_twitter, .a2a_button_linkedin_share{
     float: left;
     display: block;
-    margin: 0rem 0.2rem;
-    height: 20px;
+    height: 15px;
     background:{
       position: 50% 50%;
       repeat: no-repeat;
@@ -36,18 +37,24 @@
   .a2a_button_facebook{
     width: 15px;
     margin-left: 0rem;
-    background-image: url(../images/icon-facebook.svg);
+    background:{
+      size: 55%;
+      image: url(../images/icon-facebook.svg);
+    }
   }
   .a2a_button_twitter{
-    width: 22px;
+    width: 30px;
     background:{
-      size: 105%;
+      size: contain;
       image: url(../images/icon-twitter.svg);
     }
   }
   .a2a_button_linkedin_share{
     width: 20px;
-    background-image: url(../images/icon-linkedin.svg);
+    background:{
+      size: 70%;
+      image: url(../images/icon-linkedin.svg);
+    }
     button{
       visibility: hidden !important;
     }
@@ -57,10 +64,11 @@
     opacity: 0.8;
   }
 }
-
+/*Specific css properties for the share this on block of the scientific journals*/
 body.node--type-scientific-journal{
   .year_and_social_media{
-
+    display: flex;
+    flex-direction: column;
   }
   #share-this-on{
     .text-share{
@@ -77,6 +85,16 @@ body.node--type-scientific-journal{
     }
   }
 }
+
+@media only screen and (min-width: 576px){
+  body.node--type-scientific-journal{
+    .year_and_social_media{
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+/*End comment - specific css properties for the share this on block of the scientific journals*/
 /*End share this on comment*/
 
 /*Select theme - oshwiki article, scientific journal*/
@@ -115,16 +133,27 @@ body.node--type-scientific-journal{
             margin-left: 1rem;
             background: url('../images/green_plus_select_theme.png') no-repeat;
           }
-          /*Show subthemes with green arrow icon*/
-          .facets-widget- ul li a .facet-item__value::before {
-            display: inline-block;
-            content: " ";
-            width: 18px;
-            height: 9px;
-            margin-right: 0.5rem;
-            background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
-            transform: rotate(270deg);
+          .facets-widget-{
+            li{
+              a:first-of-type{
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+
+                /*Show subthemes with green arrow icon*/
+                .iconSubtheme {
+                  display: inline-block;
+                  content: " ";
+                  min-width: 18px;
+                  min-height: 11px;
+                  margin-right: 0.5rem;
+                  background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+                  transform: rotate(270deg);
+                }
+              }
+            }
           }
+
           .facet-item--expanded, .facet-item{
             list-style: none;
             position: relative;
@@ -153,6 +182,7 @@ body.node--type-scientific-journal{
     }
   }
 }
+
 /*Adapt select-theme block in order to keep the "+" icon responsive*/
 @media only screen and (min-width: 400px) {
   .node--type-oshwiki-articles, .node--type-scientific-journal {

@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtruoti
+          submit_button: Filter
           reset_button_label: Išvalyti
           exposed_sorts_label: 'Rikiuoti pagal'
       pager:
@@ -13,191 +13,191 @@ display:
             items_per_page_options_all_label: '- Visos -'
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         title:
-          label: Žymė
+          label: Label
         item_count:
           label: Elementai
       filters:
         status:
           expose:
-            label: Būsena
+            label: Status
   closed:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         status:
-          label: Būsena
-          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Žymė
+          label: Label
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Elementai
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         status:
           expose:
-            label: Būsena
+            label: Status
         title:
           expose:
-            label: Žymė
+            label: Label
       menu:
-        title: Uždara
+        title: Closed
   completed:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         status:
-          label: Būsena
-          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Žymė
+          label: Label
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Elementai
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         status:
           expose:
-            label: Būsena
+            label: Status
         title:
           expose:
-            label: Žymė
+            label: Label
       menu:
-        title: Pabaigtas
+        title: Completed
   eligible:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         status:
-          label: Būsena
-          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Žymė
+          label: Label
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Elementai
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         status:
           expose:
-            label: Būsena
+            label: Status
         title:
           expose:
-            label: Žymė
+            label: Label
   my_tasks:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         status:
-          label: Būsena
+          label: Status
         title:
-          label: Žymė
+          label: Label
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Elementai
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         status:
           expose:
-            label: Būsena
+            label: Status
         title:
           expose:
-            label: Žymė
+            label: Label
   pending:
-    display_title: 'Užduočių sąrašas'
+    display_title: 'Pending tasks'
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         status:
-          label: Būsena
+          label: Status
         title:
-          label: Žymė
+          label: Label
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Elementai
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         status:
           expose:
-            label: Būsena
+            label: Status
         title:
           expose:
-            label: Žymė
+            label: Label
       menu:
-        title: Laukiama
+        title: Pending
   rejected:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         status:
-          label: Būsena
-          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Žymė
+          label: Label
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Elementai
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         status:
           expose:
-            label: Būsena
+            label: Status
         title:
           expose:
-            label: Žymė
+            label: Label
   unassigned:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'Su pasirinktais'
+          action_title: 'With selection'
         status:
-          label: Būsena
-          format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Žymė
+          label: Label
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Elementai
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         status:
           expose:
-            label: Būsena
+            label: Status
       tab_options:
-        title: Versti
+        title: Translate

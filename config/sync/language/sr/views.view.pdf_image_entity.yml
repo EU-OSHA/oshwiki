@@ -7,10 +7,10 @@ display:
           exposed_sorts_label: 'Сортирај по'
       fields:
         id:
-          label: ИД
+          label: ID
         changed:
-          label: Промењен
+          label: Changed
       filters:
         changed_2:
           expose:
-            label: Промењен
+            label: Changed

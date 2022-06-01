@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Vše -'
             offset_label: Posun
           tags:
-            previous: '‹ předchozí'
-            next: 'následující ›'
-            first: '« první'
-            last: 'poslední »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Stav
@@ -42,7 +42,7 @@ display:
           exception:
             title: Vše
   checkout:
-    display_title: Objednat
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -56,4 +56,4 @@ display:
           label: Změněno
           separator: ', '
   submitted:
-    display_title: Odesláno
+    display_title: Submitted

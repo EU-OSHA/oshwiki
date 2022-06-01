@@ -3,4 +3,4 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: 'Cuir i bhfeidhm'
+          submit_button: Apply

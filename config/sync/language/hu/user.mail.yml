@@ -1,26 +1,26 @@
 cancel_confirm:
-  subject: '[user:display-name] felhasználó fióktörlési kérelme [site:name] webhelyen'
-  body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen kezdeményezték a felhasználó törlését.\r\n\r\nA [site:url-brief] webhely felhasználója törölhető erre a hivatkozásra kattintva, vagy a böngésző címsorába másolva:\r\n\r\n[user:cancel-url]\r\n\r\nFIGYELMEZTETÉS: A felhasználó törlése nem visszavonható.\r\n\r\nA fenti hivatkozás egy napig érvényes, és ha nem lesz felhasználva, semmi nem történik.\r\n\r\n--  [site:name] csapata"
+  subject: 'Account cancellation request for [user:display-name] at [site:name]'
+  body: "[user:display-name]\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
 password_reset:
-  body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen ennek a felhasználónak a nevében új jelszó lett kérve.\r\n\r\nErre a hivatkozásra kattintva, vagy a webcímet kimásolva és a böngésző címsorába beillesztve lehet bejelentkezni a webhelyre:\r\n\r\n[user:one-time-login-url]\r\n\r\nAz így megnyitott oldalon rögtön beállítható a jelszó.\r\n\r\nEz egy egyszer használható belépési mód. Egy nap után az érvényessége lejár, de semmilyen következménye nem lesz, ha nem használják fel.\r\n\r\n-- [site:name] csapata"
+  body: "[user:display-name],\r\n\r\nA request to reset the password for your account has been made at [site:name].\r\n\r\nYou may now log in by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nThis link can only be used once to log in and will lead you to a page where you can set your password. It expires after one day and nothing will happen if it's not used.\r\n\r\n--  [site:name] team"
 register_admin_created:
-  subject: '[site:name] adminisztrátora által létrehozott új felhasználói fiók elkészült'
-  body: "Kedves [user:display-name]! \r\n\r\n[site:name] webhely adminisztrátora létrehozott egy [user:name] felhasználói fiókot. Így már be lehet jelentkezni erre a hivatkozásra kattintva vagy a webcímet kimásolva és a böngésző címsorába beillesztve:\r\n\r\n[user:one-time-login-url]\r\n\r\nAz így megnyitott oldalon rögtön beállítható a jelszó.\r\n\r\nEz a hivatkozás csak egyszer használható bejelentkezésre. Azt követően a jövőben már a rendes belépési oldalon ([site:login-url]) lehet majd bejelentkezni a webhelyre. Ehhez az alábbi információk fognak kelleni:\r\n\r\nFelhasználónév: [user:name]\r\nJelszó: az imént megadott jelszó\r\n\r\n -- [site:name] csapata"
+  subject: 'An administrator created an account for you at [site:name]'
+  body: "[user:display-name],\r\n\r\nA site administrator at [site:name] has created an account for you. You may now log in by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nThis link can only be used once to log in and will lead you to a page where you can set your password.\r\n\r\nAfter setting your password, you will be able to log in at [site:login-url] in the future using:\r\n\r\nusername: [user:name]\r\npassword: Your password\r\n\r\n--  [site:name] team"
 register_no_approval_required:
-  subject: '[user:display-name] fiókadatai [site:name] webhelyen'
-  body: "Kedves [user:display-name]!\r\n\r\nKöszönjük a csatlakozási szándékot [site:name] webhelyhez. Az alábbi hivatkozásra kattintva vagy a böngésző címsorába illesztve lehet belépni:\r\n\r\n[user:one-time-login-url]\r\n\r\nA hivatkozás csak egyszer használható belépésre. Ezt követően a böngésző át lesz irányítva arra az oldalra, ahol többek közt a jelszó is megadható.\r\n\r\nA [site:login-url] oldalon a bejelentkezéshez az ott megadott a jelszót kell használni.\r\n\r\nfelhasználó név: [user:name]\r\njelszó: a megadott jelszó\r\n\r\n-- [site:name] csapata"
+  subject: 'Account details for [user:display-name] at [site:name]'
+  body: "[user:display-name],\r\n\r\nThank you for registering at [site:name]. You may now log in by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nThis link can only be used once to log in and will lead you to a page where you can set your password.\r\n\r\nAfter setting your password, you will be able to log in at [site:login-url] in the future using:\r\n\r\nusername: [user:name]\r\npassword: Your password\r\n\r\n--  [site:name] team"
 register_pending_approval:
-  subject: '[user:display-name] fiókadatai [site:name] webhelyen (jóváhagyásra várva)'
-  body: "Kedves [user:display-name]!\r\n\r\nKöszönjük a csatlakozási szándékot [site:name] webhelyhez, a kérelem még elfogadásra vár. Jóváhagyás után küldünk egy e-mailt a bejelentkezési információkkal és jelszóbeállítási lehetőségekkel.\r\n\r\n--  [site:name] csapata"
+  subject: 'Account details for [user:display-name] at [site:name] (pending admin approval)'
+  body: "[user:display-name],\r\n\r\nThank you for registering at [site:name]. Your application for an account is currently pending approval. Once it has been approved, you will receive another email containing information about how to log in, set your password, and other details.\r\n\r\n--  [site:name] team"
 register_pending_approval_admin:
-  subject: '[user:display-name] fiókadatai [site:name] webhelyen (jóváhagyásra várva)'
-  body: "[user:display-name] felhasználói azonosítót igényelt.\r\n\r\n[user:edit-url]"
+  subject: 'Account details for [user:display-name] at [site:name] (pending admin approval)'
+  body: "[user:display-name] has applied for an account.\r\n\r\n[user:edit-url]"
 status_activated:
-  subject: '[user:display-name] fiókadatai [site:name] webhelyen (jóváhagyva)'
-  body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen a felhasználói fiók aktiválása megtörtént.\r\n\r\nMost már be lehet jelentkezni erre a hivatkozásra kattintva, vagy a webcímet kimásolva és a böngésző címsorába beillesztve:\r\n\r\n[user:one-time-login-url]\r\n\r\nAz így megnyitott oldalon rögtön beállítható a jelszó.\r\n\r\nEz a hivatkozás csak egyszer használható bejelentkezésre. Azt követően a jövőben már a rendes belépési oldalon ([site:login-url]) lehet majd bejelentkezni a webhelyre. Ehhez az alábbi információk fognak kelleni:\r\n\r\nFelhasználónév: [user:account-name]\r\nJelszó: az imént megadott jelszó\r\n\r\n--  [site:name] csapata"
+  subject: 'Account details for [user:display-name] at [site:name] (approved)'
+  body: "[user:display-name],\r\n\r\nYour account at [site:name] has been activated.\r\n\r\nYou may now log in by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nThis link can only be used once to log in and will lead you to a page where you can set your password.\r\n\r\nAfter setting your password, you will be able to log in at [site:login-url] in the future using:\r\n\r\nusername: [user:account-name]\r\npassword: Your password\r\n\r\n--  [site:name] team"
 status_blocked:
-  subject: '[user:display-name] fiókadatai [site:name] webhelyen (zárolva)'
-  body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen az ezzel az e-mail címmel regisztrált felhasználói fiók fel lett függesztve.\r\n\r\n--  [site:name] csapata"
+  subject: 'Account details for [user:display-name] at [site:name] (blocked)'
+  body: "[user:display-name],\r\n\r\nYour account on [site:name] has been blocked.\r\n\r\n--  [site:name] team"
 status_canceled:
-  subject: '[user:display-name] fiókadatai [site:name] webhelyen (törölve)'
-  body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen a hozzáférés törölve lett.\r\n\r\n--  [site:name] csapata"
+  subject: 'Account details for [user:display-name] at [site:name] (canceled)'
+  body: "[user:display-name],\r\n\r\nYour account on [site:name] has been canceled.\r\n\r\n--  [site:name] team"

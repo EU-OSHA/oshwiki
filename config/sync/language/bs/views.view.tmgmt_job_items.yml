@@ -3,25 +3,25 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Primjeni
+          submit_button: Apply
           reset_button_label: Reset
           exposed_sorts_label: 'Sortiraj prema'
       pager:
         options:
           tags:
-            previous: '‹ prethodna'
-            next: 'iduća ›'
-            first: '« prva'
-            last: 'zadnja »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         label:
-          label: Oznaka
+          label: Label
         type:
-          label: Tip
+          label: Type
         tags_count:
-          label: Tagovi
+          label: Tags
         operations:
-          label: Operacije
+          label: Operations
       arguments:
         tjid:
           exception:
@@ -30,6 +30,6 @@ display:
     display_options:
       fields:
         label:
-          label: Oznaka
+          label: Label
         type:
-          label: Tip
+          label: Type

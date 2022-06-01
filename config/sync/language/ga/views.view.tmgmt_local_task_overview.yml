@@ -2,8 +2,8 @@ display:
   completed:
     display_options:
       menu:
-        title: Déanta
+        title: Completed
   pending:
     display_options:
       menu:
-        title: 'Ar feitheamh'
+        title: Pending

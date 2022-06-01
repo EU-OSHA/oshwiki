@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apstiprināt
+          submit_button: Apply
           reset_button_label: Attīrīt
           exposed_sorts_label: 'Kārtot pēc'
           sort_desc_label: Dilst.
@@ -12,36 +12,36 @@ display:
           expose:
             items_per_page_options_all_label: '- Visi -'
           tags:
-            previous: '‹ iepriekšējā'
-            next: 'nākamā ›'
-            first: '« pirmā'
-            last: 'pēdējā »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
-          label: Stāvoklis
+          label: State
         label:
-          label: Etiķete
+          label: Label
         type:
-          label: Veids
+          label: Type
         tags_count:
-          label: Iezīmes
+          label: Tags
         changed:
-          label: Labots
+          label: Changed
         operations:
-          label: Darbības
+          label: Operations
       arguments:
         tjid:
           exception:
             title: Visi
   checkout:
-    display_title: Pirkt
+    display_title: Checkout
     display_options:
       fields:
         label:
-          label: Etiķete
+          label: Label
         type:
-          label: Veids
+          label: Type
         changed:
-          label: Labots
+          label: Changed
   submitted:
-    display_title: Nosūtīts
+    display_title: Submitted

@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ předchozí'
-            next: 'následující ›'
-            first: '« první'
-            last: 'poslední »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Jméno
           separator: ', '
-      title: Zprávy
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Vše
   embed:
-    display_title: Vložit
+    display_title: Embed

@@ -12,10 +12,10 @@ display:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
           tags:
-            previous: '‹ fyrri'
-            next: 'næsta ›'
-            first: '« fremsta'
-            last: 'aftasta »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Fylki
@@ -35,7 +35,7 @@ display:
           exception:
             title: Allt
   checkout:
-    display_title: 'Ganga frá pöntun'
+    display_title: Checkout
     display_options:
       fields:
         label:

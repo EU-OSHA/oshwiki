@@ -3,22 +3,22 @@ display:
     display_options:
       fields:
         created:
-          label: Cruthaithe
+          label: Created
   completed:
-    display_title: Déanta
+    display_title: Completed
     display_options:
       menu:
-        title: Déanta
+        title: Completed
       fields:
         created:
-          label: Cruthaithe
+          label: Created
   pending:
-    display_title: 'Ar feitheamh'
+    display_title: Pending
     display_options:
       menu:
-        title: 'Ar feitheamh'
+        title: Pending
   rejected:
     display_options:
       fields:
         created:
-          label: Cruthaithe
+          label: Created

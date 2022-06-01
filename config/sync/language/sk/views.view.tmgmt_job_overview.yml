@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Všetko -'
             offset_label: 'Zobraziť od'
           tags:
-            previous: '‹ predchádzajúca'
-            next: 'nasledujúca ›'
-            first: '« prvá'
-            last: 'posledná »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Stav

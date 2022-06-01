@@ -1,4 +1,4 @@
-label: 'Izvirzīts uz pirmo lapu'
+label: 'Promoted to front page'
 settings:
-  on_label: Aktīvs
-  off_label: Izslēgts
+  on_label: 'On'
+  off_label: 'Off'

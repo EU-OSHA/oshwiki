@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtrēt
+          submit_button: Filter
           reset_button_label: Attīrīt
           exposed_sorts_label: 'Kārtot pēc'
           sort_desc_label: Dilst.
@@ -13,169 +13,169 @@ display:
             items_per_page_options_all_label: '- Visi -'
       fields:
         title:
-          label: Etiķete
+          label: Label
         item_count:
           label: Vienumi
       filters:
         status:
           expose:
-            label: Statuss
+            label: Status
   closed:
     display_options:
       fields:
         status:
-          label: Statuss
+          label: Status
         title:
-          label: Etiķete
+          label: Label
         source_language:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Vienumi
         operations:
-          label: Darbības
+          label: Operations
       filters:
         status:
           expose:
-            label: Statuss
+            label: Status
         title:
           expose:
-            label: Etiķete
+            label: Label
       menu:
-        title: Slēgts
+        title: Closed
   completed:
     display_options:
       fields:
         status:
-          label: Statuss
+          label: Status
         title:
-          label: Etiķete
+          label: Label
         source_language:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Vienumi
         operations:
-          label: Darbības
+          label: Operations
       filters:
         status:
           expose:
-            label: Statuss
+            label: Status
         title:
           expose:
-            label: Etiķete
+            label: Label
       menu:
-        title: Pabeigts
+        title: Completed
   eligible:
     display_options:
       fields:
         status:
-          label: Statuss
+          label: Status
         title:
-          label: Etiķete
+          label: Label
         source_language:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Vienumi
         operations:
-          label: Darbības
+          label: Operations
       filters:
         status:
           expose:
-            label: Statuss
+            label: Status
         title:
           expose:
-            label: Etiķete
+            label: Label
   my_tasks:
     display_options:
       fields:
         status:
-          label: Statuss
+          label: Status
         title:
-          label: Etiķete
+          label: Label
         source_language:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Vienumi
         operations:
-          label: Darbības
+          label: Operations
       filters:
         status:
           expose:
-            label: Statuss
+            label: Status
         title:
           expose:
-            label: Etiķete
+            label: Label
   pending:
     display_options:
       fields:
         status:
-          label: Statuss
+          label: Status
         title:
-          label: Etiķete
+          label: Label
         source_language:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Vienumi
         operations:
-          label: Darbības
+          label: Operations
       filters:
         status:
           expose:
-            label: Statuss
+            label: Status
         title:
           expose:
-            label: Etiķete
+            label: Label
       menu:
-        title: Gaida
+        title: Pending
   rejected:
     display_options:
       fields:
         status:
-          label: Statuss
+          label: Status
         title:
-          label: Etiķete
+          label: Label
         source_language:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Vienumi
         operations:
-          label: Darbības
+          label: Operations
       filters:
         status:
           expose:
-            label: Statuss
+            label: Status
         title:
           expose:
-            label: Etiķete
+            label: Label
   unassigned:
     display_options:
       fields:
         status:
-          label: Statuss
+          label: Status
         title:
-          label: Etiķete
+          label: Label
         source_language:
-          label: 'No'
+          label: From
         target_language:
-          label: Kam
+          label: To
         item_count:
           label: Vienumi
         operations:
-          label: Darbības
+          label: Operations
       filters:
         status:
           expose:
-            label: Statuss
+            label: Status
       tab_options:
-        title: Tulkot
+        title: Translate

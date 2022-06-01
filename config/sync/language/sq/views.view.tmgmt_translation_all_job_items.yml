@@ -6,14 +6,14 @@ display:
           reset_button_label: Rifillo
       fields:
         type:
-          label: Lloji
+          label: Type
         source_language:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         tags_count:
-          label: Etiketat
+          label: Tags
         operations:
-          label: Operacionet
+          label: Operations
   page_1:
     display_title: Faqe

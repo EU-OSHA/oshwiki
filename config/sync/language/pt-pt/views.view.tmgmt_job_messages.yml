@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ anterior'
-            next: 'seguinte ›'
-            first: '« primeira'
-            last: 'última »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Itens por página'
             items_per_page_options_all_label: '- Todos -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Nome
           separator: ', '
-      title: Mensagens
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Todos
   embed:
-    display_title: Embebido
+    display_title: Embed

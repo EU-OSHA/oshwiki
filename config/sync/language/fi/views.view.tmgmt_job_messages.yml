@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ edellinen'
-            next: 'seuraava ›'
-            first: '« ensimmäinen'
-            last: 'viimeinen »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Nimi
           separator: ', '
-      title: Viestit
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Kaikki
   embed:
-    display_title: Upota
+    display_title: Embed

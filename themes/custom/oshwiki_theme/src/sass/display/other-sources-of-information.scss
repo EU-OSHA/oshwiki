@@ -19,7 +19,8 @@
           grid-area: search-input;
           margin-bottom: 1.3rem !important;
           label{
-            margin-bottom: 0rem;
+            margin-bottom: 0.2rem;
+            @include textFormat(0.9rem, 700, $text-dark-dark-grey);
           }
           input{
             width: 16rem;
@@ -33,20 +34,24 @@
         }
         .form-item-sort-by, .form-item-sort-order{
           label{
-            margin-bottom: 0rem;
+            margin-bottom: 0.2rem;
+            @include textFormat(0.9rem, 700, $text-dark-dark-grey);
           }
           select{
             padding: 0.3rem 0.3rem 0.3rem 0.75rem;
             border-radius: 0.25rem;
             height: 2.5rem;
             width: 16rem;
+            color: $text-dark-green;
+            border: 1px solid $bg-dark-green;
+            background: $bg-white;
           }
         }
-        #edit-actions{
+        .form-actions{
           display: flex;
           grid-area: search-buttons;
           gap: 1rem;
-          margin-bottom: 0.5rem !important;
+
           button{
             padding: 0.3rem 0.8rem;
             height: 2.5rem;
@@ -73,6 +78,8 @@
         .views-field-field-year-science,
         .views-field-changed{
           @include textFormat(1rem, null, $text-dark-dark-grey);
+          letter-spacing: 0.2px;
+          line-height: 27px;
         }
         .views-field-url{
           display: flex;
@@ -154,9 +161,14 @@
               width: 15rem;
             }
           }
-          .form-item-sort-by, .form-item-sort-order{
+          .form-item-sort-by{
             select{
               width: 15rem;
+            }
+          }
+          .form-item-sort-order{
+            select{
+              width: 6rem;
             }
           }
           #edit-actions{
@@ -177,23 +189,25 @@
         .form-row{
           grid-template-areas:
             "search-input search-input search-buttons sort-by order-by" ;
+          align-items: baseline;
           .form-item-criteria{
             input{
-              width: 10rem;
-            }
-          }
-          .form-item-sort-by, .form-item-sort-order{
-            select{
-              width: 10rem;
-              height: 2.4rem;
+              width: 15rem;
             }
           }
           #edit-actions{
-            margin-bottom: 1rem !important;
+            margin-bottom: 1.1rem !important;
             button{
-              width: 6rem;
-              height: 2.4rem;
+              height: 2.42rem;
+              padding-left: 0rem;
+              margin-right: 0.5rem;
             }
+          }
+          #edit-sort-by{
+            width: 15rem;
+          }
+          .form-item-sort-order{
+            width: 6rem;
           }
         }
       }

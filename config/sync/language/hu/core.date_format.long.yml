@@ -1,2 +1,2 @@
-label: 'Alapértelmezett hosszú dátum idővel'
-pattern: 'Y. F j., l – H:i'
+label: 'Default long date'
+pattern: 'l, F j, Y - H:i'

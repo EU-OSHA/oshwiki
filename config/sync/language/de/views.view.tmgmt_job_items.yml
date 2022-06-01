@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Versatz
           tags:
-            previous: '‹ vorherige Seite'
-            next: 'nächste Seite ›'
-            first: '« erste Seite'
-            last: 'letzte Seite »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Status
@@ -45,7 +45,7 @@ display:
           exception:
             title: Alle
   checkout:
-    display_title: 'Zur Kasse'
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -59,4 +59,4 @@ display:
           label: Geändert
           separator: ', '
   submitted:
-    display_title: Gespeichert
+    display_title: Submitted

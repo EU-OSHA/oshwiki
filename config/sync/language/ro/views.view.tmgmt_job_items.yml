@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
           tags:
-            previous: '‹ anterior'
-            next: 'următor ›'
-            first: '« primul'
-            last: 'ultima »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Status
@@ -43,7 +43,7 @@ display:
           exception:
             title: Toate
   checkout:
-    display_title: Casă
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -56,4 +56,4 @@ display:
           label: Schimbat
           separator: ', '
   submitted:
-    display_title: Trimis
+    display_title: Submitted

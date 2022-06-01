@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pritaikyti
+          submit_button: Apply
           reset_button_label: Išvalyti
           exposed_sorts_label: 'Rikiuoti pagal'
       pager:
@@ -13,29 +13,29 @@ display:
             items_per_page_options_all_label: '- Visos -'
       fields:
         state:
-          label: Etapas
+          label: State
         label:
-          label: Žymė
+          label: Label
         type:
-          label: Tipas
+          label: Type
         source_language:
-          label: Nuo
+          label: From
         target_language:
-          label: Kam
+          label: To
         tags_count:
-          label: Raktažodžiai
+          label: Tags
         changed:
-          label: Pakeista
+          label: Changed
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         state:
           group_info:
-            label: Etapas
+            label: State
         job_type:
           group_info:
             group_items:
               1:
-                title: Normalus
+                title: Normal
   page_1:
     display_title: Puslapis

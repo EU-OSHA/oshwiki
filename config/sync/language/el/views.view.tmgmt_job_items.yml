@@ -15,10 +15,10 @@ display:
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
           tags:
-            previous: '‹ προηγούμενη'
-            next: 'επόμενη ›'
-            first: '« πρώτη'
-            last: 'τελευταία »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Κατάσταση
@@ -40,7 +40,7 @@ display:
           exception:
             title: Όλες
   checkout:
-    display_title: 'Ολοκλήρωση Παραγγελίας'
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -53,4 +53,4 @@ display:
           label: Τροποποιημένο
           separator: ', '
   submitted:
-    display_title: Υποβλήθηκε
+    display_title: Submitted

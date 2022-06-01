@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ anterior'
-            next: 'următor ›'
-            first: '« primul'
-            last: 'ultima »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Nume
           separator: ', '
-      title: Mesaje
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Toate
   embed:
-    display_title: Încorporat
+    display_title: Embed

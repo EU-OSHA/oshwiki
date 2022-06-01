@@ -1,0 +1,117 @@
+uuid: ba9707de-44f5-419e-8948-9659a50e44d1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - osha_import_export
+_core:
+  default_config_hash: R4I5OdKylOr3u9tdmLeubZy_3hG7G_k2rJlhxwrbwpw
+id: import_crm_advisorygroups_prag
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - press_contact
+migration_group: osha_import_export
+label: 'Node: Advisory groups OKAG'
+source:
+  plugin: url
+  data_parser_plugin: xml
+  urls:
+    - /expert/SYNC_CRM/AdvisoryGroupsPRAG.xml
+  content_type: press_contact
+  constants:
+    is_advisory: '1'
+  ids:
+    field_contact_uuid:
+      type: string
+    field_contact_type:
+      type: string
+  item_selector: /Report/Table0/Table0_Group0_Collection/Table0_Group0_Header0/Detail_Collection/Detail
+  fields:
+    -
+      name: field_contact_uuid
+      label: field_contact_uuid
+      selector: '@Textbox8'
+    -
+      name: title
+      label: title
+      selector: '@Table0_Details4'
+    -
+      name: field_wg_category
+      label: field_wg_category
+      selector: '@Table0_Details1'
+    -
+      name: field_city
+      label: field_city
+      selector: '@Textbox4'
+    -
+      name: field_country
+      label: field_country
+      selector: '@Textbox7'
+    -
+      name: field_location
+      label: field_location
+      selector: '@Table0_Details7'
+    -
+      name: field_press_contact_organization
+      label: field_press_contact_organization
+      selector: '@Table0_Details6'
+    -
+      name: field_personal_title
+      label: field_personal_title
+      selector: '@Table0_Details3'
+    -
+      name: field_press_contact_phone
+      label: field_press_contact_phone
+      selector: '@Textbox3'
+    -
+      name: field_wg_role_1
+      label: field_wg_role_1
+      selector: '@Table0_Details2'
+    -
+      name: field_zip_code
+      label: field_zip_code
+      selector: '@Textbox1'
+    -
+      name: field_contact_type
+      label: field_contact_type
+      selector: ../../Table0_Group0_Header0
+process:
+  field_contact_uuid: field_contact_uuid
+  title: title
+  field_wg_category:
+    -
+      plugin: oie_taxonomy_term_name
+      source: field_wg_category
+      vocabulary: wg_category
+      create: true
+  field_city: field_city
+  field_country:
+    -
+      plugin: oie_taxonomy_term_name
+      source: field_country
+      vocabulary: country
+  field_location: field_location
+  field_press_contact_organization: field_press_contact_organization
+  field_personal_title: field_personal_title
+  field_press_contact_phone: field_press_contact_phone
+  field_wg_role_1:
+    -
+      plugin: oie_taxonomy_term_name
+      source: field_wg_role_1
+      vocabulary: wg_role_1
+      create: true
+  field_zip_code: field_zip_code
+  field_contact_type:
+    -
+      plugin: oie_taxonomy_term_name
+      source: field_contact_type
+      vocabulary: contact_type
+      create: true
+  field_is_advisory: constants/is_advisory
+destination:
+  default_bundle: press_contact
+  plugin: 'entity:node'
+migration_dependencies: {  }

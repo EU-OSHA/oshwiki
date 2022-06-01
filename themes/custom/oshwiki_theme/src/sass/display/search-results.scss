@@ -4,20 +4,336 @@
     .section{
       display: grid;
       grid-template-areas:
-          "select-theme"
-          "theme-content"
-          "other-articles-in-English";
+          "content-type"
+          "search-theme"
+          "main-content";
       column-gap: 2rem;
       .js-facet-block-id-contenttype{
         grid-area: content-type;
       }
-      #block-oshwiki-theme-content{
-        grid-area: theme-content;
+      .block-system-main-block{
+        grid-area: main-content;
       }
-      #block-views-block-themes-block-1{
-        grid-area: other-articles-in-English;
+      .block-facet-blockmain-search-themes{
+        grid-area: search-theme;
       }
     }
     /*End comment*/
+    .js-facet-block-id-contenttype{
+      h2{
+        margin:0rem;
+        padding: 0.5rem 0rem 0.5rem 1.5rem;
+        border-radius: 15px 15px 0px 0px;
+        background-color: $bg-dark-green;
+        @include textFormat(1.3rem, null, $text-white);
+      }
+      & > .content{
+        padding: 1rem 1rem 0.2rem 1rem;
+        border-radius: 0px 0px 15px 15px;
+        background-color: $bg-light-green;
+        height: fit-content;
+        .facets-widget-checkbox{
+          list-style: none;
+          .facet-item{
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            list-style: none;
+            .facet-item__value, .facet-item__count{
+              @include textFormat(1rem, null, $text-dark-green);
+            }
+            .facet-item__value{
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+    .js-facet-block-id-searchthemes{
+      margin: 1rem 0rem;
+      h2{
+        margin:0rem;
+        padding: 0.5rem 0rem 0.5rem 1.5rem;
+        border-radius: 15px 15px 0px 0px;
+        background-color: $bg-dark-green;
+        @include textFormat(1.3rem, null, $text-white);
+      }
+      & > .content{
+        padding: 1rem;
+        border-radius: 0px 0px 15px 15px;
+        background-color: $bg-light-green;
+        height: fit-content;
+        .facets-widget-checkbox{
+          list-style: none;
+          padding: 0rem;
+          margin: 0rem;
+          .item-list__checkbox{
+            margin: 1rem 0rem;
+            list-style: none;
+            &:first-of-type{
+              margin-top: 0rem;
+            }
+            &:last-of-type{
+              margin-bottom: 0rem;
+            }
+            .facet-item{
+              display: flex;
+              align-items: baseline;
+              gap: 0.5rem;
+              .facet-item__value, .facet-item__count{
+                @include textFormat(1rem, null, $text-dark-green);
+              }
+              .facet-item__value{
+                &:hover{
+                  text-decoration: underline;
+                }
+              }
+            }
+
+          }
+          .facets-soft-limit-link{
+            margin-left: 2.2rem;
+            @include textFormat(0.9rem, 700, null);
+          }
+        }
+      }
+      .is-active{
+        font-weight: 700;
+        span:first-of-type{
+          display: none;
+        }
+      }
+    }
+    .block-system-main-block{
+      .view-filters{
+        .form-row{
+          display: grid;
+          grid-template-areas:
+            "search-input"
+            "search-buttons"
+            "sort-by "
+            "order-by ";
+          align-items: baseline;
+          justify-content: center;
+          border-bottom: 1px dotted $bg-dark-medium-grey;
+          .js-form-item-criteria, .js-form-item-sort-by, .js-form-item-sort-order{
+            display: flex;
+            flex-direction: column;
+          }
+          .js-form-type-textfield{
+            grid-area: search-input;
+            margin-bottom: 1.3rem !important;
+            label{
+              margin-bottom: 0.2rem;
+              @include textFormat(0.9rem, 700, $text-dark-dark-grey);
+            }
+            input{
+              width: 16rem;
+            }
+          }
+          .form-actions.js-form-wrapper{
+            display: flex;
+            grid-area: search-buttons;
+            gap: 1rem;
+            margin-bottom: 0.5rem !important;
+            button{
+              padding: 0.3rem 0.8rem;
+              height: 2.5rem;
+              width: 7.5rem;
+            }
+          }
+          .js-form-item-sort-by, .js-form-item-sort-order{
+            label{
+              margin-bottom: 0.2rem;
+              @include textFormat(0.9rem, 700, $text-dark-dark-grey);
+            }
+            select{
+              padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+              border-radius: 0.25rem;
+              height: 2.5rem;
+              width: 16rem;
+              color: $text-dark-green;
+              border: 1px solid $bg-dark-green;
+              background: $bg-white;
+            }
+          }
+          .js-form-item-sort-by{
+            grid-area: sort-by;
+          }
+          .js-form-item-sort-order{
+            grid-area: order-by;
+          }
+        }
+      }
+      .view-content{
+        margin: 1rem 0rem 0rem 1rem;
+        .views-row{
+          padding: 1rem 0rem;
+          width: 100%;
+          border-bottom: 1px dotted #616161;
+          .views-field-title-1{
+            padding-bottom: 0.5rem;
+            a{
+              @include textFormat(1.1rem, 700, $text-dark-green);
+            }
+          }
+
+          .views-field-field-themes-oshwiki{
+            align-self: start;
+            padding: 0.4rem 0.7rem;
+            margin-bottom: 0.3rem;
+            width: fit-content;
+            background-color: #449FA2;
+            border-radius: 20px;
+            @include textFormat(0.9rem, 600, $text-white);
+          }
+
+          .views-field-field-year-science,
+          .views-field-created,
+          .views-field-changed{
+            @include textFormat(0.9rem, null, $text-dark-dark-grey);
+            letter-spacing: 0.1px;
+            line-height: 27px;
+          }
+
+          .created-authored{
+            display: flex;
+            flex-direction: row;
+            gap: 0.3rem;
+            .divide{
+              letter-spacing: 0.1px;
+              line-height: 27px;
+              @include textFormat(0.9rem, null, $text-dark-green);
+            }
+          }
+
+          .views-field-field-sections-oshwiki,
+          .views-field-search-api-excerpt{
+            @include textFormat(1rem, null, $text-dark-dark-grey);
+            letter-spacing: 0.2px;
+            line-height: 27px;
+          }
+          .views-field-url{
+            display: flex;
+            flex-direction: row-reverse;
+            padding-top: 0.5rem;
+            letter-spacing: 0.3px;
+            line-height: 29px;
+            span{
+              display: flex;
+              align-items: center;
+              a {
+                margin-top: 3px;
+                @include textFormat(0.9rem, null, $text-dark-green);
+                &:hover{
+                  text-decoration: underline;
+                }
+              }
+            }
+            span::after{
+              display: inline-block;
+              content: " ";
+              width: 14px;
+              height: 14px;
+              margin-left: 0.5rem;
+              margin-top: 0.2rem;
+              background: url('../images/green-arrow_see_more.png') no-repeat;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 480px){
+  .page-view-search{
+    #main{
+      .block-system-main-block{
+        .view-filters{
+          .form-row{
+            grid-template-areas:
+              "search-input search-input search-buttons search-buttons"
+              "sort-by sort-by order-by order-by";
+            justify-content: start;
+            .js-form-type-textfield{
+              input{
+                width: 12rem;
+              }
+            }
+            .form-actions.js-form-wrapper{
+              button{
+                width: 7.15rem;
+                height: 2.45rem;
+                margin-bottom: 0.75rem !important;
+              }
+            }
+            .js-form-item-sort-by, .js-form-item-sort-order{
+              select{
+                width: 12rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-search{
+    #main{
+      /*Responsive layout with grid-area*/
+      .section{
+        grid-template-areas:
+      "content-type main-content main-content main-content"
+      "search-theme main-content main-content main-content";
+        grid-template-columns: 1.25fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+      }
+      /*End comment*/
+      .block-system-main-block{
+        .view-filters{
+          .form-row{
+            grid-template-areas:
+              "search-input search-buttons sort-by order-by";
+            grid-template-columns: auto auto auto auto;
+            justify-content: start;
+            .js-form-type-textfield{
+              input{
+                width: 15rem;
+              }
+            }
+            .form-actions.js-form-wrapper{
+              button{
+                width: 6rem;
+                height: 2.42rem;
+                padding-left: 0rem;
+                margin-right: 0.5rem;
+              }
+            }
+            .js-form-item-sort-by, .js-form-item-sort-order{
+              select{
+                height: 2.42rem;
+              }
+            }
+            .js-form-item-sort-by{
+              select{
+                width: 10rem;
+              }
+            }
+            .js-form-item-sort-order{
+              select{
+                width: 6rem;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

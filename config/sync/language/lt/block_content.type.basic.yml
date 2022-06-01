@@ -1,2 +1,2 @@
-label: 'Paprastas blokas'
-description: 'Paprastas blokas turi pavadinimą ir turinį,'
+label: 'Basic block'
+description: 'A basic block contains a title and a body.'

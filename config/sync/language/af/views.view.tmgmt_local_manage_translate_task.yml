@@ -1,10 +1,10 @@
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtreer
+          submit_button: Filter
           reset_button_label: Herstel
       pager:
         options:
@@ -12,7 +12,7 @@ display:
             items_per_page_options_all_label: '- Alle -'
       fields:
         title:
-          label: Titel
+          label: Title
         item_count:
           label: Items
   assigned:
@@ -21,119 +21,119 @@ display:
         status:
           label: Status
         title:
-          label: Titel
+          label: Title
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
   closed:
-    display_title: Gesluit
+    display_title: Closed
     display_options:
       menu:
-        title: Gesluit
+        title: Closed
       fields:
         status:
           label: Status
         created:
-          label: Geskep
+          label: Created
         title:
-          label: Titel
+          label: Title
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
   completed:
     display_options:
       fields:
         status:
           label: Status
         created:
-          label: Geskep
+          label: Created
         title:
-          label: Titel
+          label: Title
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
   pending:
-    display_title: Hangende
+    display_title: Pending
     display_options:
       menu:
-        title: Hangende
+        title: Pending
       fields:
         status:
           label: Status
         title:
-          label: Titel
+          label: Title
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
   rejected:
     display_options:
       fields:
         status:
           label: Status
         created:
-          label: Geskep
+          label: Created
         title:
-          label: Titel
+          label: Title
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
   unassigned:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Titel
+          label: Title
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         item_count:
           label: Items
         operations:
-          label: Aksies
+          label: Operations

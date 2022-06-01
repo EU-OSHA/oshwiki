@@ -64,6 +64,7 @@
             .js-form-submit{
               width: 25px;
               margin: 0rem 0.5rem;
+              padding-bottom: 1.3rem;
               border: none;
               color: transparent;
               background: {
@@ -130,122 +131,6 @@
       }
     }
   }
-}
-
-.content-main-menu{
-  border: {
-    color: $bg-very-light-grey;
-    style: solid;
-    width: 1px 0px;
-  }
-  padding-bottom: 0rem;
-  #block-oshwiki-theme-main-menu{
-    width: 100%
-  }
-  ul{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    li{
-      font-weight: 500;
-      a{
-        @include textFormat(1.1rem, 600, $text-dark-dark-grey);
-      }
-    }
-    .active{
-      position: relative;
-      a{
-        @include textFormat(1.1rem, 700, $text-dark-green);
-      }
-      &:after{
-        display: block;
-        position: absolute;
-        content: '';
-        bottom: -14px;
-        left: 0%;
-        right: 0%;
-        height: 0.3rem;
-        background: $bg-dark-orange;
-      }
-    }
-  }
-  .navbar-toggler{
-    padding: 0rem;
-  }
-  /*Header elements inside menu when screen widht < 992*/
-  .responsive-menu-oshwiki{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    /*Search box*/
-    .search-block-form{
-      padding: 0;
-      .form-row>fieldset, .form-row>div{
-        padding: 0rem;
-        margin: 0rem !important;
-      }
-      input, button{
-        height: 1.5rem;
-        font-size: 0.9;
-      }
-      input{
-        width: 10rem;
-        background-color: $bg-light-medium-grey;
-        border-radius: 0px;
-        color: $text-white;
-        border: 1px solid $bg-light-medium-grey;
-        &:focus{
-          box-shadow: none;
-        }
-      }
-      .js-form-submit{
-        width: 25px;
-        margin: 0rem 0.5rem;
-        border: none;
-        color: transparent;
-        background: {
-          color: transparent;
-          image: url('../images/icon-search.png');
-          repeat: no-repeat;
-          size: 1.5rem;
-        }
-      }
-    }
-    #search-block-form{
-      padding: 0px 5px;
-    }
-    #search-icon-responsive{
-      display: inline-block;
-      content: " ";
-      width: 25px;
-      height: 25px;
-      margin: 0rem 0.5rem;
-      background: {
-        image: url('../images/icon-search-dark-green.png');
-        repeat: no-repeat;
-        size: 1.5rem;
-      }
-      cursor: pointer;
-    }
-    /*Dropdown*/
-    form#lang_dropdown_form_lang-dropdown-form{
-      display: flex;
-      text-align: end;
-      justify-content: flex-end;
-      fieldset{
-        margin: 0rem !important;
-        select#edit-lang-dropdown-select{
-          width: 10rem !important;
-          background: $bg-dark-green;
-          border: $bg-light-green;
-          color: $text-white;
-        }
-      }
-    }
-  }
-  /*Hide header elements inside menu comment*/
 }
 
 .bg-image-banner{

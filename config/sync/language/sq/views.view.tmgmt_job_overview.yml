@@ -7,18 +7,18 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ paraardhëse'
-            next: 'në vazhdim ›'
-            first: '« e para'
-            last: 'e fundit »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         source_language_1:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         tags_count:
-          label: Etiketat
+          label: Tags
         operations:
-          label: Operacionet
+          label: Operations
   page_1:
     display_title: Faqe

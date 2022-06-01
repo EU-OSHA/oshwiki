@@ -4,16 +4,16 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pročisti
+          submit_button: Filter
           reset_button_label: Poništi
           exposed_sorts_label: 'Rasporedi po'
           sort_asc_label: Uzlazno
           sort_desc_label: Silazno
       fields:
         tmgmt_local_task_bulk_form:
-          label: 'Skupno osvježenje'
+          label: 'Bulk update'
         title:
-          label: Oznaka
+          label: Label
           separator: ', '
         item_count:
           label: Stavke
@@ -25,190 +25,190 @@ display:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          label: 'Skupno osvježenje'
+          label: 'Bulk update'
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
           separator: ', '
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         item_count:
           label: Stavke
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
       menu:
-        title: Zatvoreno
+        title: Closed
   completed:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          label: 'Skupno osvježenje'
+          label: 'Bulk update'
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
           separator: ', '
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         item_count:
           label: Stavke
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   eligible:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          label: 'Skupno osvježenje'
+          label: 'Bulk update'
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
           separator: ', '
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         item_count:
           label: Stavke
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   my_tasks:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          label: 'Skupno osvježenje'
+          label: 'Bulk update'
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
           separator: ', '
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         item_count:
           label: Stavke
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   pending:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          label: 'Skupno osvježenje'
+          label: 'Bulk update'
         status:
           label: Status
           separator: ', '
         title:
-          label: Oznaka
+          label: Label
           separator: ', '
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         item_count:
           label: Stavke
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   rejected:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          label: 'Skupno osvježenje'
+          label: 'Bulk update'
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
           separator: ', '
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         item_count:
           label: Stavke
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
         title:
           expose:
-            label: Oznaka
+            label: Label
   unassigned:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          label: 'Skupno osvježenje'
+          label: 'Bulk update'
         status:
           label: Status
         title:
-          label: Oznaka
+          label: Label
           separator: ', '
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         item_count:
           label: Stavke
         operations:
-          label: Operacije
+          label: Operations
       filters:
         status:
           expose:
             label: Status
       tab_options:
-        title: Prevedi
+        title: Translate

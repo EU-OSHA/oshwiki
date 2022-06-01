@@ -1,2 +1,2 @@
-label: 'Alapértelmezett rövid dátum idővel'
-pattern: 'Y. m. d. – H:i'
+label: 'Default short date'
+pattern: 'm/d/Y - H:i'

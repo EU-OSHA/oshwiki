@@ -4,4 +4,4 @@ display:
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Сите -'
+            items_per_page_options_all_label: '- All -'

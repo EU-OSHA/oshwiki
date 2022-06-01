@@ -1,4 +1,4 @@
-label: 'Promovido à página principal'
+label: 'Promoted to front page'
 settings:
-  on_label: Ligado
-  off_label: Desligado
+  on_label: 'On'
+  off_label: 'Off'

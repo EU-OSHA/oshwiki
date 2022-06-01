@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtri
+          submit_button: Filter
           reset_button_label: Rifillo
       fields:
         item_count:
@@ -11,127 +11,127 @@ display:
       filters:
         status:
           expose:
-            label: Gjendja
+            label: Status
   closed:
     display_options:
       fields:
         status:
-          label: Gjendja
+          label: Status
         source_language:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         item_count:
           label: Elementët
         operations:
-          label: Operacionet
+          label: Operations
       filters:
         status:
           expose:
-            label: Gjendja
+            label: Status
       menu:
-        title: 'I mbyllur'
+        title: Closed
   completed:
     display_options:
       fields:
         status:
-          label: Gjendja
+          label: Status
         source_language:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         item_count:
           label: Elementët
         operations:
-          label: Operacionet
+          label: Operations
       filters:
         status:
           expose:
-            label: Gjendja
+            label: Status
   eligible:
     display_options:
       fields:
         status:
-          label: Gjendja
+          label: Status
         source_language:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         item_count:
           label: Elementët
         operations:
-          label: Operacionet
+          label: Operations
       filters:
         status:
           expose:
-            label: Gjendja
+            label: Status
   my_tasks:
     display_options:
       fields:
         status:
-          label: Gjendja
+          label: Status
         source_language:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         item_count:
           label: Elementët
         operations:
-          label: Operacionet
+          label: Operations
       filters:
         status:
           expose:
-            label: Gjendja
+            label: Status
   pending:
     display_options:
       fields:
         status:
-          label: Gjendja
+          label: Status
         source_language:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         item_count:
           label: Elementët
         operations:
-          label: Operacionet
+          label: Operations
       filters:
         status:
           expose:
-            label: Gjendja
+            label: Status
   rejected:
     display_options:
       fields:
         status:
-          label: Gjendja
+          label: Status
         source_language:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         item_count:
           label: Elementët
         operations:
-          label: Operacionet
+          label: Operations
       filters:
         status:
           expose:
-            label: Gjendja
+            label: Status
   unassigned:
     display_options:
       fields:
         status:
-          label: Gjendja
+          label: Status
         source_language:
-          label: Nga
+          label: From
         target_language:
-          label: Për
+          label: To
         item_count:
           label: Elementët
         operations:
-          label: Operacionet
+          label: Operations
       filters:
         status:
           expose:
-            label: Gjendja
+            label: Status
       tab_options:
-        title: Përkthe
+        title: Translate

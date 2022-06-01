@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Todo -'
             offset_label: Desplazamiento
           tags:
-            previous: '‹ anterior'
-            next: 'siguiente ›'
-            first: '« primero'
-            last: 'último »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Estado
@@ -58,6 +58,6 @@ display:
     display_title: Página
     display_options:
       menu:
-        title: Empleos
+        title: Jobs
       tab_options:
-        title: Empleos
+        title: Jobs

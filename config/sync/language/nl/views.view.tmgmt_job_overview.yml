@@ -1,4 +1,4 @@
-description: 'Biedt een massaverwerkingsoverzicht van vertaalopdrachten in het systeem.'
+description: 'Gives a bulk operation overview of translation jobs in the system.'
 display:
   default:
     display_title: Hoofd
@@ -17,10 +17,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Startpunt
           tags:
-            previous: '‹ vorige'
-            next: 'volgende ›'
-            first: '« eerste'
-            last: 'laatste »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Status
@@ -60,12 +60,12 @@ display:
             label: Provider
       empty:
         area_text_custom:
-          content: 'Geen opdrachten beschikbaar.'
+          content: 'No jobs available.'
   page_1:
     display_title: Pagina
     display_options:
       menu:
-        title: Opdrachten
-        description: 'Beheer en controleer bestaande vertaalopdrachten.'
+        title: Jobs
+        description: 'Manage and review existing translation jobs.'
       tab_options:
-        title: Opdrachten
+        title: Jobs

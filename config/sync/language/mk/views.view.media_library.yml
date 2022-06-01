@@ -4,9 +4,9 @@ display:
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Сите -'
+            items_per_page_options_all_label: '- All -'
   widget_table:
     display_options:
       fields:
         uid:
-          label: Автор
+          label: Author

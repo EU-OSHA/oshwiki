@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apstiprināt
+          submit_button: Apply
           reset_button_label: Attīrīt
           exposed_sorts_label: 'Kārtot pēc'
           sort_desc_label: Dilst.
@@ -16,10 +16,10 @@ display:
         id:
           label: ID
         changed:
-          label: Labots
+          label: Changed
       filters:
         changed_2:
           expose:
-            label: Labots
+            label: Changed
   list:
     display_title: Lapa

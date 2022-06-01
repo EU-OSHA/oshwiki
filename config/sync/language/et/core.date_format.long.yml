@@ -1,2 +1,2 @@
-label: 'Vaikimisi pikk kuupäevaformaat'
+label: 'Default long date'
 pattern: 'l, F j, Y - H:i'

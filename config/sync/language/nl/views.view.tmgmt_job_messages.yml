@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ vorige'
-            next: 'volgende ›'
-            first: '« eerste'
-            last: 'laatste »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Items per pagina'
             items_per_page_options_all_label: '- Alle -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Naam
           separator: ', '
-      title: Berichten
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Alle
   embed:
-    display_title: Inbedden
+    display_title: Embed

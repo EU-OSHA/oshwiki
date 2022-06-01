@@ -3,14 +3,14 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: 'Cuir i bhfeidhm'
+          submit_button: Apply
       pager:
         options:
           tags:
-            previous: '‹ siar'
-            next: 'ar aghaidh ›'
-            first: '« céad lch.'
-            last: 'lch. deir »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         created:
-          label: Cruthaithe
+          label: Created

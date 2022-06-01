@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskydning
           tags:
-            previous: '‹ forrige'
-            next: 'næste ›'
-            first: '« første'
-            last: 'sidste »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Status
@@ -43,7 +43,7 @@ display:
           exception:
             title: Alle
   checkout:
-    display_title: 'Til kassen'
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -56,4 +56,4 @@ display:
           label: Ændret
           separator: ', '
   submitted:
-    display_title: Indsendt
+    display_title: Submitted

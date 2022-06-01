@@ -1,2 +1,2 @@
-label: Tagovi
-description: 'Unesite nazive odvojene zarezom. Na primjer: Amsterdam, Donji Vakuf, Rogatica'
+label: Tags
+description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'

@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ önceki'
-            next: 'sonraki ›'
-            first: '« ilk'
-            last: 'son »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Sayfa başına öğe sayısı'
             items_per_page_options_all_label: '- Tümü -'
@@ -28,10 +28,10 @@ display:
         name:
           label: İsim
           separator: ', '
-      title: İletiler
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Tümü
   embed:
-    display_title: Göm
+    display_title: Embed

@@ -1,0 +1,23 @@
+uuid: 9f7e1c48-f93b-47be-b0e3-30274a76ca0c
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: local
+description: ''
+weight: 0
+folder: sites/oshwiki/config/local
+module:
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  osha_import_export: 0
+theme: {  }
+blacklist:
+  - 'migrate_plus*'
+graylist:
+  - search_api.server.solr
+  - system.performance
+graylist_dependents: false
+graylist_skip_equal: true

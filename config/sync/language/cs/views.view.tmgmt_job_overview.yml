@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Vše -'
             offset_label: Posun
           tags:
-            previous: '‹ předchozí'
-            next: 'následující ›'
-            first: '« první'
-            last: 'poslední »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Stav

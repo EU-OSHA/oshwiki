@@ -18,9 +18,23 @@
 /*This variable tells us if the responsive menu is currently collapsed (true)*/
 let menuSM = false;
 
+/*After ajax calls - used in themes*/
+(function ($) {
+  $(document).ajaxStop(function() {
+    if($("body").hasClass("page-view-themes")){
+      selectTheme();
+    }
+  });
+}(jQuery));
+/*After ajax calls - used in the general search and themes*/
+
 jQuery(window).on("load",function(){
-  selectTheme();
   checkResponsiveMenu(jQuery(window).width(), menuSM);
+  hideOriginalContentTextAfterSearch();
+  /*The themes page will call this function after the ajax call*/
+  if(!jQuery("body").hasClass("page-view-themes")){
+    selectTheme();
+  }
 });
 
 jQuery(window).resize(function(){
@@ -30,10 +44,25 @@ jQuery(window).resize(function(){
 jQuery(document).ready(function($) {
   let theURL=$(location).attr("href");
   checkFooterMargin();
+  $("button.navbar-toggler-right").click(setMenuResponsiveSearchBoxMargin);
   themeAlfabethicalViewTabs(theURL);
   checkIfParagraphImgHasText('.section_most_popular', '.section_most_recent');
   createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent']);
   createDivCards("node--type-oshwiki-articles",['.related-articles']);
+
+  /*Set the margin for the search box inside responsive menu*/
+  function setMenuResponsiveSearchBoxMargin(){
+    if(jQuery(window).width()<993){
+      if($(this).next().hasClass("show")){
+        $(".responsive-menu-oshwiki").css("margin", "0rem");
+        $("#search-icon-responsive").css("margin-left", "0rem");
+      }else{
+        console.log
+        $(".responsive-menu-oshwiki").css("margin", "0.5rem 0rem 0.5rem 0rem");
+        $("#search-icon-responsive").css("margin-left", "1rem");
+      }
+    }
+  }
 
   /*If there is a "related-article" div, remove the margin-top*/
   function checkFooterMargin(){
@@ -105,7 +134,8 @@ function hideEverySubthemeCatNotSelected(){
 
 /*Add span tags inside the list elements*/
 function createNewSpanForThemeIcon(){
-  jQuery(".facets-widget-links > ul > .facet-item--expanded > a").after("<span class='showSubthemes'></span>");
+  jQuery(".facets-widget-links > ul > .facet-item > a").after("<span class='showSubthemes'></span>");
+  jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value").before("<span class='iconSubtheme'></span>");
 
   /*When the theme is clicked, toggle subthemes*/
   jQuery(".showSubthemes").click(function(){
@@ -148,6 +178,15 @@ function checkResponsiveMenu(windowWidth, menuSmall){
       jQuery("#block-oshwiki-theme-search").show();
       jQuery(".font-size-print").toggle();
       menuSM = false;
+    }
+  }
+}
+
+/*After searching for content in the General Search, hide the original article description text*/
+function hideOriginalContentTextAfterSearch(){
+  if(jQuery("body").hasClass("page-view-search")){
+    if(jQuery(".block-system-main-block .view-content .views-row").find(".views-field-search-api-excerpt").lenght>0){
+      jQuery(".block-system-main-block .view-content .views-row").find(".views-field-field-sections-oshwiki").hide();
     }
   }
 }

@@ -1,2 +1,2 @@
-label: 'Data longa predefinida'
-pattern: 'l, d \d\e F \d\e Y - H:i'
+label: 'Default long date'
+pattern: 'l, F j, Y - H:i'

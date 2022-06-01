@@ -1,4 +1,4 @@
-label: 'Προβιβασμένο στην πρώτη σελίδα'
+label: 'Promoted to front page'
 settings:
-  on_label: Ανοικτό
-  off_label: Κλειστό
+  on_label: 'On'
+  off_label: 'Off'

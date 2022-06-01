@@ -4,8 +4,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ претходно'
-            first: '« прв'
-            last: 'последно »'
+            previous: '‹ previous'
+            first: '« first'
+            last: 'last »'
           expose:
-            items_per_page_options_all_label: '- Сите -'
+            items_per_page_options_all_label: '- All -'

@@ -6,22 +6,22 @@ display:
           exposed_sorts_label: 'Сортирај по'
       fields:
         state:
-          label: Статус
+          label: State
         label:
-          label: Ознака
+          label: Label
         type:
-          label: Tип
+          label: Type
         changed:
-          label: Промењен
+          label: Changed
         operations:
-          label: Операције
+          label: Operations
   checkout:
-    display_title: 'Заврши куповину'
+    display_title: Checkout
     display_options:
       fields:
         label:
-          label: Ознака
+          label: Label
         type:
-          label: Tип
+          label: Type
         changed:
-          label: Промењен
+          label: Changed

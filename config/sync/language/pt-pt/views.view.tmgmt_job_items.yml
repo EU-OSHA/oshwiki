@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Todos -'
             offset_label: Deslocamento
           tags:
-            previous: '‹ anterior'
-            next: 'seguinte ›'
-            first: '« primeira'
-            last: 'última »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Estado
@@ -43,7 +43,7 @@ display:
           exception:
             title: Todos
   checkout:
-    display_title: Confirmar
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -56,4 +56,4 @@ display:
           label: Alterado
           separator: ', '
   submitted:
-    display_title: Submetido
+    display_title: Submitted

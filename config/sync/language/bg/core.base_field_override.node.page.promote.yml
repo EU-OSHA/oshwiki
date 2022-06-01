@@ -1,4 +1,4 @@
-label: 'Публикувано на първа страница'
+label: 'Promoted to front page'
 settings:
-  on_label: Включи
-  off_label: Изключи
+  on_label: 'On'
+  off_label: 'Off'

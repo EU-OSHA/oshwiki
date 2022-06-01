@@ -1,4 +1,4 @@
-label: 'Aangeraden op de voorpagina'
+label: 'Promoted to front page'
 settings:
-  on_label: Aan
-  off_label: Uit
+  on_label: 'On'
+  off_label: 'Off'

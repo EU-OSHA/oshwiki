@@ -4,41 +4,41 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Primjeni
+          submit_button: Apply
           reset_button_label: Poništi
           exposed_sorts_label: 'Rasporedi po'
           sort_asc_label: Uzlazno
           sort_desc_label: Silazno
       fields:
         state:
-          label: Država
+          label: State
         label:
-          label: Oznaka
+          label: Label
         type:
-          label: Vrsta
+          label: Type
         source_language:
-          label: Od
+          label: From
           separator: ', '
         target_language:
-          label: Za
+          label: To
           separator: ', '
         word_count:
           separator: ', '
         tags_count:
-          label: Oznake
+          label: Tags
           separator: ', '
         changed:
           separator: ', '
         operations:
-          label: Operacije
+          label: Operations
       filters:
         state:
           group_info:
-            label: Država
+            label: State
         job_type:
           group_info:
             group_items:
               1:
-                title: Normalno
+                title: Normal
   page_1:
     display_title: Stranica

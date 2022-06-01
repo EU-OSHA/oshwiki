@@ -1,2 +1,2 @@
-label: 'Egyszerű blokk'
-description: 'Egy egyszerű, címet és törzset tartalmazó blokk.'
+label: 'Basic block'
+description: 'A basic block contains a title and a body.'

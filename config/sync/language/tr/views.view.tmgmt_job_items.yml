@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Tümü -'
             offset_label: 'Başlangıç değeri'
           tags:
-            previous: '‹ önceki'
-            next: 'sonraki ›'
-            first: '« ilk'
-            last: 'son »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Eyalet
@@ -41,7 +41,7 @@ display:
           exception:
             title: Tümü
   checkout:
-    display_title: Kasa
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -54,4 +54,4 @@ display:
           label: Değişti
           separator: ', '
   submitted:
-    display_title: 'Girdi Tarihi'
+    display_title: Submitted

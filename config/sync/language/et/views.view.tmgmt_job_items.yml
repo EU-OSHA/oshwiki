@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
           tags:
-            previous: '‹ eelmine'
-            next: 'järgmine ›'
-            first: '« esimene'
-            last: 'viimane »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Olek
@@ -41,7 +41,7 @@ display:
           exception:
             title: Kõik
   checkout:
-    display_title: Kassa
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -54,4 +54,4 @@ display:
           label: Muudetud
           separator: ', '
   submitted:
-    display_title: Vastatud
+    display_title: Submitted

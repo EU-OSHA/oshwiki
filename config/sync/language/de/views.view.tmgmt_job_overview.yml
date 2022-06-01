@@ -1,4 +1,4 @@
-label: Auftragsübersicht
+label: 'Job overview'
 display:
   default:
     display_title: Master
@@ -17,10 +17,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Versatz
           tags:
-            previous: '‹ vorherige Seite'
-            next: 'nächste Seite ›'
-            first: '« erste Seite'
-            last: 'letzte Seite »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Status
@@ -58,14 +58,14 @@ display:
         translator:
           expose:
             label: Anbieter
-      title: Auftragsübersicht
+      title: 'Job overview'
       empty:
         area_text_custom:
-          content: 'Keine Aufträge verfügbar.'
+          content: 'No jobs available.'
   page_1:
     display_title: Seite
     display_options:
       menu:
-        title: Aufträge
+        title: Jobs
       tab_options:
-        title: Aufträge
+        title: Jobs

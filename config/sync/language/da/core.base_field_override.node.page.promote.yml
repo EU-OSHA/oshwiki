@@ -1,4 +1,4 @@
-label: 'Forfremmet til forside'
+label: 'Promoted to front page'
 settings:
-  on_label: Tilsluttet
-  off_label: Afbrudt
+  on_label: 'On'
+  off_label: 'Off'

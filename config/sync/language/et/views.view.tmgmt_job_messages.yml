@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ eelmine'
-            next: 'järgmine ›'
-            first: '« esimene'
-            last: 'viimane »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Kirjeid lehel'
             items_per_page_options_all_label: '- Kõik -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Nimi
           separator: ', '
-      title: Sõnumid
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Kõik
   embed:
-    display_title: Manus
+    display_title: Embed

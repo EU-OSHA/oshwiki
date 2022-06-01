@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
           tags:
-            previous: '‹ föregående'
-            next: 'nästa ›'
-            first: '« första'
-            last: 'sista »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Läge
@@ -43,7 +43,7 @@ display:
           exception:
             title: Alla
   checkout:
-    display_title: Kassan
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -56,4 +56,4 @@ display:
           label: Ändrad
           separator: ', '
   submitted:
-    display_title: Skickad
+    display_title: Submitted

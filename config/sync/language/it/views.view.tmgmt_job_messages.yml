@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ precedente'
-            next: 'seguente ›'
-            first: '« prima'
-            last: 'ultima »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Voci per pagina'
             items_per_page_options_all_label: '- Tutto -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Nome
           separator: ', '
-      title: Messaggi
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Tutti
   embed:
-    display_title: Integra
+    display_title: Embed

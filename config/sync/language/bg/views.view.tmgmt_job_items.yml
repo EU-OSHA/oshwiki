@@ -3,35 +3,35 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
+          submit_button: Apply
           reset_button_label: Рестартирай
       pager:
         options:
           tags:
-            previous: '‹ предишна'
-            next: 'следваща ›'
-            first: '« първа'
-            last: 'последна »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
-          label: Статус
+          label: State
         label:
-          label: Заглавие
+          label: Label
         type:
-          label: Тип
+          label: Type
         tags_count:
-          label: Таг
+          label: Tags
         operations:
-          label: Действия
+          label: Operations
       arguments:
         tjid:
           exception:
             title: Всички
   checkout:
-    display_title: Поръчване
+    display_title: Checkout
     display_options:
       fields:
         label:
-          label: Заглавие
+          label: Label
         type:
-          label: Тип
+          label: Type

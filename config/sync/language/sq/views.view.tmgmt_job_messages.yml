@@ -7,13 +7,13 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ paraardhëse'
-            next: 'në vazhdim ›'
-            first: '« e para'
-            last: 'e fundit »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         created:
-          label: Krijuar
+          label: Created
         name:
           label: Emri
       arguments:

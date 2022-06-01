@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: "‹\_précédent"
-            next: "suivant\_›"
-            first: "«\_premier"
-            last: "dernier\_»"
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Éléments par page'
             items_per_page_options_all_label: '- Tout -'
@@ -34,4 +34,4 @@ display:
           exception:
             title: Tout
   embed:
-    display_title: Intégré
+    display_title: Embed

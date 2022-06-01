@@ -6,19 +6,19 @@ display:
           exposed_sorts_label: 'Сортирај по'
       fields:
         state:
-          label: Статус
+          label: State
         label:
-          label: Ознака
+          label: Label
         translator:
-          label: Провајдер
+          label: Provider
         changed:
-          label: Промењен
+          label: Changed
         operations:
-          label: Операције
+          label: Operations
       filters:
         state:
           expose:
-            label: Статус
+            label: State
         translator:
           expose:
-            label: Провајдер
+            label: Provider

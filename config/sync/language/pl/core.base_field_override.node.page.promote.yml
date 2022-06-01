@@ -1,4 +1,4 @@
-label: 'Promowany na stronie głównej'
+label: 'Promoted to front page'
 settings:
-  on_label: Włączony
-  off_label: Wyłączony
+  on_label: 'On'
+  off_label: 'Off'

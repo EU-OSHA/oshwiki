@@ -1,2 +1,2 @@
-label: 'Data intermédia predefinida'
-pattern: 'D, Y-m-d H:i'
+label: 'Default medium date'
+pattern: 'D, m/d/Y - H:i'

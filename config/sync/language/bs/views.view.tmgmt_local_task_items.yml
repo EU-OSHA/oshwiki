@@ -3,21 +3,21 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Primjeni
+          submit_button: Apply
           reset_button_label: Reset
           exposed_sorts_label: 'Sortiraj prema'
       fields:
         status:
           label: Status
         label:
-          label: Oznaka
+          label: Label
         item_type:
-          label: Tip
+          label: Type
         operations:
-          label: Operacije
+          label: Operations
       arguments:
         tltid:
           exception:
             title: Sve
   block_1:
-    display_title: Blok
+    display_title: Block

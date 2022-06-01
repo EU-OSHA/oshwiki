@@ -3,26 +3,26 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
+          submit_button: Apply
           reset_button_label: Рестартирай
       fields:
         state:
-          label: Статус
+          label: State
         label:
-          label: Заглавие
+          label: Label
         type:
-          label: Тип
+          label: Type
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         tags_count:
-          label: Таг
+          label: Tags
         operations:
-          label: Действия
+          label: Operations
       filters:
         state:
           group_info:
-            label: Статус
+            label: State
   page_1:
     display_title: Страница

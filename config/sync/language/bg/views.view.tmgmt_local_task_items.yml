@@ -3,20 +3,20 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
+          submit_button: Apply
           reset_button_label: Рестартирай
       fields:
         status:
-          label: Статус
+          label: Status
         label:
-          label: Заглавие
+          label: Label
         item_type:
-          label: Тип
+          label: Type
         operations:
-          label: Действия
+          label: Operations
       arguments:
         tltid:
           exception:
             title: Всички
   block_1:
-    display_title: Блокирай
+    display_title: Block

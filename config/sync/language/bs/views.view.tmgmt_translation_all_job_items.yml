@@ -3,23 +3,23 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Primjeni
+          submit_button: Apply
           reset_button_label: Reset
           exposed_sorts_label: 'Sortiraj prema'
       fields:
         label:
-          label: Oznaka
+          label: Label
         type:
-          label: Tip
+          label: Type
         tags_count:
-          label: Tagovi
+          label: Tags
         operations:
-          label: Operacije
+          label: Operations
       filters:
         job_type:
           group_info:
             group_items:
               1:
-                title: Normalno
+                title: Normal
   page_1:
     display_title: Strana

@@ -6,12 +6,12 @@ display:
           exposed_sorts_label: 'Сортирај по'
       fields:
         status:
-          label: Статус
+          label: Status
         label:
-          label: Ознака
+          label: Label
         item_type:
-          label: Tип
+          label: Type
         operations:
-          label: Операције
+          label: Operations
   block_1:
-    display_title: Блок
+    display_title: Block

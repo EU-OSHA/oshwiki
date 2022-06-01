@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
           tags:
-            previous: '‹ előző'
-            next: 'következő ›'
-            first: '« első'
-            last: 'utolsó »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Állapot
@@ -44,7 +44,7 @@ display:
           exception:
             title: Mind
   checkout:
-    display_title: Pénztár
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -58,4 +58,4 @@ display:
           label: Módosítva
           separator: ', '
   submitted:
-    display_title: Beküldött
+    display_title: Submitted

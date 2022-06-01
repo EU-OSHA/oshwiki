@@ -3,171 +3,171 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Филтър
+          submit_button: Filter
           reset_button_label: Рестартирай
       fields:
         title:
-          label: Заглавие
+          label: Label
         item_count:
           label: Новини
       filters:
         status:
           expose:
-            label: Статус
+            label: Status
   closed:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Label
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           expose:
-            label: Статус
+            label: Status
         title:
           expose:
-            label: Заглавие
+            label: Label
       menu:
-        title: Закрито
+        title: Closed
   completed:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Label
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           expose:
-            label: Статус
+            label: Status
         title:
           expose:
-            label: Заглавие
+            label: Label
   eligible:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Label
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           expose:
-            label: Статус
+            label: Status
         title:
           expose:
-            label: Заглавие
+            label: Label
   my_tasks:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Label
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           expose:
-            label: Статус
+            label: Status
         title:
           expose:
-            label: Заглавие
+            label: Label
   pending:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Label
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           expose:
-            label: Статус
+            label: Status
         title:
           expose:
-            label: Заглавие
+            label: Label
       menu:
-        title: 'В изчакване'
+        title: Pending
   rejected:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Label
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           expose:
-            label: Статус
+            label: Status
         title:
           expose:
-            label: Заглавие
+            label: Label
   unassigned:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Label
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           expose:
-            label: Статус
+            label: Status
       tab_options:
-        title: Преведи
+        title: Translate

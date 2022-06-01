@@ -3,135 +3,135 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Филтър
+          submit_button: Filter
           reset_button_label: Рестартирай
       fields:
         title:
-          label: Заглавие
+          label: Title
         item_count:
           label: Новини
   assigned:
-    display_title: 'Назначена на'
+    display_title: Assigned
     display_options:
       menu:
-        title: 'Назначена на'
+        title: Assigned
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Title
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
   closed:
-    display_title: Закрито
+    display_title: Closed
     display_options:
       menu:
-        title: Закрито
+        title: Closed
       fields:
         status:
-          label: Статус
+          label: Status
         created:
-          label: Създадено
+          label: Created
         title:
-          label: Заглавие
+          label: Title
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
   completed:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         created:
-          label: Създадено
+          label: Created
         title:
-          label: Заглавие
+          label: Title
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
   pending:
-    display_title: 'В изчакване'
+    display_title: Pending
     display_options:
       menu:
-        title: 'В изчакване'
+        title: Pending
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Title
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
   rejected:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         created:
-          label: Създадено
+          label: Created
         title:
-          label: Заглавие
+          label: Title
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
   unassigned:
     display_options:
       fields:
         status:
-          label: Статус
+          label: Status
         title:
-          label: Заглавие
+          label: Title
         source_language:
-          label: От
+          label: From
         target_language:
-          label: До
+          label: To
         item_count:
           label: Новини
         operations:
-          label: Действия
+          label: Operations

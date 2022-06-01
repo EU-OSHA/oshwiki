@@ -1,4 +1,4 @@
-label: 'Ana sayfaya yükseltilmiş'
+label: 'Promoted to front page'
 settings:
-  on_label: Açık
-  off_label: Kapalı
+  on_label: 'On'
+  off_label: 'Off'

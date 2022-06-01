@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ forrige'
-            next: 'næste ›'
-            first: '« første'
-            last: 'sidste »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Antal elementer'
             items_per_page_options_all_label: '- Alle -'
@@ -28,7 +28,7 @@ display:
         name:
           label: Navn
           separator: ', '
-      title: Beskeder
+      title: Messages
       arguments:
         tjid:
           exception:

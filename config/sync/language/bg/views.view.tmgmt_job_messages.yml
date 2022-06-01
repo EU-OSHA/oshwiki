@@ -3,21 +3,21 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
+          submit_button: Apply
           reset_button_label: Рестартирай
       pager:
         options:
           tags:
-            previous: '‹ предишна'
-            next: 'следваща ›'
-            first: '« първа'
-            last: 'последна »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         created:
-          label: Създадено
+          label: Created
         name:
           label: Име
-      title: Съобщения
+      title: Messages
       arguments:
         tjid:
           exception:

@@ -1,0 +1,33 @@
+uuid: e051b3ae-c466-492e-8182-c05682b5d2a7
+langcode: en
+status: true
+dependencies: {  }
+id: import_oshwiki_articles_sections_parag
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: null
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: xml
+  urls: /var/www/html/osha/web/sites/oshwiki/files/xmlMigration/oswikiDrupal.xml
+  item_selector: /mediawiki/contents/content/revisions/revision/paragraphs/paragraph
+  fields:
+    -
+      name: field_title_sections
+      label: field_title_sections
+      selector: paragraphTitle
+    -
+      name: field_description_sections
+      label: field_description_sections
+      selector: paragraphBody
+process:
+  field_title_sections: field_title_sections
+  field_description_sections: field_description_sections
+destination:
+  plugin: 'entity_reference_revisions:paragraph'
+  default_bundle: oshwiki_articles
+migration_dependencies: null

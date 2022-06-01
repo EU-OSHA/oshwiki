@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pritaikyti
+          submit_button: Apply
           reset_button_label: Išvalyti
           exposed_sorts_label: 'Rikiuoti pagal'
       pager:
@@ -12,36 +12,36 @@ display:
             items_per_page_label: 'Vienetų kiekis puslapyje'
             items_per_page_options_all_label: '- Visos -'
           tags:
-            previous: '‹ ankstesnis'
-            next: 'kitas  ›'
-            first: '« pirmas'
-            last: 'paskutinis  »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
-          label: Etapas
+          label: State
         label:
-          label: Žymė
+          label: Label
         type:
-          label: Tipas
+          label: Type
         tags_count:
-          label: Raktažodžiai
+          label: Tags
         changed:
-          label: Pakeista
+          label: Changed
         operations:
-          label: Veiksmai
+          label: Operations
       arguments:
         tjid:
           exception:
             title: Visi
   checkout:
-    display_title: Pirkti
+    display_title: Checkout
     display_options:
       fields:
         label:
-          label: Žymė
+          label: Label
         type:
-          label: Tipas
+          label: Type
         changed:
-          label: Pakeista
+          label: Changed
   submitted:
-    display_title: Pateikta
+    display_title: Submitted

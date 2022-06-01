@@ -1,4 +1,4 @@
-label: 'Iškeltas į pagrindinį puslapį'
+label: 'Promoted to front page'
 settings:
-  on_label: Įjungta
-  off_label: Išjungta
+  on_label: 'On'
+  off_label: 'Off'

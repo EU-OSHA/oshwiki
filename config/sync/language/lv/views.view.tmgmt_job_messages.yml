@@ -3,22 +3,22 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apstiprināt
+          submit_button: Apply
           reset_button_label: Attīrīt
           exposed_sorts_label: 'Kārtot pēc'
           sort_desc_label: Dilst.
       pager:
         options:
           tags:
-            previous: '‹ iepriekšējā'
-            next: 'nākamā ›'
-            first: '« pirmā'
-            last: 'pēdējā »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_options_all_label: '- Visi -'
       fields:
         created:
-          label: Izveidots
+          label: Created
         label:
           label: Ieraksts
         name:

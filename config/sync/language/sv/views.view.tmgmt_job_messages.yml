@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ föregående'
-            next: 'nästa ›'
-            first: '« första'
-            last: 'sista »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Inlägg per sida'
             items_per_page_options_all_label: '- Alla -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Namn
           separator: ', '
-      title: Meddelanden
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Alla
   embed:
-    display_title: 'Bädda in'
+    display_title: Embed

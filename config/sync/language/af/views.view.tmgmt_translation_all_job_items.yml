@@ -1,10 +1,10 @@
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: 'Pas toe'
+          submit_button: Apply
           reset_button_label: Herstel
       pager:
         options:
@@ -12,20 +12,20 @@ display:
             items_per_page_options_all_label: '- Alle -'
       fields:
         type:
-          label: Tipe
+          label: Type
         source_language:
-          label: Van
+          label: From
         target_language:
-          label: Aan
+          label: To
         tags_count:
-          label: Etikette
+          label: Tags
         operations:
-          label: Aksies
+          label: Operations
       filters:
         job_type:
           group_info:
             group_items:
               1:
-                title: Normaal
+                title: Normal
   page_1:
     display_title: Bladsy

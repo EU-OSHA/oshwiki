@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
           tags:
-            previous: '‹ poprzednia'
-            next: 'następna ›'
-            first: '« pierwsza'
-            last: 'ostatnia »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         state:
           label: Stan
@@ -44,7 +44,7 @@ display:
           exception:
             title: Wszystko
   checkout:
-    display_title: 'Realizacja zamówienia'
+    display_title: Checkout
     display_options:
       fields:
         label:
@@ -58,4 +58,4 @@ display:
           label: Zmieniono
           separator: ', '
   submitted:
-    display_title: Przesłano
+    display_title: Submitted

@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ poprzednia'
-            next: 'następna ›'
-            first: '« pierwsza'
-            last: 'ostatnia »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page_label: 'Elementów na stronę'
             items_per_page_options_all_label: '- Wszystko -'
@@ -28,10 +28,10 @@ display:
         name:
           label: Nazwa
           separator: ', '
-      title: Wiadomości
+      title: Messages
       arguments:
         tjid:
           exception:
             title: Wszystko
   embed:
-    display_title: Osadzony
+    display_title: Embed

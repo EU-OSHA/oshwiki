@@ -1,4 +1,4 @@
-label: 'Kynna á forsíðu'
+label: 'Promoted to front page'
 settings:
-  on_label: Virkjað
-  off_label: Af
+  on_label: 'On'
+  off_label: 'Off'

@@ -1,4 +1,4 @@
-label: 'Címlapra helyezve'
+label: 'Promoted to front page'
 settings:
-  on_label: Be
-  off_label: Ki
+  on_label: 'On'
+  off_label: 'Off'

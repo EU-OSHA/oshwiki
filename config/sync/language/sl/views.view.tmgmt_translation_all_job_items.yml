@@ -6,16 +6,16 @@ display:
           reset_button_label: Ponastavi
       fields:
         label:
-          label: Oznaka
+          label: Label
         type:
-          label: Tip
+          label: Type
         source_language:
-          label: Od
+          label: From
         target_language:
-          label: Za
+          label: To
         tags_count:
-          label: Oznake
+          label: Tags
         operations:
-          label: Operacije
+          label: Operations
   page_1:
     display_title: Stran
