@@ -1,0 +1,29 @@
+uuid: 598d23d2-d504-4621-9972-c0047df7798e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.sections_paragraph.field_description_sections
+    - field.field.paragraph.sections_paragraph.field_media
+    - field.field.paragraph.sections_paragraph.field_title_sections
+    - paragraphs.paragraphs_type.sections_paragraph
+  module:
+    - text
+id: paragraph.sections_paragraph.preview
+targetEntityType: paragraph
+bundle: sections_paragraph
+mode: preview
+content:
+  field_description_sections:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_media: true
+  field_title_sections: true
+  search_api_excerpt: true

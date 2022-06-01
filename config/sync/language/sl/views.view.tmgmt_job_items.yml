@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        label:
+          label: Label
+        type:
+          label: Type
+        tags_count:
+          label: Tags
+        operations:
+          label: Operations
+      arguments:
+        tjid:
+          exception:
+            title: Vsi
+  checkout:
+    display_options:
+      fields:
+        label:
+          label: Label
+        type:
+          label: Type

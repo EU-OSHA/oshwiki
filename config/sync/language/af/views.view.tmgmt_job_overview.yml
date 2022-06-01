@@ -1,0 +1,28 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        source_language_1:
+          label: From
+        target_language:
+          label: To
+        tags_count:
+          label: Tags
+        operations:
+          label: Operations
+  page_1:
+    display_title: Bladsy

@@ -1,0 +1,45 @@
+uuid: 45c09cce-712a-499c-9186-ceb4b20c7646
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: ''
+weight: 0
+folder: sites/oshwiki/config/production
+module:
+  authorization: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  osha_import_export: 0
+  externalauth: 10
+theme: {  }
+blacklist:
+  - migrate_drupal.settings
+  - migrate_plus.migration.import_crm_advisorygroups_agcp
+  - migrate_plus.migration.import_crm_advisorygroups_prag
+  - migrate_plus.migration.import_crm_advisorygroups_wesag
+  - migrate_plus.migration.import_crm_board
+  - migrate_plus.migration.import_crm_bureauforweb
+  - migrate_plus.migration.import_crm_focalpoints
+  - migrate_plus.migration.import_oshwiki_articles_further_parag
+  - migrate_plus.migration.import_oshwiki_articles_references_parag
+  - migrate_plus.migration.import_oshwiki_articles_sections_parag
+  - migrate_plus.migration_group.default
+  - migrate_plus.migration_group.osha_import_export
+graylist:
+  - authorization.settings
+  - ldap_authentication.settings
+  - ldap_servers.settings
+  - ldap_user.settings
+  - search_api.server.solr
+  - ultimate_cron.job.ldap_user_cron
+graylist_dependents: false
+graylist_skip_equal: true

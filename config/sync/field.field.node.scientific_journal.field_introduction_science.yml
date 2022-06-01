@@ -15,7 +15,7 @@ id: node.scientific_journal.field_introduction_science
 field_name: field_introduction_science
 entity_type: node
 bundle: scientific_journal
-label: Introduction
+label: introduction
 description: ''
 required: false
 translatable: false

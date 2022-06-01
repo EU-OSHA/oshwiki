@@ -21,6 +21,8 @@ display:
           sort_desc_label: Absteigend
       filters:
         status:
+          expose:
+            label: 'Publishing status'
           group_info:
             label: Veröffentlicht
             group_items:

@@ -1,0 +1,114 @@
+uuid: d6cba731-d7a5-4317-9825-3df961128aa1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - osha_import_export
+_core:
+  default_config_hash: mORRUE8d1rBns2jBQPU7waIEUn3VB--7flXJXkXwr9U
+id: import_crm_focalpoints
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - press_contact
+migration_group: osha_import_export
+label: 'Node: Focal Points'
+source:
+  plugin: url
+  data_parser_plugin: xml
+  urls: /expert/SYNC_CRM/FocalPoints.xml
+  content_type: press_contact
+  ids:
+    field_country:
+      type: string
+    field_contact_type:
+      type: string
+  item_selector: /Report/Table0/Table0_Group0_Collection/Table0_Group0_Header0/Detail_Collection/Detail
+  fields:
+    -
+      name: field_contact_uuid
+      label: field_contact_uuid
+      selector: '@Textbox8'
+    -
+      name: title
+      label: title
+      selector: '@Table0_Details5'
+    -
+      name: field_city
+      label: field_city
+      selector: '@a_osh_phtown'
+    -
+      name: field_country
+      label: field_country
+      selector: '@a_osh_phcountryid'
+    -
+      name: field_press_contact_email
+      label: field_press_contact_email
+      selector: '@Table0_Details7'
+    -
+      name: field_location
+      label: field_location
+      selector: '@a_osh_phaddress'
+    -
+      name: field_press_contact_organization
+      label: field_press_contact_organization
+      selector: '@Table0_Details1'
+    -
+      name: field_press_contact_phone
+      label: field_press_contact_phone
+      selector: '@Table0_Details9'
+    -
+      name: field_press_contact_phone_1
+      label: field_press_contact_phone_1
+      selector: '@Table0_Details6'
+    -
+      name: field_website
+      label: field_website
+      selector: '@Table0_Details8'
+    -
+      name: field_zip_code
+      label: field_zip_code
+      selector: '@a_osh_phcp'
+    -
+      name: field_contact_type
+      label: field_contact_type
+      selector: ../../Table0_Group0_Header0
+process:
+  field_contact_uuid: field_contact_uuid
+  title: title
+  field_wg_category:
+    -
+      plugin: oie_taxonomy_term_name
+      source: field_wg_category
+      vocabulary: wg_category
+      create: true
+  field_city: field_city
+  field_country:
+    -
+      plugin: oie_taxonomy_term_name
+      source: field_country
+      vocabulary: country
+  field_press_contact_email: field_press_contact_email
+  field_location: field_location
+  field_press_contact_organization: field_press_contact_organization
+  field_press_contact_phone:
+    -
+      plugin: concat
+      delimiter: ' '
+      source:
+        - field_press_contact_phone
+        - field_press_contact_phone_1
+  field_website: field_website
+  field_zip_code: field_zip_code
+  field_contact_type:
+    -
+      plugin: oie_taxonomy_term_name
+      source: field_contact_type
+      vocabulary: contact_type
+      create: true
+destination:
+  default_bundle: press_contact
+  plugin: 'entity:node'
+migration_dependencies: {  }

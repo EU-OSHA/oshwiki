@@ -1,4 +1,4 @@
-uuid: e97dc2af-69ad-47de-8085-b68aa0f7a21e
+uuid: cb960d5b-e11e-4337-97be-f8c2f8ac9a12
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.sections_paragraph.field_title_sections
     - paragraphs.paragraphs_type.sections_paragraph
   module:
+    - ds
     - text
 id: paragraph.sections_paragraph.paragraph_search_result
 targetEntityType: paragraph
@@ -20,9 +21,25 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: oshwiki_images
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    weight: 2
+    region: content
+  field_title_sections:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
-  field_media: true
-  field_title_sections: true
   search_api_excerpt: true

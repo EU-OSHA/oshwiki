@@ -1,0 +1,41 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        state:
+          label: State
+        label:
+          label: Label
+        type:
+          label: Type
+        source_language:
+          label: From
+        target_language:
+          label: To
+        tags_count:
+          label: Tags
+        changed:
+          label: Changed
+        operations:
+          label: Operations
+      filters:
+        state:
+          group_info:
+            label: State
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normal
+  page_1:
+    display_title: Puslapis

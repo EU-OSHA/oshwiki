@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sortiraj prema'
+      fields:
+        status:
+          label: Status
+        label:
+          label: Label
+        item_type:
+          label: Type
+        operations:
+          label: Operations
+      arguments:
+        tltid:
+          exception:
+            title: Sve
+  block_1:
+    display_title: Block

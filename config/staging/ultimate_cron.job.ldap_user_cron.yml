@@ -1,0 +1,17 @@
+uuid: 427e5688-c0c3-4a72-8df5-3e0dea7f0141
+langcode: en
+status: true
+dependencies:
+  module:
+    - ldap_user
+title: 'Default cron handler'
+id: ldap_user_cron
+weight: 0
+module: ldap_user
+callback: ldap_user_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
