@@ -1,0 +1,28 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Herstel
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        created:
+          label: Created
+        label:
+          label: Item
+        name:
+          label: Naam
+      arguments:
+        tjid:
+          exception:
+            title: Alle

@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:content_type'
 settings:
   id: 'facet_block:content_type'
-  label: 'Article type'
+  label: 'Content type'
   label_display: visible
   provider: facets
   context_mapping: {  }

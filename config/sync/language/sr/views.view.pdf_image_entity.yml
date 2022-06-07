@@ -1,0 +1,16 @@
+display:
+  default:
+    display_title: Подразумевано
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Сортирај по'
+      fields:
+        id:
+          label: ID
+        changed:
+          label: Changed
+      filters:
+        changed_2:
+          expose:
+            label: Changed

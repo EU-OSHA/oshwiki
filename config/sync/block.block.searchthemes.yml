@@ -17,8 +17,8 @@ provider: null
 plugin: 'facet_block:main_search_themes'
 settings:
   id: 'facet_block:main_search_themes'
-  label: Themes
-  label_display: visible
+  label: 'Search: Themes'
+  label_display: '0'
   provider: facets
   context_mapping: {  }
   block_id: searchthemes
