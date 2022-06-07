@@ -66,6 +66,7 @@ module:
   node: 0
   options: 0
   oshwiki_backend: 0
+  oshwiki_migration: 0
   oshwiki_search: 0
   page_cache: 0
   pagerer: 0
