@@ -6,5 +6,228 @@
 /* Font colours */
 /* Background colours */
 /* END */
+@media print {
+  /*general*/
+  .bg-image-banner .block-page-title-block h1, .bg-image-banner .block-page-title-block h1 > span {
+    font-size: 1.5rem;
+    text-align: initial;
+    color: #212121;
+  }
+
+  .top-header-container .top-header-content .wrapper-two-columns-header .content-first-row, .top-header-container .top-header-content .wrapper-two-columns-header .header-language-search {
+    display: none;
+  }
+  .top-header-container .top-header-content .wrapper-two-columns-header .content-first-row .font-size-print .a_small, .top-header-container .top-header-content .wrapper-two-columns-header .content-first-row .font-size-print .a_medium, .top-header-container .top-header-content .wrapper-two-columns-header .content-first-row .font-size-print .a_big, .top-header-container .top-header-content .wrapper-two-columns-header .header-language-search .font-size-print .a_small, .top-header-container .top-header-content .wrapper-two-columns-header .header-language-search .font-size-print .a_medium, .top-header-container .top-header-content .wrapper-two-columns-header .header-language-search .font-size-print .a_big {
+    display: none;
+  }
+
+  .bg-image-banner {
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0rem;
+  }
+  .bg-image-banner .block-system-breadcrumb-block ol {
+    display: none;
+  }
+
+  .view-filters {
+    display: none;
+  }
+
+  div.pagerer-container, .view-footer {
+    display: none;
+  }
+
+  .wrapper-tabs .nav-tabs {
+    display: none;
+  }
+
+  /*end general*/
+  /*homepage*/
+  .page-view-frontpage #main-wrapper .container-fluid .home-text p, .page-view-frontpage #main-wrapper .container-fluid .select-theme {
+    display: none;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid .section_featured_articles .view-id-featured_articles .card-content-wrapper a {
+    text-decoration: none;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid .section_featured_articles .view-id-featured_articles .card-content-wrapper .type-themes {
+    padding: 0rem;
+    color: #449FA2;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid .section_featured_articles .view-id-featured_articles .card-content-wrapper .featured-art-read {
+    display: none;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid .card-content-wrapper {
+    border-left: none;
+    padding-left: 0rem;
+    border: 1px solid #B0B2B3;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid .card-content-wrapper > a {
+    text-decoration: none;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid .card-content-wrapper > a:last-of-type {
+    display: none;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid .card-content-wrapper .taxonomy-level-item {
+    padding: 0rem;
+    color: #449FA2;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid .more-link {
+    display: none;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .section_banner > .container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .search-block-form, .page-view-frontpage #main-wrapper .container-fluid:nth-of-type(1) .home-advanced-search {
+    display: none;
+  }
+
+  /*end homepage*/
+  /*oshwiki-article*/
+  .node--type-oshwiki-articles h1 {
+    margin-bottom: 0rem !important;
+    padding: 2.5rem 0rem 0rem 1.9rem !important;
+  }
+  .node--type-oshwiki-articles .select-theme-article, .node--type-oshwiki-articles .items-left, .node--type-oshwiki-articles #share-this-on {
+    display: none;
+  }
+  .node--type-oshwiki-articles .field--name-field-media {
+    display: none;
+  }
+  .node--type-oshwiki-articles .field--name-field-media .field__item {
+    display: none;
+  }
+  .node--type-oshwiki-articles a {
+    color: #58585A;
+    text-decoration: none;
+  }
+  .node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row > div {
+    width: 100%;
+  }
+  .node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row > div .card-content-wrapper {
+    border-left: none;
+    padding-left: 0rem;
+    border: 1px solid #B0B2B3;
+  }
+  .node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row > div .card-content-wrapper .taxonomy-level-item {
+    padding: 0rem;
+    color: #449FA2;
+  }
+  .node--type-oshwiki-articles .related-articles > .container .view-content > .views-view-grid > .row > div .card-content-wrapper a:nth-of-type(2) {
+    display: none;
+  }
+
+  /*end oshwiki-article*/
+  /*scientific journal*/
+  .node--type-scientific-journal h1 {
+    margin-bottom: 0rem !important;
+    padding: 2.5rem 0rem 0rem 1rem !important;
+  }
+  .node--type-scientific-journal .warning-message {
+    padding: 0rem;
+    max-resolution: 0.5rem 0rem;
+  }
+  .node--type-scientific-journal .warning-message .warning-message-container {
+    padding-left: 0rem;
+  }
+  .node--type-scientific-journal .warning-message .read-more {
+    display: none;
+  }
+  .node--type-scientific-journal .select-theme-article, .node--type-scientific-journal #share-this-on {
+    display: none;
+  }
+  .node--type-scientific-journal .scientific_pdf, .node--type-scientific-journal .scientific_image {
+    display: none;
+  }
+
+  /*end scientific journal*/
+  /*themes*/
+  .page-view-themes .bg-image-banner .block-page-title-block h1 {
+    margin-bottom: 0rem !important;
+    padding: 2.5rem 0rem 0rem 1rem !important;
+  }
+  .page-view-themes #block-oshwiki-theme-content .view-content .views-row {
+    border: none;
+  }
+  .page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-url {
+    display: none;
+  }
+  .page-view-themes #block-oshwiki-theme-content .view-content .views-row .views-field-title a {
+    text-decoration: none;
+  }
+  .page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type {
+    border-top: none;
+  }
+  .page-view-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-title a {
+    font-size: 1.1rem;
+  }
+
+  .js-facet-block-id-themesnormalsearchthemes {
+    display: none;
+  }
+
+  /*end themes*/
+  /*alphabetical view*/
+  .page-view-alphabetical-view .bg-image-banner .block-page-title-block h1 {
+    margin-bottom: 0rem !important;
+    padding: 2.5rem 0rem 0rem 1rem !important;
+  }
+  .page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row {
+    border-bottom: none;
+  }
+  .page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row .views-field-title a {
+    text-decoration: none;
+  }
+  .page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row .views-field-url {
+    display: none;
+  }
+  .page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row:first-of-type {
+    padding: 1rem 0rem;
+  }
+  .page-view-alphabetical-view .glossary-wrapper {
+    display: none;
+  }
+  .page-view-alphabetical-view .js-facet-block-id-themes_names {
+    display: none;
+  }
+
+  /*end alphabetical view*/
+  /*other sources of information*/
+  .page-view-other-sources-of-information h1 {
+    margin-bottom: 0rem !important;
+    padding: 2.5rem 0rem 0rem 1rem !important;
+  }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .title a {
+    text-decoration: none;
+  }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-content .views-row .url span {
+    display: none;
+  }
+
+  /*end other sources of information*/
+  /*general search*/
+  .page-view-search .bg-image-banner .block-page-title-block h1 {
+    margin-bottom: 0rem !important;
+    padding: 2.5rem 0rem 0rem 1rem !important;
+  }
+  .page-view-search .js-facet-block-id-contenttype, .page-view-search .js-facet-block-id-searchthemes {
+    display: none;
+  }
+  .page-view-search #main .block-system-main-block .view-content {
+    margin: 0rem;
+  }
+  .page-view-search #main .block-system-main-block .view-content .views-row .views-field-title-1 a {
+    text-decoration: none;
+  }
+  .page-view-search #main .block-system-main-block .view-content .views-row .views-field-field-themes-oshwiki {
+    padding: 0rem;
+    color: #449FA2;
+  }
+  .page-view-search #main .block-system-main-block .view-content .views-row .views-field-url {
+    display: none;
+  }
+
+  /*end general search*/
+}
 
 /*# sourceMappingURL=oshwiki-print-version.css.map */

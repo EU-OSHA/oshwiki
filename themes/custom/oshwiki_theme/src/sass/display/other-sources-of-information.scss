@@ -50,12 +50,13 @@
         .form-actions{
           display: flex;
           grid-area: search-buttons;
-          gap: 1rem;
-
+          margin-right: 0.7rem;
+          gap: 0.5rem;
           button{
             padding: 0.3rem 0.8rem;
             height: 2.5rem;
             width: 7.5rem;
+            margin-top: 24px;
           }
         }
       }
@@ -66,46 +67,68 @@
       margin-left: 0px;
       margin-right: 0px;
       margin-top: 1rem;
-      .views-row{
+      .other-source-container{
         padding: 1rem 0rem;
         border-bottom: 1px dotted $bg-dark-medium-grey;
-        .views-field-title{
+        .title{
           a{
-            @include textFormat(1.1rem, 700, $text-dark-green);
+            @include textFormat(1.1rem, 700, $text-dark-orange);
           }
         }
-        .views-field-field-introduction-science-1,
-        .views-field-field-year-science,
-        .views-field-changed{
-          @include textFormat(1rem, null, $text-dark-dark-grey);
+        .theme{
+          align-self: start;
+          padding: 0.3rem 0.7rem;
+          margin: 0.5rem 0rem 0.3rem;
+          width: fit-content;
+          background-color: $bg-dark-orange;
+          border-radius: 20px;
+          @include textFormat(0.9rem, 600, $text-white);
+        }
+        .creation-info{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          .divide{
+            color: $text-dark-orange;
+            margin-bottom: 0rem !important;
+          }
+        }
+        .creation-info,
+        .changed,
+        .introduction{
           letter-spacing: 0.2px;
           line-height: 27px;
         }
-        .views-field-url{
+        .creation-info,
+        .changed{
+          @include textFormat(0.9rem, null, $text-dark-dark-grey);
+        }
+        .introduction{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
+        }
+        .url{
           display: flex;
           flex-direction: row-reverse;
+          align-items: center;
           padding-top: 0.5rem;
           letter-spacing: 0.3px;
           line-height: 29px;
-          span{
-            display: flex;
-            align-items: center;
-            a {
-              margin-top: 3px;
-              @include textFormat(0.9rem, null, $text-dark-green);
-              &:hover{
-                text-decoration: underline;
-              }
+          a {
+            margin-top: 3px;
+            @include textFormat(0.9rem, null, $text-dark-green);
+            &:hover{
+              text-decoration: underline;
             }
           }
-          span::after{
+          &::before{
             display: inline-block;
             content: " ";
             width: 14px;
             height: 14px;
             margin-left: 0.5rem;
             margin-top: 0.2rem;
-            background: url('../images/green-arrow_see_more.png') no-repeat;
+            background: url('../images/green-arrow-thin-.png') no-repeat;
           }
         }
       }
@@ -114,7 +137,7 @@
 }
 
 /*Responsive design of the search and order box*/
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 490px) {
   .page-view-other-sources-of-information{
     #block-oshwiki-theme-content{
       .view-filters{
@@ -127,6 +150,7 @@
             margin-bottom: 1rem !important;
             input{
               width: 12rem;
+              height: 2.5rem;
             }
           }
           .form-item-sort-by, .form-item-sort-order{
@@ -198,7 +222,7 @@
           #edit-actions{
             margin-bottom: 1.1rem !important;
             button{
-              height: 2.42rem;
+              height: 2.5rem;
               padding-left: 0rem;
               margin-right: 0.5rem;
             }

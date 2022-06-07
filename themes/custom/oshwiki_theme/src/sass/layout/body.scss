@@ -26,6 +26,7 @@
     float: left;
     display: block;
     height: 15px;
+    margin: 0rem 0.2rem;
     background:{
       position: 50% 50%;
       repeat: no-repeat;
@@ -72,7 +73,7 @@ body.node--type-scientific-journal{
   }
   #share-this-on{
     .text-share{
-      @include textFormat(0.9rem, null, $text-black);
+      margin-top: 0px;
     }
     .a2a_button_facebook{
       background-image: url(../images/icon-facebook-orange.svg);
@@ -106,7 +107,7 @@ body.node--type-scientific-journal{
     border-radius: 15px 15px 15px 15px;
     background-color: #D5E6E6;
     .select-theme-article-title-box{
-      padding: 0.5rem 0rem 0.5rem 1.5rem;
+      padding: 0.7rem 0rem 0.7rem 1.5rem;
       border-radius: 15px 15px 0px 0px;
       background-color: $bg-dark-green;
       p{
