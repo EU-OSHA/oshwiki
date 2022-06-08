@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_themes_oshwiki
     - search_api.index.oshwiki_index
   module:
+    - better_exposed_filters
     - entity_reference_revisions
     - pagerer
     - search_api
@@ -1620,6 +1621,38 @@ display:
                 display_method: label
               themes:
                 display_method: label
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            sort:
+              plugin_id: default
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
       cache:
         type: none
       sorts:
@@ -1809,12 +1842,15 @@ display:
       defaults:
         cache: false
         query: false
+        use_ajax: false
+        exposed_form: false
         fields: false
         sorts: false
         arguments: false
         filters: false
         filter_groups: false
         footer: false
+      use_ajax: true
       display_description: ''
       footer: {  }
       display_extenders: {  }

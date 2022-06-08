@@ -9,6 +9,7 @@ dependencies:
     - field.storage.node.field_year_science
     - search_api.index.oshwiki_index
   module:
+    - better_exposed_filters
     - entity_reference_revisions
     - pagerer
     - search_api
@@ -111,7 +112,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -172,59 +173,6 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-        search_api_excerpt:
-          id: search_api_excerpt
-          table: search_api_index_oshwiki_index
-          field: search_api_excerpt
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          link_to_item: false
-          use_highlighting: true
-          multi_type: separator
-          multi_separator: ', '
         field_themes_oshwiki:
           id: field_themes_oshwiki
           table: search_api_index_oshwiki_index
@@ -234,7 +182,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -302,6 +250,7 @@ display:
                 display_method: label
               reference:
                 display_method: label
+                view_mode: default
               tags:
                 display_method: label
               themes:
@@ -315,7 +264,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -396,8 +345,8 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: search_api_field
-          label: ''
-          exclude: false
+          label: 'Created on:'
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -441,7 +390,7 @@ display:
           type: timestamp
           settings:
             date_format: custom
-            custom_date_format: 'd/m/Y H:i:s'
+            custom_date_format: d/m/Y
             timezone: ''
           group_column: value
           group_columns: {  }
@@ -471,8 +420,8 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: search_api_field
-          label: ''
-          exclude: false
+          label: 'Latest update:'
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -516,7 +465,7 @@ display:
           type: timestamp
           settings:
             date_format: custom
-            custom_date_format: 'd/m/Y H:i:s'
+            custom_date_format: d/m/Y
             timezone: ''
           group_column: value
           group_columns: {  }
@@ -538,6 +487,59 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+        search_api_excerpt:
+          id: search_api_excerpt
+          table: search_api_index_oshwiki_index
+          field: search_api_excerpt
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: false
+          use_highlighting: true
+          multi_type: separator
+          multi_separator: ', '
         field_sections_oshwiki:
           id: field_sections_oshwiki
           table: search_api_index_oshwiki_index
@@ -547,7 +549,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -686,7 +688,7 @@ display:
           admin_label: ''
           plugin_id: search_api
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: '<a href="{{ url }}">{{ ''See more'' | trans}}</a>'
@@ -730,6 +732,55 @@ display:
           use_highlighting: false
           multi_type: separator
           multi_separator: ', '
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"created-authored\">\r\n<div class=\"views-field-created\"><strong>Created on: </strong>{{ created }} </div>\r\n<div class=\"divide\"> | </div>\r\n<div class=\"views-field-changed\"><strong>Latest update: </strong>{{ changed}} </div>\r\n</div>\r\n<div class=\"views-field-title-1\">{{ title_1 }} </div>\r\n{% if field_themes_oshwiki  %}\r\n<div class=\"views-field-field-themes-oshwiki\">{{ field_themes_oshwiki }} </div>\r\n{% endif %}\r\n{% if search_api_excerpt %}\r\n<div class=\"views-field-search-api-excerpt\">{{ search_api_excerpt }} </div>\r\n{% else %}\r\n<div class=\"views-field-field-sections-oshwiki\">{{ field_sections_oshwiki }} </div>\r\n{% endif %}\r\n<div class=\"views-field-url\"> <span class=\"field-content\"> {{ url }} </span></div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: pagerer
         options:
@@ -747,15 +798,46 @@ display:
             offset: 0
             offset_label: Offset
       exposed_form:
-        type: basic
+        type: bef
         options:
-          submit_button: Apply
+          submit_button: Search
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            sort:
+              plugin_id: default
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
+            filter:
+              search_api_fulltext:
+                plugin_id: default
+                advanced:
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
       access:
         type: none
         options: {  }

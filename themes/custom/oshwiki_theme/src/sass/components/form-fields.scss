@@ -6,6 +6,9 @@ label{
   border-color: $bg-light-green;
   box-shadow: 0 0 0 0.2rem $bg-light-green;
 }
+.form-control::placeholder{
+  color: $text-white;
+}
 
 select{
   color: $text-white;

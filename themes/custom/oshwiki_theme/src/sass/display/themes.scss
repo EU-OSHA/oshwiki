@@ -29,7 +29,7 @@
     padding: 0rem 0rem 1rem 0rem;
     h2{
       margin:0rem;
-      padding: 0.5rem 0rem 0.5rem 1.5rem;
+      padding: 0.8rem 0rem 0.8rem 1.5rem;
       border-radius: 15px 15px 0px 0px;
       background-color: $bg-dark-green;
       @include textFormat(1.3rem, null, $text-white);
@@ -175,8 +175,8 @@
             width: 14px;
             height: 14px;
             margin-left: 0.5rem;
-            margin-top: 0.2rem;
-            background: url('../images/green-arrow_see_more.png') no-repeat;
+            margin-top: 0.25rem;
+            background: url('../images/green-arrow-thin-.png') no-repeat;
           }
         }
       }
@@ -194,8 +194,28 @@
           height: 2.5rem;
           color: $text-dark-green;
           border: 1px solid $bg-dark-green;
-          background: $bg-white;
+          /*Remove default dropdown icon and add new icon*/
+          appearance:none;
+          -webkit-appearance:none;
+          -moz-appearance:none;
+          -ms-appearance:none;
+          background:{
+            image: url(../images/icon-select-green.png);
+            color: $bg-white;
+            repeat: no-repeat;
+            size: 15px;
+          }
+          /*End comment - remove default dropdown icon*/
         }
+        select[name="sort_by"]{
+          background-position: 88% 50%;
+        }
+
+        select[name="sort_order"]{
+          width: 8rem;
+          background-position: 84% 50%;
+        }
+
         button{
           padding: 0.3rem 0.8rem;
           height: 2.5rem;
