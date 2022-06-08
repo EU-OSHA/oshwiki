@@ -44,7 +44,24 @@
             width: 16rem;
             color: $text-dark-green;
             border: 1px solid $bg-dark-green;
-            background: $bg-white;
+            /*Remove default dropdown icon and add new icon*/
+            appearance:none;
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            -ms-appearance:none;
+            background:{
+              image: url(../images/icon-select-green.png);
+              color: $bg-white;
+              repeat: no-repeat;
+              size: 15px;
+            }
+            /*End comment - remove default dropdown icon*/
+          }
+          select[name="sort_by"]{
+            background-position: 92% 50%;
+          }
+          select[name="sort_order"]{
+            background-position: 85% 50%;
           }
         }
         .form-actions{
@@ -192,7 +209,7 @@
           }
           .form-item-sort-order{
             select{
-              width: 6rem;
+              width: 8rem;
             }
           }
           #edit-actions{
@@ -229,9 +246,6 @@
           }
           #edit-sort-by{
             width: 15rem;
-          }
-          .form-item-sort-order{
-            width: 6rem;
           }
         }
       }

@@ -1162,7 +1162,22 @@ a:hover {
   width: 16rem;
   color: #449FA2;
   border: 1px solid #449FA2;
-  background: #FFFFFF;
+  /*Remove default dropdown icon and add new icon*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-image: url(../images/icon-select-green.png);
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  /*End comment - remove default dropdown icon*/
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select[name=sort_by], .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select[name=sort_by] {
+  background-position: 92% 50%;
+}
+.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select[name=sort_order], .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select[name=sort_order] {
+  background-position: 85% 50%;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions {
   display: flex;
@@ -1290,7 +1305,7 @@ a:hover {
     width: 15rem;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
-    width: 6rem;
+    width: 8rem;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions button {
     width: 7.15rem;
@@ -1314,9 +1329,6 @@ a:hover {
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-sort-by {
     width: 15rem;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order {
-    width: 6rem;
   }
 }
 /*End comment responsive design of the search and order box*/
@@ -1383,8 +1395,8 @@ a:hover {
 .scientific_introduction .field__item p {
   color: #58585A;
   font-size: 1rem;
-  letter-spacing: 0.2px;
-  line-height: 27px;
+  letter-spacing: 0.3px;
+  line-height: 29px;
 }
 
 .scientific_pdf {
@@ -1575,7 +1587,17 @@ a:hover {
   width: 16rem;
   color: #449FA2;
   border: 1px solid #449FA2;
-  background: #FFFFFF;
+  /*Remove default dropdown icon and add new icon*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-image: url(../images/icon-select-green.png);
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 91% 50%;
+  /*End comment - remove default dropdown icon*/
 }
 .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by {
   grid-area: sort-by;
@@ -1711,9 +1733,11 @@ a:hover {
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select {
     width: 10rem;
+    background-position: 87% 50%;
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
-    width: 6rem;
+    width: 8rem;
+    background-position: 84% 50%;
   }
 }
 .page-view-themes {
@@ -1900,7 +1924,23 @@ a:hover {
   height: 2.5rem;
   color: #449FA2;
   border: 1px solid #449FA2;
-  background: #FFFFFF;
+  /*Remove default dropdown icon and add new icon*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-image: url(../images/icon-select-green.png);
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  /*End comment - remove default dropdown icon*/
+}
+.page-view-themes #block-oshwiki-theme-content .view-filters .form-row select[name=sort_by] {
+  background-position: 88% 50%;
+}
+.page-view-themes #block-oshwiki-theme-content .view-filters .form-row select[name=sort_order] {
+  width: 8rem;
+  background-position: 84% 50%;
 }
 .page-view-themes #block-oshwiki-theme-content .view-filters .form-row button {
   padding: 0.3rem 0.8rem;

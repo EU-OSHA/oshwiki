@@ -226,7 +226,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ title }}\r\n{{ view_node }}\r\n{{ field_themes_science }}"
+            text: "{{ field_themes_science }}\r\n{{ title }}\r\n{{ view_node }}"
             make_link: false
             path: ''
             absolute: false
