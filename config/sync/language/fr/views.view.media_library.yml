@@ -21,6 +21,8 @@ display:
           sort_desc_label: Desc
       filters:
         status:
+          expose:
+            label: 'Publishing status'
           group_info:
             label: Publié
             group_items:

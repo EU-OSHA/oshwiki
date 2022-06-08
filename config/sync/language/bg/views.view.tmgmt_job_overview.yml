@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Рестартирай
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        state:
+          label: State
+        label:
+          label: Label
+        source_language_1:
+          label: From
+        target_language:
+          label: To
+        tags_count:
+          label: Tags
+        operations:
+          label: Operations
+      filters:
+        state:
+          expose:
+            label: State
+  page_1:
+    display_title: Страница

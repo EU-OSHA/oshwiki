@@ -1,0 +1,37 @@
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növ
+          sort_desc_label: Csökk
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      fields:
+        created:
+          label: Létrehozva
+        label:
+          label: Tétel
+        name:
+          label: Név
+          separator: ', '
+      title: Messages
+      arguments:
+        tjid:
+          exception:
+            title: Mind
+  embed:
+    display_title: Embed

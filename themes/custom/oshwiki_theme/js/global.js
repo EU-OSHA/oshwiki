@@ -26,12 +26,11 @@ let menuSM = false;
     }
   });
 }(jQuery));
-/*After ajax calls - used in the general search and themes*/
+/*After ajax calls - used in themes*/
 
 jQuery(window).on("load",function(){
   checkResponsiveMenu(jQuery(window).width(), menuSM);
   hideOriginalContentTextAfterSearch();
-  /*The themes page will call this function after the ajax call*/
   if(!jQuery("body").hasClass("page-view-themes")){
     selectTheme();
   }
@@ -39,15 +38,17 @@ jQuery(window).on("load",function(){
 
 jQuery(window).resize(function(){
   checkResponsiveMenu(jQuery(window).width(), menuSM);
+  setParagraphImageTextWidth();
 });
 
 jQuery(document).ready(function($) {
   let theURL=$(location).attr("href");
+  addPlaceholder();
   checkFooterMargin();
   $("button.navbar-toggler-right").click(setMenuResponsiveSearchBoxMargin);
   themeAlfabethicalViewTabs(theURL);
-  checkIfParagraphImgHasText('.section_most_popular', '.section_most_recent');
-  createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent']);
+  articleParagraphImage('.section_most_popular', '.section_most_recent');
+  createDivCardsHomePage();
   createDivCards("node--type-oshwiki-articles",['.related-articles']);
 
   /*Set the margin for the search box inside responsive menu*/
@@ -57,10 +58,17 @@ jQuery(document).ready(function($) {
         $(".responsive-menu-oshwiki").css("margin", "0rem");
         $("#search-icon-responsive").css("margin-left", "0rem");
       }else{
-        console.log
         $(".responsive-menu-oshwiki").css("margin", "0.5rem 0rem 0.5rem 0rem");
         $("#search-icon-responsive").css("margin-left", "1rem");
       }
+    }
+  }
+
+  /*Add placeholder to search inputs*/
+  function addPlaceholder(){
+    $(".header-language-search > section .search-block-form input").attr("placeholder", "Search");
+    if($("body").hasClass("page-view-frontpage")){
+      $(".home-banner-search .search-block-form input").attr("placeholder", "Search");
     }
   }
 
@@ -82,14 +90,35 @@ jQuery(document).ready(function($) {
     }
   }
 
-  /*If the paragraph has images and the images have no text, add border radius*/
-  function checkIfParagraphImgHasText(){
+  /*Add border-radius to the last item of the media paragraph*/
+  /*Obtain the width of the paragraph images and set it as the max-width of the image text*/
+  function articleParagraphImage(){
     if($("body").hasClass("node--type-oshwiki-articles")){
+      /*If the paragraph has images and the images have no text, add border radius to the image*/
       $('.field--name-field-media > .field__item > .contextual-region').each(function(index, value){
-        if($(this).find('.field--name-field-caption-copyrigth-').length==0){
+        if(($(this).find('.field--name-field-caption-copyrigth-').length==0)&&($(this).find('.field--name-field-copyrigth').length==0)){
           $(this).find('.field--name-field-media-image > .field__item > img').css("border-radius", "20px");
+        }else if($(this).find('.field--name-field-caption-copyrigth-').length==0){
+          /*If the only text is the copyright text, increase the padding in order to prevent issues with the border-radius*/
+          $(this).find('.field--name-field-copyrigth').css({"border-radius": "0px 0px 20px 20px", "padding":"0.2rem 0.5rem"});
+        }else{
+          $(this).find('.field--name-field-caption-copyrigth-').css("border-radius", "0px 0px 20px 20px");
         }
       });
+    }
+    setParagraphImageTextWidth();
+  }
+
+  /*If there is a theme inside an other sources of information journal,
+change the wrapper's grid-template-rows and add empty divs in order to maintain layout*/
+  function createDivCardsHomePage(){
+    if($("body").hasClass("page-view-frontpage")){
+      if($(".section_other_sources .card-content-wrapper").find('.theme-badge').length>0){
+        $(".section_other_sources .card-content-wrapper").css("grid-template-rows", "auto 1.5fr 35px");
+        createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent', '.section_other_sources']);
+      }else{
+        createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent']);
+      }
     }
   }
 
@@ -137,11 +166,13 @@ function createNewSpanForThemeIcon(){
   jQuery(".facets-widget-links > ul > .facet-item > a").after("<span class='showSubthemes'></span>");
   jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value").before("<span class='iconSubtheme'></span>");
 
-  /*When the theme is clicked, toggle subthemes*/
-  jQuery(".showSubthemes").click(function(){
-    jQuery(this).parent().toggleClass("active");
-    jQuery(this).parent().find(".facets-widget-").toggle(300);
-  });
+  if(!(jQuery("body").hasClass("page-view-frontpage"))){
+    /*When the theme is clicked, toggle subthemes*/
+    jQuery(".showSubthemes").click(function(){
+      jQuery(this).parent().toggleClass("active");
+      jQuery(this).parent().find(".facets-widget-").toggle(300);
+    });
+  }
 }
 
 /*Check window width and if the menu is collapsed or not
@@ -179,6 +210,20 @@ function checkResponsiveMenu(windowWidth, menuSmall){
       jQuery(".font-size-print").toggle();
       menuSM = false;
     }
+  }
+}
+
+/*Obtain the width of the paragraph images and set it as the max-width of the image text*/
+function setParagraphImageTextWidth(){
+  if(jQuery("body").hasClass("node--type-oshwiki-articles")){
+    let everyParagraphMediaItem = '.field--name-field-sections-oshwiki > ' +
+      '.field__item .paragraph--type--sections-paragraph ' +
+      '.field--name-field-media > .field__item';
+    jQuery(everyParagraphMediaItem).each(function(index,value){
+      let imageWidth=jQuery(this).find('img').innerWidth()+"px";
+      jQuery(this).find('.field--name-field-copyrigth').css({"max-width":imageWidth, "width":imageWidth});
+      jQuery(this).find('.field--name-field-caption-copyrigth-').css({"max-width":imageWidth, "width":imageWidth});
+    })
   }
 }
 

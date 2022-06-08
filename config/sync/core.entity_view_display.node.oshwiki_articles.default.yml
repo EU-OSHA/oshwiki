@@ -27,6 +27,11 @@ targetEntityType: node
 bundle: oshwiki_articles
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_authors_oshwiki:
     type: entity_reference_revisions_entity_view
     label: above

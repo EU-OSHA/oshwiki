@@ -1,0 +1,29 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        label:
+          label: Label
+        item_type:
+          label: Type
+        operations:
+          label: Operations
+      arguments:
+        tltid:
+          exception:
+            title: Visi
+  block_1:
+    display_title: Block

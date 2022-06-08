@@ -1,0 +1,9 @@
+display:
+  completed:
+    display_options:
+      menu:
+        title: Completed
+  pending:
+    display_options:
+      menu:
+        title: Pending
