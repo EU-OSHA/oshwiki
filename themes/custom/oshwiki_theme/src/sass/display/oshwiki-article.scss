@@ -99,29 +99,36 @@
       .field--name-field-media{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
         & > .field__item{
-          margin: 0.5rem 0rem;
           align-self: center;
-          border-radius: 20px;
-          width: fit-content;
-          background-color: $bg-light-green;
-          border-radius: 20px;
           img{
             border-radius: 20px 20px 0px 0px;
             margin: 0rem;
+            #alttext-container{
+              @include textFormat(0.6rem, null, $text-black);
+              p{
+                padding: 0.2rem;
+              }
+            }
           }
-          .field--name-field-copyrigth{
-            padding: 0.2rem;
-            @include textFormat(0.6rem, null, $text-black);
+          .field--name-field-copyrigth, .field--name-field-caption-copyrigth-{
+            background-color: $bg-light-green;
             p{
               margin-bottom: 0rem;
             }
           }
+          .field--name-field-copyrigth{
+            @include textFormat(0.6rem, null, $text-black);
+            p{
+              padding: 0.2rem;
+            }
+          }
           .field--name-field-caption-copyrigth-{
-            padding: 0.5rem 1rem 1rem;
             @include textFormat(0.9rem, null, $text-dark-dark-grey);
             p{
-              margin-bottom: 0rem;
+              padding: 0.5rem 1rem 1rem;
             }
           }
         }
@@ -225,6 +232,9 @@
     .dates_and_social_media{
       & > div{
         padding: 0.3rem 0rem;
+      }
+      .social_media{
+        justify-self: self-end;
       }
       grid-template-areas:
         "date share";

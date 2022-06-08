@@ -27,9 +27,10 @@
   .read-more{
     display: flex;
     justify-content: flex-end;
+    margin: 0.5rem 0rem;
     a{
       text-decoration: none;
-      @include textFormat(1rem, 700, $text-black);
+      @include textFormat(1rem, 700, $text-dark-dark-grey);
     }
   }
 }
@@ -38,7 +39,7 @@
   display: flex;
   justify-content: space-between;
   .scientific_year{
-    @include textFormat(1rem, null, $text-black);
+    @include textFormat(1rem, null, $text-dark-dark-grey);
     display: flex;
     gap: 0.5rem;
   }
@@ -52,21 +53,25 @@
   .field--name-field-introduction-science{
     .field__label{
       margin: 1rem 0rem;
-      @include textFormat(1.2rem, 700, $text-black);
+      @include textFormat(1.4rem, 500, $text-dark-dark-grey);
     }
   }
   .field__item{
     p{
-      color: $text-black;
+      color: $text-dark-dark-grey;
       font-size: 1rem;
-      letter-spacing: 0.2px;
-      line-height: 27px;
+      letter-spacing: 0.3px;
+      line-height: 29px;
     }
   }
 }
 
+.scientific_pdf{
+  @include textFormat(1rem, null, $text-dark-dark-grey);
+}
+
 .scientific_author{
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   border-bottom: 2px solid #ccc;
   border-top: 2px solid #ccc;
   width: 90%;
