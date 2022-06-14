@@ -1,0 +1,53 @@
+uuid: 769fd8c9-08f0-4279-8d97-ec0cba94c3e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - translation_workflow
+name: multiple_target_language_file
+label: 'XML CDT'
+description: 'Provider to export and import files using multiple target languages.'
+auto_accept: false
+weight: null
+plugin: multiple_target_language_file
+settings:
+  export_format: xml
+  format_configuration:
+    target: ''
+  xliff_cdata: 0
+  xliff_processing: 0
+  allow_override: 0
+  scheme: public
+remote_languages_mappings:
+  en: en
+  de: de
+  fr: fr
+  hu: hu
+  es: es
+  da: da
+  tr: tr
+  af: af
+  nl: nl
+  sv: sv
+  it: it
+  cs: cs
+  pt-pt: pt-pt
+  sl: sl
+  bs: bs
+  pl: pl
+  sq: sq
+  lv: lv
+  fi: fi
+  et: et
+  el: el
+  mk: mk
+  sr: sr
+  bg: bg
+  'no': 'no'
+  mt: mt
+  lt: lt
+  hr: hr
+  sk: sk
+  is: is
+  ro: ro
+  ga: ga
