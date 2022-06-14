@@ -160,26 +160,6 @@
   margin: 0rem 0rem 2rem 0rem;
   padding: 1rem 0rem;
 
-  .block-system-breadcrumb-block{
-    ol{
-      background: transparent;
-      .active{
-        a{
-          @include textFormat(0.9rem, 700, $text-white);
-          text-decoration: underline;
-        }
-      }
-      .breadcrumb-item + .breadcrumb-item::before {
-        display: inline-block;
-        padding-right: 0.5rem;
-        @include textFormat(0.9rem, null, $text-white);
-        content: ">";
-      }
-      .breadcrumb-item a{
-        @include textFormat(0.9rem, null, $text-white);
-      }
-    }
-  }
   .block-page-title-block{
     width: 100%;
     h1{

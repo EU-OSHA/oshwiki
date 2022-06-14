@@ -67,7 +67,7 @@ content:
     region: content
   field_nace_oshwiki:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -85,7 +85,7 @@ content:
     region: content
   field_osh_categories_oshwiki:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }

@@ -1,0 +1,27 @@
+.block-system-breadcrumb-block{
+  display: none;
+}
+
+@media only screen and (min-width: 768px){
+  .block-system-breadcrumb-block{
+    display: block;
+    ol{
+      background: transparent;
+      .active{
+        a{
+          @include textFormat(0.9rem, 700, $text-white);
+          text-decoration: underline;
+        }
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        @include textFormat(0.9rem, null, $text-white);
+        content: ">";
+      }
+      .breadcrumb-item a{
+        @include textFormat(0.9rem, null, $text-white);
+      }
+    }
+  }
+}
