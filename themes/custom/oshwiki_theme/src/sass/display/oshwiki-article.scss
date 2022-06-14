@@ -1,6 +1,35 @@
 .node--type-oshwiki-articles{
 
   .items-left{
+    & > p{
+      margin-bottom: 0rem;
+    }
+    form#oshwiki-backend-form{
+      margin: 1rem 0rem 1.5rem;
+      .js-form-item-langcodes{
+        select{
+          width: 100%;
+          padding: 0rem 0.3rem 0rem 0.75rem;
+          border-radius: 0rem;
+          height: 2rem;
+          color: $text-dark-green;
+          border: 1px solid $bg-dark-green;
+          /*Remove default dropdown icon and add new icon*/
+          appearance:none;
+          -webkit-appearance:none;
+          -moz-appearance:none;
+          -ms-appearance:none;
+          background:{
+            image: url(../images/icon-arrow-orange-down.svg);
+            color: $bg-white;
+            repeat: no-repeat;
+            size: 13px;
+            position: 92% 50%;
+          }
+          /*End comment - remove default dropdown icon*/
+        }
+      }
+    }
     .anchor-item-list-container{
       display: flex;
       flex-direction: column;
@@ -182,6 +211,70 @@
     }
   }
 
+  .osh-nace-categories{
+    border-left: 1px solid $bg-dark-lighter-grey;
+    border-right: 1px solid $bg-dark-lighter-grey;
+    .card{
+      border: none;
+      .card-header{
+        margin: 0rem;
+        padding: 0rem;
+        border: none;
+        .btn-link{
+          padding: 0.4rem 0.7rem;
+          width: 100%;
+          border: {
+            radius: 0px;
+            top: 1px solid $bg-dark-lighter-grey;
+            bottom: 1px solid $bg-dark-lighter-grey;
+          }
+          @include textFormat(1rem, 600, $text-white);
+          background : {
+            image: url('../images/icon-arrow-light-green-up.svg');
+            repeat: no-repeat;
+            size: 20px;
+            position: 97% 50%;
+            color: $bg-dark-green;
+          }
+          &:focus{
+            box-shadow: none;
+          }
+        }
+        /*Change the background image when the accordion card is collapsed*/
+        h5 .collapsed{
+          background-image: url('../images/icon-arrow-light-green.svg');
+        }
+      }
+      .card-body{
+        padding: 0.7rem;
+        .field__items{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .field__item{
+            @include textFormat(0.9rem, 500, $text-dark-green);
+            &::after{
+              display: inline-block;
+              content: ", ";
+              width: 10px;
+              height: 10px;
+            }
+            &:last-of-type{
+              &::after{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      &:last-of-type{
+        .card-body{
+          border-bottom: 1px solid $bg-dark-lighter-grey;
+        }
+      }
+    }
+  }
+
   .oshwiki-authors-contributors{
     margin-bottom: 2.5rem;
     .article_authors, .article_contributors{
@@ -229,15 +322,22 @@
 
 @media only screen and (min-width: 576px) {
   .node--type-oshwiki-articles{
-    .dates_and_social_media{
+    .dates_and_social_media, .social-media-only{
       & > div{
         padding: 0.3rem 0rem;
       }
       .social_media{
         justify-self: self-end;
       }
+    }
+    .dates_and_social_media{
       grid-template-areas:
         "date share";
+    }
+    .social-media-only{
+      #share-this-on{
+        float: right;
+      }
     }
     .oshwiki-authors-contributors, .oshwiki-authors-contributors{
       .article_authors, .article_contributors{

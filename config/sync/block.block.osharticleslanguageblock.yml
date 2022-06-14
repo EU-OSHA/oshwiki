@@ -1,0 +1,21 @@
+uuid: 69a54001-b483-420b-9309-b6cf021790fc
+langcode: en
+status: false
+dependencies:
+  module:
+    - oshwiki_backend
+  theme:
+    - oshwiki_theme
+id: osharticleslanguageblock
+theme: oshwiki_theme
+region: content
+weight: 0
+provider: null
+plugin: OshArticlesLanguageBlock_block
+settings:
+  id: OshArticlesLanguageBlock_block
+  label: OshArticlesLanguageBlock
+  label_display: '0'
+  provider: oshwiki_backend
+  my_block_settings: null
+visibility: {  }

@@ -1,0 +1,59 @@
+body.path-most-recent{
+  .container{
+    div#main{
+      section{
+        display: grid;
+        grid-template-areas: "content";
+        div#block-oshwiki-theme-content{
+          grid-area: content;
+          h2{
+            @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+          }
+          .view-content{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 1rem;
+            .views-row{
+              padding: 1rem 0rem;
+              border-bottom: 1px dotted $bg-dark-medium-grey;
+              .views-field-title{
+                a{
+                  @include textFormat(1.1rem, 700, $text-dark-green);
+                }
+              }
+              .views-field-url{
+                display: flex;
+                flex-direction: row-reverse;
+                padding-top: 0.5rem;
+                letter-spacing: 0.3px;
+                line-height: 29px;
+                span{
+                  display: flex;
+                  align-items: center;
+                  a {
+                    margin-top: 3px;
+                    @include textFormat(0.9rem, null, $text-dark-green);
+                    &:hover{
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                span::after{
+                  display: inline-block;
+                  content: " ";
+                  width: 14px;
+                  height: 14px;
+                  margin-left: 0.5rem;
+                  margin-top: 0.25rem;
+                  background: url('../images/green-arrow-thin-.png') no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
