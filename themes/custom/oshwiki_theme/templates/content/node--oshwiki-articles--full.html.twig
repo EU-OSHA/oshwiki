@@ -80,17 +80,18 @@
       <p>
         <strong>{{ 'This item is available in other national versions' | trans }}</strong>
       </p>
-    <div class="anchor-item-list-container">
-      <ul class="anchor-items-list">
-        {% for key, items in content.field_sections_oshwiki['#items'] %}
-          {% set titleSection = items.entity.field_title_sections.0.value|raw %}
-          <li>
-            <div class="icon-before-anchor-item"></div>
-            <a href="#{{ titleSection }}">{{ titleSection }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+      {{ drupal_entity('block', 'osharticleslanguageblock', check_access=false) }}
+      <div class="anchor-item-list-container">
+        <ul class="anchor-items-list">
+          {% for key, items in content.field_sections_oshwiki['#items'] %}
+            {% set titleSection = items.entity.field_title_sections.0.value|raw %}
+            <li>
+              <div class="icon-before-anchor-item"></div>
+              <a href="#{{ titleSection }}">{{ titleSection }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
     <!-- END LEFT COLUMN -->
     <!-- CENTER COLUMN -->
@@ -133,16 +134,53 @@
         {% endif %}
         <!-- END REFERENCES -->
         <!-- FURTHER READING -->
-        <div class="article_further_reading">
-          {{ content.field_further_reading_oshwiki }}
-        </div>
-        <!-- END FURTHER READING -->
-        <!-- DATES AND SOCIAL MEDIA -->
-        <div class="dates_and_social_media">
-          <div class="article_dates">
-            <p>{{ 'Created on:' | trans }} {{ node.created.value|date('d F Y-h:m') }}</p>
-            <p>{{ 'Latest update:' | trans }} {{ node.changed.value|date('d F Y-h:m') }}</p>
+        {% if (content.field_further_reading_oshwiki.0) %}
+          <div class="article_further_reading">
+            {{ content.field_further_reading_oshwiki }}
           </div>
+        {% endif %}
+        <!-- END FURTHER READING -->
+        <!-- CATEGORIES -->
+        {% if ((content.field_osh_categories_oshwiki.0) or (content.field_nace_oshwiki.0)) %}
+          <div id="accordion" class="osh-nace-categories">
+            {% if (content.field_osh_categories_oshwiki.0) %}
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        {{ content.field_osh_categories_oshwiki['#title'] }}
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    {{ content.field_osh_categories_oshwiki }}
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+
+            {% if (content.field_nace_oshwiki.0) %}
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      {{ content.field_nace_oshwiki['#title'] }}
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    {{ content.field_nace_oshwiki }}
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+        <!-- END CATEGORIES -->
+        <!-- DATES AND SOCIAL MEDIA -->
+        <div class="social-media-only">
           <div class="social_media">
             {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
           </div>

@@ -31,8 +31,14 @@ let menuSM = false;
 jQuery(window).on("load",function(){
   checkResponsiveMenu(jQuery(window).width(), menuSM);
   hideOriginalContentTextAfterSearch();
+  /*For the theme page call 'selectThemes' function with ajaxStop*/
   if(!jQuery("body").hasClass("page-view-themes")){
     selectTheme();
+  }else{
+    /*If there is no user logged, call the 'selectTheme' function because it won't call the ajaxStop*/
+    if(!jQuery("body").hasClass("user-logged-in")){
+      selectTheme();
+    }
   }
 });
 
