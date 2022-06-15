@@ -1,0 +1,18 @@
+uuid: 81917f80-028c-46ba-878b-1fca6e913214
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.most_popular_articles
+id: entity_subqueue.most_popular_articles.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: most_popular_articles
+label: Changed
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

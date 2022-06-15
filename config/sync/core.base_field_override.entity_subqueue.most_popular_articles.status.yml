@@ -1,0 +1,22 @@
+uuid: ab6f552f-a3d4-49a6-a78e-ad7195cbe938
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.most_popular_articles
+id: entity_subqueue.most_popular_articles.status
+field_name: status
+entity_type: entity_subqueue
+bundle: most_popular_articles
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

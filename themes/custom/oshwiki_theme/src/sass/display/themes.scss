@@ -1,4 +1,4 @@
-.page-view-themes{
+.path-themes{
   .container{
     #main{
       /*Main layout with grid-area*/
@@ -254,7 +254,7 @@
 
 /*Adapt select-theme block in order to keep the "+" icon responsive*/
 @media only screen and (min-width: 400px) {
-  .page-view-themes{
+  .path-themes{
     .block-facet-blockthemes-normal-search-themes{
       .facets-widget-links{
         .item-list__links{
@@ -268,7 +268,7 @@
 }
 
 @media only screen and (min-width: 550px) {
-  .page-view-themes{
+  .path-themes{
     .block-facet-blockthemes-normal-search-themes{
       .facets-widget-links{
         .item-list__links{
@@ -282,7 +282,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .page-view-themes{
+  .path-themes{
     .block-facet-blockthemes-normal-search-themes{
       .facets-widget-links{
         .item-list__links{
@@ -296,7 +296,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .page-view-themes{
+  .path-themes{
     .block-facet-blockthemes-normal-search-themes{
       .facets-widget-links{
         .item-list__links{
@@ -310,7 +310,7 @@
 }
 
 @media only screen and (min-width: 1450px) {
-  .page-view-themes{
+  .path-themes{
     .block-facet-blockthemes-normal-search-themes{
       .facets-widget-links{
         .item-list__links{
@@ -325,7 +325,7 @@
 /*End comment - adapt select-theme block in order to keep the "+" icon responsive*/
 
 @media only screen and (min-width: 992px) {
-  .page-view-themes{
+  .path-themes{
     .container{
       #main{
         /*Responsive layout with grid-area*/

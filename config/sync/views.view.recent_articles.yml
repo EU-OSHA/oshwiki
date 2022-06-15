@@ -432,7 +432,7 @@ display:
       use_more_always: true
       use_more_text: 'See all'
       link_display: custom_url
-      link_url: '/themes?sort_by=updated&sort_order=DESC'
+      link_url: /most-recent
       header: {  }
       footer: {  }
       display_extenders: {  }

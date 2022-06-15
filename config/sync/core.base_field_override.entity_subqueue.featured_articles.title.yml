@@ -1,0 +1,18 @@
+uuid: 3df4fb97-f2e7-43c0-bcdc-17c68beaa5ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_articles
+id: entity_subqueue.featured_articles.title
+field_name: title
+entity_type: entity_subqueue
+bundle: featured_articles
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
