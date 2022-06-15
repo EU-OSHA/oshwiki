@@ -72,15 +72,17 @@
     'clearfix',
   ]
 %}
-
 <div class="container">
   <div class="row wrapper-content oshwiki-content">
     <!-- LEFT COLUMN -->
     <div class="col-lg-3 col-12 order-2 items-left">
+      {#
       <p>
         <strong>{{ 'This item is available in other national versions' | trans }}</strong>
-      </p>
+      </p> #}
+      {% if node.field_one_language_available.value==0 %}
       {{ drupal_entity('block', 'osharticleslanguageblock', check_access=false) }}
+      {% endif %}
       <div class="anchor-item-list-container">
         <ul class="anchor-items-list">
           {% for key, items in content.field_sections_oshwiki['#items'] %}
