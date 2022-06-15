@@ -1,0 +1,15 @@
+uuid: 86898dfc-93e7-4e3f-ad2b-c2a0121457b9
+langcode: en
+status: true
+dependencies: {  }
+id: groups
+label: groups
+server_id: osha
+base_dn: 'ou=OSHWiki,ou=Sites,dc=osha,dc=europa,dc=eu'
+filter: '(cn=*)'
+attributes: ''
+size_limit: 0
+time_limit: 0
+dereference: 0
+scope: sub
+

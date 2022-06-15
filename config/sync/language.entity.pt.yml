@@ -1,0 +1,9 @@
+uuid: 16ab2a2a-f1a7-4e0c-a421-902b768f944e
+langcode: en
+status: true
+dependencies: {  }
+id: pt
+label: Portuguese
+direction: ltr
+weight: 32
+locked: false

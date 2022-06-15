@@ -1,0 +1,18 @@
+uuid: 54c396f8-5c30-4c11-9a64-79e06a0ae261
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_articles
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.featured_articles
+target_entity_type_id: entity_subqueue
+target_bundle: featured_articles
+default_langcode: site_default
+language_alterable: false

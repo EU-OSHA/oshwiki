@@ -1,0 +1,18 @@
+uuid: a5936644-15bf-444a-ab99-9aa43f954441
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.most_popular_articles
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.most_popular_articles
+target_entity_type_id: entity_subqueue
+target_bundle: most_popular_articles
+default_langcode: site_default
+language_alterable: false

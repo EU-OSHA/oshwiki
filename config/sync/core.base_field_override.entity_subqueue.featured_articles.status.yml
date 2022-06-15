@@ -1,0 +1,22 @@
+uuid: a2688d8c-f9e0-4108-a60e-726971b032df
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_articles
+id: entity_subqueue.featured_articles.status
+field_name: status
+entity_type: entity_subqueue
+bundle: featured_articles
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

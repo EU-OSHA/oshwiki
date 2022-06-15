@@ -17,7 +17,6 @@ url:
     sv: sv
     it: it
     cs: cs
-    pt-pt: pt-pt
     sl: sl
     bs: bs
     pl: pl
@@ -36,7 +35,7 @@ url:
     sk: sk
     is: is
     ro: ro
-    ga: ga
+    pt: pt
   domains:
     en: ''
     de: ''
@@ -50,7 +49,6 @@ url:
     sv: ''
     it: ''
     cs: ''
-    pt-pt: ''
     sl: ''
     bs: ''
     pl: ''
@@ -69,5 +67,5 @@ url:
     sk: ''
     is: ''
     ro: ''
-    ga: ''
+    pt: ''
 selected_langcode: site_default

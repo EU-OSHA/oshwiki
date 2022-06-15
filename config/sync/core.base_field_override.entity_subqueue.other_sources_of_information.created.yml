@@ -1,0 +1,18 @@
+uuid: d02cb35d-59d8-435d-87ca-ccc246b88244
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.other_sources_of_information
+id: entity_subqueue.other_sources_of_information.created
+field_name: created
+entity_type: entity_subqueue
+bundle: other_sources_of_information
+label: 'Authored on'
+description: 'The time that the subqueue was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created
