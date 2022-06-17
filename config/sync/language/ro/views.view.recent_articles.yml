@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Citiți articolul'
+      use_more_text: 'Vedeți toate'

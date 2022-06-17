@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Lees het artikel'
+      use_more_text: 'Alle weergeven'

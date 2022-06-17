@@ -16,7 +16,7 @@ id: node.oshwiki_articles.field_authors_oshwiki
 field_name: field_authors_oshwiki
 entity_type: node
 bundle: oshwiki_articles
-label: Authors
+label: Author
 description: ''
 required: false
 translatable: false

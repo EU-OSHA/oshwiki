@@ -1,0 +1,48 @@
+display:
+  default:
+    display_title: Προεπιλεγμένο
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Εφαρμογή
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      fields:
+        label:
+          label: Ετικέτα
+          separator: ', '
+        state:
+          separator: ', '
+        priority:
+          label: Προτεραιότητα
+          separator: ', '
+        page_count:
+          label: 'Πλήθος σελίδων'
+        changed:
+          label: Τροποποιημένο
+          separator: ', '
+        file_uploaded:
+          separator: ', '
+        file_sent:
+          separator: ', '
+        operations:
+          label: Λειτουργίες
+      filters:
+        label:
+          expose:
+            label: Ετικέτα
+  page_1:
+    display_title: Σελίδα

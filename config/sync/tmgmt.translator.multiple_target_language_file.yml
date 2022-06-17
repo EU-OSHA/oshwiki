@@ -1,4 +1,4 @@
-uuid: 769fd8c9-08f0-4279-8d97-ec0cba94c3e1
+uuid: 17aeabf2-6281-4aee-aed7-5b7f9ff60ad2
 langcode: en
 status: true
 dependencies:
@@ -31,7 +31,6 @@ remote_languages_mappings:
   sv: sv
   it: it
   cs: cs
-  pt-pt: pt-pt
   sl: sl
   bs: bs
   pl: pl
@@ -50,4 +49,4 @@ remote_languages_mappings:
   sk: sk
   is: is
   ro: ro
-  ga: ga
+  pt: pt
