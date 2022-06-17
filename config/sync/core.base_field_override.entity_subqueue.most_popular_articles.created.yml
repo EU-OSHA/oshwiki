@@ -1,0 +1,18 @@
+uuid: 1410047f-0ef2-49a9-b7ea-2be726963947
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.most_popular_articles
+id: entity_subqueue.most_popular_articles.created
+field_name: created
+entity_type: entity_subqueue
+bundle: most_popular_articles
+label: 'Authored on'
+description: 'The time that the subqueue was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created
