@@ -5,63 +5,69 @@
     width: 1px 0px;
   }
   padding-bottom: 0rem;
-  #block-oshwiki-theme-main-menu{
-    width: 100%;
-    & > ul{
-      display: flex;
-      justify-content: space-between;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      & > li {
-        a, span{
-          @include textFormat(1.1rem, 600, $text-dark-dark-grey);
-        }
-        span::after{
-          display: none;
-        }
-        &.menu-item--expanded{
-          .dropdown-menu{
+  #navbar-main{
+    padding: 0px;
+    margin: 0px;
+    #block-oshwiki-theme-main-menu{
+      width: 100%;
+      & > ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        & > li {
+          padding: 0.3rem 0rem;
+          a, span{
+            @include textFormat(1.1rem, 600, $text-dark-dark-grey);
+          }
+          span::after{
             display: none;
           }
-          &:hover{
-            /*Main menu second-level - Used for the themes*/
+          &.menu-item--expanded{
             .dropdown-menu{
-              display: block;
-              top: 49px;
-              left: -40%;
-              box-shadow: 0px 1px 10px -5px $bg-dark-dark-grey;
-              border : {
-                radius: 0px;
-                top: 6px solid $bg-dark-green;
-                bottom: 6px solid $bg-dark-green;
-                left: none;
-                right: none;
-              }
-              & > li{
-                padding: 0.3rem 1.5rem;
-                a{
-                  @include textFormat(0.9rem, 600, $text-dark-dark-grey);
+              display: none;
+            }
+            &:hover{
+              /*Main menu second-level - Used for the themes*/
+              .dropdown-menu{
+                display: block;
+                top: 51px;
+                left: -40%;
+                box-shadow: 0px 1px 10px -5px $bg-dark-dark-grey;
+                border : {
+                  radius: 0px;
+                  top: 6px solid $bg-dark-green;
+                  bottom: 6px solid $bg-dark-green;
+                  left: none;
+                  right: none;
+                }
+                & > li{
+                  padding: 0.3rem 1.5rem;
+                  a{
+                    @include textFormat(0.9rem, 600, $text-dark-dark-grey);
+                  }
                 }
               }
+              /*End comment main menu second-level - Used for the themes*/
             }
-            /*End comment main menu second-level - Used for the themes*/
           }
         }
-      }
-      & > li.active{
-        position: relative;
-        a{
-          @include textFormat(1.1rem, 700, $text-dark-green);
-        }
-        &:after{
-          display: block;
-          position: absolute;
-          content: '';
-          right: 0%;
-          height: 6px;
-          width: 100%;
-          background: $bg-dark-orange;
+        & > li.active{
+          position: relative;
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-green);
+          }
+          &:after{
+            display: block;
+            position: absolute;
+            content: '';
+            top: 53px;
+            right: 0%;
+            height: 6px;
+            width: 100%;
+            background: $bg-dark-orange;
+          }
         }
       }
     }
@@ -191,7 +197,7 @@
           position: absolute;
           content: '';
           right: 0%;
-          bottom: -14px;
+          bottom: -8px;
           height: 6px;
           width: 100%;
           background: $bg-dark-orange;
@@ -246,7 +252,7 @@ ul{
         li:nth-child(1){
           &:after{
             right: -20%;
-            bottom: -14px;
+            bottom: -8px;
             width: 140%;
           }
         }

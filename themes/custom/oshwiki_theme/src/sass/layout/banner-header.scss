@@ -1,3 +1,29 @@
+/*Sticky menu*/
+.scrollup{
+  &.scrolled{
+    header{
+      position: fixed !important;
+      top: 39px;
+      width: 100%;
+      background-color: $bg-white;
+      z-index: 1000;
+      transition: top 0.6s linear;
+    }
+  }
+}
+/*body.user-logged-in{
+  padding-top: 230px !important;
+  #header{
+    padding-top: 40px;
+  }
+  &.scrolled{
+    #header{
+      padding-top: 0px;
+    }
+  }
+}*/
+/*Sticky menu*/
+
 .top-header-container.container{
   max-width: 100%;
 }

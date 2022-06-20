@@ -1,6 +1,7 @@
 .site-footer{
   display: flex;
   justify-content: flex-start;
+  flex-direction: column !important;
   flex-flow: wrap;
   column-gap: 2rem;
   background-color: $bg-light-dark-grey;
@@ -11,6 +12,7 @@
   .copyright-footer{
     display: flex;
     align-items: center;
+    margin-top: 0.7rem;
     @include textFormat(1rem, 700, $text-dark-dark-grey);
   }
   .row{
@@ -20,28 +22,99 @@
     margin-left: 0px;
   }
   section{
-    nav{
+    & > #block-oshwiki-theme-footer{
       padding: 0px;
-    }
-    .navbar-nav{
-      display: flex;
-      flex-direction: row;
-      .nav-link{
-        padding: 0rem 0.8rem;
-        border-right: 1px solid $bg-white;
-      }
-      .nav-link--contact{
-        padding-left: 0px;
-      }
-      a{
-        @include textFormat(1rem, null, $text-white);
-        text-decoration: none;
-      }
-      li:hover{
-        text-decoration: underline;
-      }
-      li:last-of-type a{
-        border-right: none;
+      width: 100%;
+      & > .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        ul, li{
+          list-style: none;
+        }
+        ul{
+          padding-left: 0px;
+        }
+        & > li{
+          ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
+          & > span{
+            display: none;
+          }
+        }
+        a{
+          @include textFormat(1rem, null, $text-white);
+          text-decoration: none;
+        }
+        li:hover{
+          text-decoration: underline;
+        }
+        & > li:first-of-type{
+          .menu{
+            .nav-item{
+              a{
+                padding: 0rem 0.8rem;
+                border-right: 1px solid $bg-white;
+              }
+            }
+            .nav-item:first-of-type{
+              a{
+                padding-left: 0px;
+              }
+            }
+            .nav-item:last-of-type{
+              a{
+                border-right: none;
+              }
+            }
+          }
+        }
+        & > li:nth-of-type(2){
+          .menu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            .nav-item{
+              width: 30px;
+              height: 30px;
+              a{
+                display: none;
+              }
+            }
+            .nav-item{
+              background: {
+                repeat: no-repeat;
+                size: 70%;
+                position: 50% 50%;
+              }
+            }
+            /*Social media background images*/
+            .nav-item:first-of-type{
+              background-image: url('../images/icon-twitter-footer.png');
+            }
+            .nav-item:nth-of-type(2){
+              background-image: url('../images/icon-facebook-footer.png');
+            }
+            .nav-item:nth-of-type(3){
+              background-image: url('../images/icon-linkedin-footer.png');
+            }
+            .nav-item:nth-of-type(4){
+              background-image: url('../images/icon-youtube-footer.png');
+            }
+            .nav-item:nth-of-type(5){
+              background-image: url('../images/icon-flickr-footer.png');
+            }
+            .nav-item:nth-of-type(6){
+              background-image: url('../images/icon-slideshare-footer.png');
+            }
+            /*Social media background images*/
+          }
+
+        }
       }
     }
   }
@@ -54,26 +127,69 @@
 .removeMarginTop{
   margin-top: 0rem;
 }
+
 .addMarginTop{
   margin-top: 1rem;
 }
 
 /*Make footer design responsive*/
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 767px) {
   .site-footer{
-    height: auto;
-    padding-top: 0.8rem;
-    .copyright-footer{
-      width: 100%;
+    section{
+      #block-oshwiki-theme-footer{
+        .navbar-nav{
+          & > li:first-of-type{
+            .menu{
+              .nav-item:nth-of-type(5){
+                a{
+                  padding-left: 0px !important;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
 
-@media only screen and (max-width: 419px) {
-  .site-footer {
-    .navbar-nav {
-      li:last-of-type a {
-        padding-left: 0rem;
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .site-footer{
+    section{
+      #block-oshwiki-theme-footer{
+        .navbar-nav{
+          & > li:first-of-type{
+            .menu{
+              .nav-item:last-of-type{
+                a{
+                  padding-left: 0px !important;
+                  padding-right: 10rem !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .site-footer{
+    section{
+      #block-oshwiki-theme-footer{
+        .navbar-nav{
+          flex-direction: row;
+          justify-content: space-between;
+          & > li:first-of-type{
+            .menu{
+              .nav-item:last-of-type{
+                a{
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

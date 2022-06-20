@@ -668,6 +668,7 @@ a:hover {
 .node--type-oshwiki-articles .osh-nace-categories {
   border-left: 1px solid #9E9E9E;
   border-right: 1px solid #9E9E9E;
+  margin-bottom: 1rem;
 }
 .node--type-oshwiki-articles .osh-nace-categories .card {
   border: none;
@@ -2229,6 +2230,28 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
     grid-template-areas: "select-theme theme-content theme-content theme-content" "select-theme other-articles-in-English other-articles-in-English other-articles-in-English";
   }
 }
+/*Sticky menu*/
+.scrollup.scrolled header {
+  position: fixed !important;
+  top: 39px;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 1000;
+  transition: top 0.6s linear;
+}
+
+/*body.user-logged-in{
+  padding-top: 230px !important;
+  #header{
+    padding-top: 40px;
+  }
+  &.scrolled{
+    #header{
+      padding-top: 0px;
+    }
+  }
+}*/
+/*Sticky menu*/
 .top-header-container.container {
   max-width: 100%;
 }
@@ -2621,6 +2644,7 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 .site-footer {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column !important;
   flex-flow: wrap;
   column-gap: 2rem;
   background-color: #B0B2B3;
@@ -2632,6 +2656,7 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 .site-footer .copyright-footer {
   display: flex;
   align-items: center;
+  margin-top: 0.7rem;
   font-size: 1rem;
   font-weight: 700;
   color: #58585A;
@@ -2642,30 +2667,84 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   margin-right: 0px;
   margin-left: 0px;
 }
-.site-footer section nav {
+.site-footer section > #block-oshwiki-theme-footer {
   padding: 0px;
+  width: 100%;
 }
-.site-footer section .navbar-nav {
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 1rem;
 }
-.site-footer section .navbar-nav .nav-link {
-  padding: 0rem 0.8rem;
-  border-right: 1px solid #FFFFFF;
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav ul, .site-footer section > #block-oshwiki-theme-footer > .navbar-nav li {
+  list-style: none;
 }
-.site-footer section .navbar-nav .nav-link--contact {
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav ul {
   padding-left: 0px;
 }
-.site-footer section .navbar-nav a {
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li > span {
+  display: none;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav a {
   font-size: 1rem;
   color: #FFFFFF;
   text-decoration: none;
 }
-.site-footer section .navbar-nav li:hover {
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav li:hover {
   text-decoration: underline;
 }
-.site-footer section .navbar-nav li:last-of-type a {
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item a {
+  padding: 0rem 0.8rem;
+  border-right: 1px solid #FFFFFF;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:first-of-type a {
+  padding-left: 0px;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type a {
   border-right: none;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  /*Social media background images*/
+  /*Social media background images*/
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item {
+  width: 30px;
+  height: 30px;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item a {
+  display: none;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 50% 50%;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:first-of-type {
+  background-image: url("../images/icon-twitter-footer.png");
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(2) {
+  background-image: url("../images/icon-facebook-footer.png");
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(3) {
+  background-image: url("../images/icon-linkedin-footer.png");
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(4) {
+  background-image: url("../images/icon-youtube-footer.png");
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(5) {
+  background-image: url("../images/icon-flickr-footer.png");
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(6) {
+  background-image: url("../images/icon-slideshare-footer.png");
 }
 .site-footer .block {
   border: none;
@@ -2681,18 +2760,21 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 }
 
 /*Make footer design responsive*/
-@media only screen and (max-width: 992px) {
-  .site-footer {
-    height: auto;
-    padding-top: 0.8rem;
-  }
-  .site-footer .copyright-footer {
-    width: 100%;
+@media only screen and (max-width: 767px) {
+  .site-footer section #block-oshwiki-theme-footer .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) a {
+    padding-left: 0px !important;
   }
 }
-@media only screen and (max-width: 419px) {
-  .site-footer .navbar-nav li:last-of-type a {
-    padding-left: 0rem;
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .site-footer section #block-oshwiki-theme-footer .navbar-nav > li:first-of-type .menu .nav-item:last-of-type a {
+    padding-left: 0px !important;
+    padding-right: 10rem !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .site-footer section #block-oshwiki-theme-footer .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 /* Home page */
@@ -2704,34 +2786,41 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   /*Header elements inside menu when screen widht < 992*/
   /*Hide header elements inside menu comment*/
 }
-.content-main-menu #block-oshwiki-theme-main-menu {
+.content-main-menu #navbar-main {
+  padding: 0px;
+  margin: 0px;
+}
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu {
   width: 100%;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li a, .content-main-menu #block-oshwiki-theme-main-menu > ul > li span {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li {
+  padding: 0.3rem 0rem;
+}
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li a, .content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li span {
   font-size: 1.1rem;
   font-weight: 600;
   color: #58585A;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li span::after {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li span::after {
   display: none;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded .dropdown-menu {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded .dropdown-menu {
   display: none;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover {
   /*Main menu second-level - Used for the themes*/
   /*End comment main menu second-level - Used for the themes*/
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover .dropdown-menu {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover .dropdown-menu {
   display: block;
-  top: 49px;
+  top: 51px;
   left: -40%;
   box-shadow: 0px 1px 10px -5px #58585A;
   border-radius: 0px;
@@ -2740,26 +2829,27 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   border-left: none;
   border-right: none;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover .dropdown-menu > li {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover .dropdown-menu > li {
   padding: 0.3rem 1.5rem;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover .dropdown-menu > li a {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover .dropdown-menu > li a {
   font-size: 0.9rem;
   font-weight: 600;
   color: #58585A;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li.active {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.active {
   position: relative;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li.active a {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.active a {
   font-size: 1.1rem;
   font-weight: 700;
   color: #449FA2;
 }
-.content-main-menu #block-oshwiki-theme-main-menu > ul > li.active:after {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.active:after {
   display: block;
   position: absolute;
   content: "";
+  top: 53px;
   right: 0%;
   height: 6px;
   width: 100%;
@@ -2877,7 +2967,7 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   position: absolute;
   content: "";
   right: 0%;
-  bottom: -14px;
+  bottom: -8px;
   height: 6px;
   width: 100%;
   background: #F6A400;
@@ -2912,7 +3002,7 @@ button.navbar-toggler-right .icon-bar {
 
   .page-view-frontpage .content-main-menu ul li:nth-child(1):after {
     right: -20%;
-    bottom: -14px;
+    bottom: -8px;
     width: 140%;
   }
 }
