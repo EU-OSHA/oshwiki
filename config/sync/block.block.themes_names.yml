@@ -12,12 +12,12 @@ dependencies:
 id: themes_names
 theme: oshwiki_theme
 region: content
-weight: -5
+weight: -7
 provider: null
 plugin: 'facet_block:theme_names'
 settings:
   id: 'facet_block:theme_names'
-  label: 'Select themes'
+  label: 'Select theme'
   label_display: visible
   provider: facets
   context_mapping: {  }

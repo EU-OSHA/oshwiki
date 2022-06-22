@@ -1,0 +1,19 @@
+{% extends "page.html.twig" %}
+
+
+{% block content %}
+<div class="banner-fluid bg-image-banner">
+  <div class="container container-custom-breadcrumbs">
+    {{ page.banner_oshwiki }}
+  </div>
+</div>
+<div class="container static-page-container">
+  <div class="social_media">
+    {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
+  </div>
+  <div class="page-content">
+    {{ page.content }}
+  </div>
+</div>
+{% endblock %}
+

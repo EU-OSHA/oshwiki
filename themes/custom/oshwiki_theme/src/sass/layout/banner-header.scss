@@ -1,28 +1,75 @@
-/*Sticky menu*/
-.scrollup{
+/* Sticky menu */
+#header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.6s linear;
+  background: white;
+  top: 0;
+}
+
+body.user-logged-in{
+  #header {
+    top: 79px !important;
+  }
+}
+
+body.scrollup{
   &.scrolled{
-    header{
-      position: fixed !important;
-      top: 39px;
-      width: 100%;
-      background-color: $bg-white;
-      z-index: 1000;
+    #header{
+      z-index: 9999999;
       transition: top 0.6s linear;
+      top: 0px !important;
     }
   }
 }
-/*body.user-logged-in{
-  padding-top: 230px !important;
-  #header{
-    padding-top: 40px;
-  }
+
+body.scrollup.user-logged-in{
   &.scrolled{
     #header{
-      padding-top: 0px;
+      width: 100%;
+      z-index: 9999999;
+      transition: top 0.6s linear;
+      top: 79px !important;
     }
   }
-}*/
-/*Sticky menu*/
+}
+
+body.scrolldown.user-logged-in{
+  #header{
+    position: fixed;
+    top: -23rem !important;
+    transition: all 0.6s;
+    z-index: 2;
+  }
+}
+
+body.scrolldown{
+  #header{
+    position: fixed;
+    top: -23rem !important;
+    transition: all 0.6s;
+    z-index: 10;
+    width: 100%;
+  }
+}
+
+/*Change this 4 values - the difference between logged user and anonymous user*/
+body{
+  padding-top: 175px!important;
+}
+body.user-logged-in{
+  padding-top: 260px !important;
+}
+
+body.scrolldown{
+  padding-top: 175px !important;
+}
+
+body.scrolldown.user-logged-in{
+  padding-top: 130px !important;
+}
+/* End comment - sticky menu */
 
 .top-header-container.container{
   max-width: 100%;
@@ -201,14 +248,38 @@
   }
 }
 
-/*Edit the orange line under nav element of menu*/
 @media only screen and (max-width: 992px) {
+  /*Edit the orange line under nav element of menu*/
   .content-main-menu{
     ul{
       .active:after{
         bottom: 0px;
       }
     }
+  }
+  /*sticky menu*/
+  body.user-logged-in{
+    #header {
+      top: 39px !important;
+    }
+  }
+  body.scrollup.user-logged-in{
+    &.scrolled{
+      #header{
+        top: 39px !important;
+      }
+    }
+  }
+  body.scrolldown.user-logged-in{
+    #header{
+      top: -23rem !important;
+    }
+  }
+  body.user-logged-in{
+    padding-top: 260px !important;
+  }
+  body.scrolldown.user-logged-in{
+    padding-top: 130px !important;
   }
 }
 

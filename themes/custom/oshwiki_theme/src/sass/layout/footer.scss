@@ -49,7 +49,7 @@
           @include textFormat(1rem, null, $text-white);
           text-decoration: none;
         }
-        li:hover{
+        li li:hover{
           text-decoration: underline;
         }
         & > li:first-of-type{
@@ -91,6 +91,7 @@
                 size: 70%;
                 position: 50% 50%;
               }
+              cursor: pointer;
             }
             /*Social media background images*/
             .nav-item:first-of-type{

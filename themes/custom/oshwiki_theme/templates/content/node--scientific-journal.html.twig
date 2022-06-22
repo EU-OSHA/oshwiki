@@ -90,9 +90,19 @@
   <div class="col-lg-9 col-12 order-2">
     <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
 
-      <div class="year_and_social_media">
-        <div class="scientific_year">
-          {{ 'Year of the article:' | trans }} {{ content.field_year_science|raw }}
+      <div class="data-and-social-media">
+        <div class="scientific-journal-data-container">
+          <div class="scientific-journal-data">
+            {{ 'Year of the article:' | trans }} {{ content.field_year_science|raw }}
+          </div>
+          <p class="divide"> | </p>
+          <div class="scientific-journal-data">
+            {{ 'Volume:' | trans }} {{ content.field_volume_science }}
+          </div>
+          <p class="divide"> | </p>
+          <div class="scientific-journal-data">
+            {{ 'Issue:' | trans }} {{ content.field_issue_science }}
+          </div>
         </div>
         <div class="social_media">
           {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
@@ -115,13 +125,8 @@
             {{ content.field_authors_other_sources }}
       </div>
 
-      <div class="year_and_social_media">
-        <div class="scientific_year">
-          {{ 'Year of the article:' | trans }} {{ content.field_year_science|raw }}
-        </div>
-        <div class="social_media">
-          {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
-        </div>
+      <div class="social_media">
+        {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
       </div>
     </div>
   </div>

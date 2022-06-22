@@ -1,0 +1,28 @@
+.node--type-page{
+  .static-page-container{
+    .field--name-body{
+      padding: 0px 15px;
+      ul{
+        margin-left: 20px;
+      }
+    }
+    .social_media{
+      #share-this-on{
+        float: right;
+      }
+    }
+  }
+  .field__item{
+    letter-spacing: 0.3px;
+    line-height: 29px;
+    @include textFormat(1rem, null, $text-dark-dark-grey);
+    h2{
+      @include textFormat(1.4rem, 50, $text-dark-dark-grey);
+    }
+    h3, h4, h5{
+      @include textFormat(1.1rem, 700, $text-dark-green);
+    }
+  }
+}
+
+

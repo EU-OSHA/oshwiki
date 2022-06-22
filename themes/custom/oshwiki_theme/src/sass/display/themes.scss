@@ -138,6 +138,9 @@
         @include textFormat(0.9rem, 700, $text-dark-dark-grey);
       }
     }
+    .attachment-before{
+      border-top: 1px dotted $text-dark-dark-grey;
+    }
     .view-content{
       display: flex;
       flex-direction: column;
@@ -225,7 +228,6 @@
     .view-content{
       /*Show first result bigger*/
       .views-row:first-of-type{
-        border-top: 1px dotted $bg-dark-medium-grey;
         .views-field-title{
           a{
             @include textFormat(1.3rem, 700, $text-dark-green);

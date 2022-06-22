@@ -75,12 +75,14 @@
 
   .navbar-toggler{
     padding: 0rem;
+    margin: 1rem 0rem;
   }
   /*Header elements inside menu when screen widht < 992*/
   .responsive-menu-oshwiki{
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin: 1rem 0rem;
     /*Search box*/
     .search-block-form{
       padding: 0;
@@ -197,7 +199,7 @@
           position: absolute;
           content: '';
           right: 0%;
-          bottom: -8px;
+          bottom: -7px;
           height: 6px;
           width: 100%;
           background: $bg-dark-orange;
@@ -252,7 +254,7 @@ ul{
         li:nth-child(1){
           &:after{
             right: -20%;
-            bottom: -8px;
+            bottom: -7px;
             width: 140%;
           }
         }
