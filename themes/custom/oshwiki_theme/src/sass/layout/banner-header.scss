@@ -17,7 +17,7 @@ body.user-logged-in{
 body.scrollup{
   &.scrolled{
     #header{
-      z-index: 9999999;
+      z-index: 2;
       transition: top 0.6s linear;
       top: 0px !important;
     }
@@ -28,7 +28,7 @@ body.scrollup.user-logged-in{
   &.scrolled{
     #header{
       width: 100%;
-      z-index: 9999999;
+      z-index: 2;
       transition: top 0.6s linear;
       top: 79px !important;
     }
