@@ -1,0 +1,6 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Leer el artículo'
