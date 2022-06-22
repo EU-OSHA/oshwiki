@@ -99,6 +99,7 @@ content:
     weight: 7
     region: content
 hidden:
+  addtoany: true
   field_article_science: true
   field_authors_science: true
   field_published_date_science: true
