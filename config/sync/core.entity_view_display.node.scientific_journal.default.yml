@@ -32,7 +32,7 @@ content:
       view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 6
+    weight: 8
     region: content
   field_image_science:
     type: image
@@ -41,12 +41,21 @@ content:
       image_link: ''
       image_style: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_introduction_science:
     type: text_default
     label: above
     settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_issue_science:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
     weight: 2
     region: content
@@ -56,7 +65,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 4
+    weight: 6
     region: content
   field_themes_science:
     type: entity_reference_label
@@ -64,7 +73,16 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 5
+    region: content
+  field_volume_science:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_year_science:
     type: number_integer
@@ -78,13 +96,11 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 7
     region: content
 hidden:
   field_article_science: true
   field_authors_science: true
-  field_issue_science: true
   field_published_date_science: true
-  field_volume_science: true
   langcode: true
   search_api_excerpt: true

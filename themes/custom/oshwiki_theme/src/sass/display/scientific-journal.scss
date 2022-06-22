@@ -35,14 +35,36 @@
   }
 }
 
-.year_and_social_media{
+.data-and-social-media{
   display: flex;
-  justify-content: space-between;
-  .scientific_year{
-    @include textFormat(1rem, null, $text-dark-dark-grey);
+  flex-direction: column;
+  justify-content: start;
+  align-items: self-start;
+  .scientific-journal-data-container{
     display: flex;
-    gap: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .scientific-journal-data, divide{
+      letter-spacing: 0.3px;
+      line-height: 29px;
+    }
+    p{
+      margin-bottom: 0rem !important;
+    }
+    .scientific-journal-data{
+      @include textFormat(0.9rem, null, $text-dark-dark-grey);
+      display: flex;
+      gap: 0.5rem;
+    }
+    .divide{
+      color: $text-dark-orange;
+      padding: 0rem 0.3rem;
+    }
   }
+}
+.social_media{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .scientific_year:first-of-type{
@@ -101,4 +123,11 @@
   }
 }
 
+@media only screen and (min-width: 780px) {
+  .data-and-social-media{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 

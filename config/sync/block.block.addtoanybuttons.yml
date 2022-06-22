@@ -9,7 +9,7 @@ dependencies:
 id: addtoanybuttons
 theme: oshwiki_theme
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: addtoany_block
 settings:
