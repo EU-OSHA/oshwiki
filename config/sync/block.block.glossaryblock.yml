@@ -10,7 +10,7 @@ dependencies:
 id: glossaryblock
 theme: oshwiki_theme
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: glossary_block
 settings:
