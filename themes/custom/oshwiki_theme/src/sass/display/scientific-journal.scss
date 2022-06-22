@@ -52,7 +52,7 @@
       margin-bottom: 0rem !important;
     }
     .scientific-journal-data{
-      @include textFormat(1rem, null, $text-dark-dark-grey);
+      @include textFormat(0.9rem, null, $text-dark-dark-grey);
       display: flex;
       gap: 0.5rem;
     }

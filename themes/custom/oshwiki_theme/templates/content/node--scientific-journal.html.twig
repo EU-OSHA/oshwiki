@@ -93,15 +93,15 @@
       <div class="data-and-social-media">
         <div class="scientific-journal-data-container">
           <div class="scientific-journal-data">
-            {{ 'Year of the article:' | trans }} {{ content.field_year_science|raw }}
+            <strong>{{ 'Year' | trans }}:</strong> {{ content.field_year_science|raw }}
           </div>
           <p class="divide"> | </p>
           <div class="scientific-journal-data">
-            {{ 'Volume:' | trans }} {{ content.field_volume_science }}
+            <strong>{{ 'Volume' | trans }}:</strong> {{ content.field_volume_science }}
           </div>
           <p class="divide"> | </p>
           <div class="scientific-journal-data">
-            {{ 'Issue:' | trans }} {{ content.field_issue_science }}
+            <strong>{{ 'Issue' | trans }}:</strong> {{ content.field_issue_science }}
           </div>
         </div>
         <div class="social_media">

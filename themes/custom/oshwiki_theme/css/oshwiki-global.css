@@ -476,6 +476,9 @@ a:hover {
   font-weight: 50;
   color: #58585A;
 }
+.node--type-page .field__item h2:first-of-type {
+  font-weight: bold;
+}
 .node--type-page .field__item h3, .node--type-page .field__item h4, .node--type-page .field__item h5 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -510,7 +513,7 @@ a:hover {
 .node--type-oshwiki-articles .items-left .anchor-item-list-container {
   display: flex;
   flex-direction: column;
-  padding: 0.7rem 1.2rem;
+  padding: 0.7rem 0.5rem;
   border-radius: 20px;
   box-shadow: 0px 3px 11px -5px #58585A;
 }
@@ -539,7 +542,7 @@ a:hover {
 .node--type-oshwiki-articles .items-left .anchor-item-list-container .anchor-items-list li a {
   letter-spacing: 0.1px;
   line-height: 29px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #58585A;
 }
 .node--type-oshwiki-articles .wrapper-content .order-2 {
@@ -590,6 +593,7 @@ a:hover {
   font-size: 1.4rem;
   font-weight: 500;
   color: #58585A;
+  font-weight: bold;
 }
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-title-sections p {
   margin-bottom: 0rem;
@@ -1590,7 +1594,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   margin-bottom: 0rem !important;
 }
 .data-and-social-media .scientific-journal-data-container .scientific-journal-data {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #58585A;
   display: flex;
   gap: 0.5rem;
@@ -2149,9 +2153,6 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   font-weight: 700;
   color: #58585A;
 }
-.path-themes #block-oshwiki-theme-content .attachment-before, .path-themes #block-views-block-themes-block-1 .attachment-before {
-  border-top: 1px dotted #58585A;
-}
 .path-themes #block-oshwiki-theme-content .view-content, .path-themes #block-views-block-themes-block-1 .view-content {
   display: flex;
   flex-direction: column;
@@ -2196,6 +2197,9 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   margin-top: 0.25rem;
   background: url("../images/green-arrow-thin-.png") no-repeat;
 }
+.path-themes #block-oshwiki-theme-content {
+  /*Show first result bigger*/
+}
 .path-themes #block-oshwiki-theme-content .view-filters .form-row {
   margin-top: 0.7rem;
 }
@@ -2227,19 +2231,13 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   padding: 0.3rem 0.8rem;
   height: 2.5rem;
 }
-.path-themes #block-oshwiki-theme-content .view-content {
-  /*Show first result bigger*/
+.path-themes #block-oshwiki-theme-content .attachment-before {
+  border-top: 1px dotted #58585A;
 }
-.path-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-title a {
+.path-themes #block-oshwiki-theme-content .attachment-before .views-field-title span a {
   font-size: 1.3rem;
   font-weight: 700;
   color: #449FA2;
-}
-.path-themes #block-oshwiki-theme-content .view-content .views-row:first-of-type .views-field-field-sections-oshwiki {
-  font-size: 1rem;
-  color: #58585A;
-  letter-spacing: 0.3px;
-  line-height: 29px;
 }
 .path-themes #block-views-block-themes-block-1 {
   padding: 1rem 0rem;
@@ -2466,6 +2464,7 @@ body.scrolldown.user-logged-in {
   display: flex;
   align-items: baseline;
   column-gap: 0.2rem;
+  margin-bottom: 3.5px;
 }
 .top-header-container .top-header-content .push-right .content-first-row .font-size-print span:first-of-type {
   font-size: 1rem;

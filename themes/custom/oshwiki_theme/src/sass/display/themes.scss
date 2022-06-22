@@ -138,9 +138,6 @@
         @include textFormat(0.9rem, 700, $text-dark-dark-grey);
       }
     }
-    .attachment-before{
-      border-top: 1px dotted $text-dark-dark-grey;
-    }
     .view-content{
       display: flex;
       flex-direction: column;
@@ -225,18 +222,15 @@
         }
       }
     }
-    .view-content{
-      /*Show first result bigger*/
-      .views-row:first-of-type{
-        .views-field-title{
+
+    /*Show first result bigger*/
+    .attachment-before{
+      border-top: 1px dotted $text-dark-dark-grey;
+      .views-field-title{
+        span{
           a{
             @include textFormat(1.3rem, 700, $text-dark-green);
           }
-        }
-        .views-field-field-sections-oshwiki{
-          @include textFormat(1rem, null, $text-dark-dark-grey);
-          letter-spacing: 0.3px;
-          line-height: 29px;
         }
       }
     }

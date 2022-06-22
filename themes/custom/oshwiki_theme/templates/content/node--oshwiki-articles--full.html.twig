@@ -76,10 +76,6 @@
   <div class="row wrapper-content oshwiki-content">
     <!-- LEFT COLUMN -->
     <div class="col-lg-3 col-12 order-2 items-left">
-      {#
-      <p>
-        <strong>{{ 'This item is available in other national versions' | trans }}</strong>
-      </p> #}
       {% if node.field_one_language_available.value==0 %}
       {{ drupal_entity('block', 'osharticleslanguageblock', check_access=false) }}
       {% endif %}
