@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Preberite članek'
+      use_more_text: 'Poglejte vse'

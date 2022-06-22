@@ -1,0 +1,50 @@
+display:
+  default:
+    display_title: Implicit
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      fields:
+        label:
+          label: Etichetă
+          separator: ', '
+        state:
+          separator: ', '
+        priority:
+          label: Prioritate
+          separator: ', '
+        page_count:
+          label: 'Numărul de pagini'
+        progress:
+          label: Progres
+        changed:
+          label: Schimbat
+          separator: ', '
+        file_uploaded:
+          separator: ', '
+        file_sent:
+          separator: ', '
+        operations:
+          label: Operaţii
+      filters:
+        label:
+          expose:
+            label: Etichetă
+  page_1:
+    display_title: Pagina

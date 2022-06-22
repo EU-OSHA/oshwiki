@@ -76,10 +76,6 @@
   <div class="row wrapper-content oshwiki-content">
     <!-- LEFT COLUMN -->
     <div class="col-lg-3 col-12 order-2 items-left">
-      {#
-      <p>
-        <strong>{{ 'This item is available in other national versions' | trans }}</strong>
-      </p> #}
       {% if node.field_one_language_available.value==0 %}
       {{ drupal_entity('block', 'osharticleslanguageblock', check_access=false) }}
       {% endif %}
@@ -181,20 +177,16 @@
           </div>
         {% endif %}
         <!-- END CATEGORIES -->
-        <!-- DATES AND SOCIAL MEDIA -->
-        <div class="social-media-only">
-          <div class="social_media">
-            {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
-          </div>
-        </div>
-        <!-- END DATES AND SOCIAL MEDIA -->
+      </div>
+      <div class="social_media">
+        {{ drupal_entity('block', 'addtoanybuttons', check_access=false) }}
       </div>
     </div>
     <!-- END CENTER COLUMN -->
     <!-- THEME COLUMN -->
     <div class="select-theme-article col-lg-3 col-12 order-lg-last">
       <div class="select-theme-article-title-box">
-        <p>Select theme</p>
+        <p>{{ 'Select theme' | trans }}</p>
       </div>
       <div class="select-theme-article-content-box">
         {{ drupal_block('facet_block:themes_normal_search_themes') }}
@@ -217,7 +209,7 @@
           {% if authorExists %}
             <div class=" article_contributors contributors-border-b">
               <div class="field__label">
-                {{ 'Contributors' | trans }}
+                {{ 'Contributor' | trans }}
               </div>
               <div class="field__items">
                 <div class="field__item">
@@ -231,7 +223,7 @@
           {% else %}
             <div class=" article_contributors contributors-border-t-b">
               <div class="field__label">
-                {{ 'Contributors' | trans }}
+                {{ 'Contributor' | trans }}
               </div>
               <div class="field__items">
                 <div class="field__item">
@@ -256,7 +248,7 @@
   <!-- RELATED ARTICLES -->
   <div class="container-fluid related-articles">
     <div class="container">
-      <h2>{{ 'Related Articles' | trans }}</h2>
+      <h2>{{ 'Related articles' | trans }}</h2>
       {{  drupal_view ('related_articles_view', 'block_1')}}
     </div>
   </div>

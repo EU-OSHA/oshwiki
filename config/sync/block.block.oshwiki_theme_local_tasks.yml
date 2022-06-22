@@ -9,7 +9,7 @@ _core:
 id: oshwiki_theme_local_tasks
 theme: oshwiki_theme
 region: content
-weight: -10
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:

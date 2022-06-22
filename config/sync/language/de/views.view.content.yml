@@ -1,23 +1,32 @@
-label: Inhalt
+label: Content
 display:
   default:
     display_title: Standard
     display_options:
-      title: Inhalt
+      title: Content
       fields:
         title:
           label: Titel
         type:
-          label: Inhaltstyp
+          label: 'Content type'
           separator: ', '
         name:
-          label: Autor
+          label: Verfasser
         status:
           label: Status
           settings:
             format_custom_true: Veröffentlicht
+        changed:
+          label: Updated
         operations:
           label: Aktionen
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
       exposed_form:
         options:
           submit_button: Filter
@@ -31,7 +40,7 @@ display:
             label: Titel
         type:
           expose:
-            label: Inhaltstyp
+            label: 'Content type'
         status:
           expose:
             label: Status
@@ -39,10 +48,13 @@ display:
             group_items:
               1:
                 title: Veröffentlicht
+        langcode:
+          expose:
+            label: Language
   page_1:
     display_title: Seite
     display_options:
       menu:
-        title: Inhalt
+        title: Content
       tab_options:
-        title: Inhalt
+        title: Content

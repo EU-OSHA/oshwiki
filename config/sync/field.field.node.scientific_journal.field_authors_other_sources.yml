@@ -15,7 +15,7 @@ id: node.scientific_journal.field_authors_other_sources
 field_name: field_authors_other_sources
 entity_type: node
 bundle: scientific_journal
-label: Authors
+label: Author
 description: ''
 required: false
 translatable: false
