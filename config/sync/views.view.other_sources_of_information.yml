@@ -919,10 +919,10 @@ display:
             label: Relevance
             field_identifier: search_api_relevance
           exposed: true
-        field_published_date_science:
-          id: field_published_date_science
+        publication_date:
+          id: publication_date
           table: search_api_index_oshwiki_index
-          field: field_published_date_science
+          field: publication_date
           relationship: none
           group_type: group
           admin_label: ''
@@ -930,20 +930,7 @@ display:
           order: DESC
           expose:
             label: 'Publication date'
-            field_identifier: field_published_date_science
-          exposed: true
-        changed:
-          id: changed
-          table: search_api_index_oshwiki_index
-          field: changed
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api
-          order: DESC
-          expose:
-            label: 'Last update'
-            field_identifier: changed
+            field_identifier: publication_date
           exposed: true
         title:
           id: title
@@ -1053,46 +1040,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-        search_api_language:
-          id: search_api_language
-          table: search_api_index_oshwiki_index
-          field: search_api_language
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api_language
-          operator: in
-          value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
         status:
           id: status
           table: search_api_index_oshwiki_index

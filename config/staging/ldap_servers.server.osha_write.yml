@@ -37,4 +37,3 @@ grp_derive_from_dn: false
 grp_derive_from_dn_attr: ''
 grp_test_grp_dn: ''
 grp_test_grp_dn_writeable: ''
-
