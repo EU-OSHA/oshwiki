@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevancia
+      exposed_form:
+        options:
+          submit_button: Buscar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+  page_1:
+    display_options:
+      sorts:
+        title:
+          expose: {  }
+        search_api_relevance:
+          expose:
+            label: Importancia
+        publication_date:
+          expose:
+            label: 'Fecha de publicación'
+        changed:
+          expose: {  }
+      filters:
+        type:
+          expose: {  }
+        search_api_fulltext:
+          expose:
+            label: Buscar
+    display_title: Buscar

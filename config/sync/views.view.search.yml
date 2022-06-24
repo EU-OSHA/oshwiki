@@ -744,7 +744,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"created-authored\">\r\n<div class=\"views-field-created\"><strong>Created on: </strong>{{ created }} </div>\r\n<div class=\"divide\"> | </div>\r\n<div class=\"views-field-changed\"><strong>Latest update: </strong>{{ changed}} </div>\r\n</div>\r\n<div class=\"views-field-title-1\">{{ title_1 }} </div>\r\n{% if field_themes_oshwiki  %}\r\n<div class=\"views-field-field-themes-oshwiki\">{{ field_themes_oshwiki }} </div>\r\n{% endif %}\r\n{% if search_api_excerpt %}\r\n<div class=\"views-field-search-api-excerpt\">{{ search_api_excerpt }} </div>\r\n{% else %}\r\n<div class=\"views-field-field-sections-oshwiki\">{{ field_sections_oshwiki }} </div>\r\n{% endif %}\r\n<div class=\"views-field-url\"> <span class=\"field-content\"> {{ url }} </span></div>"
+            text: "<div class=\"created-authored\">\r\n<div class=\"views-field-created\"><strong>{{ 'Created on: ' | trans }}</strong>{{ created }} </div>\r\n<div class=\"divide\"> | </div>\r\n<div class=\"views-field-changed\"><strong> {{ 'Latest update: ' | trans }} </strong>{{ changed}} </div>\r\n</div>\r\n<div class=\"views-field-title-1\">{{ title_1 }} </div>\r\n{% if field_themes_oshwiki  %}\r\n<div class=\"views-field-field-themes-oshwiki\">{{ field_themes_oshwiki }} </div>\r\n{% endif %}\r\n{% if search_api_excerpt %}\r\n<div class=\"views-field-search-api-excerpt\">{{ search_api_excerpt }} </div>\r\n{% else %}\r\n<div class=\"views-field-field-sections-oshwiki\">{{ field_sections_oshwiki }} </div>\r\n{% endif %}\r\n<div class=\"views-field-url\"> <span class=\"field-content\"> {{ url }} </span></div>"
             make_link: false
             path: ''
             absolute: false

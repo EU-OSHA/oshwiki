@@ -804,7 +804,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"other-source-container\">\r\n<div class=\"creation-info\">\r\n<div class=\"year\"> <strong>Created on: </strong>{{ field_year_science }} </div>\r\n<p class=\"divide\"> | </p>\r\n<div class=\"volume\"> Volume: {{ field_volume_science }} </div>\r\n<p class=\"divide\"> | </p>\r\n<div class=\"issue\"> Issue: {{ field_issue_science }} </div>\r\n<div class=\"changed\"> <strong> Latest update: </strong>{{ changed }} </div>\r\n</div>\r\n<div class=\"title\"> {{ title }} </div>\r\n{% if field_themes_science  %}\r\n<div class=\"theme\"> {{ field_themes_science }} </div>\r\n{% endif %}\r\n<div class=\"introduction\"> {{ field_introduction_science_1 }} </div>\r\n<div class=\"url\"> {{ url }} </div>\r\n</div>"
+            text: "<div class=\"other-source-container\">\r\n<div class=\"creation-info\">\r\n<div class=\"year\"> <strong>{{ 'Year' | trans}}: </strong> {{ field_year_science }} </div>\r\n<p class=\"divide\"> | </p>\r\n<div class=\"volume\"> <strong>{{ 'Volume' | trans }}: </strong> {{ field_volume_science }} </div>\r\n<p class=\"divide\"> | </p>\r\n<div class=\"issue\"> <strong>{{ 'Issue' | trans }}: </strong> {{ field_issue_science }} </div>\r\n</div>\r\n<div class=\"title\"> {{ title }} </div>\r\n{% if field_themes_science  %}\r\n<div class=\"theme\"> {{ field_themes_science }} </div>\r\n{% endif %}\r\n<div class=\"introduction\"> {{ field_introduction_science_1 }} </div>\r\n<div class=\"url\"> {{ url }} </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false

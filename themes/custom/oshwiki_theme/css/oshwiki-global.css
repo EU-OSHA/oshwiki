@@ -471,6 +471,9 @@ a:hover {
   font-size: 1rem;
   color: #58585A;
 }
+.node--type-page .field__item .span-basic-page {
+  color: #449FA2;
+}
 .node--type-page .field__item h2 {
   font-size: 1.4rem;
   font-weight: 50;
@@ -2812,15 +2815,28 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav li li:hover {
   text-decoration: underline;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item a {
-  padding: 0rem 0.8rem;
-  border-right: 1px solid #FFFFFF;
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item {
+  display: flex;
+  align-items: baseline;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:first-of-type a {
-  padding-left: 0px;
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item::after {
+  display: inline;
+  content: "|";
+  margin: 0rem 0.5rem;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) {
+  display: none;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(6) {
+  display: flex;
 }
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type a {
   border-right: none;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type::after {
+  display: none;
 }
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu {
   display: flex;
@@ -2874,24 +2890,17 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   margin-top: 1rem;
 }
 
-/*Make footer design responsive*/
-@media only screen and (max-width: 767px) {
-  .site-footer section #block-oshwiki-theme-footer .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) a {
-    padding-left: 0px !important;
-  }
+/*Hide 6th menu option for anonymus user,
+Show 5th menu option for logged in user*/
+.user-logged-in .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) {
+  display: flex;
 }
-@media only screen and (min-width: 768px) and (max-width: 990px) {
-  .site-footer section #block-oshwiki-theme-footer .navbar-nav > li:first-of-type .menu .nav-item:last-of-type a {
-    padding-left: 0px !important;
-    padding-right: 10rem !important;
-  }
+.user-logged-in .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(6) {
+  display: none;
 }
-@media only screen and (min-width: 992px) {
-  .site-footer section #block-oshwiki-theme-footer .navbar-nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+
+/*End comment - hide 6th menu option for anonymus user. Show 5th
+menu option for logged in user*/
 /* Home page */
 .content-main-menu {
   border-color: #E0E0E0;

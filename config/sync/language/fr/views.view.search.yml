@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Rechercher
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Pertinence
+        publication_date:
+          expose:
+            label: 'Date de publication'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Rechercher

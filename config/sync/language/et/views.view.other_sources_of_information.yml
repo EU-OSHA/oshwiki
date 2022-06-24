@@ -1,0 +1,22 @@
+label: 'Muud teabeallikad'
+display:
+  default:
+    display_options:
+      title: 'Muud teabeallikad'
+      exposed_form:
+        options:
+          submit_button: Otsing
+          exposed_sorts_label: Sordi
+          sort_asc_label: 'Kasvavas järjestuses'
+          sort_desc_label: 'Laskuvas järjestuses'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Asjakohasus
+        field_published_date_science:
+          expose:
+            label: Avaldamiskuupäev
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Otsing
