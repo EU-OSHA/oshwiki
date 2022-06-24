@@ -1,0 +1,38 @@
+uuid: 76d3f244-7d1f-449f-89e7-6786fea4142d
+langcode: en
+status: true
+dependencies: {  }
+id: osha
+label: Osha
+provider: ldap_provider
+provider_config:
+  status:
+    server: osha
+    only_ldap_authenticated: true
+  filter_and_mappings:
+    use_first_attr_as_groupid: false
+provider_mappings:
+  -
+    query: 'cn=Editors_osha,ou=OSHWiki,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=ADMIN,ou=OSHWiki,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=Editors,ou=OSHWiki,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+consumer: authorization_drupal_roles
+consumer_config: {  }
+consumer_mappings:
+  -
+    role: oshwiki_editors
+  -
+    role: oshwiki_admin
+  -
+    role: editors_osha
+synchronization_modes:
+  user_logon: user_logon
+synchronization_actions:
+  create_consumers: create_consumers
+  revoke_provider_provisioned: revoke_provider_provisioned
+description: null

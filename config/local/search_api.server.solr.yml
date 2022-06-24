@@ -20,7 +20,6 @@ dependencies:
     - search_api_solr.solr_field_type.text_et_8_2_0
     - search_api_solr.solr_field_type.text_fi_7_0_0
     - search_api_solr.solr_field_type.text_fr_7_0_0
-    - search_api_solr.solr_field_type.text_ga_7_7_0
     - search_api_solr.solr_field_type.text_hr_7_0_0
     - search_api_solr.solr_field_type.text_hu_7_0_0
     - search_api_solr.solr_field_type.text_it_7_0_0
@@ -68,7 +67,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: solr
+    host: localhost
     port: 8983
     path: /
     core: dev

@@ -12,10 +12,10 @@ encryption: none
 weight: null
 bind_method: service_account
 binddn: 'cn=PwdWriterD9,dc=osha,dc=europa,dc=eu'
-bindpw: 2w8bRkshjG4e
+bindpw: SxT37Hg4jRJZ
 basedn:
   - 'ou=people,dc=osha,dc=europa,dc=eu'
-  - 'ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+  - 'ou=OSHWiki,ou=Sites,dc=osha,dc=europa,dc=eu'
 user_attr: uid
 account_name_attr: osha_admin
 mail_attr: mail

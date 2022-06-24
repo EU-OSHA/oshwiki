@@ -1,0 +1,18 @@
+uuid: 77230eba-55f9-460f-b1f6-56c347988433
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_articles
+id: entity_subqueue.featured_articles.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: featured_articles
+label: Changed
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

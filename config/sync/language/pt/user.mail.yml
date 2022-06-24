@@ -1,0 +1,21 @@
+cancel_confirm:
+  subject: 'Pedido de cancelamento de conta para [user:display-name] em [site:name]'
+password_reset:
+  subject: 'Informação de sessão substituta para [user:display-name] em [site:name]'
+register_admin_created:
+  subject: 'Um administrador criou uma conta para si em [site:name]'
+register_no_approval_required:
+  subject: 'Informações de conta para [user:display-name] em [site:name]'
+register_pending_approval:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (pendente de aprovação administrativa)'
+register_pending_approval_admin:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (pendente de aprovação administrativa)'
+  body: "[user:display-name] efetuou um pedido para criar uma conta.\r\n\r\n[user:edit-url]"
+status_activated:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (aprovada)'
+status_blocked:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (bloqueada)'
+  body: "[user:display-name],\r\n\r\nA sua conta em [site:name] foi bloqueada.\r\n\r\n--  [site:name] team"
+status_canceled:
+  subject: 'Detalhes da conta para [user:display-name] em [site:name] (cancelado)'
+  body: "[user:display-name],\r\n\r\nA sua conta em [site:name] foi cancelada.\r\n\r\n--  Equipa de [site:name]"

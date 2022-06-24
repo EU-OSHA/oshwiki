@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Cikk megtekintése'
+      use_more_text: 'Összes megtekintése'

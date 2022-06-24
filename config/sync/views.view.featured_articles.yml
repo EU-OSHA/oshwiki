@@ -278,7 +278,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: 'Read the article'
-          output_url_as_text: false
+          output_url_as_text: true
           absolute: false
         nothing:
           id: nothing
@@ -292,7 +292,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=featured-art-image>{{ field_image_oshwiki }}</div>\r\n<div class=featured-art-theme>{{ field_themes_oshwiki }}</div>\r\n<div class=featured-art-title>{{ title }}</div>\r\n<div class=featured-art-read>{{ view_node }}</div>"
+            text: "<div class=featured-art-image>{{ field_image_oshwiki }}</div>\r\n<div class=featured-art-theme>{{ field_themes_oshwiki }}</div>\r\n<div class=featured-art-title>{{ title }}</div>\r\n<div class=featured-art-read>\r\n<a href=\"{{ view_node }}\">{{  'Read the article' | trans }}</a>\r\n</div>"
             make_link: false
             path: ''
             absolute: false

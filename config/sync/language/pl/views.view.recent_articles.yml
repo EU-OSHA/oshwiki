@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Przeczytaj artykuł'
+      use_more_text: 'Zobacz wszystkie'

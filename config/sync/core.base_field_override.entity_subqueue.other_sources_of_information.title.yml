@@ -1,0 +1,18 @@
+uuid: 68a8c966-6a2a-478e-a04c-c0a5bde75143
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.other_sources_of_information
+id: entity_subqueue.other_sources_of_information.title
+field_name: title
+entity_type: entity_subqueue
+bundle: other_sources_of_information
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
