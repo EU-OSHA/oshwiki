@@ -1,0 +1,14 @@
+display:
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevância
+        created:
+          expose:
+            label: 'Data da Publicação'
+  page_2:
+    display_title: 'Mais recente'
+    display_options:
+      title: 'Mais recente'

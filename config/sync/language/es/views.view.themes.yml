@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose: {  }
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Ordenar por'
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Importancia
+        created:
+          expose:
+            label: 'Fecha de publicación'
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Ordenar por'
+  page_2:
+    display_title: 'Más recientes'
+    display_options:
+      title: 'Más recientes'

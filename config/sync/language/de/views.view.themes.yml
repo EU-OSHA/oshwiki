@@ -1,0 +1,20 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sortieren nach'
+          sort_asc_label: Aufsteigend
+          sort_desc_label: Absteigend
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevanz
+        created:
+          expose:
+            label: 'Datum der Veröffentlichung'
+  page_2:
+    display_title: 'Aktuellste Artikel'
+    display_options:
+      title: 'Aktuellste Artikel'
