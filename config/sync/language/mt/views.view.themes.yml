@@ -1,0 +1,26 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Irrisettja
+          sort_desc_label: Deskrizzjoni
+          exposed_sorts_label: 'Agħżel skont'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Rilevanza
+        created:
+          expose:
+            label: 'Data tal-pubblikazzjoni'
+  page_2:
+    display_title: 'L-aktar reċenti'
+    display_options:
+      title: 'L-aktar reċenti'
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Irrisettja
+          exposed_sorts_label: 'Agħżel skont'
+          sort_desc_label: Deskrizzjoni

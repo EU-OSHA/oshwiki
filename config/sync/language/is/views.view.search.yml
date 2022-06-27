@@ -1,0 +1,26 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Leita
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Flokka eftir'
+          sort_desc_label: Lækkandi
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Þýðing
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Þýðing
+        publication_date:
+          expose:
+            label: Útgáfudagsetning
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Leita

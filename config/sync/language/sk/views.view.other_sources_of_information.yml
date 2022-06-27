@@ -1,8 +1,8 @@
-label: 'Další zdroje informací'
+label: 'Ďalšie zdroje informácií'
 display:
   default:
     display_options:
-      title: 'Další zdroje informací'
+      title: 'Ďalšie zdroje informácií'
       fields:
         field_year_science:
           fallback_options:
@@ -21,11 +21,18 @@ display:
             format_plural_string: !!binary MQNAY291bnQD
       exposed_form:
         options:
-          submit_button: Vyhledávání
-          exposed_sorts_label: 'Seřadit podle'
-          sort_asc_label: Vzest.
-          sort_desc_label: Sest.
+          exposed_sorts_label: 'Roztriediť podľa'
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+          submit_button: Vyhľadávanie
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevantnosť
+        publication_date:
+          expose:
+            label: 'Dátum uverejnenia'
       filters:
         search_api_fulltext:
           expose:
-            label: Vyhledávání
+            label: Vyhľadávanie

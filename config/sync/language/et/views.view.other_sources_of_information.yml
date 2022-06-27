@@ -13,9 +13,6 @@ display:
         search_api_relevance:
           expose:
             label: Asjakohasus
-        field_published_date_science:
-          expose:
-            label: Avaldamiskuupäev
       filters:
         search_api_fulltext:
           expose:

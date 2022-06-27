@@ -1,0 +1,20 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Wyczyść
+          exposed_sorts_label: 'Posortuj według'
+          sort_asc_label: Rosnąca
+          sort_desc_label: Malejąca
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Istotność
+        created:
+          expose:
+            label: 'Data publikacji'
+  page_2:
+    display_title: Najnowsze
+    display_options:
+      title: Najnowsze

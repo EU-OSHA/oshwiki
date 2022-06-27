@@ -1,0 +1,27 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_year_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      exposed_form:
+        options:
+          submit_button: Căutare
+          reset_button_label: Reinițializare
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Descendent
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevanță
+        publication_date:
+          expose:
+            label: 'Data publicării'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Căutare

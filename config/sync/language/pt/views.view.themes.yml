@@ -1,6 +1,10 @@
 display:
   page_1:
     display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
       sorts:
         search_api_relevance:
           expose:

@@ -18,7 +18,6 @@ settings:
   label_display: '0'
   provider: lang_dropdown
   showall: true
-  hide_only_one: false
   tohome: false
   width: 140
   display: 1
@@ -42,4 +41,5 @@ settings:
   languageicons:
     flag_position: 1
   hidden_languages: {  }
+  hide_only_one: false
 visibility: {  }

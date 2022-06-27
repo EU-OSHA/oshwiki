@@ -13,9 +13,6 @@ display:
         search_api_relevance:
           expose:
             label: Relevanz
-        field_published_date_science:
-          expose:
-            label: 'Datum der Veröffentlichung'
       filters:
         search_api_fulltext:
           expose:
