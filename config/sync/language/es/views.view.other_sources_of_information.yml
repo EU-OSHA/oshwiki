@@ -5,9 +5,6 @@ display:
         search_api_relevance:
           expose:
             label: Importancia
-        field_published_date_science:
-          expose:
-            label: 'Fecha de publicación'
       exposed_form:
         options:
           submit_button: Buscar
