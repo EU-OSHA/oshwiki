@@ -8,6 +8,7 @@ display:
           exposed_sorts_label: 'Sortieren nach'
           sort_asc_label: Aufsteigend
           sort_desc_label: Absteigend
+      title: Suchen
   page_1:
     display_options:
       sorts:
@@ -21,3 +22,4 @@ display:
         search_api_fulltext:
           expose:
             label: Suchen
+label: Suchen

@@ -8,6 +8,7 @@ display:
           exposed_sorts_label: 'Rendezés módja:'
           sort_asc_label: Növ.
           sort_desc_label: Csökk.
+      title: Keresés
   page_1:
     display_options:
       sorts:
@@ -21,3 +22,4 @@ display:
         search_api_fulltext:
           expose:
             label: Keresés
+label: Keresés

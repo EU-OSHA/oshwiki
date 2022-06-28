@@ -6,6 +6,7 @@ display:
           submit_button: Pesquisar
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
+      title: Pesquisar
   page_1:
     display_options:
       sorts:
@@ -19,3 +20,5 @@ display:
         search_api_fulltext:
           expose:
             label: Pesquisar
+    display_title: Pesquisar
+label: Pesquisar

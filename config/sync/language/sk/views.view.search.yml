@@ -12,6 +12,7 @@ display:
           exposed_sorts_label: 'Roztriediť podľa'
           sort_asc_label: Vzostupne
           sort_desc_label: Zostupne
+      title: Vyhľadávanie
   page_1:
     display_options:
       sorts:
@@ -25,3 +26,4 @@ display:
         search_api_fulltext:
           expose:
             label: Vyhľadávanie
+label: Vyhľadávanie

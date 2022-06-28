@@ -17,3 +17,6 @@ display:
     display_title: Najnovije
     display_options:
       title: Najnovije
+  default:
+    display_options:
+      title: Teme

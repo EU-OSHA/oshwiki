@@ -1,0 +1,5 @@
+label: 'Widok alfabetyczny'
+display:
+  default:
+    display_options:
+      title: 'Widok alfabetyczny'

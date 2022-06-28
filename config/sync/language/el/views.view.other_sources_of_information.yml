@@ -13,3 +13,10 @@ display:
         search_api_relevance:
           expose:
             label: Συνάφεια
+        publication_date:
+          expose:
+            label: 'Ημερομηνία δημοσίευσης'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Αναζήτηση

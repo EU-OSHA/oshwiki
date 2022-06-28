@@ -10,6 +10,7 @@ display:
           submit_button: Ieškoti
           reset_button_label: 'Išvalyti pasirinkimus'
           exposed_sorts_label: 'Rūšiuoti pagal'
+      title: Ieškoti
   page_1:
     display_options:
       sorts:
@@ -23,3 +24,4 @@ display:
         search_api_fulltext:
           expose:
             label: Ieškoti
+label: Ieškoti

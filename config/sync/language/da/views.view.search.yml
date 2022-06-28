@@ -8,6 +8,7 @@ display:
           exposed_sorts_label: 'Sortér efter'
           sort_asc_label: ASC
           sort_desc_label: Faldende
+      title: Søg
   page_1:
     display_options:
       sorts:
@@ -21,3 +22,4 @@ display:
         search_api_fulltext:
           expose:
             label: Søg
+label: Søg

@@ -11,6 +11,7 @@ display:
         search_api_relevance:
           expose:
             label: Þýðing
+      title: Leita
   page_1:
     display_options:
       sorts:
@@ -24,3 +25,4 @@ display:
         search_api_fulltext:
           expose:
             label: Leita
+label: Leita

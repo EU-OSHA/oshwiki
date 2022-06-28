@@ -18,3 +18,6 @@ display:
     display_title: 'Πιο πρόσφατα'
     display_options:
       title: 'Πιο πρόσφατα'
+  default:
+    display_options:
+      title: Θέματα

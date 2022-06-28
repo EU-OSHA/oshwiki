@@ -16,3 +16,6 @@ display:
     display_title: 'Les plus récents'
     display_options:
       title: 'Les plus récents'
+  default:
+    display_options:
+      title: Thèmes

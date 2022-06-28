@@ -17,3 +17,6 @@ display:
     display_title: Nýjast
     display_options:
       title: Nýjast
+  default:
+    display_options:
+      title: Þemu

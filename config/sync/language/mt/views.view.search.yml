@@ -18,6 +18,7 @@ display:
         created:
           expose:
             label: 'Data tal-pubblikazzjoni'
+      title: Fittex
   page_1:
     display_options:
       sorts:
@@ -31,3 +32,4 @@ display:
         search_api_fulltext:
           expose:
             label: Fittex
+label: Fittex

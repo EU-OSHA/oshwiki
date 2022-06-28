@@ -8,6 +8,7 @@ display:
           exposed_sorts_label: Sordi
           sort_asc_label: 'Kasvavas järjestuses'
           sort_desc_label: 'Laskuvas järjestuses'
+      title: Otsing
   page_1:
     display_options:
       sorts:
@@ -21,3 +22,4 @@ display:
         search_api_fulltext:
           expose:
             label: Otsing
+label: Otsing

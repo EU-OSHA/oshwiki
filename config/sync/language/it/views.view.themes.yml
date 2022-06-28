@@ -17,3 +17,6 @@ display:
     display_title: 'Più recente'
     display_options:
       title: 'Più recente'
+  default:
+    display_options:
+      title: Temi

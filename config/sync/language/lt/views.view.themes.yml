@@ -16,3 +16,6 @@ display:
     display_title: Naujausi
     display_options:
       title: Naujausi
+  default:
+    display_options:
+      title: Temos

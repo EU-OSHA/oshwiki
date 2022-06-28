@@ -1,0 +1,5 @@
+label: 'Alfabetisk visning'
+display:
+  default:
+    display_options:
+      title: 'Alfabetisk visning'

@@ -13,6 +13,7 @@ display:
         created:
           expose:
             label: Publicatiedatum
+      title: Zoeken
   page_1:
     display_options:
       filters:
@@ -26,3 +27,4 @@ display:
         publication_date:
           expose:
             label: Publicatiedatum
+label: Zoeken

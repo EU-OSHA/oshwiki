@@ -12,6 +12,7 @@ display:
           sort_asc_label: Rosnąca
           sort_desc_label: Malejąca
           submit_button: Wyszukaj
+      title: Wyszukaj
   page_1:
     display_options:
       sorts:
@@ -25,3 +26,4 @@ display:
         search_api_fulltext:
           expose:
             label: Wyszukaj
+label: Wyszukaj

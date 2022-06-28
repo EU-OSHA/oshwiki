@@ -10,6 +10,7 @@ display:
           submit_button: Buscar
           reset_button_label: Restablecer
           exposed_sorts_label: 'Ordenar por'
+      title: Buscar
   page_1:
     display_options:
       sorts:
@@ -30,3 +31,4 @@ display:
           expose:
             label: Buscar
     display_title: Buscar
+label: Buscar

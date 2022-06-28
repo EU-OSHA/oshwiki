@@ -18,3 +18,6 @@ display:
     display_title: 'Cele mai recente'
     display_options:
       title: 'Cele mai recente'
+  default:
+    display_options:
+      title: Teme

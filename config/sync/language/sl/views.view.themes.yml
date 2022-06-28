@@ -16,3 +16,6 @@ display:
     display_title: Najnovejši
     display_options:
       title: Najnovejši
+  default:
+    display_options:
+      title: Teme

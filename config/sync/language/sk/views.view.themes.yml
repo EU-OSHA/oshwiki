@@ -18,3 +18,6 @@ display:
     display_title: Najnovšie
     display_options:
       title: Najnovšie
+  default:
+    display_options:
+      title: Témy

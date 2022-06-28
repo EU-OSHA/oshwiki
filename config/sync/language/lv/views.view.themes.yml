@@ -18,3 +18,6 @@ display:
     display_title: Jaunākie
     display_options:
       title: Jaunākie
+  default:
+    display_options:
+      title: Tēmas
