@@ -13,6 +13,3 @@ display:
         search_api_relevance:
           expose:
             label: Συνάφεια
-        field_published_date_science:
-          expose:
-            label: 'Ημερομηνία δημοσίευσης'

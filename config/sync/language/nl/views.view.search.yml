@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zoeken
+          reset_button_label: 'Opnieuw instellen'
+          exposed_sorts_label: 'Sorteren op'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevantie
+        created:
+          expose:
+            label: Publicatiedatum
+  page_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Zoeken
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevantie
+        publication_date:
+          expose:
+            label: Publicatiedatum

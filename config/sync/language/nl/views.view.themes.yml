@@ -1,0 +1,18 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'Opnieuw instellen'
+          exposed_sorts_label: 'Sorteren op'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevantie
+        created:
+          expose:
+            label: Publicatiedatum
+  page_2:
+    display_title: 'Meest recent'
+    display_options:
+      title: 'Meest recent'

@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ricerca
+          reset_button_label: Reimposta
+          exposed_sorts_label: 'Ordina per'
+          sort_desc_label: Disc
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Pertinenza
+        publication_date:
+          expose:
+            label: 'Data di pubblicazione'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Ricerca

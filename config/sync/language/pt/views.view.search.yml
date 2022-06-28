@@ -1,4 +1,11 @@
 display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
   page_1:
     display_options:
       sorts:
@@ -12,9 +19,3 @@ display:
         search_api_fulltext:
           expose:
             label: Pesquisar
-  default:
-    display_options:
-      exposed_form:
-        options:
-          submit_button: Pesquisar
-          exposed_sorts_label: 'Ordenar por'

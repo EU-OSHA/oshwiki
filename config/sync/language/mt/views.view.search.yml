@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_year_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+      exposed_form:
+        options:
+          submit_button: Fittex
+          reset_button_label: Irrisettja
+          sort_desc_label: Deskrizzjoni
+          exposed_sorts_label: 'Agħżel skont'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Rilevanza
+        created:
+          expose:
+            label: 'Data tal-pubblikazzjoni'
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Rilevanza
+        publication_date:
+          expose:
+            label: 'Data tal-pubblikazzjoni'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Fittex

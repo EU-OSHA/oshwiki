@@ -1,0 +1,30 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sök
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevans
+        created:
+          expose:
+            label: Publiceringsdag
+  page_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Sök
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevans
+        publication_date:
+          expose:
+            label: Publiceringsdag
