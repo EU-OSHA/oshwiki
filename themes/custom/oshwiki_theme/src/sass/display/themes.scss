@@ -129,6 +129,7 @@
       fieldset{
         display: flex;
         flex-direction: column;
+        width: 100%;
       }
       button{
         padding: 0rem 0.5rem;
@@ -149,7 +150,7 @@
         border-bottom: 1px dotted $bg-dark-medium-grey;
         .views-field-title{
           a{
-            @include textFormat(1.1rem, 700, $text-dark-green);
+            @include textFormat(1rem, 700, $text-dark-green);
           }
         }
         .views-field-url{
@@ -189,6 +190,8 @@
       .form-row{
         margin-top: 0.7rem;
         select{
+          width: 100%;
+          max-width: 17rem;
           padding: 0.3rem 0.3rem 0.3rem 0.75rem;
           border-radius: 0.25rem;
           height: 2.5rem;
@@ -204,16 +207,9 @@
             color: $bg-white;
             repeat: no-repeat;
             size: 15px;
+            position: 93% 50%;
           }
           /*End comment - remove default dropdown icon*/
-        }
-        select[name="sort_by"]{
-          background-position: 88% 50%;
-        }
-
-        select[name="sort_order"]{
-          width: 8rem;
-          background-position: 84% 50%;
         }
 
         button{
@@ -224,12 +220,16 @@
     }
 
     /*Show first result bigger*/
-    .attachment-before{
-      border-top: 1px dotted $text-dark-dark-grey;
-      .views-field-title{
-        span{
-          a{
-            @include textFormat(1.3rem, 700, $text-dark-green);
+    .view-content{
+      .attachment-before{
+        border-top: 1px dotted $text-dark-dark-grey;
+        .views-field-title{
+          span{
+            a{
+              font-size: 1.2rem !important;
+              font-weight: 700;
+              color: $text-dark-green;
+            }
           }
         }
       }
@@ -255,7 +255,7 @@
       .facets-widget-links{
         .item-list__links{
           span.facet-item__value{
-            max-width: 15rem;
+            max-width: 17rem;
           }
         }
       }
@@ -284,6 +284,21 @@
         .item-list__links{
           span.facet-item__value{
             max-width: 35rem;
+          }
+        }
+      }
+    }
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          flex-direction: row;
+          gap: 0.5rem;
+          fieldset{
+            width: auto;
+            select{
+              max-width: none;
+              width: 17rem;
+            }
           }
         }
       }

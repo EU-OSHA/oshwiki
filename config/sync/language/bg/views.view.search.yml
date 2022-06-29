@@ -15,6 +15,7 @@ display:
         created:
           expose:
             label: 'Дата на публикуване'
+      title: Търсене
   page_1:
     display_title: Търсене
     display_options:
@@ -29,3 +30,7 @@ display:
         publication_date:
           expose:
             label: 'Дата на публикуване'
+        title:
+          expose:
+            label: 'По азбучен ред'
+label: Търсене

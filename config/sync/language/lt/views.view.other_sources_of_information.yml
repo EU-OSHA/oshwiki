@@ -30,6 +30,9 @@ display:
         publication_date:
           expose:
             label: 'Išleidimo data'
+        title:
+          expose:
+            label: 'Abėcėlės tvarka'
       filters:
         search_api_fulltext:
           expose:

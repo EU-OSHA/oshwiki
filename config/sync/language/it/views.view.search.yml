@@ -7,6 +7,7 @@ display:
           reset_button_label: Reimposta
           exposed_sorts_label: 'Ordina per'
           sort_desc_label: Disc
+      title: Ricerca
   page_1:
     display_options:
       sorts:
@@ -16,7 +17,11 @@ display:
         publication_date:
           expose:
             label: 'Data di pubblicazione'
+        title:
+          expose:
+            label: 'In ordine alfabetico'
       filters:
         search_api_fulltext:
           expose:
             label: Ricerca
+label: Ricerca

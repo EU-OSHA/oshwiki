@@ -8,6 +8,7 @@ display:
           exposed_sorts_label: Lajiteltu
           sort_asc_label: Varmistettu
           sort_desc_label: Kuvaus
+      title: Hae
   page_1:
     display_options:
       sorts:
@@ -17,7 +18,11 @@ display:
         publication_date:
           expose:
             label: Julkaisupäivä
+        title:
+          expose:
+            label: Aakkosjärjestyksessä
       filters:
         search_api_fulltext:
           expose:
             label: Hae
+label: Hae

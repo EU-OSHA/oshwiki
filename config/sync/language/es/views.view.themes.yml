@@ -1,12 +1,10 @@
 display:
   default:
     display_options:
-      sorts:
-        search_api_relevance:
-          expose: {  }
       exposed_form:
         options:
           exposed_sorts_label: 'Ordenar por'
+      title: Temas
   page_1:
     display_options:
       sorts:
@@ -16,6 +14,9 @@ display:
         created:
           expose:
             label: 'Fecha de publicación'
+        title:
+          expose:
+            label: 'Por orden alfabético'
       exposed_form:
         options:
           exposed_sorts_label: 'Ordenar por'

@@ -13,6 +13,9 @@ display:
         created:
           expose:
             label: 'Data tal-pubblikazzjoni'
+        title:
+          expose:
+            label: Alfabetikament
   page_2:
     display_title: 'L-aktar reċenti'
     display_options:
@@ -24,3 +27,4 @@ display:
           reset_button_label: Irrisettja
           exposed_sorts_label: 'Agħżel skont'
           sort_desc_label: Deskrizzjoni
+      title: Temi

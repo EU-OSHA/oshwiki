@@ -8,6 +8,7 @@ display:
           exposed_sorts_label: 'Sortieren nach'
           sort_asc_label: Aufsteigend
           sort_desc_label: Absteigend
+      title: Suchen
   page_1:
     display_options:
       sorts:
@@ -17,7 +18,11 @@ display:
         publication_date:
           expose:
             label: 'Datum der Veröffentlichung'
+        title:
+          expose:
+            label: Alphabetisch
       filters:
         search_api_fulltext:
           expose:
             label: Suchen
+label: Suchen

@@ -6,6 +6,7 @@ display:
           submit_button: Rechercher
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
+      title: Rechercher
   page_1:
     display_options:
       sorts:
@@ -15,7 +16,11 @@ display:
         publication_date:
           expose:
             label: 'Date de publication'
+        title:
+          expose:
+            label: 'Par ordre alphabétique'
       filters:
         search_api_fulltext:
           expose:
             label: Rechercher
+label: Rechercher

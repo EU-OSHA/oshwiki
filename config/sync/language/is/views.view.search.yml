@@ -11,6 +11,7 @@ display:
         search_api_relevance:
           expose:
             label: Þýðing
+      title: Leita
   page_1:
     display_options:
       sorts:
@@ -20,7 +21,11 @@ display:
         publication_date:
           expose:
             label: Útgáfudagsetning
+        title:
+          expose:
+            label: 'Í stafrófsröð'
       filters:
         search_api_fulltext:
           expose:
             label: Leita
+label: Leita

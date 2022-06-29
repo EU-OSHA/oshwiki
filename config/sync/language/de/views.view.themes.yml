@@ -14,7 +14,13 @@ display:
         created:
           expose:
             label: 'Datum der Veröffentlichung'
+        title:
+          expose:
+            label: Alphabetisch
   page_2:
     display_title: 'Aktuellste Artikel'
     display_options:
       title: 'Aktuellste Artikel'
+  default:
+    display_options:
+      title: Themen

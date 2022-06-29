@@ -13,6 +13,9 @@ display:
         search_api_relevance:
           expose:
             label: Asjakohasus
+        title:
+          expose:
+            label: 'Tähestiku järjekorras'
       filters:
         search_api_fulltext:
           expose:

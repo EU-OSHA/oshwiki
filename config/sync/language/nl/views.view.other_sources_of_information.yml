@@ -14,6 +14,9 @@ display:
         publication_date:
           expose:
             label: Publicatiedatum
+        title:
+          expose:
+            label: Alfabetisch
       filters:
         search_api_fulltext:
           expose:

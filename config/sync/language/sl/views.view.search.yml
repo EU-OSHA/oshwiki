@@ -10,6 +10,7 @@ display:
           submit_button: Išči
           reset_button_label: Ponastavi
           exposed_sorts_label: 'Razvrsti po'
+      title: Išči
   page_1:
     display_options:
       sorts:
@@ -19,7 +20,11 @@ display:
         publication_date:
           expose:
             label: 'Datum objave'
+        title:
+          expose:
+            label: 'Abecedni vrstni red'
       filters:
         search_api_fulltext:
           expose:
             label: Išči
+label: Išči

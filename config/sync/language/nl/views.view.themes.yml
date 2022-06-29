@@ -12,7 +12,13 @@ display:
         created:
           expose:
             label: Publicatiedatum
+        title:
+          expose:
+            label: Alfabetisch
   page_2:
     display_title: 'Meest recent'
     display_options:
       title: 'Meest recent'
+  default:
+    display_options:
+      title: Thema’s

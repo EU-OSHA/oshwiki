@@ -14,7 +14,13 @@ display:
         created:
           expose:
             label: 'Data publikacji'
+        title:
+          expose:
+            label: 'W porządku alfabetycznym'
   page_2:
     display_title: Najnowsze
     display_options:
       title: Najnowsze
+  default:
+    display_options:
+      title: Tematy

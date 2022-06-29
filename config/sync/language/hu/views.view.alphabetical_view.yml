@@ -1,0 +1,5 @@
+label: 'Alfabetikus nézet'
+display:
+  default:
+    display_options:
+      title: 'Alfabetikus nézet'
