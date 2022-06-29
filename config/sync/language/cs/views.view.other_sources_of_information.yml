@@ -29,3 +29,7 @@ display:
         search_api_fulltext:
           expose:
             label: Vyhledávání
+      sorts:
+        title:
+          expose:
+            label: 'Podle abecedy'

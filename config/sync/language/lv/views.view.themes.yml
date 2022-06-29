@@ -14,7 +14,13 @@ display:
         created:
           expose:
             label: 'Publicēšanas datums'
+        title:
+          expose:
+            label: 'Alfabēta secībā'
   page_2:
     display_title: Jaunākie
     display_options:
       title: Jaunākie
+  default:
+    display_options:
+      title: Tēmas

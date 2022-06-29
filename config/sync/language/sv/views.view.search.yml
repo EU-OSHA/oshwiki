@@ -15,6 +15,7 @@ display:
         created:
           expose:
             label: Publiceringsdag
+      title: Sök
   page_1:
     display_options:
       filters:
@@ -28,3 +29,7 @@ display:
         publication_date:
           expose:
             label: Publiceringsdag
+        title:
+          expose:
+            label: 'Alfabetisk ordning'
+label: Sök

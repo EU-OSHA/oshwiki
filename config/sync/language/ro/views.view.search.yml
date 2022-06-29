@@ -12,6 +12,7 @@ display:
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
           sort_desc_label: Descendent
+      title: Căutare
   page_1:
     display_options:
       sorts:
@@ -21,7 +22,11 @@ display:
         publication_date:
           expose:
             label: 'Data publicării'
+        title:
+          expose:
+            label: 'În ordine alfabetică'
       filters:
         search_api_fulltext:
           expose:
             label: Căutare
+label: Căutare

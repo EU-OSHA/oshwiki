@@ -12,13 +12,18 @@ display:
           exposed_sorts_label: 'Seřadit podle'
           sort_asc_label: Vzest.
           sort_desc_label: Sest.
+      title: Vyhledávání
   page_1:
     display_options:
       sorts:
         publication_date:
           expose:
             label: 'Datum zveřejnění'
+        title:
+          expose:
+            label: 'Podle abecedy'
       filters:
         search_api_fulltext:
           expose:
             label: Vyhledávání
+label: Vyhledávání

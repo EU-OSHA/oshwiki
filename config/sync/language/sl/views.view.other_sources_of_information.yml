@@ -30,6 +30,9 @@ display:
         publication_date:
           expose:
             label: 'Datum objave'
+        title:
+          expose:
+            label: 'Abecedni vrstni red'
       filters:
         search_api_fulltext:
           expose:

@@ -14,7 +14,13 @@ display:
         created:
           expose:
             label: 'Dato for offentliggørelse'
+        title:
+          expose:
+            label: Alfabetisk
   page_2:
     display_title: Seneste
     display_options:
       title: Seneste
+  default:
+    display_options:
+      title: Temaer

@@ -14,7 +14,13 @@ display:
         created:
           expose:
             label: Publiseringsdato
+        title:
+          expose:
+            label: Alfabetisk
   page_2:
     display_title: Nyeste
     display_options:
       title: Nyeste
+  default:
+    display_options:
+      title: Emner

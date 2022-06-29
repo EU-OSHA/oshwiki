@@ -14,7 +14,13 @@ display:
         created:
           expose:
             label: 'Dátum uverejnenia'
+        title:
+          expose:
+            label: Abecedne
   page_2:
     display_title: Najnovšie
     display_options:
       title: Najnovšie
+  default:
+    display_options:
+      title: Témy

@@ -13,7 +13,13 @@ display:
         created:
           expose:
             label: 'Data di pubblicazione'
+        title:
+          expose:
+            label: 'In ordine alfabetico'
   page_2:
     display_title: 'Più recente'
     display_options:
       title: 'Più recente'
+  default:
+    display_options:
+      title: Temi

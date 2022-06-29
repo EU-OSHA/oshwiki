@@ -31,6 +31,9 @@ display:
         publication_date:
           expose:
             label: 'Data tal-pubblikazzjoni'
+        title:
+          expose:
+            label: Alfabetikament
       filters:
         search_api_fulltext:
           expose:

@@ -14,7 +14,13 @@ display:
         created:
           expose:
             label: 'A közzététel dátuma'
+        title:
+          expose:
+            label: Ábécésorrendben
   page_2:
     display_title: 'Legújabb cikkek'
     display_options:
       title: 'Legújabb cikkek'
+  default:
+    display_options:
+      title: Témák

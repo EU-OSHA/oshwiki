@@ -19,6 +19,7 @@ display:
         created:
           expose:
             label: 'Publicēšanas datums'
+      title: Meklēšana
   page_1:
     display_options:
       filters:
@@ -32,3 +33,7 @@ display:
         publication_date:
           expose:
             label: 'Publicēšanas datums'
+        title:
+          expose:
+            label: 'Alfabēta secībā'
+label: Meklēšana

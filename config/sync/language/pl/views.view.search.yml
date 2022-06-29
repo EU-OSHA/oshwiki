@@ -12,6 +12,7 @@ display:
           sort_asc_label: Rosnąca
           sort_desc_label: Malejąca
           submit_button: Wyszukaj
+      title: Wyszukaj
   page_1:
     display_options:
       sorts:
@@ -21,7 +22,11 @@ display:
         publication_date:
           expose:
             label: 'Data publikacji'
+        title:
+          expose:
+            label: 'W porządku alfabetycznym'
       filters:
         search_api_fulltext:
           expose:
             label: Wyszukaj
+label: Wyszukaj

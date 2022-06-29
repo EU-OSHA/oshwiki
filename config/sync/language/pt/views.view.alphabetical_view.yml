@@ -1,0 +1,5 @@
+label: 'Vista Alfabética'
+display:
+  default:
+    display_options:
+      title: 'Vista Alfabética'

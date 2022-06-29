@@ -11,7 +11,13 @@ display:
         created:
           expose:
             label: 'Datum zveřejnění'
+        title:
+          expose:
+            label: 'Podle abecedy'
   page_2:
     display_title: Nejnovější
     display_options:
       title: Nejnovější
+  default:
+    display_options:
+      title: Témata
