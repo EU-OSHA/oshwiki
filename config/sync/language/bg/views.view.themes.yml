@@ -14,6 +14,9 @@ display:
         created:
           expose:
             label: 'Дата на публикуване'
+        title:
+          expose:
+            label: 'По азбучен ред'
   page_2:
     display_title: Последни
     display_options:

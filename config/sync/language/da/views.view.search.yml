@@ -18,6 +18,9 @@ display:
         publication_date:
           expose:
             label: 'Dato for offentliggørelse'
+        title:
+          expose:
+            label: Alfabetisk
       filters:
         search_api_fulltext:
           expose:

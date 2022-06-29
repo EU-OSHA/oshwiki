@@ -14,6 +14,9 @@ display:
         created:
           expose:
             label: Publiceringsdag
+        title:
+          expose:
+            label: 'Alfabetisk ordning'
   page_2:
     display_title: Senaste
     display_options:

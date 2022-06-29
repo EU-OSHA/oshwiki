@@ -17,6 +17,9 @@ display:
         publication_date:
           expose:
             label: 'Data di pubblicazione'
+        title:
+          expose:
+            label: 'In ordine alfabetico'
       filters:
         search_api_fulltext:
           expose:

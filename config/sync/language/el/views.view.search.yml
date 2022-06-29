@@ -15,6 +15,9 @@ display:
         created:
           expose:
             label: 'Ημερομηνία δημοσίευσης'
+        title:
+          expose:
+            label: Αλφαβητικά
       title: Αναζήτηση
   page_1:
     display_options:

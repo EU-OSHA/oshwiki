@@ -12,6 +12,9 @@ display:
         created:
           expose:
             label: 'Data da Publicação'
+        title:
+          expose:
+            label: 'Por ordem alfabética'
   page_2:
     display_title: 'Mais recente'
     display_options:

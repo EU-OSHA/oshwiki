@@ -18,6 +18,9 @@ display:
         publication_date:
           expose:
             label: Julkaisupäivä
+        title:
+          expose:
+            label: Aakkosjärjestyksessä
       filters:
         search_api_fulltext:
           expose:

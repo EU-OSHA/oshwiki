@@ -29,4 +29,7 @@ display:
         publication_date:
           expose:
             label: Publiceringsdag
+        title:
+          expose:
+            label: 'Alfabetisk ordning'
 label: Sök

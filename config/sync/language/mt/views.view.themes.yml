@@ -13,6 +13,9 @@ display:
         created:
           expose:
             label: 'Data tal-pubblikazzjoni'
+        title:
+          expose:
+            label: Alfabetikament
   page_2:
     display_title: 'L-aktar reċenti'
     display_options:

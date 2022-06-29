@@ -21,6 +21,9 @@ display:
         publication_date:
           expose:
             label: Útgáfudagsetning
+        title:
+          expose:
+            label: 'Í stafrófsröð'
       filters:
         search_api_fulltext:
           expose:

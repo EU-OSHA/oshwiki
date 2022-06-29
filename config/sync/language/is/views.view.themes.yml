@@ -13,6 +13,9 @@ display:
         created:
           expose:
             label: Útgáfudagsetning
+        title:
+          expose:
+            label: 'Í stafrófsröð'
   page_2:
     display_title: Nýjast
     display_options:

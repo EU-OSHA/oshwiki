@@ -150,7 +150,7 @@
         border-bottom: 1px dotted $bg-dark-medium-grey;
         .views-field-title{
           a{
-            @include textFormat(1.1rem, 700, $text-dark-green);
+            @include textFormat(1rem, 700, $text-dark-green);
           }
         }
         .views-field-url{
@@ -220,12 +220,16 @@
     }
 
     /*Show first result bigger*/
-    .attachment-before{
-      border-top: 1px dotted $text-dark-dark-grey;
-      .views-field-title{
-        span{
-          a{
-            @include textFormat(1.3rem, 700, $text-dark-green);
+    .view-content{
+      .attachment-before{
+        border-top: 1px dotted $text-dark-dark-grey;
+        .views-field-title{
+          span{
+            a{
+              font-size: 1.2rem !important;
+              font-weight: 700;
+              color: $text-dark-green;
+            }
           }
         }
       }

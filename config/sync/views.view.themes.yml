@@ -1705,7 +1705,7 @@ display:
           plugin_id: search_api
           order: ASC
           expose:
-            label: Alphabetical
+            label: Alphabetically
             field_identifier: title
           exposed: true
       arguments: {  }

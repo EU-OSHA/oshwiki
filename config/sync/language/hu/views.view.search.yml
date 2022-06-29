@@ -18,6 +18,9 @@ display:
         publication_date:
           expose:
             label: 'A közzététel dátuma'
+        title:
+          expose:
+            label: Ábécésorrendben
       filters:
         search_api_fulltext:
           expose:

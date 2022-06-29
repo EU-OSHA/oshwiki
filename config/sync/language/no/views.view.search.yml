@@ -18,6 +18,9 @@ display:
         publication_date:
           expose:
             label: Publiseringsdato
+        title:
+          expose:
+            label: Alfabetisk
       filters:
         search_api_fulltext:
           expose:

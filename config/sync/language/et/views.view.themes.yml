@@ -34,3 +34,6 @@ display:
         created:
           expose:
             label: Avaldamiskuupäev
+        title:
+          expose:
+            label: 'Tähestiku järjekorras'

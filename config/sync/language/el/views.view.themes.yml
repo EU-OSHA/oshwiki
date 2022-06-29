@@ -14,6 +14,9 @@ display:
         created:
           expose:
             label: 'Ημερομηνία δημοσίευσης'
+        title:
+          expose:
+            label: Αλφαβητικά
   page_2:
     display_title: 'Πιο πρόσφατα'
     display_options:

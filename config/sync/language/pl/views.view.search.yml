@@ -22,6 +22,9 @@ display:
         publication_date:
           expose:
             label: 'Data publikacji'
+        title:
+          expose:
+            label: 'W porządku alfabetycznym'
       filters:
         search_api_fulltext:
           expose:

@@ -22,6 +22,9 @@ display:
         publication_date:
           expose:
             label: 'Data publicării'
+        title:
+          expose:
+            label: 'În ordine alfabetică'
       filters:
         search_api_fulltext:
           expose:

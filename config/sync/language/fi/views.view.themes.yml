@@ -14,6 +14,9 @@ display:
         created:
           expose:
             label: Julkaisupäivä
+        title:
+          expose:
+            label: Aakkosjärjestyksessä
   page_2:
     display_title: 'Uusinta sisältöä'
     display_options:

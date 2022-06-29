@@ -296,6 +296,14 @@ body.scrolldown.user-logged-in{
     padding-top: 180px !important;
   }
   /* End comment - sticky menu */
+
+  .bg-image-banner{
+    .block-page-title-block{
+      h1{
+        @include textFormat(2.3rem, null, $text-white);
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 600px){
@@ -330,14 +338,6 @@ body.scrolldown.user-logged-in{
         &>div{
           padding: 0rem 0.7rem;
         }
-      }
-    }
-  }
-
-  .bg-image-banner{
-    .block-page-title-block{
-      h1{
-        @include textFormat(2.3rem, null, $text-white);
       }
     }
   }

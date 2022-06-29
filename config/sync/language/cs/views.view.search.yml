@@ -19,6 +19,9 @@ display:
         publication_date:
           expose:
             label: 'Datum zveřejnění'
+        title:
+          expose:
+            label: 'Podle abecedy'
       filters:
         search_api_fulltext:
           expose:

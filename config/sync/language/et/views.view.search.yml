@@ -18,6 +18,9 @@ display:
         publication_date:
           expose:
             label: Avaldamiskuupäev
+        title:
+          expose:
+            label: 'Tähestiku järjekorras'
       filters:
         search_api_fulltext:
           expose:

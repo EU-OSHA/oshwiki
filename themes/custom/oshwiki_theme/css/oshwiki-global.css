@@ -2185,7 +2185,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   border-bottom: 1px dotted #616161;
 }
 .path-themes #block-oshwiki-theme-content .view-content .views-row .views-field-title a, .path-themes #block-views-block-themes-block-1 .view-content .views-row .views-field-title a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #449FA2;
 }
@@ -2247,11 +2247,11 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   padding: 0.3rem 0.8rem;
   height: 2.5rem;
 }
-.path-themes #block-oshwiki-theme-content .attachment-before {
+.path-themes #block-oshwiki-theme-content .view-content .attachment-before {
   border-top: 1px dotted #58585A;
 }
-.path-themes #block-oshwiki-theme-content .attachment-before .views-field-title span a {
-  font-size: 1.3rem;
+.path-themes #block-oshwiki-theme-content .view-content .attachment-before .views-field-title span a {
+  font-size: 1.2rem !important;
   font-weight: 700;
   color: #449FA2;
 }
@@ -2572,6 +2572,10 @@ body.scrolldown.user-logged-in {
   }
 
   /* End comment - sticky menu */
+  .bg-image-banner .block-page-title-block h1 {
+    font-size: 2.3rem;
+    color: #FFFFFF;
+  }
 }
 @media only screen and (min-width: 600px) {
   /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
@@ -2600,11 +2604,6 @@ body.scrolldown.user-logged-in {
 @media only screen and (min-width: 576px) and (max-width: 992px) {
   .top-header-container section .logo-wrapper > div {
     padding: 0rem 0.7rem;
-  }
-
-  .bg-image-banner .block-page-title-block h1 {
-    font-size: 2.3rem;
-    color: #FFFFFF;
   }
 }
 @media only screen and (min-width: 992px) {

@@ -12,6 +12,9 @@ display:
         created:
           expose:
             label: 'Datum objave'
+        title:
+          expose:
+            label: 'Abecedni vrstni red'
   page_2:
     display_title: Najnovejši
     display_options:

@@ -33,4 +33,7 @@ display:
         publication_date:
           expose:
             label: 'Publicēšanas datums'
+        title:
+          expose:
+            label: 'Alfabēta secībā'
 label: Meklēšana

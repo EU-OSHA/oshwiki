@@ -16,6 +16,9 @@ display:
         publication_date:
           expose:
             label: 'Ημερομηνία δημοσίευσης'
+        title:
+          expose:
+            label: Αλφαβητικά
       filters:
         search_api_fulltext:
           expose:
