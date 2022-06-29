@@ -129,6 +129,7 @@
       fieldset{
         display: flex;
         flex-direction: column;
+        width: 100%;
       }
       button{
         padding: 0rem 0.5rem;
@@ -189,6 +190,8 @@
       .form-row{
         margin-top: 0.7rem;
         select{
+          width: 100%;
+          max-width: 17rem;
           padding: 0.3rem 0.3rem 0.3rem 0.75rem;
           border-radius: 0.25rem;
           height: 2.5rem;
@@ -204,16 +207,9 @@
             color: $bg-white;
             repeat: no-repeat;
             size: 15px;
+            position: 93% 50%;
           }
           /*End comment - remove default dropdown icon*/
-        }
-        select[name="sort_by"]{
-          background-position: 88% 50%;
-        }
-
-        select[name="sort_order"]{
-          width: 8rem;
-          background-position: 84% 50%;
         }
 
         button{
@@ -255,7 +251,7 @@
       .facets-widget-links{
         .item-list__links{
           span.facet-item__value{
-            max-width: 15rem;
+            max-width: 17rem;
           }
         }
       }
@@ -284,6 +280,21 @@
         .item-list__links{
           span.facet-item__value{
             max-width: 35rem;
+          }
+        }
+      }
+    }
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          flex-direction: row;
+          gap: 0.5rem;
+          fieldset{
+            width: auto;
+            select{
+              max-width: none;
+              width: 17rem;
+            }
           }
         }
       }

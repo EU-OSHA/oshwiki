@@ -10,7 +10,7 @@
 
 body.user-logged-in{
   #header {
-    top: 79px !important;
+    top: 39px !important;
   }
 }
 
@@ -56,18 +56,18 @@ body.scrolldown{
 
 /*Change this 4 values - the difference between logged user and anonymous user*/
 body{
-  padding-top: 175px!important;
+  padding-top: 127px ;
 }
 body.user-logged-in{
-  padding-top: 260px !important;
+  padding-top: 166px !important;
 }
 
 body.scrolldown{
-  padding-top: 175px !important;
+  padding-top: 155px;
 }
 
 body.scrolldown.user-logged-in{
-  padding-top: 130px !important;
+  padding-top: 211px ;
 }
 /* End comment - sticky menu */
 
@@ -237,7 +237,7 @@ body.scrolldown.user-logged-in{
   .block-page-title-block{
     width: 100%;
     h1{
-      @include textFormat(2.8rem, null, $text-white);
+      @include textFormat(2rem, null, $text-white);
     }
   }
 }
@@ -257,30 +257,6 @@ body.scrolldown.user-logged-in{
         bottom: 0px;
       }
     }
-  }
-  /*sticky menu*/
-  body.user-logged-in{
-    #header {
-      top: 39px !important;
-    }
-  }
-  body.scrollup.user-logged-in{
-    &.scrolled{
-      #header{
-        top: 39px !important;
-      }
-    }
-  }
-  body.scrolldown.user-logged-in{
-    #header{
-      top: -23rem !important;
-    }
-  }
-  body.user-logged-in{
-    padding-top: 260px !important;
-  }
-  body.scrolldown.user-logged-in{
-    padding-top: 130px !important;
   }
 }
 
@@ -308,6 +284,43 @@ body.scrolldown.user-logged-in{
       }
     }
   }
+}
+
+@media only screen and (min-width: 500px){
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body{
+    padding-top: 142px;
+  }
+
+  body.user-logged-in{
+    padding-top: 180px !important;
+  }
+  /* End comment - sticky menu */
+}
+
+@media only screen and (min-width: 600px){
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body{
+    padding-top: 165px ;
+  }
+
+  body.user-logged-in{
+    padding-top: 205px !important;
+  }
+
+  /* End comment - sticky menu */
+}
+
+@media only screen and (min-width: 700px){
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body{
+    padding-top: 180px;
+  }
+
+  body.user-logged-in{
+    padding-top: 220px !important;
+  }
+  /* End comment - sticky menu */
 }
 
 @media only screen and (min-width: 576px) and  (max-width: 992px) {

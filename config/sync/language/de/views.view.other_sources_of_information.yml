@@ -13,6 +13,9 @@ display:
         search_api_relevance:
           expose:
             label: Relevanz
+        publication_date:
+          expose:
+            label: 'Datum der Veröffentlichung'
       filters:
         search_api_fulltext:
           expose:

@@ -25,10 +25,10 @@
     & > #block-oshwiki-theme-footer{
       padding: 0px;
       width: 100%;
+      margin: 0.3rem 0rem 1rem;
       & > .navbar-nav{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
         ul, li{
           list-style: none;
         }
