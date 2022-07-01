@@ -165,4 +165,15 @@ Show 5th menu option for logged in user*/
 /*End comment - hide 6th menu option for anonymus user. Show 5th
 menu option for logged in user*/
 
-
+@media only screen and (min-width: 1600px){
+  .site-footer{
+    section{
+      & > #block-oshwiki-theme-footer{
+        & > .navbar-nav{
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

@@ -145,8 +145,7 @@
               content: " ";
               min-width: 18px;
               min-height: 12px;
-              margin-right: 0.5rem;
-              margin-left: 0.5rem;
+              margin-left: -0.1rem;
               margin-bottom: 0.1rem;
               background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
               transform: rotate(270deg);
@@ -185,12 +184,12 @@
             padding: 0rem;
             a{
               padding: 0rem;
-              img{
-                object-fit: cover;
-                border-radius: 15px 15px 0px 0px;
-                width: 100%;
-                height: 180px;
-              }
+            }
+            img{
+              object-fit: cover;
+              border-radius: 15px 15px 0px 0px;
+              width: 100%;
+              height: 180px;
             }
           }
           .taxonomy-level-wrapper{
@@ -327,4 +326,24 @@
   }
 }
 
-
+@media only screen and (min-width: 1600px){
+  .page-view-frontpage{
+    .section_featured_articles{
+      & > .container{
+        .view-content > .views-view-grid > .row{
+          .card-content-wrapper{
+            grid-template-rows: 210px 0.2fr auto 35px;
+            .featured-art-image{
+              a{
+                padding: 0rem;
+              }
+              img{
+                  height: 210px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

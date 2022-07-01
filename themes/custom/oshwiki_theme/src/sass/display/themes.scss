@@ -351,3 +351,31 @@
     }
   }
 }
+
+@media only screen and (min-width: 1300px) {
+  .path-themes{
+    .container{
+      #main{
+        /*Responsive layout with grid-area*/
+        .section{
+          grid-template-columns: 1.1fr 1fr 1fr 1fr;
+        }
+        /*End comment*/
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .path-themes{
+    .container{
+      #main{
+        /*Responsive layout with grid-area*/
+        .section{
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        /*End comment*/
+      }
+    }
+  }
+}

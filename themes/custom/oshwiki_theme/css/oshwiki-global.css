@@ -456,6 +456,24 @@ a:hover {
     grid-template-areas: "alphabet alphabet alphabet alphabet" "select-theme alphabetical-content alphabetical-content alphabetical-content";
   }
 }
+@media only screen and (min-width: 1300px) {
+  .page-view-alphabetical-view .container #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .page-view-alphabetical-view .container #main .section {
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .page-view-alphabetical-view .container #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .page-view-alphabetical-view .container #main .section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .node--type-page .static-page-container .field--name-body {
   padding: 0px 15px;
 }
@@ -488,6 +506,9 @@ a:hover {
   color: #449FA2;
 }
 
+.node--type-oshwiki-articles .bg-image-banner {
+  margin-bottom: 2rem;
+}
 .node--type-oshwiki-articles .items-left > p {
   margin-bottom: 0rem;
 }
@@ -1031,8 +1052,7 @@ a:hover {
   content: " ";
   min-width: 18px;
   min-height: 12px;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: -0.1rem;
   margin-bottom: 0.1rem;
   background: url("../images/icon-green-arrow-dropdown.svg") no-repeat;
   transform: rotate(270deg);
@@ -1070,7 +1090,7 @@ a:hover {
 .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .featured-art-image a {
   padding: 0rem;
 }
-.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .featured-art-image a img {
+.page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .featured-art-image img {
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   width: 100%;
@@ -1267,6 +1287,17 @@ a:hover {
   }
   .page-view-frontpage .select-theme .select-theme-article-home-content-box .facets-widget-links .item-list__links {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper {
+    grid-template-rows: 210px 0.2fr auto 35px;
+  }
+  .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .featured-art-image a {
+    padding: 0rem;
+  }
+  .page-view-frontpage .section_featured_articles > .container .view-content > .views-view-grid > .row .card-content-wrapper .featured-art-image img {
+    height: 210px;
   }
 }
 body.path-most-recent .container div#main section {
@@ -1993,6 +2024,24 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
     background-position: 93% 50%;
   }
 }
+@media only screen and (min-width: 1300px) {
+  .page-view-search #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .page-view-search #main .section {
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .page-view-search #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .page-view-search #main .section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content, .page-vocabulary-nace #block-oshwiki-theme-content .view-content {
   display: flex;
   flex-direction: column;
@@ -2311,6 +2360,24 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
     grid-template-areas: "select-theme theme-content theme-content theme-content" "select-theme other-articles-in-English other-articles-in-English other-articles-in-English";
   }
 }
+@media only screen and (min-width: 1300px) {
+  .path-themes .container #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .path-themes .container #main .section {
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .path-themes .container #main {
+    /*Responsive layout with grid-area*/
+    /*End comment*/
+  }
+  .path-themes .container #main .section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 /* Sticky menu */
 #header {
   position: fixed;
@@ -2523,7 +2590,7 @@ body.scrolldown.user-logged-in {
   background-position: center;
   background-size: cover;
   text-align: center;
-  margin: 0rem 0rem 2rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
   padding: 1rem 0rem;
 }
 .bg-image-banner .block-page-title-block {
@@ -2939,6 +3006,12 @@ Show 5th menu option for logged in user*/
 
 /*End comment - hide 6th menu option for anonymus user. Show 5th
 menu option for logged in user*/
+@media only screen and (min-width: 1600px) {
+  .site-footer section > #block-oshwiki-theme-footer > .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 /* Home page */
 .content-main-menu {
   border-color: #E0E0E0;
@@ -2982,7 +3055,7 @@ menu option for logged in user*/
 }
 .content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li.menu-item--expanded:hover .dropdown-menu {
   display: block;
-  top: 51px;
+  top: 50px;
   left: -40%;
   box-shadow: 0px 1px 10px -5px #58585A;
   border-radius: 0px;
@@ -3011,7 +3084,7 @@ menu option for logged in user*/
   display: block;
   position: absolute;
   content: "";
-  top: 53px;
+  top: 52px;
   right: 0%;
   height: 6px;
   width: 100%;
@@ -3175,6 +3248,94 @@ button.navbar-toggler-right .icon-bar {
 @media only screen and (max-width: 992px) {
   .content-main-menu > .container #navbar-main .nav-item:last-of-type {
     margin-bottom: 0.5rem;
+  }
+}
+/*Containers for min-with 1600px*/
+@media only screen and (min-width: 1600px) {
+  .container-custom-menu {
+    min-width: 1300px;
+  }
+
+  .oshwiki-articles {
+    min-width: 1300px;
+  }
+  .oshwiki-articles .section div.container {
+    min-width: 1300px;
+  }
+  .oshwiki-articles .section div.container .row.wrapper-content .col-lg-6 {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .oshwiki-articles .section div.container .row.wrapper-content .col-lg-3 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .container.page-content-container {
+    min-width: 1300px;
+  }
+  .container.page-content-container .section div.container {
+    min-width: 1300px;
+  }
+  .container.page-content-container .col-lg-9 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .container.page-content-container .col-lg-3 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  #main-wrapper .container {
+    min-width: 1300px;
+  }
+
+  footer > .container {
+    min-width: 1300px;
+  }
+}
+/*Containers for min-with 1900px*/
+@media only screen and (min-width: 1900px) {
+  .container-custom-menu {
+    min-width: 1600px;
+  }
+
+  .oshwiki-articles {
+    min-width: 1600px;
+  }
+  .oshwiki-articles .section div.container {
+    min-width: 1600px;
+  }
+  .oshwiki-articles .section div.container .row.wrapper-content .col-lg-6 {
+    flex: 0 0 64%;
+    max-width: 64%;
+  }
+  .oshwiki-articles .section div.container .row.wrapper-content .col-lg-3 {
+    flex: 0 0 18%;
+    max-width: 18%;
+  }
+
+  .container.page-content-container {
+    min-width: 1600px;
+  }
+  .container.page-content-container .section div.container {
+    min-width: 1600px;
+  }
+  .container.page-content-container .col-lg-9 {
+    flex: 0 0 82%;
+    max-width: 82%;
+  }
+  .container.page-content-container .col-lg-3 {
+    flex: 0 0 18%;
+    max-width: 18%;
+  }
+
+  #main-wrapper .container {
+    min-width: 1600px;
+  }
+
+  footer > .container {
+    min-width: 1600px;
   }
 }
 
