@@ -1,3 +1,103 @@
-@media only screen and (min-width: 1224px){
-
+/*
+!*Containers for min-with 1600px*!
+@media only screen and (min-width: 1600px){
+  .container-custom-menu{
+    min-width: 1300px;
+  }
+  .oshwiki-articles{
+    min-width: 1300px;
+    .section{
+      div.container{
+        min-width: 1300px;
+        .row.wrapper-content{
+          .col-lg-6{
+            flex: 0 0 60%;
+            max-width: 60%;
+          }
+          .col-lg-3{
+            flex: 0 0 20%;
+            max-width: 20%;
+          }
+        }
+      }
+    }
+  }
+  .container.page-content-container{
+    min-width: 1300px;
+    .section{
+      div.container{
+        min-width: 1300px;
+      }
+    }
+    .col-lg-9{
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+    .col-lg-3{
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
+  #main-wrapper{
+    .container{
+      min-width: 1300px;
+    }
+  }
+  footer{
+    & > .container{
+      min-width: 1300px;
+    }
+  }
 }
+
+!*Containers for min-with 1900px*!
+@media only screen and (min-width: 1900px){
+  .container-custom-menu{
+    min-width: 1600px;
+  }
+  .oshwiki-articles{
+    min-width: 1600px;
+    .section{
+      div.container{
+        min-width: 1600px;
+        .row.wrapper-content{
+          .col-lg-6{
+            flex: 0 0 64%;
+            max-width: 64%;
+          }
+          .col-lg-3{
+            flex: 0 0 18%;
+            max-width: 18%;
+          }
+        }
+      }
+    }
+  }
+  .container.page-content-container{
+    min-width: 1600px;
+    .section{
+      div.container{
+        min-width: 1600px;
+      }
+    }
+    .col-lg-9{
+      flex: 0 0 82%;
+      max-width: 82%;
+    }
+    .col-lg-3{
+      flex: 0 0 18%;
+      max-width: 18%;
+    }
+  }
+  #main-wrapper{
+    .container{
+      min-width: 1600px;
+    }
+  }
+  footer{
+    & > .container{
+      min-width: 1600px;
+    }
+  }
+}
+*/

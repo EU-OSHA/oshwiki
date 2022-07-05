@@ -45,6 +45,8 @@ jQuery(window).on("load",function(){
 jQuery(window).resize(function(){
   checkResponsiveMenu(jQuery(window).width(), menuSM);
   setParagraphImageTextWidth();
+  createDivCardsHomePage();
+  createDivCards("node--type-oshwiki-articles",['.related-articles']);
 });
 
 jQuery(document).ready(function($) {
@@ -87,12 +89,12 @@ jQuery(document).ready(function($) {
     }
   }
 
-  /*Is we are at the theme or alphabetical views, mark the correct tab as active*/
+  /*Is we are at the theme or alphabetical views, mark the correct tab as show-subthemes*/
   function themeAlfabethicalViewTabs(theURL){
     if(theURL.includes("alphabetical-view")){
-      $("#nav-alphabetical-view-tab").addClass("active");
+      $("#nav-alphabetical-view-tab").addClass("show-subthemes");
     } else if(theURL.includes("theme")){
-      $("#nav-themes-tab").addClass("active");
+      $("#nav-themes-tab").addClass("show-subthemes");
     }
   }
 
@@ -115,39 +117,6 @@ jQuery(document).ready(function($) {
     setParagraphImageTextWidth();
   }
 
-  /*If there is a theme inside an other sources of information journal,
-change the wrapper's grid-template-rows and add empty divs in order to maintain layout*/
-  function createDivCardsHomePage(){
-    if($("body").hasClass("page-view-frontpage")){
-      if($(".section_other_sources .card-content-wrapper").find('.theme-badge').length>0){
-        $(".section_other_sources .card-content-wrapper").css("grid-template-rows", "auto 1.5fr 35px");
-        createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent', '.section_other_sources']);
-      }else{
-        createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent']);
-      }
-    }
-  }
-
-  /*If the content card does not have a tag,
-  create a div with the tag classes in order to mantain the layout*/
-  function createDivCards(bodyClass, cardWrapperNames){
-    if($("body").hasClass(bodyClass)){
-      let contentTypes = cardWrapperNames;
-      for(let i=0; i<contentTypes.length;i++){
-        $(contentTypes[i]+" .card-content-wrapper").each(function(index, value){
-          if($(this).find('.theme-badge').length==0){
-            /*Add the "transparent-tag" class for the css*/
-            $(this).prepend("<div class='taxonomy-level-wrapper transparent-tag'>" +
-              "<div class='taxonomy-level-item type-themes'>" +
-              "<span>tag</span>\n" +
-              "</div>" +
-              "</div>");
-          }
-        });
-      }
-    }
-  }
-
 });
 
 /*Call both functions required for the select theme behaviour*/
@@ -156,27 +125,40 @@ function selectTheme(){
   createNewSpanForThemeIcon();
 }
 
-/*If there is no active category, collpase the theme. If there is, display the theme*/
+/*If there is no active category, collapse the theme. If there is, display the theme*/
 function hideEverySubthemeCatNotSelected(){
   jQuery(".facets-widget-links > ul > .facet-item--expanded").each(function(index, value){
-    if(!(jQuery(this).hasClass(".facet-item--active-trail")) && !(jQuery(this).find("a").hasClass("is-active"))){
-      jQuery(this).find(".facets-widget-").hide();
+    if((jQuery(this).hasClass("facet-item--show-subthemes-trail")) || (jQuery(this).find("a").hasClass("show-subthemes")) || (jQuery(this).find("a").hasClass("is-active"))){
+      jQuery(this).addClass("show-subthemes");
+      jQuery(this).removeClass("hide-subthemes");
     }else{
-      jQuery(this).addClass("active");
+      jQuery(this).addClass("hide-subthemes");
+      jQuery(this).removeClass("show-subthemes");
     }
+
   });
 }
 
 /*Add span tags inside the list elements*/
 function createNewSpanForThemeIcon(){
-  jQuery(".facets-widget-links > ul > .facet-item > a").after("<span class='showSubthemes'></span>");
-  jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value").before("<span class='iconSubtheme'></span>");
+  if(jQuery(".facets-widget-links > ul > .facet-item").find(".showSubthemes").length==0){
+    jQuery(".facets-widget-links > ul > .facet-item > a").after("<span class='showSubthemes'></span>");
+  }
+  if(jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a").find(".iconSubtheme").length==0){
+    jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value").before("<span class='iconSubtheme'></span>");
+  }
 
   if(!(jQuery("body").hasClass("page-view-frontpage"))){
     /*When the theme is clicked, toggle subthemes*/
-    jQuery(".showSubthemes").click(function(){
-      jQuery(this).parent().toggleClass("active");
-      jQuery(this).parent().find(".facets-widget-").toggle(300);
+    jQuery(".showSubthemes").off().click(function(){
+      if(jQuery(this).parent().hasClass("show-subthemes")){
+        jQuery(this).parent().removeClass("facet-item--show-subthemes-trail");
+        jQuery(this).parent().removeClass("show-subthemes");
+        jQuery(this).parent().addClass("hide-subthemes");
+      }else if (jQuery(this).parent().hasClass("hide-subthemes")){
+        jQuery(this).parent().addClass("show-subthemes");
+        jQuery(this).parent().removeClass("hide-subthemes");
+      }
     });
   }
 }
@@ -238,6 +220,53 @@ function hideOriginalContentTextAfterSearch(){
   if(jQuery("body").hasClass("page-view-search")){
     if(jQuery(".block-system-main-block .view-content .views-row").find(".views-field-search-api-excerpt").lenght>0){
       jQuery(".block-system-main-block .view-content .views-row").find(".views-field-field-sections-oshwiki").hide();
+    }
+  }
+}
+
+/*If there is a theme inside an other sources of information journal,
+change the wrapper's grid-template-rows and add empty divs in order to maintain layout*/
+function createDivCardsHomePage(){
+  if(jQuery("body").hasClass("page-view-frontpage")){
+    if(jQuery(".section_other_sources .card-content-wrapper").find('.theme-badge').length>0){
+      jQuery(".section_other_sources .card-content-wrapper").css("grid-template-rows", "auto 1.5fr 35px");
+      createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent', '.section_other_sources']);
+    }else{
+      createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent']);
+    }
+  }
+}
+
+/*If the content card does not have a tag create a div with the tag classes,
+set the height of the tags with the height of the largest tag
+and set de title height with the maxHeight in order to mantain the layout*/
+function createDivCards(bodyClass, cardWrapperNames){
+  if(jQuery("body").hasClass(bodyClass)){
+    let contentTypes = cardWrapperNames;
+    for(let i=0; i<contentTypes.length;i++){
+      let maxHeightOfTheme = 0;
+      let maxHeightOfTitle = 0;
+      jQuery(contentTypes[i]+" .card-content-wrapper").each(function(index, value){
+        if((jQuery(this).find('.theme-badge').length==0)&&(jQuery(this).find('.transparent-tag').length==0)){
+          /*Add the "transparent-tag" class for the css*/
+          jQuery(this).prepend("<div class='taxonomy-level-wrapper transparent-tag'>" +
+            "<div class='taxonomy-level-item type-themes'>" +
+            "<span>tag</span>\n" +
+            "</div>" +
+            "</div>");
+        }
+        /*Set height for the tags of the articles*/
+        if((jQuery.isNumeric(jQuery(this).find('.theme-badge').height()))&&(jQuery(this).find('.theme-badge').height()>maxHeightOfTheme)){
+          maxHeightOfTheme=jQuery(this).find('.theme-badge').height();
+        }
+        /*Set height for the titles of the articles*/
+        if((jQuery.isNumeric(jQuery(this).find('a:first').height()))&&(jQuery(this).find('a:first').height()>maxHeightOfTitle)){
+          maxHeightOfTitle=jQuery(this).find('a:first').height();
+        }
+      });
+      /*Change the grid layout*/
+      let gridTemplateRowValues = maxHeightOfTheme + "px " + maxHeightOfTitle + "px 35px";
+      jQuery(contentTypes[i]+" .card-content-wrapper").css("grid-template-rows", gridTemplateRowValues);
     }
   }
 }
