@@ -379,14 +379,14 @@
   }
 }
 
-@media only screen and (min-width: 1300px) {
+/*@media only screen and (min-width: 1300px) {
   .page-view-search{
     #main{
-      /*Responsive layout with grid-area*/
+      !*Responsive layout with grid-area*!
       .section{
         grid-template-columns: 1.1fr 1fr 1fr 1fr;
       }
-      /*End comment*/
+      !*End comment*!
     }
   }
 }
@@ -394,11 +394,11 @@
 @media only screen and (min-width: 1600px) {
   .page-view-search{
     #main{
-      /*Responsive layout with grid-area*/
+      !*Responsive layout with grid-area*!
       .section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
-      /*End comment*/
+      !*End comment*!
     }
   }
-}
+}*/

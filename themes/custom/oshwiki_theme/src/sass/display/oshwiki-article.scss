@@ -3,6 +3,8 @@
     margin-bottom: 2rem;
   }
   .items-left{
+    padding-right: 0px;
+    padding-left: 0px;
     & > p{
       margin-bottom: 0rem;
     }
@@ -48,13 +50,12 @@
           display: flex;
           flex-direction: row;
           align-items: baseline;
-          gap: 0.5rem;
-          margin: 0.5rem;
+          gap: 0.1rem;
+          margin: 0.1rem;
           .icon-before-anchor-item{
             display: inline-block;
             min-width: 18px;
             min-height: 15px;
-            margin-right: 0.5rem;
             background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
             transform: rotate(270deg);
           }
@@ -357,6 +358,10 @@
 
 @media only screen and (min-width: 992px) {
   .node--type-oshwiki-articles{
+    .items-left {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
     .oshwiki-authors-contributors, .oshwiki-authors-contributors{
       .article_authors, .article_contributors{
         .field__items{

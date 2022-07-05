@@ -29,6 +29,7 @@
       & > .navbar-nav{
         display: flex;
         flex-direction: column;
+        gap: 0.4rem;
         ul, li{
           list-style: none;
         }
@@ -40,6 +41,11 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            li{
+              .nav-link{
+                padding: 0rem;
+              }
+            }
           }
           & > span{
             display: none;
@@ -165,7 +171,7 @@ Show 5th menu option for logged in user*/
 /*End comment - hide 6th menu option for anonymus user. Show 5th
 menu option for logged in user*/
 
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 992px){
   .site-footer{
     section{
       & > #block-oshwiki-theme-footer{

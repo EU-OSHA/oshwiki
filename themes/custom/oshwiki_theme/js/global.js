@@ -89,12 +89,12 @@ jQuery(document).ready(function($) {
     }
   }
 
-  /*Is we are at the theme or alphabetical views, mark the correct tab as active*/
+  /*Is we are at the theme or alphabetical views, mark the correct tab as show-subthemes*/
   function themeAlfabethicalViewTabs(theURL){
     if(theURL.includes("alphabetical-view")){
-      $("#nav-alphabetical-view-tab").addClass("active");
+      $("#nav-alphabetical-view-tab").addClass("show-subthemes");
     } else if(theURL.includes("theme")){
-      $("#nav-themes-tab").addClass("active");
+      $("#nav-themes-tab").addClass("show-subthemes");
     }
   }
 
@@ -125,27 +125,40 @@ function selectTheme(){
   createNewSpanForThemeIcon();
 }
 
-/*If there is no active category, collpase the theme. If there is, display the theme*/
+/*If there is no active category, collapse the theme. If there is, display the theme*/
 function hideEverySubthemeCatNotSelected(){
   jQuery(".facets-widget-links > ul > .facet-item--expanded").each(function(index, value){
-    if(!(jQuery(this).hasClass(".facet-item--active-trail")) && !(jQuery(this).find("a").hasClass("is-active"))){
-      jQuery(this).find(".facets-widget-").hide();
+    if((jQuery(this).hasClass("facet-item--show-subthemes-trail")) || (jQuery(this).find("a").hasClass("show-subthemes")) || (jQuery(this).find("a").hasClass("is-active"))){
+      jQuery(this).addClass("show-subthemes");
+      jQuery(this).removeClass("hide-subthemes");
     }else{
-      jQuery(this).addClass("active");
+      jQuery(this).addClass("hide-subthemes");
+      jQuery(this).removeClass("show-subthemes");
     }
+
   });
 }
 
 /*Add span tags inside the list elements*/
 function createNewSpanForThemeIcon(){
-  jQuery(".facets-widget-links > ul > .facet-item > a").after("<span class='showSubthemes'></span>");
-  jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value").before("<span class='iconSubtheme'></span>");
+  if(jQuery(".facets-widget-links > ul > .facet-item").find(".showSubthemes").length==0){
+    jQuery(".facets-widget-links > ul > .facet-item > a").after("<span class='showSubthemes'></span>");
+  }
+  if(jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a").find(".iconSubtheme").length==0){
+    jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value").before("<span class='iconSubtheme'></span>");
+  }
 
   if(!(jQuery("body").hasClass("page-view-frontpage"))){
     /*When the theme is clicked, toggle subthemes*/
-    jQuery(".showSubthemes").click(function(){
-      jQuery(this).parent().toggleClass("active");
-      jQuery(this).parent().find(".facets-widget-").toggle(300);
+    jQuery(".showSubthemes").off().click(function(){
+      if(jQuery(this).parent().hasClass("show-subthemes")){
+        jQuery(this).parent().removeClass("facet-item--show-subthemes-trail");
+        jQuery(this).parent().removeClass("show-subthemes");
+        jQuery(this).parent().addClass("hide-subthemes");
+      }else if (jQuery(this).parent().hasClass("hide-subthemes")){
+        jQuery(this).parent().addClass("show-subthemes");
+        jQuery(this).parent().removeClass("hide-subthemes");
+      }
     });
   }
 }

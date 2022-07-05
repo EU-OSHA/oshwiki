@@ -82,6 +82,7 @@
           position: relative;
         }
         li > .showSubthemes{
+          cursor: pointer;
           position: absolute;
           top: 6px;
         }
@@ -90,15 +91,26 @@
           display: inline-block;
         }
       }
-
       /*Selected theme in bold and with orange icon*/
-      .item-list__links .active{
+      .item-list__links .show-subthemes{
         & > a > .facet-item__value{
           font-weight: bold;
         }
+        .facets-widget-{
+          display: block;
+          .is-active{
+            font-weight: bold;
+          }
+        }
         .showSubthemes{
+          cursor: pointer;
           height: 13px;
           background: url('../images/orange_minus_select_theme.png');
+        }
+      }
+      .item-list__links .hide-subthemes{
+        .facets-widget-{
+          display: none;
         }
       }
       li{
@@ -112,7 +124,6 @@
       }
     }
     .is-active{
-      font-weight: 700;
       span:first-of-type{
         display: none;
       }
@@ -365,17 +376,19 @@
     }
   }
 }
+/*
 
 @media only screen and (min-width: 1600px) {
   .path-themes{
     .container{
       #main{
-        /*Responsive layout with grid-area*/
+        !*Responsive layout with grid-area*!
         .section{
           grid-template-columns: 1fr 1fr 1fr 1fr;
         }
-        /*End comment*/
+        !*End comment*!
       }
     }
   }
 }
+*/

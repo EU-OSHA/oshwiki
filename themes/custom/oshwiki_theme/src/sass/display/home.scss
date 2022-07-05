@@ -150,6 +150,9 @@
               background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
               transform: rotate(270deg);
             }
+            .facets-widget-{
+              display: none;
+            }
           }
           .facet-item--expanded, .facet-item{
             list-style: none;
@@ -325,7 +328,7 @@
     }
   }
 }
-
+/*
 @media only screen and (min-width: 1600px){
   .page-view-frontpage{
     .section_featured_articles{
@@ -346,4 +349,4 @@
       }
     }
   }
-}
+}*/
