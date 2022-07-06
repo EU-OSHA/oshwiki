@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Søg
+          reset_button_label: Nulstil
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: ASC
+          sort_desc_label: Faldende
+      title: Søg
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevans
+        publication_date:
+          expose:
+            label: 'Dato for offentliggørelse'
+        title:
+          expose:
+            label: Alfabetisk
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Søg
+label: Søg

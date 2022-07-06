@@ -471,6 +471,9 @@ a:hover {
   font-size: 1rem;
   color: #58585A;
 }
+.node--type-page .field__item .span-basic-page {
+  color: #449FA2;
+}
 .node--type-page .field__item h2 {
   font-size: 1.4rem;
   font-weight: 50;
@@ -1345,7 +1348,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   color: #58585A;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
-  width: 16rem;
+  width: 17rem;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-sort-by {
   grid-area: sort-by;
@@ -1363,7 +1366,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   padding: 0.3rem 0.3rem 0.3rem 0.75rem;
   border-radius: 0.25rem;
   height: 2.5rem;
-  width: 16rem;
+  width: 17rem;
   color: #449FA2;
   border: 1px solid #449FA2;
   /*Remove default dropdown icon and add new icon*/
@@ -1375,25 +1378,20 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: 15px;
+  background-position: 93% 50%;
   /*End comment - remove default dropdown icon*/
-}
-.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select[name=sort_by], .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select[name=sort_by] {
-  background-position: 92% 50%;
-}
-.page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select[name=sort_order], .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select[name=sort_order] {
-  background-position: 85% 50%;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions {
   display: flex;
+  flex-direction: column;
   grid-area: search-buttons;
-  margin-right: 0.7rem;
   gap: 0.5rem;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions button {
   padding: 0.3rem 0.8rem;
   height: 2.5rem;
-  width: 7.5rem;
-  margin-top: 24px;
+  width: 100%;
+  max-width: 17rem;
 }
 .page-view-other-sources-of-information #block-oshwiki-theme-content .view-content {
   display: flex;
@@ -1474,20 +1472,16 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 }
 
 /*Responsive design of the search and order box*/
-@media only screen and (min-width: 490px) {
+@media only screen and (min-width: 550px) {
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row {
-    grid-template-areas: "search-input search-input search-buttons search-buttons" "sort-by sort-by order-by order-by";
+    grid-template-areas: "search-input search-input" "search-buttons search-buttons" "sort-by order-by";
     justify-content: start;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria {
     margin-bottom: 1rem !important;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
-    width: 12rem;
     height: 2.5rem;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select, .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
-    width: 12rem;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions {
     margin-bottom: 1rem !important;
@@ -1496,43 +1490,51 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions button {
     height: 2.4rem;
   }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select {
+    width: 17rem;
+  }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
+    width: 14rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row {
-    grid-template-areas: "search-input search-input search-buttons search-buttons" "sort-by sort-by order-by order-by ";
+    grid-template-areas: "search-input search-input " "search-buttons search-buttons" "sort-by order-by";
     justify-content: start;
   }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
-    width: 15rem;
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions {
+    flex-direction: row;
   }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-by select {
-    width: 15rem;
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions button:nth-of-type(1) {
+    width: 17rem;
+  }
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions button:nth-of-type(2) {
+    width: 14rem;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-sort-order select {
-    width: 8rem;
-  }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions button {
-    width: 7.15rem;
+    width: 14rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row {
-    grid-template-areas: "search-input search-input search-buttons sort-by order-by";
+    grid-template-areas: "search-input search-buttons" "sort-by order-by";
+    column-gap: 0.3rem;
     align-items: baseline;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-item-criteria input {
-    width: 15rem;
+    width: 17rem;
   }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions {
-    margin-bottom: 1.1rem !important;
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions {
+    margin-bottom: 1rem !important;
   }
-  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-actions button {
+  .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions button:nth-of-type(1), .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row .form-actions button:nth-of-type(2) {
     height: 2.5rem;
     padding-left: 0rem;
     margin-right: 0.5rem;
+    width: 14rem;
   }
   .page-view-other-sources-of-information #block-oshwiki-theme-content .view-filters .form-row #edit-sort-by {
-    width: 15rem;
+    width: 17rem;
   }
 }
 /*End comment responsive design of the search and order box*/
@@ -1786,7 +1788,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 }
 .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield {
   grid-area: search-input;
-  margin-bottom: 1.3rem !important;
+  margin-bottom: 1rem !important;
 }
 .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield label {
   margin-bottom: 0.2rem;
@@ -1795,7 +1797,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   color: #58585A;
 }
 .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield input {
-  width: 16rem;
+  width: 17rem;
 }
 .page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper {
   display: flex;
@@ -1806,7 +1808,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 .page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper button {
   padding: 0.3rem 0.8rem;
   height: 2.5rem;
-  width: 7.5rem;
+  width: 17rem;
 }
 .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by label, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order label {
   margin-bottom: 0.2rem;
@@ -1818,7 +1820,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   padding: 0.3rem 0.3rem 0.3rem 0.75rem;
   border-radius: 0.25rem;
   height: 2.5rem;
-  width: 16rem;
+  width: 17rem;
   color: #449FA2;
   border: 1px solid #449FA2;
   /*Remove default dropdown icon and add new icon*/
@@ -1876,10 +1878,10 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 }
 .page-view-search #main .block-system-main-block .view-content .views-row .created-authored {
   display: flex;
-  flex-direction: row;
-  gap: 0.3rem;
+  flex-direction: column;
 }
 .page-view-search #main .block-system-main-block .view-content .views-row .created-authored .divide {
+  display: none;
   letter-spacing: 0.1px;
   line-height: 27px;
   font-size: 0.9rem;
@@ -1921,21 +1923,34 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   background: url("../images/green-arrow-thin-.png") no-repeat;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 550px) {
   .page-view-search #main .block-system-main-block .view-filters .form-row {
-    grid-template-areas: "search-input search-input search-buttons search-buttons" "sort-by sort-by order-by order-by";
+    grid-template-areas: "search-input search-buttons" "sort-by order-by";
     justify-content: start;
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield input {
-    width: 12rem;
+    width: 17rem;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper {
+    margin-bottom: 1rem !important;
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper button {
-    width: 7.15rem;
+    width: 14rem;
     height: 2.45rem;
-    margin-bottom: 0.75rem !important;
+    margin-bottom: 0rem;
   }
-  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
-    width: 12rem;
+  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select {
+    width: 17rem;
+  }
+  .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
+    width: 14rem;
+  }
+  .page-view-search #main .block-system-main-block .view-content .views-row .created-authored {
+    flex-direction: row;
+    gap: 0.3rem;
+  }
+  .page-view-search #main .block-system-main-block .view-content .views-row .created-authored .divide {
+    display: block;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1948,30 +1963,34 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
     grid-template-columns: 1.25fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
   }
+}
+@media only screen and (min-width: 1200px) {
   .page-view-search #main .block-system-main-block .view-filters .form-row {
     grid-template-areas: "search-input search-buttons sort-by order-by";
     grid-template-columns: auto auto auto auto;
     justify-content: start;
+    align-items: baseline;
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-type-textfield input {
-    width: 15rem;
+    width: 8rem;
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .form-actions.js-form-wrapper button {
-    width: 6rem;
-    height: 2.42rem;
+    width: 8rem;
+    height: 2.4rem;
     padding-left: 0rem;
     margin-right: 0.5rem;
+    margin-bottom: 0.05rem !important;
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select, .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
     height: 2.42rem;
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-by select {
-    width: 10rem;
-    background-position: 87% 50%;
+    width: 17rem;
+    background-position: 93% 50%;
   }
   .page-view-search #main .block-system-main-block .view-filters .form-row .js-form-item-sort-order select {
-    width: 8rem;
-    background-position: 84% 50%;
+    width: 13rem;
+    background-position: 93% 50%;
   }
 }
 .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content, .page-vocabulary-nace #block-oshwiki-theme-content .view-content {
@@ -2143,6 +2162,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 .path-themes #block-oshwiki-theme-content .views-exposed-form fieldset, .path-themes #block-views-block-themes-block-1 .views-exposed-form fieldset {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .path-themes #block-oshwiki-theme-content .views-exposed-form button, .path-themes #block-views-block-themes-block-1 .views-exposed-form button {
   padding: 0rem 0.5rem;
@@ -2165,7 +2185,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   border-bottom: 1px dotted #616161;
 }
 .path-themes #block-oshwiki-theme-content .view-content .views-row .views-field-title a, .path-themes #block-views-block-themes-block-1 .view-content .views-row .views-field-title a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #449FA2;
 }
@@ -2204,6 +2224,8 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   margin-top: 0.7rem;
 }
 .path-themes #block-oshwiki-theme-content .view-filters .form-row select {
+  width: 100%;
+  max-width: 17rem;
   padding: 0.3rem 0.3rem 0.3rem 0.75rem;
   border-radius: 0.25rem;
   height: 2.5rem;
@@ -2218,24 +2240,18 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: 15px;
+  background-position: 93% 50%;
   /*End comment - remove default dropdown icon*/
-}
-.path-themes #block-oshwiki-theme-content .view-filters .form-row select[name=sort_by] {
-  background-position: 88% 50%;
-}
-.path-themes #block-oshwiki-theme-content .view-filters .form-row select[name=sort_order] {
-  width: 8rem;
-  background-position: 84% 50%;
 }
 .path-themes #block-oshwiki-theme-content .view-filters .form-row button {
   padding: 0.3rem 0.8rem;
   height: 2.5rem;
 }
-.path-themes #block-oshwiki-theme-content .attachment-before {
+.path-themes #block-oshwiki-theme-content .view-content .attachment-before {
   border-top: 1px dotted #58585A;
 }
-.path-themes #block-oshwiki-theme-content .attachment-before .views-field-title span a {
-  font-size: 1.3rem;
+.path-themes #block-oshwiki-theme-content .view-content .attachment-before .views-field-title span a {
+  font-size: 1.2rem !important;
   font-weight: 700;
   color: #449FA2;
 }
@@ -2250,7 +2266,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 /*Adapt select-theme block in order to keep the "+" icon responsive*/
 @media only screen and (min-width: 400px) {
   .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links span.facet-item__value {
-    max-width: 15rem;
+    max-width: 17rem;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -2261,6 +2277,17 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 @media only screen and (min-width: 768px) {
   .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links span.facet-item__value {
     max-width: 35rem;
+  }
+  .path-themes #block-oshwiki-theme-content .view-filters .form-row {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .path-themes #block-oshwiki-theme-content .view-filters .form-row fieldset {
+    width: auto;
+  }
+  .path-themes #block-oshwiki-theme-content .view-filters .form-row fieldset select {
+    max-width: none;
+    width: 17rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -2295,7 +2322,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 }
 
 body.user-logged-in #header {
-  top: 79px !important;
+  top: 39px !important;
 }
 
 body.scrollup.scrolled #header {
@@ -2328,19 +2355,19 @@ body.scrolldown #header {
 
 /*Change this 4 values - the difference between logged user and anonymous user*/
 body {
-  padding-top: 175px !important;
+  padding-top: 127px;
 }
 
 body.user-logged-in {
-  padding-top: 260px !important;
+  padding-top: 166px !important;
 }
 
 body.scrolldown {
-  padding-top: 175px !important;
+  padding-top: 155px;
 }
 
 body.scrolldown.user-logged-in {
-  padding-top: 130px !important;
+  padding-top: 211px;
 }
 
 /* End comment - sticky menu */
@@ -2503,7 +2530,7 @@ body.scrolldown.user-logged-in {
   width: 100%;
 }
 .bg-image-banner .block-page-title-block h1 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #FFFFFF;
 }
 
@@ -2516,27 +2543,6 @@ body.scrolldown.user-logged-in {
   /*Edit the orange line under nav element of menu*/
   .content-main-menu ul .active:after {
     bottom: 0px;
-  }
-
-  /*sticky menu*/
-  body.user-logged-in #header {
-    top: 39px !important;
-  }
-
-  body.scrollup.user-logged-in.scrolled #header {
-    top: 39px !important;
-  }
-
-  body.scrolldown.user-logged-in #header {
-    top: -23rem !important;
-  }
-
-  body.user-logged-in {
-    padding-top: 260px !important;
-  }
-
-  body.scrolldown.user-logged-in {
-    padding-top: 130px !important;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -2555,14 +2561,49 @@ body.scrolldown.user-logged-in {
     width: 5rem !important;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 992px) {
-  .top-header-container section .logo-wrapper > div {
-    padding: 0rem 0.7rem;
+@media only screen and (min-width: 500px) {
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body {
+    padding-top: 142px;
   }
 
+  body.user-logged-in {
+    padding-top: 180px !important;
+  }
+
+  /* End comment - sticky menu */
   .bg-image-banner .block-page-title-block h1 {
     font-size: 2.3rem;
     color: #FFFFFF;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body {
+    padding-top: 165px;
+  }
+
+  body.user-logged-in {
+    padding-top: 205px !important;
+  }
+
+  /* End comment - sticky menu */
+}
+@media only screen and (min-width: 700px) {
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body {
+    padding-top: 180px;
+  }
+
+  body.user-logged-in {
+    padding-top: 220px !important;
+  }
+
+  /* End comment - sticky menu */
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .top-header-container section .logo-wrapper > div {
+    padding: 0rem 0.7rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -2784,11 +2825,11 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 .site-footer section > #block-oshwiki-theme-footer {
   padding: 0px;
   width: 100%;
+  margin: 0.3rem 0rem 1rem;
 }
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav ul, .site-footer section > #block-oshwiki-theme-footer > .navbar-nav li {
   list-style: none;
@@ -2812,15 +2853,28 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav li li:hover {
   text-decoration: underline;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item a {
-  padding: 0rem 0.8rem;
-  border-right: 1px solid #FFFFFF;
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item {
+  display: flex;
+  align-items: baseline;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:first-of-type a {
-  padding-left: 0px;
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item::after {
+  display: inline;
+  content: "|";
+  margin: 0rem 0.5rem;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) {
+  display: none;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(6) {
+  display: flex;
 }
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type a {
   border-right: none;
+}
+.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type::after {
+  display: none;
 }
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu {
   display: flex;
@@ -2874,24 +2928,17 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   margin-top: 1rem;
 }
 
-/*Make footer design responsive*/
-@media only screen and (max-width: 767px) {
-  .site-footer section #block-oshwiki-theme-footer .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) a {
-    padding-left: 0px !important;
-  }
+/*Hide 6th menu option for anonymus user,
+Show 5th menu option for logged in user*/
+.user-logged-in .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) {
+  display: flex;
 }
-@media only screen and (min-width: 768px) and (max-width: 990px) {
-  .site-footer section #block-oshwiki-theme-footer .navbar-nav > li:first-of-type .menu .nav-item:last-of-type a {
-    padding-left: 0px !important;
-    padding-right: 10rem !important;
-  }
+.user-logged-in .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(6) {
+  display: none;
 }
-@media only screen and (min-width: 992px) {
-  .site-footer section #block-oshwiki-theme-footer .navbar-nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+
+/*End comment - hide 6th menu option for anonymus user. Show 5th
+menu option for logged in user*/
 /* Home page */
 .content-main-menu {
   border-color: #E0E0E0;

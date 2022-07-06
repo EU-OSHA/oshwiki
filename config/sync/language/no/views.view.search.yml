@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Søk
+          reset_button_label: Tilbakestill
+          exposed_sorts_label: 'Sorter etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      title: Søk
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevans
+        publication_date:
+          expose:
+            label: Publiseringsdato
+        title:
+          expose:
+            label: Alfabetisk
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Søk
+label: Søk

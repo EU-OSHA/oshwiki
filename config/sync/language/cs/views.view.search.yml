@@ -1,0 +1,29 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_year_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      exposed_form:
+        options:
+          submit_button: Vyhledávání
+          reset_button_label: 'Obnovit původní nastavení'
+          exposed_sorts_label: 'Seřadit podle'
+          sort_asc_label: Vzest.
+          sort_desc_label: Sest.
+      title: Vyhledávání
+  page_1:
+    display_options:
+      sorts:
+        publication_date:
+          expose:
+            label: 'Datum zveřejnění'
+        title:
+          expose:
+            label: 'Podle abecedy'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Vyhledávání
+label: Vyhledávání

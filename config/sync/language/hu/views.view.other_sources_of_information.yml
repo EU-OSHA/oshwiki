@@ -1,0 +1,22 @@
+label: 'Egyéb információforrások'
+display:
+  default:
+    display_options:
+      title: 'Egyéb információforrások'
+      exposed_form:
+        options:
+          submit_button: Keresés
+          exposed_sorts_label: 'Rendezés módja:'
+          sort_asc_label: Növ.
+          sort_desc_label: Csökk.
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevancia
+        title:
+          expose:
+            label: Ábécésorrendben
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Keresés

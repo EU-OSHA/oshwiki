@@ -1,0 +1,25 @@
+label: 'Άλλες πηγές πληροφοριών'
+display:
+  default:
+    display_options:
+      title: 'Άλλες πηγές πληροφοριών'
+      exposed_form:
+        options:
+          submit_button: Αναζήτηση
+          exposed_sorts_label: 'Επιλογή τρόπου αναζήτησης'
+          sort_asc_label: Αύξ.
+          sort_desc_label: Φθίν.
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Συνάφεια
+        publication_date:
+          expose:
+            label: 'Ημερομηνία δημοσίευσης'
+        title:
+          expose:
+            label: Αλφαβητικά
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Αναζήτηση

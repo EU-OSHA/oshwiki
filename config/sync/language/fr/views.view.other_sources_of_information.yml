@@ -1,0 +1,20 @@
+label: 'Autres sources d’informations'
+display:
+  default:
+    display_options:
+      title: 'Autres sources d’informations'
+      exposed_form:
+        options:
+          submit_button: Rechercher
+          exposed_sorts_label: 'Trier par'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Pertinence
+        title:
+          expose:
+            label: 'Par ordre alphabétique'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Rechercher

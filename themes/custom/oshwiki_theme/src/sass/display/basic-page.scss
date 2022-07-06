@@ -16,6 +16,9 @@
     letter-spacing: 0.3px;
     line-height: 29px;
     @include textFormat(1rem, null, $text-dark-dark-grey);
+    .span-basic-page{
+      color: $text-dark-green;
+    }
     h2{
       @include textFormat(1.4rem, 50, $text-dark-dark-grey);
     }

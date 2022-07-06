@@ -1,9 +1,9 @@
-uuid: 25d32ac9-3570-4eac-a783-3478d132bef0
+uuid: 76d3f244-7d1f-449f-89e7-6786fea4142d
 langcode: en
 status: true
 dependencies: {  }
-id: people
-label: People
+id: osha
+label: Osha
 provider: ldap_provider
 provider_config:
   status:
@@ -33,6 +33,6 @@ consumer_mappings:
 synchronization_modes:
   user_logon: user_logon
 synchronization_actions:
-  create_consumers: '0'
+  create_consumers: create_consumers
   revoke_provider_provisioned: revoke_provider_provisioned
 description: null

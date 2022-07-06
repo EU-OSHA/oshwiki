@@ -1,4 +1,19 @@
 display:
   default:
     display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Importancia
+        title:
+          expose:
+            label: 'Por orden alfabético'
+      exposed_form:
+        options:
+          submit_button: Buscar
+          exposed_sorts_label: 'Ordenar por'
       title: 'Otras fuentes de información'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Buscar

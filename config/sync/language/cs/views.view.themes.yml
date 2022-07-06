@@ -1,0 +1,23 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'Obnovit původní nastavení'
+          exposed_sorts_label: 'Seřadit podle'
+          sort_asc_label: Vzest.
+          sort_desc_label: Sest.
+      sorts:
+        created:
+          expose:
+            label: 'Datum zveřejnění'
+        title:
+          expose:
+            label: 'Podle abecedy'
+  page_2:
+    display_title: Nejnovější
+    display_options:
+      title: Nejnovější
+  default:
+    display_options:
+      title: Témata

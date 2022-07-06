@@ -1,0 +1,41 @@
+label: 'Ďalšie zdroje informácií'
+display:
+  default:
+    display_options:
+      title: 'Ďalšie zdroje informácií'
+      fields:
+        field_year_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        field_volume_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        field_issue_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        field_article_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Roztriediť podľa'
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+          submit_button: Vyhľadávanie
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevantnosť
+        publication_date:
+          expose:
+            label: 'Dátum uverejnenia'
+        title:
+          expose:
+            label: Abecedne
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Vyhľadávanie

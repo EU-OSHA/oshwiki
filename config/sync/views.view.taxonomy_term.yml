@@ -101,8 +101,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<a href="{{ url }}">{{ ''See more'' | trans}}</a>'
             make_link: false
             path: ''
             absolute: false

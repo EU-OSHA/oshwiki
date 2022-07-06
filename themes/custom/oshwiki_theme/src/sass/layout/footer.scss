@@ -25,10 +25,10 @@
     & > #block-oshwiki-theme-footer{
       padding: 0px;
       width: 100%;
+      margin: 0.3rem 0rem 1rem;
       & > .navbar-nav{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
         ul, li{
           list-style: none;
         }
@@ -55,19 +55,27 @@
         & > li:first-of-type{
           .menu{
             .nav-item{
-              a{
-                padding: 0rem 0.8rem;
-                border-right: 1px solid $bg-white;
-              }
+              display: flex;
+              align-items: baseline;
             }
-            .nav-item:first-of-type{
-              a{
-                padding-left: 0px;
-              }
+            .nav-item::after{
+              display: inline;
+              content: "|";
+              margin: 0rem 0.5rem;
+              @include textFormat(1rem, null, $text-white);
+            }
+            .nav-item:nth-of-type(5){
+              display: none;
+            }
+            .nav-item:nth-of-type(6){
+              display: flex;
             }
             .nav-item:last-of-type{
               a{
                 border-right: none;
+              }
+              &::after{
+                display: none;
               }
             }
           }
@@ -132,19 +140,20 @@
 .addMarginTop{
   margin-top: 1rem;
 }
-
-/*Make footer design responsive*/
-@media only screen and (max-width: 767px) {
+/*Hide 6th menu option for anonymus user,
+Show 5th menu option for logged in user*/
+.user-logged-in{
   .site-footer{
     section{
-      #block-oshwiki-theme-footer{
-        .navbar-nav{
+      & > #block-oshwiki-theme-footer{
+        & > .navbar-nav{
           & > li:first-of-type{
             .menu{
               .nav-item:nth-of-type(5){
-                a{
-                  padding-left: 0px !important;
-                }
+                display: flex;
+              }
+              .nav-item:nth-of-type(6){
+                display: none;
               }
             }
           }
@@ -153,45 +162,7 @@
     }
   }
 }
+/*End comment - hide 6th menu option for anonymus user. Show 5th
+menu option for logged in user*/
 
-@media only screen and (min-width: 768px) and (max-width: 990px) {
-  .site-footer{
-    section{
-      #block-oshwiki-theme-footer{
-        .navbar-nav{
-          & > li:first-of-type{
-            .menu{
-              .nav-item:last-of-type{
-                a{
-                  padding-left: 0px !important;
-                  padding-right: 10rem !important;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 
-@media only screen and (min-width: 992px) {
-  .site-footer{
-    section{
-      #block-oshwiki-theme-footer{
-        .navbar-nav{
-          flex-direction: row;
-          justify-content: space-between;
-          & > li:first-of-type{
-            .menu{
-              .nav-item:last-of-type{
-                a{
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
