@@ -108,7 +108,6 @@
         .views-field-url{
           display: flex;
           flex-direction: row-reverse;
-          padding-top: 0.5rem;
           letter-spacing: 0.3px;
           line-height: 29px;
           span{
@@ -150,6 +149,9 @@
           grid-template-areas:
           "alphabet alphabet alphabet alphabet"
           "select-theme alphabetical-content alphabetical-content alphabetical-content";
+          #block-glossaryblock{
+            margin-bottom: 0.5rem;
+          }
         }
         /*End comment*/
       }

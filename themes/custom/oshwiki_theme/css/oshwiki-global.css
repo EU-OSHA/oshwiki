@@ -417,7 +417,6 @@ a:hover {
 .page-view-alphabetical-view #block-oshwiki-theme-content .view-content .views-row .views-field-url {
   display: flex;
   flex-direction: row-reverse;
-  padding-top: 0.5rem;
   letter-spacing: 0.3px;
   line-height: 29px;
 }
@@ -454,6 +453,9 @@ a:hover {
   .page-view-alphabetical-view .container #main .section {
     grid-template-columns: 1.25fr 1fr 1fr 1fr;
     grid-template-areas: "alphabet alphabet alphabet alphabet" "select-theme alphabetical-content alphabetical-content alphabetical-content";
+  }
+  .page-view-alphabetical-view .container #main .section #block-glossaryblock {
+    margin-bottom: 0.5rem;
   }
 }
 /*
@@ -623,7 +625,7 @@ a:hover {
   line-height: 29px;
 }
 .node--type-oshwiki-articles .article_sections .field__item h4, .node--type-oshwiki-articles .article_sections .field__item h3, .node--type-oshwiki-articles .article_sections .field__item .field--name-field-title-sections {
-  padding: 1.4rem 0rem 0.9rem;
+  padding: 0.5rem 0rem;
   margin: 0rem;
 }
 .node--type-oshwiki-articles .article_sections .field__item .field--name-field-title-sections {
@@ -2156,14 +2158,14 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 }
 .path-themes .block-facet-blockthemes-normal-search-themes h2 {
   margin: 0rem;
-  padding: 0.8rem 0rem 0.8rem 1.5rem;
+  padding: 0.3rem 0rem 0.3rem 0.6rem;
   border-radius: 15px 15px 0px 0px;
   background-color: #449FA2;
   font-size: 1.3rem;
   color: #FFFFFF;
 }
 .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links {
-  padding: 1rem 1.5rem;
+  padding: 0rem 0.5rem;
   border-radius: 0px 0px 15px 15px;
   background-color: #D5E6E6;
   height: fit-content;
@@ -2171,7 +2173,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 }
 .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links {
   margin: 0rem;
-  padding: 0rem;
+  padding: 0.6rem 0rem;
   /*Theme before it has been selected: with green icon*/
   /*Show subthemes with green arrow icon*/
 }
@@ -2182,6 +2184,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   width: 13px;
   height: 13px;
   margin-left: 1rem;
+  top: 30%;
   background: url("../images/green_plus_select_theme.png") no-repeat;
 }
 .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .facets-widget- ul li:first-of-type {
@@ -2212,7 +2215,6 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links li > .showSubthemes {
   cursor: pointer;
   position: absolute;
-  top: 6px;
 }
 .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links span.facet-item__value {
   max-width: 190px;
@@ -2230,6 +2232,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
 .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .show-subthemes .showSubthemes {
   cursor: pointer;
   height: 13px;
+  top: 6px;
   background: url("../images/orange_minus_select_theme.png");
 }
 .path-themes .block-facet-blockthemes-normal-search-themes .facets-widget-links .item-list__links .hide-subthemes .facets-widget- {
@@ -2873,6 +2876,7 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 .node--type-oshwiki-articles .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links .show-subthemes .showSubthemes, .node--type-scientific-journal .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links .show-subthemes .showSubthemes {
   cursor: pointer;
   height: 13px;
+  top: 6px;
   background: url("../images/orange_minus_select_theme.png");
 }
 .node--type-oshwiki-articles .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links .iconSubtheme, .node--type-scientific-journal .select-theme-article .select-theme-article-content-box .facets-widget-links .item-list__links .iconSubtheme {

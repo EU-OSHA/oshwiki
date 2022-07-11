@@ -92,9 +92,9 @@ jQuery(document).ready(function($) {
   /*Is we are at the theme or alphabetical views, mark the correct tab as show-subthemes*/
   function themeAlfabethicalViewTabs(theURL){
     if(theURL.includes("alphabetical-view")){
-      $("#nav-alphabetical-view-tab").addClass("show-subthemes");
+      $("#nav-alphabetical-view-tab").addClass("active");
     } else if(theURL.includes("theme")){
-      $("#nav-themes-tab").addClass("show-subthemes");
+      $("#nav-themes-tab").addClass("active");
     }
   }
 
