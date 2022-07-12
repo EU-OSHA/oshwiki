@@ -10,18 +10,18 @@ dependencies:
     - image
     - tmgmt_content
 third_party_settings:
-  tmgmt_content:
-    excluded: false
   content_translation:
     translation_sync:
       alt: alt
       title: title
       file: '0'
+  tmgmt_content:
+    excluded: false
 id: node.oshwiki_articles.field_image_oshwiki
 field_name: field_image_oshwiki
 entity_type: node
 bundle: oshwiki_articles
-label: image
+label: 'Home page image'
 description: ''
 required: false
 translatable: true
@@ -45,6 +45,7 @@ settings:
     title: ''
     width: null
     height: null
-  caption_field: false
-  caption_field_required: false
+    caption: ''
+  caption_field: 0
+  caption_field_required: 0
 field_type: image
