@@ -29,19 +29,19 @@
     padding: 0rem 0rem 1rem 0rem;
     h2{
       margin:0rem;
-      padding: 0.8rem 0rem 0.8rem 1.5rem;
+      padding: 0.3rem 0rem 0.3rem 0.6rem;
       border-radius: 15px 15px 0px 0px;
       background-color: $bg-dark-green;
       @include textFormat(1.3rem, null, $text-white);
     }
     .facets-widget-links{
-      padding: 1rem 1.5rem;
+      padding: 0rem 0.5rem;
       border-radius: 0px 0px 15px 15px;
       background-color: $bg-light-green;
       height: fit-content;
       .item-list__links{
         margin: 0rem;
-        padding: 0rem;
+        padding: 0.6rem 0rem;
         /*Theme before it has been selected: with green icon*/
         li > .showSubthemes{
           cursor: pointer;
@@ -50,6 +50,7 @@
           width: 13px;
           height: 13px;
           margin-left: 1rem;
+          top: 30%;
           background: url('../images/green_plus_select_theme.png') no-repeat;
         }
         /*Show subthemes with green arrow icon*/
@@ -82,23 +83,35 @@
           position: relative;
         }
         li > .showSubthemes{
+          cursor: pointer;
           position: absolute;
-          top: 6px;
         }
         span.facet-item__value {
           max-width: 190px;
           display: inline-block;
         }
       }
-
       /*Selected theme in bold and with orange icon*/
-      .item-list__links .active{
+      .item-list__links .show-subthemes{
         & > a > .facet-item__value{
           font-weight: bold;
         }
+        .facets-widget-{
+          display: block;
+          .is-active{
+            font-weight: bold;
+          }
+        }
         .showSubthemes{
+          cursor: pointer;
           height: 13px;
+          top: 6px;
           background: url('../images/orange_minus_select_theme.png');
+        }
+      }
+      .item-list__links .hide-subthemes{
+        .facets-widget-{
+          display: none;
         }
       }
       li{
@@ -112,7 +125,6 @@
       }
     }
     .is-active{
-      font-weight: 700;
       span:first-of-type{
         display: none;
       }
@@ -351,3 +363,33 @@
     }
   }
 }
+
+@media only screen and (min-width: 1300px) {
+  .path-themes{
+    .container{
+      #main{
+        /*Responsive layout with grid-area*/
+        .section{
+          grid-template-columns: 1.1fr 1fr 1fr 1fr;
+        }
+        /*End comment*/
+      }
+    }
+  }
+}
+/*
+
+@media only screen and (min-width: 1600px) {
+  .path-themes{
+    .container{
+      #main{
+        !*Responsive layout with grid-area*!
+        .section{
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        !*End comment*!
+      }
+    }
+  }
+}
+*/

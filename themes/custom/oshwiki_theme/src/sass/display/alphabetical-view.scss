@@ -108,7 +108,6 @@
         .views-field-url{
           display: flex;
           flex-direction: row-reverse;
-          padding-top: 0.5rem;
           letter-spacing: 0.3px;
           line-height: 29px;
           span{
@@ -150,9 +149,40 @@
           grid-template-areas:
           "alphabet alphabet alphabet alphabet"
           "select-theme alphabetical-content alphabetical-content alphabetical-content";
+          #block-glossaryblock{
+            margin-bottom: 0.5rem;
+          }
         }
         /*End comment*/
       }
     }
   }
 }
+/*
+@media only screen and (min-width: 1600px) {
+  .page-view-alphabetical-view{
+    .container{
+      #main{
+        !*Responsive layout with grid-area*!
+        .section{
+          grid-template-columns: 1.1fr 1fr 1fr 1fr;
+        }
+        !*End comment*!
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .page-view-alphabetical-view{
+    .container{
+      #main{
+        !*Responsive layout with grid-area*!
+        .section{
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        !*End comment*!
+      }
+    }
+  }
+}*/
