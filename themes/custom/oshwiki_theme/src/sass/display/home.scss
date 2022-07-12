@@ -328,9 +328,22 @@
     }
   }
 }
-/*
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 1480px){
   .page-view-frontpage{
+    #main-wrapper{
+      .banner-container-fluid{
+        .section_banner {
+          .container{
+            max-width: 1300px !important;
+            .banner-img{
+              img{
+                max-width: 550px;
+              }
+            }
+          }
+        }
+      }
+    }
     .section_featured_articles{
       & > .container{
         .view-content > .views-view-grid > .row{
@@ -349,4 +362,4 @@
       }
     }
   }
-}*/
+}

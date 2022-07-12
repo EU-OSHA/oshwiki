@@ -180,6 +180,8 @@
   }
 
   .article_references{
+    display: flex;
+    flex-direction: column;
     margin-top: 1.4rem;
     .reference-title{
       @include textFormat(1.4rem, 500, $text-dark-dark-grey);
@@ -197,6 +199,15 @@
         justify-self: start;
         @include textFormat(0.9rem, null, $text-dark-dark-grey);
       }
+    }
+    .showReferences, .hideReferences{
+      display: none;
+      place-self: flex-end;
+    }
+    .btnReferences{
+      border: none;
+      background-color: transparent;
+      @include textFormat(0.9rem, 700, $text-dark-green );
     }
   }
 
@@ -369,6 +380,30 @@
             width: 25%;
           }
         }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1480px) {
+  .node--type-oshwiki-articles{
+    #main{
+      .section{
+        & > .container{
+          max-width: 1480px;
+        }
+      }
+    }
+    .container.oshwiki-article-container{
+      max-width: 1480px;
+      .col-lg-3{
+        flex: 0 0 17%;
+        max-width: 17%;
+      }
+      .col-lg-6{
+        flex: 0 0 66%;
+        max-width: 66%;
       }
     }
   }
