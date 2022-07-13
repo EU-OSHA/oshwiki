@@ -201,6 +201,9 @@ body.scrolldown.user-logged-in{
           align-items: baseline;
           column-gap: 0.2rem;
           margin-bottom: 3.5px;
+          & > span{
+            cursor: pointer;
+          }
           span:first-of-type{
             @include textFormat(1rem, 700, $text-dark-green);
           }

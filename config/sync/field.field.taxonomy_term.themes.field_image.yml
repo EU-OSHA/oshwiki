@@ -1,34 +1,34 @@
-uuid: f2d1ffea-7fe7-46ec-ba09-b91a8037408d
+uuid: d0e5d1b2-ae0c-48f3-aa34-2f1ced096579
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_nace_oshwiki
-    - node.type.oshwiki_articles
-    - taxonomy.vocabulary.nace
+    - field.storage.taxonomy_term.field_image
+    - media.type.image
+    - taxonomy.vocabulary.themes
   module:
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.oshwiki_articles.field_nace_oshwiki
-field_name: field_nace_oshwiki
-entity_type: node
-bundle: oshwiki_articles
-label: Sector
+id: taxonomy_term.themes.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: themes
+label: Image
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:media'
   handler_settings:
     target_bundles:
-      nace: nace
+      image: image
     sort:
-      field: name
-      direction: asc
+      field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

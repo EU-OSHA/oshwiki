@@ -107,7 +107,7 @@ body.node--type-scientific-journal{
     border-radius: 15px 15px 15px 15px;
     background-color: #D5E6E6;
     .select-theme-article-title-box{
-      padding: 0.2rem 0rem 0.2rem 0.5rem;
+      padding: 0.2rem 0rem 0.2rem 1.6rem;
       border-radius: 15px 15px 0px 0px;
       background-color: $bg-dark-green;
       p{
@@ -127,12 +127,16 @@ body.node--type-scientific-journal{
             cursor: pointer;
             display: inline-block;
             position: absolute;
-            top: 30%;
+            top: 6px;
             content: " ";
             width: 13px;
             height: 13px;
-            margin-left: 1rem;
             background: url('../images/green_plus_select_theme.png') no-repeat;
+          }
+          & > li{
+            & > a{
+              margin-left: 20px;
+            }
           }
           .hide-subthemes{
             .facets-widget-{
