@@ -229,6 +229,7 @@
           }
 
           .views-field-field-sections-oshwiki,
+          .views-field-field-introduction-science,
           .views-field-search-api-excerpt{
             @include textFormat(1rem, null, $text-dark-dark-grey);
             letter-spacing: 0.2px;

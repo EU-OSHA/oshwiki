@@ -30,7 +30,6 @@ let menuSM = false;
 
 jQuery(window).on("load",function(){
   checkResponsiveMenu(jQuery(window).width(), menuSM);
-  hideOriginalContentTextAfterSearch();
   /*For the theme page call 'selectThemes' function with ajaxStop*/
   if(!jQuery("body").hasClass("page-view-themes")){
     selectTheme();
@@ -86,7 +85,6 @@ jQuery(document).ready(function($) {
       /*If there are more than 5 references add two buttons, "show" and "hide"*/
       if($(".article_references .references-div").length>5){
         searchAllReferencesDiv("hide");
-        $(".article_references .references-div:last-of-type").after("<button class='btnReferences showReferences'>See all references</button>").after("<button class='btnReferences hideReferences'>See less references</button>");
         $(".showReferences").css("display", "flex");
         $(".showReferences").click(function (){
           searchAllReferencesDiv("show");
@@ -271,15 +269,6 @@ function setParagraphImageTextWidth(){
       jQuery(this).find('.field--name-field-copyrigth').css({"max-width":imageWidth, "width":imageWidth});
       jQuery(this).find('.field--name-field-caption-copyrigth-').css({"max-width":imageWidth, "width":imageWidth});
     })
-  }
-}
-
-/*After searching for content in the General Search, hide the original article description text*/
-function hideOriginalContentTextAfterSearch(){
-  if(jQuery("body").hasClass("page-view-search")){
-    if(jQuery(".block-system-main-block .view-content .views-row").find(".views-field-search-api-excerpt").lenght>0){
-      jQuery(".block-system-main-block .view-content .views-row").find(".views-field-field-sections-oshwiki").hide();
-    }
   }
 }
 

@@ -1963,6 +1963,7 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   color: #449FA2;
 }
 .page-view-search #main .block-system-main-block .view-content .views-row .views-field-field-sections-oshwiki,
+.page-view-search #main .block-system-main-block .view-content .views-row .views-field-field-introduction-science,
 .page-view-search #main .block-system-main-block .view-content .views-row .views-field-search-api-excerpt {
   font-size: 1rem;
   color: #58585A;
@@ -2983,6 +2984,7 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 0.4rem;
 }
 .site-footer section > #block-oshwiki-theme-footer > .navbar-nav ul, .site-footer section > #block-oshwiki-theme-footer > .navbar-nav li {
@@ -3096,10 +3098,14 @@ Show 5th menu option for logged in user*/
 
 /*End comment - hide 6th menu option for anonymus user. Show 5th
 menu option for logged in user*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1480px) {
   .site-footer section > #block-oshwiki-theme-footer > .navbar-nav {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+  .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) {
+    margin-left: auto;
   }
 }
 /* Home page */
