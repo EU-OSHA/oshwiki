@@ -1,0 +1,24 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Рестартирай
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        created:
+          label: Created
+        name:
+          label: Име
+      title: Messages
+      arguments:
+        tjid:
+          exception:
+            title: Всички

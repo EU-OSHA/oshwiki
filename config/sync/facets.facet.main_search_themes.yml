@@ -1,0 +1,60 @@
+uuid: 0c939808-43a5-4ac5-9900-c5bc4335986a
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.oshwiki_index
+    - views.view.search
+  module:
+    - search_api
+id: main_search_themes
+name: 'Search: Themes'
+weight: 0
+min_count: 1
+url_alias: main_search_themes
+facet_source_id: 'search_api:views_page__search__page_1'
+field_identifier: field_themes_oshwiki
+query_operator: or
+hard_limit: 0
+exclude: false
+use_hierarchy: false
+keep_hierarchy_parents_active: false
+hierarchy:
+  type: taxonomy
+  config: {  }
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+widget:
+  type: checkbox
+  config:
+    show_numbers: true
+    soft_limit: 15
+    show_reset_link: true
+    reset_text: 'Show all'
+    hide_reset_when_no_selection: true
+    soft_limit_settings:
+      show_less_label: 'See less'
+      show_more_label: 'See more'
+    disable_autosubmit: 0
+empty_behavior:
+  behavior: none
+only_visible_when_facet_source_is_visible: false
+show_only_one_result: false
+show_title: false
+processor_configs:
+  hierarchy_processor:
+    processor_id: hierarchy_processor
+    weights:
+      build: 100
+    settings: {  }
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }

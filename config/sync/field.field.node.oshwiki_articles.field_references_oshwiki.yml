@@ -1,0 +1,44 @@
+uuid: 3a5fd78f-264e-4cdf-89e0-09af6ecaf239
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_references_oshwiki
+    - node.type.oshwiki_articles
+    - paragraphs.paragraphs_type.references_paragraph
+  module:
+    - entity_reference_revisions
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.oshwiki_articles.field_references_oshwiki
+field_name: field_references_oshwiki
+entity_type: node
+bundle: oshwiki_articles
+label: References
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      references_paragraph: references_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      authors_paragraph:
+        weight: 5
+        enabled: false
+      further_reading_paragraph:
+        weight: 6
+        enabled: false
+      references_paragraph:
+        weight: 7
+        enabled: true
+      sections_paragraph:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

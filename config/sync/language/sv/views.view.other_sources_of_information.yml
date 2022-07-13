@@ -1,0 +1,25 @@
+label: 'Andra informationskällor'
+display:
+  default:
+    display_options:
+      title: 'Andra informationskällor'
+      exposed_form:
+        options:
+          submit_button: Sök
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevans
+        publication_date:
+          expose:
+            label: Publiceringsdag
+        title:
+          expose:
+            label: 'Alfabetisk ordning'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Sök

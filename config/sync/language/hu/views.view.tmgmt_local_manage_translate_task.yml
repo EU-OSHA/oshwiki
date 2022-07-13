@@ -1,0 +1,284 @@
+label: 'Feladatok kezelése'
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Szűrő
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növ
+          sort_desc_label: Csökk
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+          action_title: 'A kiválasztottakkal'
+        title:
+          label: Cím
+          separator: ', '
+        word_count:
+          label: Szavak
+        item_count:
+          label: Tételek
+        progress:
+          label: Feldolgozottság
+  assigned:
+    display_title: Felelős
+    display_options:
+      menu:
+        title: Felelős
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+          action_title: 'A kiválasztottakkal'
+        status:
+          label: Állapot
+          separator: ', '
+        progress:
+          label: Feldolgozottság
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        word_count:
+          label: Szavak
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  closed:
+    display_title: Lezárt
+    display_options:
+      menu:
+        title: Lezárt
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+          action_title: 'A kiválasztottakkal'
+        status:
+          label: Állapot
+          separator: ', '
+        progress:
+          label: Feldolgozottság
+        created:
+          label: Létrehozva
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        word_count:
+          label: Szavak
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  completed:
+    display_title: Teljesítve
+    display_options:
+      menu:
+        title: Teljesítve
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+          action_title: 'A kiválasztottakkal'
+        status:
+          label: Állapot
+          separator: ', '
+        progress:
+          label: Feldolgozottság
+        created:
+          label: Létrehozva
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        word_count:
+          label: Szavak
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  pending:
+    display_title: Függőben
+    display_options:
+      menu:
+        title: Függőben
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+          action_title: 'A kiválasztottakkal'
+        status:
+          label: Állapot
+          format_plural_string: !!binary MQNAY291bnQ=
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        progress:
+          label: Feldolgozottság
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        word_count:
+          label: Szavak
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+          action_title: 'A kiválasztottakkal'
+        status:
+          label: Állapot
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Feldolgozottság
+        created:
+          label: Létrehozva
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        word_count:
+          label: Szavak
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  unassigned:
+    display_options:
+      title: 'Feladatok kezelése'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+          action_title: 'A kiválasztottakkal'
+        status:
+          label: Állapot
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        word_count:
+          label: Szavak
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek

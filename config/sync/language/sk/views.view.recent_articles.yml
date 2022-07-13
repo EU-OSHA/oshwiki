@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Prečítajte si článok'
+      use_more_text: 'Zobraziť všetky'

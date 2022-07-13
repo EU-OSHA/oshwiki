@@ -1,0 +1,246 @@
+display:
+  default:
+    display_title: Peamine
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtreeri
+          reset_button_label: Tühista
+          exposed_sorts_label: 'Sorteerimise alus'
+          sort_asc_label: Kasvav
+          sort_desc_label: Kahanev
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        title:
+          label: Pealkiri
+          separator: ', '
+        item_count:
+          label: Kirjed
+  assigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Pealkiri
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimingud
+      filters:
+        source_language:
+          expose:
+            label: 'Algne keel'
+        uid:
+          expose:
+            label: Teenusepakkuja
+        title:
+          expose:
+            label: Pealkiri
+  closed:
+    display_title: Suletud
+    display_options:
+      menu:
+        title: Suletud
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          separator: ', '
+        created:
+          label: Loodud
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Pealkiri
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimingud
+      filters:
+        source_language:
+          expose:
+            label: 'Algne keel'
+        uid:
+          expose:
+            label: Teenusepakkuja
+        title:
+          expose:
+            label: Pealkiri
+  completed:
+    display_title: Lõpetatud
+    display_options:
+      menu:
+        title: Lõpetatud
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          separator: ', '
+        created:
+          label: Loodud
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Pealkiri
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimingud
+      filters:
+        source_language:
+          expose:
+            label: 'Algne keel'
+        uid:
+          expose:
+            label: Teenusepakkuja
+        title:
+          expose:
+            label: Pealkiri
+  pending:
+    display_title: Ootel
+    display_options:
+      menu:
+        title: Ootel
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          format_plural_string: !!binary MQNAY291bnQ=
+        tuid:
+          separator: ', '
+        title:
+          label: Pealkiri
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimingud
+      filters:
+        source_language:
+          expose:
+            label: 'Algne keel'
+        uid:
+          expose:
+            label: Teenusepakkuja
+        title:
+          expose:
+            label: Pealkiri
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          format_plural_string: !!binary MQNAY291bnQ=
+        created:
+          label: Loodud
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Pealkiri
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimingud
+      filters:
+        source_language:
+          expose:
+            label: 'Algne keel'
+        uid:
+          expose:
+            label: Teenusepakkuja
+        title:
+          expose:
+            label: Pealkiri
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Pealkiri
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        loop_count:
+          separator: ', '
+        operations:
+          label: Toimingud

@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- All -'
+          tags:
+            previous: '‹ previous'
+            first: '« first'
+            last: 'last »'
+      fields:
+        type:
+          label: Type
+  checkout:
+    display_options:
+      fields:
+        type:
+          label: Type

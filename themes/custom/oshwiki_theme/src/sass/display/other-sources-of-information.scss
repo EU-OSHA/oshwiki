@@ -1,0 +1,254 @@
+.page-view-other-sources-of-information{
+  #block-oshwiki-theme-content{
+    .view-filters{
+      .form-row{
+        display: grid;
+        grid-template-areas:
+            "search-input"
+            "search-buttons"
+            "sort-by "
+            "order-by ";
+        justify-content: center;
+        margin-top: 0.7rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .js-form-item-criteria, .js-form-item-sort-by, .js-form-item-sort-order{
+          display: flex;
+          flex-direction: column;
+        }
+        .form-item-criteria{
+          grid-area: search-input;
+          margin-bottom: 1.3rem !important;
+          label{
+            margin-bottom: 0.2rem;
+            @include textFormat(0.9rem, 700, $text-dark-dark-grey);
+          }
+          input{
+            width: 17rem;
+          }
+        }
+        #edit-sort-by{
+          grid-area: sort-by;
+        }
+        .form-item-sort-order{
+          grid-area: order-by;
+        }
+        .form-item-sort-by, .form-item-sort-order{
+          label{
+            margin-bottom: 0.2rem;
+            @include textFormat(0.9rem, 700, $text-dark-dark-grey);
+          }
+          select{
+            padding: 0.3rem 0.3rem 0.3rem 0.75rem;
+            border-radius: 0.25rem;
+            height: 2.5rem;
+            width: 17rem;
+            color: $text-dark-green;
+            border: 1px solid $bg-dark-green;
+            /*Remove default dropdown icon and add new icon*/
+            appearance:none;
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            -ms-appearance:none;
+            background:{
+              image: url(../images/icon-select-green.png);
+              color: $bg-white;
+              repeat: no-repeat;
+              size: 15px;
+              position: 93% 50%;
+            }
+            /*End comment - remove default dropdown icon*/
+          }
+        }
+        .form-actions{
+          display: flex;
+          flex-direction: column;
+          grid-area: search-buttons;
+          gap: 0.5rem;
+          button{
+            padding: 0.3rem 0.8rem;
+            height: 2.5rem;
+            width: 100%;
+            max-width: 17rem;
+          }
+        }
+      }
+    }
+    .view-content{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 1rem;
+      .other-source-container{
+        padding: 1rem 0rem;
+        border-bottom: 1px dotted $bg-dark-medium-grey;
+        .title{
+          a{
+            @include textFormat(1.1rem, 700, $text-dark-orange);
+          }
+        }
+        .theme{
+          align-self: start;
+          padding: 0.3rem 0.7rem;
+          margin: 0.5rem 0rem 0.3rem;
+          width: fit-content;
+          background-color: $bg-dark-orange;
+          border-radius: 20px;
+          @include textFormat(0.9rem, 600, $text-white);
+        }
+        .creation-info{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          .divide{
+            color: $text-dark-orange;
+            margin-bottom: 0rem !important;
+          }
+        }
+        .creation-info,
+        .changed,
+        .introduction{
+          letter-spacing: 0.2px;
+          line-height: 27px;
+        }
+        .creation-info,
+        .changed{
+          @include textFormat(0.9rem, null, $text-dark-dark-grey);
+        }
+        .introduction{
+          @include textFormat(1rem, null, $text-dark-dark-grey);
+        }
+        .url{
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          padding-top: 0.5rem;
+          letter-spacing: 0.3px;
+          line-height: 29px;
+          a {
+            margin-top: 3px;
+            @include textFormat(0.9rem, null, $text-dark-green);
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+          &::before{
+            display: inline-block;
+            content: " ";
+            width: 14px;
+            height: 14px;
+            margin-left: 0.5rem;
+            margin-top: 0.2rem;
+            background: url('../images/green-arrow-thin-.png') no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Responsive design of the search and order box*/
+@media only screen and (min-width: 550px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          grid-template-areas:
+            "search-input search-input"
+            "search-buttons search-buttons"
+            "sort-by order-by";
+          justify-content: start;
+          .form-item-criteria{
+            margin-bottom: 1rem !important;
+            input{
+              height: 2.5rem;
+            }
+          }
+          #edit-actions{
+            margin-bottom: 1rem !important;
+            gap: 0.7rem;
+            button{
+              height: 2.4rem;
+            }
+          }
+          .form-item-sort-by{
+            select{
+              width: 17rem;
+            }
+          }
+          .form-item-sort-order{
+            select{
+              width: 14rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          grid-template-areas:
+            "search-input search-input "
+            "search-buttons search-buttons"
+            "sort-by order-by" ;
+          justify-content: start;
+          .form-actions{
+            flex-direction: row;
+            button:nth-of-type(1){
+              width: 17rem;
+            }
+            button:nth-of-type(2){
+              width: 14rem;
+            }
+          }
+          .form-item-sort-order{
+            select{
+              width: 14rem;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-view-other-sources-of-information{
+    #block-oshwiki-theme-content{
+      .view-filters{
+        .form-row{
+          grid-template-areas:
+            "search-input search-buttons"
+            "sort-by order-by" ;
+          column-gap: 0.3rem;
+          align-items: baseline;
+          .form-item-criteria{
+            input{
+              width: 17rem;
+            }
+          }
+          .form-actions{
+            margin-bottom: 1rem !important;
+            button:nth-of-type(1), button:nth-of-type(2){
+              height: 2.5rem;
+              padding-left: 0rem;
+              margin-right: 0.5rem;
+              width: 14rem;
+            }
+          }
+          #edit-sort-by{
+            width: 17rem;
+          }
+        }
+      }
+    }
+  }
+}
+/*End comment responsive design of the search and order box*/

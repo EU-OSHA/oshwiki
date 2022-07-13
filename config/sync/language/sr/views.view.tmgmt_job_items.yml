@@ -1,0 +1,27 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Сортирај по'
+      fields:
+        state:
+          label: State
+        label:
+          label: Label
+        type:
+          label: Type
+        changed:
+          label: Changed
+        operations:
+          label: Operations
+  checkout:
+    display_title: Checkout
+    display_options:
+      fields:
+        label:
+          label: Label
+        type:
+          label: Type
+        changed:
+          label: Changed

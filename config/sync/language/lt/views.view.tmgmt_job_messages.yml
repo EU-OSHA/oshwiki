@@ -1,0 +1,30 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        created:
+          label: Created
+        label:
+          label: Elementas
+        name:
+          label: Pavadinimas
+      title: Messages
+      arguments:
+        tjid:
+          exception:
+            title: Visi

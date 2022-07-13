@@ -1,0 +1,37 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Рестартирай
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        state:
+          label: State
+        label:
+          label: Label
+        type:
+          label: Type
+        tags_count:
+          label: Tags
+        operations:
+          label: Operations
+      arguments:
+        tjid:
+          exception:
+            title: Всички
+  checkout:
+    display_title: Checkout
+    display_options:
+      fields:
+        label:
+          label: Label
+        type:
+          label: Type

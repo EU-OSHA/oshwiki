@@ -1,0 +1,22 @@
+uuid: 924f0a90-d4e2-4e22-96f4-258235b45845
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - oshwiki_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: oshwiki_theme_help
+theme: oshwiki_theme
+region: content
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

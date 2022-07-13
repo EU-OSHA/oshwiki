@@ -1,0 +1,12 @@
+uuid: 8081ad01-122b-41f6-9c4c-1af3616d8cbd
+langcode: en
+status: true
+dependencies: {  }
+label: Articles
+id: articles_crop
+description: 'Crop for images in the articles'
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

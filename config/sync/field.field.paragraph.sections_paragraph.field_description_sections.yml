@@ -1,0 +1,25 @@
+uuid: c5717dbc-b862-4aab-99f0-b872b57f8de9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_sections
+    - paragraphs.paragraphs_type.sections_paragraph
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.sections_paragraph.field_description_sections
+field_name: field_description_sections
+entity_type: paragraph
+bundle: sections_paragraph
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: 0bd36331-b5e4-42f5-a11c-5d6a88cdef32
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type
+  module:
+    - facets
+    - system
+  theme:
+    - oshwiki_theme
+id: contenttype
+theme: oshwiki_theme
+region: content
+weight: -5
+provider: null
+plugin: 'facet_block:content_type'
+settings:
+  id: 'facet_block:content_type'
+  label: 'Article type'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: contenttype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search

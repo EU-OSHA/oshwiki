@@ -1,0 +1,15 @@
+uuid: 3ac2ed34-b92c-4537-8e84-93fc28e5fa0e
+langcode: en
+status: true
+dependencies: {  }
+name: articles_images
+label: 'Articles images'
+effects:
+  9662dd36-cca7-4cbc-a8cf-1e667e902899:
+    uuid: 9662dd36-cca7-4cbc-a8cf-1e667e902899
+    id: image_scale
+    weight: 1
+    data:
+      width: 1000
+      height: null
+      upscale: true

@@ -1,0 +1,27 @@
+uuid: 9b21b6a1-8785-420c-9018-844ed1cb72da
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.author_otherresourcesinformation.field_more_information
+    - field.field.node.author_otherresourcesinformation.field_organisation
+    - field.field.node.author_otherresourcesinformation.field_position
+    - node.type.author_otherresourcesinformation
+  module:
+    - user
+id: node.author_otherresourcesinformation.teaser
+targetEntityType: node
+bundle: author_otherresourcesinformation
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_more_information: true
+  field_organisation: true
+  field_position: true
+  langcode: true

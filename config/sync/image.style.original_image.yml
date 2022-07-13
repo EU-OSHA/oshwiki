@@ -1,0 +1,17 @@
+uuid: 74330a31-799b-4a47-9379-5de95cddc373
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.original
+  module:
+    - crop
+name: original_image
+label: 'Original image'
+effects:
+  b9068bd9-c302-468d-af7f-806eb3ef17f0:
+    uuid: b9068bd9-c302-468d-af7f-806eb3ef17f0
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: original

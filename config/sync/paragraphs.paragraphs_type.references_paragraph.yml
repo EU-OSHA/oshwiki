@@ -1,0 +1,10 @@
+uuid: 58bc9ff3-a97c-41cf-ac16-cbc7e3c1a03f
+langcode: en
+status: true
+dependencies: {  }
+id: references_paragraph
+label: 'References paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      title: 'Outras fontes de informação'
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+          exposed_sorts_label: 'Ordenar por'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevância
+        publication_date:
+          expose:
+            label: 'Data da Publicação'
+        title:
+          expose:
+            label: 'Por ordem alfabética'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Pesquisar
+label: 'Outras fontes de informação'

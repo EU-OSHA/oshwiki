@@ -1,0 +1,18 @@
+uuid: 95bc5a61-6adf-4f71-91ac-815109dc7c13
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.most_popular_articles
+id: entity_subqueue.most_popular_articles.title
+field_name: title
+entity_type: entity_subqueue
+bundle: most_popular_articles
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

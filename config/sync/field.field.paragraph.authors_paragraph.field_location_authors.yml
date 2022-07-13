@@ -1,0 +1,25 @@
+uuid: 2ca18976-52ec-4762-bec2-8b829c26727e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_location_authors
+    - paragraphs.paragraphs_type.authors_paragraph
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.authors_paragraph.field_location_authors
+field_name: field_location_authors
+entity_type: paragraph
+bundle: authors_paragraph
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

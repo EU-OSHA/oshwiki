@@ -1,0 +1,34 @@
+uuid: c61ed1cd-b6b4-407a-9d67-1adbb3ad1c40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_osh_categories_oshwiki
+    - node.type.oshwiki_articles
+    - taxonomy.vocabulary.osh_categories
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.oshwiki_articles.field_osh_categories_oshwiki
+field_name: field_osh_categories_oshwiki
+entity_type: node
+bundle: oshwiki_articles
+label: 'OSH Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      osh_categories: osh_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

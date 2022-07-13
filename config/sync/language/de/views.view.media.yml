@@ -1,0 +1,66 @@
+label: Medien
+display:
+  default:
+    display_title: Standard
+    display_options:
+      title: Medien
+      fields:
+        media_bulk_form:
+          action_title: Aktion
+        thumbnail__target_id:
+          separator: ', '
+        name:
+          separator: ', '
+        bundle:
+          label: Typ
+          separator: ', '
+        uid:
+          label: Verfasser
+          separator: ', '
+        status:
+          label: Status
+          settings:
+            format_custom_true: Veröffentlicht
+          separator: ', '
+        changed:
+          label: Updated
+          separator: ', '
+        operations:
+          label: Aktionen
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pro Seite'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Versatz
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sortieren nach'
+          sort_asc_label: Aufsteigend
+          sort_desc_label: Absteigend
+      filters:
+        bundle:
+          expose:
+            label: Typ
+        status:
+          expose:
+            label: 'True'
+          group_info:
+            group_items:
+              1:
+                title: Veröffentlicht
+        langcode:
+          expose:
+            label: Language
+  media_page_list:
+    display_title: Medien
+    display_options:
+      menu:
+        title: Medien

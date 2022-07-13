@@ -1,0 +1,168 @@
+.site-footer{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column !important;
+  flex-flow: wrap;
+  column-gap: 2rem;
+  background-color: $bg-light-dark-grey;
+  padding: 0rem;
+  .container{
+    padding-top: 0.5rem;
+  }
+  .copyright-footer{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    @include textFormat(1rem, 700, $text-dark-dark-grey);
+  }
+  .row{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  section{
+    & > #block-oshwiki-theme-footer{
+      padding: 0px;
+      width: 100%;
+      margin: 0.3rem 0rem 1rem;
+      & > .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        ul, li{
+          list-style: none;
+        }
+        ul{
+          padding-left: 0px;
+        }
+        & > li{
+          ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
+          & > span{
+            display: none;
+          }
+        }
+        a{
+          @include textFormat(1rem, null, $text-white);
+          text-decoration: none;
+        }
+        li li:hover{
+          text-decoration: underline;
+        }
+        & > li:first-of-type{
+          .menu{
+            .nav-item{
+              display: flex;
+              align-items: baseline;
+            }
+            .nav-item::after{
+              display: inline;
+              content: "|";
+              margin: 0rem 0.5rem;
+              @include textFormat(1rem, null, $text-white);
+            }
+            .nav-item:nth-of-type(5){
+              display: none;
+            }
+            .nav-item:nth-of-type(6){
+              display: flex;
+            }
+            .nav-item:last-of-type{
+              a{
+                border-right: none;
+              }
+              &::after{
+                display: none;
+              }
+            }
+          }
+        }
+        & > li:nth-of-type(2){
+          .menu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            .nav-item{
+              width: 30px;
+              height: 30px;
+              a{
+                display: none;
+              }
+            }
+            .nav-item{
+              background: {
+                repeat: no-repeat;
+                size: 70%;
+                position: 50% 50%;
+              }
+              cursor: pointer;
+            }
+            /*Social media background images*/
+            .nav-item:first-of-type{
+              background-image: url('../images/icon-twitter-footer.png');
+            }
+            .nav-item:nth-of-type(2){
+              background-image: url('../images/icon-facebook-footer.png');
+            }
+            .nav-item:nth-of-type(3){
+              background-image: url('../images/icon-linkedin-footer.png');
+            }
+            .nav-item:nth-of-type(4){
+              background-image: url('../images/icon-youtube-footer.png');
+            }
+            .nav-item:nth-of-type(5){
+              background-image: url('../images/icon-flickr-footer.png');
+            }
+            .nav-item:nth-of-type(6){
+              background-image: url('../images/icon-slideshare-footer.png');
+            }
+            /*Social media background images*/
+          }
+
+        }
+      }
+    }
+  }
+  .block{
+    border: none;
+    padding: 0rem;
+  }
+}
+
+.removeMarginTop{
+  margin-top: 0rem;
+}
+
+.addMarginTop{
+  margin-top: 1rem;
+}
+/*Hide 6th menu option for anonymus user,
+Show 5th menu option for logged in user*/
+.user-logged-in{
+  .site-footer{
+    section{
+      & > #block-oshwiki-theme-footer{
+        & > .navbar-nav{
+          & > li:first-of-type{
+            .menu{
+              .nav-item:nth-of-type(5){
+                display: flex;
+              }
+              .nav-item:nth-of-type(6){
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*End comment - hide 6th menu option for anonymus user. Show 5th
+menu option for logged in user*/
+
+

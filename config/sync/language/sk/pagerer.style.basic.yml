@@ -1,0 +1,11 @@
+default_config:
+  tags:
+    pages:
+      first_title: 'Prejsť na prvú stranu'
+      previous_title: 'Prejsť na predchádzajúcu stranu'
+      next_title: 'Prejsť na ďalšiu stranu'
+      last_title: 'Prejsť na poslednú stranu'
+      next_reader: 'Ďalšia strana'
+      last_reader: 'Posledná strana'
+    items:
+      first_reader: 'Prvá položka'

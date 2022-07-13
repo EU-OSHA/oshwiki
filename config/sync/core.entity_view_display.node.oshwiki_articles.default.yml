@@ -1,0 +1,149 @@
+uuid: e685d2bf-9b63-4418-8cc9-6eb48d192a24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oshwiki_articles.field_authors_oshwiki
+    - field.field.node.oshwiki_articles.field_authorstxt_oshwiki
+    - field.field.node.oshwiki_articles.field_contributors_oshwiki
+    - field.field.node.oshwiki_articles.field_further_reading_oshwiki
+    - field.field.node.oshwiki_articles.field_image_oshwiki
+    - field.field.node.oshwiki_articles.field_nace_oshwiki
+    - field.field.node.oshwiki_articles.field_nace_tax_old
+    - field.field.node.oshwiki_articles.field_one_language_available
+    - field.field.node.oshwiki_articles.field_osh_categories_oshwiki
+    - field.field.node.oshwiki_articles.field_osh_tax_old
+    - field.field.node.oshwiki_articles.field_oshwiki_link
+    - field.field.node.oshwiki_articles.field_references_oshwiki
+    - field.field.node.oshwiki_articles.field_sections_oshwiki
+    - field.field.node.oshwiki_articles.field_theme_representative
+    - field.field.node.oshwiki_articles.field_themes_oshwiki
+    - node.type.oshwiki_articles
+  module:
+    - entity_reference_revisions
+    - user
+id: node.oshwiki_articles.default
+targetEntityType: node
+bundle: oshwiki_articles
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_authors_oshwiki:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_authorstxt_oshwiki:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_contributors_oshwiki:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_further_reading_oshwiki:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_nace_oshwiki:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_one_language_available:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_osh_categories_oshwiki:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_oshwiki_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_references_oshwiki:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_sections_oshwiki:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_theme_representative:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_themes_oshwiki:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_image_oshwiki: true
+  field_nace_tax_old: true
+  field_osh_tax_old: true
+  langcode: true
+  search_api_excerpt: true

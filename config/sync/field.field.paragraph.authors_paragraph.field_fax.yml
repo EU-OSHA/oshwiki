@@ -1,0 +1,24 @@
+uuid: 88a83d08-543e-4df1-a23c-a459f495bd07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fax
+    - paragraphs.paragraphs_type.authors_paragraph
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.authors_paragraph.field_fax
+field_name: field_fax
+entity_type: paragraph
+bundle: authors_paragraph
+label: Fax
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

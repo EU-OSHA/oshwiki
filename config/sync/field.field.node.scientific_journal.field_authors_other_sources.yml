@@ -1,0 +1,34 @@
+uuid: 99725b60-1f90-4c8a-937f-8b2b1bfa497a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authors_other_sources
+    - node.type.author_otherresourcesinformation
+    - node.type.scientific_journal
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.scientific_journal.field_authors_other_sources
+field_name: field_authors_other_sources
+entity_type: node
+bundle: scientific_journal
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      author_otherresourcesinformation: author_otherresourcesinformation
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

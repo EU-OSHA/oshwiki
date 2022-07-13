@@ -1,0 +1,10 @@
+uuid: ec4b3d64-ed2f-4207-baeb-49ec0cbb4a50
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.paragraph_search_result
+label: 'Paragraph Search Result'
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,19 @@
+display:
+  default:
+    display_title: 'E Paracaktuar'
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Rifillo
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        operations:
+          label: Operations
+  page_1:
+    display_title: Faqe

@@ -1,0 +1,252 @@
+display:
+  default:
+    display_title: Peamine
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtreeri
+          reset_button_label: Tühista
+          exposed_sorts_label: 'Sorteerimise alus'
+          sort_asc_label: Kasvav
+          sort_desc_label: Kahanev
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        title:
+          label: Nimetus
+          separator: ', '
+        item_count:
+          label: Kirjed
+      filters:
+        status:
+          expose:
+            label: Olek
+  closed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Nimetus
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        operations:
+          label: Toimingud
+      filters:
+        status:
+          expose:
+            label: Olek
+        source_language:
+          expose:
+            label: 'Algne keel'
+        title:
+          expose:
+            label: Nimetus
+      menu:
+        title: Suletud
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Nimetus
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        operations:
+          label: Toimingud
+      filters:
+        status:
+          expose:
+            label: Olek
+        source_language:
+          expose:
+            label: 'Algne keel'
+        title:
+          expose:
+            label: Nimetus
+      menu:
+        title: Lõpetatud
+  eligible:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Nimetus
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        operations:
+          label: Toimingud
+      filters:
+        status:
+          expose:
+            label: Olek
+        source_language:
+          expose:
+            label: 'Algne keel'
+        title:
+          expose:
+            label: Nimetus
+  my_tasks:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+        title:
+          label: Nimetus
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        operations:
+          label: Toimingud
+      filters:
+        status:
+          expose:
+            label: Olek
+        source_language:
+          expose:
+            label: 'Algne keel'
+        title:
+          expose:
+            label: Nimetus
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          separator: ', '
+        title:
+          label: Nimetus
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        operations:
+          label: Toimingud
+      filters:
+        status:
+          expose:
+            label: Olek
+        source_language:
+          expose:
+            label: 'Algne keel'
+        title:
+          expose:
+            label: Nimetus
+      menu:
+        title: Ootel
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Nimetus
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        operations:
+          label: Toimingud
+      filters:
+        status:
+          expose:
+            label: Olek
+        source_language:
+          expose:
+            label: 'Algne keel'
+        title:
+          expose:
+            label: Nimetus
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massuuendus
+        status:
+          label: Olek
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Nimetus
+          separator: ', '
+        source_language:
+          label: Kellelt
+          separator: ', '
+        target_language:
+          label: Kellele
+          separator: ', '
+        item_count:
+          label: Kirjed
+        operations:
+          label: Toimingud
+      filters:
+        status:
+          expose:
+            label: Olek
+      tab_options:
+        title: Tõlge

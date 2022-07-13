@@ -1,0 +1,25 @@
+uuid: b7244115-22b4-4aa6-84c4-44f9ee1fd7eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_information
+    - node.type.author_otherresourcesinformation
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.author_otherresourcesinformation.field_more_information
+field_name: field_more_information
+entity_type: node
+bundle: author_otherresourcesinformation
+label: 'More information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

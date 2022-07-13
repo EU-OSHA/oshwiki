@@ -1,0 +1,45 @@
+uuid: 56d9d153-cc9a-48c2-93d8-d2c5db7300aa
+langcode: en
+status: false
+dependencies: {  }
+id: staging
+label: Staging
+description: ''
+weight: 0
+folder: sites/oshwiki/config/staging
+module:
+  authorization: 0
+  authorization_drupal_roles: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  osha_import_export: 0
+  externalauth: 10
+theme: {  }
+blacklist:
+  - ldap_authentication.settings
+  - ldap_servers.settings
+  - ldap_user.settings
+  - migrate_drupal.settings
+  - migrate_plus.migration.import_crm_advisorygroups_agcp
+  - migrate_plus.migration.import_crm_advisorygroups_prag
+  - migrate_plus.migration.import_crm_advisorygroups_wesag
+  - migrate_plus.migration.import_crm_board
+  - migrate_plus.migration.import_crm_bureauforweb
+  - migrate_plus.migration.import_crm_focalpoints
+  - migrate_plus.migration.import_oshwiki_articles_further_parag
+  - migrate_plus.migration.import_oshwiki_articles_references_parag
+  - migrate_plus.migration.import_oshwiki_articles_sections_parag
+  - migrate_plus.migration_group.default
+  - migrate_plus.migration_group.osha_import_export
+  - migrate_plus.migration.import_crm_advisorygroups
+graylist:
+  - search_api.server.solr
+graylist_dependents: false
+graylist_skip_equal: true

@@ -1,0 +1,22 @@
+uuid: 112f0313-e320-4421-87a5-3647c7dd658e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: scientific_journals
+label: 'Scientific journals'
+type: 'canonical_entities:node'
+pattern: '/other-sources-of-information/[node:title]'
+selection_criteria:
+  ddf61644-11c4-411c-adfa-e7b967d3b686:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ddf61644-11c4-411c-adfa-e7b967d3b686
+    context_mapping:
+      node: node
+    bundles:
+      scientific_journal: scientific_journal
+selection_logic: and
+weight: -5
+relationships: {  }

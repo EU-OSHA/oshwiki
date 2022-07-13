@@ -1,0 +1,107 @@
+uuid: c420af60-0dba-419e-a9a3-3c8227389525
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.scientific_journal.field_article_science
+    - field.field.node.scientific_journal.field_authors_other_sources
+    - field.field.node.scientific_journal.field_authors_science
+    - field.field.node.scientific_journal.field_image_science
+    - field.field.node.scientific_journal.field_introduction_science
+    - field.field.node.scientific_journal.field_issue_science
+    - field.field.node.scientific_journal.field_pdf_science
+    - field.field.node.scientific_journal.field_published_date_science
+    - field.field.node.scientific_journal.field_themes_science
+    - field.field.node.scientific_journal.field_volume_science
+    - field.field.node.scientific_journal.field_year_science
+    - node.type.scientific_journal
+  module:
+    - file
+    - image
+    - text
+    - user
+id: node.scientific_journal.default
+targetEntityType: node
+bundle: scientific_journal
+mode: default
+content:
+  field_authors_other_sources:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_image_science:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_introduction_science:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_issue_science:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pdf_science:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_themes_science:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_volume_science:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_year_science:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  addtoany: true
+  field_article_science: true
+  field_authors_science: true
+  field_published_date_science: true
+  langcode: true
+  search_api_excerpt: true

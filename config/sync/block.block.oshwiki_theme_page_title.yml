@@ -1,0 +1,20 @@
+uuid: 8b0c947b-b692-4d5d-9d92-7099d416a9f5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oshwiki_theme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: oshwiki_theme_page_title
+theme: oshwiki_theme
+region: banner_oshwiki
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

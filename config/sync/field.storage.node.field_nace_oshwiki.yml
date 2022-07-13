@@ -1,0 +1,20 @@
+uuid: ca058d6b-0d50-4047-8284-8968281d561c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_nace_oshwiki
+field_name: field_nace_oshwiki
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

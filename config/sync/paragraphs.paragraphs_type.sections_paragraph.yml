@@ -1,0 +1,10 @@
+uuid: ee37d4fc-541d-4fb8-9375-2e3460b0bd43
+langcode: en
+status: true
+dependencies: {  }
+id: sections_paragraph
+label: 'Sections paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: 90d1bcd9-607b-4281-baf9-2c55a267a032
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.author_otherresourcesinformation
+id: node.author_otherresourcesinformation.promote
+field_name: promote
+entity_type: node
+bundle: author_otherresourcesinformation
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

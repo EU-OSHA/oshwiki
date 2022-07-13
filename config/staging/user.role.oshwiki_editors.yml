@@ -1,0 +1,99 @@
+uuid: 638e82f0-d4f5-4b07-be7f-09fc1f0df293
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.image_caption
+    - media.type.remote_video
+    - media.type.video
+    - node.type.author_otherresourcesinformation
+    - node.type.authors_content
+    - node.type.contributors_content
+    - node.type.oshwiki_articles
+    - node.type.scientific_journal
+    - taxonomy.vocabulary.nace
+    - taxonomy.vocabulary.osh_categories
+    - taxonomy.vocabulary.reference
+    - taxonomy.vocabulary.themes
+    - workflows.workflow.oshwiki_articles
+  module:
+    - content_moderation
+    - content_translation
+    - entityqueue
+    - media
+    - node
+    - paragraphs
+    - quickedit
+    - taxonomy
+    - tmgmt
+id: oshwiki_editors
+label: OSHWIKI_Editors
+weight: 5
+is_admin: null
+permissions:
+  - 'access in-place editing'
+  - 'access user profiles'
+  - 'administer taxonomy'
+  - 'create audio media'
+  - 'create author_otherresourcesinformation content'
+  - 'create authors_content content'
+  - 'create contributors_content content'
+  - 'create document media'
+  - 'create image media'
+  - 'create image_caption media'
+  - 'create oshwiki_articles content'
+  - 'create remote_video media'
+  - 'create scientific_journal content'
+  - 'create terms in nace'
+  - 'create terms in osh_categories'
+  - 'create terms in reference'
+  - 'create terms in themes'
+  - 'create translation jobs'
+  - 'create video media'
+  - 'delete media'
+  - 'delete own audio media'
+  - 'delete own author_otherresourcesinformation content'
+  - 'delete own authors_content content'
+  - 'delete own contributors_content content'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own image_caption media'
+  - 'delete own oshwiki_articles content'
+  - 'delete own remote_video media'
+  - 'delete own scientific_journal content'
+  - 'delete own video media'
+  - 'delete terms in reference'
+  - 'edit own audio media'
+  - 'edit own author_otherresourcesinformation content'
+  - 'edit own authors_content content'
+  - 'edit own contributors_content content'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own image_caption media'
+  - 'edit own oshwiki_articles content'
+  - 'edit own remote_video media'
+  - 'edit own scientific_journal content'
+  - 'edit own video media'
+  - 'edit terms in nace'
+  - 'edit terms in osh_categories'
+  - 'edit terms in reference'
+  - 'edit terms in themes'
+  - 'submit translation jobs'
+  - 'translate oshwiki_articles node'
+  - 'translate paragraph'
+  - 'update featured_articles entityqueue'
+  - 'update media'
+  - 'update most_popular_articles entityqueue'
+  - 'update other_sources_of_information entityqueue'
+  - 'use oshwiki_articles transition create_new_draft'
+  - 'use oshwiki_articles transition publish'
+  - 'view author_otherresourcesinformation revisions'
+  - 'view authors_content revisions'
+  - 'view contributors_content revisions'
+  - 'view oshwiki_articles revisions'
+  - 'view own unpublished content'
+  - 'view scientific_journal revisions'
+  - 'view unpublished paragraphs'

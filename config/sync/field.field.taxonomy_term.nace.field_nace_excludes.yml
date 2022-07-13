@@ -1,0 +1,24 @@
+uuid: 7d7b10cf-851d-44a7-97ff-186bdeed196f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_nace_excludes
+    - taxonomy.vocabulary.nace
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: taxonomy_term.nace.field_nace_excludes
+field_name: field_nace_excludes
+entity_type: taxonomy_term
+bundle: nace
+label: Excludes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

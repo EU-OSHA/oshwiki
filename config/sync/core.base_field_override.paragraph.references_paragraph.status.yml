@@ -1,0 +1,22 @@
+uuid: fba23344-1fa0-4675-9831-bb7759e6ed0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.references_paragraph
+id: paragraph.references_paragraph.status
+field_name: status
+entity_type: paragraph
+bundle: references_paragraph
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

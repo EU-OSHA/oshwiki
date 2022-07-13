@@ -1,0 +1,34 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        type:
+          label: Type
+        tags_count:
+          label: Tags
+        operations:
+          label: Operations
+      arguments:
+        tjid:
+          exception:
+            title: Alle
+  checkout:
+    display_title: Checkout
+    display_options:
+      fields:
+        type:
+          label: Type

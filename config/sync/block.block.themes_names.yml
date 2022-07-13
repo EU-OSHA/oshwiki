@@ -1,0 +1,29 @@
+uuid: eae80c54-9aff-4810-ac08-b91b11958aab
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.theme_names
+  module:
+    - facets
+    - system
+  theme:
+    - oshwiki_theme
+id: themes_names
+theme: oshwiki_theme
+region: content
+weight: -7
+provider: null
+plugin: 'facet_block:theme_names'
+settings:
+  id: 'facet_block:theme_names'
+  label: 'Select theme'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: themes_names
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /alphabetical-view

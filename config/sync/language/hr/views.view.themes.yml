@@ -1,0 +1,22 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'Ponovno postavi'
+          exposed_sorts_label: 'Razvrstaj po'
+          sort_desc_label: Opis
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Važnost
+        created:
+          expose:
+            label: 'Datum objave'
+  page_2:
+    display_title: Najnovije
+    display_options:
+      title: Najnovije
+  default:
+    display_options:
+      title: Teme

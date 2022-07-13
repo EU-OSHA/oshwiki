@@ -1,0 +1,11 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Bladsy
+      first_title: 'Gaan na eerste bladsy'
+      previous_title: 'Gaan na vorige bladsy'
+      next_title: 'Gaan na volgende bladsy'
+      last_title: 'Gaan na laaste bladsy'
+    items:
+      prefix_label: Item
+      first_reader: 'Eerste item'

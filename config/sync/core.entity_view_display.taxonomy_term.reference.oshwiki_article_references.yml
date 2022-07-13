@@ -1,0 +1,24 @@
+uuid: 34fca6d6-0819-448a-98ec-24891fb73264
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.oshwiki_article_references
+    - taxonomy.vocabulary.reference
+  module:
+    - text
+id: taxonomy_term.reference.oshwiki_article_references
+targetEntityType: taxonomy_term
+bundle: reference
+mode: oshwiki_article_references
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,32 @@
+uuid: bb498ae5-294e-473b-909f-dbbcb791afe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.translatable_node.body
+    - node.type.translatable_node
+  module:
+    - text
+    - user
+  enforced:
+    module:
+      - tmgmt_demo
+_core:
+  default_config_hash: ITZshuuuGlLhdjq7vk-oYbcZPWIUgGQ3OaayY6XXP4A
+id: node.translatable_node.default
+targetEntityType: node
+bundle: translatable_node
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

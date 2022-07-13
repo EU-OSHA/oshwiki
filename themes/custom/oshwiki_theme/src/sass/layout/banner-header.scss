@@ -1,0 +1,354 @@
+/* Sticky menu */
+#header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.6s linear;
+  background: white;
+  top: 0;
+}
+
+body.user-logged-in{
+  #header {
+    top: 39px !important;
+  }
+}
+
+body.scrollup{
+  &.scrolled{
+    #header{
+      z-index: 2;
+      transition: top 0.6s linear;
+      top: 0px !important;
+    }
+  }
+}
+
+body.scrollup.user-logged-in{
+  &.scrolled{
+    #header{
+      width: 100%;
+      z-index: 2;
+      transition: top 0.6s linear;
+      top: 79px !important;
+    }
+  }
+}
+
+body.scrolldown.user-logged-in{
+  #header{
+    position: fixed;
+    top: -23rem !important;
+    transition: all 0.6s;
+    z-index: 2;
+  }
+}
+
+body.scrolldown{
+  #header{
+    position: fixed;
+    top: -23rem !important;
+    transition: all 0.6s;
+    z-index: 10;
+    width: 100%;
+  }
+}
+
+/*Change this 4 values - the difference between logged user and anonymous user*/
+body{
+  padding-top: 127px ;
+}
+body.user-logged-in{
+  padding-top: 166px !important;
+}
+
+body.scrolldown{
+  padding-top: 155px;
+}
+
+body.scrolldown.user-logged-in{
+  padding-top: 211px ;
+}
+/* End comment - sticky menu */
+
+.top-header-container.container{
+  max-width: 100%;
+}
+.top-header-container{
+  .header-logo{
+    display: flex;
+    align-items: center;
+    section{
+      .logo-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        &>div{
+          padding: 0rem 1rem;
+        }
+        div:first-child, div:nth-child(2){
+          img{
+            width:inherit;
+            object-fit: contain;
+          }
+        }
+        .logo-oshwiki{
+          border-right: 2px solid $bg-light-dark-grey;
+        }
+      }
+    }
+  }
+  .top-header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 1rem 2rem 1rem 1rem;
+    .push-right{
+      .wrapper-two-columns-header{
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        .header-language-search > section{
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+          /*Search box*/
+          .search-block-form{
+            padding: 0;
+            .form-row>fieldset, .form-row>div{
+              padding: 0rem;
+              margin: 0rem !important;
+            }
+            input, button{
+              height: 1.5rem;
+            }
+            button{
+              font-size: 0.9rem;
+            }
+            input{
+              padding: 0.9rem 0.4rem;
+              width: 10rem;
+              background-color: $bg-light-medium-grey;
+              border-radius: 0px;
+              color: $text-white;
+              border: 1px solid $bg-light-medium-grey;
+              font-size: 1rem;
+              &:focus{
+                box-shadow: none;
+              }
+            }
+            .js-form-submit{
+              width: 25px;
+              margin: 0rem 0.5rem;
+              padding-bottom: 1.3rem;
+              border: none;
+              color: transparent;
+              background: {
+                color: transparent;
+                image: url('../images/icon-search.png');
+                repeat: no-repeat;
+                size: 1.5rem;
+              }
+            }
+          }
+          #search-block-form{
+            padding: 0px 5px;
+          }
+          /*Dropdown*/
+          form#lang_dropdown_form_lang-dropdown-form{
+            display: flex;
+            justify-content: flex-end;
+            fieldset{
+              margin-bottom: 0.75rem!important;
+              select#edit-lang-dropdown-select{
+                width: 10rem !important;
+                padding: 0.2rem 0.4rem;
+                /*Remove default dropdown icon and add new icon*/
+                appearance:none;
+                -webkit-appearance:none;
+                -moz-appearance:none;
+                -ms-appearance:none;
+                background:{
+                  image: url(../images/icon-select.png);
+                  repeat: no-repeat;
+                  size: 9%;
+                  position: 94% 50%;
+                }
+                /*End comment - remove default dropdown icon*/
+              }
+            }
+              &::after{
+              display: inline-block;
+              content: " ";
+              width: 25px;
+              height: 25px;
+              margin: 0.2rem 0.5rem;
+              background: {
+                image: url('../images/icon-globe.png');
+                repeat: no-repeat;
+                size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+      .content-first-row{
+        display: flex;
+        flex-direction: column-reverse;
+        .font-size-print{
+          display: flex;
+          align-items: baseline;
+          column-gap: 0.2rem;
+          margin-bottom: 3.5px;
+          span:first-of-type{
+            @include textFormat(1rem, 700, $text-dark-green);
+          }
+          span:nth-of-type(2){
+            @include textFormat(1.5rem, 700, $text-dark-green);
+          }
+          span:last-of-type{
+            @include textFormat(2rem, 700, $text-dark-green);
+          }
+          .print-friendly{
+            margin-left: 0.4rem;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/Icon-awesome-print.svg");
+          }
+        }
+      }
+    }
+  }
+}
+
+.bg-image-banner{
+  @include dimensions(max-content, 100%);
+  background: {
+    image: url('../images/background-green.png');
+    position: center;
+    size: cover;
+  }
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 1rem 0rem;
+
+  .block-page-title-block{
+    width: 100%;
+    h1{
+      @include textFormat(2rem, null, $text-white);
+    }
+  }
+}
+
+/*Different banner image for the scientific-journal*/
+.node--type-scientific-journal, .page-view-other-sources-of-information{
+  .bg-image-banner{
+    background-image: url('../images/background-orange.png');
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /*Edit the orange line under nav element of menu*/
+  .content-main-menu{
+    ul{
+      .active:after{
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .top-header-container{
+    .top-header-content{
+      padding: 0.5rem 0.5rem;
+    }
+  }
+  .content-main-menu{
+    .responsive-menu-oshwiki{
+      /*Search box*/
+      .search-block-form{
+        input{
+          width: 5rem;
+        }
+      }
+      /*Dropdown*/
+      form#lang_dropdown_form_lang-dropdown-form{
+        fieldset{
+          select#edit-lang-dropdown-select{
+            width: 5rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px){
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body{
+    padding-top: 142px;
+  }
+
+  body.user-logged-in{
+    padding-top: 180px !important;
+  }
+  /* End comment - sticky menu */
+
+  .bg-image-banner{
+    .block-page-title-block{
+      h1{
+        @include textFormat(2.3rem, null, $text-white);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px){
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body{
+    padding-top: 165px ;
+  }
+
+  body.user-logged-in{
+    padding-top: 205px !important;
+  }
+
+  /* End comment - sticky menu */
+}
+
+@media only screen and (min-width: 700px){
+  /*Change this  values for the sticky menu - the difference between logged user and anonymous user*/
+  body{
+    padding-top: 180px;
+  }
+
+  body.user-logged-in{
+    padding-top: 220px !important;
+  }
+  /* End comment - sticky menu */
+}
+
+@media only screen and (min-width: 576px) and  (max-width: 992px) {
+  .top-header-container{
+    section{
+      .logo-wrapper{
+        &>div{
+          padding: 0rem 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .content-main-menu{
+    .responsive-menu-oshwiki{
+      #search-icon-responsive{
+        display: none;
+      }
+    }
+  }
+}

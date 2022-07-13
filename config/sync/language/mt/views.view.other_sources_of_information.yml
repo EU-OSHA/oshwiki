@@ -1,0 +1,40 @@
+label: 'Sorsi oħra ta’ informazzjoni'
+display:
+  default:
+    display_options:
+      title: 'Sorsi oħra ta’ informazzjoni'
+      fields:
+        field_year_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+        field_volume_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+        field_issue_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+        field_article_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+      exposed_form:
+        options:
+          submit_button: Fittex
+          sort_desc_label: Deskrizzjoni
+          exposed_sorts_label: 'Agħżel skont'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Rilevanza
+        publication_date:
+          expose:
+            label: 'Data tal-pubblikazzjoni'
+        title:
+          expose:
+            label: Alfabetikament
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Fittex

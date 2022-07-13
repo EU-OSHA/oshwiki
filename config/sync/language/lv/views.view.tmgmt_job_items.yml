@@ -1,0 +1,47 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+      fields:
+        state:
+          label: State
+        label:
+          label: Label
+        type:
+          label: Type
+        tags_count:
+          label: Tags
+        changed:
+          label: Changed
+        operations:
+          label: Operations
+      arguments:
+        tjid:
+          exception:
+            title: Visi
+  checkout:
+    display_title: Checkout
+    display_options:
+      fields:
+        label:
+          label: Label
+        type:
+          label: Type
+        changed:
+          label: Changed
+  submitted:
+    display_title: Submitted

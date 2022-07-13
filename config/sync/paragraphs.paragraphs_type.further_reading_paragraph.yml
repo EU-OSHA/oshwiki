@@ -1,0 +1,10 @@
+uuid: dfea16b7-5a7f-4ed6-8c46-10b3fcd54ce4
+langcode: en
+status: true
+dependencies: {  }
+id: further_reading_paragraph
+label: 'Further Reading Paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: 92238e06-f344-48c0-9ae7-697513d30b91
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.osh_categories
+id: taxonomy_term.osh_categories.status
+field_name: status
+entity_type: taxonomy_term
+bundle: osh_categories
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

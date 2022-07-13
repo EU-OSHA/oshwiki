@@ -1,0 +1,20 @@
+uuid: ac583629-84fd-4ee0-a9d1-75ff19b6cb80
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.authors_content
+  module:
+    - path
+id: node.authors_content.path
+field_name: path
+entity_type: node
+bundle: authors_content
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

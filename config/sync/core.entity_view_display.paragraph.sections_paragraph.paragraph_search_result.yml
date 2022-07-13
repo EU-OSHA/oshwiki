@@ -1,0 +1,45 @@
+uuid: cb960d5b-e11e-4337-97be-f8c2f8ac9a12
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraph_search_result
+    - field.field.paragraph.sections_paragraph.field_description_sections
+    - field.field.paragraph.sections_paragraph.field_media
+    - field.field.paragraph.sections_paragraph.field_title_sections
+    - paragraphs.paragraphs_type.sections_paragraph
+  module:
+    - ds
+    - text
+id: paragraph.sections_paragraph.paragraph_search_result
+targetEntityType: paragraph
+bundle: sections_paragraph
+mode: paragraph_search_result
+content:
+  field_description_sections:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: oshwiki_images
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    weight: 2
+    region: content
+  field_title_sections:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

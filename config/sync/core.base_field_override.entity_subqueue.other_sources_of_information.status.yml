@@ -1,0 +1,22 @@
+uuid: 1a7e5347-585e-4754-aa5e-0c8c8866ae55
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.other_sources_of_information
+id: entity_subqueue.other_sources_of_information.status
+field_name: status
+entity_type: entity_subqueue
+bundle: other_sources_of_information
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

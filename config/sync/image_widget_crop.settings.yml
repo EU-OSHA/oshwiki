@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: UYGkeE2iH3UGp9lBPsELb3VSgHz9vkMJeaGzcYwE7Uw
+settings:
+  library_url: 'https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.js'
+  css_url: 'https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.css'
+  crop_preview_image_style: home_news
+  crop_list:
+    custom_crop_: custom_crop_
+  crop_types_required:
+    custom_crop_: custom_crop_
+  warn_multiple_usages: false
+  show_default_crop: true
+  show_crop_area: true
+  notify_apply: true
+  notify_update: true

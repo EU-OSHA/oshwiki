@@ -1,0 +1,70 @@
+label{
+  color: $text-dark-dark-grey;
+}
+
+.form-control:focus{
+  border-color: $bg-light-green;
+  box-shadow: 0 0 0 0.2rem $bg-light-green;
+}
+.form-control::placeholder{
+  color: $text-white;
+}
+
+select{
+  color: $text-white;
+  border: $bg-light-green;
+  background: $bg-dark-green;
+  cursor: pointer;
+  option{
+    color: $text-dark-green;
+    background: $bg-white;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &:focus{
+      color: $text-dark-green;
+      background: $bg-white;
+    }
+  }
+}
+
+/*Avoid the "x" in the search inputs*/
+input[type="search" i]:enabled:read-write:-webkit-any(:focus,:hover)::-webkit-search-cancel-button {
+  display: none;
+}
+
+/*Log in form*/
+.page-user-login{
+  #block-oshwiki-theme-content{
+    & > div{
+      display: flex;
+      justify-content: start;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-user-login{
+    #block-oshwiki-theme-content{
+      & > div{
+        display: flex;
+        justify-content: start;
+        form{
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page-user-login{
+    #block-oshwiki-theme-content{
+      & > div{
+        form{
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+/*End log in form*/

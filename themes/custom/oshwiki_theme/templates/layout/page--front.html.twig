@@ -1,0 +1,96 @@
+{% extends "page.html.twig" %}
+
+{% block content %}
+  <div id="main">
+    <!-- BANNER -->
+    <div class="container-fluid banner-container-fluid">
+      <section class="section section_banner">
+        <div class="container">
+          <div>
+            <h1>{{ 'Welcome to ' | trans }} <span><strong>{{ 'OSHWiki' | trans }}</strong></span></h1>
+            <p>{{ 'the free Occupational Safety and Health encyclopedia' | trans }}</p>
+            <div class="home-banner-search">
+              {{ drupal_entity('block', 'oshwiki_theme_search', check_access=false) }}
+              <a href="/search" class="home-advanced-search"> {{ 'Advanced search' | trans }}</a>
+            </div>
+          </div>
+          <div class="banner-img">
+            <img src="/{{ directory }}/images/Home-header.png" alt="{{ 'Safety at work' |trans}}"/>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- END BANNER -->
+    <!-- SELECT THEME -->
+    <div class="container-fluid select-theme-container-fluid">
+      <section class="section">
+        <div class="container">
+          <p class="home-text">
+            {{ 'The contents of <strong>OSHwiki</strong> are organised in different themes and subthemes' | trans }}
+          </p>
+          <div class="select-theme">
+            <div class="select-theme-article-home-title-box">
+              <p>{{ 'Select theme' | trans }}</p>
+            </div>
+            <div class="select-theme-article-home-content-box">
+              {{ drupal_block('facet_block:themes_normal_search_themes') }}
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--END SELECT THEME -->
+    <!--FEATURED ARTICLES -->
+    {% set viewAdditional = drupal_view('featured_articles', 'block_1')|render  %}
+    {%  if viewAdditional|striptags|trim %}
+      <div class="container-fluid">
+        <section class="section section_featured_articles">
+          <div class="container">
+              <h2>{{ 'Featured articles' | trans }}</h2>
+              {{  drupal_view ('featured_articles', 'block_1')}}
+          </div>
+        </section>
+      </div>
+    {% endif %}
+    <!--END FEATURED ARTICLES -->
+    <!--MOST POPULAR -->
+    {% set viewAdditional = drupal_block('views_block:most_popular_articles-block_1')|render  %}
+    {%  if viewAdditional|striptags|trim %}
+      <div class="container-fluid">
+        <section class="section section_most_popular">
+          <div class="container">
+              <h2>{{ 'Most popular' | trans }}</h2>
+              {{ drupal_block('views_block:most_popular_articles-block_1') }}
+          </div>
+        </section>
+      </div>
+    {% endif %}
+    <!--END MOST POPULAR -->
+    <!--MOST RECENT -->
+    {% set viewAdditional = drupal_block('views_block:recent_articles-block_1')|render  %}
+    {%  if viewAdditional|striptags|trim %}
+      <div class="container-fluid">
+        <section class="section section_most_recent">
+          <div class="container">
+            <h2>{{ 'Most recent' | trans }}</h2>
+            {{ drupal_block('views_block:recent_articles-block_1') }}
+          </div>
+        </section>
+      </div>
+    {% endif %}
+    <!--END MOST RECENT -->
+    <!--OTHER SOURCES OF INFORMATION -->
+    {% set viewAdditional = drupal_block('views_block:other_sources_of_information_home_-block_1')|render  %}
+    {%  if viewAdditional|striptags|trim %}
+      <div class="container-fluid other-sources-content-fluid">
+        <section class="section section_other_sources">
+          <div class="container">
+            <h2>{{ 'Other sources of information' | trans }}</h2>
+            {{ drupal_block('views_block:other_sources_of_information_home_-block_1') }}
+          </div>
+        </section>
+      </div>
+    {% endif %}
+    <!--END OTHER SOURCES OF INFORMATION -->
+  </div>
+{% endblock %}
+

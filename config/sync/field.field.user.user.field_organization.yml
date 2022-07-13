@@ -1,0 +1,24 @@
+uuid: d8191faf-1fcb-4443-99a8-ea9b745ccb6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organization
+  module:
+    - tmgmt_content
+    - user
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: user.user.field_organization
+field_name: field_organization
+entity_type: user
+bundle: user
+label: Organization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

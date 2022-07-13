@@ -1,0 +1,15 @@
+uuid: f1f3e577-7a51-4125-8549-e55a90afc064
+langcode: en
+status: true
+dependencies: {  }
+name: 1000x1000
+label: 1000x1000
+effects:
+  dc0774c6-3a5c-4c5a-b63c-8da24e4ef921:
+    uuid: dc0774c6-3a5c-4c5a-b63c-8da24e4ef921
+    id: image_scale
+    weight: 2
+    data:
+      width: 1000
+      height: null
+      upscale: true

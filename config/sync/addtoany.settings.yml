@@ -1,0 +1,33 @@
+_core:
+  default_config_hash: QUZHrnAKd4ixgLLVtD3JrrBMlwbmJ6VU-qKcOMDKatw
+buttons_size: 32
+additional_html: "<div id=\"share-this-on\">\r\n  <span class=\"text-share\">Share this on</span>\r\n  <a class=\"a2a_button_facebook\"></a>\r\n  <a class=\"a2a_button_twitter\"></a>\r\n  <a class=\"a2a_button_linkedin_share\"></a>\r\n  <a class=\"print-icon\" href=\"javascript:print()\"></a>\r\n</div>"
+additional_css: ''
+additional_js: ''
+universal_button: none
+custom_universal_button: ''
+universal_button_placement: before
+entities:
+  media: 1
+  node: 0
+  comment: 0
+  block_content: 0
+  contact_message: 0
+  content_moderation_state: 0
+  crop: 0
+  entity_subqueue: 0
+  file: 0
+  pdf_image_entity: 0
+  menu_link_content: 0
+  path_alias: 0
+  search_api_task: 0
+  shortcut: 0
+  taxonomy_term: 0
+  tmgmt_message: 0
+  tmgmt_job: 0
+  tmgmt_job_item: 0
+  tmgmt_remote: 0
+  tmgmt_local_task: 0
+  tmgmt_local_task_item: 0
+  user: 0
+  paragraph: 0

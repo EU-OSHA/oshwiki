@@ -1,0 +1,22 @@
+uuid: e7012195-9599-42a4-a874-35e25a934b01
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contributors_content
+id: node.contributors_content.sticky
+field_name: sticky
+entity_type: node
+bundle: contributors_content
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

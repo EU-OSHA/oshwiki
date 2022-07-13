@@ -1,0 +1,22 @@
+uuid: 1eb8de0c-7b7d-4e84-9f11-42b910b9d449
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oshwiki_theme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: oshwiki_theme_local_tasks
+theme: oshwiki_theme
+region: content
+weight: -11
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

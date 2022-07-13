@@ -1,0 +1,18 @@
+uuid: 8dbbd5e5-76cf-4ae9-9401-489630e96f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.osh_categories
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.osh_categories
+target_entity_type_id: taxonomy_term
+target_bundle: osh_categories
+default_langcode: site_default
+language_alterable: true

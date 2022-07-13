@@ -1,0 +1,313 @@
+@media print {
+
+  /*general*/
+  .bg-image-banner{
+    .block-page-title-block{
+      h1, h1 > span{
+        font-size: 1.5rem;
+        text-align: initial;
+        color: $text-black;
+      }
+    }
+  }
+  .top-header-container{
+    .top-header-content{
+      .wrapper-two-columns-header{
+        .content-first-row, .header-language-search{
+          display: none;
+          .font-size-print{
+            .a_small, .a_medium, .a_big{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bg-image-banner{
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0rem;
+    .block-system-breadcrumb-block{
+      ol{
+        display: none;
+      }
+    }
+  }
+  .view-filters{
+    display: none;
+  }
+  div.pagerer-container, .view-footer{
+    display: none;
+  }
+  .wrapper-tabs{
+    .nav-tabs{
+      display: none;
+    }
+  }
+  /*end general*/
+
+  /*homepage*/
+  .page-view-frontpage{
+    #main-wrapper{
+      .container-fluid{
+        .home-text p, .select-theme{
+          display: none;
+        }
+        .section_featured_articles{
+          .view-id-featured_articles{
+            .card-content-wrapper{
+              a{
+                text-decoration: none;
+              }
+              .type-themes{
+                padding: 0rem;
+                color: $text-dark-green;
+              }
+              .featured-art-read{
+                display: none;
+              }
+            }
+          }
+        }
+        .card-content-wrapper{
+          border-left: none;
+          padding-left: 0rem;
+          border: 1px solid $bg-light-dark-grey;
+          & > a{
+            text-decoration: none;
+            &:last-of-type{
+              display: none;
+            }
+          }
+          .taxonomy-level-item{
+            padding: 0rem;
+            color: $text-dark-green;
+          }
+        }
+        .more-link{
+          display: none;
+        }
+        &:nth-of-type(1){
+          .section_banner{
+            & > .container{
+              padding-top: 0rem;
+              padding-bottom: 0rem;
+            }
+          }
+          .search-block-form, .home-advanced-search{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  /*end homepage*/
+
+  /*oshwiki-article*/
+  .node--type-oshwiki-articles {
+    h1{
+      margin-bottom: 0rem !important;
+      padding: 2.5rem 0rem 0rem 1.9rem !important;
+    }
+    .select-theme-article, .items-left, #share-this-on{
+      display: none;
+    }
+    .field--name-field-media{
+      display: none;
+      .field__item{
+        display: none;
+      }
+    }
+    a{
+      color: $text-dark-dark-grey;
+      text-decoration: none;
+    }
+
+    .related-articles{
+      & > .container .view-content{
+        & > .views-view-grid > .row{
+          & > div{
+            width: 100%;
+            .card-content-wrapper{
+              border-left: none;
+              padding-left: 0rem;
+              border: 1px solid $bg-light-dark-grey;
+              .taxonomy-level-item{
+                padding: 0rem;
+                color: $text-dark-green;
+              }
+              a:nth-of-type(2){
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*end oshwiki-article*/
+
+  /*scientific journal*/
+  .node--type-scientific-journal{
+    h1{
+      margin-bottom: 0rem !important;
+      padding: 2.5rem 0rem 0rem 1rem !important;
+    }
+    .warning-message{
+      padding: 0rem;
+      max-resolution: 0.5rem 0rem;
+      .warning-message-container{
+        padding-left: 0rem;
+      }
+      .read-more{
+        display: none;
+      }
+    }
+    .select-theme-article, #share-this-on{
+      display: none;
+    }
+    .scientific_pdf, .scientific_image{
+      display: none;
+    }
+  }
+  /*end scientific journal*/
+
+  /*themes*/
+  .page-view-themes{
+    .bg-image-banner{
+      .block-page-title-block{
+        h1{
+          margin-bottom: 0rem !important;
+          padding: 2.5rem 0rem 0rem 1rem !important;
+        }
+      }
+    }
+    #block-oshwiki-theme-content{
+      .view-content{
+        .views-row{
+          border: none;
+          .views-field-url{
+            display: none;
+          }
+          .views-field-title{
+            a{
+              text-decoration: none;
+            }
+          }
+          &:first-of-type{
+            border-top: none;
+            .views-field-title{
+              a{
+                font-size: 1.1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .js-facet-block-id-themesnormalsearchthemes{
+    display: none;
+  }
+  /*end themes*/
+
+  /*alphabetical view*/
+  .page-view-alphabetical-view{
+    .bg-image-banner{
+      .block-page-title-block{
+        h1{
+          margin-bottom: 0rem !important;
+          padding: 2.5rem 0rem 0rem 1rem !important;
+        }
+      }
+    }
+    #block-oshwiki-theme-content{
+      .view-content{
+        .views-row{
+          border-bottom: none;
+          .views-field-title{
+            a{
+              text-decoration: none;
+            }
+          }
+          .views-field-url{
+            display: none;
+          }
+          &:first-of-type{
+            padding: 1rem 0rem;
+          }
+        }
+      }
+    }
+    .glossary-wrapper{
+      display: none;
+    }
+    .js-facet-block-id-themes_names{
+      display: none;
+    }
+  }
+  /*end alphabetical view*/
+
+  /*other sources of information*/
+  .page-view-other-sources-of-information{
+    h1{
+      margin-bottom: 0rem !important;
+      padding: 2.5rem 0rem 0rem 1rem !important;
+    }
+    #block-oshwiki-theme-content{
+      .view-content{
+        .views-row{
+          .title{
+            a{
+              text-decoration: none;
+            }
+          }
+          .url{
+            span{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*end other sources of information*/
+
+  /*general search*/
+  .page-view-search{
+    .bg-image-banner{
+      .block-page-title-block{
+        h1{
+          margin-bottom: 0rem !important;
+          padding: 2.5rem 0rem 0rem 1rem !important;
+        }
+      }
+    }
+    .js-facet-block-id-contenttype, .js-facet-block-id-searchthemes{
+      display: none;
+    }
+    #main{
+      .block-system-main-block{
+        .view-content{
+          margin: 0rem;
+          .views-row{
+            .views-field-title-1{
+              a{
+                text-decoration: none;
+              }
+            }
+            .views-field-field-themes-oshwiki{
+              padding: 0rem;
+              color: $text-dark-green;
+            }
+            .views-field-url{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*end general search*/
+}
+

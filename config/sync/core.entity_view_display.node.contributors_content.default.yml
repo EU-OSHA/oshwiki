@@ -1,0 +1,47 @@
+uuid: 6ff6ade1-0fbb-4b7b-9a34-abad0a6c4d49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contributors_content.field_name_and_sur_contributors
+    - field.field.node.contributors_content.field_organization_contributors
+    - field.field.node.contributors_content.field_position_contributors
+    - node.type.contributors_content
+  module:
+    - text
+    - user
+id: node.contributors_content.default
+targetEntityType: node
+bundle: contributors_content
+mode: default
+content:
+  field_name_and_sur_contributors:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_organization_contributors:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_position_contributors:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

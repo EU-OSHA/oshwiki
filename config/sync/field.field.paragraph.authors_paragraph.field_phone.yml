@@ -1,0 +1,24 @@
+uuid: 9c1ed5ec-d784-48c5-a804-cb4b7aa3cb64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_phone
+    - paragraphs.paragraphs_type.authors_paragraph
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.authors_paragraph.field_phone
+field_name: field_phone
+entity_type: paragraph
+bundle: authors_paragraph
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

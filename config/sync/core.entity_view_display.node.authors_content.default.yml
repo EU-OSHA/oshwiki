@@ -1,0 +1,63 @@
+uuid: 56554187-20e5-4a52-952e-a1a039b7ca50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.authors_content.field_organization_authors
+    - field.field.node.authors_content.field_position_authors
+    - node.type.authors_content
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - node_title
+        - field_organization_authors
+        - field_position_authors
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.authors_content.default
+targetEntityType: node
+bundle: authors_content
+mode: default
+content:
+  field_organization_authors:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: ds_content
+  field_position_authors:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: ds_content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

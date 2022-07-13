@@ -1,0 +1,18 @@
+uuid: da16d206-eca9-42e1-9422-b7ea286f2f51
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scientific_journal
+id: node.scientific_journal.changed
+field_name: changed
+entity_type: node
+bundle: scientific_journal
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

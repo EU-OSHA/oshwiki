@@ -1,0 +1,33 @@
+uuid: eb6ae464-c394-4e28-a662-324483c46875
+langcode: en
+status: true
+dependencies: {  }
+id: import_oshwiki_articles_further_parag
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: null
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: xml
+  urls: /var/www/html/osha/web/sites/oshwiki/files/xmlMigration/oswikiDrupal.xml
+  item_selector: /mediawiki/contents/content/revisions/revision/paragraphs/paragraph
+  fields:
+    -
+      name: field_title_further_reading
+      label: field_title_further_reading
+      selector: paragraphTitle
+    -
+      name: field_desc_further_reading
+      label: field_description_sections
+      selector: paragraphBody
+process:
+  field_title_further_reading: field_title_further_reading
+  field_desc_further_reading: field_desc_further_reading
+destination:
+  plugin: 'entity_reference_revisions:paragraph'
+  default_bundle: oshwiki_articles
+migration_dependencies: null

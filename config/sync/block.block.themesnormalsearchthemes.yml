@@ -1,0 +1,29 @@
+uuid: 619c7c61-01fc-4562-a05b-286bed1092c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.themes_normal_search_themes
+  module:
+    - facets
+    - system
+  theme:
+    - oshwiki_theme
+id: themesnormalsearchthemes
+theme: oshwiki_theme
+region: content
+weight: -6
+provider: null
+plugin: 'facet_block:themes_normal_search_themes'
+settings:
+  id: 'facet_block:themes_normal_search_themes'
+  label: 'Select theme'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: themesnormalsearchthemes
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /themes
