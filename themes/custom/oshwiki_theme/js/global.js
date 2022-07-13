@@ -30,7 +30,6 @@ let menuSM = false;
 
 jQuery(window).on("load",function(){
   checkResponsiveMenu(jQuery(window).width(), menuSM);
-  hideOriginalContentTextAfterSearch();
   /*For the theme page call 'selectThemes' function with ajaxStop*/
   if(!jQuery("body").hasClass("page-view-themes")){
     selectTheme();
@@ -58,6 +57,64 @@ jQuery(document).ready(function($) {
   articleParagraphImage('.section_most_popular', '.section_most_recent');
   createDivCardsHomePage();
   createDivCards("node--type-oshwiki-articles",['.related-articles']);
+  showMax5References();
+
+  /*Text resize*/
+  $('#_biggify').on('click', function() {
+    var fontSize = $('html').css('font-size');
+    var newFontSize = parseInt(fontSize)+1;
+
+    $('html').css('font-size', newFontSize+'px')
+  })
+
+  $('#_smallify').on('click', function() {
+    var fontSize = $('html').css('font-size');
+    var newFontSize = parseInt(fontSize)-1;
+
+    $('html').css('font-size', newFontSize+'px')
+  })
+
+  $('#_reset').on('click', function() {
+    $('html').css('font-size', '16px')
+  })
+  /*End comment - text resize*/
+
+  /*When there are more than 5 references, only show the first 5 and add a button "see al references"*/
+  function showMax5References(){
+    if($("body").hasClass("node--type-oshwiki-articles")){
+      /*If there are more than 5 references add two buttons, "show" and "hide"*/
+      if($(".article_references .references-div").length>5){
+        searchAllReferencesDiv("hide");
+        $(".showReferences").css("display", "flex");
+        $(".showReferences").click(function (){
+          searchAllReferencesDiv("show");
+          $(".hideReferences").css("display", "flex");
+          $(this).css("display", "none");
+        });
+        $(".hideReferences").click(function (){
+          searchAllReferencesDiv("hide");
+          $(".showReferences").css("display", "flex");
+          $(this).css("display", "none");
+        });
+      }
+    }
+  }
+  /*Hide or show references*/
+  function searchAllReferencesDiv(option){
+    if(option=="hide"){
+      $(".article_references .references-div").each(function(index, value){
+        if(index>4){
+          $(this).css("display", "none");
+        }
+      });
+    }else{
+      $(".article_references .references-div").each(function(index, value){
+        if(index>4){
+          $(this).css("display", "grid");
+        }
+      });
+    }
+  }
 
   /*Set the margin for the search box inside responsive menu*/
   function setMenuResponsiveSearchBoxMargin(){
@@ -142,7 +199,7 @@ function hideEverySubthemeCatNotSelected(){
 /*Add span tags inside the list elements*/
 function createNewSpanForThemeIcon(){
   if(jQuery(".facets-widget-links > ul > .facet-item").find(".showSubthemes").length==0){
-    jQuery(".facets-widget-links > ul > .facet-item > a").after("<span class='showSubthemes'></span>");
+    jQuery(".facets-widget-links > ul > .facet-item > a").before("<span class='showSubthemes'></span>");
   }
   if(jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a").find(".iconSubtheme").length==0){
     jQuery(".facets-widget-links .item-list__links .facets-widget- ul li a .facet-item__value").before("<span class='iconSubtheme'></span>");
@@ -212,15 +269,6 @@ function setParagraphImageTextWidth(){
       jQuery(this).find('.field--name-field-copyrigth').css({"max-width":imageWidth, "width":imageWidth});
       jQuery(this).find('.field--name-field-caption-copyrigth-').css({"max-width":imageWidth, "width":imageWidth});
     })
-  }
-}
-
-/*After searching for content in the General Search, hide the original article description text*/
-function hideOriginalContentTextAfterSearch(){
-  if(jQuery("body").hasClass("page-view-search")){
-    if(jQuery(".block-system-main-block .view-content .views-row").find(".views-field-search-api-excerpt").lenght>0){
-      jQuery(".block-system-main-block .view-content .views-row").find(".views-field-field-sections-oshwiki").hide();
-    }
   }
 }
 
