@@ -282,12 +282,45 @@ function createDivCardsHomePage(){
     }else{
       createDivCards("page-view-frontpage",['.section_most_popular', '.section_most_recent']);
     }
+    /*Create layout featured article*/
+      let maxHeightOfTheme = 0;
+      let maxHeightOfTitle = 0;
+      jQuery(".section_featured_articles .card-content-wrapper").each(function(index, value){
+        if((jQuery(this).find('.theme-badge').length==0)&&(jQuery(this).find('.transparent-tag').length==0)){
+          /*Add the "transparent-tag" class for the css*/
+          jQuery(this).prepend("<div class='taxonomy-level-wrapper transparent-tag'>" +
+            "<div class='taxonomy-level-item type-themes'>" +
+            "<span>tag</span>\n" +
+            "</div>" +
+            "</div>");
+        }
+        /*Set height for the tags of the articles*/
+        if((jQuery.isNumeric(jQuery(this).find('.theme-badge > .type-themes').outerHeight()))&&(jQuery(this).find('.theme-badge > .type-themes').outerHeight()>maxHeightOfTheme)){
+          maxHeightOfTheme=jQuery(this).find('.theme-badge > .type-themes').outerHeight();
+          /*Add some extra pixels for the margin*/
+          maxHeightOfTheme+=10;
+        }
+        /*Set height for the titles of the articles*/
+        if((jQuery.isNumeric(jQuery(this).find('.featured-art-title').outerHeight()))&&(jQuery(this).find('.featured-art-title').outerHeight()>maxHeightOfTitle)){
+          maxHeightOfTitle=jQuery(this).find('.featured-art-title').outerHeight();
+        }
+      });
+      /*Set the height of the img and save it for the grid template layout*/
+    let imgHeight;
+    if(jQuery(window).width()<1480){
+      imgHeight="180";
+    }else{
+      imgHeight="210";
+    }
+     /*Change the grid layout*/
+      let gridTemplateRowValues = imgHeight + "px " + maxHeightOfTheme + "px " + maxHeightOfTitle + "px 35px";
+      jQuery(".section_featured_articles .card-content-wrapper").css("grid-template-rows", gridTemplateRowValues);
   }
 }
 
-/*If the content card does not have a tag create a div with the tag classes,
-set the height of the tags with the height of the largest tag
-and set de title height with the maxHeight in order to mantain the layout*/
+/*If the content card does not have a tag create a div with the tag classes.
+Then set the height of the tags with the height of the largest tag
+and set the title height with the maxHeight in order to mantain the layout*/
 function createDivCards(bodyClass, cardWrapperNames){
   if(jQuery("body").hasClass(bodyClass)){
     let contentTypes = cardWrapperNames;
@@ -304,8 +337,10 @@ function createDivCards(bodyClass, cardWrapperNames){
             "</div>");
         }
         /*Set height for the tags of the articles*/
-        if((jQuery.isNumeric(jQuery(this).find('.theme-badge').height()))&&(jQuery(this).find('.theme-badge').height()>maxHeightOfTheme)){
-          maxHeightOfTheme=jQuery(this).find('.theme-badge').height();
+        if((jQuery.isNumeric(jQuery(this).find('.theme-badge > .type-themes').outerHeight()))&&(jQuery(this).find('.theme-badge > .type-themes').outerHeight()>maxHeightOfTheme)){
+          maxHeightOfTheme=jQuery(this).find('.theme-badge > .type-themes').outerHeight();
+          /*Add some extra pixels for the margin*/
+          maxHeightOfTheme+=10;
         }
         /*Set height for the titles of the articles*/
         if((jQuery.isNumeric(jQuery(this).find('a:first').height()))&&(jQuery(this).find('a:first').height()>maxHeightOfTitle)){

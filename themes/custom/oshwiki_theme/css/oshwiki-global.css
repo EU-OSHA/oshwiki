@@ -3382,6 +3382,16 @@ button.navbar-toggler-right .icon-bar {
     margin-bottom: 0.5rem;
   }
 }
+.page-node-3024 .article_sections .field--name-field-media > .field__item .field--name-field-media-image .field__item {
+  display: flex;
+  justify-content: center;
+}
+.page-node-3024 .article_sections .field--name-field-media > .field__item .field--name-field-caption-copyrigth-, .page-node-3024 .article_sections .field--name-field-media > .field__item .field--name-field-copyrigth {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+}
+
 /*Containers for min-with 1480*/
 @media only screen and (min-width: 1480px) {
   .section div.container {
