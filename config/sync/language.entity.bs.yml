@@ -5,5 +5,5 @@ dependencies: {  }
 id: bs
 label: Bosnian
 direction: ltr
-weight: 14
+weight: 11
 locked: false

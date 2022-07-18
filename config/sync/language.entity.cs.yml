@@ -5,5 +5,5 @@ dependencies: {  }
 id: cs
 label: Czech
 direction: ltr
-weight: 11
+weight: -14
 locked: false

@@ -7,5 +7,5 @@ _core:
 id: fr
 label: French
 direction: ltr
-weight: 2
+weight: -6
 locked: false
