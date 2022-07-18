@@ -12,21 +12,16 @@ url:
     es: es
     da: da
     tr: tr
-    af: af
     nl: nl
     sv: sv
     it: it
     cs: cs
     sl: sl
-    bs: bs
     pl: pl
-    sq: sq
     lv: lv
     fi: fi
     et: et
     el: el
-    mk: mk
-    sr: sr
     bg: bg
     'no': 'no'
     mt: mt
@@ -44,21 +39,16 @@ url:
     es: ''
     da: ''
     tr: ''
-    af: ''
     nl: ''
     sv: ''
     it: ''
     cs: ''
     sl: ''
-    bs: ''
     pl: ''
-    sq: ''
     lv: ''
     fi: ''
     et: ''
     el: ''
-    mk: ''
-    sr: ''
     bg: ''
     'no': ''
     mt: ''

@@ -1,9 +1,0 @@
-uuid: 3358b0c6-d32a-4dd1-a768-86c8f3dfe789
-langcode: en
-status: true
-dependencies: {  }
-id: bs
-label: Bosnian
-direction: ltr
-weight: 11
-locked: false
