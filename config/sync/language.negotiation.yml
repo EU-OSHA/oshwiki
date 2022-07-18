@@ -35,7 +35,7 @@ url:
     sk: sk
     is: is
     ro: ro
-    pt: pt
+    pt-pt: pt
   domains:
     en: ''
     de: ''
@@ -67,5 +67,5 @@ url:
     sk: ''
     is: ''
     ro: ''
-    pt: ''
+    pt-pt: ''
 selected_langcode: site_default

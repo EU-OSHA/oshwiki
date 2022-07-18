@@ -10,11 +10,11 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Tip
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Operacije
       filters:
         job_type:
           group_info:

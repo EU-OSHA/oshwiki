@@ -36,7 +36,7 @@ display:
             label: Pavadinimas
         langcode:
           expose:
-            label: Language
+            label: Kalba
   page:
     display_title: Puslapis
     display_options:

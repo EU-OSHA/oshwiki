@@ -37,7 +37,7 @@ display:
             label: Nosaukums
         langcode:
           expose:
-            label: Language
+            label: Valoda
   page:
     display_title: Lapa
     display_options:

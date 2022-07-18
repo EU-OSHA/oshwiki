@@ -1,0 +1,37 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ anterior'
+            next: 'seguinte ›'
+            first: '« primeira'
+            last: 'última »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      fields:
+        created:
+          label: Criado
+        label:
+          label: Item
+        name:
+          label: Nome
+          separator: ', '
+      title: Mensagens
+      arguments:
+        tjid:
+          exception:
+            title: Todos
+  embed:
+    display_title: Embebido

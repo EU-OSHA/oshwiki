@@ -12,9 +12,9 @@ display:
         label:
           label: Label
         item_type:
-          label: Type
+          label: Tip
         operations:
-          label: Operations
+          label: Operacije
       arguments:
         tltid:
           exception:

@@ -58,7 +58,7 @@ display:
             label: 'Medie type'
         langcode:
           expose:
-            label: Language
+            label: Sprog
   page:
     display_title: Side
     display_options:

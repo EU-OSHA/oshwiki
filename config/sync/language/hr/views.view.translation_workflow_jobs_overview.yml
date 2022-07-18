@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prethodna'
+            next: 'sljedeća ›'
+            first: '« prva'
+            last: 'posljednja »'
       fields:
         label:
           label: Label
@@ -32,7 +32,7 @@ display:
         file_sent:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       filters:
         label:
           expose:

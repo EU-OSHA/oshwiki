@@ -1,0 +1,34 @@
+label: Pārsūtīšana
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          tags:
+            previous: '‹ iepriekšējā'
+            next: 'nākamā ›'
+            first: '« pirmā'
+            last: 'pēdējā »'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        redirect_source__path:
+          label: 'No'
+        created:
+          label: Izveidots
+      filters:
+        redirect_source__path:
+          expose:
+            label: 'No'
+        redirect_redirect__uri:
+          expose:
+            label: Kam
+      title: Pārsūtīšana
+  page_1:
+    display_title: Lapa

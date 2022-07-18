@@ -49,7 +49,7 @@ display:
             label: 'Median tyyppi'
         langcode:
           expose:
-            label: Language
+            label: Kieli
   page:
     display_title: Sivu
     display_options:

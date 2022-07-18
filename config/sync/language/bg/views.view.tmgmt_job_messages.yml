@@ -8,13 +8,13 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ предишна'
+            next: 'следваща ›'
+            first: '« първа'
+            last: 'последна »'
       fields:
         created:
-          label: Created
+          label: Създадено
         name:
           label: Име
       title: Messages

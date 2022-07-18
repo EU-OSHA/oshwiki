@@ -6,7 +6,7 @@ display:
           exposed_sorts_label: 'Сортирај по'
       fields:
         created:
-          label: Created
+          label: Направљено
         label:
           label: Производ
         name:

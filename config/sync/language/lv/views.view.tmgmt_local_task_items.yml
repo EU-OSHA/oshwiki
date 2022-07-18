@@ -17,9 +17,9 @@ display:
         label:
           label: Label
         item_type:
-          label: Type
+          label: Veids
         operations:
-          label: Operations
+          label: Darbības
       arguments:
         tltid:
           exception:

@@ -1,6 +1,6 @@
 display:
   default:
-    display_title: Master
+    display_title: Meester
     display_options:
       exposed_form:
         options:
@@ -14,9 +14,9 @@ display:
         status:
           label: Status
         item_type:
-          label: Type
+          label: Tipe
         operations:
-          label: Operations
+          label: Aksies
       arguments:
         tltid:
           exception:

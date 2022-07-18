@@ -17,17 +17,17 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Veids
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         tags_count:
           label: Tags
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Darbības
       filters:
         state:
           group_info:

@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Filtri
           reset_button_label: Rifillo
       fields:
         item_count:
@@ -18,13 +18,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         status:
           expose:
@@ -37,13 +37,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         status:
           expose:
@@ -54,13 +54,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         status:
           expose:
@@ -71,13 +71,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         status:
           expose:
@@ -88,13 +88,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         status:
           expose:
@@ -105,13 +105,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         status:
           expose:
@@ -122,13 +122,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         status:
           expose:

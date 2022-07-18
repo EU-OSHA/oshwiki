@@ -7,17 +7,17 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ paraardhëse'
+            next: 'në vazhdim ›'
+            first: '« e para'
+            last: 'e fundit »'
       fields:
         type:
-          label: Type
+          label: Lloji
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Operacionet
       arguments:
         tjid:
           exception:
@@ -26,4 +26,4 @@ display:
     display_options:
       fields:
         type:
-          label: Type
+          label: Lloji

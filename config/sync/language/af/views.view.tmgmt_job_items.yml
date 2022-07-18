@@ -1,6 +1,6 @@
 display:
   default:
-    display_title: Master
+    display_title: Meester
     display_options:
       exposed_form:
         options:
@@ -11,17 +11,17 @@ display:
           expose:
             items_per_page_options_all_label: '- Alle -'
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laaste »'
       fields:
         type:
-          label: Type
+          label: Tipe
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Aksies
       arguments:
         tjid:
           exception:
@@ -31,4 +31,4 @@ display:
     display_options:
       fields:
         type:
-          label: Type
+          label: Tipe

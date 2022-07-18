@@ -23,7 +23,7 @@ display:
             label: Име
         langcode:
           expose:
-            label: Language
+            label: Језик
   page:
     display_options:
       fields:

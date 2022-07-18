@@ -41,7 +41,7 @@ display:
             label: Όνομα
         langcode:
           expose:
-            label: Language
+            label: Γλώσσα
   page:
     display_title: Σελίδα
     display_options:

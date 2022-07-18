@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Филтрирај
           exposed_sorts_label: 'Сортирај по'
       fields:
         title:
@@ -16,7 +16,7 @@ display:
         title:
           label: Title
         operations:
-          label: Operations
+          label: Операције
       filters:
         uid:
           expose:
@@ -30,11 +30,11 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Направљено
         title:
           label: Title
         operations:
-          label: Operations
+          label: Операције
       filters:
         uid:
           expose:
@@ -51,11 +51,11 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Направљено
         title:
           label: Title
         operations:
-          label: Operations
+          label: Операције
       filters:
         uid:
           expose:
@@ -71,7 +71,7 @@ display:
         title:
           label: Title
         operations:
-          label: Operations
+          label: Операције
       filters:
         uid:
           expose:
@@ -85,11 +85,11 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Направљено
         title:
           label: Title
         operations:
-          label: Operations
+          label: Операције
       filters:
         uid:
           expose:
@@ -105,4 +105,4 @@ display:
         title:
           label: Title
         operations:
-          label: Operations
+          label: Операције

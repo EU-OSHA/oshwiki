@@ -1,0 +1,8 @@
+uuid: 1ba6803a-d282-4247-9809-d22bb8d923d6
+langcode: en
+status: true
+dependencies: {  }
+id: select-theme
+label: 'Select theme'
+description: 'Select theme menu for the home page'
+locked: false

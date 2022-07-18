@@ -21,7 +21,7 @@ display:
         title:
           label: Label
         operations:
-          label: Operations
+          label: Operacije
       filters:
         status:
           expose:
@@ -39,7 +39,7 @@ display:
         title:
           label: Label
         operations:
-          label: Operations
+          label: Operacije
       filters:
         status:
           expose:
@@ -55,7 +55,7 @@ display:
         title:
           label: Label
         operations:
-          label: Operations
+          label: Operacije
       filters:
         status:
           expose:
@@ -71,7 +71,7 @@ display:
         title:
           label: Label
         operations:
-          label: Operations
+          label: Operacije
       filters:
         status:
           expose:
@@ -87,7 +87,7 @@ display:
         title:
           label: Label
         operations:
-          label: Operations
+          label: Operacije
       filters:
         status:
           expose:
@@ -103,7 +103,7 @@ display:
         title:
           label: Label
         operations:
-          label: Operations
+          label: Operacije
       filters:
         status:
           expose:
@@ -119,7 +119,7 @@ display:
         title:
           label: Label
         operations:
-          label: Operations
+          label: Operacije
       filters:
         status:
           expose:

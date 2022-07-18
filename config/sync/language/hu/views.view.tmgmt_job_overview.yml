@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ előző'
+            next: 'következő ›'
+            first: '« első'
+            last: 'utolsó »'
       fields:
         state:
           label: Állapot

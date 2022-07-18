@@ -12,23 +12,23 @@ display:
             items_per_page_label: 'Vienetų kiekis puslapyje'
             items_per_page_options_all_label: '- Visos -'
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ ankstesnis'
+            next: 'kitas  ›'
+            first: '« pirmas'
+            last: 'paskutinis  »'
       fields:
         state:
           label: State
         label:
           label: Label
         type:
-          label: Type
+          label: Tipas
         tags_count:
           label: Tags
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Veiksmai
       arguments:
         tjid:
           exception:
@@ -40,7 +40,7 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Tipas
         changed:
           label: Changed
   submitted:

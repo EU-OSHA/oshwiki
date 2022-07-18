@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Filtrēt
           reset_button_label: Attīrīt
           exposed_sorts_label: 'Kārtot pēc'
           sort_desc_label: Dilst.
@@ -28,13 +28,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         status:
           expose:
@@ -52,13 +52,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         status:
           expose:
@@ -76,13 +76,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         status:
           expose:
@@ -98,13 +98,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         status:
           expose:
@@ -120,13 +120,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         status:
           expose:
@@ -144,13 +144,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         status:
           expose:
@@ -166,13 +166,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         status:
           expose:

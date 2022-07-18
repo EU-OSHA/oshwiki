@@ -4,16 +4,16 @@ display:
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Сите -'
           tags:
-            previous: '‹ previous'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ претходно'
+            first: '« прв'
+            last: 'последно »'
       fields:
         type:
-          label: Type
+          label: Тип
   checkout:
     display_options:
       fields:
         type:
-          label: Type
+          label: Тип

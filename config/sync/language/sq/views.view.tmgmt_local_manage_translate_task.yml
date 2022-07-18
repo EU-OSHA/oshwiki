@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Filtri
           reset_button_label: Rifillo
       fields:
         title:
@@ -18,13 +18,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         title:
           expose:
@@ -38,17 +38,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Krijuar
         title:
           label: Title
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         title:
           expose:
@@ -59,17 +59,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Krijuar
         title:
           label: Title
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         title:
           expose:
@@ -82,13 +82,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         title:
           expose:
@@ -99,17 +99,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Krijuar
         title:
           label: Title
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet
       filters:
         title:
           expose:
@@ -122,10 +122,10 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Nga
         target_language:
-          label: To
+          label: Për
         item_count:
           label: Elementët
         operations:
-          label: Operations
+          label: Operacionet

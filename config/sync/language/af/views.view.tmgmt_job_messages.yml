@@ -1,6 +1,6 @@
 display:
   default:
-    display_title: Master
+    display_title: Meester
     display_options:
       exposed_form:
         options:
@@ -9,15 +9,15 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laaste »'
           expose:
             items_per_page_options_all_label: '- Alle -'
       fields:
         created:
-          label: Created
+          label: Geskep
         label:
           label: Item
         name:

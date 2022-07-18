@@ -12,19 +12,19 @@ display:
           expose:
             items_per_page_options_all_label: '- Visi -'
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ iepriekšējā'
+            next: 'nākamā ›'
+            first: '« pirmā'
+            last: 'pēdējā »'
       fields:
         state:
           label: State
         label:
           label: Label
         source_language_1:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         translator:
           label: Provider
         tags_count:
@@ -32,7 +32,7 @@ display:
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Darbības
       filters:
         state:
           expose:

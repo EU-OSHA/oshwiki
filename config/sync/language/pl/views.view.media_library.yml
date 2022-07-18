@@ -58,7 +58,7 @@ display:
             label: 'Typ mediów'
         langcode:
           expose:
-            label: Language
+            label: Język
   page:
     display_title: Strona
     display_options:

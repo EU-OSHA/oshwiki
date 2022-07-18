@@ -20,7 +20,7 @@ display:
             label: Emri
         langcode:
           expose:
-            label: Language
+            label: Gjuha
   page:
     display_title: Faqe
     display_options:
