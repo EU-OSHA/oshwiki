@@ -180,6 +180,12 @@ jQuery(document).ready(function($) {
 function selectTheme(){
   hideEverySubthemeCatNotSelected();
   createNewSpanForThemeIcon();
+
+  if(jQuery("body").hasClass("page-view-frontpage")){
+    if(jQuery(".select-theme-article-home-content-box").find(".iconSubtheme").length==0){
+      jQuery(".select-theme-article-home-content-box ul li a").before("<span class='iconSubtheme'></span>");
+    }
+  }
 }
 
 /*If there is no active category, collapse the theme. If there is, display the theme*/
