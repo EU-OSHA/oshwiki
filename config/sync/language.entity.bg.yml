@@ -5,5 +5,5 @@ dependencies: {  }
 id: bg
 label: Bulgarian
 direction: ltr
-weight: 23
+weight: -15
 locked: false

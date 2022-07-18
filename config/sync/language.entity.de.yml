@@ -7,5 +7,5 @@ _core:
 id: de
 label: German
 direction: ltr
-weight: 1
+weight: -12
 locked: false
