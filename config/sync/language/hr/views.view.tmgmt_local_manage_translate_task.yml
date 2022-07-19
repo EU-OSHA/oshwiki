@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Pročisti
           reset_button_label: Poništi
           exposed_sorts_label: 'Rasporedi po'
           sort_asc_label: Uzlazno
@@ -31,17 +31,17 @@ display:
           label: Title
           separator: ', '
         source_language:
-          label: From
+          label: Od
           separator: ', '
         target_language:
-          label: To
+          label: Za
           separator: ', '
         item_count:
           label: Stavke
         loop_count:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       filters:
         uid:
           expose:
@@ -61,7 +61,7 @@ display:
           label: Status
           separator: ', '
         created:
-          label: Created
+          label: Stvoreno
           separator: ', '
         tuid:
           separator: ', '
@@ -69,17 +69,17 @@ display:
           label: Title
           separator: ', '
         source_language:
-          label: From
+          label: Od
           separator: ', '
         target_language:
-          label: To
+          label: Za
           separator: ', '
         item_count:
           label: Stavke
         loop_count:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       filters:
         uid:
           expose:
@@ -96,7 +96,7 @@ display:
           label: Status
           separator: ', '
         created:
-          label: Created
+          label: Stvoreno
           separator: ', '
         tuid:
           separator: ', '
@@ -104,17 +104,17 @@ display:
           label: Title
           separator: ', '
         source_language:
-          label: From
+          label: Od
           separator: ', '
         target_language:
-          label: To
+          label: Za
           separator: ', '
         item_count:
           label: Stavke
         loop_count:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       filters:
         uid:
           expose:
@@ -135,17 +135,17 @@ display:
           label: Title
           separator: ', '
         source_language:
-          label: From
+          label: Od
           separator: ', '
         target_language:
-          label: To
+          label: Za
           separator: ', '
         item_count:
           label: Stavke
         loop_count:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       filters:
         uid:
           expose:
@@ -161,7 +161,7 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Stvoreno
           separator: ', '
         tuid:
           separator: ', '
@@ -169,17 +169,17 @@ display:
           label: Title
           separator: ', '
         source_language:
-          label: From
+          label: Od
           separator: ', '
         target_language:
-          label: To
+          label: Za
           separator: ', '
         item_count:
           label: Stavke
         loop_count:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       filters:
         uid:
           expose:
@@ -198,14 +198,14 @@ display:
           label: Title
           separator: ', '
         source_language:
-          label: From
+          label: Od
           separator: ', '
         target_language:
-          label: To
+          label: Za
           separator: ', '
         item_count:
           label: Stavke
         loop_count:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije

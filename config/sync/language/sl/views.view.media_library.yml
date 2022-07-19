@@ -20,7 +20,7 @@ display:
             label: Ime
         langcode:
           expose:
-            label: Language
+            label: Jezik
   page:
     display_title: Stran
     display_options:

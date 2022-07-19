@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Startpunt
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laatste »'
       fields:
         state:
           label: Status

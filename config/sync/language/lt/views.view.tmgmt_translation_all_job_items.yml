@@ -17,17 +17,17 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Tipas
         source_language:
-          label: From
+          label: Nuo
         target_language:
-          label: To
+          label: Kam
         tags_count:
           label: Tags
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Veiksmai
       filters:
         state:
           group_info:

@@ -18,9 +18,9 @@ display:
         label:
           label: Label
         item_type:
-          label: Type
+          label: Tipas
         operations:
-          label: Operations
+          label: Veiksmai
       arguments:
         tltid:
           exception:

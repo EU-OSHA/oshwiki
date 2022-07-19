@@ -1,0 +1,34 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtruoti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          tags:
+            previous: '‹ ankstesnis'
+            next: 'kitas  ›'
+            first: '« pirmas'
+            last: 'paskutinis  »'
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        redirect_bulk_form:
+          action_title: 'Su pasirinktais'
+        redirect_source__path:
+          label: Nuo
+        created:
+          label: Sukurta
+      filters:
+        redirect_source__path:
+          expose:
+            label: Nuo
+        redirect_redirect__uri:
+          expose:
+            label: Kam
+  page_1:
+    display_title: Puslapis

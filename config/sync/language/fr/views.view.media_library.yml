@@ -9,6 +9,9 @@ display:
           action_title: Action
       pager:
         options:
+          tags:
+            next: ››
+            previous: ‹‹
           expose:
             items_per_page_label: 'Éléments par page'
             items_per_page_options_all_label: '- Tout -'
@@ -33,7 +36,7 @@ display:
             label: Nom
         langcode:
           expose:
-            label: Language
+            label: Langue
   page:
     display_title: Page
     display_options:

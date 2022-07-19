@@ -58,7 +58,7 @@ display:
             label: Mediatype
         langcode:
           expose:
-            label: Language
+            label: Taal
   page:
     display_title: Pagina
     display_options:

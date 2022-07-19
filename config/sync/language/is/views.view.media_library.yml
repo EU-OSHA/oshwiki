@@ -44,7 +44,7 @@ display:
             label: 'Tegund margmiðlunarefnis'
         langcode:
           expose:
-            label: Language
+            label: Tungumál
   page:
     display_title: Síða
     display_options:

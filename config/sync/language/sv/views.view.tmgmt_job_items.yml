@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ föregående'
+            next: 'nästa ›'
+            first: '« första'
+            last: 'sista »'
       fields:
         state:
           label: Läge

@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Филтър
           reset_button_label: Рестартирай
       fields:
         title:
@@ -22,13 +22,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         status:
           expose:
@@ -46,13 +46,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         status:
           expose:
@@ -68,13 +68,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         status:
           expose:
@@ -90,13 +90,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         status:
           expose:
@@ -112,13 +112,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         status:
           expose:
@@ -136,13 +136,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         status:
           expose:
@@ -158,13 +158,13 @@ display:
         title:
           label: Label
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         status:
           expose:

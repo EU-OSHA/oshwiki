@@ -45,7 +45,7 @@ display:
             label: Nome
         langcode:
           expose:
-            label: Language
+            label: Lingua
   page:
     display_title: Pagina
     display_options:

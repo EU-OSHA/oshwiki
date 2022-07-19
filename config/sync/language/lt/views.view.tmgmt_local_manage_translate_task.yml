@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Filtruoti
           reset_button_label: Išvalyti
           exposed_sorts_label: 'Rikiuoti pagal'
       pager:
@@ -13,7 +13,7 @@ display:
             items_per_page_options_all_label: '- Visos -'
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'With selection'
+          action_title: 'Su pasirinktais'
         title:
           label: Title
         item_count:
@@ -25,19 +25,19 @@ display:
         title: Assigned
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'With selection'
+          action_title: 'Su pasirinktais'
         status:
           label: Status
         title:
           label: Title
         source_language:
-          label: From
+          label: Nuo
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Elementai
         operations:
-          label: Operations
+          label: Veiksmai
       filters:
         uid:
           expose:
@@ -52,21 +52,21 @@ display:
         title: Closed
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'With selection'
+          action_title: 'Su pasirinktais'
         status:
           label: Status
         created:
-          label: Created
+          label: Sukurta
         title:
           label: Title
         source_language:
-          label: From
+          label: Nuo
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Elementai
         operations:
-          label: Operations
+          label: Veiksmai
       filters:
         uid:
           expose:
@@ -81,21 +81,21 @@ display:
         title: Completed
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'With selection'
+          action_title: 'Su pasirinktais'
         status:
           label: Status
         created:
-          label: Created
+          label: Sukurta
         title:
           label: Title
         source_language:
-          label: From
+          label: Nuo
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Elementai
         operations:
-          label: Operations
+          label: Veiksmai
       filters:
         uid:
           expose:
@@ -110,20 +110,20 @@ display:
         title: Pending
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'With selection'
+          action_title: 'Su pasirinktais'
         status:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
           label: Title
         source_language:
-          label: From
+          label: Nuo
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Elementai
         operations:
-          label: Operations
+          label: Veiksmai
       filters:
         uid:
           expose:
@@ -135,22 +135,22 @@ display:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'With selection'
+          action_title: 'Su pasirinktais'
         status:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         created:
-          label: Created
+          label: Sukurta
         title:
           label: Title
         source_language:
-          label: From
+          label: Nuo
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Elementai
         operations:
-          label: Operations
+          label: Veiksmai
       filters:
         uid:
           expose:
@@ -162,17 +162,17 @@ display:
     display_options:
       fields:
         tmgmt_local_task_bulk_form:
-          action_title: 'With selection'
+          action_title: 'Su pasirinktais'
         status:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
           label: Title
         source_language:
-          label: From
+          label: Nuo
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Elementai
         operations:
-          label: Operations
+          label: Veiksmai

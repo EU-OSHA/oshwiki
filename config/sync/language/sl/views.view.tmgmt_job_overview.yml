@@ -7,20 +7,20 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
       fields:
         label:
           label: Label
         source_language_1:
-          label: From
+          label: Od
         target_language:
-          label: To
+          label: Za
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Operacije
   page_1:
     display_title: Stran

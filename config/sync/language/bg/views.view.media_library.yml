@@ -21,7 +21,7 @@ display:
             label: Име
         langcode:
           expose:
-            label: Language
+            label: Език
   page:
     display_title: Страница
     display_options:

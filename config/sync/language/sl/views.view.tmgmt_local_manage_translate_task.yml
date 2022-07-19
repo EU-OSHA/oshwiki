@@ -18,13 +18,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Od
         target_language:
-          label: To
+          label: Za
         item_count:
           label: Notice
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -38,17 +38,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Ustvarjeno
         title:
           label: Title
         source_language:
-          label: From
+          label: Od
         target_language:
-          label: To
+          label: Za
         item_count:
           label: Notice
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -59,17 +59,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Ustvarjeno
         title:
           label: Title
         source_language:
-          label: From
+          label: Od
         target_language:
-          label: To
+          label: Za
         item_count:
           label: Notice
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -85,13 +85,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Od
         target_language:
-          label: To
+          label: Za
         item_count:
           label: Notice
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -102,17 +102,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Ustvarjeno
         title:
           label: Title
         source_language:
-          label: From
+          label: Od
         target_language:
-          label: To
+          label: Za
         item_count:
           label: Notice
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -125,10 +125,10 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Od
         target_language:
-          label: To
+          label: Za
         item_count:
           label: Notice
         operations:
-          label: Operations
+          label: Operacije

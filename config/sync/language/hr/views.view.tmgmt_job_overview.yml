@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prethodna'
+            next: 'sljedeća ›'
+            first: '« prva'
+            last: 'posljednja »'
       fields:
         state:
           label: State
@@ -23,17 +23,17 @@ display:
         label:
           label: Label
         source_language_1:
-          label: From
+          label: Od
           separator: ', '
         target_language:
-          label: To
+          label: Za
           separator: ', '
         translator:
           label: Provider
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Operacije
       filters:
         state:
           expose:

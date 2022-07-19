@@ -7,13 +7,13 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
       fields:
         created:
-          label: Created
+          label: Ustvarjeno
         name:
           label: Ime
       arguments:

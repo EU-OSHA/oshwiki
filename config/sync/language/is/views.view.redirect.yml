@@ -1,0 +1,33 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          tags:
+            previous: '‹ fyrri'
+            next: 'næsta ›'
+            first: '« fremsta'
+            last: 'aftasta »'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      fields:
+        redirect_source__path:
+          label: Frá
+          separator: ', '
+        created:
+          label: Stofnað
+      filters:
+        redirect_source__path:
+          expose:
+            label: Frá
+        redirect_redirect__uri:
+          expose:
+            label: Til
+  page_1:
+    display_title: Síða

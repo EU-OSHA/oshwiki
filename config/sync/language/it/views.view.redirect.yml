@@ -1,0 +1,42 @@
+display:
+  default:
+    display_title: Principale
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
+          sort_desc_label: Disc
+      pager:
+        options:
+          tags:
+            previous: '‹ precedente'
+            next: 'seguente ›'
+            first: '« prima'
+            last: 'ultima »'
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
+      fields:
+        redirect_bulk_form:
+          action_title: 'Con la selezione'
+        redirect_source__path:
+          label: Da
+          separator: ', '
+        created:
+          label: Creato
+      filters:
+        redirect_source__path:
+          expose:
+            label: Da
+        redirect_redirect__uri:
+          expose:
+            label: A
+        language:
+          expose:
+            label: 'Lingua originale'
+  page_1:
+    display_title: Pagina
