@@ -1,10 +1,10 @@
 display:
   default:
-    display_title: Master
+    display_title: Meester
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Filtreer
           reset_button_label: Herstel
       pager:
         options:
@@ -23,13 +23,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         title:
           expose:
@@ -43,17 +43,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Geskep
         title:
           label: Title
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         title:
           expose:
@@ -64,17 +64,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Geskep
         title:
           label: Title
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         title:
           expose:
@@ -90,13 +90,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         title:
           expose:
@@ -107,17 +107,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Geskep
         title:
           label: Title
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         title:
           expose:
@@ -130,10 +130,10 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies

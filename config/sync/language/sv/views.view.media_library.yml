@@ -58,7 +58,7 @@ display:
             label: Mediatyp
         langcode:
           expose:
-            label: Language
+            label: Språk
   page:
     display_title: Sida
     display_options:

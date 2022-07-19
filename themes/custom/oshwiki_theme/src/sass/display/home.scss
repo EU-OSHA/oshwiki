@@ -128,34 +128,29 @@
     }
     .select-theme-article-home-content-box{
       padding: 1rem 1.5rem 0rem;
-      .facets-widget-links{
-        .item-list__links{
-          display: grid;
-          grid-template-columns: 1fr;
-          margin: 0;
-          padding: 0rem 0rem 0rem 0rem;
-          & > li{
-            display: flex;
-            flex-direction: row;
-            gap: 0.5rem;
-            align-items: baseline;
-            margin: 0.5rem 0rem;
-            .showSubthemes{
-              display: inline-block;
-              content: " ";
-              min-width: 18px;
-              min-height: 12px;
-              margin-left: -0.1rem;
-              margin-bottom: 0.1rem;
-              background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
-              transform: rotate(270deg);
-            }
-            .facets-widget-{
-              display: none;
-            }
+      & > .nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0rem 0rem 0rem 0rem;
+        li{
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          align-items: baseline;
+          margin: 0.5rem 0rem;
+          .nav-link{
+            padding: 0rem 0rem;
           }
-          .facet-item--expanded, .facet-item{
-            list-style: none;
+          .iconSubtheme{
+            display: inline-block;
+            content: " ";
+            min-width: 18px;
+            min-height: 12px;
+            margin-left: -0.1rem;
+            margin-bottom: 0.1rem;
+            background: url('../images/icon-green-arrow-dropdown.svg') no-repeat;
+            transform: rotate(270deg);
           }
         }
       }
@@ -248,54 +243,6 @@
   }
 }
 
-/*Order the select theme box items in English*/
-html:lang(en){
-  #main-wrapper{
-    .select-theme{
-      .select-theme-article-home-content-box{
-        .facets-widget-links{
-          .item-list__links{
-            & > li{
-              &:nth-of-type(1){
-                order: 1;
-              }
-              &:nth-of-type(2){
-                order: 4;
-              }
-              &:nth-of-type(3){
-                order: 7;
-              }
-              &:nth-of-type(4){
-                order: 10;
-              }
-              &:nth-of-type(5){
-                order: 2;
-              }
-              &:nth-of-type(6){
-                order: 5;
-              }
-              &:nth-of-type(7){
-                order: 8;
-              }
-              &:nth-of-type(8){
-                order: 11;
-              }
-              &:nth-of-type(9){
-                order: 3;
-              }
-              &:nth-of-type(10){
-                order: 6;
-              }
-              &:nth-of-type(11){
-                order: 9;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 /*End comment - order the select theme box items in English*/
 
 @media only screen and (min-width: 450px) {
@@ -337,11 +284,9 @@ html:lang(en){
     }
     .select-theme{
       .select-theme-article-home-content-box{
-        .facets-widget-links{
-          .item-list__links{
-            grid-template-columns: 1fr 1fr;
-            column-gap: 1.5rem;
-          }
+        .nav{
+          grid-template-columns: 1fr 1fr;
+          column-gap: 1.5rem;
         }
       }
     }
@@ -369,10 +314,8 @@ html:lang(en){
 
     .select-theme{
       .select-theme-article-home-content-box{
-        .facets-widget-links{
-          .item-list__links{
-            grid-template-columns: auto auto auto;
-          }
+        .nav{
+          grid-template-columns: auto auto auto;
         }
       }
     }

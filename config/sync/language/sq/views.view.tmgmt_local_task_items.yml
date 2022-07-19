@@ -8,9 +8,9 @@ display:
         status:
           label: Status
         item_type:
-          label: Type
+          label: Lloji
         operations:
-          label: Operations
+          label: Operacionet
       arguments:
         tltid:
           exception:

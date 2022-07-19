@@ -10,11 +10,11 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Tип
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Операције
   checkout:
     display_title: Checkout
     display_options:
@@ -22,6 +22,6 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Tип
         changed:
           label: Changed

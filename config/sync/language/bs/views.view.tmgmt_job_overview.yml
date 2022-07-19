@@ -9,16 +9,16 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prethodna'
+            next: 'iduća ›'
+            first: '« prva'
+            last: 'zadnja »'
       fields:
         label:
           label: Label
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Operacije
   page_1:
     display_title: Strana

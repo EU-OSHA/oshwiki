@@ -1,0 +1,31 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtreer
+          reset_button_label: Herstel
+      pager:
+        options:
+          tags:
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laaste »'
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        redirect_source__path:
+          label: Van
+        created:
+          label: Geskep
+      filters:
+        redirect_source__path:
+          expose:
+            label: Van
+        redirect_redirect__uri:
+          expose:
+            label: Aan
+  page_1:
+    display_title: Bladsy

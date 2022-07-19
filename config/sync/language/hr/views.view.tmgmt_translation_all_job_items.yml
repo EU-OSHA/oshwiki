@@ -15,12 +15,12 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Vrsta
         source_language:
-          label: From
+          label: Od
           separator: ', '
         target_language:
-          label: To
+          label: Za
           separator: ', '
         word_count:
           separator: ', '
@@ -30,7 +30,7 @@ display:
         changed:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       filters:
         state:
           group_info:

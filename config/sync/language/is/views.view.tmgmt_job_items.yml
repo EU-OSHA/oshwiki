@@ -12,10 +12,10 @@ display:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ fyrri'
+            next: 'næsta ›'
+            first: '« fremsta'
+            last: 'aftasta »'
       fields:
         state:
           label: Fylki

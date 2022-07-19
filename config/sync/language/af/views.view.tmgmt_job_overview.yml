@@ -1,6 +1,6 @@
 display:
   default:
-    display_title: Master
+    display_title: Meester
     display_options:
       exposed_form:
         options:
@@ -11,18 +11,18 @@ display:
           expose:
             items_per_page_options_all_label: '- Alle -'
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laaste »'
       fields:
         source_language_1:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Aksies
   page_1:
     display_title: Bladsy

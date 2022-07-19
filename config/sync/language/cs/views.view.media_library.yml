@@ -41,7 +41,7 @@ display:
             label: Jméno
         langcode:
           expose:
-            label: Language
+            label: Jazyk
   page:
     display_title: Stránka
     display_options:

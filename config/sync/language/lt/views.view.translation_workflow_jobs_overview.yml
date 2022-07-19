@@ -10,10 +10,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ ankstesnis'
+            next: 'kitas  ›'
+            first: '« pirmas'
+            last: 'paskutinis  »'
           expose:
             items_per_page_label: 'Vienetų kiekis puslapyje'
             items_per_page_options_all_label: '- Visos -'
@@ -25,7 +25,7 @@ display:
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Veiksmai
       filters:
         label:
           expose:

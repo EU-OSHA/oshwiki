@@ -1,6 +1,6 @@
 display:
   default:
-    display_title: Master
+    display_title: Meester
     display_options:
       exposed_form:
         options:
@@ -12,15 +12,15 @@ display:
             items_per_page_options_all_label: '- Alle -'
       fields:
         type:
-          label: Type
+          label: Tipe
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Aksies
       filters:
         job_type:
           group_info:

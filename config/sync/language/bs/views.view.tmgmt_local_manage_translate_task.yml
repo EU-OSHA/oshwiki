@@ -20,7 +20,7 @@ display:
         title:
           label: Title
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -34,11 +34,11 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Kreiran
         title:
           label: Title
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -49,11 +49,11 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Kreiran
         title:
           label: Title
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -66,7 +66,7 @@ display:
         title:
           label: Title
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -77,11 +77,11 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Kreiran
         title:
           label: Title
         operations:
-          label: Operations
+          label: Operacije
       filters:
         title:
           expose:
@@ -94,4 +94,4 @@ display:
         title:
           label: Title
         operations:
-          label: Operations
+          label: Operacije

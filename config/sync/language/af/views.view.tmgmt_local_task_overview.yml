@@ -1,10 +1,10 @@
 display:
   default:
-    display_title: Master
+    display_title: Meester
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Filtreer
           reset_button_label: Herstel
       pager:
         options:
@@ -23,13 +23,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         status:
           expose:
@@ -42,13 +42,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         status:
           expose:
@@ -59,13 +59,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         status:
           expose:
@@ -76,13 +76,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         status:
           expose:
@@ -93,13 +93,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         status:
           expose:
@@ -112,13 +112,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         status:
           expose:
@@ -129,13 +129,13 @@ display:
         status:
           label: Status
         source_language:
-          label: From
+          label: Van
         target_language:
-          label: To
+          label: Aan
         item_count:
           label: Items
         operations:
-          label: Operations
+          label: Aksies
       filters:
         status:
           expose:

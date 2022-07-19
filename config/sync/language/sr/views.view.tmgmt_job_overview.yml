@@ -14,7 +14,7 @@ display:
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Операције
       filters:
         state:
           expose:

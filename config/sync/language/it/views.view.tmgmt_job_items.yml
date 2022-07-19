@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Tutto -'
             offset_label: Scostamento
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ precedente'
+            next: 'seguente ›'
+            first: '« prima'
+            last: 'ultima »'
       fields:
         state:
           label: Stato

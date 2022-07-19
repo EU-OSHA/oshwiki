@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ anterior'
+            next: 'următor ›'
+            first: '« primul'
+            last: 'ultima »'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'

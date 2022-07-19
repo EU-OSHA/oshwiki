@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Филтър
           reset_button_label: Рестартирай
       fields:
         title:
@@ -21,13 +21,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         title:
           expose:
@@ -41,17 +41,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Създадено
         title:
           label: Title
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         title:
           expose:
@@ -62,17 +62,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Създадено
         title:
           label: Title
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         title:
           expose:
@@ -88,13 +88,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         title:
           expose:
@@ -105,17 +105,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Създадено
         title:
           label: Title
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия
       filters:
         title:
           expose:
@@ -128,10 +128,10 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         item_count:
           label: Новини
         operations:
-          label: Operations
+          label: Действия

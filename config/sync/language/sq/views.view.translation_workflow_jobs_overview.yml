@@ -8,12 +8,12 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ paraardhëse'
+            next: 'në vazhdim ›'
+            first: '« e para'
+            last: 'e fundit »'
       fields:
         operations:
-          label: Operations
+          label: Operacionet
   page_1:
     display_title: Faqe

@@ -12,19 +12,19 @@ display:
             items_per_page_label: 'Vienetų kiekis puslapyje'
             items_per_page_options_all_label: '- Visos -'
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ ankstesnis'
+            next: 'kitas  ›'
+            first: '« pirmas'
+            last: 'paskutinis  »'
       fields:
         state:
           label: State
         label:
           label: Label
         source_language_1:
-          label: From
+          label: Nuo
         target_language:
-          label: To
+          label: Kam
         translator:
           label: Provider
         tags_count:
@@ -32,7 +32,7 @@ display:
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Veiksmai
       filters:
         state:
           expose:

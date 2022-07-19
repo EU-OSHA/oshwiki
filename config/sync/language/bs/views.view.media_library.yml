@@ -23,7 +23,7 @@ display:
             label: Ime
         langcode:
           expose:
-            label: Language
+            label: Jezik
   page:
     display_title: Strana
     display_options:

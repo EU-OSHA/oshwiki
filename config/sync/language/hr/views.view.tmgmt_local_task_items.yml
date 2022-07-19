@@ -15,12 +15,12 @@ display:
         label:
           label: Label
         item_type:
-          label: Type
+          label: Vrsta
           separator: ', '
         word_count:
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       arguments:
         tltid:
           exception:

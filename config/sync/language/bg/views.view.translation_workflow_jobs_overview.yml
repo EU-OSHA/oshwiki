@@ -9,17 +9,17 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ предишна'
+            next: 'следваща ›'
+            first: '« първа'
+            last: 'последна »'
       fields:
         label:
           label: Label
         priority:
           label: Приоритет
         operations:
-          label: Operations
+          label: Действия
       filters:
         label:
           expose:

@@ -1,0 +1,19 @@
+.page-node-3024{
+  .article_sections{
+    .field--name-field-media{
+      & > .field__item{
+        .field--name-field-media-image{
+          .field__item{
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .field--name-field-caption-copyrigth-, .field--name-field-copyrigth{
+          max-width: 120px !important;
+          min-width: 120px !important;
+          width: 120px !important;
+        }
+      }
+    }
+  }
+}
