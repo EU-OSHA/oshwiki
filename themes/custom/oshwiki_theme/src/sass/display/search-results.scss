@@ -22,29 +22,33 @@
     .js-facet-block-id-contenttype{
       h2{
         margin:0rem;
-        padding: 0.5rem 0rem 0.5rem 1.5rem;
+        padding: 0.2rem 0rem 0.2rem 1.7rem;
         border-radius: 15px 15px 0px 0px;
         background-color: $bg-dark-green;
         @include textFormat(1.3rem, null, $text-white);
       }
       & > .content{
-        padding: 1rem 1rem 0.2rem 1rem;
+        padding: 0.2rem 0rem;
         border-radius: 0px 0px 15px 15px;
         background-color: $bg-light-green;
         height: fit-content;
         .facets-widget-checkbox{
           list-style: none;
-          .facet-item{
-            display: flex;
-            align-items: baseline;
-            gap: 0.5rem;
-            list-style: none;
-            .facet-item__value, .facet-item__count{
-              @include textFormat(1rem, null, $text-dark-green);
-            }
-            .facet-item__value{
-              &:hover{
-                text-decoration: underline;
+          & > ul{
+            padding-left: 0.4rem;
+            margin-bottom: 0.2rem;
+            .facet-item{
+              display: flex;
+              align-items: baseline;
+              gap: 0.5rem;
+              list-style: none;
+              .facet-item__value, .facet-item__count{
+                @include textFormat(1rem, null, $text-dark-green);
+              }
+              .facet-item__value{
+                &:hover{
+                  text-decoration: underline;
+                }
               }
             }
           }
@@ -55,13 +59,13 @@
       margin: 1rem 0rem;
       h2{
         margin:0rem;
-        padding: 0.5rem 0rem 0.5rem 1.5rem;
+        padding: 0.2rem 0rem 0.2rem 1.7rem;
         border-radius: 15px 15px 0px 0px;
         background-color: $bg-dark-green;
         @include textFormat(1.3rem, null, $text-white);
       }
       & > .content{
-        padding: 1rem;
+        padding: 0.2rem 0rem;
         border-radius: 0px 0px 15px 15px;
         background-color: $bg-light-green;
         height: fit-content;
@@ -70,13 +74,15 @@
           padding: 0rem;
           margin: 0rem;
           .item-list__checkbox{
-            margin: 1rem 0rem;
+            margin: 0.2rem 0rem;
             list-style: none;
             &:first-of-type{
               margin-top: 0rem;
             }
             &:last-of-type{
               margin-bottom: 0rem;
+              padding-left: 0.5rem;
+              padding-right: 0.2rem;
             }
             .facet-item{
               display: flex;
@@ -94,7 +100,7 @@
 
           }
           .facets-soft-limit-link{
-            margin-left: 2.2rem;
+            margin-left: 1.7rem;
             @include textFormat(0.9rem, 700, null);
           }
         }
@@ -223,6 +229,7 @@
           }
 
           .views-field-field-sections-oshwiki,
+          .views-field-field-introduction-science,
           .views-field-search-api-excerpt{
             @include textFormat(1rem, null, $text-dark-dark-grey);
             letter-spacing: 0.2px;
@@ -370,6 +377,29 @@
               select{
                 width: 13rem;
                 background-position: 93% 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .page-view-search{
+    #main{
+      /*Responsive layout with grid-area*/
+      .section{
+        grid-template-columns: 0.7fr 1fr 1fr 1fr;
+      }
+      /*End comment*/
+      .block-system-main-block{
+        .view-filters{
+          .form-row{
+            .js-form-type-textfield{
+              input{
+                width: 12rem;
               }
             }
           }

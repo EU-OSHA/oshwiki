@@ -8,14 +8,14 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Tip
         source_language:
-          label: From
+          label: Od
         target_language:
-          label: To
+          label: Za
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Operacije
   page_1:
     display_title: Stran

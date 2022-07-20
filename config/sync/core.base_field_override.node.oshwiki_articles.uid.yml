@@ -1,0 +1,20 @@
+uuid: 0cd7acbb-4f53-459c-8220-e9483d79ddaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oshwiki_articles
+id: node.oshwiki_articles.uid
+field_name: uid
+entity_type: node
+bundle: oshwiki_articles
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

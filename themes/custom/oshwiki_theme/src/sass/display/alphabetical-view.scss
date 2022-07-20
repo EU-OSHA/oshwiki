@@ -50,13 +50,13 @@
     margin: 1rem 0rem;
     h2{
       margin:0rem;
-      padding: 0.8rem 0rem 0.8rem 1.5rem;
+      padding: 0.4rem 0rem 0.4rem 0.8rem;
       border-radius: 15px 15px 0px 0px;
       background-color: $bg-dark-green;
       @include textFormat(1.3rem, null, $text-white);
     }
     .facets-widget-links{
-      padding: 1rem 1.5rem;
+      padding: 0.5rem 0.3rem;
       border-radius: 0px 0px 15px 15px;
       background-color: $bg-light-green;
       height: fit-content;
@@ -108,7 +108,6 @@
         .views-field-url{
           display: flex;
           flex-direction: row-reverse;
-          padding-top: 0.5rem;
           letter-spacing: 0.3px;
           line-height: 29px;
           span{
@@ -150,9 +149,26 @@
           grid-template-areas:
           "alphabet alphabet alphabet alphabet"
           "select-theme alphabetical-content alphabetical-content alphabetical-content";
+          #block-glossaryblock{
+            margin-bottom: 0.5rem;
+          }
         }
         /*End comment*/
       }
     }
   }
 }
+@media only screen and (min-width: 1480px) {
+  .page-view-alphabetical-view{
+    .container{
+      #main{
+        /*Responsive layout with grid-area*/
+        .section{
+          grid-template-columns: 0.65fr 1fr 1fr 1fr;
+        }
+        /*End comment*/
+      }
+    }
+  }
+}
+

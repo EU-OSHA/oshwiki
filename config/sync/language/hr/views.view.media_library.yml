@@ -29,7 +29,7 @@ display:
             label: Naziv
         langcode:
           expose:
-            label: Language
+            label: Jezik
   page:
     display_title: Stranica
     display_options:

@@ -11,9 +11,9 @@ display:
         label:
           label: Label
         item_type:
-          label: Type
+          label: Тип
         operations:
-          label: Operations
+          label: Действия
       arguments:
         tltid:
           exception:

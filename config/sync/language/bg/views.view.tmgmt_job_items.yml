@@ -8,21 +8,21 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ предишна'
+            next: 'следваща ›'
+            first: '« първа'
+            last: 'последна »'
       fields:
         state:
           label: State
         label:
           label: Label
         type:
-          label: Type
+          label: Тип
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Действия
       arguments:
         tjid:
           exception:
@@ -34,4 +34,4 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Тип

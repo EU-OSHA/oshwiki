@@ -1,0 +1,22 @@
+uuid: dba2ef30-1023-44f6-b66a-f734c71c8235
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.translatable_node
+id: node.translatable_node.promote
+field_name: promote
+entity_type: node
+bundle: translatable_node
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -14,7 +14,7 @@ id: node.oshwiki_articles.field_one_language_available
 field_name: field_one_language_available
 entity_type: node
 bundle: oshwiki_articles
-label: 'One language available'
+label: 'Not available in English'
 description: ''
 required: false
 translatable: false

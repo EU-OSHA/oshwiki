@@ -17,7 +17,7 @@ field_name: field_references_oshwiki
 entity_type: node
 bundle: oshwiki_articles
 label: References
-description: ''
+description: '<a href="/admin/structure/taxonomy/manage/reference/add" target="_blank" class="button">Add new term</a>'
 required: false
 translatable: true
 default_value: {  }

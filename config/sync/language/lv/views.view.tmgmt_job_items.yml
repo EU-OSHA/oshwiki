@@ -12,23 +12,23 @@ display:
           expose:
             items_per_page_options_all_label: '- Visi -'
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ iepriekšējā'
+            next: 'nākamā ›'
+            first: '« pirmā'
+            last: 'pēdējā »'
       fields:
         state:
           label: State
         label:
           label: Label
         type:
-          label: Type
+          label: Veids
         tags_count:
           label: Tags
         changed:
           label: Changed
         operations:
-          label: Operations
+          label: Darbības
       arguments:
         tjid:
           exception:
@@ -40,7 +40,7 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Veids
         changed:
           label: Changed
   submitted:
