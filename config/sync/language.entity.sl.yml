@@ -5,5 +5,5 @@ dependencies: {  }
 id: sl
 label: Slovenian
 direction: ltr
-weight: 13
+weight: 7
 locked: false

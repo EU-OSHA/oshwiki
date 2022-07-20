@@ -1,8 +1,0 @@
-default_config:
-  tags:
-    pages:
-      prefix_label: Seite
-      page_current_title: 'Aktuelle Seite'
-      page_current_reader: 'Aktuelle Seite'
-    items:
-      prefix_label: Element

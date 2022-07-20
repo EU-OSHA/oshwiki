@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        view_node:
-          text: 'Lue artikkeli'
-      use_more_text: 'Katso kaikki'

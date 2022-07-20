@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        view_node:
-          text: 'Aqra l-artiklu'
-      use_more_text: 'Ara kollox'
