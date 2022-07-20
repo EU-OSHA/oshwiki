@@ -1,0 +1,98 @@
+label: Margmiðlunarsafn
+description: 'Finna og stjórna margmiðlunarefni'
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      title: Margmiðlunarefni
+      fields:
+        media_bulk_form:
+          action_title: Aðgerð
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      empty:
+        area_text_custom:
+          content: 'Ekkert margmiðlunarefni aðgengilegt.'
+      filters:
+        status:
+          expose:
+            label: Birtingarstaða
+          group_info:
+            label: Birt
+            group_items:
+              1:
+                title: Birt
+              2:
+                title: 'Ekki birt'
+        name:
+          expose:
+            label: Nafn
+        bundle:
+          expose:
+            label: 'Tegund margmiðlunarefnis'
+          group_info:
+            label: 'Tegund margmiðlunarefnis'
+        langcode:
+          expose:
+            label: Tungumál
+  page:
+    display_title: Síða
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Aðgerð
+        name:
+          separator: ', '
+        edit_media:
+          text: Breyta
+        delete_media:
+          text: Eyða
+  widget:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Allt
+      filters:
+        name:
+          expose:
+            label: Nafn
+      header:
+        display_link_grid:
+          label: Grind
+        display_link_table:
+          label: Tafla
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Smámynd
+        name:
+          label: Nafn
+        uid:
+          label: Höfundur
+        changed:
+          label: Uppfært
+      arguments:
+        bundle:
+          exception:
+            title: Allt
+      filters:
+        name:
+          expose:
+            label: Nafn
+      header:
+        display_link_grid:
+          label: Grind
+        display_link_table:
+          label: Tafla

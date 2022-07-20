@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Otsing
+          reset_button_label: Taaslähtesta
+          exposed_sorts_label: Sordi
+          sort_asc_label: 'Kasvavas järjestuses'
+          sort_desc_label: 'Laskuvas järjestuses'
+      title: Otsing
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Asjakohasus
+        publication_date:
+          expose:
+            label: Avaldamiskuupäev
+        title:
+          expose:
+            label: 'Tähestiku järjekorras'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Otsing
+label: Otsing

@@ -1,0 +1,44 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+          tags:
+            previous: '‹ ankstesnis'
+            next: 'kitas  ›'
+            first: '« pirmas'
+            last: 'paskutinis  »'
+      fields:
+        state:
+          label: State
+        label:
+          label: Label
+        source_language_1:
+          label: Nuo
+        target_language:
+          label: Kam
+        translator:
+          label: Provider
+        tags_count:
+          label: Tags
+        changed:
+          label: Changed
+        operations:
+          label: Veiksmai
+      filters:
+        state:
+          expose:
+            label: State
+        translator:
+          expose:
+            label: Provider
+  page_1:
+    display_title: Puslapis

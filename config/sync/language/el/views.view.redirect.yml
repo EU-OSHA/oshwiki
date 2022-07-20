@@ -1,0 +1,38 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Φίλτρο
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      pager:
+        options:
+          tags:
+            previous: '‹ προηγούμενη'
+            next: 'επόμενη ›'
+            first: '« πρώτη'
+            last: 'τελευταία »'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      fields:
+        redirect_bulk_form:
+          action_title: 'Επιλογές ενημέρωσης'
+        redirect_source__path:
+          label: Από
+          separator: ', '
+        created:
+          label: Δημιουργήθηκε
+      filters:
+        redirect_source__path:
+          expose:
+            label: Από
+        redirect_redirect__uri:
+          expose:
+            label: Προς
+  page_1:
+    display_title: Σελίδα

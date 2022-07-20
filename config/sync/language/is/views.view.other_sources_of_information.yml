@@ -1,0 +1,24 @@
+label: 'Upplýsingar sem hægt er að nálgast annars staðar'
+display:
+  default:
+    display_options:
+      title: 'Upplýsingar sem hægt er að nálgast annars staðar'
+      exposed_form:
+        options:
+          submit_button: Leita
+          exposed_sorts_label: 'Flokka eftir'
+          sort_desc_label: Lækkandi
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Þýðing
+        publication_date:
+          expose:
+            label: Útgáfudagsetning
+        title:
+          expose:
+            label: 'Í stafrófsröð'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Leita

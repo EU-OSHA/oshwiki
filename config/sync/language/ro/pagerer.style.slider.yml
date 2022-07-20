@@ -1,0 +1,25 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Pagina
+      previous: ‹
+      next: ›
+      page_current_title: 'Pagina curentă'
+      first_title: 'Mergi la prima pagină'
+      previous_title: 'Mergi la pagina anterioară'
+      next_title: 'Mergi la pagina următoare'
+      last_title: 'Mergi la ultima pagină'
+      page_current_reader: 'Pagina curentă'
+      first_reader: 'Prima pagină'
+      previous_reader: 'Pagina anterioară'
+      next_reader: 'Pagina următoare'
+      last_reader: 'Ultima pagină'
+    items:
+      prefix_label: Produs
+      previous: ‹
+      next: ›
+      first_reader: 'Primul articol'
+    item_ranges:
+      prefix_label: Articole
+      previous: ‹
+      next: ›

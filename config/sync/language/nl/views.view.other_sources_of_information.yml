@@ -1,0 +1,23 @@
+label: 'Andere informatiebronnen'
+display:
+  default:
+    display_options:
+      title: 'Andere informatiebronnen'
+      exposed_form:
+        options:
+          submit_button: Zoeken
+          exposed_sorts_label: 'Sorteren op'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevantie
+        publication_date:
+          expose:
+            label: Publicatiedatum
+        title:
+          expose:
+            label: Alfabetisch
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Zoeken

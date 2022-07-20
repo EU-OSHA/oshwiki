@@ -1,0 +1,21 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Pagina
+      previous: ‹
+      next: ›
+      page_current_title: 'Pagina attuale'
+      first_title: 'Vai alla prima pagina'
+      previous_title: 'Vai alla pagina precedente'
+      next_title: 'Vai alla pagina successiva'
+      last_title: 'Vai all''ultima pagina'
+      page_current_reader: 'Pagina attuale'
+      first_reader: 'Prima pagina'
+      previous_reader: 'Pagina precedente'
+      next_reader: 'Pagina successiva'
+      last_reader: 'Ultima pagina'
+    items:
+      prefix_label: Elemento
+      previous: ‹
+      next: ›
+      first_reader: 'Prima voce'

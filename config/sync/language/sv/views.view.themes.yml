@@ -1,0 +1,26 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevans
+        created:
+          expose:
+            label: Publiceringsdag
+        title:
+          expose:
+            label: 'Alfabetisk ordning'
+  page_2:
+    display_title: Senaste
+    display_options:
+      title: Senaste
+  default:
+    display_options:
+      title: Ämnen

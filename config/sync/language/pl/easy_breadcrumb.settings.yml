@@ -1,0 +1,6 @@
+home_segment_title: 'Strona główna'
+capitalizator_ignored_words:
+  - z
+  - i
+  - lub
+truncator_length: '100'

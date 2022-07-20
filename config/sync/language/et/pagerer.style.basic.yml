@@ -1,0 +1,20 @@
+default_config:
+  tags:
+    pages:
+      previous: ‹
+      next: ›
+      first_title: 'Mine esimesele lehele'
+      previous_title: 'Mine eelmisele lehele'
+      next_title: 'Mine järgmisele lehele'
+      last_title: 'Mine viimasele lehele'
+      first_reader: 'Esimene leht'
+      previous_reader: 'Eelmine leht'
+      next_reader: 'Järgmine leht'
+      last_reader: 'Viimane leht'
+    items:
+      previous: ‹
+      next: ›
+      first_reader: 'Esimene element'
+    item_ranges:
+      previous: ‹
+      next: ›

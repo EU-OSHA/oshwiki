@@ -1,0 +1,46 @@
+display:
+  default:
+    display_title: Predvolené
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použiť
+          reset_button_label: Reset
+          exposed_sorts_label: 'Zoradiť podľa'
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+      pager:
+        options:
+          tags:
+            previous: '‹ predchádzajúca'
+            next: 'nasledujúca ›'
+            first: '« prvá'
+            last: 'posledná »'
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
+      fields:
+        label:
+          label: Označenie
+          separator: ', '
+        state:
+          separator: ', '
+        priority:
+          label: Priorita
+          separator: ', '
+        changed:
+          label: Zmenené
+          separator: ', '
+        file_uploaded:
+          separator: ', '
+        file_sent:
+          separator: ', '
+        operations:
+          label: Operácie
+      filters:
+        label:
+          expose:
+            label: Označenie
+  page_1:
+    display_title: Stránka

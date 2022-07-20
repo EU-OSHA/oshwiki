@@ -1,0 +1,27 @@
+display:
+  default:
+    display_title: Privzeto
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      pager:
+        options:
+          tags:
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
+      fields:
+        label:
+          label: Label
+        priority:
+          label: Prioriteta
+        operations:
+          label: Operacije
+      filters:
+        label:
+          expose:
+            label: Label
+  page_1:
+    display_title: Stran

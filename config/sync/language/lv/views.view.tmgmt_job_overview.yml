@@ -1,0 +1,44 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+          tags:
+            previous: '‹ iepriekšējā'
+            next: 'nākamā ›'
+            first: '« pirmā'
+            last: 'pēdējā »'
+      fields:
+        state:
+          label: State
+        label:
+          label: Label
+        source_language_1:
+          label: 'No'
+        target_language:
+          label: Kam
+        translator:
+          label: Provider
+        tags_count:
+          label: Tags
+        changed:
+          label: Changed
+        operations:
+          label: Darbības
+      filters:
+        state:
+          expose:
+            label: State
+        translator:
+          expose:
+            label: Provider
+  page_1:
+    display_title: Lapa

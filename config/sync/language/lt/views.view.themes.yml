@@ -1,0 +1,24 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'Išvalyti pasirinkimus'
+          exposed_sorts_label: 'Rūšiuoti pagal'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Svarba
+        created:
+          expose:
+            label: 'Išleidimo data'
+        title:
+          expose:
+            label: 'Abėcėlės tvarka'
+  page_2:
+    display_title: Naujausi
+    display_options:
+      title: Naujausi
+  default:
+    display_options:
+      title: Temos

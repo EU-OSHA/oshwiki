@@ -1,0 +1,48 @@
+display:
+  default:
+    display_title: Výchozí
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použít
+          reset_button_label: Reset
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      pager:
+        options:
+          tags:
+            previous: '‹ předchozí'
+            next: 'následující ›'
+            first: '« první'
+            last: 'poslední »'
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+      fields:
+        label:
+          label: Popisek
+          separator: ', '
+        state:
+          separator: ', '
+        priority:
+          label: Priorita
+          separator: ', '
+        page_count:
+          label: 'Počet stránek'
+        changed:
+          label: Změněno
+          separator: ', '
+        file_uploaded:
+          separator: ', '
+        file_sent:
+          separator: ', '
+        operations:
+          label: Operace
+      filters:
+        label:
+          expose:
+            label: Popisek
+  page_1:
+    display_title: Stránka

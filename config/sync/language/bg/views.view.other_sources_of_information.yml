@@ -1,0 +1,22 @@
+label: 'Други източници на информация'
+display:
+  default:
+    display_options:
+      title: 'Други източници на информация'
+      exposed_form:
+        options:
+          submit_button: Търсене
+          exposed_sorts_label: 'Сортиране по'
+          sort_asc_label: Възходящ
+          sort_desc_label: Низходящ
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Приложимост
+        title:
+          expose:
+            label: 'По азбучен ред'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Търсене

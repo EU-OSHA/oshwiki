@@ -1,0 +1,37 @@
+label: 'Ostali izvori informacija'
+display:
+  default:
+    display_options:
+      title: 'Ostali izvori informacija'
+      fields:
+        field_year_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        field_volume_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        field_issue_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+        field_article_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      exposed_form:
+        options:
+          submit_button: Pretraživanje
+          exposed_sorts_label: 'Razvrstaj po'
+          sort_desc_label: Opis
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Važnost
+        publication_date:
+          expose:
+            label: 'Datum objave'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Pretraživanje
