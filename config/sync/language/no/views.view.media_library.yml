@@ -1,6 +1,0 @@
-display:
-  widget_table:
-    display_options:
-      fields:
-        uid:
-          label: Forfatter

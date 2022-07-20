@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        view_node:
-          text: 'Skaityti straipsnį'
-      use_more_text: 'Žiūrėti viską'

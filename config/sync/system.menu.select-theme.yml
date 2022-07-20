@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+uuid: 1ba6803a-d282-4247-9809-d22bb8d923d6
+=======
 uuid: 6980200b-218d-4597-804c-b205431a579c
+>>>>>>> develop
 langcode: en
 status: true
 dependencies: {  }
 id: select-theme
 label: 'Select theme'
+<<<<<<< HEAD
+description: 'Select theme menu for the home page'
+=======
 description: ''
+>>>>>>> develop
 locked: false

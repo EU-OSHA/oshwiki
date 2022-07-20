@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        view_node:
-          text: 'Διαβάστε το άρθρο'
-      use_more_text: 'Εμφάνιση όλων'

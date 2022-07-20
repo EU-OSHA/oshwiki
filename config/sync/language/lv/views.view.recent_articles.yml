@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        view_node:
-          text: 'Lasīt rakstu'
-      use_more_text: 'Skatīt visus'

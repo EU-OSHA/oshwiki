@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        view_node:
-          text: 'Přečtete si článek'
-      use_more_text: 'Zobrazit vše'

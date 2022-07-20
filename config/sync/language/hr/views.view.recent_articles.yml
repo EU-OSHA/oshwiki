@@ -1,7 +1,0 @@
-display:
-  default:
-    display_options:
-      fields:
-        view_node:
-          text: 'Pročitajte članak'
-      use_more_text: 'Prikaži sve'

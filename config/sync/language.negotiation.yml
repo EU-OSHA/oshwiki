@@ -30,7 +30,11 @@ url:
     sk: sk
     is: is
     ro: ro
+<<<<<<< HEAD
+    pt-pt: pt
+=======
     pt-pt: pt-pt
+>>>>>>> develop
   domains:
     en: ''
     de: ''
