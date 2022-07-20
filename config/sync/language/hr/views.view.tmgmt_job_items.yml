@@ -12,24 +12,24 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prethodna'
+            next: 'sljedeća ›'
+            first: '« prva'
+            last: 'posljednja »'
       fields:
         state:
           label: State
         label:
           label: Label
         type:
-          label: Type
+          label: Vrsta
         word_count:
           separator: ', '
         tags_count:
           label: Tags
           separator: ', '
         operations:
-          label: Operations
+          label: Operacije
       arguments:
         tjid:
           exception:
@@ -41,7 +41,7 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Vrsta
         word_count:
           separator: ', '
         changed:

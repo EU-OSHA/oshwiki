@@ -23,7 +23,7 @@ display:
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Aktualizacja masowa'
-          action_title: 'With selection'
+          action_title: 'Z wyborem'
         title:
           label: Tytuł
           separator: ', '
@@ -41,7 +41,7 @@ display:
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Aktualizacja masowa'
-          action_title: 'With selection'
+          action_title: 'Z wyborem'
         status:
           label: Status
           separator: ', '
@@ -84,7 +84,7 @@ display:
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Aktualizacja masowa'
-          action_title: 'With selection'
+          action_title: 'Z wyborem'
         status:
           label: Status
           separator: ', '
@@ -130,7 +130,7 @@ display:
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Aktualizacja masowa'
-          action_title: 'With selection'
+          action_title: 'Z wyborem'
         status:
           label: Status
           separator: ', '
@@ -176,7 +176,7 @@ display:
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Aktualizacja masowa'
-          action_title: 'With selection'
+          action_title: 'Z wyborem'
         status:
           label: Status
           format_plural_string: !!binary MQNAY291bnQDQGNvdW50
@@ -219,7 +219,7 @@ display:
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Aktualizacja masowa'
-          action_title: 'With selection'
+          action_title: 'Z wyborem'
         status:
           label: Status
           format_plural_string: !!binary MQNAY291bnQDQGNvdW50
@@ -262,7 +262,7 @@ display:
       fields:
         tmgmt_local_task_bulk_form:
           label: 'Aktualizacja masowa'
-          action_title: 'With selection'
+          action_title: 'Z wyborem'
         status:
           label: Status
           format_plural_string: !!binary MQNAY291bnQDQGNvdW50

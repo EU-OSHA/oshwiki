@@ -11,15 +11,15 @@ display:
         label:
           label: Label
         type:
-          label: Type
+          label: Тип
         source_language:
-          label: From
+          label: От
         target_language:
-          label: To
+          label: До
         tags_count:
           label: Tags
         operations:
-          label: Operations
+          label: Действия
       filters:
         state:
           group_info:

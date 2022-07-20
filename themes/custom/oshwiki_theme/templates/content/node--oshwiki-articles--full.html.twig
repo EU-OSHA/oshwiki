@@ -72,7 +72,7 @@
     'clearfix',
   ]
 %}
-<div class="container">
+<div class="container oshwiki-article-container">
   <div class="row wrapper-content oshwiki-content">
     <!-- LEFT COLUMN -->
     <div class="col-lg-3 col-12 order-2 items-left">
@@ -128,6 +128,8 @@
                 </div>
               {% endif %}
             {% endfor %}
+            <button class="btnReferences showReferences">{{ 'See all references' |trans }}</button>
+            <button class="btnReferences hideReferences">{{ 'See less references' |trans }}</button>
           </div>
         {% endif %}
         <!-- END REFERENCES -->
@@ -230,7 +232,6 @@
                   <h2>
                     {{ node.field_contributors_oshwiki.entity.field_name_and_sur_contributors.0.value }}
                   </h2>
-                  <div class="field--email-contributors">{{ node.field_contributors_oshwiki.entity.title.0.value }}</div>
                 </div>
               </div>
             </div>

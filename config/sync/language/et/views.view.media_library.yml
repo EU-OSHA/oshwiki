@@ -57,7 +57,7 @@ display:
             label: 'Meedia tüüp'
         langcode:
           expose:
-            label: Language
+            label: Keel
   page:
     display_title: Lehekülg
     display_options:

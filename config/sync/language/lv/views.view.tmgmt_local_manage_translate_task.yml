@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Filtrēt
           reset_button_label: Attīrīt
           exposed_sorts_label: 'Kārtot pēc'
           sort_desc_label: Dilst.
@@ -27,13 +27,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         uid:
           expose:
@@ -50,17 +50,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Izveidots
         title:
           label: Title
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         uid:
           expose:
@@ -77,17 +77,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Izveidots
         title:
           label: Title
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         uid:
           expose:
@@ -106,13 +106,13 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         uid:
           expose:
@@ -126,17 +126,17 @@ display:
         status:
           label: Status
         created:
-          label: Created
+          label: Izveidots
         title:
           label: Title
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības
       filters:
         uid:
           expose:
@@ -152,10 +152,10 @@ display:
         title:
           label: Title
         source_language:
-          label: From
+          label: 'No'
         target_language:
-          label: To
+          label: Kam
         item_count:
           label: Vienumi
         operations:
-          label: Operations
+          label: Darbības

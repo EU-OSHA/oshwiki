@@ -58,7 +58,7 @@ display:
             label: Médiatípus
         langcode:
           expose:
-            label: Language
+            label: Nyelv
   page:
     display_title: Oldal
     display_options:

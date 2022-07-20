@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ előző'
+            next: 'következő ›'
+            first: '« első'
+            last: 'utolsó »'
           expose:
             items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options_all_label: '– Mind –'

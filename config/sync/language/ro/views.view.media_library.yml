@@ -41,7 +41,7 @@ display:
             label: Nume
         langcode:
           expose:
-            label: Language
+            label: Limba
   page:
     display_title: Pagina
     display_options:

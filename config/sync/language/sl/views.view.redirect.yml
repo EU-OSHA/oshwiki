@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Ponastavi
+      pager:
+        options:
+          tags:
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
+      fields:
+        redirect_source__path:
+          label: Od
+        created:
+          label: Ustvarjeno
+      filters:
+        redirect_source__path:
+          expose:
+            label: Od
+        redirect_redirect__uri:
+          expose:
+            label: Za
+  page_1:
+    display_title: Stran

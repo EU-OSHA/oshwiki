@@ -1,5 +1,0 @@
-default_config:
-  tags:
-    pages:
-      previous_title: 'Idi na prethodnu stranu'
-      next_title: 'Idi na iduću stranu'

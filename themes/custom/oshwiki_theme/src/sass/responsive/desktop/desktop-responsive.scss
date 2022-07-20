@@ -1,3 +1,44 @@
-@media only screen and (min-width: 1224px){
-
+/*Containers for min-with 1480*/
+@media only screen and (min-width: 1480px){
+  .section{
+    div.container{
+      max-width: 1480px;
+      .row.wrapper-content{
+        .col-lg-6{
+          flex: 0 0 64%;
+          max-width: 64%;
+        }
+        .col-lg-3{
+          flex: 0 0 18%;
+          max-width: 18%;
+        }
+      }
+    }
+  }
+  .container.page-content-container{
+    max-width: 1480px;
+    .section{
+      div.container{
+        max-width: 1480px;
+      }
+    }
+    .col-lg-9{
+      flex: 0 0 82%;
+      max-width: 82%;
+    }
+    .col-lg-3{
+      flex: 0 0 18%;
+      max-width: 18%;
+    }
+  }
+  #main-wrapper{
+    .container{
+      max-width: 1480px;
+    }
+  }
+  footer{
+    & > .container{
+      max-width: 1480px;
+    }
+  }
 }

@@ -201,6 +201,9 @@ body.scrolldown.user-logged-in{
           align-items: baseline;
           column-gap: 0.2rem;
           margin-bottom: 3.5px;
+          & > span{
+            cursor: pointer;
+          }
           span:first-of-type{
             @include textFormat(1rem, 700, $text-dark-green);
           }
@@ -231,7 +234,7 @@ body.scrolldown.user-logged-in{
     size: cover;
   }
   text-align: center;
-  margin: 0rem 0rem 2rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
   padding: 1rem 0rem;
 
   .block-page-title-block{

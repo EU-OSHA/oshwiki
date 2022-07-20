@@ -12,13 +12,13 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prethodna'
+            next: 'sljedeća ›'
+            first: '« prva'
+            last: 'posljednja »'
       fields:
         created:
-          label: Created
+          label: Stvoreno
         label:
           label: stavka
         name:
