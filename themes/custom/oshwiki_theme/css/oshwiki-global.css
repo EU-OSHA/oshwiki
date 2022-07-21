@@ -966,7 +966,7 @@ a:hover {
   font-size: 1.8rem;
   color: #58585A;
 }
-.page-view-frontpage #main-wrapper .banner-container-fluid .section_banner h1 span {
+.page-view-frontpage #main-wrapper .banner-container-fluid .section_banner h1 strong {
   color: #003399;
 }
 .page-view-frontpage #main-wrapper .banner-container-fluid .section_banner p {

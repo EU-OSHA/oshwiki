@@ -29,7 +29,7 @@
         }
         h1{
           @include textFormat(1.8rem, null, $text-dark-dark-grey);
-          span{
+          strong{
             color: $text-blue;
           }
         }
