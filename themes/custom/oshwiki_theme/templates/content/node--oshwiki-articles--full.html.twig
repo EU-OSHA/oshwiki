@@ -79,17 +79,21 @@
       {% if node.field_one_language_available.value==0 %}
       {{ drupal_entity('block', 'osharticleslanguageblock', check_access=false) }}
       {% endif %}
+      {%  if content.field_sections_oshwiki['#items']|length>0 %}
       <div class="anchor-item-list-container">
         <ul class="anchor-items-list">
           {% for key, items in content.field_sections_oshwiki['#items'] %}
-            {% set titleSection = items.entity.field_title_sections.0.value|raw %}
-            <li>
-              <div class="icon-before-anchor-item"></div>
-              <a href="#{{ titleSection }}">{{ titleSection }}</a>
-            </li>
+            {% if items.entity.field_title_sections.0.value|raw|length>0 %}
+              {% set titleSection = items.entity.field_title_sections.0.value|raw %}
+              <li>
+                <div class="icon-before-anchor-item"></div>
+                <a href="#{{ titleSection }}">{{ titleSection }}</a>
+              </li>
+            {% endif%}
           {% endfor %}
         </ul>
       </div>
+      {% endif %}
     </div>
     <!-- END LEFT COLUMN -->
     <!-- CENTER COLUMN -->
