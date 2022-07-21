@@ -3344,6 +3344,12 @@ button.navbar-toggler-right .icon-bar {
     margin-bottom: 0.5rem;
   }
 }
+.page-node-3024 .article_sections .small-table tr {
+  display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
+  max-width: fit-content;
+}
 .page-node-3024 .article_sections .field--name-field-media > .field__item .field--name-field-media-image .field__item {
   display: flex;
   justify-content: center;
