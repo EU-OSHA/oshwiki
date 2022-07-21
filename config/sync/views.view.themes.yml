@@ -1873,7 +1873,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      title: 'Most recent Articles'
+      title: 'Most recent articles'
       fields:
         title:
           id: title
