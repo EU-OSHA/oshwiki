@@ -155,6 +155,25 @@
         @include textFormat(0.9rem, 700, $text-dark-dark-grey);
       }
     }
+    .attachment-before{
+      .views-element-container{
+        .views-row{
+          padding: 1rem 0rem;
+          border-bottom: 1px dotted $bg-dark-medium-grey;
+          .views-field-title{
+            a{
+              @include textFormat(1.2rem, 700, $text-dark-green);
+              padding-bottom: 0.2rem;
+            }
+          }
+          .views-field-field-sections-oshwiki{
+            span.field-content{
+              font-size: 1.05rem;
+            }
+          }
+        }
+      }
+    }
     .view-content{
       display: flex;
       flex-direction: column;
