@@ -296,7 +296,7 @@ function createDivCardsHomePage(){
           /*Add the "transparent-tag" class for the css*/
           jQuery(this).prepend("<div class='taxonomy-level-wrapper transparent-tag'>" +
             "<div class='taxonomy-level-item type-themes'>" +
-            "<span>tag</span>\n" +
+            "<span></span>\n" +
             "</div>" +
             "</div>");
         }
@@ -338,7 +338,7 @@ function createDivCards(bodyClass, cardWrapperNames){
           /*Add the "transparent-tag" class for the css*/
           jQuery(this).prepend("<div class='taxonomy-level-wrapper transparent-tag'>" +
             "<div class='taxonomy-level-item type-themes'>" +
-            "<span>tag</span>\n" +
+            "<span></span>\n" +
             "</div>" +
             "</div>");
         }
