@@ -13,7 +13,7 @@ display:
         status:
           label: Status
         label:
-          label: Label
+          label: Oznaka
         item_type:
           label: Vrsta
           separator: ', '

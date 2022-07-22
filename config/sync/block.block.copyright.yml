@@ -1,9 +1,9 @@
-uuid: fba21b07-eb3e-4efe-9865-b2a6887cf90a
+uuid: 02b41d44-2dac-4971-b1e4-6799e3456800
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:3c070b40-8958-4e98-8190-ac5937211b71'
+    - 'block_content:basic:539a6176-ab66-4e36-be24-997aad123035'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: oshwiki_theme
 region: footer
 weight: -12
 provider: null
-plugin: 'block_content:3c070b40-8958-4e98-8190-ac5937211b71'
+plugin: 'block_content:539a6176-ab66-4e36-be24-997aad123035'
 settings:
-  id: 'block_content:3c070b40-8958-4e98-8190-ac5937211b71'
+  id: 'block_content:539a6176-ab66-4e36-be24-997aad123035'
   label: Copyright
   label_display: '0'
   provider: block_content

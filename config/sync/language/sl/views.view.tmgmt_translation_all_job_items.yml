@@ -6,7 +6,7 @@ display:
           reset_button_label: Ponastavi
       fields:
         label:
-          label: Label
+          label: Oznaka
         type:
           label: Tip
         source_language:

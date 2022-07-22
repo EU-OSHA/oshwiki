@@ -13,7 +13,7 @@ display:
         tmgmt_local_task_bulk_form:
           label: 'Bulk update'
         title:
-          label: Label
+          label: Oznaka
           separator: ', '
         item_count:
           label: Stavke
@@ -29,7 +29,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
           separator: ', '
         source_language:
           label: Od
@@ -47,7 +47,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
       menu:
         title: Closed
   completed:
@@ -58,7 +58,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
           separator: ', '
         source_language:
           label: Od
@@ -76,7 +76,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   eligible:
     display_options:
       fields:
@@ -85,7 +85,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
           separator: ', '
         source_language:
           label: Od
@@ -103,7 +103,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   my_tasks:
     display_options:
       fields:
@@ -112,7 +112,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
           separator: ', '
         source_language:
           label: Od
@@ -130,7 +130,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   pending:
     display_options:
       fields:
@@ -140,7 +140,7 @@ display:
           label: Status
           separator: ', '
         title:
-          label: Label
+          label: Oznaka
           separator: ', '
         source_language:
           label: Od
@@ -158,7 +158,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   rejected:
     display_options:
       fields:
@@ -167,7 +167,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
           separator: ', '
         source_language:
           label: Od
@@ -185,7 +185,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   unassigned:
     display_options:
       fields:
@@ -194,7 +194,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
           separator: ', '
         source_language:
           label: Od

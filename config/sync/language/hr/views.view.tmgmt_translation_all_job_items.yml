@@ -13,7 +13,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Oznaka
         type:
           label: Vrsta
         source_language:

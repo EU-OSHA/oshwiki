@@ -1,0 +1,22 @@
+uuid: ad89f35a-1903-4716-8d9a-f74bd95a3b65
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oshwiki_articles
+id: node.oshwiki_articles.sticky
+field_name: sticky
+entity_type: node
+bundle: oshwiki_articles
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

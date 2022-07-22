@@ -9,7 +9,7 @@ display:
         status:
           label: Status
         label:
-          label: Label
+          label: Заглавие
         item_type:
           label: Тип
         operations:

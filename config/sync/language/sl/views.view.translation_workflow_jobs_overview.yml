@@ -14,7 +14,7 @@ display:
             last: 'zadnja »'
       fields:
         label:
-          label: Label
+          label: Oznaka
         priority:
           label: Prioriteta
         operations:
@@ -22,6 +22,6 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Oznaka
   page_1:
     display_title: Stran

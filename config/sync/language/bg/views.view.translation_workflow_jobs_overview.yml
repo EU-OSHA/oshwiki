@@ -15,7 +15,7 @@ display:
             last: 'последна »'
       fields:
         label:
-          label: Label
+          label: Заглавие
         priority:
           label: Приоритет
         operations:
@@ -23,6 +23,6 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Заглавие
   page_1:
     display_title: Страница

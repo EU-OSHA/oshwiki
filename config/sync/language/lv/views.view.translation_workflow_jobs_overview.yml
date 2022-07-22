@@ -19,7 +19,7 @@ display:
             items_per_page_options_all_label: '- Visi -'
       fields:
         label:
-          label: Label
+          label: Etiķete
         priority:
           label: Prioritāte
         changed:
@@ -29,6 +29,6 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Etiķete
   page_1:
     display_title: Lapa

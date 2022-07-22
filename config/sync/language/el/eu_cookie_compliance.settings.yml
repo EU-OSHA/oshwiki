@@ -1,0 +1,5 @@
+popup_agreed:
+  value: '<h2> Σας ευχαριστούμε για την αποδοχή των cookies </h2> <p> Μπορείτε τώρα να κρύψετε αυτό το μήνυμα ή να μάθετε περισσότερα σχετικά με τα cookies. </p>'
+popup_more_info_button_message: 'Περισσότερες πληροφορίες'
+popup_find_more_button_message: 'Περισσότερες πληροφορίες'
+popup_hide_button_message: Απόκρυψη

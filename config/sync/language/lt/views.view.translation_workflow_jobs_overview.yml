@@ -19,7 +19,7 @@ display:
             items_per_page_options_all_label: '- Visos -'
       fields:
         label:
-          label: Label
+          label: Žymė
         priority:
           label: Prioritetas
         changed:
@@ -29,6 +29,6 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Žymė
   page_1:
     display_title: Puslapis

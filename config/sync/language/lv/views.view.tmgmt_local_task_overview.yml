@@ -13,7 +13,7 @@ display:
             items_per_page_options_all_label: '- Visi -'
       fields:
         title:
-          label: Label
+          label: Etiķete
         item_count:
           label: Vienumi
       filters:
@@ -26,7 +26,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Etiķete
         source_language:
           label: 'No'
         target_language:
@@ -41,7 +41,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Etiķete
       menu:
         title: Closed
   completed:
@@ -50,7 +50,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Etiķete
         source_language:
           label: 'No'
         target_language:
@@ -65,7 +65,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Etiķete
       menu:
         title: Completed
   eligible:
@@ -74,7 +74,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Etiķete
         source_language:
           label: 'No'
         target_language:
@@ -89,14 +89,14 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Etiķete
   my_tasks:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Label
+          label: Etiķete
         source_language:
           label: 'No'
         target_language:
@@ -111,14 +111,14 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Etiķete
   pending:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Label
+          label: Etiķete
         source_language:
           label: 'No'
         target_language:
@@ -133,7 +133,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Etiķete
       menu:
         title: Pending
   rejected:
@@ -142,7 +142,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Etiķete
         source_language:
           label: 'No'
         target_language:
@@ -157,14 +157,14 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Etiķete
   unassigned:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Label
+          label: Etiķete
         source_language:
           label: 'No'
         target_language:

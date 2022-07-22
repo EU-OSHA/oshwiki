@@ -9,7 +9,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Заглавие
         type:
           label: Тип
         source_language:

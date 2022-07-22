@@ -15,7 +15,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Etiķete
         type:
           label: Veids
         source_language:

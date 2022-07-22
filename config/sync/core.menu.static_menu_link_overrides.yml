@@ -2,11 +2,11 @@ _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
 definitions:
   contact__site_page:
+    enabled: false
     menu_name: footer
     parent: ''
-    weight: -49
     expanded: false
-    enabled: false
+    weight: -49
   standard__front_page:
     enabled: false
     menu_name: main

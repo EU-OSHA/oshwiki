@@ -15,7 +15,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Žymė
         type:
           label: Tipas
         source_language:

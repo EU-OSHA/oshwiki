@@ -20,7 +20,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Oznaka
         type:
           label: Vrsta
         word_count:
@@ -39,7 +39,7 @@ display:
     display_options:
       fields:
         label:
-          label: Label
+          label: Oznaka
         type:
           label: Vrsta
         word_count:

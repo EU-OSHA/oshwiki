@@ -13,7 +13,7 @@ display:
             last: 'zadnja »'
       fields:
         label:
-          label: Label
+          label: Oznaka
         source_language_1:
           label: Od
         target_language:

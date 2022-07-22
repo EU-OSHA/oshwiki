@@ -21,7 +21,7 @@ display:
           label: State
           separator: ', '
         label:
-          label: Label
+          label: Oznaka
         source_language_1:
           label: Od
           separator: ', '
