@@ -17,6 +17,9 @@
         align-items: center;
         margin-top: 0.7rem;
         @include textFormat(1rem, 700, $text-dark-dark-grey);
+        a{
+          @include textFormat(1rem, 700, $text-dark-dark-grey);
+        }
       }
     }
     .block:first-of-type{

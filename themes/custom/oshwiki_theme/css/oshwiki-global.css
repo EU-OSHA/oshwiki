@@ -2270,6 +2270,19 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   font-weight: 700;
   color: #58585A;
 }
+.path-themes #block-oshwiki-theme-content .attachment-before .views-element-container .views-row, .path-themes #block-views-block-themes-block-1 .attachment-before .views-element-container .views-row {
+  padding: 1rem 0rem;
+  border-bottom: 1px dotted #616161;
+}
+.path-themes #block-oshwiki-theme-content .attachment-before .views-element-container .views-row .views-field-title a, .path-themes #block-views-block-themes-block-1 .attachment-before .views-element-container .views-row .views-field-title a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #449FA2;
+  padding-bottom: 0.2rem;
+}
+.path-themes #block-oshwiki-theme-content .attachment-before .views-element-container .views-row .views-field-field-sections-oshwiki span.field-content, .path-themes #block-views-block-themes-block-1 .attachment-before .views-element-container .views-row .views-field-field-sections-oshwiki span.field-content {
+  font-size: 1.05rem;
+}
 .path-themes #block-oshwiki-theme-content .view-content, .path-themes #block-views-block-themes-block-1 .view-content {
   display: flex;
   flex-direction: column;
@@ -2967,6 +2980,11 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   display: flex;
   align-items: center;
   margin-top: 0.7rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #58585A;
+}
+.site-footer > section #block-copyright .copyright-footer a {
   font-size: 1rem;
   font-weight: 700;
   color: #58585A;
