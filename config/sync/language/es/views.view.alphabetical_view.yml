@@ -1,0 +1,5 @@
+label: 'Vista en orden alfabético'
+display:
+  default:
+    display_options:
+      title: 'Vista en orden alfabético'

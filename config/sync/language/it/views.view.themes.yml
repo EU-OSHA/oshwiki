@@ -1,0 +1,25 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reimposta
+          exposed_sorts_label: 'Ordina per'
+          sort_desc_label: Disc
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Pertinenza
+        created:
+          expose:
+            label: 'Data di pubblicazione'
+        title:
+          expose:
+            label: 'In ordine alfabetico'
+  page_2:
+    display_title: 'Più recente'
+    display_options:
+      title: 'Più recente'
+  default:
+    display_options:
+      title: Temi

@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Loe artiklit'
+      use_more_text: 'Vaata kõiki'

@@ -1,0 +1,268 @@
+display:
+  default:
+    display_title: Nadřízené
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtr
+          reset_button_label: Reset
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Hromadná aktualizace'
+        title:
+          label: Popisek
+          separator: ', '
+        word_count:
+          label: Slov
+        item_count:
+          label: Položky
+      filters:
+        status:
+          expose:
+            label: Stav
+  closed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Hromadná aktualizace'
+        status:
+          label: Stav
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Popisek
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Komu
+          separator: ', '
+        word_count:
+          label: Slov
+        item_count:
+          label: Položky
+        operations:
+          label: Operace
+      filters:
+        status:
+          expose:
+            label: Stav
+        source_language:
+          expose:
+            label: 'Zdrojový jazyk'
+        title:
+          expose:
+            label: Popisek
+      menu:
+        title: Zavřená
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Hromadná aktualizace'
+        status:
+          label: Stav
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Popisek
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Komu
+          separator: ', '
+        word_count:
+          label: Slov
+        item_count:
+          label: Položky
+        operations:
+          label: Operace
+      filters:
+        status:
+          expose:
+            label: Stav
+        source_language:
+          expose:
+            label: 'Zdrojový jazyk'
+        title:
+          expose:
+            label: Popisek
+      menu:
+        title: Dokončené
+  eligible:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Hromadná aktualizace'
+        status:
+          label: Stav
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Popisek
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Komu
+          separator: ', '
+        word_count:
+          label: Slov
+        item_count:
+          label: Položky
+        operations:
+          label: Operace
+      filters:
+        status:
+          expose:
+            label: Stav
+        source_language:
+          expose:
+            label: 'Zdrojový jazyk'
+        title:
+          expose:
+            label: Popisek
+  my_tasks:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Hromadná aktualizace'
+        status:
+          label: Stav
+        title:
+          label: Popisek
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Komu
+          separator: ', '
+        word_count:
+          label: Slov
+        item_count:
+          label: Položky
+        operations:
+          label: Operace
+      filters:
+        status:
+          expose:
+            label: Stav
+        source_language:
+          expose:
+            label: 'Zdrojový jazyk'
+        title:
+          expose:
+            label: Popisek
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Hromadná aktualizace'
+        status:
+          label: Stav
+          separator: ', '
+        title:
+          label: Popisek
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Komu
+          separator: ', '
+        word_count:
+          label: Slov
+        item_count:
+          label: Položky
+        operations:
+          label: Operace
+      filters:
+        status:
+          expose:
+            label: Stav
+        source_language:
+          expose:
+            label: 'Zdrojový jazyk'
+        title:
+          expose:
+            label: Popisek
+      menu:
+        title: 'Čeká na zpracování'
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Hromadná aktualizace'
+        status:
+          label: Stav
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Popisek
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Komu
+          separator: ', '
+        word_count:
+          label: Slov
+        item_count:
+          label: Položky
+        operations:
+          label: Operace
+      filters:
+        status:
+          expose:
+            label: Stav
+        source_language:
+          expose:
+            label: 'Zdrojový jazyk'
+        title:
+          expose:
+            label: Popisek
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Hromadná aktualizace'
+        status:
+          label: Stav
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Popisek
+          separator: ', '
+        source_language:
+          label: Od
+          separator: ', '
+        target_language:
+          label: Komu
+          separator: ', '
+        word_count:
+          label: Slov
+        item_count:
+          label: Položky
+        operations:
+          label: Operace
+      filters:
+        status:
+          expose:
+            label: Stav
+      tab_options:
+        title: Přeložit

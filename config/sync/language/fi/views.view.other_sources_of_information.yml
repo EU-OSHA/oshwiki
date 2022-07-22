@@ -1,0 +1,22 @@
+label: 'Muut tiedonlähteet'
+display:
+  default:
+    display_options:
+      title: 'Muut tiedonlähteet'
+      exposed_form:
+        options:
+          exposed_sorts_label: Lajiteltu
+          sort_asc_label: Varmistettu
+          sort_desc_label: Kuvaus
+          submit_button: Hae
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Merkityksellisyys
+        title:
+          expose:
+            label: Aakkosjärjestyksessä
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Hae

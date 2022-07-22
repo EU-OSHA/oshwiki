@@ -1,0 +1,30 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_year_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+      exposed_form:
+        options:
+          submit_button: Išči
+          reset_button_label: Ponastavi
+          exposed_sorts_label: 'Razvrsti po'
+      title: Išči
+  page_1:
+    display_options:
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Pomembnost
+        publication_date:
+          expose:
+            label: 'Datum objave'
+        title:
+          expose:
+            label: 'Abecedni vrstni red'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Išči
+label: Išči

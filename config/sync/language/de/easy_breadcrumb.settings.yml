@@ -1,0 +1,7 @@
+home_segment_title: Startseite
+capitalizator_ignored_words:
+  0: von
+  1: und
+  2: oder
+  7: ein
+truncator_length: '100'

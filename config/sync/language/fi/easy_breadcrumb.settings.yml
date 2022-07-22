@@ -1,0 +1,6 @@
+home_segment_title: Etusivu
+capitalizator_ignored_words:
+  - /
+  - ja
+  - tai
+truncator_length: '100'

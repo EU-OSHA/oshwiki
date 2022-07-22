@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-uuid: 59143fc0-f525-4ae8-89e4-10de1ce49355
-=======
 uuid: e9e3c03e-0c5c-4549-bb5d-72ea08d252c8
->>>>>>> develop
 langcode: en
 status: true
 dependencies: {  }
 id: pt-pt
 label: 'Portuguese, Portugal'
 direction: ltr
-<<<<<<< HEAD
-weight: 33
-=======
 weight: 10
->>>>>>> develop
 locked: false

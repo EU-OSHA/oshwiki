@@ -1,0 +1,19 @@
+default_config:
+  tags:
+    pages:
+      previous: ‹
+      next: ›
+      first_title: 'Přejít na první stranu'
+      previous_title: 'Přejít na předchozí stranu'
+      next_title: 'Přejít na další stranu'
+      last_title: 'Přejít na poslední stranu'
+      previous_reader: 'Předchozí stránka'
+      next_reader: 'Následující stránka'
+      last_reader: 'Poslední stránka'
+    items:
+      previous: ‹
+      next: ›
+      first_reader: 'První položka'
+    item_ranges:
+      previous: ‹
+      next: ›

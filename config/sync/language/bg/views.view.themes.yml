@@ -1,0 +1,26 @@
+display:
+  page_1:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Изчисти
+          exposed_sorts_label: 'Сортиране по'
+          sort_asc_label: Възходящ
+          sort_desc_label: Низходящ
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Приложимост
+        created:
+          expose:
+            label: 'Дата на публикуване'
+        title:
+          expose:
+            label: 'По азбучен ред'
+  page_2:
+    display_title: Последни
+    display_options:
+      title: Последни
+  default:
+    display_options:
+      title: Теми

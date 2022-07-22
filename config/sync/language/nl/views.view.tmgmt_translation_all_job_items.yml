@@ -1,0 +1,68 @@
+display:
+  default:
+    display_title: Hoofd
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+          tags:
+            previous: '‹ Vorige'
+            next: 'Volgende ›'
+            first: '« Eerste'
+            last: 'Laatste »'
+      fields:
+        state:
+          label: Status
+        label:
+          label: Label
+        type:
+          label: Type
+        source_language:
+          label: Van
+          separator: ', '
+        target_language:
+          label: Naar
+          separator: ', '
+        progress:
+          label: Voortgang
+        word_count:
+          label: Woord
+          separator: ', '
+        tags_count:
+          label: Labels
+          separator: ', '
+        changed:
+          label: Gewijzigd
+          separator: ', '
+        operations:
+          label: Bewerkingen
+      filters:
+        state:
+          expose:
+            label: Statussen
+          group_info:
+            label: Status
+        source_language:
+          expose:
+            label: Brontaal
+        target_language:
+          expose:
+            label: Doeltaal
+        job_type:
+          group_info:
+            label: Vacaturetype
+            group_items:
+              1:
+                title: Normaal
+  page_1:
+    display_title: Pagina

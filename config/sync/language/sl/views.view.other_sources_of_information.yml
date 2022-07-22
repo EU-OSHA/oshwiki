@@ -1,0 +1,39 @@
+label: 'Drugi viri informacij'
+display:
+  default:
+    display_options:
+      title: 'Drugi viri informacij'
+      fields:
+        field_year_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+        field_volume_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+        field_issue_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+        field_article_science:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+      exposed_form:
+        options:
+          submit_button: Išči
+          exposed_sorts_label: 'Razvrsti po'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Pomembnost
+        publication_date:
+          expose:
+            label: 'Datum objave'
+        title:
+          expose:
+            label: 'Abecedni vrstni red'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Išči

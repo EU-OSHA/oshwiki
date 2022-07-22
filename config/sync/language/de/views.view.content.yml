@@ -1,0 +1,60 @@
+label: Content
+display:
+  default:
+    display_title: Standard
+    display_options:
+      title: Content
+      fields:
+        title:
+          label: Titel
+        type:
+          label: 'Content type'
+          separator: ', '
+        name:
+          label: Verfasser
+        status:
+          label: Status
+          settings:
+            format_custom_true: Veröffentlicht
+        changed:
+          label: Updated
+        operations:
+          label: Aktionen
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sortieren nach'
+          sort_asc_label: Aufsteigend
+          sort_desc_label: Absteigend
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: 'Content type'
+        status:
+          expose:
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: Veröffentlicht
+        langcode:
+          expose:
+            label: Language
+  page_1:
+    display_title: Seite
+    display_options:
+      menu:
+        title: Content
+      tab_options:
+        title: Content

@@ -1,0 +1,19 @@
+default_config:
+  tags:
+    pages:
+      previous: ‹
+      next: ›
+      first_title: 'Gå till första sidan'
+      previous_title: 'Gå till föregående sida'
+      next_title: 'Gå till nästa sida'
+      last_title: 'Gå till sista sidan'
+      previous_reader: 'Föregående sida'
+      next_reader: 'Nästa sida'
+      last_reader: 'Sista sidan'
+    items:
+      previous: ‹
+      next: ›
+      first_reader: 'Första posten'
+    item_ranges:
+      previous: ‹
+      next: ›

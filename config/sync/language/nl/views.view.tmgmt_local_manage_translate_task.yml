@@ -1,0 +1,302 @@
+display:
+  default:
+    display_title: Hoofd
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      pager:
+        options:
+          tags:
+            previous: '‹ Vorige'
+            next: 'Volgende ›'
+            first: '« Eerste'
+            last: 'Laatste »'
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Bulk-update
+          action_title: 'Met selectie'
+        title:
+          label: Titel
+          separator: ', '
+        word_count:
+          label: Woorden
+        item_count:
+          label: Items
+        progress:
+          label: Voortgang
+  assigned:
+    display_title: 'Toegewezen aan'
+    display_options:
+      menu:
+        title: 'Toegewezen aan'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Bulk-update
+          action_title: 'Met selectie'
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Voortgang
+        tuid:
+          label: Gemachtigde
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Van
+          separator: ', '
+        target_language:
+          label: Naar
+          separator: ', '
+        word_count:
+          label: Woorden
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Bewerkingen
+      filters:
+        source_language:
+          expose:
+            label: Brontaal
+        target_language:
+          expose:
+            label: Doeltaal
+        uid:
+          expose:
+            label: Provider
+        title:
+          expose:
+            label: Titel
+  closed:
+    display_title: Gesloten
+    display_options:
+      menu:
+        title: Gesloten
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Bulk-update
+          action_title: 'Met selectie'
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Voortgang
+        created:
+          label: Aangemaakt
+          separator: ', '
+        tuid:
+          label: Gemachtigde
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Van
+          separator: ', '
+        target_language:
+          label: Naar
+          separator: ', '
+        word_count:
+          label: Woorden
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Bewerkingen
+      filters:
+        source_language:
+          expose:
+            label: Brontaal
+        target_language:
+          expose:
+            label: Doeltaal
+        uid:
+          expose:
+            label: Provider
+        title:
+          expose:
+            label: Titel
+  completed:
+    display_title: Voltooid
+    display_options:
+      menu:
+        title: Voltooid
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Bulk-update
+          action_title: 'Met selectie'
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Voortgang
+        created:
+          label: Aangemaakt
+          separator: ', '
+        tuid:
+          label: Gemachtigde
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Van
+          separator: ', '
+        target_language:
+          label: Naar
+          separator: ', '
+        word_count:
+          label: Woorden
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Bewerkingen
+      filters:
+        source_language:
+          expose:
+            label: Brontaal
+        target_language:
+          expose:
+            label: Doeltaal
+        uid:
+          expose:
+            label: Provider
+        title:
+          expose:
+            label: Titel
+  pending:
+    display_title: 'In afwachting'
+    display_options:
+      menu:
+        title: 'In afwachting'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Bulk-update
+          action_title: 'Met selectie'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        tuid:
+          label: Gemachtigde
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        progress:
+          label: Voortgang
+        source_language:
+          label: Van
+          separator: ', '
+        target_language:
+          label: Naar
+          separator: ', '
+        word_count:
+          label: Woorden
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Bewerkingen
+      filters:
+        source_language:
+          expose:
+            label: Brontaal
+        target_language:
+          expose:
+            label: Doeltaal
+        uid:
+          expose:
+            label: Provider
+        title:
+          expose:
+            label: Titel
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Bulk-update
+          action_title: 'Met selectie'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Voortgang
+        created:
+          label: Aangemaakt
+          separator: ', '
+        tuid:
+          label: Gemachtigde
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Van
+          separator: ', '
+        target_language:
+          label: Naar
+          separator: ', '
+        word_count:
+          label: Woorden
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Bewerkingen
+      filters:
+        source_language:
+          expose:
+            label: Brontaal
+        target_language:
+          expose:
+            label: Doeltaal
+        uid:
+          expose:
+            label: Provider
+        title:
+          expose:
+            label: Titel
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Bulk-update
+          action_title: 'Met selectie'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Van
+          separator: ', '
+        target_language:
+          label: Naar
+          separator: ', '
+        word_count:
+          label: Woorden
+        item_count:
+          label: Items
+        loop_count:
+          separator: ', '
+        operations:
+          label: Bewerkingen

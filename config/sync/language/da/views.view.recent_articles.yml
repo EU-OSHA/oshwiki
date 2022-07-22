@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Læs artiklen'
+      use_more_text: 'Se alle'

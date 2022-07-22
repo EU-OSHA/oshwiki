@@ -1,0 +1,192 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      fields:
+        title:
+          label: Titill
+          separator: ', '
+        item_count:
+          label: Hlutir
+  assigned:
+    display_options:
+      fields:
+        status:
+          label: Staða
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titill
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Titill
+  closed:
+    display_title: Lokuð
+    display_options:
+      menu:
+        title: Lokuð
+      fields:
+        status:
+          label: Staða
+          separator: ', '
+        created:
+          label: Stofnað
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titill
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Titill
+  completed:
+    display_title: Lokið
+    display_options:
+      menu:
+        title: Lokið
+      fields:
+        status:
+          label: Staða
+          separator: ', '
+        created:
+          label: Stofnað
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titill
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Titill
+  pending:
+    display_title: 'Í biðstöðu'
+    display_options:
+      menu:
+        title: 'Í biðstöðu'
+      fields:
+        status:
+          label: Staða
+        tuid:
+          separator: ', '
+        title:
+          label: Titill
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Titill
+  rejected:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        created:
+          label: Stofnað
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titill
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Titill
+  unassigned:
+    display_options:
+      fields:
+        status:
+          label: Staða
+        title:
+          label: Titill
+          separator: ', '
+        source_language:
+          label: Frá
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        item_count:
+          label: Hlutir
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aðgerðir
