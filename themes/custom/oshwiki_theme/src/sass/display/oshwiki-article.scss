@@ -313,7 +313,7 @@
           h2{
             @include textFormat(1rem, 700, $text-dark-green);
           }
-          .field--name-field-organization-authors, .field--name-field-position-authors, .field--email-contributors{
+          .field--name-field-organization-authors, .field--name-field-position-authors, .field--org-contributors{
             @include textFormat(0.9rem, null, $text-dark-dark-grey);
           }
         }
