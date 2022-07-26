@@ -507,10 +507,10 @@ display:
           limit_queue: other_sources_of_information
       group_by: false
       use_more: true
-      use_more_always: false
+      use_more_always: true
       use_more_text: 'See all'
       link_display: custom_url
-      link_url: '<front>'
+      link_url: /other-sources-of-information
       header: {  }
       footer: {  }
       display_extenders: {  }

@@ -1282,6 +1282,16 @@ a:hover {
   color: #58585A;
   padding-bottom: 1rem;
 }
+.page-view-frontpage .section_other_sources .more-link {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1.5rem 0rem;
+}
+.page-view-frontpage .section_other_sources .more-link a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
+}
 .page-view-frontpage footer {
   margin-top: 0rem;
 }
