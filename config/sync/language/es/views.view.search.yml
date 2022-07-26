@@ -23,6 +23,9 @@ display:
         title:
           expose:
             label: 'Por orden alfabético'
+        changed:
+          expose:
+            label: 'Última actualización'
       filters:
         search_api_fulltext:
           expose:

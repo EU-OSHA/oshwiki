@@ -15,6 +15,9 @@ display:
         title:
           expose:
             label: 'Abecedni vrstni red'
+        changed:
+          expose:
+            label: 'Najnovejša posodobitev'
   page_2:
     display_title: Najnovejši
     display_options:

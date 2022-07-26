@@ -31,6 +31,9 @@ display:
         title:
           expose:
             label: Alfabetikament
+        changed:
+          expose:
+            label: 'L-aħħar aġġornament'
       filters:
         search_api_fulltext:
           expose:

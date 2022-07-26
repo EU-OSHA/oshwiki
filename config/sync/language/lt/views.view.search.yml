@@ -23,6 +23,9 @@ display:
         title:
           expose:
             label: 'Abėcėlės tvarka'
+        changed:
+          expose:
+            label: 'Paskutinį kartą keista'
       filters:
         search_api_fulltext:
           expose:

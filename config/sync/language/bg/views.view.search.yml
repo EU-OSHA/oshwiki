@@ -33,4 +33,7 @@ display:
         title:
           expose:
             label: 'По азбучен ред'
+        changed:
+          expose:
+            label: 'Последна актуализация'
 label: Търсене

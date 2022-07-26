@@ -16,6 +16,9 @@ display:
         title:
           expose:
             label: Alfabetikament
+        changed:
+          expose:
+            label: 'L-aħħar aġġornament'
   page_2:
     display_title: 'L-aktar reċenti'
     display_options:

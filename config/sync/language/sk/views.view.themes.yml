@@ -17,6 +17,9 @@ display:
         title:
           expose:
             label: Abecedne
+        changed:
+          expose:
+            label: Aktualizované
   page_2:
     display_title: Najnovšie
     display_options:

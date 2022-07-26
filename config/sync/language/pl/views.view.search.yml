@@ -25,6 +25,9 @@ display:
         title:
           expose:
             label: 'W porządku alfabetycznym'
+        changed:
+          expose:
+            label: 'Data ostatniej aktualizacji'
       filters:
         search_api_fulltext:
           expose:

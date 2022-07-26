@@ -22,6 +22,9 @@ display:
         title:
           expose:
             label: 'Podle abecedy'
+        changed:
+          expose:
+            label: 'Poslední aktualizace'
       filters:
         search_api_fulltext:
           expose:

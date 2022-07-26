@@ -15,6 +15,9 @@ display:
         title:
           expose:
             label: 'Abėcėlės tvarka'
+        changed:
+          expose:
+            label: 'Paskutinį kartą keista'
   page_2:
     display_title: Naujausi
     display_options:

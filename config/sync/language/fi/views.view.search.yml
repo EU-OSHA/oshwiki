@@ -21,6 +21,9 @@ display:
         title:
           expose:
             label: Aakkosjärjestyksessä
+        changed:
+          expose:
+            label: Päivitetty
       filters:
         search_api_fulltext:
           expose:

@@ -15,6 +15,9 @@ display:
         title:
           expose:
             label: Alfabetisch
+        changed:
+          expose:
+            label: 'Laatst bijgewerkt'
   page_2:
     display_title: 'Meest recent'
     display_options:

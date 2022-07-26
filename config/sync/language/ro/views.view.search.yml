@@ -25,6 +25,9 @@ display:
         title:
           expose:
             label: 'În ordine alfabetică'
+        changed:
+          expose:
+            label: 'Ultima actualizare'
       filters:
         search_api_fulltext:
           expose:

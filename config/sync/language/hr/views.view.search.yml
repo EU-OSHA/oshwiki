@@ -20,6 +20,9 @@ display:
         publication_date:
           expose:
             label: 'Datum objave'
+        changed:
+          expose:
+            label: 'Zadnje ažuriranje'
       filters:
         search_api_fulltext:
           expose:

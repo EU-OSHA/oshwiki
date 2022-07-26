@@ -17,6 +17,9 @@ display:
         title:
           expose:
             label: Αλφαβητικά
+        changed:
+          expose:
+            label: 'Τελευταία ενημέρωση'
   page_2:
     display_title: 'Πιο πρόσφατα'
     display_options:

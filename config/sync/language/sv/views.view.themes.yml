@@ -17,6 +17,9 @@ display:
         title:
           expose:
             label: 'Alfabetisk ordning'
+        changed:
+          expose:
+            label: 'Senaste uppdatering'
   page_2:
     display_title: Senaste
     display_options:

@@ -13,6 +13,9 @@ display:
         created:
           expose:
             label: 'Datum objave'
+        changed:
+          expose:
+            label: 'Zadnje ažuriranje'
   page_2:
     display_title: Najnovije
     display_options:

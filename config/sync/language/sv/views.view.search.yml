@@ -32,4 +32,7 @@ display:
         title:
           expose:
             label: 'Alfabetisk ordning'
+        changed:
+          expose:
+            label: 'Senaste uppdatering'
 label: Sök

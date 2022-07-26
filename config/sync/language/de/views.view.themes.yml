@@ -17,6 +17,9 @@ display:
         title:
           expose:
             label: Alphabetisch
+        changed:
+          expose:
+            label: 'Letzte Aktualisierung'
   page_2:
     display_title: 'Aktuellste Artikel'
     display_options:

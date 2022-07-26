@@ -21,6 +21,9 @@ display:
         title:
           expose:
             label: Alphabetisch
+        changed:
+          expose:
+            label: 'Letzte Aktualisierung'
       filters:
         search_api_fulltext:
           expose:

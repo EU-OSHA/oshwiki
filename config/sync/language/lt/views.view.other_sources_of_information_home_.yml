@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Žiūrėti viską'
+      fields:
+        view_node:
+          text: 'Skaityti straipsnį'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Vaata kõiki'
+      fields:
+        view_node:
+          text: 'Loe artiklit'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

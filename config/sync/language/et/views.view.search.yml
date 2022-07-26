@@ -21,6 +21,9 @@ display:
         title:
           expose:
             label: 'Tähestiku järjekorras'
+        changed:
+          expose:
+            label: 'Viimati uuendatud'
       filters:
         search_api_fulltext:
           expose:

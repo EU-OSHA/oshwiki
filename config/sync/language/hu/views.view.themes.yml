@@ -17,6 +17,9 @@ display:
         title:
           expose:
             label: Ábécésorrendben
+        changed:
+          expose:
+            label: 'Utolsó frissítés'
   page_2:
     display_title: 'Legújabb cikkek'
     display_options:

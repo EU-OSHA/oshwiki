@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Prikaži sve'
+      fields:
+        view_node:
+          text: 'Pročitajte članak'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

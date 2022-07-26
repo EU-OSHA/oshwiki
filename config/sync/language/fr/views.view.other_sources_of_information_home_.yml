@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Voir tout'
+      fields:
+        view_node:
+          text: 'Lire l’article'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''
