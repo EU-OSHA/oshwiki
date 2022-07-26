@@ -15,7 +15,7 @@ display:
         tmgmt_local_task_bulk_form:
           action_title: 'Su pasirinktais'
         title:
-          label: Title
+          label: Pavadinimas
         item_count:
           label: Elementai
   assigned:
@@ -29,7 +29,7 @@ display:
         status:
           label: Status
         title:
-          label: Title
+          label: Pavadinimas
         source_language:
           label: Nuo
         target_language:
@@ -44,7 +44,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Pavadinimas
   closed:
     display_title: Closed
     display_options:
@@ -58,7 +58,7 @@ display:
         created:
           label: Sukurta
         title:
-          label: Title
+          label: Pavadinimas
         source_language:
           label: Nuo
         target_language:
@@ -73,7 +73,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Pavadinimas
   completed:
     display_title: Completed
     display_options:
@@ -87,7 +87,7 @@ display:
         created:
           label: Sukurta
         title:
-          label: Title
+          label: Pavadinimas
         source_language:
           label: Nuo
         target_language:
@@ -102,7 +102,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Pavadinimas
   pending:
     display_title: Pending
     display_options:
@@ -115,7 +115,7 @@ display:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Title
+          label: Pavadinimas
         source_language:
           label: Nuo
         target_language:
@@ -130,7 +130,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Pavadinimas
   rejected:
     display_options:
       fields:
@@ -142,7 +142,7 @@ display:
         created:
           label: Sukurta
         title:
-          label: Title
+          label: Pavadinimas
         source_language:
           label: Nuo
         target_language:
@@ -157,7 +157,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Pavadinimas
   unassigned:
     display_options:
       fields:
@@ -167,7 +167,7 @@ display:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Title
+          label: Pavadinimas
         source_language:
           label: Nuo
         target_language:

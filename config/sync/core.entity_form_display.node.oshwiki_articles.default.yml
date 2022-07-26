@@ -18,13 +18,12 @@ dependencies:
     - field.field.node.oshwiki_articles.field_sections_oshwiki
     - field.field.node.oshwiki_articles.field_theme_representative
     - field.field.node.oshwiki_articles.field_themes_oshwiki
-    - image.style.thumbnail
     - node.type.oshwiki_articles
     - workflows.workflow.oshwiki_articles
   module:
     - content_moderation
     - entity_reference_revisions
-    - image
+    - media_library
     - paragraphs
     - path
 id: node.oshwiki_articles.default
@@ -71,12 +70,11 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
   field_image_oshwiki:
-    type: image_image
-    weight: 15
+    type: media_library_widget
+    weight: 51
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_nace_oshwiki:
     type: entity_reference_autocomplete
@@ -208,6 +206,11 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   field_authorstxt_oshwiki: true

@@ -8,5 +8,5 @@ filter_key: ''
 url_processor: query_string
 breadcrumb:
   active: true
-  before: true
+  before: false
   group: false

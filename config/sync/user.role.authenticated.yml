@@ -12,6 +12,7 @@ dependencies:
     - media
     - search
     - shortcut
+    - sitemap
     - system
     - tmgmt_local
     - toolbar
@@ -26,6 +27,7 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'access sitemap'
   - 'access toolbar'
   - 'display eu cookie compliance popup'
   - 'post comments'

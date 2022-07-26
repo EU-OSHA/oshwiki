@@ -65,6 +65,15 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
+  field_image_oshwiki:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
   field_nace_oshwiki:
     type: entity_reference_label
     label: hidden
@@ -142,7 +151,6 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_image_oshwiki: true
   field_nace_tax_old: true
   field_osh_tax_old: true
   langcode: true

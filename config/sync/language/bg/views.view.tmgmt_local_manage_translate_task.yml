@@ -7,7 +7,7 @@ display:
           reset_button_label: Рестартирай
       fields:
         title:
-          label: Title
+          label: Заглавие
         item_count:
           label: Новини
   assigned:
@@ -19,7 +19,7 @@ display:
         status:
           label: Status
         title:
-          label: Title
+          label: Заглавие
         source_language:
           label: От
         target_language:
@@ -31,7 +31,7 @@ display:
       filters:
         title:
           expose:
-            label: Title
+            label: Заглавие
   closed:
     display_title: Closed
     display_options:
@@ -43,7 +43,7 @@ display:
         created:
           label: Създадено
         title:
-          label: Title
+          label: Заглавие
         source_language:
           label: От
         target_language:
@@ -55,7 +55,7 @@ display:
       filters:
         title:
           expose:
-            label: Title
+            label: Заглавие
   completed:
     display_options:
       fields:
@@ -64,7 +64,7 @@ display:
         created:
           label: Създадено
         title:
-          label: Title
+          label: Заглавие
         source_language:
           label: От
         target_language:
@@ -76,7 +76,7 @@ display:
       filters:
         title:
           expose:
-            label: Title
+            label: Заглавие
   pending:
     display_title: Pending
     display_options:
@@ -86,7 +86,7 @@ display:
         status:
           label: Status
         title:
-          label: Title
+          label: Заглавие
         source_language:
           label: От
         target_language:
@@ -98,7 +98,7 @@ display:
       filters:
         title:
           expose:
-            label: Title
+            label: Заглавие
   rejected:
     display_options:
       fields:
@@ -107,7 +107,7 @@ display:
         created:
           label: Създадено
         title:
-          label: Title
+          label: Заглавие
         source_language:
           label: От
         target_language:
@@ -119,14 +119,14 @@ display:
       filters:
         title:
           expose:
-            label: Title
+            label: Заглавие
   unassigned:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Title
+          label: Заглавие
         source_language:
           label: От
         target_language:
