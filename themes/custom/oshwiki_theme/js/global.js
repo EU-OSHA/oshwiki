@@ -174,6 +174,8 @@ jQuery(document).ready(function($) {
     setParagraphImageTextWidth();
   }
 
+  $('#edit-lang-dropdown-select').attr('accessKey', 'L');
+
 });
 
 /*Call both functions required for the select theme behaviour*/

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Вижте всички'
+      fields:
+        view_node:
+          text: 'Прочетете статията'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

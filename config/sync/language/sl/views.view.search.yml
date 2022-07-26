@@ -23,6 +23,9 @@ display:
         title:
           expose:
             label: 'Abecedni vrstni red'
+        changed:
+          expose:
+            label: 'Najnovejša posodobitev'
       filters:
         search_api_fulltext:
           expose:

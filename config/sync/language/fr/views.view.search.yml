@@ -19,6 +19,9 @@ display:
         title:
           expose:
             label: 'Par ordre alphabétique'
+        changed:
+          expose:
+            label: 'Dernière mise à jour'
       filters:
         search_api_fulltext:
           expose:

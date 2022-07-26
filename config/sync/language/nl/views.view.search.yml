@@ -30,4 +30,7 @@ display:
         title:
           expose:
             label: Alfabetisch
+        changed:
+          expose:
+            label: 'Laatst bijgewerkt'
 label: Zoeken

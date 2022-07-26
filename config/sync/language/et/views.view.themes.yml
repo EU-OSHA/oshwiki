@@ -37,3 +37,6 @@ display:
         title:
           expose:
             label: 'Tähestiku järjekorras'
+        changed:
+          expose:
+            label: 'Viimati uuendatud'

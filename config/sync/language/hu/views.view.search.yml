@@ -21,6 +21,9 @@ display:
         title:
           expose:
             label: Ábécésorrendben
+        changed:
+          expose:
+            label: 'Utolsó frissítés'
       filters:
         search_api_fulltext:
           expose:

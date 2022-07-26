@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Összes megtekintése'
+      fields:
+        view_node:
+          text: 'Cikk megtekintése'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

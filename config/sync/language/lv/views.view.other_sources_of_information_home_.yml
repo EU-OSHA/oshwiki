@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Skatīt visus'
+      fields:
+        view_node:
+          text: 'Lasīt rakstu'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

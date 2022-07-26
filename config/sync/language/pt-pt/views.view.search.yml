@@ -1,0 +1,7 @@
+display:
+  page_1:
+    display_options:
+      sorts:
+        changed:
+          expose:
+            label: 'Última atualização'

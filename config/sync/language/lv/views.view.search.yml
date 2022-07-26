@@ -36,4 +36,7 @@ display:
         title:
           expose:
             label: 'Alfabēta secībā'
+        changed:
+          expose:
+            label: 'Jaunākā versija'
 label: Meklēšana

@@ -17,6 +17,9 @@ display:
         title:
           expose:
             label: 'Alfabēta secībā'
+        changed:
+          expose:
+            label: 'Jaunākā versija'
   page_2:
     display_title: Jaunākie
     display_options:

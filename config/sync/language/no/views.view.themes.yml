@@ -17,6 +17,9 @@ display:
         title:
           expose:
             label: Alfabetisk
+        changed:
+          expose:
+            label: 'Sist oppdatert'
   page_2:
     display_title: Nyeste
     display_options:

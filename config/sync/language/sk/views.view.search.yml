@@ -25,6 +25,9 @@ display:
         title:
           expose:
             label: Abecedne
+        changed:
+          expose:
+            label: Aktualizované
       filters:
         search_api_fulltext:
           expose:

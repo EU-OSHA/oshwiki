@@ -24,6 +24,9 @@ display:
         title:
           expose:
             label: 'Í stafrófsröð'
+        changed:
+          expose:
+            label: 'Nýjasta uppfærsla'
       filters:
         search_api_fulltext:
           expose:

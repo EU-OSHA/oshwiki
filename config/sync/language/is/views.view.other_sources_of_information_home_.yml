@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Sjá allt'
+      fields:
+        view_node:
+          text: 'Lesið greinina'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

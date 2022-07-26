@@ -14,6 +14,9 @@ display:
         title:
           expose:
             label: 'Podle abecedy'
+        changed:
+          expose:
+            label: 'Poslední aktualizace'
   page_2:
     display_title: Nejnovější
     display_options:
