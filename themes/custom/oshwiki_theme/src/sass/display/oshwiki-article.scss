@@ -184,7 +184,7 @@
     flex-direction: column;
     margin-top: 1.4rem;
     .reference-title{
-      @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+      @include textFormat(1.4rem, bold, $text-dark-dark-grey);
     }
     .references-div{
       display: grid;
@@ -193,7 +193,7 @@
       margin: 1rem 0rem;
       .reference-number{
         justify-self: end;
-        @include textFormat(1.1rem, 700, $text-dark-green);
+        @include textFormat(1.1rem, bold, $text-dark-green);
       }
       .reference-content{
         justify-self: start;
@@ -208,6 +208,7 @@
       border: none;
       background-color: transparent;
       @include textFormat(0.9rem, 700, $text-dark-green );
+      padding-bottom: 0.2rem;
     }
   }
 
@@ -216,7 +217,7 @@
     .field--name-field-further-reading-oshwiki{
       & > .field__label{
         padding: 1.4rem 0rem 0.9rem;
-        @include textFormat(1.4rem, 500, $text-dark-dark-grey);
+        @include textFormat(1.4rem, 700, $text-dark-dark-grey);
       }
     }
     .field--name-field-desc-further-reading{
