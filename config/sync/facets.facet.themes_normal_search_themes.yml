@@ -46,8 +46,8 @@ processor_configs:
     weights:
       build: 100
     settings: {  }
-  raw_value_widget_order:
-    processor_id: raw_value_widget_order
+  term_weight_widget_order:
+    processor_id: term_weight_widget_order
     weights:
       sort: 50
     settings:
