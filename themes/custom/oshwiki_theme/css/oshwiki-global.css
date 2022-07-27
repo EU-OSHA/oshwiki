@@ -141,6 +141,58 @@ ul {
   text-decoration: none;
 }
 
+#sliding-popup {
+  height: fit-content !important;
+  background: rgba(87, 89, 88, 0.78) !important;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content {
+  margin: 0 auto;
+  max-width: 80%;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-text, #sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-width: 100%;
+  justify-items: center;
+  align-items: baseline;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-text > *, #sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-buttons > * {
+  font-size: 12px;
+  align-self: center;
+  margin: 0px;
+  text-align: center;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-text {
+  margin: 5px 0 0;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-buttons button {
+  margin-right: 5px;
+  margin-top: 1em;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+  box-shadow: inset 0 1px 0 0 #ffffff;
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content .eu-cookie-compliance-buttons {
+  margin: 0 0 0.2rem 0;
+}
+
 label {
   color: #58585A;
 }
@@ -3384,6 +3436,25 @@ button.navbar-toggler-right .icon-bar {
   max-width: 200px !important;
   min-width: 120px !important;
   width: 200px !important;
+}
+
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: inherit;
+  padding-left: 1rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li {
+  margin-left: 1rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li > ul {
+  margin-left: 1rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li > ul a {
+  padding: 0.2rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li > a {
+  padding: 0.5rem 0.2rem;
 }
 
 /*Containers for min-with 1480*/
