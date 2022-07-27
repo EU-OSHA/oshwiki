@@ -104,7 +104,7 @@ ul {
     color: #FFFFFF;
     content: ">";
   }
-  .block-system-breadcrumb-block ol .breadcrumb-item a {
+  .block-system-breadcrumb-block ol .breadcrumb-item a, .block-system-breadcrumb-block ol .breadcrumb-item.active {
     font-size: 0.9rem;
     color: #FFFFFF;
   }
@@ -3259,7 +3259,10 @@ menu option for logged in user*/
   width: 100%;
   background: #F6A400;
 }
-.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li:nth-of-type(2) a:after {
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li:nth-of-type(2) > a {
+  cursor: default;
+}
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li:nth-of-type(2) > a:after {
   display: none;
 }
 .content-main-menu .navbar-toggler {
@@ -3455,6 +3458,10 @@ button.navbar-toggler-right .icon-bar {
 }
 .path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li > a {
   padding: 0.5rem 0.2rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > .nav-item:nth-of-type(2) > a:first-of-type {
+  cursor: default;
+  pointer-events: none;
 }
 
 /*Containers for min-with 1480*/
