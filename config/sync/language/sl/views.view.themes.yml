@@ -6,9 +6,6 @@ display:
           reset_button_label: Ponastavi
           exposed_sorts_label: 'Razvrsti po'
       sorts:
-        search_api_relevance:
-          expose:
-            label: Pomembnost
         created:
           expose:
             label: 'Datum objave'

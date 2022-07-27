@@ -7,9 +7,6 @@ display:
           exposed_sorts_label: 'Ordina per'
           sort_desc_label: Disc
       sorts:
-        search_api_relevance:
-          expose:
-            label: Pertinenza
         created:
           expose:
             label: 'Data di pubblicazione'

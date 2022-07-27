@@ -7,9 +7,6 @@ display:
           exposed_sorts_label: 'Flokka eftir'
           sort_desc_label: Lækkandi
       sorts:
-        search_api_relevance:
-          expose:
-            label: Þýðing
         created:
           expose:
             label: Útgáfudagsetning

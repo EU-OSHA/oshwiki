@@ -6,9 +6,6 @@ display:
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
       sorts:
-        search_api_relevance:
-          expose:
-            label: Pertinence
         created:
           expose:
             label: 'Date de publication'

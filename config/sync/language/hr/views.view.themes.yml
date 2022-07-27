@@ -7,9 +7,6 @@ display:
           exposed_sorts_label: 'Razvrstaj po'
           sort_desc_label: Opis
       sorts:
-        search_api_relevance:
-          expose:
-            label: Važnost
         created:
           expose:
             label: 'Datum objave'

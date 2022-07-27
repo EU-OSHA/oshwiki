@@ -8,9 +8,6 @@ display:
           sort_asc_label: Vzostupne
           sort_desc_label: Zostupne
       sorts:
-        search_api_relevance:
-          expose:
-            label: Relevantnosť
         created:
           expose:
             label: 'Dátum uverejnenia'

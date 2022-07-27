@@ -8,9 +8,6 @@ display:
           sort_asc_label: Αύξ.
           sort_desc_label: Φθίν.
       sorts:
-        search_api_relevance:
-          expose:
-            label: Συνάφεια
         created:
           expose:
             label: 'Ημερομηνία δημοσίευσης'

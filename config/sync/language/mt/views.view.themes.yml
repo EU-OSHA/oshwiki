@@ -7,9 +7,6 @@ display:
           sort_desc_label: Deskrizzjoni
           exposed_sorts_label: 'Agħżel skont'
       sorts:
-        search_api_relevance:
-          expose:
-            label: Rilevanza
         created:
           expose:
             label: 'Data tal-pubblikazzjoni'

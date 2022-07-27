@@ -6,9 +6,6 @@ display:
           reset_button_label: 'Opnieuw instellen'
           exposed_sorts_label: 'Sorteren op'
       sorts:
-        search_api_relevance:
-          expose:
-            label: Relevantie
         created:
           expose:
             label: Publicatiedatum

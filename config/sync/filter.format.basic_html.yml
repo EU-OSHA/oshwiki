@@ -60,7 +60,8 @@ filters:
     status: true
     weight: 100
     settings:
-      default_view_mode: media_library
-      allowed_view_modes: {  }
+      default_view_mode: default
+      allowed_view_modes:
+        media_library: media_library
       allowed_media_types:
         document: document

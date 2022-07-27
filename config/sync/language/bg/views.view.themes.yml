@@ -8,9 +8,6 @@ display:
           sort_asc_label: Възходящ
           sort_desc_label: Низходящ
       sorts:
-        search_api_relevance:
-          expose:
-            label: Приложимост
         created:
           expose:
             label: 'Дата на публикуване'

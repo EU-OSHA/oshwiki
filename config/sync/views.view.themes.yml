@@ -1656,19 +1656,6 @@ display:
       cache:
         type: none
       sorts:
-        search_api_relevance:
-          id: search_api_relevance
-          table: search_api_index_oshwiki_index
-          field: search_api_relevance
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api
-          order: DESC
-          expose:
-            label: Relevance
-            field_identifier: relevance
-          exposed: true
         changed:
           id: changed
           table: search_api_index_oshwiki_index

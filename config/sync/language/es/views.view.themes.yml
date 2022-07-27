@@ -8,9 +8,6 @@ display:
   page_1:
     display_options:
       sorts:
-        search_api_relevance:
-          expose:
-            label: Importancia
         created:
           expose:
             label: 'Fecha de publicación'
