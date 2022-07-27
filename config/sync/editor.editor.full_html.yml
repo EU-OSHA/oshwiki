@@ -51,6 +51,7 @@ settings:
             - ShowBlocks
             - Source
             - PasteFromWord
+            - DrupalMediaLibrary
   plugins:
     language:
       language_list: un

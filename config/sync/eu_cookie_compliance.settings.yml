@@ -7,7 +7,7 @@ popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
 eu_only: null
 eu_only_js: null
-popup_position: false
+popup_position: true
 fixed_top_position: true
 popup_info:
   value: "<p><span><strong>The EU-OSHA website uses cookies to gather information necessary for browsing the website, in accordance with the EU-OSHA privacy notice.</strong></span></p>\r\n"
