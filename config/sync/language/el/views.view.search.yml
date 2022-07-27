@@ -32,4 +32,10 @@ display:
         publication_date:
           expose:
             label: 'Ημερομηνία δημοσίευσης'
+        changed:
+          expose:
+            label: 'Τελευταία ενημέρωση'
+        title:
+          expose:
+            label: Αλφαβητικά
 label: Αναζήτηση

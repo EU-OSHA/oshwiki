@@ -13,7 +13,7 @@ display:
         tmgmt_local_task_bulk_form:
           label: 'Bulk update'
         title:
-          label: Title
+          label: Naziv
           separator: ', '
         item_count:
           label: Stavke
@@ -28,7 +28,7 @@ display:
         tuid:
           separator: ', '
         title:
-          label: Title
+          label: Naziv
           separator: ', '
         source_language:
           label: Od
@@ -48,7 +48,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Naziv
   closed:
     display_title: Closed
     display_options:
@@ -66,7 +66,7 @@ display:
         tuid:
           separator: ', '
         title:
-          label: Title
+          label: Naziv
           separator: ', '
         source_language:
           label: Od
@@ -86,7 +86,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Naziv
   completed:
     display_options:
       fields:
@@ -101,7 +101,7 @@ display:
         tuid:
           separator: ', '
         title:
-          label: Title
+          label: Naziv
           separator: ', '
         source_language:
           label: Od
@@ -121,7 +121,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Naziv
   pending:
     display_options:
       fields:
@@ -132,7 +132,7 @@ display:
         tuid:
           separator: ', '
         title:
-          label: Title
+          label: Naziv
           separator: ', '
         source_language:
           label: Od
@@ -152,7 +152,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Naziv
   rejected:
     display_options:
       fields:
@@ -166,7 +166,7 @@ display:
         tuid:
           separator: ', '
         title:
-          label: Title
+          label: Naziv
           separator: ', '
         source_language:
           label: Od
@@ -186,7 +186,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Naziv
   unassigned:
     display_options:
       fields:
@@ -195,7 +195,7 @@ display:
         status:
           label: Status
         title:
-          label: Title
+          label: Naziv
           separator: ', '
         source_language:
           label: Od

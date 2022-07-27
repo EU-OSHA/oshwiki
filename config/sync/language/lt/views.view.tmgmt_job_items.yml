@@ -20,7 +20,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Žymė
         type:
           label: Tipas
         tags_count:
@@ -38,7 +38,7 @@ display:
     display_options:
       fields:
         label:
-          label: Label
+          label: Žymė
         type:
           label: Tipas
         changed:

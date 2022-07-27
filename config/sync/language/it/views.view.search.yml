@@ -20,6 +20,9 @@ display:
         title:
           expose:
             label: 'In ordine alfabetico'
+        changed:
+          expose:
+            label: 'Data dell’ultimo aggiornamento'
       filters:
         search_api_fulltext:
           expose:

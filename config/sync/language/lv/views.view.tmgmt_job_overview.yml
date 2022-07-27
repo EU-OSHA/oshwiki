@@ -20,7 +20,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Etiķete
         source_language_1:
           label: 'No'
         target_language:

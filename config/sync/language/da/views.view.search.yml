@@ -21,6 +21,9 @@ display:
         title:
           expose:
             label: Alfabetisk
+        changed:
+          expose:
+            label: 'Senest opdateret'
       filters:
         search_api_fulltext:
           expose:

@@ -8,15 +8,15 @@ display:
           sort_asc_label: Növ.
           sort_desc_label: Csökk.
       sorts:
-        search_api_relevance:
-          expose:
-            label: Relevancia
         created:
           expose:
             label: 'A közzététel dátuma'
         title:
           expose:
             label: Ábécésorrendben
+        changed:
+          expose:
+            label: 'Utolsó frissítés'
   page_2:
     display_title: 'Legújabb cikkek'
     display_options:

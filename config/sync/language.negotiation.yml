@@ -6,56 +6,56 @@ url:
   source: path_prefix
   prefixes:
     en: en
+    bg: bg
+    cs: cs
+    da: da
     de: de
+    el: el
+    es: es
+    et: et
+    fi: fi
+    hr: hr
     fr: fr
     hu: hu
-    es: es
-    da: da
-    tr: tr
-    nl: nl
-    sv: sv
-    it: it
-    cs: cs
-    sl: sl
-    pl: pl
-    lv: lv
-    fi: fi
-    et: et
-    el: el
-    bg: bg
-    'no': 'no'
-    mt: mt
-    lt: lt
-    hr: hr
-    sk: sk
     is: is
+    it: it
+    lv: lv
+    lt: lt
+    nl: nl
+    mt: mt
+    'no': 'no'
+    pl: pl
     ro: ro
-    pt-pt: pt-pt
+    sk: sk
+    sl: sl
+    sv: sv
+    tr: tr
+    pt-pt: pt
   domains:
     en: ''
+    bg: ''
+    cs: ''
+    da: ''
     de: ''
+    el: ''
+    es: ''
+    et: ''
+    fi: ''
+    hr: ''
     fr: ''
     hu: ''
-    es: ''
-    da: ''
-    tr: ''
-    nl: ''
-    sv: ''
-    it: ''
-    cs: ''
-    sl: ''
-    pl: ''
-    lv: ''
-    fi: ''
-    et: ''
-    el: ''
-    bg: ''
-    'no': ''
-    mt: ''
-    lt: ''
-    hr: ''
-    sk: ''
     is: ''
+    it: ''
+    lv: ''
+    lt: ''
+    nl: ''
+    mt: ''
+    'no': ''
+    pl: ''
     ro: ''
+    sk: ''
+    sl: ''
+    sv: ''
+    tr: ''
     pt-pt: ''
 selected_langcode: site_default

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Vedeți toate'
+      fields:
+        view_node:
+          text: 'Citiți articolul'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

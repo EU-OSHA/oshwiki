@@ -1,0 +1,10 @@
+display:
+  page_1:
+    display_options:
+      sorts:
+        created:
+          expose:
+            label: 'Última atualização'
+  default:
+    display_options:
+      title: Temas

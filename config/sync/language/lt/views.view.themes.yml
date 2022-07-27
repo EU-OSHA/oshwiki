@@ -6,15 +6,15 @@ display:
           reset_button_label: 'Išvalyti pasirinkimus'
           exposed_sorts_label: 'Rūšiuoti pagal'
       sorts:
-        search_api_relevance:
-          expose:
-            label: Svarba
         created:
           expose:
             label: 'Išleidimo data'
         title:
           expose:
             label: 'Abėcėlės tvarka'
+        changed:
+          expose:
+            label: 'Paskutinį kartą keista'
   page_2:
     display_title: Naujausi
     display_options:

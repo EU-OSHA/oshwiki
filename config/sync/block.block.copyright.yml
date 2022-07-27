@@ -1,0 +1,25 @@
+uuid: 02b41d44-2dac-4971-b1e4-6799e3456800
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:539a6176-ab66-4e36-be24-997aad123035'
+  module:
+    - block_content
+  theme:
+    - oshwiki_theme
+id: copyright
+theme: oshwiki_theme
+region: footer
+weight: -12
+provider: null
+plugin: 'block_content:539a6176-ab66-4e36-be24-997aad123035'
+settings:
+  id: 'block_content:539a6176-ab66-4e36-be24-997aad123035'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

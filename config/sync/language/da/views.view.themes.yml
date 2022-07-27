@@ -8,15 +8,15 @@ display:
           sort_asc_label: ASC
           sort_desc_label: Faldende
       sorts:
-        search_api_relevance:
-          expose:
-            label: Relevans
         created:
           expose:
             label: 'Dato for offentliggørelse'
         title:
           expose:
             label: Alfabetisk
+        changed:
+          expose:
+            label: 'Senest opdateret'
   page_2:
     display_title: Seneste
     display_options:

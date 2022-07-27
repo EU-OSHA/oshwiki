@@ -28,12 +28,12 @@ display:
           sort_asc_label: 'Kasvavas järjestuses'
           sort_desc_label: 'Laskuvas järjestuses'
       sorts:
-        search_api_relevance:
-          expose:
-            label: Asjakohasus
         created:
           expose:
             label: Avaldamiskuupäev
         title:
           expose:
             label: 'Tähestiku järjekorras'
+        changed:
+          expose:
+            label: 'Viimati uuendatud'

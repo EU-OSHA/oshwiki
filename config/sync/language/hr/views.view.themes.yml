@@ -7,12 +7,12 @@ display:
           exposed_sorts_label: 'Razvrstaj po'
           sort_desc_label: Opis
       sorts:
-        search_api_relevance:
-          expose:
-            label: Važnost
         created:
           expose:
             label: 'Datum objave'
+        changed:
+          expose:
+            label: 'Zadnje ažuriranje'
   page_2:
     display_title: Najnovije
     display_options:

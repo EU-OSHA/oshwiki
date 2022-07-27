@@ -1,30 +1,33 @@
 .site-footer{
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column !important;
-  flex-flow: wrap;
-  column-gap: 2rem;
   background-color: $bg-light-dark-grey;
   padding: 0rem;
-  .container{
-    padding-top: 0.5rem;
-  }
-  .copyright-footer{
+  max-resolution: 0rem;
+  & > section{
     display: flex;
-    align-items: center;
-    margin-top: 0.7rem;
-    @include textFormat(1rem, 700, $text-dark-dark-grey);
-  }
-  .row{
-    display: flex;
-    flex-wrap: nowrap;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  section{
-    & > #block-oshwiki-theme-footer{
+    flex-direction: column !important;
+    flex-flow: wrap;
+    width: 100%;
+    & > div, & > nav{
+      border: none !important;
+    }
+    #block-copyright{
+      .copyright-footer{
+        display: flex;
+        align-items: center;
+        margin-top: 0.7rem;
+        @include textFormat(1rem, 700, $text-dark-dark-grey);
+        a{
+          @include textFormat(1rem, 700, $text-dark-dark-grey);
+        }
+      }
+    }
+    .block:first-of-type{
+      margin: 0px;
       padding: 0px;
-      width: 100%;
+      margin-bottom: 0.3rem;
+    }
+    nav{
       margin: 0.3rem 0rem 1rem;
       & > .navbar-nav{
         display: flex;
@@ -97,7 +100,7 @@
               width: 30px;
               height: 30px;
               a{
-                display: none;
+                color: transparent;
               }
             }
             .nav-item{
@@ -134,25 +137,18 @@
       }
     }
   }
-  .block{
-    border: none;
-    padding: 0rem;
+  &  > .row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
   }
 }
 
-.removeMarginTop{
-  margin-top: 0rem;
-}
-
-.addMarginTop{
-  margin-top: 1rem;
-}
 /*Hide 6th menu option for anonymus user,
 Show 5th menu option for logged in user*/
 .user-logged-in{
   .site-footer{
-    section{
-      & > #block-oshwiki-theme-footer{
+    & >  section{
+      nav{
         & > .navbar-nav{
           & > li:first-of-type{
             .menu{
@@ -174,8 +170,8 @@ menu option for logged in user*/
 
 @media only screen and (min-width: 1480px){
   .site-footer{
-    section{
-      & > #block-oshwiki-theme-footer{
+    & >  section{
+      nav{
         & > .navbar-nav{
           flex-direction: row;
           justify-content: space-between;
@@ -188,3 +184,4 @@ menu option for logged in user*/
     }
   }
 }
+

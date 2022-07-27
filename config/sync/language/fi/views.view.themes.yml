@@ -8,15 +8,15 @@ display:
           sort_asc_label: Varmistettu
           sort_desc_label: Kuvaus
       sorts:
-        search_api_relevance:
-          expose:
-            label: Merkityksellisyys
         created:
           expose:
             label: Julkaisupäivä
         title:
           expose:
             label: Aakkosjärjestyksessä
+        changed:
+          expose:
+            label: Päivitetty
   page_2:
     display_title: 'Uusinta sisältöä'
     display_options:

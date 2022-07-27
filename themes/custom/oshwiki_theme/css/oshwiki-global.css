@@ -104,7 +104,7 @@ ul {
     color: #FFFFFF;
     content: ">";
   }
-  .block-system-breadcrumb-block ol .breadcrumb-item a {
+  .block-system-breadcrumb-block ol .breadcrumb-item a, .block-system-breadcrumb-block ol .breadcrumb-item.active {
     font-size: 0.9rem;
     color: #FFFFFF;
   }
@@ -139,6 +139,58 @@ ul {
   color: #449FA2;
   box-shadow: 0 0 0 0.2rem #D5E6E6;
   text-decoration: none;
+}
+
+#sliding-popup {
+  height: fit-content !important;
+  background: rgba(87, 89, 88, 0.78) !important;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content {
+  margin: 0 auto;
+  max-width: 80%;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-text, #sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-width: 100%;
+  justify-items: center;
+  align-items: baseline;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-text > *, #sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-buttons > * {
+  font-size: 12px;
+  align-self: center;
+  margin: 0px;
+  text-align: center;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-text {
+  margin: 5px 0 0;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content #popup-buttons button {
+  margin-right: 5px;
+  margin-top: 1em;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+  box-shadow: inset 0 1px 0 0 #ffffff;
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+#sliding-popup .eu-cookie-compliance-banner-info .eu-cookie-compliance-content .eu-cookie-compliance-buttons {
+  margin: 0 0 0.2rem 0;
 }
 
 label {
@@ -682,7 +734,7 @@ a:hover {
 }
 .node--type-oshwiki-articles .article_references .reference-title {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #58585A;
 }
 .node--type-oshwiki-articles .article_references .references-div {
@@ -694,7 +746,7 @@ a:hover {
 .node--type-oshwiki-articles .article_references .references-div .reference-number {
   justify-self: end;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: bold;
   color: #449FA2;
 }
 .node--type-oshwiki-articles .article_references .references-div .reference-content {
@@ -712,6 +764,7 @@ a:hover {
   font-size: 0.9rem;
   font-weight: 700;
   color: #449FA2;
+  padding-bottom: 0.2rem;
 }
 .node--type-oshwiki-articles .article_further_reading {
   padding-bottom: 1.4rem;
@@ -719,7 +772,7 @@ a:hover {
 .node--type-oshwiki-articles .article_further_reading .field--name-field-further-reading-oshwiki > .field__label {
   padding: 1.4rem 0rem 0.9rem;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #58585A;
 }
 .node--type-oshwiki-articles .article_further_reading .field--name-field-desc-further-reading {
@@ -817,7 +870,7 @@ a:hover {
   font-weight: 700;
   color: #449FA2;
 }
-.node--type-oshwiki-articles .oshwiki-authors-contributors .article_authors .field__items .field__item .field--name-field-organization-authors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_authors .field__items .field__item .field--name-field-position-authors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_authors .field__items .field__item .field--email-contributors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_contributors .field__items .field__item .field--name-field-organization-authors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_contributors .field__items .field__item .field--name-field-position-authors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_contributors .field__items .field__item .field--email-contributors {
+.node--type-oshwiki-articles .oshwiki-authors-contributors .article_authors .field__items .field__item .field--name-field-organization-authors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_authors .field__items .field__item .field--name-field-position-authors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_authors .field__items .field__item .field--org-contributors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_contributors .field__items .field__item .field--name-field-organization-authors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_contributors .field__items .field__item .field--name-field-position-authors, .node--type-oshwiki-articles .oshwiki-authors-contributors .article_contributors .field__items .field__item .field--org-contributors {
   font-size: 0.9rem;
   color: #58585A;
 }
@@ -966,7 +1019,7 @@ a:hover {
   font-size: 1.8rem;
   color: #58585A;
 }
-.page-view-frontpage #main-wrapper .banner-container-fluid .section_banner h1 span {
+.page-view-frontpage #main-wrapper .banner-container-fluid .section_banner h1 strong {
   color: #003399;
 }
 .page-view-frontpage #main-wrapper .banner-container-fluid .section_banner p {
@@ -1276,6 +1329,21 @@ a:hover {
 .page-view-frontpage .section_other_sources > .container .view-content > .views-view-grid > .row .card-content-wrapper .transparent-tag .taxonomy-level-item span {
   color: transparent;
 }
+.page-view-frontpage .section_other_sources .other-sources-of-info-text {
+  font-size: 1rem;
+  color: #58585A;
+  padding-bottom: 1rem;
+}
+.page-view-frontpage .section_other_sources .more-link {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1.5rem 0rem;
+}
+.page-view-frontpage .section_other_sources .more-link a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #58585A;
+}
 .page-view-frontpage footer {
   margin-top: 0rem;
 }
@@ -1317,6 +1385,9 @@ a:hover {
   }
   .page-view-frontpage .select-theme .select-theme-article-home-content-box .nav {
     grid-template-columns: auto auto auto;
+  }
+  .page-view-frontpage .section_other_sources .other-sources-of-info-text {
+    max-width: 66%;
   }
 }
 @media only screen and (min-width: 1480px) {
@@ -1605,14 +1676,14 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   }
 }
 /*End comment responsive design of the search and order box*/
-.warning-message {
+.node--type-scientific-journal .warning-message {
   padding: 1rem;
   margin: 1.5rem 0rem;
   background: #FEF6E5;
   border-radius: 15px;
   border: none;
 }
-.warning-message .warning-message-container {
+.node--type-scientific-journal .warning-message .warning-message-container {
   background-image: url("../images/Icon-warning.svg");
   background-repeat: no-repeat;
   background-position-y: -4px;
@@ -1622,121 +1693,114 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   justify-content: flex-start;
   align-items: flex-start;
 }
-.warning-message .warning-message-container img {
+.node--type-scientific-journal .warning-message .warning-message-container img {
   height: 3rem;
   width: 3rem;
 }
-.warning-message .warning-message-container p {
+.node--type-scientific-journal .warning-message .warning-message-container p {
   font-size: 1rem;
   color: #58585A;
   letter-spacing: 0.2px;
   line-height: 27px;
+  margin-bottom: 0px;
 }
-.warning-message .read-more {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0.5rem 0rem;
+.node--type-scientific-journal .wrapper-content > .col-12:first-of-type {
+  padding-right: 0px;
+  padding-left: 0px;
 }
-.warning-message .read-more a {
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #58585A;
-}
-
-.data-and-social-media {
+.node--type-scientific-journal .data-and-social-media {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: self-start;
 }
-.data-and-social-media .scientific-journal-data-container {
+.node--type-scientific-journal .data-and-social-media .scientific-journal-data-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.data-and-social-media .scientific-journal-data-container .scientific-journal-data, .data-and-social-media .scientific-journal-data-container divide {
+.node--type-scientific-journal .data-and-social-media .scientific-journal-data-container .scientific-journal-data, .node--type-scientific-journal .data-and-social-media .scientific-journal-data-container divide {
   letter-spacing: 0.3px;
   line-height: 29px;
 }
-.data-and-social-media .scientific-journal-data-container p {
+.node--type-scientific-journal .data-and-social-media .scientific-journal-data-container p {
   margin-bottom: 0rem !important;
 }
-.data-and-social-media .scientific-journal-data-container .scientific-journal-data {
+.node--type-scientific-journal .data-and-social-media .scientific-journal-data-container .scientific-journal-data {
   font-size: 0.9rem;
   color: #58585A;
   display: flex;
   gap: 0.5rem;
 }
-.data-and-social-media .scientific-journal-data-container .divide {
+.node--type-scientific-journal .data-and-social-media .scientific-journal-data-container .divide {
   color: #F6A400;
   padding: 0rem 0.3rem;
 }
-
-.social_media {
+.node--type-scientific-journal .social_media {
   display: flex;
   justify-content: flex-end;
 }
-
-.scientific_year:first-of-type {
+.node--type-scientific-journal .scientific_year:first-of-type {
   margin: 1rem 0rem;
 }
-
-.scientific_introduction .field--name-field-introduction-science .field__label {
+.node--type-scientific-journal .scientific_introduction .field--name-field-introduction-science .field__label {
   margin: 1rem 0rem;
   font-size: 1.4rem;
   font-weight: 500;
   color: #58585A;
 }
-.scientific_introduction .field__item p {
+.node--type-scientific-journal .scientific_introduction .field__item p {
   color: #58585A;
   font-size: 1rem;
   letter-spacing: 0.3px;
   line-height: 29px;
 }
-
-.scientific_pdf {
+.node--type-scientific-journal .scientific_pdf {
   font-size: 1rem;
   color: #58585A;
 }
-
-.scientific_author {
+.node--type-scientific-journal .scientific_author {
   padding: 2rem 2rem;
   border-bottom: 2px solid #ccc;
   border-top: 2px solid #ccc;
   width: 90%;
   margin: 2rem auto;
 }
-.scientific_author .field--name-field-authors-other-sources .field__label {
+.node--type-scientific-journal .scientific_author .field--name-field-authors-other-sources .field__label {
   font-size: 1.2rem;
   font-weight: 700;
   color: #58585A;
 }
-.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj {
+.node--type-scientific-journal .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj {
   justify-content: flex-start;
 }
-.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj h2 {
+.node--type-scientific-journal .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj h2 {
   margin: 0.5rem 0rem 0rem 0rem;
   font-size: 1rem;
   font-weight: 700;
   color: #58585A;
 }
-.scientific_author .field--name-field-authors-other-sources .wrapper-author-sj .field--name-field-organisation {
+.node--type-scientific-journal .scientific_author .field--name-field-authors-other-sources .wrapper-author-sj .field--name-field-organisation {
   font-size: 0.9rem;
   font-weight: 700;
   color: #58585A;
 }
 
 @media only screen and (max-width: 992px) {
-  .scientific_year:first-of-type {
+  .node--type-scientific-journal .scientific_year:first-of-type {
     margin: 0rem 0rem;
   }
 }
 @media only screen and (min-width: 780px) {
-  .data-and-social-media {
+  .node--type-scientific-journal .data-and-social-media {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .node--type-scientific-journal .wrapper-content > .col-12:first-of-type {
+    padding-left: 15px;
   }
 }
 .page-view-search #main {
@@ -2079,45 +2143,45 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
     width: 12rem;
   }
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content, .page-vocabulary-nace #block-oshwiki-theme-content .view-content {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content, .page-vocabulary-nace #block-oshwiki-theme-content .view-content {
   display: flex;
   flex-direction: column;
   margin-left: 0px;
   margin-right: 0px;
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content .views-row, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row {
   padding: 1rem 0rem;
   border-bottom: 1px dotted #616161;
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-title, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-title {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content .views-row .views-field-title, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-title, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-title {
   padding: 0px;
   margin: 0px;
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-title a, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-title a {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content .views-row .views-field-title a, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-title a, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-title a {
   font-size: 1.1rem;
   font-weight: 700;
   color: #449FA2;
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content .views-row .views-field-view-node, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node {
   display: flex;
   flex-direction: row-reverse;
   padding-top: 0.5rem;
   letter-spacing: 0.3px;
   line-height: 29px;
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span {
   display: flex;
   align-items: center;
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a {
   margin-top: 3px;
   font-size: 0.9rem;
   color: #449FA2;
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a:hover, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a:hover {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a:hover, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a:hover, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span a:hover {
   text-decoration: underline;
 }
-.page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span::after, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span::after {
+.page-view-taxonomy-term #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span::after, .page-vocabulary-osh-categories #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span::after, .page-vocabulary-nace #block-oshwiki-theme-content .view-content .views-row .views-field-view-node span::after {
   display: inline-block;
   content: " ";
   width: 14px;
@@ -2269,6 +2333,19 @@ body.path-most-recent .container div#main section div#block-oshwiki-theme-conten
   font-size: 0.9rem;
   font-weight: 700;
   color: #58585A;
+}
+.path-themes #block-oshwiki-theme-content .attachment-before .views-element-container .views-row, .path-themes #block-views-block-themes-block-1 .attachment-before .views-element-container .views-row {
+  padding: 1rem 0rem;
+  border-bottom: 1px dotted #616161;
+}
+.path-themes #block-oshwiki-theme-content .attachment-before .views-element-container .views-row .views-field-title a, .path-themes #block-views-block-themes-block-1 .attachment-before .views-element-container .views-row .views-field-title a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #449FA2;
+  padding-bottom: 0.2rem;
+}
+.path-themes #block-oshwiki-theme-content .attachment-before .views-element-container .views-row .views-field-field-sections-oshwiki span.field-content, .path-themes #block-views-block-themes-block-1 .attachment-before .views-element-container .views-row .views-field-field-sections-oshwiki span.field-content {
+  font-size: 1.05rem;
 }
 .path-themes #block-oshwiki-theme-content .view-content, .path-themes #block-views-block-themes-block-1 .view-content {
   display: flex;
@@ -2950,17 +3027,20 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
 /*End select theme - oshwiki article, scientific journal comment*/
 .site-footer {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column !important;
-  flex-flow: wrap;
-  column-gap: 2rem;
   background-color: #B0B2B3;
   padding: 0rem;
+  max-resolution: 0rem;
 }
-.site-footer .container {
-  padding-top: 0.5rem;
+.site-footer > section {
+  display: flex;
+  flex-direction: column !important;
+  flex-flow: wrap;
+  width: 100%;
 }
-.site-footer .copyright-footer {
+.site-footer > section > div, .site-footer > section > nav {
+  border: none !important;
+}
+.site-footer > section #block-copyright .copyright-footer {
   display: flex;
   align-items: center;
   margin-top: 0.7rem;
@@ -2968,72 +3048,74 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   font-weight: 700;
   color: #58585A;
 }
-.site-footer .row {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-right: 0px;
-  margin-left: 0px;
+.site-footer > section #block-copyright .copyright-footer a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #58585A;
 }
-.site-footer section > #block-oshwiki-theme-footer {
+.site-footer > section .block:first-of-type {
+  margin: 0px;
   padding: 0px;
-  width: 100%;
+  margin-bottom: 0.3rem;
+}
+.site-footer > section nav {
   margin: 0.3rem 0rem 1rem;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav {
+.site-footer > section nav > .navbar-nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.4rem;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav ul, .site-footer section > #block-oshwiki-theme-footer > .navbar-nav li {
+.site-footer > section nav > .navbar-nav ul, .site-footer > section nav > .navbar-nav li {
   list-style: none;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav ul {
+.site-footer > section nav > .navbar-nav ul {
   padding-left: 0px;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li ul {
+.site-footer > section nav > .navbar-nav > li ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li ul li .nav-link {
+.site-footer > section nav > .navbar-nav > li ul li .nav-link {
   padding: 0rem;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li > span {
+.site-footer > section nav > .navbar-nav > li > span {
   display: none;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav a {
+.site-footer > section nav > .navbar-nav a {
   font-size: 1rem;
   color: #FFFFFF;
   text-decoration: none;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav li li:hover {
+.site-footer > section nav > .navbar-nav li li:hover {
   text-decoration: underline;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item {
+.site-footer > section nav > .navbar-nav > li:first-of-type .menu .nav-item {
   display: flex;
   align-items: baseline;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item::after {
+.site-footer > section nav > .navbar-nav > li:first-of-type .menu .nav-item::after {
   display: inline;
   content: "|";
   margin: 0rem 0.5rem;
   font-size: 1rem;
   color: #FFFFFF;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) {
+.site-footer > section nav > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) {
   display: none;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(6) {
+.site-footer > section nav > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(6) {
   display: flex;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type a {
+.site-footer > section nav > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type a {
   border-right: none;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type::after {
+.site-footer > section nav > .navbar-nav > li:first-of-type .menu .nav-item:last-of-type::after {
   display: none;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -3041,68 +3123,60 @@ body.node--type-scientific-journal #share-this-on .a2a_button_linkedin_share {
   /*Social media background images*/
   /*Social media background images*/
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item {
   width: 30px;
   height: 30px;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item a {
-  display: none;
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item a {
+  color: transparent;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item {
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: 50% 50%;
   cursor: pointer;
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:first-of-type {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item:first-of-type {
   background-image: url("../images/icon-twitter-footer.png");
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(2) {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(2) {
   background-image: url("../images/icon-facebook-footer.png");
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(3) {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(3) {
   background-image: url("../images/icon-linkedin-footer.png");
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(4) {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(4) {
   background-image: url("../images/icon-youtube-footer.png");
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(5) {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(5) {
   background-image: url("../images/icon-flickr-footer.png");
 }
-.site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(6) {
+.site-footer > section nav > .navbar-nav > li:nth-of-type(2) .menu .nav-item:nth-of-type(6) {
   background-image: url("../images/icon-slideshare-footer.png");
 }
-.site-footer .block {
-  border: none;
-  padding: 0rem;
-}
-
-.removeMarginTop {
-  margin-top: 0rem;
-}
-
-.addMarginTop {
-  margin-top: 1rem;
+.site-footer > .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 /*Hide 6th menu option for anonymus user,
 Show 5th menu option for logged in user*/
-.user-logged-in .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) {
+.user-logged-in .site-footer > section nav > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(5) {
   display: flex;
 }
-.user-logged-in .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(6) {
+.user-logged-in .site-footer > section nav > .navbar-nav > li:first-of-type .menu .nav-item:nth-of-type(6) {
   display: none;
 }
 
 /*End comment - hide 6th menu option for anonymus user. Show 5th
 menu option for logged in user*/
 @media only screen and (min-width: 1480px) {
-  .site-footer section > #block-oshwiki-theme-footer > .navbar-nav {
+  .site-footer > section nav > .navbar-nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .site-footer section > #block-oshwiki-theme-footer > .navbar-nav > li:nth-of-type(2) {
+  .site-footer > section nav > .navbar-nav > li:nth-of-type(2) {
     margin-left: auto;
   }
 }
@@ -3128,6 +3202,7 @@ menu option for logged in user*/
   list-style-type: none;
   margin: 0;
   padding: 0;
+  /*In order to have the acces key, we added the link. We have to hide the access to it*/
 }
 .content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li {
   padding: 0.3rem 0rem;
@@ -3183,6 +3258,12 @@ menu option for logged in user*/
   height: 6px;
   width: 100%;
   background: #F6A400;
+}
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li:nth-of-type(2) > a {
+  cursor: default;
+}
+.content-main-menu #navbar-main #block-oshwiki-theme-main-menu > ul > li:nth-of-type(2) > a:after {
+  display: none;
 }
 .content-main-menu .navbar-toggler {
   padding: 0rem;
@@ -3273,7 +3354,7 @@ menu option for logged in user*/
 .page-view-frontpage #block-oshwiki-theme-main-menu > ul > li:nth-child(1) a {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #449FA2;
+  color: #449FA2 !important;
 }
 .page-view-frontpage #block-oshwiki-theme-main-menu > ul > li:nth-child(1):after {
   display: block;
@@ -3344,14 +3425,43 @@ button.navbar-toggler-right .icon-bar {
     margin-bottom: 0.5rem;
   }
 }
+.page-node-3024 .article_sections .small-table tr {
+  display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
+  max-width: fit-content;
+}
 .page-node-3024 .article_sections .field--name-field-media > .field__item .field--name-field-media-image .field__item {
   display: flex;
   justify-content: center;
 }
 .page-node-3024 .article_sections .field--name-field-media > .field__item .field--name-field-caption-copyrigth-, .page-node-3024 .article_sections .field--name-field-media > .field__item .field--name-field-copyrigth {
-  max-width: 120px !important;
+  max-width: 200px !important;
   min-width: 120px !important;
-  width: 120px !important;
+  width: 200px !important;
+}
+
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: inherit;
+  padding-left: 1rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li {
+  margin-left: 1rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li > ul {
+  margin-left: 1rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li > ul a {
+  padding: 0.2rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > li > a {
+  padding: 0.5rem 0.2rem;
+}
+.path-sitemap #block-oshwiki-theme-content .sitemap-item > div > ul > .nav-item:nth-of-type(2) > a:first-of-type {
+  cursor: default;
+  pointer-events: none;
 }
 
 /*Containers for min-with 1480*/

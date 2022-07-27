@@ -8,6 +8,9 @@ display:
         title:
           expose:
             label: 'Por orden alfabético'
+        publication_date:
+          expose:
+            label: 'Fecha de publicación'
       exposed_form:
         options:
           submit_button: Buscar

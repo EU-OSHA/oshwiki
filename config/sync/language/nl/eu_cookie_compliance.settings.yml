@@ -1,0 +1,7 @@
+popup_agreed:
+  value: '<h2>Hartelijk dank voor het accepteren van cookies</h2><p>U kunt nu dit bericht verbergen of meer lezen over cookies.</p>'
+popup_agree_button_message: Accepteren
+popup_more_info_button_message: 'Meer informatie'
+popup_find_more_button_message: 'Meer informatie'
+popup_hide_button_message: Verbergen
+withdraw_tab_button_label: Privacy-instellingen

@@ -29,7 +29,7 @@
         }
         h1{
           @include textFormat(1.8rem, null, $text-dark-dark-grey);
-          span{
+          strong{
             color: $text-blue;
           }
         }
@@ -235,6 +235,18 @@
   .section_other_sources{
     @include otherArticles($bg-light-orange, $bg-dark-orange, $bg-dark-dark-grey, 1.5fr 35px);
     margin: 1.5rem 0rem;
+    .other-sources-of-info-text{
+      @include textFormat(1rem, null, $text-dark-dark-grey);
+      padding-bottom: 1rem;
+    }
+    .more-link{
+      display: flex;
+      flex-direction: row-reverse;
+      margin: 1.5rem 0rem;
+      a{
+        @include textFormat(0.9rem, 700, $bg-dark-dark-grey);
+      }
+    }
   }
 
   /*Remove footer margin-top for Home page*/
@@ -317,6 +329,11 @@
         .nav{
           grid-template-columns: auto auto auto;
         }
+      }
+    }
+    .section_other_sources{
+      .other-sources-of-info-text{
+        max-width: 66%;
       }
     }
   }

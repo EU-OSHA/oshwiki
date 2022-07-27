@@ -1,4 +1,7 @@
 attributes:
+  accesskey:
+    label: ''
+    description: ''
   class:
     label: ''
     description: ''

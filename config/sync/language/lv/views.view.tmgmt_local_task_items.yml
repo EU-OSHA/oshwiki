@@ -15,7 +15,7 @@ display:
         status:
           label: Status
         label:
-          label: Label
+          label: Etiķete
         item_type:
           label: Veids
         operations:

@@ -8,15 +8,15 @@ display:
           sort_asc_label: Aufsteigend
           sort_desc_label: Absteigend
       sorts:
-        search_api_relevance:
-          expose:
-            label: Relevanz
         created:
           expose:
             label: 'Datum der Veröffentlichung'
         title:
           expose:
             label: Alphabetisch
+        changed:
+          expose:
+            label: 'Letzte Aktualisierung'
   page_2:
     display_title: 'Aktuellste Artikel'
     display_options:

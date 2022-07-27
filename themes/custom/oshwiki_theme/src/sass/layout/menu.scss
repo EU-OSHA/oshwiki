@@ -69,6 +69,16 @@
             background: $bg-dark-orange;
           }
         }
+
+        /*In order to have the acces key, we added the link. We have to hide the access to it*/
+        & > li:nth-of-type(2){
+          & > a{
+            cursor: default;
+            &:after{
+              display: none;
+            }
+          }
+        }
       }
     }
   }
@@ -171,7 +181,9 @@
       & > li:nth-child(1){
         position: relative;
         a{
-          @include textFormat(1.1rem, 700, $text-dark-green);
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: $text-dark-green !important;
         }
         &:after{
           display: block;
@@ -238,15 +250,15 @@ button.navbar-toggler-right{
 /*orange underline responsive*/
 @media only screen and (min-width: 992px) {
   .content-main-menu{
-ul{
-  li.active{
-    &:after{
-      right: -15%;
-      bottom: -14px;
-      width: 130%;
+    ul{
+      li.active{
+        &:after{
+          right: -15%;
+          bottom: -14px;
+          width: 130%;
+        }
+      }
     }
-  }
-}
   }
   .page-view-frontpage{
     .content-main-menu{

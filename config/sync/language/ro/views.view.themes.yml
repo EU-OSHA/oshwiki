@@ -8,15 +8,15 @@ display:
           sort_asc_label: Ascendent
           sort_desc_label: Descendent
       sorts:
-        search_api_relevance:
-          expose:
-            label: Relevanță
         created:
           expose:
             label: 'Data publicării'
         title:
           expose:
             label: 'În ordine alfabetică'
+        changed:
+          expose:
+            label: 'Ultima actualizare'
   page_2:
     display_title: 'Cele mai recente'
     display_options:

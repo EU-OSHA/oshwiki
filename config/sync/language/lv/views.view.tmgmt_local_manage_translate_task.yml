@@ -13,7 +13,7 @@ display:
             items_per_page_options_all_label: '- Visi -'
       fields:
         title:
-          label: Title
+          label: Virsraksts
         item_count:
           label: Vienumi
   assigned:
@@ -25,7 +25,7 @@ display:
         status:
           label: Status
         title:
-          label: Title
+          label: Virsraksts
         source_language:
           label: 'No'
         target_language:
@@ -40,7 +40,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Virsraksts
   closed:
     display_title: Closed
     display_options:
@@ -52,7 +52,7 @@ display:
         created:
           label: Izveidots
         title:
-          label: Title
+          label: Virsraksts
         source_language:
           label: 'No'
         target_language:
@@ -67,7 +67,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Virsraksts
   completed:
     display_title: Completed
     display_options:
@@ -79,7 +79,7 @@ display:
         created:
           label: Izveidots
         title:
-          label: Title
+          label: Virsraksts
         source_language:
           label: 'No'
         target_language:
@@ -94,7 +94,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Virsraksts
   pending:
     display_title: Pending
     display_options:
@@ -104,7 +104,7 @@ display:
         status:
           label: Status
         title:
-          label: Title
+          label: Virsraksts
         source_language:
           label: 'No'
         target_language:
@@ -119,7 +119,7 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Virsraksts
   rejected:
     display_options:
       fields:
@@ -128,7 +128,7 @@ display:
         created:
           label: Izveidots
         title:
-          label: Title
+          label: Virsraksts
         source_language:
           label: 'No'
         target_language:
@@ -143,14 +143,14 @@ display:
             label: Provider
         title:
           expose:
-            label: Title
+            label: Virsraksts
   unassigned:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Title
+          label: Virsraksts
         source_language:
           label: 'No'
         target_language:

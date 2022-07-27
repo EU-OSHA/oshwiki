@@ -514,14 +514,14 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
+            max_length: 250
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
-            trim: false
+            strip_tags: true
+            trim: true
             preserve_tags: ''
             html: false
           element_type: ''
@@ -567,7 +567,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 250
+            max_length: 290
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -801,7 +801,7 @@ display:
         type: bef
         options:
           submit_button: Search
-          reset_button: false
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -819,6 +819,7 @@ display:
               allow_secondary: false
               secondary_label: 'Advanced options'
               secondary_open: false
+              reset_button_always_show: false
             sort:
               plugin_id: default
               advanced:
@@ -1071,6 +1072,19 @@ display:
             label: ''
             field_identifier: ''
           exposed: false
+        changed:
+          id: changed
+          table: search_api_index_oshwiki_index
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: 'Last update'
+            field_identifier: updated
+          exposed: true
         search_api_relevance:
           id: search_api_relevance
           table: search_api_index_oshwiki_index
@@ -1096,19 +1110,6 @@ display:
           expose:
             label: 'Publication date'
             field_identifier: pubdate
-          exposed: true
-        changed:
-          id: changed
-          table: search_api_index_oshwiki_index
-          field: changed
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api
-          order: DESC
-          expose:
-            label: 'Last update'
-            field_identifier: updated
           exposed: true
         title:
           id: title

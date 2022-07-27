@@ -18,7 +18,7 @@ display:
             last: 'posljednja »'
       fields:
         label:
-          label: Label
+          label: Oznaka
           separator: ', '
         state:
           separator: ', '
@@ -36,6 +36,6 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Oznaka
   page_1:
     display_title: Stranica

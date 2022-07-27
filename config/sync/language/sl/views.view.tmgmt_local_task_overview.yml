@@ -7,7 +7,7 @@ display:
           reset_button_label: Ponastavi
       fields:
         title:
-          label: Label
+          label: Oznaka
         item_count:
           label: Notice
       filters:
@@ -20,7 +20,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
         source_language:
           label: Od
         target_language:
@@ -35,7 +35,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
       menu:
         title: Closed
   completed:
@@ -44,7 +44,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
         source_language:
           label: Od
         target_language:
@@ -59,14 +59,14 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   eligible:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
         source_language:
           label: Od
         target_language:
@@ -81,14 +81,14 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   my_tasks:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
         source_language:
           label: Od
         target_language:
@@ -103,14 +103,14 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   pending:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
         source_language:
           label: Od
         target_language:
@@ -125,7 +125,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
       menu:
         title: Pending
   rejected:
@@ -134,7 +134,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
         source_language:
           label: Od
         target_language:
@@ -149,14 +149,14 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Oznaka
   unassigned:
     display_options:
       fields:
         status:
           label: Status
         title:
-          label: Label
+          label: Oznaka
         source_language:
           label: Od
         target_language:

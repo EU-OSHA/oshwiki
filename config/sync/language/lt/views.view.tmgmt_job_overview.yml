@@ -20,7 +20,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Žymė
         source_language_1:
           label: Nuo
         target_language:

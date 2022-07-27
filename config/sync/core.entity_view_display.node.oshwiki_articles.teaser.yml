@@ -10,8 +10,10 @@ dependencies:
     - field.field.node.oshwiki_articles.field_further_reading_oshwiki
     - field.field.node.oshwiki_articles.field_image_oshwiki
     - field.field.node.oshwiki_articles.field_nace_oshwiki
+    - field.field.node.oshwiki_articles.field_nace_tax_old
     - field.field.node.oshwiki_articles.field_one_language_available
     - field.field.node.oshwiki_articles.field_osh_categories_oshwiki
+    - field.field.node.oshwiki_articles.field_osh_tax_old
     - field.field.node.oshwiki_articles.field_oshwiki_link
     - field.field.node.oshwiki_articles.field_references_oshwiki
     - field.field.node.oshwiki_articles.field_sections_oshwiki
@@ -25,6 +27,11 @@ targetEntityType: node
 bundle: oshwiki_articles
 mode: teaser
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -37,8 +44,10 @@ hidden:
   field_further_reading_oshwiki: true
   field_image_oshwiki: true
   field_nace_oshwiki: true
+  field_nace_tax_old: true
   field_one_language_available: true
   field_osh_categories_oshwiki: true
+  field_osh_tax_old: true
   field_oshwiki_link: true
   field_references_oshwiki: true
   field_sections_oshwiki: true

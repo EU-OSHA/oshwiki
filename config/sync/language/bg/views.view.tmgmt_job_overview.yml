@@ -16,7 +16,7 @@ display:
         state:
           label: State
         label:
-          label: Label
+          label: Заглавие
         source_language_1:
           label: От
         target_language:

@@ -1,5 +1,8 @@
 {% extends "@bootstrap_barrio/layout/page.html.twig" %}
 {% block head %}
+  <a href="#main-content" class="visually-hidden focusable skip-link" accesskey="S">
+    Skip to main content
+  </a>
 <div id="navbar" role="banner" class="{{ navbar_classes }}">
   <div class="top-header-container container container-custom-header">
     <div class="top-header-content row">
@@ -72,7 +75,6 @@
   <div class="{{ container }}" >
     {% if page.footer %}
       <div class="site-footer">
-        <div class="copyright-footer">© 2022 {{ 'EU-OSHA' | trans }} | {{ 'an agency of the European Union' | trans }}</div>
         {{ page.footer }}
       </div>
     {% endif %}

@@ -1,0 +1,32 @@
+.path-sitemap{
+  #block-oshwiki-theme-content{
+    .sitemap-item{
+      & > div{
+        & > ul{
+          display: flex;
+          flex-direction: column;
+          list-style: inherit;
+          padding-left: 1rem;
+          & > li{
+            margin-left: 1rem;
+            & > ul{
+              margin-left: 1rem;
+              a{
+                padding: 0.2rem;
+              }
+            }
+            & > a{
+              padding: 0.5rem 0.2rem;
+            }
+          }
+          & > .nav-item:nth-of-type(2){
+            & > a:first-of-type{
+              cursor: default;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,15 +7,15 @@ display:
           sort_desc_label: Deskrizzjoni
           exposed_sorts_label: 'Agħżel skont'
       sorts:
-        search_api_relevance:
-          expose:
-            label: Rilevanza
         created:
           expose:
             label: 'Data tal-pubblikazzjoni'
         title:
           expose:
             label: Alfabetikament
+        changed:
+          expose:
+            label: 'L-aħħar aġġornament'
   page_2:
     display_title: 'L-aktar reċenti'
     display_options:

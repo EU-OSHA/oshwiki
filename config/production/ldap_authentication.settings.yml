@@ -1,6 +1,9 @@
 _core:
   default_config_hash: 9DgabkLztscclWQDjei_mAOpxP6xdbp_Iu5L5z6Nsbg
-sids: {  }
+langcode: en
+sids:
+  osha: osha
+  osha_write: '0'
 authenticationMode: mixed
 loginUIUsernameTxt: ''
 loginUIPasswordTxt: ''
@@ -15,9 +18,8 @@ emailTemplateUsageNeverUpdate: false
 emailTemplateUsagePromptUser: false
 emailTemplateUsageRedirectOnLogin: false
 emailTemplateUsagePromptRegex: '.*@example\\.com'
-passwordOption: hide
+passwordOption: allow
 allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
-excludeIfNoAuthorizations: null
+excludeIfNoAuthorizations: false
 skipAdministrators: true
-langcode: en

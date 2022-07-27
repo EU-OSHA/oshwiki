@@ -8,15 +8,15 @@ display:
           sort_asc_label: Stigande
           sort_desc_label: Fallande
       sorts:
-        search_api_relevance:
-          expose:
-            label: Relevans
         created:
           expose:
             label: Publiceringsdag
         title:
           expose:
             label: 'Alfabetisk ordning'
+        changed:
+          expose:
+            label: 'Senaste uppdatering'
   page_2:
     display_title: Senaste
     display_options:

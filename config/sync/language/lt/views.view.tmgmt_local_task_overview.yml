@@ -15,7 +15,7 @@ display:
         tmgmt_local_task_bulk_form:
           action_title: 'Su pasirinktais'
         title:
-          label: Label
+          label: Žymė
         item_count:
           label: Elementai
       filters:
@@ -31,7 +31,7 @@ display:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Label
+          label: Žymė
         source_language:
           label: Nuo
         target_language:
@@ -46,7 +46,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Žymė
       menu:
         title: Closed
   completed:
@@ -58,7 +58,7 @@ display:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Label
+          label: Žymė
         source_language:
           label: Nuo
         target_language:
@@ -73,7 +73,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Žymė
       menu:
         title: Completed
   eligible:
@@ -85,7 +85,7 @@ display:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Label
+          label: Žymė
         source_language:
           label: Nuo
         target_language:
@@ -100,7 +100,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Žymė
   my_tasks:
     display_options:
       fields:
@@ -109,7 +109,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Žymė
         source_language:
           label: Nuo
         target_language:
@@ -124,7 +124,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Žymė
   pending:
     display_title: 'Pending tasks'
     display_options:
@@ -134,7 +134,7 @@ display:
         status:
           label: Status
         title:
-          label: Label
+          label: Žymė
         source_language:
           label: Nuo
         target_language:
@@ -149,7 +149,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Žymė
       menu:
         title: Pending
   rejected:
@@ -161,7 +161,7 @@ display:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Label
+          label: Žymė
         source_language:
           label: Nuo
         target_language:
@@ -176,7 +176,7 @@ display:
             label: Status
         title:
           expose:
-            label: Label
+            label: Žymė
   unassigned:
     display_options:
       fields:
@@ -186,7 +186,7 @@ display:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         title:
-          label: Label
+          label: Žymė
         source_language:
           label: Nuo
         target_language:

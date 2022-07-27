@@ -13,7 +13,7 @@ display:
             last: 'zadnja »'
       fields:
         label:
-          label: Label
+          label: Oznaka
         type:
           label: Tip
         tags_count:
@@ -28,6 +28,6 @@ display:
     display_options:
       fields:
         label:
-          label: Label
+          label: Oznaka
         type:
           label: Tip

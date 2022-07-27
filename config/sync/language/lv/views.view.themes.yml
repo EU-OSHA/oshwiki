@@ -8,15 +8,15 @@ display:
           sort_asc_label: Aug.
           sort_desc_label: Dilst
       sorts:
-        search_api_relevance:
-          expose:
-            label: Nozīmīgums
         created:
           expose:
             label: 'Publicēšanas datums'
         title:
           expose:
             label: 'Alfabēta secībā'
+        changed:
+          expose:
+            label: 'Jaunākā versija'
   page_2:
     display_title: Jaunākie
     display_options:

@@ -1,5 +1,13 @@
 .page-node-3024{
   .article_sections{
+    .small-table{
+      tr{
+        display: flex;
+        padding-right: 0px;
+        padding-left: 0px;
+        max-width: fit-content;
+      }
+    }
     .field--name-field-media{
       & > .field__item{
         .field--name-field-media-image{
@@ -9,9 +17,9 @@
           }
         }
         .field--name-field-caption-copyrigth-, .field--name-field-copyrigth{
-          max-width: 120px !important;
+          max-width: 200px !important;
           min-width: 120px !important;
-          width: 120px !important;
+          width: 200px !important;
         }
       }
     }

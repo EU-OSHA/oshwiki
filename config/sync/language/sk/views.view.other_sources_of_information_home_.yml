@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Zobraziť všetky'
+      fields:
+        view_node:
+          text: 'Prečítajte si článok'
+      filters:
+        default_langcode:
+          expose:
+            description: ''
+          group_info:
+            description: ''

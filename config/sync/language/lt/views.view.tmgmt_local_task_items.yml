@@ -16,7 +16,7 @@ display:
           label: Status
           format_plural_string: !!binary MQNAY291bnQ=
         label:
-          label: Label
+          label: Žymė
         item_type:
           label: Tipas
         operations:

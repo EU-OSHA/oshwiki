@@ -1,0 +1,13 @@
+popup_agreed:
+  value: '<h2>Grazie per aver accettato i cookie.</h2><p>Se vuoi puoi chiudere questo messaggio oppure puoi approfondire l''argomento sulla nostra informativa.</p>'
+popup_agree_button_message: Accetta
+popup_more_info_button_message: 'Maggiori informazioni'
+popup_find_more_button_message: 'Maggiori informazioni'
+popup_hide_button_message: Nascondi
+popup_info:
+  value: '<h2>In questo sito utilizziamo i cookie per migliorare la tua esperienza utente</h2><p> Facendo clic sul pulsante Accetta, acconsenti al loro utilizzo.</p>'
+mobile_popup_info:
+  value: '<h2>In questo sito utilizziamo i cookie per migliorare la tua esperienza utente</h2><p> Toccando il  pulsante Accetta, acconsenti al loro utilizzo.</p>'
+disagree_button_label: 'No Grazie'
+withdraw_message:
+  value: '<h2>In questo sito utilizziamo i cookie per migliorare la tua esperienza utente</h2><p>Hai dato il tuo consenso all''uso dei cookie.</p>'

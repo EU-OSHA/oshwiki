@@ -79,17 +79,24 @@
       {% if node.field_one_language_available.value==0 %}
       {{ drupal_entity('block', 'osharticleslanguageblock', check_access=false) }}
       {% endif %}
-      <div class="anchor-item-list-container">
-        <ul class="anchor-items-list">
-          {% for key, items in content.field_sections_oshwiki['#items'] %}
-            {% set titleSection = items.entity.field_title_sections.0.value|raw %}
-            <li>
-              <div class="icon-before-anchor-item"></div>
-              <a href="#{{ titleSection }}">{{ titleSection }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+      {%  if content.field_sections_oshwiki['#items']|length>0 %}
+        <div class="anchor-item-list-container">
+          <ul class="anchor-items-list">
+            {% for key, items in content.field_sections_oshwiki['#items'] %}
+
+              {% if items.entity.field_title_sections.0.value|raw|length>0 %}
+                {% set titleSection_show = drupal_field('field_title_sections', 'paragraph', items.entity.id.value) %}
+
+                {% set titleSection = titleSection_show['#items'].0.value %}
+                <li>
+                  <div class="icon-before-anchor-item"></div>
+                  <a href="#{{ titleSection }}">{{ titleSection }}</a>
+                </li>
+              {% endif%}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
     </div>
     <!-- END LEFT COLUMN -->
     <!-- CENTER COLUMN -->
@@ -124,7 +131,7 @@
               {% if( node.field_references_oshwiki[key].entity.field_number_references.value) %}
                 <div class="references-div">
                   <div class="reference-number"> {{ node.field_references_oshwiki[key].entity.field_number_references.value|number_format }}</div>
-                  <div class="reference-content"> {{ node.field_references_oshwiki[key].entity.field_reference_references.entity.description.value }}</div>
+                  <div class="reference-content"> {{ node.field_references_oshwiki[key].entity.field_reference_references.entity.description.value|raw }}</div>
                 </div>
               {% endif %}
             {% endfor %}
@@ -147,12 +154,12 @@
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         {{ content.field_osh_categories_oshwiki['#title'] }}
                     </button>
                   </h5>
                 </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body">
                     {{ content.field_osh_categories_oshwiki }}
                   </div>
@@ -218,7 +225,7 @@
                   <h2>
                     {{ node.field_contributors_oshwiki.entity.field_name_and_sur_contributors.0.value }}
                   </h2>
-                  <div  class="field--email-contributors">{{ node.field_contributors_oshwiki.entity.title.0.value }}</div>
+                  <div class="field--org-contributors">{{ node.field_contributors_oshwiki.entity.field_organization_contributors.0.value }}</div>
                 </div>
               </div>
             </div>
@@ -232,6 +239,7 @@
                   <h2>
                     {{ node.field_contributors_oshwiki.entity.field_name_and_sur_contributors.0.value }}
                   </h2>
+                  <div class="field--org-contributors">{{ node.field_contributors_oshwiki.entity.field_organization_contributors.0.value }}</div>
                 </div>
               </div>
             </div>
