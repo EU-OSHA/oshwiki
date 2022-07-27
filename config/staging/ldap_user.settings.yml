@@ -1,11 +1,12 @@
 _core:
   default_config_hash: hjgcuHpcsme6SW-7MKpZm3bhnR76f1yX2Y8Xe0STesw
 drupalAcctProvisionServer: osha
-ldapEntryProvisionServer: null
+ldapEntryProvisionServer: osha_write
 drupalAcctProvisionTriggers:
   - drupal_on_login
   - drupal_on_update_create
-ldapEntryProvisionTriggers: {  }
+ldapEntryProvisionTriggers:
+  - ldap_on_update_create
 orphanedDrupalAcctBehavior: user_cancel_block
 orphanedCheckQty: 100
 orphanedAccountCheckInterval: weekly
@@ -15,4 +16,25 @@ acctCreation: ldap_behaviour
 disableAdminPasswordField: false
 userUpdateCronQuery: people
 userUpdateCronInterval: always
-ldapUserSyncMappings: {  }
+ldapUserSyncMappings:
+  ldap:
+    userPassword:
+      ldap_attr: '[userPassword]'
+      user_attr: '[password.user-only]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_ldap_entry
+        - sync_to_ldap_entry
+    dn:
+      ldap_attr: '[dn]'
+      user_attr: '[field.ldap_user_current_dn]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_ldap_entry
+        - sync_to_ldap_entry
