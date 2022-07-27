@@ -19,7 +19,7 @@
         @include textFormat(0.9rem, null, $text-white);
         content: ">";
       }
-      .breadcrumb-item a{
+      .breadcrumb-item a, .breadcrumb-item.active{
         @include textFormat(0.9rem, null, $text-white);
       }
     }

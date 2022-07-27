@@ -19,6 +19,12 @@
               padding: 0.5rem 0.2rem;
             }
           }
+          & > .nav-item:nth-of-type(2){
+            & > a:first-of-type{
+              cursor: default;
+              pointer-events: none;
+            }
+          }
         }
       }
     }
