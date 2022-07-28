@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
+          submit_button: Търси
           reset_button_label: Рестартирай
   list:
     display_title: Страница

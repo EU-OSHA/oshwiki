@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: 2lo0hIx3RV2AgnE1fkdPLRQcYWGamMyouBoe2OiYk24
+langcode: en
+id: search_block
+uuid: 8b707915-fc91-49c0-a85f-3cd43a09f07a
+label: 'Search Block'
+selector: ''
+status: true
+minChar: 3
+autoSubmit: true
+autoRedirect: true
+maxSuggestions: 10
+noResultLabel: 'No results found for [search-phrase]. Click to perform full search.'
+noResultValue: '[search-phrase]'
+noResultLink: ''
+moreResultsLabel: 'View all results for [search-phrase].'
+moreResultsValue: '[search-phrase]'
+moreResultsLink: ''
+source: 'search_autocomplete::search_autocomplete'
+theme: basic-blue.css
+editable: true
+deletable: false
+dependencies: {  }

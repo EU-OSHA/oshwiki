@@ -5,14 +5,14 @@ message:
   value: ''
   format: plain_text
 plugins:
-  frontpage:
-    enabled: false
   'menu:main':
     enabled: true
     weight: -44
     settings:
-      title: 'Main navigation'
+      title: ''
       show_disabled: false
     id: 'menu:main'
     provider: sitemap
+  frontpage:
+    enabled: false
 include_css: true
